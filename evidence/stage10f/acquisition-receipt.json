@@ -1,0 +1,72 @@
+{
+  "receipt_id": "artemis2-stage10f-mechanism-evidence-v1",
+  "completed_at_utc": "2026-10-10T11:58:06Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "external_parent_sources": [
+    {
+      "url": "https://ntrs.nasa.gov/api/citations/20260009221/downloads/YoungPreliminary%20Science%20ReportFINAL",
+      "bytes": 143769154,
+      "sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "headers": {
+        "content-length": "143769154",
+        "last-modified": "Wed, 07 Oct 2026 14:21:11 GMT",
+        "etag": "\"5753ea5f4b69128dfd422ff6f084100d\""
+      },
+      "role": "official full parent report; exact focused page preserved locally"
+    }
+  ],
+  "sources": [
+    {
+      "path": "evidence/stage10f/source/ntrs-20260009221.json",
+      "bytes": 19169,
+      "sha256": "9f164d0eaf08b0cba6b2480b64d73dfb426fc3a88e3a0298b81bbc7a85e0d817",
+      "role": "official NTRS citation and download identity",
+      "url": "https://ntrs.nasa.gov/api/citations/20260009221",
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "19169",
+        "etag": "W/\"4ae1-i/vizORsyoslHOZmJTKKg7toImI\""
+      }
+    },
+    {
+      "path": "evidence/stage10f/source/preliminary-science-report-page-30.pdf",
+      "bytes": 155280,
+      "sha256": "c9971fa1a8bf0f7eff124f1f3fc93b20c2ac06671140ca3b6d70e00e4ac74093",
+      "role": "focused exact PDF page containing NASA's as-executed timeline",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_url": "https://ntrs.nasa.gov/api/citations/20260009221/downloads/YoungPreliminary%20Science%20ReportFINAL"
+    },
+    {
+      "path": "evidence/stage10f/source/preliminary-science-report-page-30.txt",
+      "bytes": 1342,
+      "sha256": "bc7f2740c9599ce51b234a0f4c688dfa6232bdbb66bd06791f29f420bfb640e8",
+      "role": "text extraction from focused as-executed timeline page",
+      "extractor": "pypdf"
+    },
+    {
+      "path": "results/stage10c-result.json",
+      "bytes": 370857,
+      "sha256": "fff1a31660fd3a9712ab3f92592b275161a8638c148cb24a9ae9c21d14d37317",
+      "role": "verified repeated position-specific metadata signature"
+    },
+    {
+      "path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+      "bytes": 174179,
+      "sha256": "3533de2c32617b9d1a2ff29022771dab5d29ac6bbaa15dd3554f23a992a8d31e",
+      "role": "official activity and target metadata-generation rules"
+    },
+    {
+      "path": "corpus/artemis2_outgoing_target_request.json",
+      "bytes": 59800,
+      "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+      "role": "archived outgoing target request timing"
+    },
+    {
+      "path": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+      "bytes": 7697,
+      "sha256": "2f7b0b7e6dc449530cdc5a26cdf5854133f86f996eb882c4268bb19c03b1e760",
+      "role": "contemporaneous crew transcript"
+    }
+  ]
+}

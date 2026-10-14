@@ -1,0 +1,99 @@
+{
+  "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-09T22:05:00Z",
+  "question": "Does a pre-instrument semantic contrast from a non-Orientale Artemis II observation agree with independent LOLA roughness values strongly enough to justify a larger controlled multi-target test?",
+  "terminal_objective": "Test the cheapest credible fragment of the semantic cross-instrument hypothesis without reviving the retired sub-resolution claim or widening to bulk archive analysis.",
+  "baseline": "The transcript contrast may be fully explained by obvious crater morphology, geologic age, illumination, albedo, coarse localization, or one observer's language; no instrument concordance is assumed.",
+  "treatment": "Freeze the Vavilov-rougher versus Hertzsprung-smoother semantic direction before reading LOLA values, then compare equal-size disks centered on official USGS coordinates across the 57 m, 225 m, and 560 m LOLA median-absolute-slope products.",
+  "semantic_evidence": {
+    "path": "evidence/stage7a/semantic-coding.json",
+    "sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+    "must_be_frozen_before_lola_value_access": true,
+    "primary_contrast": "vavilov_rougher_than_hertzsprung"
+  },
+  "source_products": [
+    {
+      "id": "mas_57m_16",
+      "baseline_m": 57,
+      "img_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_57M_16.IMG",
+      "label_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_57M_16.LBL"
+    },
+    {
+      "id": "mas_225m_16",
+      "baseline_m": 225,
+      "img_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_225M_16.IMG",
+      "label_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_225M_16.LBL"
+    },
+    {
+      "id": "mas_560m_16",
+      "baseline_m": 560,
+      "img_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_560M_16.IMG",
+      "label_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_560M_16.LBL"
+    }
+  ],
+  "raster_contract": {
+    "lines": 2880,
+    "line_samples": 5760,
+    "pds_label_record_bytes_reported": 5760,
+    "physical_row_bytes": 11520,
+    "sample_type": "LSB_INTEGER",
+    "sample_bits": 16,
+    "map_resolution_pixels_per_degree": 16,
+    "line_projection_offset_pixels": 1439.5,
+    "sample_projection_offset_pixels": 2879.5,
+    "center_longitude_deg": 180.0,
+    "scaling_factor": 0.0015,
+    "offset_deg": 45.0,
+    "invalid_raw_at_or_below": -30001,
+    "moon_radius_km": 1737.4
+  },
+  "regions": {
+    "primary_radius_km": 20,
+    "robustness_radii_km": [10, 20, 30],
+    "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+  },
+  "acquisition": {
+    "method": "HTTP byte-range requests for the smallest complete latitude-row strip covering both 30 km disks in each raster",
+    "maximum_total_img_bytes": 2500000,
+    "maximum_total_label_bytes": 20000,
+    "maximum_total_network_bytes": 2520000,
+    "required_http_status": 206,
+    "require_content_range": true,
+    "require_remote_total_bytes": 33177600,
+    "scored_network_bytes": 0,
+    "replay": "Verification runs only from pinned local strips and receipts."
+  },
+  "oracle": {
+    "primary": {
+      "radius_km": 20,
+      "required_baselines_m": [57, 225, 560],
+      "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+      "minimum_probability_superiority_each": 0.65
+    },
+    "robustness": {
+      "comparisons": 9,
+      "minimum_comparisons_with_ratio_at_least_1_1": 8
+    },
+    "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+    "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+    "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+  },
+  "hard_negatives": [
+    "use_orientale_as_evaluation_data",
+    "change_semantic_direction_after_lola_access",
+    "compare_unequal_physical_radii",
+    "accept_only_one_lola_baseline",
+    "accept_a_ratio_below_the_frozen_threshold",
+    "treat_interpolated_pixels_as_independent_samples",
+    "claim_control_for_geology_illumination_albedo_or_morphology",
+    "claim_novel_science_from_a_two-target_same-observer_canary",
+    "claim_sub_resolution_perception"
+  ],
+  "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result.",
+  "next_step_logic": {
+    "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+    "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+    "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T13:00:00Z",
+  "question": "Can the verified product, exposure, action, and conditional temporal-cluster hierarchy be emitted as a deterministic reusable manifest without inventing semantic labels or a model partition?",
+  "terminal_objective": "Convert the layered split-hazard insight into a reproducible metadata artifact that a later task can join to products while preserving every current scope and claim boundary.",
+  "method": "Replay Stages 10J, 10L, and 10N; map each Atlas product to its stable capture identity and reconstructed complete action; derive deterministic private action and threshold-specific temporal-cluster keys; emit one CSV row per product; and verify the exact bytes, hierarchy cardinalities, collection parity, archive-size totals, and group-size distributions.",
+  "authority": "Private local deterministic metadata transformation only. No pixels, model training, partition assignment, publication, outreach, semantic scene labels, official-ID claim, actual leakage claim, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10j_result_path": "results/stage10j-result.json",
+    "stage10l_result_path": "results/stage10l-result.json",
+    "stage10n_result_path": "results/stage10n-result.json",
+    "stage10n_spec_path": "spec/stage10n.json",
+    "stage10l_batch_dir": "evidence/stage10l/source/batches",
+    "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "products": 22818,
+    "capture_identities": 7606,
+    "complete_actions": 2166,
+    "three_exposure_actions": 1612,
+    "five_exposure_actions": 554,
+    "expected_collection_counts": {"data_source": 7606, "data_raw": 7606, "data_processed": 7606},
+    "expected_total_bytes": 1625281365343,
+    "expected_temporal_clusters": {"1": 2051, "2": 1377, "5": 816, "10": 538, "30": 254},
+    "manifest_bytes": 10072026,
+    "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+  },
+  "hard_negatives": [
+    "assign_train_test_without_a_frozen_task",
+    "use_activity_as_the_action_key",
+    "count_products_as_independent_observations",
+    "call_private_action_ids_official_pds_ids",
+    "call_temporal_clusters_semantic_scenes",
+    "include_unadmitted_records_as_complete_actions",
+    "infer_pixel_similarity",
+    "claim_archive_wide_exhaustiveness",
+    "call_hypothetical_hazard_observed_leakage",
+    "claim_global_priority",
+    "open_pixels_for_manifest"
+  ],
+  "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+  "next_step_logic": {
+    "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+    "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+    "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+    "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+  }
+}

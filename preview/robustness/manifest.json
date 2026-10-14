@@ -1,0 +1,30 @@
+{
+  "case_id": "artemis-ii-tag-weight-robustness",
+  "files": [
+    {
+      "path": "bound-endpoints.csv",
+      "bytes": 21328,
+      "sha256": "730483c6c6e84e0b434557ade5d00b2018e794865d6b389f96963857a59cd45e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7254664,
+      "sha256": "458ff6067d191922e858a054233b54395e41a1b90c3d133cb90ba5bd6abdea19"
+    },
+    {
+      "path": "reassignment-witnesses.csv",
+      "bytes": 2869857,
+      "sha256": "b1d1cd8df3aaad43a12f2d679882b1012cbd69dc6b457c51e3344fbdead557af"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 10668709,
+      "sha256": "de117e2813064b42221a39e853eca32579e033ee1724f0b9acb32a762354bc8c"
+    },
+    {
+      "path": "source-fields.csv",
+      "bytes": 7293737,
+      "sha256": "78b09254a29cd95e8a31c133cbc0ec9aa876c9b965299b2a73d3282b24e9ebf0"
+    }
+  ]
+}

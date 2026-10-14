@@ -1,0 +1,196 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-camera-native-canary-stage8c",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-09T22:51:59Z",
+  "question": "Do the exact Stage 8B crew-camera records support Hansen's ordinal statement that Glushko and Ohm had very similar ray brightness, with Glushko slightly brighter, as a camera-native same-session signal?",
+  "terminal_objective": "Determine whether the archive contains a more decision-changing photographic concordance than the failed Stage 8A static normalized-reflectance proxy, without treating camera values as Hansen's perception or physical albedo.",
+  "baseline": "Stage 8B proves that one exact joint frame and an exact matched-state 400 mm pair are recoverable and coordinate-bound, but it does not score image values. Stage 8A remains a clean negative for its separately frozen static 566 nm ray-sector proxy.",
+  "treatment": "Use the joint 260 mm frame as the primary within-exposure comparison and the matched 400 mm pair as a secondary cross-frame check. Derive every region from official target coordinates, crater diameters, and label control points. Compare inner and outer annuli with a rank-based RGB code-value endpoint. Do not hand-draw rays, select alternate exposures, or interpret browse values as calibrated photometry.",
+  "prior_stage_boundary": {
+    "stage8b_spec_path": "spec/stage8b.json",
+    "stage8b_spec_sha256": "adb7b8207e586ac6e17fbf5192f1d6a4aec981e2c870fdd2053fa29cf14b7497",
+    "stage8b_result_path": "results/stage8b-verification.json",
+    "stage8b_result_sha256": "7ffee1d1bf2f39da5116b419a4926d39a6418189d44ad812f4c538e98484235f",
+    "required_stage8b_evidence_state": "CAMERA_NATIVE_STIMULUS_PROXY_AVAILABLE",
+    "required_stage8b_disposition": "ADMIT_SEPARATE_CAMERA_NATIVE_CANARY",
+    "forbidden_reopenings": [
+      "retune_stage8a_geometry_band_or_thresholds",
+      "select_stage8b_fallback_exposures",
+      "search_additional_camera_frames",
+      "reinterpret_stage8a_failure_as_support"
+    ]
+  },
+  "source_files": [
+    {
+      "role": "official_target_request",
+      "path": "corpus/artemis2_outgoing_target_request.json",
+      "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+    },
+    {
+      "role": "matched_glushko_label",
+      "product_id": "art002e012219_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012219_nkd5015_prc_v01.xml",
+      "sha256": "c98d391b90ec1b3fdf0e1c0e927ff056ad3c26a5fe433b2ec473d04ed18afbe1"
+    },
+    {
+      "role": "matched_glushko_image",
+      "product_id": "art002e012219_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012219_nkd5015_prc_v01.png",
+      "sha256": "c222d9d43e23822368415cf2af2d3303796ef580db0af11d73c8c480189c1eef"
+    },
+    {
+      "role": "matched_ohm_label",
+      "product_id": "art002e012252_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012252_nkd5015_prc_v01.xml",
+      "sha256": "6b163449fd896f3c9d911ee97133ebf75d551157ecb38173bf88a46659dcc6c8"
+    },
+    {
+      "role": "matched_ohm_image",
+      "product_id": "art002e012252_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012252_nkd5015_prc_v01.png",
+      "sha256": "9282cc8f05d00aa07c512789b66e6b4e10cade06241e9f313c63c2faaf48fbc4"
+    },
+    {
+      "role": "joint_label",
+      "product_id": "art002e012264_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012264_nkd5015_prc_v01.xml",
+      "sha256": "5f0f8f2a60f256d05984a63a7c94cc018b20dc5f41a8c819fd2300238eb28228"
+    },
+    {
+      "role": "joint_image",
+      "product_id": "art002e012264_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012264_nkd5015_prc_v01.png",
+      "sha256": "8b3eb98c789f69019a2a989d5e63d181dc6abe22fb4a0eb206114e616aa85433"
+    }
+  ],
+  "targets": {
+    "glushko": {
+      "official_name": "Glushko Crater",
+      "latitude_deg": 8.11,
+      "longitude_east_deg": 282.33,
+      "diameter_km": 43.83
+    },
+    "ohm": {
+      "official_name": "Ohm Crater",
+      "latitude_deg": 18.32,
+      "longitude_east_deg": 246.22,
+      "diameter_km": 67.46
+    }
+  },
+  "comparison_hierarchy": {
+    "primary": "joint_same_frame",
+    "secondary": "matched_400mm_pair",
+    "rationale": "The joint frame places both craters in one exposure and one processed browse object. The matched pair has greater image scale and identical recorded camera settings but different times and incompletely recovered window paths, so it cannot outrank the within-frame comparison.",
+    "independence": "The joint and paired checks share the same session, camera system, source pipeline, target geometry, and crew context. They are corroborating views, not independent replications."
+  },
+  "representation_contract": {
+    "expected_width": 5568,
+    "expected_height": 3712,
+    "expected_bit_depth": 8,
+    "expected_png_color_type": 3,
+    "expected_interlace_method": 0,
+    "pixel_value_name": "uncalibrated RGB palette code-value lightness",
+    "lightness_integer_formula": "L = (54*R + 183*G + 19*B + 128) // 256",
+    "physical_claims_excluded": [
+      "radiance",
+      "reflectance",
+      "absolute_albedo",
+      "colorimetry",
+      "retinal_luminance",
+      "perceived_brightness"
+    ]
+  },
+  "coordinate_model": {
+    "moon_radius_km": 1737.4,
+    "image_x_field": "vertical_coordinate_pixel",
+    "image_y_field": "horizontal_coordinate_pixel",
+    "pixel_center_coordinates": "Use zero-based raster coordinates: image x is the integer column index and image y is the integer row index. Do not add a half-pixel or one-pixel offset after outcome access.",
+    "local_coordinates": "u is wrapped east-longitude delta times cos(target latitude); v is latitude delta, both in degrees.",
+    "fit": "For each target-image combination, select label control points inside max(4.0 degrees, 1.35 times the largest outer radius in degrees). Sort by u, v, x, y; reserve every fifth point as deterministic validation; fit x=a0+a1*u+a2*v and y=b0+b1*u+b2*v on the remainder; validate; then refit all admitted points for the pixel mask.",
+    "minimum_training_points": 16,
+    "minimum_validation_points": 4,
+    "maximum_validation_median_residual_pixels": 20.0,
+    "maximum_validation_p90_residual_pixels": 40.0,
+    "maximum_validation_residual_pixels": 55.0,
+    "require_complete_regions_inside_image": true,
+    "minimum_pixels_per_region": 5000
+  },
+  "region_cells": [
+    {
+      "id": "inner_1p25_2p75_outer_2p75_3p75",
+      "inner_crater_radii": [1.25, 2.75],
+      "outer_crater_radii": [2.75, 3.75],
+      "boundary_rule": "lower inclusive, upper exclusive"
+    },
+    {
+      "id": "inner_1p50_3p00_outer_3p00_4p00",
+      "inner_crater_radii": [1.5, 3.0],
+      "outer_crater_radii": [3.0, 4.0],
+      "boundary_rule": "lower inclusive, upper exclusive",
+      "primary": true
+    },
+    {
+      "id": "inner_1p75_3p25_outer_3p25_4p25",
+      "inner_crater_radii": [1.75, 3.25],
+      "outer_crater_radii": [3.25, 4.25],
+      "boundary_rule": "lower inclusive, upper exclusive"
+    }
+  ],
+  "endpoint": {
+    "name": "rank_probability_local_ray_excess",
+    "per_target_metric": "AUC = P(inner-region lightness > outer-region lightness) + 0.5*P(tie), computed exactly from 256-bin histograms. Local ray excess is AUC - 0.5.",
+    "reason": "The metric asks whether the crater-normalized inner ray field tends to be brighter in browse code values than an almost equal-area outer local comparison. It avoids exposure-scale calibration and does not use pixel-count significance.",
+    "primary_similarity": "min(Glushko excess, Ohm excess) / max(Glushko excess, Ohm excess)",
+    "direction": "Glushko excess must be strictly greater than Ohm excess.",
+    "descriptive_only": "Also report each region's median and 75th-percentile code-value lightness and the direct same-frame inner-region 75th-percentile ratio. These do not control the disposition."
+  },
+  "oracle": {
+    "minimum_auc_each": 0.55,
+    "minimum_similarity_ratio": 0.75,
+    "require_glushko_greater_than_ohm": true,
+    "minimum_passing_cells_per_view": 2,
+    "required_primary_cell_id": "inner_1p50_3p00_outer_3p00_4p00",
+    "strong_state": "CAMERA_NATIVE_ORDINAL_CONCORDANCE",
+    "joint_only_state": "JOINT_FRAME_ONLY_ORDINAL_CONCORDANCE",
+    "pair_only_state": "MATCHED_PAIR_ONLY_ORDINAL_CONCORDANCE",
+    "discordant_state": "NO_CAMERA_NATIVE_ORDINAL_CONCORDANCE",
+    "indeterminate_state": "INDETERMINATE_CAMERA_SOURCE_GEOMETRY_OR_DECODER"
+  },
+  "hard_negatives": [
+    "make_matched_pair_primary_over_joint_frame",
+    "select_alternate_or_additional_exposures",
+    "hand_draw_regions_from_visible_rays",
+    "swap_label_coordinate_axes",
+    "shift_pixel_coordinate_origin_after_outcome",
+    "treat_browse_code_values_as_physical_albedo",
+    "treat_correlated_pixels_as_independent_significance",
+    "call_camera_image_hansen_perception",
+    "claim_joint_and_pair_are_independent_replications",
+    "remove_strict_glushko_greater_than_ohm_direction",
+    "weaken_similarity_after_outcome",
+    "reinterpret_stage8a_failure_as_support"
+  ],
+  "claim_ceiling": "A strong pass would establish bounded ordinal concordance in the exact official processed browse images: both coordinate-derived ray fields are locally brighter by the frozen rank metric, their effects are similar, and Glushko is slightly stronger in both the joint frame and matched pair. It would not establish physical albedo, calibrated photometry, Hansen's retinal or perceived stimulus, the camera as the carrier of his judgment, a causal explanation of the Stage 8A mismatch, independent replication, novelty, or a public scientific finding.",
+  "budget": {
+    "additional_network_bytes": 0,
+    "additional_source_files": 0,
+    "scored_png_images": 3,
+    "target_image_geometry_fits": 4,
+    "region_cells_per_view": 3,
+    "verification_must_be_offline": true
+  },
+  "stop_rules": [
+    "Stop if any exact source hash, Stage 8B admission state, PNG representation, target identity, or coordinate fit fails.",
+    "Stop after the three frozen cells on the joint frame and matched pair; do not add images, redraw regions, change channels, or retune thresholds after outcome access.",
+    "Do not use pixel-count p-values or treat spatially correlated browse pixels as independent samples.",
+    "A failed or partial result closes this exact camera-native Glushko/Ohm lane unless a named source, geometry, or decoder defect is independently demonstrated."
+  ],
+  "next_step_logic": {
+    "if_strong": "Retain the result as a private camera-native concordance and pressure-test whether known processing, lighting, window, or geometry confounds can explain it before any specialist-facing analysis. Do not upgrade it to perception or physical albedo.",
+    "if_joint_only": "Retain a same-frame photographic signal but do not call it robust across views. Prefer a future geometry/processing falsifier over more image selection.",
+    "if_pair_only": "Treat the matched-pair signal as insufficient because the stronger same-frame control failed. Close the lane without selecting alternate frames.",
+    "if_discordant": "Close the camera-native Glushko/Ohm concordance lane and retain Hansen's statement as qualitative mission evidence only.",
+    "if_indeterminate": "Repair only the named source, coordinate, or decoder defect and rerun the frozen contract. Do not change products, regions, endpoint, or thresholds.",
+    "cross_lanes": "Reiner Gamma remains a separate lower-priority candidate. Official SPICE can re-attest geometry but cannot turn camera code values into Hansen's perception."
+  }
+}

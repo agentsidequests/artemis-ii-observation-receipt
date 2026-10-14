@@ -1,0 +1,199 @@
+{
+  "manifest_id": "artemis2-stage2b-saw3-source-manifest-v1",
+  "bundle_lidvid": "urn:nasa:pds:artemis2_orion_camera::1.0",
+  "archive_base": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/",
+  "files": [
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016278_saw3_src_v01.jpg",
+      "bytes": 2453511,
+      "sha256": "dc8dba2e837c406cb6dd349980e102e29e4a9e5e52df6f63c2ecbd4de831186f"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016278_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "bae9718a8eb4b9a72160ba6d19af7623cd67b8b5508bffa49c9f1cbcabd6c59e"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016279_saw3_src_v01.jpg",
+      "bytes": 2443826,
+      "sha256": "95faeed31fc4c6b16bcbf47f82ccdfa57e5529d5dbc1dcacf8060e6801627cfb"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016279_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "c360c4ed6eb464a28453da2a42bf204445418c332e4dfb85ad654ac2bdc230ee"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016280_saw3_src_v01.jpg",
+      "bytes": 2446204,
+      "sha256": "66d50ab8139d88bf37d018c1d6af316fe44b63636b0f657ddb4b7536377cf886"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016280_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "390efca2aaff70f47a0e2d19c5c3ea5e6d12dff41d0375449c72443e5d67c244"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016281_saw3_src_v01.jpg",
+      "bytes": 2445598,
+      "sha256": "71895288551747841d18e82593d32480bf15c1753b8b32e3440c9e9c78c88360"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016281_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "11d62cad04b17ce4e67bf244efc86648f781a0fca012e02839009b10a9ff33ab"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e009567_saw3_src_v01.jpg",
+      "bytes": 2471037,
+      "sha256": "2e68417c2dd59364240624124a4f85253fa0db719c45f2200e9714ca05b2ec70"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e009567_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "89f680f4a833127b1a435024e08d13eb3e6d586384e7735cb616eac22e999985"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016282_saw3_src_v01.jpg",
+      "bytes": 2444061,
+      "sha256": "1ec55d827d47cf934eb6789189403841a2484a111cc6190af3a2de0305fe2a2d"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016282_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "cb3cd3fc1c92e8cf8222febbbff4081d4190d19fbe48fcd4d76decad3b93efac"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016283_saw3_src_v01.jpg",
+      "bytes": 2424778,
+      "sha256": "83ed5dfa69f9e784993b212e7becba6b3bf9c8bbe2d9d1bda1eb4478e7b0b95d"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016283_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "23013c0cdbd9abc42cc03902f943247404fbebf3c8b62adf72bd37c0c7647697"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016284_saw3_src_v01.jpg",
+      "bytes": 2427252,
+      "sha256": "4d54792fa0e8d436df2a902937037808e9283affe679258826c9a243a860b994"
+    },
+    {
+      "event_id": "earthset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016284_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "3d54553138c63e5085be0017dca4a78c832db5ad16e1c0a41a125b499bdafd6c"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016305_saw3_src_v01.jpg",
+      "bytes": 2530344,
+      "sha256": "7c7dd8eb4629b8b44a90ba5cc19103ee878b6a9cdfbd98b9ae0b43459dc78ae3"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016305_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "e151c73fa0e30e04a1833f8bf70b72435cb517d28bad0a07d513f06b829dd246"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016306_saw3_src_v01.jpg",
+      "bytes": 2483654,
+      "sha256": "c6363704e1dac28bce59b63a705ffc3d29019dd68c24c664148f31888b565ab9"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016306_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "83e901519552f65646d9e547422069df44097725c2ce09353940199c62faea72"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e009569_saw3_src_v01.jpg",
+      "bytes": 2193764,
+      "sha256": "bd5255040ccb8de36e0932e3b182713038b826de9536abc6aeb652fde6c193b4"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e009569_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "ed506b265d0e04aa15fb2ae7d0182fd73e3a45bdf0e779887f4080e96f9576cd"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_image",
+      "path": "evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016307_saw3_src_v01.jpg",
+      "bytes": 2397108,
+      "sha256": "26c81c1728cbc4323659e4b392344b6d50ed26042cc59a273b12f07d18820073"
+    },
+    {
+      "event_id": "sunset",
+      "kind": "browse_label",
+      "path": "evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016307_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "2df1ceaeb9a5368772f37ab5cf341c9d094ad377ad74e8559982a1d756ec91f5"
+    }
+  ]
+}

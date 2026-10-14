@@ -1,0 +1,302 @@
+{
+  "testbed_id": "artemis2-flash-exposure-audit-stage11n",
+  "version": "1.2.0",
+  "formed_at_utc": "2026-10-10T22:30:00Z",
+  "question": "What do the five crew-confirmed lunar flashes establish, what do they not establish about impact flux, and what measurement and release design would close the gap?",
+  "terminal_objective": "Turn the flash record into a defensible, decision-useful evidence receipt and explicit recommendations without overstating timing, photometry, event rate, impactor size, or novelty.",
+  "baseline": "A count-led reading treats five flashes in a short period as a rate signal and treats a later 30 fps video null as if it tested the reported events.",
+  "treatment": "Bind the crew transcripts, annotated event ledger, NASA report, camera label, prior archive checks, and established lunar-flash survey methods into a time-aware exposure audit.",
+  "oracle": "Pass only when exact source identities hold, five annotated events and eight witness marks are reproduced, the 30 fps video is proven to begin after the five-event ledger existed, the distance calculation is labeled as an observing-geometry illustration, and every prohibited inference remains false.",
+  "authority": "Private local evidence synthesis only. No publication, outreach, instrument acceptance, mission decision, new impact confirmation, calibrated flux estimate, or independent specialist review.",
+  "acceptance_owner": "Paul",
+  "source_contract": [
+    {
+      "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "bytes": 36880,
+      "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+      "role": "Crew PCD transcript with real-time flash reports"
+    },
+    {
+      "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+      "bytes": 115230,
+      "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+      "role": "Operations loop transcript with live count and post-flyby conference"
+    },
+    {
+      "path": "evidence/stage11n/source/art002e016252_pcd_ann_v01.pdf",
+      "bytes": 300593,
+      "sha256": "7960afcc22b823b172b6873ff4cf8455664b6f91da565afaf913f42d21710227",
+      "role": "Official crew annotation PDF"
+    },
+    {
+      "path": "evidence/stage11n/source/art002e016252_pcd_ann_v01.xml",
+      "bytes": 4036,
+      "sha256": "2e197a59093b63a216b93319f94743019d9bcdc61dd8c1a4e04ee163aa1b8e66",
+      "role": "Official crew annotation product label"
+    },
+    {
+      "path": "evidence/stage11n/source/art002e016252-impactflash-annotation-cropped.jpg",
+      "bytes": 119645,
+      "sha256": "df6068fe680e21ff59492d086acb8915a332d1fca34b5295d4952940e1eb449d",
+      "role": "NASA-rendered annotation image"
+    },
+    {
+      "path": "evidence/stage11n/source/art002m1200970119_saw3_raw_v01.xml",
+      "bytes": 10593,
+      "sha256": "c094373729e6cbc11a5d34f0f195e231b453e8ee196e66abc9df46d0b5b0b18d",
+      "role": "PDS label for the assessed 30 fps SAW3 video"
+    },
+    {
+      "path": "evidence/stage11n/source/artemis-ii-preliminary-report-flash-pages.txt",
+      "bytes": 28013,
+      "sha256": "0a619736de266fd8091fea010ef7fef28ff21dc211615e74961535932dff8d92",
+      "role": "Page-preserving extract of the NASA preliminary science report"
+    },
+    {
+      "path": "evidence/stage11n/source/nasa-preliminary-report-feature.html",
+      "bytes": 457752,
+      "sha256": "27b1b421db5a137a9c39451b1e31f1314a71d1485f01cb00da87549bce7eb1e7",
+      "role": "NASA feature with observer key, annotation description, and 46,000 mile range"
+    },
+    {
+      "path": "evidence/stage11n/source/nasa-volunteers-lunar-flashes.html",
+      "bytes": 282867,
+      "sha256": "4de4e7b7aff2f70ec94b6b0d402ffba01249d9a3d010cb5c940321ca7698d0c8",
+      "role": "NASA citizen-science update distinguishing a submitted candidate from a confirmed match"
+    },
+    {
+      "path": "evidence/stage11n/source/nasa-moon-facts.html",
+      "bytes": 312709,
+      "sha256": "6025a923a05bb572053d761f9308ffa98563812fc9363650026e533214c38f28",
+      "role": "NASA lunar radius and average Earth-Moon distance"
+    },
+    {
+      "path": "evidence/stage11n/source/nasa-lunar-impact-monitoring-2024.txt",
+      "bytes": 5523,
+      "sha256": "d94147aa3c3c517ffaf3bd1c0a422ec86d774354a05d0fe13ef549fc89cbf904",
+      "role": "NASA Meteoroid Environment Office survey method and completeness benchmark"
+    },
+    {
+      "path": "evidence/stage11n/source/neliota-wide-field-high-cadence.txt",
+      "bytes": 76776,
+      "sha256": "c147cc0d0a28ba5e347a3bd6c6406dfb80272efaa8762d59a843d12ffc8936d4",
+      "role": "NELIOTA twin-band survey and injection-recovery benchmark"
+    },
+    {
+      "path": "evidence/stage11n/source/suggs-flux-kilogram-meteoroids.txt",
+      "bytes": 80358,
+      "sha256": "4592522f6ed217b815c9cc81b5c95adf87168588d1ab8766f2f8a762de860711",
+      "role": "Peer-reviewed NASA survey denominator and flux method"
+    },
+    {
+      "path": "results/stage4a-verification.json",
+      "bytes": 71171,
+      "sha256": "4722ff5c0b343b6463a0d0fcc8e6ea85fc77cc876fbf63be998be26cd2df50e0",
+      "role": "Prior official-label camera coverage audit"
+    },
+    {
+      "path": "results/stage5a-verification.json",
+      "bytes": 28391,
+      "sha256": "b37496303b8d9fb07846b594b5393234adf4b9a9afb955ada0207c4777afe4cf",
+      "role": "Prior bounded video transport receipt"
+    },
+    {
+      "path": "evidence/stage11o/acquisition-receipt.json",
+      "bytes": 32946,
+      "sha256": "84e2514779b8337f4c57b1502e76c70cf9cb14b64d53212205c813dc33c4690c",
+      "role": "Bounded extraction receipt for the 15-second SAW3 overlap interval"
+    },
+    {
+      "path": "evidence/stage11o/derived/art002m1010962338_saw3_005110_005125_stage11o.mp4",
+      "bytes": 666376,
+      "sha256": "a2dc14c6060de9bb8858d4d9d49b207c99d6dacdd5943fb84bb3448f67762eec",
+      "role": "Verified bounded contextual clip spanning the shared crew report"
+    },
+    {
+      "path": "results/stage11p-overlap-pixel-screen.json",
+      "bytes": 30546,
+      "sha256": "7ab93b078e45fc5b381faa861373ccf51a2918a833dad0d5bff13fe810191af2",
+      "role": "Contextual pixel-footprint and pulse-screen receipt"
+    },
+    {
+      "path": "evidence/stage11p/report-frame.png",
+      "bytes": 4746,
+      "sha256": "a7aac2ad6c41967a7376a4fc06a2a6979b06db284a36d4111a26e7be0782cc44",
+      "role": "Report-time frame used for the threshold-defined lunar footprint"
+    }
+  ],
+  "annotation_events": [
+    {
+      "event_id": 1,
+      "observers": [
+        "Reid Wiseman"
+      ],
+      "annotation_note": "blue mark; central near 4 o'clock"
+    },
+    {
+      "event_id": 2,
+      "observers": [
+        "Reid Wiseman",
+        "Jeremy Hansen"
+      ],
+      "annotation_note": "blue and red marks; circled; near 8 o'clock"
+    },
+    {
+      "event_id": 3,
+      "observers": [
+        "Jeremy Hansen"
+      ],
+      "annotation_note": "red mark; near 3 o'clock"
+    },
+    {
+      "event_id": 4,
+      "observers": [
+        "Reid Wiseman",
+        "Jeremy Hansen",
+        "Victor Glover"
+      ],
+      "annotation_note": "blue, red, and green marks; circled; later; near 6 o'clock"
+    },
+    {
+      "event_id": 5,
+      "observers": [
+        "Reid Wiseman"
+      ],
+      "annotation_note": "blue mark; towards end; near 12 o'clock"
+    }
+  ],
+  "transcript_anchors": {
+    "first_clear_candidate_utc": "2026-04-07T00:41:00.680Z",
+    "shared_candidate_utc": "2026-04-07T00:51:15.947Z",
+    "ambiguous_candidate_utc": "2026-04-07T00:52:52.411Z",
+    "later_clear_candidate_utc": "2026-04-07T00:59:18.291Z",
+    "last_clear_candidate_utc": "2026-04-07T01:03:04.906Z",
+    "annotation_ledger_utc": "2026-04-07T01:04:00.000Z"
+  },
+  "distance_inputs": {
+    "orion_to_moon_miles": 46000.0,
+    "average_earth_to_moon_miles": 238855.0,
+    "moon_radius_km": 1740.0,
+    "interpretation": "Approximate inverse-square point-source geometry only. It is not photometric calibration and does not establish flash luminosity, impactor size, or detection completeness."
+  },
+  "survey_benchmarks": {
+    "nasa_meo_2024": {
+      "field_of_view_km2": 4000000,
+      "completeness_magnitude": 9.0,
+      "approximate_mass_at_sporadic_20_km_s_grams": 30,
+      "confirmation_rule": "simultaneous detections in both telescopes",
+      "reported_impacts_as_of_2024": 443
+    },
+    "suggs_2014": {
+      "photometric_quality_hours": 266.88,
+      "collecting_area_km2": 3800000,
+      "completeness_magnitude": 9.0,
+      "reported_flux_km2_hour": 1.03e-07
+    },
+    "neliota": {
+      "frame_rate_fps": 30,
+      "simultaneous_bands": 2,
+      "exposure_hours": 54,
+      "reported_flux_km2_hour": 1.96e-07,
+      "injection_recovery": {
+        "completeness_98_percent_magnitude": 10.4,
+        "completeness_50_percent_magnitude": 11.4,
+        "completeness_2_percent_magnitude": 12.4
+      }
+    }
+  },
+  "required_nasa_findings": [
+    "Five distinct impact flashes were reported",
+    "several additional impact flashes",
+    "observed simultaneously by multiple crew members",
+    "distinct from other transient phenomena",
+    "No impact flashes were detected",
+    "high-frame-rate, high-dynamic-range imaging",
+    "passive audio-recording capability",
+    "timestamp synchronization across all science-relevant systems"
+  ],
+  "claim_boundaries": {
+    "five_events_are_calibrated_flux": false,
+    "conservative_count_floor_is_promoted_to_completeness_corrected_flux": false,
+    "no_screened_pulse_excludes_crew_event": false,
+    "later_30fps_null_is_simultaneous_event_non_detection": false,
+    "transcript_candidates_map_one_to_one_to_annotation_events": false,
+    "observer_overlap_supports_capture_recapture_estimate": false,
+    "centimeter_scale_is_independently_measured": false,
+    "citizen_candidate_is_confirmed_ground_match": false,
+    "recommendations_are_globally_novel": false,
+    "nasa_existing_recommendations_are_omitted": false
+  },
+  "recommendations": [
+    {
+      "id": "R1",
+      "name": "Continuous event-window coverage",
+      "requirement": "Run the dedicated impact sensor continuously across the complete dark-lunar observing interval, including pre-roll and post-roll, and publish verified live time.",
+      "acceptance": "Every crew event marker is either covered by calibrated frames or explicitly labeled uncovered with a reason."
+    },
+    {
+      "id": "R2",
+      "name": "Independent optical confirmation",
+      "requirement": "Use two synchronized optical channels, separate detectors, or an equivalent independent discriminator so detector artifacts and spacecraft glints can be rejected.",
+      "acceptance": "The release records channel-level hits and the confirmation rule for every candidate."
+    },
+    {
+      "id": "R3",
+      "name": "Spacecraft-clock event bookmarks",
+      "requirement": "Give each observer a voice or button event marker bound to the spacecraft master clock and a rolling pre-trigger and post-trigger buffer.",
+      "acceptance": "Event, audio, camera, suit, PCD, and spacecraft times reconcile within a published maximum error."
+    },
+    {
+      "id": "R4",
+      "name": "Human exposure ledger",
+      "requirement": "Record observer, window, eyes-on-target intervals, target region, cabin illumination, dark-adaptation interruptions, and known reflections.",
+      "acceptance": "The release provides observer live time and the conditions needed to model human detection probability."
+    },
+    {
+      "id": "R5",
+      "name": "Injection-recovery completeness",
+      "requirement": "Inject synthetic flashes into representative flight backgrounds and publish recovery probability by brightness, duration, position, background, and channel.",
+      "acceptance": "A versioned completeness surface accompanies any rate or flux claim."
+    },
+    {
+      "id": "R6",
+      "name": "Candidate-level evidence receipt",
+      "requirement": "Publish confirmed, ambiguous, and rejected candidates with observer marks, coverage, detector results, timing uncertainty, location uncertainty, and final disposition.",
+      "acceptance": "A reader can trace every headline count to its evidence and see why excluded candidates were excluded."
+    },
+    {
+      "id": "R7",
+      "name": "Effective area-time release",
+      "requirement": "Publish the brightness-dependent integral of detection probability over monitored lunar area and live time, not just duration or event count.",
+      "acceptance": "Flux can be recomputed from candidate count and a machine-readable effective area-time curve."
+    },
+    {
+      "id": "R8",
+      "name": "Target-scale sampling requirement",
+      "requirement": "Set the sensor field of view and angular sampling from predeclared localization and photometry objectives, then publish plate scale, point-spread behavior, and window effects across the lunar disk.",
+      "acceptance": "An end-to-end flightlike test recovers injected flashes across the disk and reports brightness and location errors at the required detection threshold."
+    }
+  ],
+  "hard_negatives": [
+    "call_five_a_flux_estimate",
+    "promote_count_floor_to_completeness_corrected_flux",
+    "promote_no_screened_pulse_to_event_exclusion",
+    "call_high_speed_camera_simultaneous",
+    "force_one_to_one_event_mapping",
+    "use_capture_recapture_estimate",
+    "call_cm_size_measured",
+    "call_citizen_candidate_confirmed_match",
+    "call_global_novelty",
+    "omit_nasa_existing_recommendations"
+  ],
+  "claim_ceiling": "Stage 11N may establish exact public-source identities, the annotated witness pattern, transcript anchor times, a later non-overlapping 30 fps null window, a contextual 60 fps clip spanning one transcript report, a threshold-defined ten-pixel lunar footprint in that transcoded clip, the absence of a screened pulse under the frozen rule, an approximate distance-based visibility advantage, a conservative all-lunar one-hour detected-count floor under explicit assumptions, the absence of a public calibrated exposure denominator, NASA's candidate-level description of a volunteer image, and a source-grounded measurement design. It cannot promote the pixel screen to source photometry or an event exclusion, promote the count floor to a completeness-corrected or brightness-threshold flux or an independently measured impact rate, establish a calibrated impactor-size distribution, assign exact one-to-one timing to all five annotated events, claim a simultaneous camera non-detection of any confirmed event, confirm a ground match to a crew event, independently prove the cause of every candidate, establish instrument flight readiness, claim NASA acceptance, or claim global novelty.",
+  "next_step_logic": {
+    "if_sources_and_boundaries_verify": "Use the receipt to strengthen the analysis around the exposure-denominator gap and the later-camera timing result.",
+    "if_a_source_identity_changes": "Stop citation of the saved receipt, re-freeze the changed source, rerun the audit, and explain whether any conclusion changed.",
+    "if_a_public_calibrated_denominator_is_found": "Replace the no-rate conclusion with a brightness-thresholded effective area-time calculation and uncertainty analysis.",
+    "if_source_pixel_photometry_is_needed": "Design a separate bounded packet-preserving extraction and calibration analysis; do not promote the transcoded contextual screen.",
+    "if_ground_candidates_are_found": "Treat them as candidates until time, geometry, bandpass, and independent-detection criteria match a crew event.",
+    "if_external_acceptance_is_needed": "Provide the evidence receipt and exact sources to a lunar-impact specialist; do not relabel this local synthesis as independent scientific review.",
+    "recheck_trigger": "Any revised NASA report, newly released event-level timing or photometry, calibrated sensor data, ground correlation, or specialist review."
+  }
+}

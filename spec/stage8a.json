@@ -1,0 +1,125 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-reflectance-canary-stage8a",
+  "version": "1.1.0",
+  "formed_at_utc": "2026-10-09T22:14:19Z",
+  "question": "Does Hansen's prospectively frozen judgment that Glushko and Ohm rays looked very similar, with Glushko slightly brighter, agree with a symmetric local-background contrast in the official empirically normalized LROC WAC 566 nm mosaic?",
+  "terminal_objective": "Test the strongest surviving cross-axis Artemis II candidate without tracing rays from outcome pixels or pooling it with the LOLA roughness lane.",
+  "baseline": "The apparent similarity and half-point direction may reflect viewing geometry, substrate, subjective scale use, named-ray selection, or chance. No WAC concordance is assumed.",
+  "treatment": "Use the same crater-normalized annulus for both targets, define each ray axis from the crater center toward the independently named Aristarchus Plateau center, compare the ray sector with two same-radius flanking sectors, and score only the frozen 566 nm endpoint.",
+  "semantic_evidence": {
+    "path": "evidence/stage8a/semantic-coding.json",
+    "sha256": "92c2f867cbdce91922d8b88768dddfaff5b2b2a280a8e9c0825ce61db97acc21",
+    "must_be_frozen_before_wac_value_access": true,
+    "primary_claim": "Glushko and Ohm ray brightness is similar",
+    "secondary_direction": "Glushko rays are slightly brighter than Ohm rays"
+  },
+  "source_documentation": {
+    "title": "LROC Empirically Normalized Wide Angle Camera Mosaic Data Record",
+    "publisher": "NASA PDS / Washington University ODE",
+    "url": "https://ode.rsl.wustl.edu/moon/pagehelp/content/missions_instruments/lro/lroc/MDR/MDREMP.htm",
+    "dataset_id": "LRO-L-LROC-5-RDR-V1.0",
+    "normalization_geometry": "30 degree incidence, 0 degree emission, 30 degree phase",
+    "composite": "median of repeated normalized observations",
+    "band_reason": "566 nm is the available WAC channel closest to peak human photopic sensitivity; it is frozen as a bounded reflectance proxy, not a reconstruction of the crew's complete visual stimulus."
+  },
+  "source_products": [
+    {
+      "id": "wac_emp_566nm_e300n2250_064p",
+      "target": "ohm",
+      "logical_identifier": "urn:nasa:pds:lro-l-lroc-5-rdr:lrolrc_2001_data:mdr.wac_emp.wac_emp_566nm_e300n2250_064p",
+      "version_id": "2.0",
+      "img_url": "https://pds.lroc.asu.edu/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/MDR/WAC_EMP/WAC_EMP_566NM_E300N2250_064P.IMG",
+      "label_url": "https://pds.lroc.asu.edu/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/MDR/WAC_EMP/WAC_EMP_566NM_E300N2250_064P.xml",
+      "remote_file_bytes": 88496640,
+      "remote_md5": "eafe02990a435d2160611895bd1a674e",
+      "tile_bounds_deg": {"west": 180.0, "east": 270.0, "north": 60.0, "south": 0.0},
+      "line_range_zero_based_inclusive": [2381, 2953],
+      "byte_range_inclusive": [54881280, 68083199]
+    },
+    {
+      "id": "wac_emp_566nm_e300n3150_064p",
+      "target": "glushko",
+      "logical_identifier": "urn:nasa:pds:lro-l-lroc-5-rdr:lrolrc_2001_data:mdr.wac_emp.wac_emp_566nm_e300n3150_064p",
+      "version_id": "2.0",
+      "img_url": "https://pds.lroc.asu.edu/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/MDR/WAC_EMP/WAC_EMP_566NM_E300N3150_064P.IMG",
+      "label_url": "https://pds.lroc.asu.edu/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/MDR/WAC_EMP/WAC_EMP_566NM_E300N3150_064P.xml",
+      "remote_file_bytes": 88496640,
+      "remote_md5": "ea07ec76717f8d1ad05f35b0296e5e27",
+      "tile_bounds_deg": {"west": 270.0, "east": 360.0, "north": 60.0, "south": 0.0},
+      "line_range_zero_based_inclusive": [3134, 3507],
+      "byte_range_inclusive": [72230400, 80847359]
+    }
+  ],
+  "raster_contract": {
+    "header_bytes": 23040,
+    "lines": 3840,
+    "line_samples": 5760,
+    "physical_row_bytes": 23040,
+    "data_type": "IEEE754LSBSingle",
+    "sample_bytes": 4,
+    "map_resolution_pixels_per_degree": 64,
+    "pixel_registration": "Pixel centers are half a pixel inside the label bounds: longitude = west + (sample + 0.5) / 64; latitude = north - (line + 0.5) / 64.",
+    "valid_value_rule": "Use finite reflectance values greater than 0 and at most 1; reject PDS special constants and nonphysical values."
+  },
+  "geometry": {
+    "moon_radius_km": 1737.4,
+    "axis_rule": "Initial great-circle bearing from each official crater center to the official Aristarchus Plateau center.",
+    "primary_annulus_crater_radii": [1.5, 3.0],
+    "primary_ray_sector_half_width_deg": 10.0,
+    "background_flank_center_offsets_deg": [-30.0, 30.0],
+    "background_flank_half_width_deg": 10.0,
+    "robustness_annuli_crater_radii": [[1.25, 2.5], [1.5, 3.0], [2.0, 4.0]],
+    "robustness_sector_half_widths_deg": [8.0, 10.0, 12.0],
+    "pixel_rule": "Use each valid pixel center whose great-circle distance and initial bearing place it inside the frozen annulus and sector. Pool both non-overlapping flanks as the local background.",
+    "minimum_valid_pixels_per_ray_sector": 500,
+    "minimum_valid_pixels_per_pooled_background": 1000
+  },
+  "endpoint": {
+    "band_nm": 566,
+    "primary_metric": "local_contrast = (median(ray_sector_reflectance) - median(pooled_flank_reflectance)) / median(pooled_flank_reflectance)",
+    "similarity_metric": "min(glushko_local_contrast, ohm_local_contrast) / max(glushko_local_contrast, ohm_local_contrast), defined only when both contrasts are positive",
+    "descriptive_only": true
+  },
+  "oracle": {
+    "minimum_local_contrast_each": 0.05,
+    "minimum_primary_similarity_ratio": 0.75,
+    "require_primary_glushko_greater_than_ohm": true,
+    "robustness_cells": 9,
+    "minimum_robustness_cells_meeting_contrast_and_similarity": 5,
+    "minimum_robustness_cells_with_glushko_greater_than_ohm": 5,
+    "pass_state": "LOCAL_REFLECTANCE_CONCORDANCE",
+    "partial_state": "PARTIAL_REFLECTANCE_CONCORDANCE",
+    "fail_state": "NO_REFLECTANCE_CONCORDANCE",
+    "indeterminate_state": "INDETERMINATE_SOURCE_OR_GEOMETRY"
+  },
+  "acquisition": {
+    "metadata_phase": "Read the two PDS4 science labels after formation to bind product identity, float representation, projection, dimensions, bounds, special constants, and row geometry; labels do not contain scored pixels.",
+    "value_phase": "Use one HTTP byte-range request per science IMG for the smallest complete latitude-row strip covering each target's maximum four-crater-radius robustness region. Do not access full IMGs, browse TIFFs or PNGs, pyramid TIFFs, masks, alternate bands, or imagery during region selection.",
+    "maximum_total_img_bytes": 21900000,
+    "maximum_total_label_bytes": 30000,
+    "maximum_total_network_bytes": 21930000,
+    "required_http_status": 206,
+    "require_content_range": true,
+    "scored_network_bytes_in_verification": 0,
+    "replay": "Verification runs only from hash-pinned local science labels, bounded IMG row strips, and the acquisition receipt."
+  },
+  "hard_negatives": [
+    "access_wac_values_before_semantic_freeze",
+    "trace_ray_sectors_from_brightness_pixels",
+    "use_crew_clock_direction_as_map_bearing",
+    "compare_unequal_crater_normalized_annuli",
+    "omit_local_background_flanks",
+    "select_only_successful_robustness_cells",
+    "change_band_after_outcome",
+    "weaken_threshold_after_outcome",
+    "claim_pixel_independence_or_statistical_significance",
+    "claim_causation_novelty_or_publishable_science"
+  ],
+  "claim_ceiling": "A pass would establish only bounded cross-axis concordance between one astronaut's same-session ordinal comparison and one frozen 566 nm local-contrast proxy for two named ray sectors. It would not reconstruct the crew's viewing geometry or spectral stimulus, establish causal perception, control geology or substrate completely, establish observer generality, make raster pixels independent samples, show statistical significance, demonstrate scientific novelty, validate ray boundaries beyond the named-axis proxy, or create a publishable scientific result.",
+  "next_step_logic": {
+    "if_pass": "Retain the result as a stronger private canary. Before any public or scientific claim, require one independent observation or endpoint that was not used to choose the geometry, plus specialist review of the photometric and geologic controls.",
+    "if_partial": "Retain the exact split between similarity, local contrast, and direction. Do not rewrite the astronaut claim or thresholds; decide whether a second independently frozen band or observation could discriminate the mismatch.",
+    "if_fail": "Stop the Glushko-Ohm reflectance lane and preserve the transcript observation as qualitative only.",
+    "if_indeterminate": "Repair only a named source identity, label, or projection defect without changing the semantic claim, regions, band, or oracle; otherwise stop."
+  }
+}

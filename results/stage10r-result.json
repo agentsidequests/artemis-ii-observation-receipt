@@ -1,0 +1,1091 @@
+{
+  "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_CROSS_CAMERA_CROSS_FACET_OBSERVATION_EPISODE",
+  "episode": {
+    "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+    "secondary_cluster_ids": [
+      "a2-t5s-ef6f756db2ab3f650e8f0001",
+      "a2-t5s-c5d11d84256eb6c6958733c7",
+      "a2-t5s-683aafd93b4de35ecd939ec6"
+    ],
+    "secondary_cluster_count": 3,
+    "primary_camera": "3500015",
+    "secondary_camera": "3920019",
+    "primary_activity": "24_Sunset",
+    "secondary_activity_ids": [
+      "24_Sunset",
+      "h_Observation Break"
+    ],
+    "shared_target": "Sunset",
+    "secondary_products": 780,
+    "secondary_capture_identities": 260,
+    "secondary_complete_actions": 52,
+    "secondary_archive_size_bytes": 102487188104,
+    "secondary_transcript_utterances": 24,
+    "combined_products": 2010,
+    "combined_capture_identities": 670,
+    "combined_complete_actions": 134,
+    "combined_archive_size_bytes": 177543697399,
+    "cohort_product_share": 0.088088351301604,
+    "cohort_capture_share": 0.088088351301604,
+    "cohort_action_share": 0.061865189289012,
+    "cohort_byte_share": 0.10923874547809825,
+    "distinct_cameras": 2,
+    "distinct_activity_ids": 2
+  },
+  "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+  "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+    "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+    "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+    "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+  },
+  "checks": [
+    {
+      "id": "prior_episode_receipts",
+      "pass": true
+    },
+    {
+      "id": "cross_camera_cross_facet_episode",
+      "pass": true,
+      "derived": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "nested": true
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "episode_kind": "time_bounded_cross_camera_observation_episode",
+        "visual_redundancy_established": false,
+        "activity_labels_incorrect": false,
+        "speaker_camera_attribution": false,
+        "result_kind": "structural_dependence_hazard",
+        "scope": "one_verified_cohort_episode",
+        "performance_effect_inferred": false,
+        "scientific_discovery_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_episode_a_semantic_scene": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "call_episode_a_semantic_scene",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "semantic_scene",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": false,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "call_images_duplicates_or_visually_redundant": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "call_images_duplicates_or_visually_redundant",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": true,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": false,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "call_activity_labels_incorrect": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "call_activity_labels_incorrect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": true,
+            "speaker_camera_attribution": false,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "attribute_cameras_to_named_speakers": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "attribute_cameras_to_named_speakers",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": true,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "call_cross_camera_relation_observed_leakage": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "call_cross_camera_relation_observed_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": false,
+            "result_kind": "observed_leakage",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "generalize_episode_to_archive": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "generalize_episode_to_archive",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": false,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "all_archive_products",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "infer_model_performance_effect": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "infer_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": false,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": true,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "claim_scientific_discovery_or_priority": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "claim_scientific_discovery_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": false,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_cross_camera_canary": {
+      "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+      "mutation": "open_pixels_for_cross_camera_canary",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "episode": {
+        "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "secondary_cluster_ids": [
+          "a2-t5s-ef6f756db2ab3f650e8f0001",
+          "a2-t5s-c5d11d84256eb6c6958733c7",
+          "a2-t5s-683aafd93b4de35ecd939ec6"
+        ],
+        "secondary_cluster_count": 3,
+        "primary_camera": "3500015",
+        "secondary_camera": "3920019",
+        "primary_activity": "24_Sunset",
+        "secondary_activity_ids": [
+          "24_Sunset",
+          "h_Observation Break"
+        ],
+        "shared_target": "Sunset",
+        "secondary_products": 780,
+        "secondary_capture_identities": 260,
+        "secondary_complete_actions": 52,
+        "secondary_archive_size_bytes": 102487188104,
+        "secondary_transcript_utterances": 24,
+        "combined_products": 2010,
+        "combined_capture_identities": 670,
+        "combined_complete_actions": 134,
+        "combined_archive_size_bytes": 177543697399,
+        "cohort_product_share": 0.088088351301604,
+        "cohort_capture_share": 0.088088351301604,
+        "cohort_action_share": 0.061865189289012,
+        "cohort_byte_share": 0.10923874547809825,
+        "distinct_cameras": 2,
+        "distinct_activity_ids": 2
+      },
+      "verified": "The transcript-aligned Sunset episode contains four overlapping same-camera capture runs from two cameras and two activity facets. Together they produce 2,010 products representing 670 exposures and 134 actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort; 24 transcript utterances fall inside the three nested second-camera runs.",
+      "decision_use": "Use this as the concrete reason that file, exposure, action, camera, activity facet, and observation episode are different possible evaluation units. The task's dependence oracle must choose among them.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB\u20148.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+        "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+        "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+        "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "prior_episode_receipts",
+          "pass": true
+        },
+        {
+          "id": "cross_camera_cross_facet_episode",
+          "pass": true,
+          "derived": {
+            "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "secondary_cluster_ids": [
+              "a2-t5s-ef6f756db2ab3f650e8f0001",
+              "a2-t5s-c5d11d84256eb6c6958733c7",
+              "a2-t5s-683aafd93b4de35ecd939ec6"
+            ],
+            "secondary_cluster_count": 3,
+            "primary_camera": "3500015",
+            "secondary_camera": "3920019",
+            "primary_activity": "24_Sunset",
+            "secondary_activity_ids": [
+              "24_Sunset",
+              "h_Observation Break"
+            ],
+            "shared_target": "Sunset",
+            "secondary_products": 780,
+            "secondary_capture_identities": 260,
+            "secondary_complete_actions": 52,
+            "secondary_archive_size_bytes": 102487188104,
+            "secondary_transcript_utterances": 24,
+            "combined_products": 2010,
+            "combined_capture_identities": 670,
+            "combined_complete_actions": 134,
+            "combined_archive_size_bytes": 177543697399,
+            "cohort_product_share": 0.088088351301604,
+            "cohort_capture_share": 0.088088351301604,
+            "cohort_action_share": 0.061865189289012,
+            "cohort_byte_share": 0.10923874547809825,
+            "distinct_cameras": 2,
+            "distinct_activity_ids": 2
+          },
+          "nested": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_cross_camera_observation_episode",
+            "visual_redundancy_established": false,
+            "activity_labels_incorrect": false,
+            "speaker_camera_attribution": false,
+            "result_kind": "structural_dependence_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, label, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

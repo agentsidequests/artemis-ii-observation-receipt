@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1Q00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1Q00_19B0.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1Q00_1330.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn_surface/v1/PDS4_MSN_SURFACE_1Q00_1310.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/av/v1/PDS4_AV_1Q00_1010.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/cots_camera/v1/PDS4_COTS_CAMERA_1Q00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:av="http://pds.nasa.gov/pds4/av/v1" 
+    xmlns:cots_camera="http://pds.nasa.gov/pds4/cots_camera/v1" 
+    xmlns:geom="http://pds.nasa.gov/pds4/geom/v1" 
+    xmlns:msn="http://pds.nasa.gov/pds4/msn/v1" 
+    xmlns:msn_surface="http://pds.nasa.gov/pds4/msn_surface/v1" 
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="   http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1Q00.xsd   http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1Q00_1330.xsd   http://pds.nasa.gov/pds4/msn_surface/v1 https://pds.nasa.gov/pds4/msn_surface/v1/PDS4_MSN_SURFACE_1Q00_1310.xsd   http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1Q00_19B0.xsd   http://pds.nasa.gov/pds4/av/v1 https://pds.nasa.gov/pds4/av/v1/PDS4_AV_1Q00_1010.xsd   http://pds.nasa.gov/pds4/cots_camera/v1 https://pds.nasa.gov/pds4/cots_camera/v1/PDS4_COTS_CAMERA_1Q00_1000.xsd   ">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:artemis2_mission_audio:data_transcripts_pcd:art002a000015_pcd3_trn-csv.csv</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Artemis 2 PCD Audio Transcript Observational Product</title>
+    <information_model_version>1.26.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Alias_List>
+      <Alias>
+        <alternate_id>art002a000015_pcd3_trn-csv_v01.csv</alternate_id>
+        <comment>VICAR PRODUCT_ID</comment>
+      </Alias>
+    </Alias_List>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2026-04-06T23:13:37.428Z</start_date_time>
+      <stop_date_time>2026-04-06T23:23:39.992Z</stop_date_time>
+    </Time_Coordinates>
+    <Investigation_Area>
+      <name>Artemis 2 Mission</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.artemis2</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+        <comment>This is the PDS4 logical identifier for the Artemis 2 Mission.</comment>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Artemis 2 Orion spacecraft</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.artemis2_orion</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+          <comment>This is the PDS4 logical identifier for the Artemis 2 spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Microsoft Surface Pro 5</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:multi-host.microsoft_surface_pro_5</lid_reference>
+          <reference_type>is_instrument</reference_type>
+          <comment>This is the PDS4 logical identifier for the Microsoft Surface Pro 5 onboard the Artemis 2 spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Moon</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+        <reference_type>data_to_target</reference_type>
+        <comment>This is the PDS4 logical identifier for the satellite - Moon.</comment>
+      </Internal_Reference>
+    </Target_Identification>
+    <Discipline_Area>
+      <msn_surface:Surface_Mission_Information>
+        <msn_surface:Command_Execution>
+          <msn_surface:observation_id>art002a000015</msn_surface:observation_id>
+        </msn_surface:Command_Execution>
+      </msn_surface:Surface_Mission_Information>
+    </Discipline_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>art002a000015_pcd3_trn-csv_v01.csv</file_name>
+      <local_identifier>art002a000015_pcd3_trn-csv.csv</local_identifier>
+      <creation_date_time>2026-09-20</creation_date_time>
+    </File>
+    <Table_Delimited>
+      <name>TABLE</name>
+      <local_identifier>table</local_identifier>
+      <offset unit="byte">29</offset>
+      <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+      <records>133</records>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <field_delimiter>Comma</field_delimiter>
+      <Record_Delimited>
+        <fields>4</fields>
+        <groups>0</groups>
+        <Field_Delimited>
+          <name>AUDIO_TIME</name>
+          <field_number>1</field_number>
+          <data_type>ASCII_String</data_type>
+          <description>Time of audio transcription</description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>UTC</name>
+          <field_number>2</field_number>
+          <data_type>ASCII_String</data_type>
+          <description>UTC date and time for audio transcription</description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>SPEAKER</name>
+          <field_number>3</field_number>
+          <data_type>ASCII_String</data_type>
+          <description>Identifies the speaker for the transcription</description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>TEXT</name>
+          <field_number>4</field_number>
+          <data_type>ASCII_String</data_type>
+          <description>Text of the audio transcription</description>
+        </Field_Delimited>
+      </Record_Delimited>
+    </Table_Delimited>
+  </File_Area_Observational>
+</Product_Observational>

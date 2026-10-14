@@ -1,0 +1,81 @@
+{
+  "testbed_id": "artemis2-observation-execution-stage2a-earthrise",
+  "version": "0.3.0",
+  "formed_at_utc": "2026-10-09T19:46:28Z",
+  "question": "What Earthrise interval is independently supported by the fixed Orion SAW Cam 3 sequence, and does the official OTR observation availability window contain or overlap it?",
+  "method": "Engineering Testbed",
+  "decisive_invariant": "Only a physical interval derived from hash-pinned fixed-camera images and their PDS4 timestamps may be compared with the OTR availability window; transcript wording and OTR endpoints may not define the image states.",
+  "claim_ceiling": "Window coverage or non-coverage for this one Earthrise sequence. No boundary-delay, causal, operational-impact, or mission-wide claim.",
+  "environment": {
+    "runtime_contract": "Python 3 standard library only for scored verification.",
+    "network_contract": "No network during scored verification.",
+    "timezone_contract": "All timestamps are UTC. No local-time conversion is permitted."
+  },
+  "oracle": {
+    "kind": "fixed_camera_image_state_transitions",
+    "camera": "Orion Solar Array Wing Camera 3",
+    "sampling_seconds": 30,
+    "classification_path": "evidence/stage2a/visual-classification.json",
+    "classification_sha256": "a189f9f5a48db532f9b0e71aad41f1abbfcefdd3bb1bd4a87dcf17e27eae3c85",
+    "contact_sheet_path": "evidence/stage2a/earthrise-saw3-contact-sheet.png",
+    "contact_sheet_sha256": "50b9b10faf9bf6d5a5c927caa08247fbe65bab838fadf16ae20b543432e0195d",
+    "source_manifest_path": "evidence/stage2a/source-manifest.json",
+    "source_manifest_sha256": "2cbdbf604bc6451a03aed33118e81fcb42f5f434fc632f744f1e364675cb8a2e",
+    "bundle_lidvid": "urn:nasa:pds:artemis2_orion_camera::1.0",
+    "bundle_url": "https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn:nasa:pds:artemis2_orion_camera&version=1.0",
+    "independence": "PARTIALLY_INDEPENDENT"
+  },
+  "otr": {
+    "path": "corpus/artemis2_outgoing_target_request.json",
+    "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+    "target": "Earthrise",
+    "field_semantics": "observation_availability_window",
+    "start_utc": "2026-04-06T23:25:30Z",
+    "end_utc": "2026-04-06T23:25:34.147844Z"
+  },
+  "expected_brackets": {
+    "first_visible_contact": {
+      "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+      "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+    },
+    "full_clearance": {
+      "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+      "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+    },
+    "stability_check_utc": "2026-04-06T23:23:44Z"
+  },
+  "expected_result": {
+    "coverage_relation": "AFTER_EVENT_NO_OVERLAP",
+    "minimum_separation_seconds": 136.0,
+    "availability_duration_seconds": 4.147844,
+    "evidence_state": "VERIFIED_NO_OVERLAP",
+    "disposition": "CONTINUE_BOUNDED_PATTERN_CHECK"
+  },
+  "admission_checks": [
+    "Every scored source file matches its frozen byte length and SHA-256.",
+    "Each browse label binds its JPEG to the corresponding raw-image logical identifier.",
+    "Every timestamp is read from a PDS4 raw-image data label and matches the frozen visual classification.",
+    "Frames are in strict 30-second cadence and the state sequence is NOT_VISIBLE, PARTIAL, PARTIAL, PARTIAL, FULL_CLEAR, FULL_CLEAR.",
+    "The full-clear classification is corroborated by a following stable frame.",
+    "The OTR values are read from the pinned source and retained as availability-window endpoints."
+  ],
+  "hard_negatives": [
+    "shift_image_timestamps_plus_300_seconds",
+    "label_pre_event_frame_partial",
+    "present_transcript_as_image_oracle",
+    "widen_availability_window_to_event"
+  ],
+  "spice_branch": {
+    "status": "NOT_ADMISSIBLE_AT_RUN_TIME",
+    "reason": "NASA PDS lists the Artemis II SPICE actual release as TBD; no archive bundle was available to pin.",
+    "calendar_url": "https://pds.nasa.gov/datasearch/subscription-service/data-release-calendar-2026.shtml",
+    "anticipated_release": "2026-10-10",
+    "actual_release": "TBD"
+  },
+  "next_step_logic": {
+    "recommended": "Run the same small, fixed-camera image-state coverage test for Earthset, Sunset, and Sunrise before any broad archive analysis.",
+    "why": "Earthrise now establishes a real non-overlap, but one event cannot distinguish an isolated planning choice from a repeated window-placement pattern.",
+    "alternative": "Re-attest Earthrise with the Artemis II SPICE bundle after NASA publishes an actual release.",
+    "fallback": "If the other event families do not reproduce the relation, pivot to Stage 3 target execution and attention allocation rather than widening the timing claim."
+  }
+}

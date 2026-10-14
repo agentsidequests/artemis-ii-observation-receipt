@@ -1,0 +1,101 @@
+{
+  "evidence_id": "artemis2-stage2c-source-extracts",
+  "version": "0.1.0",
+  "accessed_at_utc": "2026-10-09T21:25:42Z",
+  "extraction_method": "Exact NASA/PDS PDFs were reacquired and matched against the SHA-256 identities already frozen by Stage 1. Text was extracted with pypdf 6.10.0 using the bundled Codex document runtime. Only short decision-bearing extracts and bounded interpretations are retained here; the scored Stage 2C verifier is network-free.",
+  "sources": [
+    {
+      "id": "data_user_guide",
+      "document": "Artemis II Lunar Science Data User Guide",
+      "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_data_user_guide.pdf",
+      "sha256": "c4f5ab25363ca3f8fc17bb776e9fc90c19707c8a18c9255648aef34d6a7b0bd2",
+      "pdf_page": 46,
+      "locator": "Section 5.6.2, Outgoing Target Request",
+      "extract": "information about a target's observation availability window",
+      "interpretation": "The OTR start and end fields describe availability, not physical contact boundaries."
+    },
+    {
+      "id": "operations_report_timeline_manager",
+      "document": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+      "pdf_page": 17,
+      "locator": "Section 3.3.1.11, Timeline Manager",
+      "extract": "drafted the order and duration of LTP observations",
+      "interpretation": "Requested activity duration is a scheduling field, not the availability-window duration or an event-contact field."
+    },
+    {
+      "id": "operations_report_ltp_icons",
+      "document": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+      "pdf_page": 25,
+      "locator": "Section 5.1.2, Lunar Targeting Plan",
+      "extract": "a headset icon indicated targets requiring a science situation report",
+      "interpretation": "The sci_sit_rep field is an operational reporting requirement. The source does not map it to an availability-window boundary."
+    },
+    {
+      "id": "operations_report_delivery_lineage",
+      "document": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+      "pdf_page": 31,
+      "locator": "Table 6.1, Flight Days 02-04",
+      "extract": "CLO received post-TLI trajectory data; generated LEG",
+      "interpretation": "The operations sequence places post-TLI trajectory ingestion before the OTR draft and final LTP generation."
+    },
+    {
+      "id": "operations_report_leg_and_shift",
+      "document": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+      "pdf_page": 37,
+      "locator": "Section 6.3.1 and Figure 6.3",
+      "extract": "actual trajectory moved the flyby earlier by roughly 2 minutes",
+      "figure_actual_utc": "2026-04-06T22:33:56Z",
+      "figure_visualization_utc": "2026-04-06T22:36:30Z",
+      "figure_delta_seconds": 154,
+      "interpretation": "NASA documents one matched-view example in which the realized flyby was earlier than the post-TLI visualization. This is evidence for a testable timing-offset hypothesis, not a uniform or event-specific correction."
+    },
+    {
+      "id": "operations_report_otr_generation",
+      "document": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+      "pdf_page": 37,
+      "locator": "Section 6.3.1, Live Encounters Guide",
+      "extract": "timestamps and duration of illumination, phase, and incidence angles",
+      "interpretation": "The ephemeris-driven LEG supplied time-dependent visibility information used for target selection and OTR packaging."
+    },
+    {
+      "id": "operations_report_ltp_generation",
+      "document": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+      "pdf_page": 38,
+      "locator": "Sections 6.3.2-6.3.3",
+      "extract": "defined each requested target along with its start and end times, duration",
+      "interpretation": "The OTR supplied distinct start/end and duration fields to LTP generation; the report does not declare them interchangeable."
+    },
+    {
+      "id": "operations_report_ltp_final",
+      "document": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+      "pdf_page": 40,
+      "locator": "Section 6.4.2.1, Lunar Targeting Plan Uplink",
+      "extract": "featured the post-TLI ephemeris",
+      "interpretation": "The final crew-facing LTP was updated to the post-TLI trajectory basis."
+    },
+    {
+      "id": "targeting_package_timeline",
+      "document": "Artemis II Lunar Targeting Package",
+      "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_lunar_targeting_package.pdf",
+      "sha256": "177cda54d5770134b49cdcc35855171ed0c1ba5f354b0df0e521e06e16516273",
+      "pdf_page": 10,
+      "locator": "Timeline separator page",
+      "extract": "target visibility windows and observation request times",
+      "interpretation": "The archived plan treats visibility and request timing as separate concepts."
+    }
+  ]
+}

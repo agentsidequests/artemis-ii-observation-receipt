@@ -1,0 +1,72 @@
+{
+  "manifest_id": "artemis2-stage7a-lola-source-manifest-v1",
+  "source_class": "NASA LRO LOLA PDS3 bounded latitude strips",
+  "files": [
+    {
+      "product_id": "mas_57m_16",
+      "kind": "pds_label",
+      "path": "evidence/stage7a/source/mas_57m_16.LBL",
+      "bytes": 4097,
+      "sha256": "d01ea2361e7bd72080287dd9648f9d4958ba5016afd55b0df05eaed83cb32274"
+    },
+    {
+      "product_id": "mas_57m_16",
+      "kind": "latitude_strip",
+      "path": "evidence/stage7a/source/mas_57m_16-lines-1402-1469.bin",
+      "bytes": 783360,
+      "sha256": "69031cb00d049fa05a1fe682156e93804036dc4f193a694871ef5b4dac004cc3",
+      "line_range_zero_based_inclusive": [
+        1402,
+        1469
+      ],
+      "byte_range_inclusive": [
+        16151040,
+        16934399
+      ]
+    },
+    {
+      "product_id": "mas_225m_16",
+      "kind": "pds_label",
+      "path": "evidence/stage7a/source/mas_225m_16.LBL",
+      "bytes": 4105,
+      "sha256": "2d764215d140bd97ae004f0c06f31cc23e1ea23d6f197a709d2d645cc25276c8"
+    },
+    {
+      "product_id": "mas_225m_16",
+      "kind": "latitude_strip",
+      "path": "evidence/stage7a/source/mas_225m_16-lines-1402-1469.bin",
+      "bytes": 783360,
+      "sha256": "e91318b522527b81b5def7e5807d7109c54183d859ea388f050f49aded12503e",
+      "line_range_zero_based_inclusive": [
+        1402,
+        1469
+      ],
+      "byte_range_inclusive": [
+        16151040,
+        16934399
+      ]
+    },
+    {
+      "product_id": "mas_560m_16",
+      "kind": "pds_label",
+      "path": "evidence/stage7a/source/mas_560m_16.LBL",
+      "bytes": 4105,
+      "sha256": "e5540f16d3ebf1be8654b9b903d6883539b2a7dc960aca7943938c5e89e55bb6"
+    },
+    {
+      "product_id": "mas_560m_16",
+      "kind": "latitude_strip",
+      "path": "evidence/stage7a/source/mas_560m_16-lines-1402-1469.bin",
+      "bytes": 783360,
+      "sha256": "87f46e09479d162f0c8fa5f71203d551bb9b83dfb9904d3f64b25f8580d9792e",
+      "line_range_zero_based_inclusive": [
+        1402,
+        1469
+      ],
+      "byte_range_inclusive": [
+        16151040,
+        16934399
+      ]
+    }
+  ]
+}

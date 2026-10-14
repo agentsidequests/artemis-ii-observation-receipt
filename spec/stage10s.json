@@ -1,0 +1,111 @@
+{
+  "testbed_id": "artemis2-plan-bounded-sunset-window-stage10s",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T13:55:00Z",
+  "question": "How much of the verified complete-action cohort falls inside the independently planned eight-minute Sunset block, and what does that imply about event-level evaluation?",
+  "terminal_objective": "Replace a visually striking, data-selected 144-second microcase with a plan-bounded execution window and determine whether the concentration survives representation-aware accounting and comparison with every other target-matched plan window.",
+  "method": "Recover the Sunset request start and duration from the outgoing target request, require the next planned request to begin at the computed end, corroborate the block with timestamped crew transcript anchors, select only complete Sunset-labelled actions fully contained in that fixed window, decompose their three archive representations, and rank the same target-matched window census across all plan entries.",
+  "authority": "Private local metadata, plan, report extract, and transcript analysis only. No pixels, model training, publication, semantic-scene claim, image-similarity claim, label-correctness claim, actual leakage claim, model-performance claim, named camera-operator claim, scientific-discovery claim, or cross-mission generalization.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10r_spec_path": "spec/stage10r.json",
+    "stage10o_spec_path": "spec/stage10o.json",
+    "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "plan_path": "corpus/artemis2_outgoing_target_request.json",
+    "transcript_path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+    "sunset_order": 24,
+    "next_order": 25,
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "target_name": "Sunset",
+    "ltp_name": "Sunset",
+    "planned_start_utc": "2026-04-07T00:36:00Z",
+    "planned_end_utc": "2026-04-07T00:44:00Z",
+    "planned_duration_minutes": 8,
+    "geometric_start_utc": "2026-04-07T00:35:08.308985Z",
+    "geometric_end_utc": "2026-04-07T00:36:51.116085Z",
+    "next_request_start_utc": "2026-04-07T00:44:00Z",
+    "products": 2535,
+    "capture_identities": 845,
+    "complete_actions": 169,
+    "archive_size_bytes": 200901668231,
+    "source_products": 845,
+    "source_bytes": 17257373901,
+    "raw_products": 845,
+    "raw_bytes": 46133066720,
+    "processed_products": 845,
+    "processed_bytes": 137511227610,
+    "archive_to_source_byte_ratio": 11.641497100515306,
+    "processed_byte_share": 0.6844703123713605,
+    "products_per_action": 15.0,
+    "captures_per_action": 5.0,
+    "distinct_cameras": 2,
+    "distinct_activity_ids": 2,
+    "target_ids": [
+      "Sunset"
+    ],
+    "target_label_concordance": 1.0,
+    "five_second_clusters": 24,
+    "transcript_utterances": 119,
+    "transcript_speakers": 3,
+    "cohort_product_share": 0.11109650276097817,
+    "cohort_capture_share": 0.11109650276097817,
+    "cohort_action_share": 0.07802400738688828,
+    "cohort_byte_share": 0.12361039295408499,
+    "plan_windows_with_actions": 36,
+    "product_rank": 1,
+    "action_rank": 1,
+    "byte_rank": 1,
+    "next_product_count": 1860,
+    "next_action_count": 150,
+    "next_byte_count": 176901287711,
+    "product_lead_ratio": 1.3629032258064515,
+    "action_lead_ratio": 1.1266666666666667,
+    "byte_lead_ratio": 1.1356710334365057,
+    "target_matched_plan_windows": 12,
+    "target_matched_product_lead_ratio": 4.774011299435028,
+    "target_matched_action_lead_ratio": 2.864406779661017,
+    "target_matched_byte_lead_ratio": 4.824194854260447,
+    "scheduled_sunset_entries": 1,
+    "event_cross_probability_80_20": 1.0
+  },
+  "transcript_anchors": [
+    {
+      "utc": "2026-04-07T00:40:28.415Z",
+      "speaker": "Hansen",
+      "contains": "still on sunset"
+    },
+    {
+      "utc": "2026-04-07T00:41:29.314Z",
+      "speaker": "Koch",
+      "contains": "set for Earthshine or for Corona"
+    },
+    {
+      "utc": "2026-04-07T00:41:31.217Z",
+      "speaker": "Wiseman",
+      "contains": "set for Corona"
+    }
+  ],
+  "hard_negatives": [
+    "call_archive_footprint_source_volume",
+    "call_plan_windows_disjoint_samples",
+    "call_target_label_pixel_truth",
+    "call_products_independent_samples",
+    "attribute_serial_to_named_operator",
+    "call_hypothetical_crossing_observed_leakage",
+    "infer_model_performance_effect",
+    "claim_cross_event_generalization_estimated",
+    "generalize_sunset_concentration_to_archive",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_plan_window_canary"
+  ],
+  "claim_ceiling": "Stage 10S may establish that the independently scheduled 00:36-00:44 Sunset block contains 2,535 current Atlas products representing 845 exposures and 169 complete five-exposure actions across two cameras, two activity facets, and 24 conditional five-second clusters. The products total 200.901668231 GB, decomposed into 17.257373901 GB of source NEFs, 46.133066720 GB of raw TIFFs, and 137.511227610 GB of processed TIFFs: an 11.641497-fold retrieval-footprint-to-source-byte ratio, with processed TIFFs contributing 68.447% of the footprint. This is 11.110% of products and exposures, 7.802% of actions, and 12.361% of bytes in the verified complete-action cohort. Sunset ranks first by products, actions, and bytes among all 36 plan windows containing admitted actions; every admitted row in the fixed block carries the Sunset target label, while the user guide warns that target labels were not thoroughly verified. The plan contains one scheduled Sunset entry, so this mission cannot supply separate Sunset events to both sides of an event-level evaluation. It cannot establish image similarity, semantic-scene identity, target-label correctness, independent plan-window samples, actual leakage, model performance, a named serial-to-operator mapping, archive-wide prevalence, cross-mission generalization, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_plan_bounded_concentration_verifies": "Lead future private synthesis with the plan-bounded eight-minute result rather than the data-selected 144-second microcase; retain the latter as the dense center that first exposed the hierarchy.",
+    "if_generalization_target_is_new_sunset_events": "Report the event-level sample size as one for this mission and do not claim a held-out event evaluation from Artemis II alone.",
+    "if_generalization_target_is_within_this_event": "Freeze a time-forward or otherwise task-native within-event split and name the narrower estimand; do not present it as new-event generalization.",
+    "if_visual_similarity_matters": "Run a separate bounded pixel test; do not infer similarity from the plan, timestamps, labels, or transcript.",
+    "recheck_trigger": "A revised plan or manifest, an authoritative episode identifier, a second comparable Sunset event, or a real model task."
+  }
+}

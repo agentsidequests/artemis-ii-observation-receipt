@@ -1,0 +1,1420 @@
+{
+  "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_PLANNED_TARGET_WINDOW_REPLICATION_CENSUS",
+  "replication": {
+    "active_plan_windows": 36,
+    "active_plan_target_names": 19,
+    "singleton_target_names": 12,
+    "repeated_target_names": 7,
+    "singleton_target_name_share": 0.631578947368421,
+    "repeated_target_name_share": 0.3684210526315789,
+    "singleton_valid_two_sided_window_allocations": 0
+  },
+  "window_counts": {
+    "Aristarchus Plateau": 1,
+    "Crew Position Swap": 1,
+    "Crew Team Swap": 5,
+    "Earth": 1,
+    "Earthrise": 1,
+    "Earthset": 1,
+    "Glushko Crater": 2,
+    "Guided Discussion": 5,
+    "Hertzsprung Basin": 1,
+    "Impact Flashes": 1,
+    "Moon": 4,
+    "Ohm Crater": 2,
+    "Orientale Basin": 2,
+    "Reiner Gamma": 1,
+    "Sunrise": 1,
+    "Sunset": 1,
+    "Vavilov Crater": 1,
+    "Whole Moon": 4,
+    "illum_limb": 1
+  },
+  "singleton_names": [
+    "Aristarchus Plateau",
+    "Crew Position Swap",
+    "Earth",
+    "Earthrise",
+    "Earthset",
+    "Hertzsprung Basin",
+    "Impact Flashes",
+    "Reiner Gamma",
+    "Sunrise",
+    "Sunset",
+    "Vavilov Crater",
+    "illum_limb"
+  ],
+  "repeated_names": {
+    "Crew Team Swap": 5,
+    "Glushko Crater": 2,
+    "Guided Discussion": 5,
+    "Moon": 4,
+    "Ohm Crater": 2,
+    "Orientale Basin": 2,
+    "Whole Moon": 4
+  },
+  "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+  "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+  "next_step_logic": {
+    "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+    "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+    "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+    "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+    "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+  },
+  "checks": [
+    {
+      "id": "membership_ledger_replays",
+      "pass": true
+    },
+    {
+      "id": "planned_target_window_census",
+      "pass": true,
+      "metrics": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "active_windows_are_independent_events": false,
+        "repeated_targets_evaluation_ready": false,
+        "target_tags_substituted_for_plan_names": false,
+        "singleton_targets_observed_only_once": false,
+        "singleton_targets_scientifically_insufficient": false,
+        "scope": "active_exact_plan_target_names",
+        "model_partition_assigned": false,
+        "performance_effect_inferred": false,
+        "scientific_discovery_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_active_windows_independent_events": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "call_active_windows_independent_events",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": true,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_repeated_targets_evaluation_ready": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "call_repeated_targets_evaluation_ready",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": true,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "substitute_target_tags_for_plan_names": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "substitute_target_tags_for_plan_names",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": true,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_singleton_targets_observed_only_once": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "claim_singleton_targets_observed_only_once",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": true,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_singleton_targets_scientifically_insufficient": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "claim_singleton_targets_scientifically_insufficient",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": true,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "generalize_to_all_archive_target_classes": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "generalize_to_all_archive_target_classes",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "all_archive_target_classes",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "assign_model_partition_from_plan_count": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "assign_model_partition_from_plan_count",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": true,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "infer_model_performance_effect": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "infer_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": true,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_scientific_discovery_or_priority": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "claim_scientific_discovery_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_replication_census": {
+      "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+      "mutation": "open_pixels_for_replication_census",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "replication": {
+        "active_plan_windows": 36,
+        "active_plan_target_names": 19,
+        "singleton_target_names": 12,
+        "repeated_target_names": 7,
+        "singleton_target_name_share": 0.631578947368421,
+        "repeated_target_name_share": 0.3684210526315789,
+        "singleton_valid_two_sided_window_allocations": 0
+      },
+      "window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "singleton_names": [
+        "Aristarchus Plateau",
+        "Crew Position Swap",
+        "Earth",
+        "Earthrise",
+        "Earthset",
+        "Hertzsprung Basin",
+        "Impact Flashes",
+        "Reiner Gamma",
+        "Sunrise",
+        "Sunset",
+        "Vavilov Crater",
+        "illum_limb"
+      ],
+      "repeated_names": {
+        "Crew Team Swap": 5,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Whole Moon": 4
+      },
+      "verified": "Among 19 exact plan target-name values represented in the 36 active timed windows, 12 occur in one active window and seven occur in multiple active windows. Sunset is therefore an example of a broader scheduled-window replication constraint, not an isolated case.",
+      "decision_use": "A singleton plan name cannot support an internal two-sided evaluation on distinct same-name scheduled windows. Repeated plan names remain candidates only: window overlap, semantic comparability, camera coupling, and event identity still require task-native checks.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+        "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+        "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+        "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+        "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+      },
+      "checks": [
+        {
+          "id": "membership_ledger_replays",
+          "pass": true
+        },
+        {
+          "id": "planned_target_window_census",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "active_plan_target_names": 19,
+            "singleton_target_names": 12,
+            "repeated_target_names": 7,
+            "singleton_target_name_share": 0.631578947368421,
+            "repeated_target_name_share": 0.3684210526315789,
+            "singleton_valid_two_sided_window_allocations": 0
+          },
+          "window_counts": {
+            "Aristarchus Plateau": 1,
+            "Crew Position Swap": 1,
+            "Crew Team Swap": 5,
+            "Earth": 1,
+            "Earthrise": 1,
+            "Earthset": 1,
+            "Glushko Crater": 2,
+            "Guided Discussion": 5,
+            "Hertzsprung Basin": 1,
+            "Impact Flashes": 1,
+            "Moon": 4,
+            "Ohm Crater": 2,
+            "Orientale Basin": 2,
+            "Reiner Gamma": 1,
+            "Sunrise": 1,
+            "Sunset": 1,
+            "Vavilov Crater": 1,
+            "Whole Moon": 4,
+            "illum_limb": 1
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "active_windows_are_independent_events": false,
+            "repeated_targets_evaluation_ready": false,
+            "target_tags_substituted_for_plan_names": false,
+            "singleton_targets_observed_only_once": false,
+            "singleton_targets_scientifically_insufficient": false,
+            "scope": "active_exact_plan_target_names",
+            "model_partition_assigned": false,
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, readiness, ontology, occurrence, sufficiency, scope, model, discovery, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

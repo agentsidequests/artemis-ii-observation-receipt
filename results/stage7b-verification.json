@@ -1,0 +1,914 @@
+{
+  "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+  "mutation": null,
+  "pass": true,
+  "panel_admitted": false,
+  "evidence_state": "VERIFIED_ADMISSION_STOP",
+  "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+  "observed_counts": {
+    "candidate_episodes": 10,
+    "new_directional_comparisons": 0,
+    "unique_named_non_orientale_targets": 0,
+    "qualifying_observers": 0,
+    "morphology_matched_pairs": 0,
+    "frozen_negative_control_pairs": 0,
+    "cross_axis_candidates": 2
+  },
+  "qualifying_same_endpoint_ids": [],
+  "cross_axis_candidates": [
+    "glushko_vs_ohm_ray_brightness",
+    "reiner_gamma_albedo_uniformity"
+  ],
+  "new_instrument_value_bytes": 0,
+  "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+  "next_step_logic": {
+    "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+    "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+    "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+  },
+  "checks": [
+    {
+      "id": "frozen_evidence_identity",
+      "pass": true
+    },
+    {
+      "id": "transcript_identities_and_anchors",
+      "pass": true,
+      "candidates_checked": 10
+    },
+    {
+      "id": "frozen_admission_oracle",
+      "pass": true,
+      "observed": {
+        "minimum_new_directional_comparisons": 3,
+        "minimum_unique_named_non_orientale_targets": 4,
+        "minimum_qualifying_observers": 2,
+        "minimum_morphology_matched_pairs": 2,
+        "minimum_frozen_negative_control_pairs": 1,
+        "require_same_endpoint": true,
+        "require_direct_comparison": true,
+        "require_named_localization": true,
+        "require_new_held_out": true,
+        "require_control_pair_frozen": true,
+        "exclude_orientale": true,
+        "exclude_stage7a_pair": true,
+        "maximum_new_instrument_value_bytes_before_admission": 0
+      }
+    },
+    {
+      "id": "candidate_classification_and_counts",
+      "pass": true,
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 2
+      },
+      "qualifying_ids": [],
+      "cross_axis_ids": [
+        "glushko_vs_ohm_ray_brightness",
+        "reiner_gamma_albedo_uniformity"
+      ]
+    },
+    {
+      "id": "no_post_gate_value_access",
+      "pass": true,
+      "access_boundary": {
+        "new_instrument_value_bytes": 0,
+        "new_control_target_value_bytes": 0,
+        "new_geologic_map_bytes": 0,
+        "stage7a_values_reused_for_scoring": false
+      }
+    },
+    {
+      "id": "claim_ceiling",
+      "pass": true,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+    },
+    {
+      "id": "frozen_terminal_state",
+      "pass": true,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "reuse_stage7a_pair_as_new": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "reuse_stage7a_pair_as_new",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 3
+      },
+      "qualifying_same_endpoint_ids": [],
+      "cross_axis_candidates": [
+        "glushko_vs_ohm_ray_brightness",
+        "reiner_gamma_albedo_uniformity",
+        "vavilov_vs_hertzsprung_roughness"
+      ],
+      "new_instrument_value_bytes": 0,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": true,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 2,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": false,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 0,
+            "unique_named_non_orientale_targets": 0,
+            "qualifying_observers": 0,
+            "morphology_matched_pairs": 0,
+            "frozen_negative_control_pairs": 0,
+            "cross_axis_candidates": 3
+          },
+          "qualifying_ids": [],
+          "cross_axis_ids": [
+            "glushko_vs_ohm_ray_brightness",
+            "reiner_gamma_albedo_uniformity",
+            "vavilov_vs_hertzsprung_roughness"
+          ]
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": true,
+          "access_boundary": {
+            "new_instrument_value_bytes": 0,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "Candidate classification no longer matches the frozen Stage 7B counts."
+      ]
+    },
+    "readmit_orientale_as_held_out": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "readmit_orientale_as_held_out",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 3
+      },
+      "qualifying_same_endpoint_ids": [],
+      "cross_axis_candidates": [
+        "glushko_vs_ohm_ray_brightness",
+        "orientale_vs_hertzsprung_texture",
+        "reiner_gamma_albedo_uniformity"
+      ],
+      "new_instrument_value_bytes": 0,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": true,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 2,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": false,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 0,
+            "unique_named_non_orientale_targets": 0,
+            "qualifying_observers": 0,
+            "morphology_matched_pairs": 0,
+            "frozen_negative_control_pairs": 0,
+            "cross_axis_candidates": 3
+          },
+          "qualifying_ids": [],
+          "cross_axis_ids": [
+            "glushko_vs_ohm_ray_brightness",
+            "orientale_vs_hertzsprung_texture",
+            "reiner_gamma_albedo_uniformity"
+          ]
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": true,
+          "access_boundary": {
+            "new_instrument_value_bytes": 0,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "Candidate classification no longer matches the frozen Stage 7B counts."
+      ]
+    },
+    "promote_vague_region_to_exact_localization": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "promote_vague_region_to_exact_localization",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 3
+      },
+      "qualifying_same_endpoint_ids": [],
+      "cross_axis_candidates": [
+        "glushko_vs_ohm_ray_brightness",
+        "north_vavilov_pumice_patch",
+        "reiner_gamma_albedo_uniformity"
+      ],
+      "new_instrument_value_bytes": 0,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": true,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 2,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": false,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 0,
+            "unique_named_non_orientale_targets": 0,
+            "qualifying_observers": 0,
+            "morphology_matched_pairs": 0,
+            "frozen_negative_control_pairs": 0,
+            "cross_axis_candidates": 3
+          },
+          "qualifying_ids": [],
+          "cross_axis_ids": [
+            "glushko_vs_ohm_ray_brightness",
+            "north_vavilov_pumice_patch",
+            "reiner_gamma_albedo_uniformity"
+          ]
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": true,
+          "access_boundary": {
+            "new_instrument_value_bytes": 0,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "Candidate classification no longer matches the frozen Stage 7B counts."
+      ]
+    },
+    "mix_reflectance_and_geology_into_lola_endpoint": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "mix_reflectance_and_geology_into_lola_endpoint",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 0
+      },
+      "qualifying_same_endpoint_ids": [],
+      "cross_axis_candidates": [],
+      "new_instrument_value_bytes": 0,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": true,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 2,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": false,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 0,
+            "unique_named_non_orientale_targets": 0,
+            "qualifying_observers": 0,
+            "morphology_matched_pairs": 0,
+            "frozen_negative_control_pairs": 0,
+            "cross_axis_candidates": 0
+          },
+          "qualifying_ids": [],
+          "cross_axis_ids": []
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": true,
+          "access_boundary": {
+            "new_instrument_value_bytes": 0,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "Candidate classification no longer matches the frozen Stage 7B counts."
+      ]
+    },
+    "count_interrogative_as_confirmed_observation": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "count_interrogative_as_confirmed_observation",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 1,
+        "unique_named_non_orientale_targets": 2,
+        "qualifying_observers": 1,
+        "morphology_matched_pairs": 1,
+        "frozen_negative_control_pairs": 1,
+        "cross_axis_candidates": 2
+      },
+      "qualifying_same_endpoint_ids": [
+        "glushko_primary_rays_jagged"
+      ],
+      "cross_axis_candidates": [
+        "glushko_vs_ohm_ray_brightness",
+        "reiner_gamma_albedo_uniformity"
+      ],
+      "new_instrument_value_bytes": 0,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": true,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 2,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": false,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 1,
+            "unique_named_non_orientale_targets": 2,
+            "qualifying_observers": 1,
+            "morphology_matched_pairs": 1,
+            "frozen_negative_control_pairs": 1,
+            "cross_axis_candidates": 2
+          },
+          "qualifying_ids": [
+            "glushko_primary_rays_jagged"
+          ],
+          "cross_axis_ids": [
+            "glushko_vs_ohm_ray_brightness",
+            "reiner_gamma_albedo_uniformity"
+          ]
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": true,
+          "access_boundary": {
+            "new_instrument_value_bytes": 0,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "Candidate classification no longer matches the frozen Stage 7B counts."
+      ]
+    },
+    "waive_observer_breadth": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "waive_observer_breadth",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 2
+      },
+      "qualifying_same_endpoint_ids": [],
+      "cross_axis_candidates": [
+        "glushko_vs_ohm_ray_brightness",
+        "reiner_gamma_albedo_uniformity"
+      ],
+      "new_instrument_value_bytes": 0,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": false,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 1,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": true,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 0,
+            "unique_named_non_orientale_targets": 0,
+            "qualifying_observers": 0,
+            "morphology_matched_pairs": 0,
+            "frozen_negative_control_pairs": 0,
+            "cross_axis_candidates": 2
+          },
+          "qualifying_ids": [],
+          "cross_axis_ids": [
+            "glushko_vs_ohm_ray_brightness",
+            "reiner_gamma_albedo_uniformity"
+          ]
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": true,
+          "access_boundary": {
+            "new_instrument_value_bytes": 0,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "The Stage 7B admission thresholds or exclusions changed."
+      ]
+    },
+    "access_instrument_values_before_admission": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "access_instrument_values_before_admission",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 2
+      },
+      "qualifying_same_endpoint_ids": [],
+      "cross_axis_candidates": [
+        "glushko_vs_ohm_ray_brightness",
+        "reiner_gamma_albedo_uniformity"
+      ],
+      "new_instrument_value_bytes": 1,
+      "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": true,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 2,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": true,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 0,
+            "unique_named_non_orientale_targets": 0,
+            "qualifying_observers": 0,
+            "morphology_matched_pairs": 0,
+            "frozen_negative_control_pairs": 0,
+            "cross_axis_candidates": 2
+          },
+          "qualifying_ids": [],
+          "cross_axis_ids": [
+            "glushko_vs_ohm_ray_brightness",
+            "reiner_gamma_albedo_uniformity"
+          ]
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": false,
+          "access_boundary": {
+            "new_instrument_value_bytes": 1,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A verified stop establishes only that the pinned transcript cannot support the predeclared controlled same-endpoint multi-target continuation without reuse, post hoc localization, endpoint mixing, or missing controls. It does not refute Stage 7A, the broader value of astronaut language, the two cross-axis candidates, or the possibility that new independently coded observations could form a valid panel."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "Stage 7B accessed or reused decision-bearing source values before admission."
+      ]
+    },
+    "claim_admission_stop_refutes_semantic_signal": {
+      "testbed_id": "artemis2-controlled-multi-target-admission-stage7b",
+      "mutation": "claim_admission_stop_refutes_semantic_signal",
+      "pass": false,
+      "panel_admitted": false,
+      "evidence_state": "VERIFIED_ADMISSION_STOP",
+      "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS",
+      "observed_counts": {
+        "candidate_episodes": 10,
+        "new_directional_comparisons": 0,
+        "unique_named_non_orientale_targets": 0,
+        "qualifying_observers": 0,
+        "morphology_matched_pairs": 0,
+        "frozen_negative_control_pairs": 0,
+        "cross_axis_candidates": 2
+      },
+      "qualifying_same_endpoint_ids": [],
+      "cross_axis_candidates": [
+        "glushko_vs_ohm_ray_brightness",
+        "reiner_gamma_albedo_uniformity"
+      ],
+      "new_instrument_value_bytes": 0,
+      "claim_ceiling": "The admission stop disproves astronaut semantic sensing.",
+      "next_step_logic": {
+        "if_admitted": "Freeze all target and control geometries, source revisions, and thresholds before any additional instrument-value access, then run offline from hash-pinned bounded products.",
+        "if_stopped": "Do not access more LOLA values for this lane. Treat Reiner Gamma albedo uniformity and Glushko-versus-Ohm ray brightness only as candidates for a separately preregistered cross-axis panel with endpoint-specific controls.",
+        "if_indeterminate": "Repair only a named transcript identity or coding-boundary defect; do not weaken the admission thresholds."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identities_and_anchors",
+          "pass": true,
+          "candidates_checked": 10
+        },
+        {
+          "id": "frozen_admission_oracle",
+          "pass": true,
+          "observed": {
+            "minimum_new_directional_comparisons": 3,
+            "minimum_unique_named_non_orientale_targets": 4,
+            "minimum_qualifying_observers": 2,
+            "minimum_morphology_matched_pairs": 2,
+            "minimum_frozen_negative_control_pairs": 1,
+            "require_same_endpoint": true,
+            "require_direct_comparison": true,
+            "require_named_localization": true,
+            "require_new_held_out": true,
+            "require_control_pair_frozen": true,
+            "exclude_orientale": true,
+            "exclude_stage7a_pair": true,
+            "maximum_new_instrument_value_bytes_before_admission": 0
+          }
+        },
+        {
+          "id": "candidate_classification_and_counts",
+          "pass": true,
+          "observed_counts": {
+            "candidate_episodes": 10,
+            "new_directional_comparisons": 0,
+            "unique_named_non_orientale_targets": 0,
+            "qualifying_observers": 0,
+            "morphology_matched_pairs": 0,
+            "frozen_negative_control_pairs": 0,
+            "cross_axis_candidates": 2
+          },
+          "qualifying_ids": [],
+          "cross_axis_ids": [
+            "glushko_vs_ohm_ray_brightness",
+            "reiner_gamma_albedo_uniformity"
+          ]
+        },
+        {
+          "id": "no_post_gate_value_access",
+          "pass": true,
+          "access_boundary": {
+            "new_instrument_value_bytes": 0,
+            "new_control_target_value_bytes": 0,
+            "new_geologic_map_bytes": 0,
+            "stage7a_values_reused_for_scoring": false
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "The admission stop disproves astronaut semantic sensing."
+        },
+        {
+          "id": "frozen_terminal_state",
+          "pass": true,
+          "evidence_state": "VERIFIED_ADMISSION_STOP",
+          "disposition": "STOP_NO_NEW_INSTRUMENT_ACCESS"
+        }
+      ],
+      "errors": [
+        "The admission stop was promoted into a substantive refutation."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

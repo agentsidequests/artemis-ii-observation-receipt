@@ -1,0 +1,156 @@
+{
+  "testbed_id": "artemis2-observation-execution-stage3a",
+  "version": "0.4.0",
+  "formed_at_utc": "2026-10-09T20:06:17Z",
+  "evidence_state": "FROZEN",
+  "question": "Can the 30 planned science entries and the complete Flight Day 6 transcript sequence support a reproducible target-entry ledger and explicit attention-allocation findings without turning silence, schedule drift, or salience into causal displacement claims?",
+  "frozen_task": "Verify the complete 30-entry numbered plan inventory, 21 exact transcript entry anchors, and five source-evidenced attention episodes. Preserve unresolved entries, interval-censored starts, crew-choice periods, background speech, and the lack of an independent flash oracle.",
+  "baseline": "A competent chronological reading of the target plan and transcript file titles, with no machine-checked cue identity, plan coverage, mutation controls, or cross-episode claim ceiling.",
+  "treatment": "A deterministic transition-ledger canary that binds exact plan entries to explicit transcript cues and separately classifies attention allocation, documentation recovery, and unresolved scientific candidates.",
+  "authority": {
+    "source_truth": "NASA Planetary Data System target-plan and transcript files",
+    "testbed_truth": "This frozen Stage 3A contract, runner, tests, and receipts",
+    "scientific_acceptance": "NASA or qualified lunar mission/science specialists",
+    "prohibited_effects": [
+      "No claim that a request timestamp is an execution boundary",
+      "No silence-to-missed inference",
+      "No schedule-delta-to-causation inference",
+      "No claim that salience displaced a planned target without an explicit contrast",
+      "No claim that the flash candidate was a validated lunar impact",
+      "No publication, outreach, operational recommendation, or bulk image analysis"
+    ]
+  },
+  "environment": {
+    "timezone_contract": "All source timestamps are interpreted as UTC.",
+    "runtime_contract": "Python 3 standard library only.",
+    "network_contract": "No network is used during a scored run."
+  },
+  "corpus": {
+    "file_count": 27,
+    "byte_count": 337208,
+    "transcript_row_count": 2830,
+    "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c",
+    "otr_path": "corpus/artemis2_outgoing_target_request.json",
+    "transcript_glob": "corpus/transcripts/*.csv",
+    "expected_numbered_targets": 30,
+    "expected_schedule_controls": 9
+  },
+  "entry_anchor_semantics": "Each delta compares a request timestamp with an explicit target-entry or recorder cue. It is an audit locator, not a physical-event time, dwell time, compliance score, or causal measure.",
+  "entry_anchors": [
+    {"id": "warmup", "ltp_name": "Discussion #1: Warm up", "transcript": "corpus/transcripts/art002a000028_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "my recording for the warm-up discussion", "expected_delta_seconds": -394.627},
+    {"id": "glushko1", "ltp_name": "Crater Duo: Glushko (1/2)", "transcript": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "starting a new recording for the Glushko", "expected_delta_seconds": -260.215},
+    {"id": "ohm1", "ltp_name": "Crater Duo: Ohm", "transcript": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "new recording for Ohm", "expected_delta_seconds": 113.744},
+    {"id": "aristarchus", "ltp_name": "Aristarchus Plateau", "transcript": "corpus/transcripts/art002a000031_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "new recording for Aristarchus Plateau", "expected_delta_seconds": 136.723},
+    {"id": "reiner", "ltp_name": "Reiner Gamma", "transcript": "corpus/transcripts/art002a000032_pcd2_trn-csv_v01.csv", "speaker": "Wiseman", "cue_contains": "Reiner Gamma", "expected_delta_seconds": 47.556},
+    {"id": "wholemoon", "ltp_name": "Whole Moon", "transcript": "corpus/transcripts/art002a000034_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "window three, Whole Moon", "expected_delta_seconds": -58.602},
+    {"id": "orientale1", "ltp_name": "Orientale Basin (1/2)", "transcript": "corpus/transcripts/art002a000035_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "Victor Glover, Orientale basin", "expected_delta_seconds": 93.120},
+    {"id": "crewchoice1", "ltp_name": "Crew Choice #1", "transcript": "corpus/transcripts/art002a000036_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "Crew Choice number one", "expected_delta_seconds": 195.826},
+    {"id": "glushko2", "ltp_name": "Glushko Crater (2/2)", "transcript": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "Glusko Crater, two of two", "expected_delta_seconds": -444.722},
+    {"id": "orientale2", "ltp_name": "Orientale Basin (2/2)", "transcript": "corpus/transcripts/art002a000039_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "moving on to Orientale", "expected_delta_seconds": -116.922},
+    {"id": "hertzsprung", "ltp_name": "Hertzsprung Basin", "transcript": "corpus/transcripts/art002a000040_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "looking at Hertzsprung", "expected_delta_seconds": 105.524},
+    {"id": "crewchoice2", "ltp_name": "Crew Choice #2", "transcript": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "it's Crew Choice", "expected_delta_seconds": 71.972},
+    {"id": "discussion4", "ltp_name": "Discussion #4: Terminator", "transcript": "corpus/transcripts/art002a000042_pcd2_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "this is my last discussion", "expected_delta_seconds": 127.390},
+    {"id": "ohm2", "ltp_name": "Ohm Crater (2/2)", "transcript": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "Glover Ohm Crater", "expected_delta_seconds": -252.225},
+    {"id": "limb", "ltp_name": "Discussion #5: Limb", "transcript": "corpus/transcripts/art002a000044_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "discussion of the limb", "expected_delta_seconds": -100.941},
+    {"id": "earthset", "ltp_name": "Earthset", "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "Alright, Earth set", "expected_delta_seconds": 71.426},
+    {"id": "vavilov", "ltp_name": "Vavilov Crater", "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "Alright, Vavilov Crater", "expected_delta_seconds": -46.299},
+    {"id": "crewchoice3", "ltp_name": "Crew Choice #3", "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "starting a little bit late, but I'm in Crew Choice", "expected_delta_seconds": 302.361},
+    {"id": "lofted_dust", "ltp_name": "Lofted Lunar Dust", "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "impact flashes and lofted lunar dust", "expected_delta_seconds": 74.352},
+    {"id": "earthrise", "ltp_name": "Earthrise", "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv", "speaker": "Glover", "cue_contains": "Glover, Earthrise", "expected_delta_seconds": -94.107},
+    {"id": "sunset", "ltp_name": "Sunset", "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv", "speaker": "Hansen", "cue_contains": "voice recording for solar, or for sunset", "expected_delta_seconds": -473.534}
+  ],
+  "attention_episodes": [
+    {
+      "id": "aristarchus_reiner_recovery",
+      "ltp_name": "Reiner Gamma",
+      "classification": "DOCUMENTATION_RECOVERY",
+      "transcript": "corpus/transcripts/art002a000033_pcd2_trn-csv_v01.csv",
+      "cues": [
+        {"speaker": "Hansen", "contains": "because my headset came unplugged"},
+        {"speaker": "Hansen", "contains": "still heard me with the voice recorder"},
+        {"speaker": "Hansen", "contains": "made some notes for Aristarchus Plateau"}
+      ],
+      "bounded_interpretation": "A communications failure did not erase all contemporaneous evidence; the crew explicitly identified recorder and note recovery paths. This blocks a missed-target inference."
+    },
+    {
+      "id": "vavilov_refocus",
+      "ltp_name": "Vavilov Crater",
+      "classification": "RESISTED_DIVERSION",
+      "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+      "cues": [
+        {"speaker": "Glover", "contains": "try to focus on Vavilov and not the terminator"}
+      ],
+      "bounded_interpretation": "The transcript explicitly names a salient alternative and a choice to retain the planned target. Salience is not displacement."
+    },
+    {
+      "id": "crew_choice_terminator",
+      "ltp_name": "Crew Choice #3",
+      "classification": "EXPECTED_CREW_CHOICE",
+      "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+      "cues": [
+        {"speaker": "Glover", "contains": "I just want to talk about the Terminator"},
+        {"speaker": "Glover", "contains": "That's my crew choice"}
+      ],
+      "bounded_interpretation": "Terminator attention occurred inside a free-choice period and is a hard negative for diversion."
+    },
+    {
+      "id": "impact_flash_recording_gap",
+      "ltp_name": "Impact Flashes",
+      "classification": "ENTRY_INTERVAL_CENSORED",
+      "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+      "cues": [
+        {"speaker": "Glover", "contains": "didn't start a recording when I started looking for impact flashes"},
+        {"speaker": "Glover", "contains": "I did not see any impact flashes"}
+      ],
+      "bounded_interpretation": "The search began before its recorder cue, so entry time is bounded only as earlier than 23:11:17.215Z. The explicit negative observation is evidence of execution, not a missed target."
+    },
+    {
+      "id": "forward_look_flash_candidate",
+      "ltp_name": "Discussion #6: Forward Look",
+      "classification": "ATTENTION_SHIFT_CANDIDATE",
+      "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "must_be_inside_request_window": true,
+      "independent_oracle": false,
+      "cues": [
+        {"speaker": "Hansen", "contains": "I'm just going to watch for flashes"},
+        {"speaker": "Wiseman", "contains": "100 percent just saw a meteorite"},
+        {"speaker": "Hansen", "contains": "Reid and I both saw the same thing"},
+        {"speaker": "Hansen", "contains": "We saw an impact flash"},
+        {"speaker": "Hansen", "contains": "Where are we at on the science timeline"}
+      ],
+      "bounded_interpretation": "Within the planned Forward Look window, flash-watching gained explicit attention, two crew reported the same pinpoint event, and the crew then re-synchronized to the timeline. The event and any displacement remain unvalidated.",
+      "counterevidence": "An earlier flash report in the same recording was followed by uncertainty about eclipse-glasses timing, and no independent image or instrument product is admitted here."
+    }
+  ],
+  "hard_negatives": [
+    "silence_means_missed",
+    "crew_choice_means_diverted",
+    "background_mention_is_entry",
+    "overrun_proves_cause",
+    "flash_is_validated"
+  ],
+  "expected_result": {
+    "evidence_state": "VERIFIED_PARTIAL_LEDGER",
+    "numbered_targets": 30,
+    "schedule_controls": 9,
+    "exact_entry_anchors": 21,
+    "unresolved_entry_anchors": 9,
+    "proven_missed_targets": 0,
+    "proven_diverted_targets": 0,
+    "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+    "disposition": "CONTINUE_BOUNDED"
+  },
+  "claim_ceiling": [
+    "The transcript contains exact target-entry anchors for 21 of 30 numbered plan entries.",
+    "Request-to-cue deltas vary in both directions and cannot be treated as uniform execution boundaries.",
+    "The frozen episodes establish one resisted diversion, one expected crew-choice allocation, one documentation recovery, and one interval-censored entry.",
+    "A two-observer flash candidate acquired attention during the Forward Look window and was followed by timeline re-synchronization.",
+    "No target is proven missed or diverted, and the flash is not independently validated."
+  ],
+  "next_step_logic": {
+    "recommended": "Run a label-first capture-friction and product-availability canary for 2026-04-07T00:51:15Z through 00:51:59Z before completing the remaining nine entry anchors or downloading broad imagery.",
+    "why": "The two-observer flash is the only Stage 3A candidate whose validation could materially change the scientific value of the archive; a tiny product check has higher information gain than expanding the ledger first.",
+    "fallback": "If no independently timed product covers the interval, complete Stage 3B for the nine unresolved entry anchors and keep the flash at transcript-candidate level.",
+    "stop": "Do not call the flash a lunar impact or claim planned work was displaced without an independent oracle and an explicit execution contrast."
+  }
+}

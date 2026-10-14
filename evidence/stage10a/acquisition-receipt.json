@@ -1,0 +1,165 @@
+{
+  "receipt_id": "artemis2-stage10a-metadata-acquisition-v1",
+  "completed_at_utc": "2026-10-10T11:37:00Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "sources": [
+    {
+      "path": "evidence/stage10a/source/atlas-fd6-raw-query.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 1311,
+      "sha256": "f6d43bfb507a6c724739ab668928b62400a0b9a6a2c9dd57c6861a03fa2823bb",
+      "role": "frozen query"
+    },
+    {
+      "path": "evidence/stage10a/source/artemis2_label_definitions.html",
+      "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_label_definitions.html",
+      "bytes": 1720394,
+      "sha256": "f11a0620288a9bbdbf26d3d792f9b46519c70c6c5d5f47f775c2846d8c2f211b",
+      "headers": {
+        "content-type": "text/html",
+        "last-modified": "Fri, 02 Oct 2026 18:56:48 GMT",
+        "etag": "\"b290ebc69f52dd1:0\"",
+        "content-length": "1720394"
+      },
+      "role": "official field definitions and target-tag limitation"
+    }
+  ],
+  "atlas_pages": [
+    {
+      "page_index": 0,
+      "from": 0,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-00.json",
+      "request_bytes": 1138,
+      "request_sha256": "97c51e1108d6580dab07868d5050909608f260efc70458c85102c61c13479592",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-00.json",
+      "response_bytes": 1024665,
+      "response_sha256": "509422f24546824a0ba4747e9a7829c664d00dd47a0ce29dc1e3d63b4eb0ed45",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1024665"
+      }
+    },
+    {
+      "page_index": 1,
+      "from": 1000,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-01.json",
+      "request_bytes": 1141,
+      "request_sha256": "294df5a7b75ca72485a039153d9d8aeb802638d749c6dd6f55bd176447bdc62f",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-01.json",
+      "response_bytes": 1079207,
+      "response_sha256": "3a5681ef249a6cd4ed9370ee1021e457400a5b5c67bcb545f7780f09b5751bb2",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1079207"
+      }
+    },
+    {
+      "page_index": 2,
+      "from": 2000,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-02.json",
+      "request_bytes": 1141,
+      "request_sha256": "ef62e0d7cf260291cd4c902597eb8cac082e139641e9ef25ce68390d451139e4",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-02.json",
+      "response_bytes": 1051158,
+      "response_sha256": "3b2b2cf8b046d87c6d59e8979ff4ba3990fe9ad418c4308e81224c0a843fea8f",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1051158"
+      }
+    },
+    {
+      "page_index": 3,
+      "from": 3000,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-03.json",
+      "request_bytes": 1141,
+      "request_sha256": "0793dad416d637c8bef5acf1af7026a5f9a61e887d37293d54645a3ca3a9996d",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-03.json",
+      "response_bytes": 1047432,
+      "response_sha256": "73a24487b6ca93bbd425baef93bdc2c0943d2ffde88afd33fa5dba1a44a02e16",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1047432"
+      }
+    },
+    {
+      "page_index": 4,
+      "from": 4000,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-04.json",
+      "request_bytes": 1141,
+      "request_sha256": "8a5e8756b32c67eb0abc85712bc0d25d685f7a5d3cd5ced753bd5ce8a6b9fe18",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-04.json",
+      "response_bytes": 1068456,
+      "response_sha256": "200ed9f2ef3e0a007d04e89aec672ae628a684a34d91b83b9ef0863fe284bf51",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1068456"
+      }
+    },
+    {
+      "page_index": 5,
+      "from": 5000,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-05.json",
+      "request_bytes": 1141,
+      "request_sha256": "d8c63f6853f641efb8664e3fe4b37c5e1d97b48db849c54fc89310b956ac6243",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-05.json",
+      "response_bytes": 1051230,
+      "response_sha256": "91ce31dd5855a8f6476b2f01d4b3c44659d04582884a3608c081ed57898e5005",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1051230"
+      }
+    },
+    {
+      "page_index": 6,
+      "from": 6000,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-06.json",
+      "request_bytes": 1141,
+      "request_sha256": "fa68c84bd2af00a0673a661f0aaadfa375a4efa1275af4b4f4e7ec3ab5f46abf",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-06.json",
+      "response_bytes": 1094853,
+      "response_sha256": "d38df66595cb0eaa8138b358337728ec4e5392876358c5ee6e1f3d50188a1493",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1094853"
+      }
+    },
+    {
+      "page_index": 7,
+      "from": 7000,
+      "hits": 1000,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-07.json",
+      "request_bytes": 1141,
+      "request_sha256": "a883cbdf0d2687691e8cfc635db66a3da6fe2b898b240acf3016f46d8de28e75",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-07.json",
+      "response_bytes": 1107767,
+      "response_sha256": "1333b50fa4dad6c52851763ac4cdb61d7acb725670aa07ea8498975140804908",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1107767"
+      }
+    },
+    {
+      "page_index": 8,
+      "from": 8000,
+      "hits": 423,
+      "request_path": "evidence/stage10a/source/atlas-pages/request-08.json",
+      "request_bytes": 1141,
+      "request_sha256": "2279a3995574673baf9561c61201e6f15a6e7e41ddab8546c64d934cb054ee05",
+      "response_path": "evidence/stage10a/source/atlas-pages/response-08.json",
+      "response_bytes": 468240,
+      "response_sha256": "63958e18a56f9d80a8b80b3161ba68299db064f5a9783c71476279098088be30",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "468240"
+      }
+    }
+  ]
+}

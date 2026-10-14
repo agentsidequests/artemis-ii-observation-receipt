@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "date": "2026-10-12",
+  "starting_commit": "55993744e4ab8d116c041c3a43e32bb6d4d84688",
+  "objective": "Quantify whether withholding the one identity-ambiguous original action changes the named relationship, selection, weighting and completion conclusions, without replacing canonical receipts",
+  "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+  "capture_keys": [
+    "art002e015987",
+    "art002e015988",
+    "art002e015989",
+    "art002e015990",
+    "art002e015991"
+  ],
+  "expected_removed_products": 15,
+  "input_pins": [
+    {
+      "path": "paper-review/order-robust-reconstruction/result.json",
+      "bytes": 8776218,
+      "sha256": "cee99d8716d628b70191e682af118e61ff2f78b5018066df424fb023f19a4d34"
+    },
+    {
+      "path": "paper-review/order-robust-reconstruction/contract.json",
+      "bytes": 3343,
+      "sha256": "a673e694cd03b6a464b338a810759b31c7f8700002de9a94944e793611de3771"
+    },
+    {
+      "path": "results/stage10o-product-relationship-manifest.csv",
+      "bytes": 10072026,
+      "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+    },
+    {
+      "path": "results/stage11l-split-assignments.csv",
+      "bytes": 4573289,
+      "sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1"
+    },
+    {
+      "path": "results/stage10z-action-plan-membership.csv",
+      "bytes": 398284,
+      "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+    },
+    {
+      "path": "src/stage11r_hierarchical_test_isolation.py",
+      "bytes": 10817,
+      "sha256": "e86a21b857551622282ab503a9870357ee1d50403f412a131d9d0bf57a07e6f9"
+    },
+    {
+      "path": "src/stage11t_opportunity_concentration.py",
+      "bytes": 17662,
+      "sha256": "1d9fed505a97f807089a49dd2865ceae6a33dc813d1deffcaffde16932c34cc0"
+    },
+    {
+      "path": "src/stage11u_selection_weighting_cascade.py",
+      "bytes": 27067,
+      "sha256": "b9942e3feee9da312206b978131b8cee043ee6beb1cf5e7a3f8d98be931e8961"
+    },
+    {
+      "path": "src/stage11v_target_completion_bounds.py",
+      "bytes": 18603,
+      "sha256": "8453b379a7106829e40a9e30f014f3d7db8e77805982206e389dbc290b9d8b8f"
+    },
+    {
+      "path": "src/stage10w_target_tag_selection.py",
+      "bytes": 13546,
+      "sha256": "7a3d7de9e49efedb395bb5812b59b8b1f7c329d6166b205126d85abfd2a2d0d9"
+    },
+    {
+      "path": "results/stage11r-hierarchical-isolation.json",
+      "bytes": 4371,
+      "sha256": "38cb7f9573db05ae8664efe9ffbcf957e888f7fb962861deb7a6195d77194abe"
+    },
+    {
+      "path": "results/stage11t-result.json",
+      "bytes": 54807,
+      "sha256": "cad913c1c24ebd6f83da4821e4620a793a33559d9eb83009b6b654c2dde4957f"
+    },
+    {
+      "path": "results/stage11u-selection-weighting-cascade.json",
+      "bytes": 153823,
+      "sha256": "bd651dc716d05fe0bdfb4f7cdebd6b85e3980a86f8a33bbf67ea5797794e54c0"
+    },
+    {
+      "path": "results/stage11v-result.json",
+      "bytes": 153632,
+      "sha256": "cc69e994040cbe10c478a6a5ae566505a4340107908e5bc4be1f17066b88baaf"
+    },
+    {
+      "path": "results/stage10w-result.json",
+      "bytes": 86238,
+      "sha256": "5407373d27b424c0528a170432c86ea89dd75c137dc83757b25332c3d1a72520"
+    },
+    {
+      "path": "results/stage11n-result.json",
+      "bytes": 26283,
+      "sha256": "930be47399e76dde2b72bbf21422e1ea21598115dff362afe869570eccb25ae5"
+    },
+    {
+      "path": "results/stage11q-injection-recovery.json",
+      "bytes": 10875,
+      "sha256": "f8fc492f620a834aa05768e6a7318402188729a0ee60ba60f70c531cbf4585d0"
+    }
+  ],
+  "treatment": "Delete only all three representation rows of each of the five specified original capture keys, their matching assignment rows and this action's two plan-membership rows. Preserve every surviving field, original split, action/temporal keys and plan interval. Do not add art002e009301 or any new candidate family, merge identities, rehash splits or rebuild temporal clusters.",
+  "analysis": "Baseline and conditional subset use the frozen Stage 11R, 10W, 11U and 11V pure calculations, plus an in-memory composition of Stage 11T's unchanged weighting/overlap primitives. Require the baseline metrics to reproduce their canonical receipts before interpreting any delta.",
+  "oracle": "Exact deletion membership and source hashes; full native-ID relationship parity across input tables; original baseline replay; independent counts/ratios from rows; no-op control; wrong action/partial representation/wrong assignment/addition/field mutation rejection; shared-state versus changed-case numeric disposition.",
+  "limits": {
+    "canonical_counts_replaced": false,
+    "candidate_adopted": false,
+    "physical_identity": false,
+    "target_truth": false,
+    "new_images": false,
+    "scientific_acceptance": false,
+    "other_ambiguities_resolved": false
+  },
+  "effects": {
+    "network_requests": 0,
+    "new_image_bytes": 0,
+    "outreach": false,
+    "publication": false,
+    "remote_push": false
+  },
+  "stop": "Stop before writing on a source, baseline, deletion-scope, field-parity or table-join mismatch. The sensitivity is conditional, not a probability estimate, physical correction or comprehensive archive audit."
+}

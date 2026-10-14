@@ -1,0 +1,51 @@
+{
+  "version": "0.1",
+  "date": "2026-10-11",
+  "status": "CANDIDATE_UNACCEPTED_NOT_READY_TO_SCORE",
+  "concept_id": "A2-EL-APPEARANCE-01",
+  "requested_concept": "visible solar-corona structure",
+  "proposed_task": "depicted extended light adjacent to an apparent occulting limb; appearance and origin separated",
+  "physical_classifier": false,
+  "population": "frozen 7606-source-exposure complete-action cohort only",
+  "unit": "capture_identity",
+  "controlling_protocol": "ARTEMIS-II-TARGET-LABEL-AUDIT-PROTOCOL.md",
+  "pilot_receipt": "target-label-audit/pilot-prep/preparation-receipt.json",
+  "rubric_file": "target-label-audit/corona-rubric/CANDIDATE-RUBRIC.md",
+  "judgments": ["PRESENT", "ABSENT", "UNRESOLVED", "OUT_OF_SCOPE"],
+  "not_ready_state": "NOT_READY_TO_SCORE",
+  "morphology": ["DIFFUSE_HALO_OR_GRADIENT", "LOCALIZED_RAY_OR_FAN", "CURVED_EXTENSION", "MULTIPLE", "UNRESOLVED", "NONE"],
+  "interpretation_states": ["NOT_ASSESSED", "UNRESOLVED", "REFERENCE_INTERPRETATION_RECORDED"],
+  "physical_subtypes_admitted": [],
+  "numeric_detection_thresholds_accepted": false,
+  "gates": {
+    "qualified_concept_accepted": false,
+    "viewing_profile_accepted": false,
+    "reference_response_rules_accepted": false,
+    "authorized_image_bundle_ready": false,
+    "actual_image_use_check_passed": false
+  },
+  "ordered_candidate_rules": [
+    {"rule": "RELEASE_GATE", "if_any_false": ["qualified_concept_accepted", "viewing_profile_accepted", "reference_response_rules_accepted", "authorized_image_bundle_ready", "actual_image_use_check_passed"], "disposition": "NOT_READY_TO_SCORE"},
+    {"rule": "KNOWN_INELIGIBLE", "if_all": {"unit_eligibility": "INELIGIBLE"}, "disposition": "OUT_OF_SCOPE"},
+    {"rule": "ELIGIBILITY_OR_CARRIER_UNRESOLVED", "if_any": {"unit_eligibility": "UNKNOWN", "carrier_readable": false}, "disposition": "UNRESOLVED"},
+    {"rule": "LOCAL_PRESENCE", "if_all": {"unit_eligibility": "ELIGIBLE", "carrier_readable": true, "limb_region_locatable": true, "qualifying_extended_light": true, "local_positive_adequacy": true, "artifact_interference": "RESOLVED"}, "disposition": "PRESENT"},
+    {"rule": "BOUNDED_ABSENCE", "if_all": {"unit_eligibility": "ELIGIBLE", "carrier_readable": true, "limb_region_locatable": true, "qualifying_extended_light": false, "complete_region_coverage": true, "negative_profile_adequacy": true, "minimum_feature_recognition_demonstrated": true, "artifact_interference": "RESOLVED"}, "disposition": "ABSENT"},
+    {"rule": "DEFAULT_ABSTENTION", "disposition": "UNRESOLVED"}
+  ],
+  "supplementary_fields": ["audit_id", "concept_id", "rubric_version", "reviewer_id", "pass", "viewing_profile_sha256", "display_product_sha256", "declared_region", "unit_eligibility", "carrier_readable", "limb_region_locatable", "qualifying_extended_light", "local_positive_adequacy", "complete_region_coverage", "negative_profile_adequacy", "minimum_feature_recognition_demonstrated", "artifact_interference", "appearance_judgment", "morphology", "interpretation_state", "interpretation_text", "reference_locator", "reference_dependence", "reason", "decision_locked_utc"],
+  "artifact_interference": ["RESOLVED", "UNRESOLVED", "UNKNOWN"],
+  "reference_dependence": ["SAME_VIEW", "SAME_CAPTURE", "RELATED_ACTION", "INDEPENDENT_INSTRUMENT_PARTIAL", "UNKNOWN", "NOT_APPLICABLE"],
+  "effects_completed": {"candidate_pixels_opened": false, "reference_figures_inspected": false, "images_acquired": false, "images_labeled": false, "probability_audit_drawn": false, "model_evaluated": false, "reviewers_assigned": false, "external_contact": false},
+  "source_disposition": "specialist-method proposal in the existing private Artemis owner only",
+  "learning_disposition": "project-local concept and evidence-boundary refinement; no cross-context promotion",
+  "acceptance_owner": "qualified solar/lunar-imaging reviewer; Paul owns effects and continuation",
+  "sources": [
+    {"id": "PDS_PLAN", "title": "Artemis II outgoing target request", "publisher": "NASA/PDS", "class": "native mission plan", "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_outgoing_target_request.json", "local_path": "corpus/artemis2_outgoing_target_request.json", "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754", "locator": "target_properties target_name Sunset, order 24, target_description, unaided_eye_actions, camera_actions", "currentness": "preserved archive snapshot; no new live-fetch claim", "reviewed": "2026-10-11", "transfer_limit": "requested phenomena are not per-image observations or validated labels"},
+    {"id": "PDS_GUIDE", "title": "Artemis II Lunar Science Data User Guide", "publisher": "NASA/PDS", "class": "mission data guidance", "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_data_user_guide.pdf", "local_path": "evidence/stage10d/source/artemis2_data_user_guide.txt", "sha256": "3533de2c32617b9d1a2ff29022771dab5d29ac6bbaa15dd3554f23a992a8d31e", "hash_scope": "preserved text extraction, not PDF bytes", "locator": "sections 3.1.2, 3.1.3, 5.2.4; Table 17", "currentness": "preserved archive extraction; no new live-fetch claim", "reviewed": "2026-10-11", "transfer_limit": "processing and calibration limits do not prove every image unusable"},
+    {"id": "NASA_RELEASE", "title": "NASA's Artemis II Crew Beams Official Moon Flyby Photos to Earth", "publisher": "NASA", "class": "official mission release", "url": "https://www.nasa.gov/news-release/nasas-artemis-ii-crew-beams-official-moon-flyby-photos-to-earth/", "published": "2026-04-07", "updated": "2026-04-08", "accessed": "2026-10-11", "historical_anchor": "release 26-029; editor note on revised captions; Artemis II in Eclipse and Partial Frame captions", "locator": "halo-origin caution in the two eclipse captions", "transfer_limit": "dated caution, not a current refutation of later image-specific physical analysis"},
+    {"id": "NASA_PRELIMINARY", "title": "Artemis II Preliminary Lunar Science Report", "publisher": "NASA Science", "class": "official public report presentation", "url": "https://science.nasa.gov/feature/artemis-ii-preliminary-lunar-science-report/", "shown_page_date": "not established in inspected passage", "accessed": "2026-10-11", "historical_anchor": "Chapter 4, Eclipse From the Far Side; separate zodiacal-light discussion and coronal-structure captions", "locator": "Chapter 4", "transfer_limit": "mission observations and caption interpretations do not label every pilot capture; no figure pixels inspected"},
+    {"id": "NASA_ECLIPSE", "title": "Total Solar Eclipse of 2008 August 01, section 3.3 Eclipse Photography", "publisher": "NASA Goddard", "class": "official technical publication", "url": "https://eclipse.gsfc.nasa.gov/SEpubs/20080801/section3.html", "version": "NASA/TP-2007-214149; page footer 2008-03-12", "accessed": "2026-10-11", "locator": "section 3.3, inner/outer corona brightness and exposure bracketing", "transfer_limit": "terrestrial photography guidance supplies no Artemis-specific numeric adequacy threshold"},
+    {"id": "TSUMURA_ARIMATSU", "title": "Large-scale Morphology of the Optical F-corona from a Total Solar Eclipse Observation during the Artemis II Lunar Flyby", "authors": ["Kohji Tsumura", "Ko Arimatsu"], "publisher": "American Astronomical Society / IOP; arXiv author manuscript", "class": "primary research", "url": "https://arxiv.org/html/2604.13908v3", "identity_url": "https://arxiv.org/abs/2604.13908", "doi": "10.3847/2041-8213/ae71c8", "doi_url": "https://doi.org/10.3847/2041-8213/ae71c8", "inspected_version": "arXiv v3, revised 2026-05-21", "publisher_index_metadata": "ApJL 1004 L16; received Apr 15, revised May 21, accepted May 22, published Jun 9 2026", "publisher_fulltext_status": "INACCESSIBLE_DIRECT; indexed native metadata inspected", "correction_retraction_status": "UNKNOWN; direct publisher and Crossmark inaccessible", "arxiv_status": "v3 current on inspected native submission history; no withdrawal notice observed", "journal_byte_parity": "UNKNOWN", "accessed": "2026-10-11", "locator": "sections II.2, III.1-III.4 and IV.3", "transfer_limit": "one published JPEG, relative analysis and image-specific checks, not an archive-wide calibration or pilot reference oracle", "limited_overlap_check": "published capture art002e009301 not found in the 48-unit steward crosswalk; no full history or scene-independence attestation"}
+  ],
+  "stop_rule": "revise or retire if the task lacks qualified operational criteria or adequate references; do not invent specificity or acquire pixels by implication"
+}

@@ -1,0 +1,1904 @@
+{
+  "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_DETERMINISTIC_SPLIT_RECEIPT_CANARY",
+  "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+  "assignment_bytes": 4573289,
+  "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+  "receipt_bytes": 4216,
+  "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+  "policies": {
+    "product_key": {
+      "grouping_key": "product_id",
+      "products_by_partition": {
+        "test": 4511,
+        "train": 18307
+      },
+      "test_product_share": 0.1976948023490227,
+      "actions_visible_by_partition": {
+        "test": 1937,
+        "train": 2166
+      },
+      "temporal_5s_groups_visible_by_partition": {
+        "test": 762,
+        "train": 816
+      },
+      "crossing_action_groups": 1937,
+      "products_in_crossing_action_groups": 20601,
+      "crossing_temporal_5s_groups": 762,
+      "actions_in_crossing_temporal_5s_groups": 2105,
+      "products_in_crossing_temporal_5s_groups": 22251
+    },
+    "action_key": {
+      "grouping_key": "action_id",
+      "products_by_partition": {
+        "test": 4314,
+        "train": 18504
+      },
+      "test_product_share": 0.18906126742045753,
+      "actions_visible_by_partition": {
+        "test": 416,
+        "train": 1750
+      },
+      "temporal_5s_groups_visible_by_partition": {
+        "test": 271,
+        "train": 702
+      },
+      "crossing_action_groups": 0,
+      "products_in_crossing_action_groups": 0,
+      "crossing_temporal_5s_groups": 157,
+      "actions_in_crossing_temporal_5s_groups": 1216,
+      "products_in_crossing_temporal_5s_groups": 13236
+    },
+    "temporal_5s_key": {
+      "grouping_key": "temporal_cluster_5s",
+      "products_by_partition": {
+        "test": 4431,
+        "train": 18387
+      },
+      "test_product_share": 0.19418879831711808,
+      "actions_visible_by_partition": {
+        "test": 417,
+        "train": 1749
+      },
+      "temporal_5s_groups_visible_by_partition": {
+        "test": 163,
+        "train": 653
+      },
+      "crossing_action_groups": 0,
+      "products_in_crossing_action_groups": 0,
+      "crossing_temporal_5s_groups": 0,
+      "actions_in_crossing_temporal_5s_groups": 0,
+      "products_in_crossing_temporal_5s_groups": 0
+    }
+  },
+  "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+  "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+  "next_step_logic": {
+    "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+    "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+    "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+    "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+    "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+  },
+  "checks": [
+    {
+      "id": "relationship_manifest_replay",
+      "pass": true
+    },
+    {
+      "id": "frozen_source_identity",
+      "pass": true,
+      "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+    },
+    {
+      "id": "deterministic_artifact_identity",
+      "pass": true
+    },
+    {
+      "id": "complete_one_to_one_assignments",
+      "pass": true
+    },
+    {
+      "id": "assignment_replay",
+      "pass": true
+    },
+    {
+      "id": "frozen_policy_metrics",
+      "pass": true,
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      }
+    },
+    {
+      "id": "relationship_preservation_oracle",
+      "pass": true
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "mismatch_source_hash": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "mismatch_source_hash",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": false,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": true,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18504
+              },
+              "test_product_share": 0.18906126742045753,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The relationship manifest does not match the frozen source hash."
+      ]
+    },
+    "tamper_partition_assignment": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "tamper_partition_assignment",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4313,
+            "train": 18505
+          },
+          "test_product_share": 0.1890174423700587,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1751
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 703
+          },
+          "crossing_action_groups": 1,
+          "products_in_crossing_action_groups": 9,
+          "crossing_temporal_5s_groups": 158,
+          "actions_in_crossing_temporal_5s_groups": 1217,
+          "products_in_crossing_temporal_5s_groups": 13245
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": false
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": false,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4313,
+                "train": 18505
+              },
+              "test_product_share": 0.1890174423700587,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1751
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 703
+              },
+              "crossing_action_groups": 1,
+              "products_in_crossing_action_groups": 9,
+              "crossing_temporal_5s_groups": 158,
+              "actions_in_crossing_temporal_5s_groups": 1217,
+              "products_in_crossing_temporal_5s_groups": 13245
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": false
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "At least one partition assignment does not replay from its declared key.",
+        "The canary policy metrics differ from the frozen result.",
+        "The three policies no longer produce the required discriminating preservation pattern."
+      ]
+    },
+    "drop_assignment_row": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "drop_assignment_row",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18306
+          },
+          "test_product_share": 0.19770346671341543,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20600,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22250
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18503
+          },
+          "test_product_share": 0.1890695534031643,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4430,
+            "train": 18387
+          },
+          "test_product_share": 0.19415348205285532,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": false
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": false,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18306
+              },
+              "test_product_share": 0.19770346671341543,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20600,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22250
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18503
+              },
+              "test_product_share": 0.1890695534031643,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4430,
+                "train": 18387
+              },
+              "test_product_share": 0.19415348205285532,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The assignment artifact does not contain every source product exactly once.",
+        "The canary policy metrics differ from the frozen result."
+      ]
+    },
+    "misdeclare_product_policy_as_action_safe": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "misdeclare_product_policy_as_action_safe",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": true,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18504
+              },
+              "test_product_share": 0.18906126742045753,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false
+        }
+      ],
+      "errors": [
+        "A prohibited policy, semantic, leakage, performance, universality, or pixel claim was admitted."
+      ]
+    },
+    "call_temporal_groups_semantic_scenes": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "call_temporal_groups_semantic_scenes",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": true,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18504
+              },
+              "test_product_share": 0.18906126742045753,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false
+        }
+      ],
+      "errors": [
+        "A prohibited policy, semantic, leakage, performance, universality, or pixel claim was admitted."
+      ]
+    },
+    "call_crossing_observed_model_leakage": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "call_crossing_observed_model_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": true,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18504
+              },
+              "test_product_share": 0.18906126742045753,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false
+        }
+      ],
+      "errors": [
+        "A prohibited policy, semantic, leakage, performance, universality, or pixel claim was admitted."
+      ]
+    },
+    "infer_model_performance_effect": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "infer_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": true,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18504
+              },
+              "test_product_share": 0.18906126742045753,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false
+        }
+      ],
+      "errors": [
+        "A prohibited policy, semantic, leakage, performance, universality, or pixel claim was admitted."
+      ]
+    },
+    "claim_five_seconds_is_universal": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "claim_five_seconds_is_universal",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": true,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18504
+              },
+              "test_product_share": 0.18906126742045753,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false
+        }
+      ],
+      "errors": [
+        "A prohibited policy, semantic, leakage, performance, universality, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_split_canary": {
+      "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+      "mutation": "open_pixels_for_split_canary",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "assignment_bytes": 4573289,
+      "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "receipt_bytes": 4216,
+      "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "policies": {
+        "product_key": {
+          "grouping_key": "product_id",
+          "products_by_partition": {
+            "test": 4511,
+            "train": 18307
+          },
+          "test_product_share": 0.1976948023490227,
+          "actions_visible_by_partition": {
+            "test": 1937,
+            "train": 2166
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 762,
+            "train": 816
+          },
+          "crossing_action_groups": 1937,
+          "products_in_crossing_action_groups": 20601,
+          "crossing_temporal_5s_groups": 762,
+          "actions_in_crossing_temporal_5s_groups": 2105,
+          "products_in_crossing_temporal_5s_groups": 22251
+        },
+        "action_key": {
+          "grouping_key": "action_id",
+          "products_by_partition": {
+            "test": 4314,
+            "train": 18504
+          },
+          "test_product_share": 0.18906126742045753,
+          "actions_visible_by_partition": {
+            "test": 416,
+            "train": 1750
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 271,
+            "train": 702
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 157,
+          "actions_in_crossing_temporal_5s_groups": 1216,
+          "products_in_crossing_temporal_5s_groups": 13236
+        },
+        "temporal_5s_key": {
+          "grouping_key": "temporal_cluster_5s",
+          "products_by_partition": {
+            "test": 4431,
+            "train": 18387
+          },
+          "test_product_share": 0.19418879831711808,
+          "actions_visible_by_partition": {
+            "test": 417,
+            "train": 1749
+          },
+          "temporal_5s_groups_visible_by_partition": {
+            "test": 163,
+            "train": 653
+          },
+          "crossing_action_groups": 0,
+          "products_in_crossing_action_groups": 0,
+          "crossing_temporal_5s_groups": 0,
+          "actions_in_crossing_temporal_5s_groups": 0,
+          "products_in_crossing_temporal_5s_groups": 0
+        }
+      },
+      "verified": "The deterministic canary distinguishes three policy boundaries: product hashing fractures declared action groups; action hashing preserves actions but still fractures conditional five-second groups; hashing the five-second key preserves both declared layers.",
+      "decision_use": "Use the receipt as executable evidence that declared relationships can be checked and failed. Do not reuse the canary assignment as a scientific split; a real task must replace the conditional key with its own dependence oracle.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+      "next_step_logic": {
+        "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+        "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+        "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+        "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+        "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+      },
+      "checks": [
+        {
+          "id": "relationship_manifest_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_source_identity",
+          "pass": true,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "deterministic_artifact_identity",
+          "pass": true
+        },
+        {
+          "id": "complete_one_to_one_assignments",
+          "pass": true
+        },
+        {
+          "id": "assignment_replay",
+          "pass": true
+        },
+        {
+          "id": "frozen_policy_metrics",
+          "pass": true,
+          "policies": {
+            "product_key": {
+              "grouping_key": "product_id",
+              "products_by_partition": {
+                "test": 4511,
+                "train": 18307
+              },
+              "test_product_share": 0.1976948023490227,
+              "actions_visible_by_partition": {
+                "test": 1937,
+                "train": 2166
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 762,
+                "train": 816
+              },
+              "crossing_action_groups": 1937,
+              "products_in_crossing_action_groups": 20601,
+              "crossing_temporal_5s_groups": 762,
+              "actions_in_crossing_temporal_5s_groups": 2105,
+              "products_in_crossing_temporal_5s_groups": 22251
+            },
+            "action_key": {
+              "grouping_key": "action_id",
+              "products_by_partition": {
+                "test": 4314,
+                "train": 18504
+              },
+              "test_product_share": 0.18906126742045753,
+              "actions_visible_by_partition": {
+                "test": 416,
+                "train": 1750
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 271,
+                "train": 702
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 157,
+              "actions_in_crossing_temporal_5s_groups": 1216,
+              "products_in_crossing_temporal_5s_groups": 13236
+            },
+            "temporal_5s_key": {
+              "grouping_key": "temporal_cluster_5s",
+              "products_by_partition": {
+                "test": 4431,
+                "train": 18387
+              },
+              "test_product_share": 0.19418879831711808,
+              "actions_visible_by_partition": {
+                "test": 417,
+                "train": 1749
+              },
+              "temporal_5s_groups_visible_by_partition": {
+                "test": 163,
+                "train": 653
+              },
+              "crossing_action_groups": 0,
+              "products_in_crossing_action_groups": 0,
+              "crossing_temporal_5s_groups": 0,
+              "actions_in_crossing_temporal_5s_groups": 0,
+              "products_in_crossing_temporal_5s_groups": 0
+            }
+          }
+        },
+        {
+          "id": "relationship_preservation_oracle",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false
+        }
+      ],
+      "errors": [
+        "A prohibited policy, semantic, leakage, performance, universality, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

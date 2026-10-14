@@ -1,0 +1,114 @@
+{
+  "manifest_id": "artemis2-stage9b-source-manifest-v1",
+  "created_at_utc": "2026-10-09T23:33:02Z",
+  "retained_source_bytes": 977121,
+  "new_candidate_pixel_bytes": 0,
+  "pixel_payloads_opened": [],
+  "files": [
+    {
+      "path": "evidence/stage9b/source/art002a000015_pcd3_raw_v01.xml",
+      "bytes": 8304,
+      "sha256": "e55338fceda8d195478258bbce83a40ff86830702e54d6b29a93e10658ae1b53",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_mission_audio/data_audio_pcd/fd06/art002a000015_pcd3_raw_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/art002a000015_pcd3_trn-csv_v01.csv",
+      "bytes": 9902,
+      "sha256": "785bc842d42b56e996234f9c14fc581f2f82954b976e49f894b02b25d706c58e",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_mission_audio/data_transcripts_pcd/fd06/art002a000015_pcd3_trn-csv_v01.csv"
+    },
+    {
+      "path": "evidence/stage9b/source/art002a000015_pcd3_trn-csv_v01.xml",
+      "bytes": 6605,
+      "sha256": "4f00d8023f7874e462200764064c77d746b153d5a853543b8d996091463c4a20",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_mission_audio/data_transcripts_pcd/fd06/art002a000015_pcd3_trn-csv_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/art002e009280_nkd5015_raw_v01.xml",
+      "bytes": 18983,
+      "sha256": "46a1041a79c83b384c30e641ab7a5bae1ca4ca18927b09e0dc0460491eef53ba",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_raw/fd06/art002e009280_nkd5015_raw_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/art002e025029_nkd5015_raw_v01.xml",
+      "bytes": 18915,
+      "sha256": "872f1b6612c4bbf333c0b743c010755d2a75d12e7cafb2bf7c2f9b902155fa94",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_raw/fd06/art002e025029_nkd5015_raw_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/art002e025030_nkd5015_raw_v01.xml",
+      "bytes": 18916,
+      "sha256": "5266f2d8fd1f2ac7f921c59d1fe97768cb65b41d563486f88416b53b53d079e3",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_raw/fd06/art002e025030_nkd5015_raw_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/art002e025031_nkd5015_raw_v01.xml",
+      "bytes": 18920,
+      "sha256": "2789720d08c863e3962a36f431c312934d15876f6e9977f24907fac6e083febf",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_raw/fd06/art002e025031_nkd5015_raw_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/art002e025032_nkd5015_raw_v01.xml",
+      "bytes": 18918,
+      "sha256": "d985c60ea1ac8ce26c6d0372411b230312a5958c4995028a5fe79a694501df10",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_raw/fd06/art002e025032_nkd5015_raw_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/art002e025033_nkd5015_raw_v01.xml",
+      "bytes": 18915,
+      "sha256": "70d9a8387a08c56b90500f2467f41b66a993ae0f63fd22a0747723ecf12b2589",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_raw/fd06/art002e025033_nkd5015_raw_v01.xml"
+    },
+    {
+      "path": "evidence/stage9b/source/atlas-event-window-query.json",
+      "bytes": 972,
+      "sha256": "2ea7c4b699c6d3e5b87f7241a40e8dc85f1d0f103599b4e585628defe2c53c8d",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage9b/source/atlas-event-window-response.json",
+      "bytes": 792766,
+      "sha256": "b68f5ade2eea34719ecd86ec7312855cf92cc88535d0ba1548092f28c47a7d21",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage9b/source/collection_data_transcripts_pcd_inventory.csv",
+      "bytes": 10062,
+      "sha256": "ca30a749c7adb1f4f979a1f8cfc1c57c0e0cd2475eb0566ace22920eaa971625",
+      "url": "https://pds.nasa.gov/data/pds4/releases/img/artemis2_mission_audio-20261007/collection_data_transcripts_pcd_inventory.csv"
+    },
+    {
+      "path": "evidence/stage9b/source/pds-artemis2-mission-page-2026-10-09.html",
+      "bytes": 34943,
+      "sha256": "d9574351db571fd8817fccad45a4627dbc5ff27f4ccae56c88e524a7cfadcd1e",
+      "url": "https://pds-geosciences.wustl.edu/missions/artemis2/index.htm"
+    }
+  ],
+  "reused_files": [
+    {
+      "path": "evidence/stage2a/source/art002e016298_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "30233719018d3c6cd772269cafb285ef6ab0eb61347c67850a4070e6f6b11ca7"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016299_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "c2d3407e26a0df5fc7ea3b0f62f0e823855270705e6d4b4a829482f5813ac3d4"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016300_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "ad531d06c3eae11cd85fd9be2d9678375e46ac6380dc2f0e9cfcca6050bf17f4"
+    },
+    {
+      "path": "evidence/stage9a/source-screen.md",
+      "bytes": 7403,
+      "sha256": "14f888d53476afbbb78aaffc4a394e186c2d73639409c4239435ddeb4b3cf047"
+    },
+    {
+      "path": "spec/stage9a.json",
+      "bytes": 5076,
+      "sha256": "d9799971960c8a74e68130aa6652fe30a21530c68ce62d5d92b62dfe20ee0176"
+    }
+  ]
+}

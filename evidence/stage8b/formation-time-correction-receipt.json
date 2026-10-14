@@ -1,0 +1,20 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-stimulus-recoverability-stage8b",
+  "classification": "REPRESENTATION_ONLY_FORMATION_TIME_CORRECTION",
+  "recorded_at_utc": "2026-10-09T22:35:29Z",
+  "original_spec_sha256": "17a86f33dab3f7d48463d6e1b3c6700f090be15a158990c28f5b04221cf83ba6",
+  "corrected_spec_sha256": "adb7b8207e586ac6e17fbf5192f1d6a4aec981e2c870fdd2053fa29cf14b7497",
+  "original_formed_at_utc": "2026-10-10T04:41:00Z",
+  "corrected_formed_at_utc": "2026-10-09T22:31:36Z",
+  "formation_commit": "45804fa0472e21ef6e2a6a9bb07e6eec82d88a7d",
+  "formation_commit_time": "2026-10-09T17:31:36-05:00",
+  "basis": "The original timestamp was a clerical timezone error. The corrected UTC value is the immutable first-formation commit time converted from its recorded -05:00 offset.",
+  "changed_fields": ["formed_at_utc"],
+  "selected_products_changed": false,
+  "oracle_changed": false,
+  "inspection_contract_changed": false,
+  "hard_negatives_changed": false,
+  "next_step_logic_changed": false,
+  "browse_images_inspected_before_formation_commit": 0,
+  "source_acquisition_began_after_formation_commit": true
+}

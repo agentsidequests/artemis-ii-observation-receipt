@@ -1,0 +1,1904 @@
+{
+  "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_PROTOCOL_CONTEXT_ALIGNMENT",
+  "metrics": {
+    "plan_associated_unique_actions": 1540,
+    "three_exposure_actions": 994,
+    "five_exposure_actions": 546,
+    "five_exposure_action_share": 0.35454545454545455,
+    "flat_products": 17136,
+    "five_exposure_flat_products": 8190,
+    "five_exposure_product_share": 0.47794117647058826,
+    "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+    "camera_3500015_actions": 1377,
+    "camera_3500015_three_exposure_actions": 987,
+    "camera_3500015_five_exposure_actions": 390,
+    "camera_3500015_exposure_count_transitions": 2,
+    "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+    "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+    "camera_3500017_actions": 7,
+    "camera_3500017_three_exposure_actions": 7,
+    "camera_3500017_five_exposure_actions": 0,
+    "camera_3500017_exposure_count_transitions": 0,
+    "camera_3920019_actions": 156,
+    "camera_3920019_three_exposure_actions": 0,
+    "camera_3920019_five_exposure_actions": 156,
+    "camera_3920019_exposure_count_transitions": 0,
+    "camera_3920019_action_share": 0.1012987012987013,
+    "camera_3920019_flat_products": 2340,
+    "camera_3920019_product_share": 0.13655462184873948,
+    "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+  },
+  "camera_runs": {
+    "3500015": [
+      {
+        "exposures_in_action": 3,
+        "start_utc": "2026-04-06T18:46:23.120Z",
+        "actions": 879
+      },
+      {
+        "exposures_in_action": 5,
+        "start_utc": "2026-04-06T22:35:42.290Z",
+        "actions": 390
+      },
+      {
+        "exposures_in_action": 3,
+        "start_utc": "2026-04-07T01:07:03.430Z",
+        "actions": 108
+      }
+    ],
+    "3500017": [
+      {
+        "exposures_in_action": 3,
+        "start_utc": "2026-04-06T22:31:39.690Z",
+        "actions": 7
+      }
+    ],
+    "3920019": [
+      {
+        "exposures_in_action": 5,
+        "start_utc": "2026-04-07T00:32:46.620Z",
+        "actions": 156
+      }
+    ]
+  },
+  "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+  "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+  "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+    "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+    "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+    "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+    "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+  },
+  "checks": [
+    {
+      "id": "unit_sensitive_prominence_replays",
+      "pass": true
+    },
+    {
+      "id": "protocol_context_alignment",
+      "pass": true,
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      }
+    },
+    {
+      "id": "camera_time_run_shape",
+      "pass": true,
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "plan_memberships_are_partition": false,
+        "fitted_regime_rule_is_held_out": false,
+        "bracket_length_is_target_or_content_label": false,
+        "actual_sampler": "unspecified",
+        "observed_model_bias": false,
+        "drop_bracket_exposures": false,
+        "one_universal_correct_weighting": false,
+        "scope": "verified_plan_associated_action_union",
+        "novelty_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_plan_memberships_a_partition": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "call_plan_memberships_a_partition",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": true,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_fitted_regime_rule_held_out": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "call_fitted_regime_rule_held_out",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": true,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_bracket_length_a_target_or_content_label": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "call_bracket_length_a_target_or_content_label",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": true,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_actual_sampler_is_uniform_products": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "claim_actual_sampler_is_uniform_products",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "uniform_products",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_observed_model_bias": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "claim_observed_model_bias",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": true,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "recommend_dropping_bracket_exposures": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "recommend_dropping_bracket_exposures",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": true,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_one_universal_correct_weighting": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "claim_one_universal_correct_weighting",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": true,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "generalize_to_unadmitted_archive_records": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "generalize_to_unadmitted_archive_records",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "entire_archive",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_novelty_or_priority": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "claim_novelty_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_during_alignment_test": {
+      "testbed_id": "artemis2-protocol-context-alignment-stage11h",
+      "mutation": "open_pixels_during_alignment_test",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "plan_associated_unique_actions": 1540,
+        "three_exposure_actions": 994,
+        "five_exposure_actions": 546,
+        "five_exposure_action_share": 0.35454545454545455,
+        "flat_products": 17136,
+        "five_exposure_flat_products": 8190,
+        "five_exposure_product_share": 0.47794117647058826,
+        "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+        "camera_3500015_actions": 1377,
+        "camera_3500015_three_exposure_actions": 987,
+        "camera_3500015_five_exposure_actions": 390,
+        "camera_3500015_exposure_count_transitions": 2,
+        "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+        "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+        "camera_3500017_actions": 7,
+        "camera_3500017_three_exposure_actions": 7,
+        "camera_3500017_five_exposure_actions": 0,
+        "camera_3500017_exposure_count_transitions": 0,
+        "camera_3920019_actions": 156,
+        "camera_3920019_three_exposure_actions": 0,
+        "camera_3920019_five_exposure_actions": 156,
+        "camera_3920019_exposure_count_transitions": 0,
+        "camera_3920019_action_share": 0.1012987012987013,
+        "camera_3920019_flat_products": 2340,
+        "camera_3920019_product_share": 0.13655462184873948,
+        "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+      },
+      "camera_runs": {
+        "3500015": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T18:46:23.120Z",
+            "actions": 879
+          },
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-06T22:35:42.290Z",
+            "actions": 390
+          },
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-07T01:07:03.430Z",
+            "actions": 108
+          }
+        ],
+        "3500017": [
+          {
+            "exposures_in_action": 3,
+            "start_utc": "2026-04-06T22:31:39.690Z",
+            "actions": 7
+          }
+        ],
+        "3920019": [
+          {
+            "exposures_in_action": 5,
+            "start_utc": "2026-04-07T00:32:46.620Z",
+            "actions": 156
+          }
+        ]
+      },
+      "disposition": "ADMIT_PROTOCOL_CONTEXT_ALIGNMENT_CANARY",
+      "verified": "Within the deduplicated plan-associated action union, the five-exposure protocol is aligned with camera and contiguous time regimes. Five-exposure actions are 35.455% of actions but 47.794% of flat products; camera 3920019 rises from 10.130% of actions to 13.655% of products.",
+      "decision_use": "A flat product table can inherit operational camera/time structure from the acquisition protocol before any pixel feature is measured. Preserve the intentional exposures, but make the sampling estimand and protocol strata explicit.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 11H may establish that the deduplicated union of plan-associated actions contains 994 three-exposure and 546 five-exposure actions; five-exposure actions are 35.455% of actions but 47.794% of flat products. It may establish that camera 3920019's 156 associated actions are all five-exposure and rise from 10.130% of actions to 13.655% of flat products, camera 3500017's seven are all three-exposure, and camera 3500015's 390 five-exposure actions form one contiguous in-sample time run between three-exposure runs. It cannot treat plan memberships as a partition, call the fitted camera/time description held out or generalizable, make bracket length a target or content label, assert an actual sampler or observed model bias, recommend discarding intentional exposures, nominate a universal correction, extend beyond admitted records, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Say that acquisition policy is aligned with operational context, so flat-product prominence can inherit camera/time structure; retain the exact in-sample and noncausal limits.",
+        "if_a_model_task_is_selected": "Preserve all intentional bracket exposures, but declare the estimand and report camera, time regime, bracket length, action, and event structure in sampling and evaluation.",
+        "if_a_causal_or_predictive_claim_is_proposed": "Stop; the camera/time rule was derived and checked on the same plan-associated cohort.",
+        "if_windows_are_aggregated": "Stop and use the deduplicated action union or Stage 10Z ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, relationship manifest, admitted window set, or actual model sampler."
+      },
+      "checks": [
+        {
+          "id": "unit_sensitive_prominence_replays",
+          "pass": true
+        },
+        {
+          "id": "protocol_context_alignment",
+          "pass": true,
+          "metrics": {
+            "plan_associated_unique_actions": 1540,
+            "three_exposure_actions": 994,
+            "five_exposure_actions": 546,
+            "five_exposure_action_share": 0.35454545454545455,
+            "flat_products": 17136,
+            "five_exposure_flat_products": 8190,
+            "five_exposure_product_share": 0.47794117647058826,
+            "five_exposure_product_vs_action_share_amplification": 1.3480392156862746,
+            "camera_3500015_actions": 1377,
+            "camera_3500015_three_exposure_actions": 987,
+            "camera_3500015_five_exposure_actions": 390,
+            "camera_3500015_exposure_count_transitions": 2,
+            "camera_3500015_five_run_start_utc": "2026-04-06T22:35:42.290Z",
+            "camera_3500015_following_three_run_start_utc": "2026-04-07T01:07:03.430Z",
+            "camera_3500017_actions": 7,
+            "camera_3500017_three_exposure_actions": 7,
+            "camera_3500017_five_exposure_actions": 0,
+            "camera_3500017_exposure_count_transitions": 0,
+            "camera_3920019_actions": 156,
+            "camera_3920019_three_exposure_actions": 0,
+            "camera_3920019_five_exposure_actions": 156,
+            "camera_3920019_exposure_count_transitions": 0,
+            "camera_3920019_action_share": 0.1012987012987013,
+            "camera_3920019_flat_products": 2340,
+            "camera_3920019_product_share": 0.13655462184873948,
+            "camera_3920019_product_vs_action_share_amplification": 1.3480392156862744
+          }
+        },
+        {
+          "id": "camera_time_run_shape",
+          "pass": true,
+          "camera_runs": {
+            "3500015": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T18:46:23.120Z",
+                "actions": 879
+              },
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-06T22:35:42.290Z",
+                "actions": 390
+              },
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-07T01:07:03.430Z",
+                "actions": 108
+              }
+            ],
+            "3500017": [
+              {
+                "exposures_in_action": 3,
+                "start_utc": "2026-04-06T22:31:39.690Z",
+                "actions": 7
+              }
+            ],
+            "3920019": [
+              {
+                "exposures_in_action": 5,
+                "start_utc": "2026-04-07T00:32:46.620Z",
+                "actions": 156
+              }
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_memberships_are_partition": false,
+            "fitted_regime_rule_is_held_out": false,
+            "bracket_length_is_target_or_content_label": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "drop_bracket_exposures": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_plan_associated_action_union",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, prediction, content, sampler, model, deletion, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

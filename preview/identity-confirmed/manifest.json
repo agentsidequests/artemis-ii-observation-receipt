@@ -1,0 +1,51 @@
+{
+  "bundle_version": "0.4.0",
+  "case_id": "artemis-ii-steward-confirmed-pair",
+  "files": [
+    {
+      "path": "candidates.csv",
+      "bytes": 60,
+      "sha256": "fbe26a3ea0543962a251b2407416ff86bea80c400db159b3374050141d952b41"
+    },
+    {
+      "path": "comparison.csv",
+      "bytes": 6504,
+      "sha256": "1851bdd79d19a242661084c719b0bdca33cc1a1d38e92b7eafea6db77e5b75ff"
+    },
+    {
+      "path": "findings.csv",
+      "bytes": 2892,
+      "sha256": "7f2bf60b0a827f8b1de04d0a5b0c3b5c0905fede71339bdaac44a9839c9d6059"
+    },
+    {
+      "path": "identity-groups.csv",
+      "bytes": 271,
+      "sha256": "9224db634eb4360190b229b358bb90f52984283da7251c11d773543c94c50c14"
+    },
+    {
+      "path": "index.html",
+      "bytes": 92569,
+      "sha256": "08ecc952e411c8862722471c22d26664260ad21da8a2aa9522b72ded44cd927a"
+    },
+    {
+      "path": "observation-windows.csv",
+      "bytes": 56,
+      "sha256": "a8c686bb7848a70ef7cde1ac4cb7267f3bc3cbbfdde10a219832c94614d3a8fb"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 20828,
+      "sha256": "20a78b6e45831092f9619fdbca5b3957f9979817bfd7a884f41396c7e3b21a5f"
+    },
+    {
+      "path": "receipt.md",
+      "bytes": 12090,
+      "sha256": "a0bb77269fc7eb172afe91c180443cae929d1e65f7d18a730b4cecd5de44c7e5"
+    },
+    {
+      "path": "witness-marks.csv",
+      "bytes": 144,
+      "sha256": "5570973be19ad56df7a052b70f1266effcba8da43896ec7391b78689540bb1da"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T11:35:01Z",
+  "question": "Does the complete Flight Day 6 raw crew-camera label set split any single camera-recorded five-exposure bracket across multiple activity_id facets?",
+  "terminal_objective": "Measure activity-facet fragmentation with a content-independent camera-action oracle before deciding whether archive activity filters can be treated as item-level observation truth.",
+  "method": "Complete-denominator label-only exposure-bracket integrity canary",
+  "authority": "Read-only public-source metadata acquisition and private local repository updates only. No image pixels, publication, outreach, scientific acceptance, or correction of NASA source labels.",
+  "acceptance_owner": "Paul",
+  "baseline": {
+    "known_case": [
+      "art002e015907_nkz9019_raw_v01.tif",
+      "art002e015908_nkz9019_raw_v01.tif",
+      "art002e015909_nkz9019_raw_v01.tif",
+      "art002e015910_nkz9019_raw_v01.tif",
+      "art002e015911_nkz9019_raw_v01.tif"
+    ],
+    "known_case_state": "One five-frame Z9 bracket is split 4:1 between 24_Sunset and 25_Discussion #6: Forward Look. Stage 10A may quantify only against a complete prospectively defined denominator."
+  },
+  "source_contract": {
+    "atlas_endpoint": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+    "atlas_query_path": "evidence/stage10a/source/atlas-fd6-raw-query.json",
+    "atlas_page_directory": "evidence/stage10a/source/atlas-pages",
+    "expected_hits": 8423,
+    "page_size": 1000,
+    "expected_pages": 9,
+    "max_response_bytes_each": 6000000,
+    "label_definitions_url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_label_definitions.html",
+    "label_definitions_path": "evidence/stage10a/source/artemis2_label_definitions.html",
+    "pixel_payload_bytes": 0
+  },
+  "complete_bracket_contract": {
+    "flight_day_number": "6",
+    "bundle_id": "artemis2_crew_camera",
+    "collection_id": "data_raw",
+    "required_bracket_values": ["0", "-2", "-1", "+1", "+2"],
+    "required_auto_bracket_order": "0,-,+",
+    "shooting_mode_contains": "Exposure Bracketing",
+    "frame_count": 5,
+    "maximum_span_seconds": 10.0,
+    "same_fields": ["instrument_serial_number", "iso_number", "focal_length"],
+    "consecutive_integer_fields": ["shutter_count", "file_number"],
+    "selection": "Within each instrument serial, sort by shutter_count and admit each non-overlapping five-record window satisfying every rule. The bracket-value sequence makes overlapping admissions impossible under valid data."
+  },
+  "scored_outcomes": {
+    "activity_facet_fracture": "A complete bracket contains more than one non-empty activity_id.",
+    "target_presence_fracture": "A complete bracket has target_id on some but not all frames.",
+    "target_value_fracture": "A complete bracket contains more than one non-empty target_id.",
+    "primary_metric": "activity-fractured complete brackets divided by all complete brackets",
+    "interpretation": "A fractured bracket proves that one camera action is fragmented across activity facets. It does not identify the correct activity or establish image content."
+  },
+  "outcome_states": [
+    "VERIFIED_NO_ACTIVITY_FRACTURE_IN_COMPLETE_BRACKETS",
+    "VERIFIED_ACTIVITY_FACET_FRAGMENTATION"
+  ],
+  "artifact_native_falsifier": "The complete Flight Day 6 raw-label denominator contains no qualifying five-frame bracket with more than one activity_id.",
+  "hard_negatives": [
+    "infer_correct_activity_from_bracket_majority",
+    "treat_target_id_absence_as_wrong_image_content",
+    "use_otr_windows_as_execution_truth",
+    "count_incomplete_or_nonconsecutive_brackets",
+    "generalize_fd6_bracket_rate_to_all_archive_products",
+    "claim_metadata_fragmentation_invalidates_pixel_data",
+    "claim_pds_validation_guarantees_semantic_label_correctness",
+    "open_pixels_to_resolve_activity_identity"
+  ],
+  "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+  "next_step_logic": {
+    "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+    "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+    "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+    "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+  }
+}

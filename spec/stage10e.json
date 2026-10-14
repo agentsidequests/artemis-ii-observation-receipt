@@ -1,0 +1,103 @@
+{
+  "testbed_id": "artemis2-all-flight-day-camera-action-integrity-stage10e",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:03:00Z",
+  "question": "Does the Flight Day 6 camera-action retrieval mismatch recur across the complete raw crew-camera archive?",
+  "terminal_objective": "Remove the single-day scope limit before treating action reconstruction as an archive-level requirement.",
+  "method": "Complete all-flight-day, label-only raw crew-camera acquisition followed by the Stage 10C camera-native bracket oracle",
+  "authority": "Read-only public metadata acquisition and private local repository updates only. No image pixels, publication, outreach, scientific acceptance, or correction of source labels.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "atlas_endpoint": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+    "atlas_query_path": "evidence/stage10e/source/atlas-all-raw-crew-camera-query.json",
+    "atlas_page_directory": "evidence/stage10e/source/daily-pages",
+    "receipt_path": "evidence/stage10e/acquisition-receipt.json",
+    "stage10a_receipt_path": "evidence/stage10a/acquisition-receipt.json",
+    "expected_hits": 10329,
+    "page_size": 1000,
+    "expected_daily_queries": 9,
+    "expected_flight_day_counts": {
+      "1": 273,
+      "2": 616,
+      "3": 253,
+      "4": 276,
+      "5": 311,
+      "6": 8423,
+      "7": 98,
+      "8": 79,
+      "9": 0,
+      "10": 0
+    },
+    "max_response_bytes_each": 6000000,
+    "pixel_payload_bytes": 0
+  },
+  "complete_bracket_contract": {
+    "reuse": "spec/stage10c.json#complete_bracket_contract",
+    "allowed_bracket_sequences": [
+      ["0", "-1", "+1"],
+      ["0", "-2", "+2"],
+      ["0", "-2", "-1", "+1", "+2"],
+      ["0", "-6", "-3", "+3", "+6"]
+    ]
+  },
+  "frozen_observables": {
+    "expected_complete_brackets": 2103,
+    "expected_pattern_counts": {
+      "0,-1,+1": 290,
+      "0,-2,+2": 1261,
+      "0,-2,-1,+1,+2": 226,
+      "0,-6,-3,+3,+6": 326
+    },
+    "expected_brackets_by_flight_day": {
+      "1": 85,
+      "2": 148,
+      "3": 0,
+      "4": 55,
+      "5": 70,
+      "6": 1721,
+      "7": 24,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    "expected_activity_fractures": 21,
+    "expected_activity_fracture_rate": 0.009985734664764621,
+    "expected_fractures_by_flight_day": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 21,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    "expected_target_presence_fractures_among_activity_fractures": 19,
+    "expected_target_value_fractures_among_activity_fractures": 1,
+    "expected_repeated_signature_actions": 13
+  },
+  "interpretation": {
+    "verified": "Across all ten flight-day labels, 21 of 2,103 complete raw crew-camera exposure brackets cross activity facets. Every observed fracture is on Flight Day 6; the other 382 qualifying complete brackets contribute no fracture.",
+    "inference": "Concentration on the dense lunar-observation day is more consistent with an observation-specific scheduling or curation interaction than with a generic representation failure, but it does not identify the cause.",
+    "decision_use": "Reconstruct complete camera actions before counting or sampling Flight Day 6 observations by activity; retain ordinary activity filtering as a coarse discovery aid elsewhere unless a new changed case appears."
+  },
+  "hard_negatives": [
+    "claim_non_fd6_images_are_error_free",
+    "claim_lunar_flyby_complexity_caused_fractures",
+    "generalize_bracket_rate_to_nonbracket_products",
+    "infer_correct_activity_from_companion_frames",
+    "call_every_fd6_activity_assignment_unreliable",
+    "treat_zero_observed_fractures_as_proof_of_impossibility",
+    "count_incomplete_brackets",
+    "open_pixels_to_explain_flight_day_concentration"
+  ],
+  "claim_ceiling": "Stage 10E may establish the complete raw crew-camera exposure-bracket denominator across all flight days, the observed fracture count, and its Flight Day 6 concentration. It cannot declare non-Flight-Day-6 images error-free, infer that lunar-flyby complexity caused the concentration, generalize the bracket rate to non-bracket products, identify correct activity labels, or invalidate Flight Day 6 activity facets wholesale.",
+  "next_step_logic": {
+    "if_no_cross_day_recurrence": "Keep the retrieval warning targeted to Flight Day 6 camera-action analysis and test the documented timestamp-plus-human-override mechanism against the repeated position signatures.",
+    "if_cross_day_recurrence": "Compare fracture signatures and metadata-generation contexts by flight day before narrowing the recommendation.",
+    "if_no_complete_brackets_outside_fd6": "Do not use cross-day silence as counterevidence; seek a different camera-action class.",
+    "recheck_trigger": "A revised PDS label version, another complete multi-frame action class, or a documented activity-tag generation log may change the concentration interpretation."
+  }
+}

@@ -1,0 +1,1603 @@
+{
+  "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+  "version": "1.0.0",
+  "mutation": "none",
+  "pass": true,
+  "evidence_state": "VERIFIED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+  "checks": {
+    "source_identities": true,
+    "all_timeline_anchors": true,
+    "required_temporal_order": true,
+    "frozen_deltas": true,
+    "crew_detection_context": true,
+    "claim_boundaries": true,
+    "zero_pixel_access": true
+  },
+  "source_identities": [
+    {
+      "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "bytes": 36880,
+      "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+      "match": true
+    },
+    {
+      "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+      "bytes": 115230,
+      "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+      "match": true
+    }
+  ],
+  "timeline": [
+    {
+      "id": "first_pre_explicit_search_report",
+      "utc": "2026-04-07T00:41:00.680Z",
+      "phase": "report before explicit search intent",
+      "speaker": "Wiseman",
+      "anchor_found": true,
+      "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+    },
+    {
+      "id": "explicit_search_intent",
+      "utc": "2026-04-07T00:43:19.545Z",
+      "phase": "explicit attention allocation",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "I want to look for flashes."
+    },
+    {
+      "id": "glare_identified",
+      "utc": "2026-04-07T00:43:39.492Z",
+      "phase": "viewing interference identified",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+    },
+    {
+      "id": "display_dimming",
+      "utc": "2026-04-07T00:44:01.444Z",
+      "phase": "display luminance adjustment",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "I'm going to go all the way dim and one up on DU's."
+    },
+    {
+      "id": "dedicated_watch_start",
+      "utc": "2026-04-07T00:44:59.421Z",
+      "phase": "dedicated flash search",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "I'm just going to watch for flashes."
+    },
+    {
+      "id": "dark_adaptation_report",
+      "utc": "2026-04-07T00:45:15.857Z",
+      "phase": "adaptation state changing",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+    },
+    {
+      "id": "shared_report",
+      "utc": "2026-04-07T00:51:15.947Z",
+      "phase": "shared retained report",
+      "speaker": "Wiseman",
+      "anchor_found": true,
+      "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+    },
+    {
+      "id": "ambiguous_candidate",
+      "utc": "2026-04-07T00:52:52.411Z",
+      "phase": "explicitly ambiguous candidate",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+    },
+    {
+      "id": "timeline_return",
+      "utc": "2026-04-07T00:53:19.564Z",
+      "phase": "workflow resynchronization",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "Where are we at on the science timeline, guys?"
+    },
+    {
+      "id": "ground_prompt_end",
+      "utc": "2026-04-07T00:59:05.829Z",
+      "phase": "ground-prompted query",
+      "speaker": "SCIENCE",
+      "anchor_found": true,
+      "source_text": "Or are you referring to comets or impact flashes or something else?"
+    },
+    {
+      "id": "prompt_proximate_candidate",
+      "utc": "2026-04-07T00:59:18.291Z",
+      "phase": "report after ground prompt",
+      "speaker": "Hansen",
+      "anchor_found": true,
+      "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+    },
+    {
+      "id": "last_clear_report",
+      "utc": "2026-04-07T01:03:04.906Z",
+      "phase": "last clear retained report",
+      "speaker": "Wiseman",
+      "anchor_found": true,
+      "source_text": "Dude, I just saw another one."
+    }
+  ],
+  "deltas_seconds": {
+    "first_report_to_search_intent_seconds": 138.865,
+    "first_report_to_display_dimming_seconds": 180.764,
+    "dedicated_watch_to_shared_report_seconds": 376.526,
+    "dedicated_watch_to_timeline_return_seconds": 500.143,
+    "shared_report_to_ambiguous_candidate_seconds": 96.464,
+    "ground_prompt_end_to_candidate_seconds": 12.462,
+    "first_to_last_clear_report_seconds": 1324.226
+  },
+  "crew_context_checks": {
+    "intentional_looking": true,
+    "priming_and_correlation": true,
+    "unannounced_reports": true,
+    "adaptation_resets": true,
+    "glare_control": true
+  },
+  "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+  "prohibited_claims": {
+    "raw_clock_time_is_homogeneous_exposure": false,
+    "reports_are_independent_physical_events": false,
+    "ground_prompt_caused_candidate": false,
+    "count_divided_by_clock_time_is_calibrated_rate": false,
+    "physical_clustering_inferred": false
+  },
+  "pixel_payload_bytes_opened": 0,
+  "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+  "next_step_logic": {
+    "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+    "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+    "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+    "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+  },
+  "hard_negatives": {
+    "drop_display_dimming_anchor": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "drop_display_dimming_anchor",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": false,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": true,
+        "claim_boundaries": true,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": false,
+          "source_text": null
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "move_search_intent_after_shared_report": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "move_search_intent_after_shared_report",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": false,
+        "frozen_deltas": false,
+        "crew_detection_context": true,
+        "claim_boundaries": true,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:51:16.947Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 616.267,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "drop_priming_context": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "drop_priming_context",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": false,
+        "claim_boundaries": true,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": false,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "call_clock_time_homogeneous_exposure": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "call_clock_time_homogeneous_exposure",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": true,
+        "claim_boundaries": false,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": true,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "call_reports_independent_physical_events": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "call_reports_independent_physical_events",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": true,
+        "claim_boundaries": false,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": true,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "call_ground_prompt_causal": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "call_ground_prompt_causal",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": true,
+        "claim_boundaries": false,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": true,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "call_count_over_time_calibrated_rate": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "call_count_over_time_calibrated_rate",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": true,
+        "claim_boundaries": false,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": true,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "infer_physical_clustering": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "infer_physical_clustering",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": true,
+        "claim_boundaries": false,
+        "zero_pixel_access": true
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": true
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    },
+    "open_pixels": {
+      "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+      "version": "1.0.0",
+      "mutation": "open_pixels",
+      "pass": false,
+      "evidence_state": "REJECTED_ATTENTION_CONDITIONED_OBSERVATION_PROCESS",
+      "checks": {
+        "source_identities": true,
+        "all_timeline_anchors": true,
+        "required_temporal_order": true,
+        "frozen_deltas": true,
+        "crew_detection_context": true,
+        "claim_boundaries": true,
+        "zero_pixel_access": false
+      },
+      "source_identities": [
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "bytes": 36880,
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+          "match": true
+        },
+        {
+          "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+          "bytes": 115230,
+          "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4",
+          "match": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "first_pre_explicit_search_report",
+          "utc": "2026-04-07T00:41:00.680Z",
+          "phase": "report before explicit search intent",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Come on! Oh - I just saw a meteor -- I just saw a flash!"
+        },
+        {
+          "id": "explicit_search_intent",
+          "utc": "2026-04-07T00:43:19.545Z",
+          "phase": "explicit attention allocation",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I want to look for flashes."
+        },
+        {
+          "id": "glare_identified",
+          "utc": "2026-04-07T00:43:39.492Z",
+          "phase": "viewing interference identified",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "A little glare from somewhere, but that is -- [[inaudible]]"
+        },
+        {
+          "id": "display_dimming",
+          "utc": "2026-04-07T00:44:01.444Z",
+          "phase": "display luminance adjustment",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm going to go all the way dim and one up on DU's."
+        },
+        {
+          "id": "dedicated_watch_start",
+          "utc": "2026-04-07T00:44:59.421Z",
+          "phase": "dedicated flash search",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I'm just going to watch for flashes."
+        },
+        {
+          "id": "dark_adaptation_report",
+          "utc": "2026-04-07T00:45:15.857Z",
+          "phase": "adaptation state changing",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Alright, so I haven't really been recording anything here, but what is, I think, noteworthy now as our eyes adjust further and we've got the glow around the Moon, I can see lunar topography all the way from where the Sun set down to the South Pole."
+        },
+        {
+          "id": "shared_report",
+          "utc": "2026-04-07T00:51:15.947Z",
+          "phase": "shared retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Oh I just saw a meteorite, 100 percent just saw a meteorite"
+        },
+        {
+          "id": "ambiguous_candidate",
+          "utc": "2026-04-07T00:52:52.411Z",
+          "phase": "explicitly ambiguous candidate",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Oh, I think I just saw another one, but this one I'm less sure of."
+        },
+        {
+          "id": "timeline_return",
+          "utc": "2026-04-07T00:53:19.564Z",
+          "phase": "workflow resynchronization",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "Where are we at on the science timeline, guys?"
+        },
+        {
+          "id": "ground_prompt_end",
+          "utc": "2026-04-07T00:59:05.829Z",
+          "phase": "ground-prompted query",
+          "speaker": "SCIENCE",
+          "anchor_found": true,
+          "source_text": "Or are you referring to comets or impact flashes or something else?"
+        },
+        {
+          "id": "prompt_proximate_candidate",
+          "utc": "2026-04-07T00:59:18.291Z",
+          "phase": "report after ground prompt",
+          "speaker": "Hansen",
+          "anchor_found": true,
+          "source_text": "I just saw another one. They're they're the tiniest pics of light like you you really got to keep watching for it"
+        },
+        {
+          "id": "last_clear_report",
+          "utc": "2026-04-07T01:03:04.906Z",
+          "phase": "last clear retained report",
+          "speaker": "Wiseman",
+          "anchor_found": true,
+          "source_text": "Dude, I just saw another one."
+        }
+      ],
+      "deltas_seconds": {
+        "first_report_to_search_intent_seconds": 138.865,
+        "first_report_to_display_dimming_seconds": 180.764,
+        "dedicated_watch_to_shared_report_seconds": 376.526,
+        "dedicated_watch_to_timeline_return_seconds": 500.143,
+        "shared_report_to_ambiguous_candidate_seconds": 96.464,
+        "ground_prompt_end_to_candidate_seconds": 12.462,
+        "first_to_last_clear_report_seconds": 1324.226
+      },
+      "crew_context_checks": {
+        "intentional_looking": true,
+        "priming_and_correlation": true,
+        "unannounced_reports": true,
+        "adaptation_resets": true,
+        "glare_control": true
+      },
+      "detection_regime_finding": "The first retained report preceded explicit search intent. Attention, display luminance, glare management, dark adaptation, workflow state, and ground prompting then changed during the retained report sequence. Raw eclipse clock time is therefore a composite, unsegmented human observation opportunity rather than a calibrated exposure denominator.",
+      "prohibited_claims": {
+        "raw_clock_time_is_homogeneous_exposure": false,
+        "reports_are_independent_physical_events": false,
+        "ground_prompt_caused_candidate": false,
+        "count_divided_by_clock_time_is_calibrated_rate": false,
+        "physical_clustering_inferred": false
+      },
+      "pixel_payload_bytes_opened": 1,
+      "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+      "next_step_logic": {
+        "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+        "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+        "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+        "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+      }
+    }
+  },
+  "hard_negatives_pass": true
+}

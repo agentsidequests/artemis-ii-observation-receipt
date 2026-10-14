@@ -1,0 +1,22 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-stimulus-recoverability-stage8b",
+  "completed_at_utc": "2026-10-09T22:35:29Z",
+  "status": "COMPLETED",
+  "formation_spec_sha256": "adb7b8207e586ac6e17fbf5192f1d6a4aec981e2c870fdd2053fa29cf14b7497",
+  "formation_commit": "45804fa0472e21ef6e2a6a9bb07e6eec82d88a7d",
+  "formation_time_correction_receipt_sha256": "aba9482098521943f3ca1f9bfae2a94d7c1058791cfe2b65c6f5348f02304127",
+  "source_manifest_path": "evidence/stage8b/source-manifest.json",
+  "inspection_record_path": "evidence/stage8b/inspection-record.json",
+  "source_files_downloaded": 13,
+  "science_labels_downloaded": 9,
+  "browse_images_downloaded": 3,
+  "release_calendar_documents_downloaded": 1,
+  "fallback_browse_images_downloaded": 0,
+  "fallback_browse_images_inspected": 0,
+  "head_requests_before_download": 3,
+  "head_response_body_bytes": 0,
+  "total_network_bytes": 30724440,
+  "network_accounting_scope": "Accepted response-body bytes saved from nine PDS4 labels, three PNG browse images, and one official XLSX calendar. Transport headers and protocol overhead are not represented.",
+  "maximum_total_network_bytes": 67108864,
+  "verification_network_bytes": 0
+}

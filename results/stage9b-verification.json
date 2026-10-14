@@ -1,0 +1,2553 @@
+{
+  "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_SOURCE_CONTROL_STOP",
+  "disposition": "SOURCE_CONTROL_INSUFFICIENT",
+  "lane_state": "CLOSE_GRAY_FEATURE_IMAGE_LANE_AT_CURRENT_ARCHIVE_BOUNDARY",
+  "new_candidate_pixel_bytes": 0,
+  "retained_source_bytes": 977121,
+  "atlas_hits": 41,
+  "crew_raw_frames": 40,
+  "event_bracket_frames": [
+    "art002e025029_nkd5015_raw_v01",
+    "art002e025030_nkd5015_raw_v01",
+    "art002e025031_nkd5015_raw_v01",
+    "art002e025032_nkd5015_raw_v01",
+    "art002e025033_nkd5015_raw_v01"
+  ],
+  "first_d5_offset_seconds": 0.02,
+  "external_saw_offset_seconds": 4.99,
+  "dimension_statuses": {
+    "A_exact_event_and_recorder_identity": "PASS",
+    "B_synchronous_internal_camera_coverage": "PASS",
+    "C_earth_emergence_temporal_progression": "PASS",
+    "D_rigid_terrain_control": "PARTIAL",
+    "E_observer_window_carrier_binding": "PARTIAL",
+    "F_cabin_window_optical_control": "FAIL",
+    "G_external_comparable_carrier": "FAIL",
+    "H_event_geometry": "FAIL",
+    "I_calibrated_faint_source_response": "FAIL"
+  },
+  "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+  "next_step_logic": {
+    "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+    "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+    "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+    "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+  },
+  "checks": [
+    {
+      "id": "frozen_evidence_identity",
+      "pass": true
+    },
+    {
+      "id": "source_manifest_and_hashes",
+      "pass": true,
+      "retained_source_bytes": 977121,
+      "manifest_errors": []
+    },
+    {
+      "id": "zero_candidate_pixel_access",
+      "pass": true,
+      "new_candidate_pixel_bytes": 0
+    },
+    {
+      "id": "exact_pcd3_event_transcript",
+      "pass": true
+    },
+    {
+      "id": "same_recording_reflection_counterevidence",
+      "pass": true
+    },
+    {
+      "id": "pcd3_label_and_audio_interval",
+      "pass": true
+    },
+    {
+      "id": "complete_bounded_atlas_window",
+      "pass": true,
+      "total_hits": 41,
+      "returned_hits": 41,
+      "crew_raw_hits": 40,
+      "external_raw_hits": 1
+    },
+    {
+      "id": "synchronous_five_exposure_d5_burst",
+      "pass": true,
+      "crew_first_utc": "2026-04-06T23:22:37.530Z",
+      "crew_last_utc": "2026-04-06T23:22:49.330Z",
+      "event_records": [
+        {
+          "id": "art002e025029_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.030Z",
+          "iso": "400",
+          "exposure": "0.001",
+          "f_number": "8.0",
+          "focal": "400.0"
+        },
+        {
+          "id": "art002e025030_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.130Z",
+          "iso": "400",
+          "exposure": "5.0E-4",
+          "f_number": "11.0",
+          "focal": "400.0"
+        },
+        {
+          "id": "art002e025031_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.220Z",
+          "iso": "400",
+          "exposure": "6.25E-4",
+          "f_number": "10.0",
+          "focal": "400.0"
+        },
+        {
+          "id": "art002e025032_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.310Z",
+          "iso": "400",
+          "exposure": "0.00125",
+          "f_number": "7.1",
+          "focal": "400.0"
+        },
+        {
+          "id": "art002e025033_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.400Z",
+          "iso": "400",
+          "exposure": "0.002",
+          "f_number": "5.6",
+          "focal": "400.0"
+        }
+      ]
+    },
+    {
+      "id": "event_label_contracts",
+      "pass": true,
+      "labels": [
+        {
+          "id": "art002e025029_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.03Z",
+          "serial": "3500015",
+          "iso": "400",
+          "exposure": "0.001",
+          "f_number": "8.0",
+          "focal": "400.0",
+          "activity": "23_Earthrise"
+        },
+        {
+          "id": "art002e025030_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.13Z",
+          "serial": "3500015",
+          "iso": "400",
+          "exposure": "5.0E-4",
+          "f_number": "11.0",
+          "focal": "400.0",
+          "activity": "23_Earthrise"
+        },
+        {
+          "id": "art002e025031_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.22Z",
+          "serial": "3500015",
+          "iso": "400",
+          "exposure": "6.25E-4",
+          "f_number": "10.0",
+          "focal": "400.0",
+          "activity": "23_Earthrise"
+        },
+        {
+          "id": "art002e025032_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.31Z",
+          "serial": "3500015",
+          "iso": "400",
+          "exposure": "0.00125",
+          "f_number": "7.1",
+          "focal": "400.0",
+          "activity": "23_Earthrise"
+        },
+        {
+          "id": "art002e025033_nkd5015_raw_v01",
+          "time": "2026-04-06T23:22:39.40Z",
+          "serial": "3500015",
+          "iso": "400",
+          "exposure": "0.002",
+          "f_number": "5.6",
+          "focal": "400.0",
+          "activity": "23_Earthrise"
+        }
+      ]
+    },
+    {
+      "id": "external_saw_carrier_contract",
+      "pass": true,
+      "time_utc": "2026-04-06T23:22:44Z",
+      "settings": [
+        "100",
+        "3.8402457757296467E-4",
+        "2.8",
+        "3.0"
+      ]
+    },
+    {
+      "id": "event_carrier_time_offsets",
+      "pass": true,
+      "first_d5_offset_seconds": 0.02,
+      "saw_offset_seconds": 4.99
+    },
+    {
+      "id": "primary_source_limits_and_current_release_state",
+      "pass": true
+    },
+    {
+      "id": "all_required_dimensions_fail_closed",
+      "pass": true,
+      "statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      }
+    },
+    {
+      "id": "claim_ceiling",
+      "pass": true,
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+    },
+    {
+      "id": "next_step_logic",
+      "pass": true
+    },
+    {
+      "id": "expected_outcome",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "substitute_overlapping_pcd2_for_exact_pcd3_event_source": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "substitute_overlapping_pcd2_for_exact_pcd3_event_source",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": false
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": true,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The exact PCD3 event transcript or its decisive cues are missing."
+      ]
+    },
+    "treat_time_alignment_as_operator_and_window_binding": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "treat_time_alignment_as_operator_and_window_binding",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PASS",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": false,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PASS",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The four-way admission oracle was weakened or the failed gate was admitted."
+      ]
+    },
+    "open_candidate_pixels_after_source_control_failure": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "open_candidate_pixels_after_source_control_failure",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 1,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": false,
+          "new_candidate_pixel_bytes": 1
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": true,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "Stage 9B opened or retained candidate pixel payloads."
+      ]
+    },
+    "treat_external_camera_absence_as_refutation_without_sensitivity_equivalence": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "treat_external_camera_absence_as_refutation_without_sensitivity_equivalence",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "PASS",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": false,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "PASS",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The four-way admission oracle was weakened or the failed gate was admitted."
+      ]
+    },
+    "treat_any_external_feature_as_lunar_dust": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "treat_any_external_feature_as_lunar_dust",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Any feature in the external frame confirms lunar dust.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": true,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "Any feature in the external frame confirms lunar dust."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "Stage 9B was promoted into a dust, refutation, or pixel-content claim."
+      ]
+    },
+    "ignore_documented_cabin_reflections": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "ignore_documented_cabin_reflections",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "PASS",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": false,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "PASS",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The four-way admission oracle was weakened or the failed gate was admitted."
+      ]
+    },
+    "promote_partial_terrain_control_to_exact_event_geometry": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "promote_partial_terrain_control_to_exact_event_geometry",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PASS",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": false,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PASS",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The four-way admission oracle was weakened or the failed gate was admitted."
+      ]
+    },
+    "let_spice_alone_repair_window_and_sensitivity_gaps": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "let_spice_alone_repair_window_and_sensitivity_gaps",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen as soon as SPICE is released; SPICE satisfies every missing control."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": true,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": false
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The next-step logic bypasses the stop or lets SPICE repair unrelated gaps."
+      ]
+    },
+    "treat_synchronized_d5_burst_as_calibrated_low_light_measurement": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "treat_synchronized_d5_burst_as_calibrated_low_light_measurement",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "PASS"
+      },
+      "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": false,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "PASS"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The four-way admission oracle was weakened or the failed gate was admitted."
+      ]
+    },
+    "claim_source_control_insufficiency_means_no_lunar_dust": {
+      "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+      "mutation": "claim_source_control_insufficiency_means_no_lunar_dust",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "lane_state": "REJECTED",
+      "new_candidate_pixel_bytes": 0,
+      "retained_source_bytes": 977121,
+      "atlas_hits": 41,
+      "crew_raw_frames": 40,
+      "event_bracket_frames": [
+        "art002e025029_nkd5015_raw_v01",
+        "art002e025030_nkd5015_raw_v01",
+        "art002e025031_nkd5015_raw_v01",
+        "art002e025032_nkd5015_raw_v01",
+        "art002e025033_nkd5015_raw_v01"
+      ],
+      "first_d5_offset_seconds": 0.02,
+      "external_saw_offset_seconds": 4.99,
+      "dimension_statuses": {
+        "A_exact_event_and_recorder_identity": "PASS",
+        "B_synchronous_internal_camera_coverage": "PASS",
+        "C_earth_emergence_temporal_progression": "PASS",
+        "D_rigid_terrain_control": "PARTIAL",
+        "E_observer_window_carrier_binding": "PARTIAL",
+        "F_cabin_window_optical_control": "FAIL",
+        "G_external_comparable_carrier": "FAIL",
+        "H_event_geometry": "FAIL",
+        "I_calibrated_faint_source_response": "FAIL"
+      },
+      "claim_ceiling": "Source-control insufficiency proves that there was no lunar dust.",
+      "next_step_logic": {
+        "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+        "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+        "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+        "recheck_trigger": "Reopen only if a source changes the failed dimensions\u2014for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "source_manifest_and_hashes",
+          "pass": true,
+          "retained_source_bytes": 977121,
+          "manifest_errors": []
+        },
+        {
+          "id": "zero_candidate_pixel_access",
+          "pass": true,
+          "new_candidate_pixel_bytes": 0
+        },
+        {
+          "id": "exact_pcd3_event_transcript",
+          "pass": true
+        },
+        {
+          "id": "same_recording_reflection_counterevidence",
+          "pass": true
+        },
+        {
+          "id": "pcd3_label_and_audio_interval",
+          "pass": true
+        },
+        {
+          "id": "complete_bounded_atlas_window",
+          "pass": true,
+          "total_hits": 41,
+          "returned_hits": 41,
+          "crew_raw_hits": 40,
+          "external_raw_hits": 1
+        },
+        {
+          "id": "synchronous_five_exposure_d5_burst",
+          "pass": true,
+          "crew_first_utc": "2026-04-06T23:22:37.530Z",
+          "crew_last_utc": "2026-04-06T23:22:49.330Z",
+          "event_records": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.030Z",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.130Z",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.220Z",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.310Z",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.400Z",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0"
+            }
+          ]
+        },
+        {
+          "id": "event_label_contracts",
+          "pass": true,
+          "labels": [
+            {
+              "id": "art002e025029_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.03Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.001",
+              "f_number": "8.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025030_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.13Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "5.0E-4",
+              "f_number": "11.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025031_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.22Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "6.25E-4",
+              "f_number": "10.0",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025032_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.31Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.00125",
+              "f_number": "7.1",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            },
+            {
+              "id": "art002e025033_nkd5015_raw_v01",
+              "time": "2026-04-06T23:22:39.40Z",
+              "serial": "3500015",
+              "iso": "400",
+              "exposure": "0.002",
+              "f_number": "5.6",
+              "focal": "400.0",
+              "activity": "23_Earthrise"
+            }
+          ]
+        },
+        {
+          "id": "external_saw_carrier_contract",
+          "pass": true,
+          "time_utc": "2026-04-06T23:22:44Z",
+          "settings": [
+            "100",
+            "3.8402457757296467E-4",
+            "2.8",
+            "3.0"
+          ]
+        },
+        {
+          "id": "event_carrier_time_offsets",
+          "pass": true,
+          "first_d5_offset_seconds": 0.02,
+          "saw_offset_seconds": 4.99
+        },
+        {
+          "id": "primary_source_limits_and_current_release_state",
+          "pass": true
+        },
+        {
+          "id": "all_required_dimensions_fail_closed",
+          "pass": true,
+          "statuses": {
+            "A_exact_event_and_recorder_identity": "PASS",
+            "B_synchronous_internal_camera_coverage": "PASS",
+            "C_earth_emergence_temporal_progression": "PASS",
+            "D_rigid_terrain_control": "PARTIAL",
+            "E_observer_window_carrier_binding": "PARTIAL",
+            "F_cabin_window_optical_control": "FAIL",
+            "G_external_comparable_carrier": "FAIL",
+            "H_event_geometry": "FAIL",
+            "I_calibrated_faint_source_response": "FAIL"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "Source-control insufficiency proves that there was no lunar dust."
+        },
+        {
+          "id": "next_step_logic",
+          "pass": true
+        },
+        {
+          "id": "expected_outcome",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "Stage 9B was promoted into a dust, refutation, or pixel-content claim."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

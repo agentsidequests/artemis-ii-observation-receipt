@@ -1,0 +1,85 @@
+{
+  "testbed_id": "artemis2-stage11s-attention-conditioned-detection",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-11T18:21:10Z",
+  "question": "Did the retained flash-report sequence occur under one homogeneous human observation opportunity, or did attention and viewing conditions change after the first report?",
+  "baseline": "Treat the nearly hour-long eclipse as one clock-time denominator and describe viewing limitations qualitatively.",
+  "treatment": "Bind exact transcript transitions and later crew reflections into a time-ordered observation-state ledger, then test whether a homogeneous human-exposure denominator remains supportable.",
+  "oracle": "Pass only when exact source identities, all timeline anchors, required ordering, frozen intervals, and later crew context reproduce while every causal, physical-event, calibrated-rate, and pixel claim remains withheld.",
+  "authority": "Private deterministic transcript audit. It may classify the observation process as time-varying, but it may not estimate detection probability, physical event rate, completeness, causation, or clustering.",
+  "acceptance_owner": "Paul",
+  "sources": [
+    {
+      "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "bytes": 36880,
+      "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf"
+    },
+    {
+      "path": "evidence/stage11n/source/art002_2026-04-07_oe1_trn-csv_v01.csv",
+      "bytes": 115230,
+      "sha256": "882a717842c14176cd259effeb90421275468e5ceca5ec0ca3b0a17157986ef4"
+    }
+  ],
+  "timeline_anchors": [
+    {"id": "first_pre_explicit_search_report", "utc": "2026-04-07T00:41:00.680Z", "speaker": "Wiseman", "phrase": "just saw a flash", "phase": "report before explicit search intent"},
+    {"id": "explicit_search_intent", "utc": "2026-04-07T00:43:19.545Z", "speaker": "Hansen", "phrase": "look for flashes", "phase": "explicit attention allocation"},
+    {"id": "glare_identified", "utc": "2026-04-07T00:43:39.492Z", "speaker": "Hansen", "phrase": "glare from somewhere", "phase": "viewing interference identified"},
+    {"id": "display_dimming", "utc": "2026-04-07T00:44:01.444Z", "speaker": "Hansen", "phrase": "all the way dim", "phase": "display luminance adjustment"},
+    {"id": "dedicated_watch_start", "utc": "2026-04-07T00:44:59.421Z", "speaker": "Hansen", "phrase": "watch for flashes", "phase": "dedicated flash search"},
+    {"id": "dark_adaptation_report", "utc": "2026-04-07T00:45:15.857Z", "speaker": "Hansen", "phrase": "eyes adjust further", "phase": "adaptation state changing"},
+    {"id": "shared_report", "utc": "2026-04-07T00:51:15.947Z", "speaker": "Wiseman", "phrase": "just saw a meteorite", "phase": "shared retained report"},
+    {"id": "ambiguous_candidate", "utc": "2026-04-07T00:52:52.411Z", "speaker": "Hansen", "phrase": "less sure", "phase": "explicitly ambiguous candidate"},
+    {"id": "timeline_return", "utc": "2026-04-07T00:53:19.564Z", "speaker": "Hansen", "phrase": "science timeline", "phase": "workflow resynchronization"},
+    {"id": "ground_prompt_end", "utc": "2026-04-07T00:59:05.829Z", "speaker": "SCIENCE", "phrase": "impact flashes or something else", "phase": "ground-prompted query"},
+    {"id": "prompt_proximate_candidate", "utc": "2026-04-07T00:59:18.291Z", "speaker": "Hansen", "phrase": "just saw another one", "phase": "report after ground prompt"},
+    {"id": "last_clear_report", "utc": "2026-04-07T01:03:04.906Z", "speaker": "Wiseman", "phrase": "just saw another one", "phase": "last clear retained report"}
+  ],
+  "required_order": [
+    "first_pre_explicit_search_report",
+    "explicit_search_intent",
+    "glare_identified",
+    "display_dimming",
+    "dedicated_watch_start",
+    "dark_adaptation_report",
+    "shared_report",
+    "ambiguous_candidate",
+    "timeline_return",
+    "ground_prompt_end",
+    "prompt_proximate_candidate",
+    "last_clear_report"
+  ],
+  "frozen_deltas_seconds": {
+    "first_report_to_search_intent_seconds": 138.865,
+    "first_report_to_display_dimming_seconds": 180.764,
+    "dedicated_watch_to_shared_report_seconds": 376.526,
+    "dedicated_watch_to_timeline_return_seconds": 500.143,
+    "shared_report_to_ambiguous_candidate_seconds": 96.464,
+    "ground_prompt_end_to_candidate_seconds": 12.462,
+    "first_to_last_clear_report_seconds": 1324.226
+  },
+  "crew_context": [
+    {"id": "intentional_looking", "speaker": "Wiseman", "phrases": ["whenever we were intentionally looking", "we started looking"]},
+    {"id": "priming_and_correlation", "speaker": "Wiseman", "phrases": ["priming bias", "we were correlating"]},
+    {"id": "unannounced_reports", "speaker": "Hansen", "phrases": ["didn't necessarily announce everyone", "saw two identical ones"]},
+    {"id": "adaptation_resets", "speaker": "Glover", "phrases": ["my eyes were adjusting", "wait for them to adjust again"]},
+    {"id": "glare_control", "speaker": "Koch", "phrases": ["black t-shirts", "made observing for impact flashes possible"]}
+  ],
+  "hard_negatives": [
+    "drop_display_dimming_anchor",
+    "move_search_intent_after_shared_report",
+    "drop_priming_context",
+    "call_clock_time_homogeneous_exposure",
+    "call_reports_independent_physical_events",
+    "call_ground_prompt_causal",
+    "call_count_over_time_calibrated_rate",
+    "infer_physical_clustering",
+    "open_pixels"
+  ],
+  "claim_ceiling": "Stage 11S may establish that the retained flash-report sequence crossed multiple transcript-evidenced human observation states after the first report, including explicit search intent, glare and display changes, dark adaptation, dedicated watching, workflow resynchronization, and a later ground prompt. It may therefore reject raw eclipse clock time as a homogeneous or calibrated human-exposure denominator. It cannot estimate per-state detection probability, missed-event count, witness independence, event correspondence, physical impact rate, physical clustering, prompt causation, human threshold, completeness, event photometry, or NASA acceptance.",
+  "next_step_logic": {
+    "if_verified": "Replace any one-hour human-rate framing with a state-segmented exposure ledger and require observer, attention, adaptation, cabin luminance, window, prompt, geometry, and synchronized instrument state for future rate work.",
+    "if_any_anchor_fails": "Withhold the state-transition claim and return to exact transcript identity and timestamp reconciliation.",
+    "if_detection_probabilities_are_later_available": "Estimate rates only under a frozen model that carries state-specific detection functions and uncertainty.",
+    "recheck_trigger": "A corrected transcript, event-to-audio mapping, calibrated human-performance study, synchronized instrument record, or specialist correction."
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "testbed_id": "artemis2-observation-execution-stage1",
+  "version": "0.2.0",
+  "formed_at_utc": "2026-10-09T19:35:00Z",
+  "question": "Do the OTR start_date_time and end_date_time fields denote the same physical boundaries as the seven frozen crew transcript cues?",
+  "decisive_invariant": "A timing comparison may advance only when the official source semantics establish that the plan field and the spoken cue denote the same physical boundary.",
+  "decision_rules": [
+    "PASS requires matching boundary semantics and an explicit source locator establishing the equivalence.",
+    "AMBIGUOUS is required when an OTR availability endpoint could coincide with a physical contact but the source does not define that mapping.",
+    "FAIL is required when a hard negative contradicts the proposed endpoint mapping.",
+    "Any AMBIGUOUS or FAIL boundary stops the original boundary-delay lane before independent geometry work."
+  ],
+  "source_evidence": {
+    "extracts_path": "evidence/stage1/source-extracts.json",
+    "extracts_sha256": "c9f30643627f3d7fc5066ad721193c552d9fc101e92a88b73d52c134e499ee92",
+    "timeline_render_path": "evidence/stage1/ltp-timeline-page-11.png",
+    "timeline_render_sha256": "d19fcceef8aa27d9a49c080e2fe035c686954e9065a58146a22bf6d144bec03a",
+    "documents": [
+      {
+        "id": "data_user_guide",
+        "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_data_user_guide.pdf",
+        "sha256": "c4f5ab25363ca3f8fc17bb776e9fc90c19707c8a18c9255648aef34d6a7b0bd2",
+        "locator": "PDF page 46, Section 5.6.2"
+      },
+      {
+        "id": "lunar_targeting_package",
+        "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_lunar_targeting_package.pdf",
+        "sha256": "177cda54d5770134b49cdcc35855171ed0c1ba5f354b0df0e521e06e16516273",
+        "locator": "PDF pages 10-11"
+      },
+      {
+        "id": "lunar_science_operations_report",
+        "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+        "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5",
+        "locator": "PDF page 38, Section 6.3.3"
+      },
+      {
+        "id": "outgoing_target_request",
+        "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_outgoing_target_request.json",
+        "local_path": "corpus/artemis2_outgoing_target_request.json",
+        "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+      }
+    ]
+  },
+  "field_semantics": {
+    "request_date_time": "observation_request_time",
+    "start_date_time": "availability_window_start",
+    "end_date_time": "availability_window_end"
+  },
+  "boundary_map": [
+    {
+      "id": "earthset_first_contact",
+      "plan_field": "start_date_time",
+      "plan_semantics": "availability_window_start",
+      "spoken_semantics": "optical_first_contact",
+      "verdict": "AMBIGUOUS",
+      "equivalence_source_locator": null,
+      "reason": "NASA defines availability, but does not map this endpoint to first optical contact."
+    },
+    {
+      "id": "earthset_complete",
+      "plan_field": "end_date_time",
+      "plan_semantics": "availability_window_end",
+      "spoken_semantics": "optical_completion",
+      "verdict": "AMBIGUOUS",
+      "equivalence_source_locator": null,
+      "reason": "NASA defines availability, but does not map this endpoint to complete occultation."
+    },
+    {
+      "id": "earthrise_first_contact",
+      "plan_field": "start_date_time",
+      "plan_semantics": "availability_window_start",
+      "spoken_semantics": "optical_first_contact",
+      "verdict": "FAIL",
+      "equivalence_source_locator": null,
+      "reason": "The 4.147844-second availability interval cannot represent the 128.213-second first-corner-to-completely-risen progression under the proposed endpoint mapping."
+    },
+    {
+      "id": "earthrise_complete",
+      "plan_field": "end_date_time",
+      "plan_semantics": "availability_window_end",
+      "spoken_semantics": "optical_completion",
+      "verdict": "FAIL",
+      "equivalence_source_locator": null,
+      "reason": "The paired endpoint model is contradicted by the Earthrise duration hard negative."
+    },
+    {
+      "id": "sunset_first_contact",
+      "plan_field": "start_date_time",
+      "plan_semantics": "availability_window_start",
+      "spoken_semantics": "optical_first_contact",
+      "verdict": "AMBIGUOUS",
+      "equivalence_source_locator": null,
+      "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+    },
+    {
+      "id": "sunset_complete",
+      "plan_field": "end_date_time",
+      "plan_semantics": "availability_window_end",
+      "spoken_semantics": "optical_completion",
+      "verdict": "AMBIGUOUS",
+      "equivalence_source_locator": null,
+      "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+    },
+    {
+      "id": "sunrise_first_contact",
+      "plan_field": "start_date_time",
+      "plan_semantics": "availability_window_start",
+      "spoken_semantics": "optical_first_contact",
+      "verdict": "AMBIGUOUS",
+      "equivalence_source_locator": null,
+      "reason": "The archive supplies no explicit availability-start-to-first-contact mapping, and the frozen transcript set has no completion cue for a paired duration check."
+    }
+  ],
+  "interval_checks": [
+    {
+      "id": "earthset_progression",
+      "target": "Earthset",
+      "observed_start_event": "earthset_first_contact",
+      "observed_end_event": "earthset_complete",
+      "expected_plan_duration_seconds": 196.650033,
+      "expected_observed_duration_seconds": 171.118,
+      "expected_ratio": 1.149207173,
+      "verdict": "AMBIGUOUS"
+    },
+    {
+      "id": "earthrise_progression",
+      "target": "Earthrise",
+      "observed_start_event": "earthrise_first_contact",
+      "observed_end_event": "earthrise_complete",
+      "expected_plan_duration_seconds": 4.147844,
+      "expected_observed_duration_seconds": 128.213,
+      "expected_ratio": 0.032351197,
+      "verdict": "FAIL"
+    },
+    {
+      "id": "sunset_progression",
+      "target": "Sunset",
+      "observed_start_event": "sunset_first_contact",
+      "observed_end_event": "sunset_complete",
+      "expected_plan_duration_seconds": 102.8071,
+      "expected_observed_duration_seconds": 100.528,
+      "expected_ratio": 1.022671296,
+      "verdict": "AMBIGUOUS"
+    }
+  ],
+  "duration_hard_negative": {
+    "ratio_floor": 0.25,
+    "rule": "If the plan interval is less than one quarter of the observed progression, the proposed first-contact-to-completion endpoint mapping must be FAIL."
+  },
+  "expected_summary": {
+    "PASS": 0,
+    "FAIL": 2,
+    "AMBIGUOUS": 5,
+    "stage_gate": "STOPPED",
+    "disposition": "STOP_UNVALIDATED_TIMING_LANE"
+  },
+  "hard_negatives": [
+    "promote_earthrise_duration_mismatch",
+    "present_request_time_as_contact",
+    "treat_beginning_as_completion",
+    "promote_sunset_from_duration_only"
+  ],
+  "next_step_logic": {
+    "recommended": "Reframe Stage 2 as an independent geometry coverage test: compute physical event intervals from SPICE or image-state transitions, then test whether each OTR availability window contains or overlaps the event. Do not call the difference a boundary delay.",
+    "why": "It preserves the strongest candidate while removing the failed semantic assumption and is cheaper than expanding to the image archive.",
+    "blocked_route": "Do not advance the original plan-boundary-versus-crew-boundary timing claim.",
+    "fallback": "If a hash-pinned independent geometry source is unavailable, pivot to Stage 3 target execution and attention allocation, where request times and transcript order have documented semantics."
+  }
+}

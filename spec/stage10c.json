@@ -1,0 +1,86 @@
+{
+  "testbed_id": "artemis2-fd6-camera-action-facet-integrity-stage10c",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T11:49:00Z",
+  "question": "Does activity-facet fragmentation recur across every complete exposure-bracket pattern observed in the Flight Day 6 raw crew-camera labels, and does any repeated within-action signature argue against a simple activity-boundary explanation?",
+  "terminal_objective": "Test whether the two Forward Look fractures are isolated curiosities or instances of a repeated mismatch between archive search units and camera-action units.",
+  "method": "Complete-denominator, label-only camera-action integrity audit across four observed Nikon bracket sequences",
+  "authority": "Read-only replay of already preserved public metadata and private local repository updates only. No image pixels, publication, outreach, scientific acceptance, or correction of NASA source labels.",
+  "acceptance_owner": "Paul",
+  "baseline": {
+    "stage10a_complete_five_frame_brackets": 221,
+    "stage10a_activity_fractures": 2,
+    "reason_for_expansion": "The Flight Day 6 labels contain additional complete three- and five-frame exposure-bracket patterns that provide a larger camera-native action denominator."
+  },
+  "source_contract": {
+    "stage10a_receipt_path": "evidence/stage10a/acquisition-receipt.json",
+    "expected_source_records": 8423,
+    "pixel_payload_bytes": 0
+  },
+  "complete_bracket_contract": {
+    "flight_day_number": "6",
+    "bundle_id": "artemis2_crew_camera",
+    "collection_id": "data_raw",
+    "allowed_bracket_sequences": [
+      ["0", "-1", "+1"],
+      ["0", "-2", "+2"],
+      ["0", "-2", "-1", "+1", "+2"],
+      ["0", "-6", "-3", "+3", "+6"]
+    ],
+    "required_auto_bracket_order": "0,-,+",
+    "shooting_mode_contains": "Exposure Bracketing",
+    "maximum_span_seconds": 10.0,
+    "same_fields": ["instrument_serial_number", "iso_number", "focal_length"],
+    "consecutive_integer_fields": ["shutter_count", "file_number"],
+    "selection": "Within each instrument serial, sort by shutter_count. Beginning only at bracket value 0, admit the longest matching allowed sequence whose settings, consecutive counters, and time span satisfy every rule; advance by the admitted frame count. Partial sequences are excluded."
+  },
+  "frozen_observables": {
+    "expected_complete_brackets": 1721,
+    "expected_pattern_counts": {
+      "0,-1,+1": 57,
+      "0,-2,+2": 1117,
+      "0,-2,-1,+1,+2": 221,
+      "0,-6,-3,+3,+6": 326
+    },
+    "expected_activity_fractures": 21,
+    "expected_activity_fracture_rate": 0.012202208018593841,
+    "expected_fractured_pattern_counts": {
+      "0,-2,+2": 18,
+      "0,-2,-1,+1,+2": 2,
+      "0,-6,-3,+3,+6": 1
+    },
+    "expected_target_presence_fractures_among_activity_fractures": 19,
+    "expected_target_value_fractures_among_activity_fractures": 1,
+    "repeated_signature": {
+      "serial": "3500015",
+      "activity_ids": ["15_Discussion #4: Terminator", "14_Crew Choice #2", "15_Discussion #4: Terminator"],
+      "target_ids": ["Terminator", null, "Terminator"],
+      "bracket_values": ["0", "-2", "+2"],
+      "expected_consecutive_actions": 13,
+      "expected_start": "2026-04-06T21:47:06.850Z",
+      "expected_end": "2026-04-06T21:47:56.420Z"
+    }
+  },
+  "scored_outcomes": {
+    "activity_facet_fracture": "A complete camera-native exposure bracket contains more than one non-empty activity_id.",
+    "repeated_position_signature": "At least three consecutive complete actions repeat the same activity and target assignment by exposure position.",
+    "interpretation": "A fracture proves that an activity-only facet can divide one physical camera action. A repeated position signature weakens a pure temporal-boundary explanation but does not identify the correct activity, authoring mechanism, image content, or scientific meaning."
+  },
+  "hard_negatives": [
+    "count_partial_brackets",
+    "infer_correct_activity_from_majority",
+    "call_every_fracture_a_metadata_error",
+    "treat_target_absence_as_image_content",
+    "claim_one_cause_for_all_fractures",
+    "generalize_fd6_rate_to_other_days",
+    "claim_activity_facets_are_useless",
+    "open_pixels_to_resolve_labels"
+  ],
+  "claim_ceiling": "Stage 10C may establish recurrence and repeated within-action structure for complete Flight Day 6 raw crew-camera exposure brackets. It cannot identify which label is correct, call every fracture an error, infer image content or scientific meaning, assign one authoring cause, estimate rates for non-bracket products or other flight days, or conclude that activity facets lack coarse retrieval value.",
+  "next_step_logic": {
+    "if_no_recurrence": "Retire the systematic camera-action mismatch thesis and keep only the two verified Forward Look exceptions.",
+    "if_recurrence_without_structure": "Treat fractures as sparse action-boundary exceptions and test another flight day before making any broader retrieval recommendation.",
+    "if_repeated_position_structure": "Investigate documented metadata-generation rules and representation multiplicity, then test all raw crew-camera days before broadening scope.",
+    "recheck_trigger": "A revised PDS label set, a documented per-frame activity-override procedure, or complete all-flight-day raw metadata may change the interpretation."
+  }
+}

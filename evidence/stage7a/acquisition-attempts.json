@@ -1,0 +1,31 @@
+{
+  "attempt_log_id": "artemis2-stage7a-acquisition-attempts-v1",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "FAILED_NO_NETWORK_EFFECT",
+      "failure_layer": "row-range input parsing",
+      "detail": "The feature-coordinate object also contained a coordinate-system string; the selector did not initially restrict itself to feature records.",
+      "instrument_values_accessed_or_interpreted": false,
+      "recovery": "Restrict row-range inputs to exactly two dictionaries containing latitude_deg."
+    },
+    {
+      "attempt": 2,
+      "status": "SOURCE_BYTES_ACQUIRED_RECEIPT_NOT_WRITTEN",
+      "failure_layer": "receipt serialization",
+      "detail": "A Python boolean was written as JSON-style true while constructing the in-memory receipt.",
+      "instrument_values_accessed_or_interpreted": false,
+      "recovery": "Use the Python True literal and rerun the exact frozen acquisition. Existing source files may be replaced only by the same source ranges."
+    },
+    {
+      "attempt": 3,
+      "status": "VALIDATION_REJECTED_SOURCE_REPRESENTATION",
+      "failure_layer": "PDS physical row stride",
+      "detail": "The PDS label reports RECORD_BYTES=5760, but the remote object contains 2880 lines by 5760 samples by 16 bits, requiring a physical row stride of 11520 bytes. The first completed receipt therefore addressed half-row offsets and was rejected before any regional metric was interpreted.",
+      "instrument_values_accessed_or_interpreted": false,
+      "recovery": "Keep the reported label field as source metadata, derive the physical row stride from line-sample geometry, prove it against the 33177600-byte remote object, and reacquire the exact frozen latitude rows."
+    }
+  ],
+  "semantic_freeze_status": "PRESERVED",
+  "claim_limit": "These failures establish safe stopping and same-episode recovery only."
+}

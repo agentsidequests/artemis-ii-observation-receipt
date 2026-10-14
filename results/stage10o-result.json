@@ -1,0 +1,1213 @@
+{
+  "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_PRODUCT_ACTION_RELATIONSHIP_MANIFEST",
+  "products": 22818,
+  "capture_identities": 7606,
+  "complete_actions": 2166,
+  "collection_counts": {
+    "data_source": 7606,
+    "data_raw": 7606,
+    "data_processed": 7606
+  },
+  "total_bytes": 1625281365343,
+  "temporal_cluster_counts": {
+    "1": 2051,
+    "2": 1377,
+    "5": 816,
+    "10": 538,
+    "30": 254
+  },
+  "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+  "manifest_bytes": 10072026,
+  "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+  "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+  "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+  "next_step_logic": {
+    "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+    "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+    "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+    "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+  },
+  "checks": [
+    {
+      "id": "prior_hierarchy_replay",
+      "pass": true
+    },
+    {
+      "id": "deterministic_manifest_identity",
+      "pass": true,
+      "bytes": 10072026,
+      "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+    },
+    {
+      "id": "hierarchy_cardinalities",
+      "pass": true,
+      "rows": 22818,
+      "captures": 7606,
+      "actions": 2166,
+      "collections": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      }
+    },
+    {
+      "id": "exact_representation_and_action_groups",
+      "pass": true,
+      "products_per_capture": {
+        "3": 7606
+      },
+      "products_per_action": {
+        "9": 1612,
+        "15": 554
+      }
+    },
+    {
+      "id": "conditional_temporal_group_keys",
+      "pass": true,
+      "counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "partition_status": "unassigned",
+        "action_key": "reconstructed_complete_action",
+        "products_independent": false,
+        "action_id_authority": "private_derived_key",
+        "temporal_clusters_are_scenes": false,
+        "action_scope": "verified_complete_actions",
+        "pixel_similarity_inferred": false,
+        "archive_scope": "verified_complete_action_cohort",
+        "result_kind": "relationship_manifest",
+        "global_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "assign_train_test_without_a_frozen_task": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "assign_train_test_without_a_frozen_task",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "assigned_80_20",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "use_activity_as_the_action_key": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "use_activity_as_the_action_key",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "activity_id",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "count_products_as_independent_observations": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "count_products_as_independent_observations",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": true,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_private_action_ids_official_pds_ids": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "call_private_action_ids_official_pds_ids",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "official_pds_id",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_temporal_clusters_semantic_scenes": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "call_temporal_clusters_semantic_scenes",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": true,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "include_unadmitted_records_as_complete_actions": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "include_unadmitted_records_as_complete_actions",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "all_records",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "infer_pixel_similarity": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "infer_pixel_similarity",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": true,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_archive_wide_exhaustiveness": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "claim_archive_wide_exhaustiveness",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "complete_archive",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_hypothetical_hazard_observed_leakage": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "call_hypothetical_hazard_observed_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "observed_leakage",
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_global_priority": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "claim_global_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_manifest": {
+      "testbed_id": "artemis2-product-action-relationship-manifest-stage10o",
+      "mutation": "open_pixels_for_manifest",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "products": 22818,
+      "capture_identities": 7606,
+      "complete_actions": 2166,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "total_bytes": 1625281365343,
+      "temporal_cluster_counts": {
+        "1": 2051,
+        "2": 1377,
+        "5": 816,
+        "10": 538,
+        "30": 254
+      },
+      "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+      "manifest_bytes": 10072026,
+      "manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+      "verified": "Every one of the 22,818 products in the verified cohort maps deterministically to one of 7,606 capture identities and one of 2,166 reconstructed complete actions. The manifest also carries separate private keys for each Stage 10N temporal threshold without assigning train, validation, or test membership.",
+      "decision_use": "Join a later task to this relationship layer before splitting. Keep action_id as the exact minimum group and choose a broader temporal or semantic key only after the task supplies its dependence oracle.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10O may establish a deterministic private relationship manifest for the verified complete-action cohort and the conditional Stage 10N temporal groups. It cannot define a train/test partition before a task, treat products as independent observations, substitute activity facets for reconstructed actions, call private keys official PDS identifiers, call temporal clusters semantic scenes, include unadmitted records as complete actions, infer pixel similarity or image content, claim archive-wide exhaustiveness, observed leakage, model performance, or global novelty or priority.",
+      "next_step_logic": {
+        "if_manifest_verifies": "Use it as the minimum relationship layer when a real image-model task is frozen; add broader task-native group labels before any split.",
+        "if_any_product_fails_to_map": "Stop and preserve the exact residual instead of assigning it to the nearest action.",
+        "if_a_real_task_is_proposed": "Freeze labels, transformations, grouping oracle, partition algorithm, and leakage tests before deriving train, validation, or test membership.",
+        "recheck_trigger": "A revised Atlas snapshot, expanded action oracle, authoritative episode identifier, or real model task."
+      },
+      "checks": [
+        {
+          "id": "prior_hierarchy_replay",
+          "pass": true
+        },
+        {
+          "id": "deterministic_manifest_identity",
+          "pass": true,
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "id": "hierarchy_cardinalities",
+          "pass": true,
+          "rows": 22818,
+          "captures": 7606,
+          "actions": 2166,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          }
+        },
+        {
+          "id": "exact_representation_and_action_groups",
+          "pass": true,
+          "products_per_capture": {
+            "3": 7606
+          },
+          "products_per_action": {
+            "9": 1612,
+            "15": 554
+          }
+        },
+        {
+          "id": "conditional_temporal_group_keys",
+          "pass": true,
+          "counts": {
+            "1": 2051,
+            "2": 1377,
+            "5": 816,
+            "10": 538,
+            "30": 254
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "partition_status": "unassigned",
+            "action_key": "reconstructed_complete_action",
+            "products_independent": false,
+            "action_id_authority": "private_derived_key",
+            "temporal_clusters_are_scenes": false,
+            "action_scope": "verified_complete_actions",
+            "pixel_similarity_inferred": false,
+            "archive_scope": "verified_complete_action_cohort",
+            "result_kind": "relationship_manifest",
+            "global_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, independence, identity, semantic, scope, similarity, leakage, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

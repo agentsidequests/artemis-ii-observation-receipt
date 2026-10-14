@@ -1,0 +1,70 @@
+{
+  "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:25:00Z",
+  "question": "Does the Stage 10E Flight-Day-6-only fracture result survive expansion to fractional-stop bracket patterns visible in its own residual records?",
+  "terminal_objective": "Correct the action oracle before synthesis and determine whether activity-facet fragmentation is observation-day-specific or cross-day.",
+  "method": "Replay the complete 10,329-record raw Nikon cohort, preserve the original camera-native rules, add only the symmetric three- and five-frame fractional-stop patterns evidenced in residual metadata, and compare fracture distribution by flight day.",
+  "authority": "Read-only replay of preserved public metadata and private local repository updates only. No pixels, publication, outreach, label correction, or exhaustive-action claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10a_receipt_path": "evidence/stage10a/acquisition-receipt.json",
+    "stage10e_receipt_path": "evidence/stage10e/acquisition-receipt.json",
+    "stage10e_result_path": "results/stage10e-result.json",
+    "stage10c_spec_path": "spec/stage10c.json",
+    "receipt_path": "evidence/stage10j/acquisition-receipt.json",
+    "expected_records": 10329,
+    "pixel_payload_bytes": 0
+  },
+  "expanded_patterns": [
+    ["0", "-1", "+1"],
+    ["0", "-2", "+2"],
+    ["0", "-2", "-1", "+1", "+2"],
+    ["0", "-6", "-3", "+3", "+6"],
+    ["0", "-2/3", "+2/3"],
+    ["0", "-4/3", "-2/3", "+2/3", "+4/3"]
+  ],
+  "frozen_observables": {
+    "complete_brackets": 2166,
+    "exposures_in_complete_brackets": 7606,
+    "unadmitted_records": 2723,
+    "pattern_counts": {
+      "0,-1,+1": 290,
+      "0,-2,+2": 1261,
+      "0,-2,-1,+1,+2": 226,
+      "0,-6,-3,+3,+6": 326,
+      "0,-2/3,+2/3": 61,
+      "0,-4/3,-2/3,+2/3,+4/3": 2
+    },
+    "brackets_by_flight_day": {"1": 85, "2": 148, "3": 61, "4": 57, "5": 70, "6": 1721, "7": 24, "8": 0, "9": 0, "10": 0},
+    "activity_fractures": 25,
+    "fractures_by_flight_day": {"1": 0, "2": 0, "3": 3, "4": 1, "5": 0, "6": 21, "7": 0, "8": 0, "9": 0, "10": 0},
+    "fractional_pattern_actions": 63,
+    "fractional_pattern_fractures": 4,
+    "target_presence_fractures": 23,
+    "target_value_fractures": 1
+  },
+  "interpretation": {
+    "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+    "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+    "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+    "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures."
+  },
+  "hard_negatives": [
+    "retain_flight_day_6_only_generalization",
+    "call_six_patterns_exhaustive",
+    "infer_pao_labels_correct",
+    "infer_other_labels_correct",
+    "call_every_fracture_a_metadata_error",
+    "generalize_stage10f_mechanism_cross_day",
+    "admit_partial_brackets",
+    "open_pixels_to_resolve_cross_day_labels"
+  ],
+  "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+  "next_step_logic": {
+    "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+    "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+    "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+    "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "manifest_id": "artemis2-stage2b-saw3-source-manifest-attempt-1",
+  "bundle_lidvid": "urn:nasa:pds:artemis2_orion_camera::1.0",
+  "archive_base": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/",
+  "files": []
+}

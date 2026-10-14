@@ -1,0 +1,99 @@
+{
+  "classification_id": "artemis2-stage2b-human-visual-classification-v1",
+  "classified_at_utc": "2026-10-09T21:23:00Z",
+  "oracle_source": "fixed_camera_image_state_transitions",
+  "camera": "Orion Solar Array Wing Camera 3",
+  "inspection_surface": "Full 4000 x 3000 browse JPEGs inspected chronologically; ambiguous transition frames were re-inspected at original resolution.",
+  "events": {
+    "earthset": {
+      "status": "ADMISSIBLE_PHYSICAL_TRANSITION",
+      "visual_basis": "The illuminated Earth crescent advances into the identifiable lunar limb, is progressively reduced, and is absent in the following frame while the fixed view remains interpretable.",
+      "frames": [
+        {
+          "time_utc": "2026-04-06T22:40:14Z",
+          "image": "art002e016278_saw3_src_v01.jpg",
+          "raw_label": "art002e016278_saw3_raw_v01.xml",
+          "state": "FULL_VISIBLE"
+        },
+        {
+          "time_utc": "2026-04-06T22:40:44Z",
+          "image": "art002e016279_saw3_src_v01.jpg",
+          "raw_label": "art002e016279_saw3_raw_v01.xml",
+          "state": "FULL_VISIBLE"
+        },
+        {
+          "time_utc": "2026-04-06T22:41:14Z",
+          "image": "art002e016280_saw3_src_v01.jpg",
+          "raw_label": "art002e016280_saw3_raw_v01.xml",
+          "state": "FULL_VISIBLE"
+        },
+        {
+          "time_utc": "2026-04-06T22:41:44Z",
+          "image": "art002e016281_saw3_src_v01.jpg",
+          "raw_label": "art002e016281_saw3_raw_v01.xml",
+          "state": "FULL_VISIBLE"
+        },
+        {
+          "time_utc": "2026-04-06T22:42:14Z",
+          "image": "art002e009567_saw3_src_v01.jpg",
+          "raw_label": "art002e009567_saw3_raw_v01.xml",
+          "state": "PARTIAL"
+        },
+        {
+          "time_utc": "2026-04-06T22:42:44Z",
+          "image": "art002e016282_saw3_src_v01.jpg",
+          "raw_label": "art002e016282_saw3_raw_v01.xml",
+          "state": "PARTIAL"
+        },
+        {
+          "time_utc": "2026-04-06T22:43:14Z",
+          "image": "art002e016283_saw3_src_v01.jpg",
+          "raw_label": "art002e016283_saw3_raw_v01.xml",
+          "state": "PARTIAL"
+        },
+        {
+          "time_utc": "2026-04-06T22:43:44Z",
+          "image": "art002e016284_saw3_src_v01.jpg",
+          "raw_label": "art002e016284_saw3_raw_v01.xml",
+          "state": "NOT_VISIBLE"
+        }
+      ]
+    },
+    "sunset": {
+      "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+      "stop_reason": "The frozen sequence ends with a partly occulted photosphere. It contains no SUN_OCCULTED frame and therefore cannot bracket complete occultation or supply the required following stability state without widening after pixel inspection.",
+      "visual_basis": "The first two frames show the photosphere fully separated from the lunar limb; the last two show it partly occulted but still directly visible.",
+      "frames": [
+        {
+          "time_utc": "2026-04-07T00:33:39Z",
+          "image": "art002e016305_saw3_src_v01.jpg",
+          "raw_label": "art002e016305_saw3_raw_v01.xml",
+          "state": "SUN_VISIBLE"
+        },
+        {
+          "time_utc": "2026-04-07T00:34:09Z",
+          "image": "art002e016306_saw3_src_v01.jpg",
+          "raw_label": "art002e016306_saw3_raw_v01.xml",
+          "state": "SUN_VISIBLE"
+        },
+        {
+          "time_utc": "2026-04-07T00:34:39Z",
+          "image": "art002e009569_saw3_src_v01.jpg",
+          "raw_label": "art002e009569_saw3_raw_v01.xml",
+          "state": "PARTIAL"
+        },
+        {
+          "time_utc": "2026-04-07T00:35:09Z",
+          "image": "art002e016307_saw3_src_v01.jpg",
+          "raw_label": "art002e016307_saw3_raw_v01.xml",
+          "state": "PARTIAL"
+        }
+      ]
+    },
+    "sunrise": {
+      "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+      "stop_reason": "The complete label inventory ends before the frozen sequence can supply a following SUN_VISIBLE stability frame. The event stopped before pixel acquisition under the predeclared source rule.",
+      "frames": []
+    }
+  }
+}

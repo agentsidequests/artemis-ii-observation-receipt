@@ -1,0 +1,115 @@
+{
+  "manifest_id": "artemis2-earthrise-saw3-source-manifest-v1",
+  "bundle_lidvid": "urn:nasa:pds:artemis2_orion_camera::1.0",
+  "archive_base": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/",
+  "files": [
+    {
+      "path": "evidence/stage2a/source/art002e016296_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016296_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "a526d6e190570d5a79a2d2987c027bbaf7cc499d5fc30c2a1080ad27ada96222"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016296_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016296_saw3_src_v01.jpg",
+      "bytes": 3087289,
+      "sha256": "850078d2819e8306c7e26447dd52bbeb6415836bf36199814a23bfc6fc8c23c6"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016296_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016296_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "7f736845c42ced569d192809eae9cf49f3fc5e8319bddf7279a8521fff4ed966"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016297_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016297_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "a60c9892665fc72dbdf11f62db6b5c2fada1e2af30ec4ac05647b701a1852b5b"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016297_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016297_saw3_src_v01.jpg",
+      "bytes": 3070630,
+      "sha256": "4b054d931dd11c3f4727f22e0179a2ae672ebaea4455c948e5304ff25c166eb7"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016297_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016297_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "3b905a96c1283897159f5fbe1430cfee512be125f37440a72096df7c70e28b98"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016298_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016298_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "30233719018d3c6cd772269cafb285ef6ab0eb61347c67850a4070e6f6b11ca7"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016298_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016298_saw3_src_v01.jpg",
+      "bytes": 3067708,
+      "sha256": "47fdc88ef3e2494b13792b88c516841006041e34c9e345c9c598807bca3aff7c"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016298_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016298_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "66ab8e179070007870b7e1e58c355327ffdd5e183bb462a6a435eb7fc275370b"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016299_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016299_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "c2d3407e26a0df5fc7ea3b0f62f0e823855270705e6d4b4a829482f5813ac3d4"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016299_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016299_saw3_src_v01.jpg",
+      "bytes": 3076823,
+      "sha256": "2731df9eff6938e94bc14a0e564ece06f09188afd1c83d2fc06e9ebbb96369b2"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016299_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016299_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "bad34878fbcf9ce51936ced00f07bb15651058446f5816353eac8695d3ed3982"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016300_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016300_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "ad531d06c3eae11cd85fd9be2d9678375e46ac6380dc2f0e9cfcca6050bf17f4"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016300_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016300_saw3_src_v01.jpg",
+      "bytes": 3053812,
+      "sha256": "8d5f9ed3cd5ef832664961cb1e622bcd3917152d547168bf16462298688406dc"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016300_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016300_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "74dfbe2f89b55352d86faf4cd4ab42b1706c5a95dc78eac304b44f1ebed15335"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016301_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016301_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "477dfee13f04e5d2611a920a294762b7fb0494a7ec0bec0ede814fad09d4b17b"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016301_saw3_src_v01.jpg",
+      "archive_path": "browse_source/fd06/art002e016301_saw3_src_v01.jpg",
+      "bytes": 3062227,
+      "sha256": "e75b3b6da350a479d0ca16107dcc0807e75ef5f02a8ae2d8102518fcd688a104"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016301_saw3_src_v01.xml",
+      "archive_path": "browse_source/fd06/art002e016301_saw3_src_v01.xml",
+      "bytes": 1687,
+      "sha256": "3c9fdc939be5e277188a530310858cbe6a4cdcb09cc388dac761f220337592e2"
+    }
+  ]
+}

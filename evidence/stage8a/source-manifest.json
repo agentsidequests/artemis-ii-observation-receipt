@@ -1,0 +1,42 @@
+{
+  "manifest_id": "artemis2-stage8a-wac-science-source-manifest-v1",
+  "source_class": "NASA PDS4 LROC MDREMP 566 nm science labels and bounded IMG latitude strips",
+  "files": [
+    {
+      "product_id": "wac_emp_566nm_e300n2250_064p",
+      "target": "ohm",
+      "kind": "science_label",
+      "path": "evidence/stage8a/source/WAC_EMP_566NM_E300N2250_064P.science.xml",
+      "bytes": 14143,
+      "sha256": "00ed3ba99b136d912edcf29dc4ae2e5eea7d3ff86b7f978026a5a4ced443ebbf"
+    },
+    {
+      "product_id": "wac_emp_566nm_e300n2250_064p",
+      "target": "ohm",
+      "kind": "latitude_strip",
+      "path": "evidence/stage8a/source/WAC_EMP_566NM_E300N2250_064P-lines-2381-2953.bin",
+      "bytes": 13201920,
+      "sha256": "ed87b2d0f972dd0ff110f60f3e9c55953735815f422065c236996fdbf0d0fbd3",
+      "line_range_zero_based_inclusive": [2381, 2953],
+      "byte_range_inclusive": [54881280, 68083199]
+    },
+    {
+      "product_id": "wac_emp_566nm_e300n3150_064p",
+      "target": "glushko",
+      "kind": "science_label",
+      "path": "evidence/stage8a/source/WAC_EMP_566NM_E300N3150_064P.science.xml",
+      "bytes": 14143,
+      "sha256": "1c54bc30c975d19ce1fbcbb3073f6c6990d2cbff03610677e9926e0058c7923b"
+    },
+    {
+      "product_id": "wac_emp_566nm_e300n3150_064p",
+      "target": "glushko",
+      "kind": "latitude_strip",
+      "path": "evidence/stage8a/source/WAC_EMP_566NM_E300N3150_064P-lines-3134-3507.bin",
+      "bytes": 8616960,
+      "sha256": "9722d275687e8d2251b0395fc8b8886545c5d2e25fca5ca25980c9ef7d777065",
+      "line_range_zero_based_inclusive": [3134, 3507],
+      "byte_range_inclusive": [72230400, 80847359]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "statement": {
+    "evidence_class": "archive_steward_correspondence",
+    "source_owner": "JPL reply reporting the science/archive teams' confirmation",
+    "date_utc": "2026-10-13T16:42:29Z",
+    "native_identifiers": [
+      "art002e009301",
+      "art002e015991"
+    ],
+    "relationship": "identical_images_reported_by_steward",
+    "reported_original_filename": "019A0860.NEF",
+    "archive_source_url": "https://pds-imaging.jpl.nasa.gov/tools/atlas/record?uri=atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_source/fd06/art002e009301_nkz9019_src_v01.nef",
+    "local_byte_identity_verified": false,
+    "checksums_supplied": false,
+    "other_pairs_confirmed": false,
+    "denominators_changed": false,
+    "publication_permission_established": false,
+    "scope": "One identical-image pair confirmed by the steward, using the original filename and metadata. This is not independent NEF-byte equality, confirmation of the other 23 candidate pairs, a completed archive fix, a public-JPEG processing recipe or endorsement of our analysis."
+  },
+  "provenance": {
+    "parent_sha256": "b299e478b8ac4b6c3158970459fe021dfbdc138c3b533349319f9fd7255aa969",
+    "scope": "Authored minimal correspondence extract. Parent/private mail and transport headers are not bundled; the app checks this extract, not its unbundled parent or email authentication."
+  }
+}

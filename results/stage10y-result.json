@@ -1,0 +1,1827 @@
+{
+  "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_SCHEDULE_TAG_NON_EQUIVALENCE",
+  "correspondence": {
+    "scheduled_entries_with_target_and_window": 39,
+    "scheduled_target_names": 19,
+    "tagged_source_exposures": 3413,
+    "tag_values": 23,
+    "shared_exact_names": 14,
+    "tag_only_names": 9,
+    "plan_only_names": 5,
+    "tag_values_with_any_same_name_window_membership": 9,
+    "tag_values_with_zero_same_name_window_membership": 14,
+    "exposures_inside_any_same_name_plan_window": 1313,
+    "exposures_outside_all_same_name_plan_windows": 2100,
+    "same_name_window_membership_share": 0.38470553765016113,
+    "outside_same_name_window_share": 0.6152944623498389,
+    "sunset_tagged_exposures": 1553,
+    "sunset_inside_same_name_plan_window": 845,
+    "sunset_outside_same_name_plan_window": 708
+  },
+  "name_sets": {
+    "tag_only": [
+      "01_Discussion #1: Warm up",
+      "Deep Space",
+      "Landau",
+      "Limb",
+      "Nemst",
+      "Pierrazzo Crater",
+      "Sun",
+      "Terminator",
+      "Unknown"
+    ],
+    "plan_only": [
+      "Crew Position Swap",
+      "Crew Team Swap",
+      "Guided Discussion",
+      "Impact Flashes",
+      "illum_limb"
+    ]
+  },
+  "examples": {
+    "Earth": {
+      "tagged": 692,
+      "inside_same_name_window": 0
+    },
+    "Orientale Basin": {
+      "tagged": 74,
+      "inside_same_name_window": 0
+    },
+    "Reiner Gamma": {
+      "tagged": 24,
+      "inside_same_name_window": 24
+    },
+    "Sunset": {
+      "tagged": 1553,
+      "inside_same_name_window": 845
+    },
+    "Vavilov Crater": {
+      "tagged": 67,
+      "inside_same_name_window": 0
+    }
+  },
+  "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+  "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+    "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+    "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+    "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+    "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+  },
+  "checks": [
+    {
+      "id": "task_readiness_replays",
+      "pass": true
+    },
+    {
+      "id": "schedule_tag_correspondence",
+      "pass": true,
+      "metrics": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "target_tags_are_event_ids": false,
+        "plan_names_are_exhaustive_labels": false,
+        "outside_window_tags_are_wrong": false,
+        "zero_match_means_planned_observation_missed": false,
+        "exact_name_match_is_independent_event": false,
+        "ontologies_merged": false,
+        "model_grouped_by_target_tag_as_event": false,
+        "outside_sunset_rows_are_new_events": false,
+        "scientific_discovery_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_target_tags_event_ids": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "call_target_tags_event_ids",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": true,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_plan_names_exhaustive_labels": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "call_plan_names_exhaustive_labels",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": true,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_outside_window_tags_wrong": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "call_outside_window_tags_wrong",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": true,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_zero_match_planned_observation_missed": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "call_zero_match_planned_observation_missed",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": true,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_exact_name_match_independent_event": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "call_exact_name_match_independent_event",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": true,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "merge_plan_and_tag_ontologies": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "merge_plan_and_tag_ontologies",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": true,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "group_model_by_target_tag_as_event": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "group_model_by_target_tag_as_event",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": true,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_sunset_outside_rows_new_events": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "call_sunset_outside_rows_new_events",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": true,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_scientific_discovery_or_priority": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "claim_scientific_discovery_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_schedule_tag_canary": {
+      "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+      "mutation": "open_pixels_for_schedule_tag_canary",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "correspondence": {
+        "scheduled_entries_with_target_and_window": 39,
+        "scheduled_target_names": 19,
+        "tagged_source_exposures": 3413,
+        "tag_values": 23,
+        "shared_exact_names": 14,
+        "tag_only_names": 9,
+        "plan_only_names": 5,
+        "tag_values_with_any_same_name_window_membership": 9,
+        "tag_values_with_zero_same_name_window_membership": 14,
+        "exposures_inside_any_same_name_plan_window": 1313,
+        "exposures_outside_all_same_name_plan_windows": 2100,
+        "same_name_window_membership_share": 0.38470553765016113,
+        "outside_same_name_window_share": 0.6152944623498389,
+        "sunset_tagged_exposures": 1553,
+        "sunset_inside_same_name_plan_window": 845,
+        "sunset_outside_same_name_plan_window": 708
+      },
+      "name_sets": {
+        "tag_only": [
+          "01_Discussion #1: Warm up",
+          "Deep Space",
+          "Landau",
+          "Limb",
+          "Nemst",
+          "Pierrazzo Crater",
+          "Sun",
+          "Terminator",
+          "Unknown"
+        ],
+        "plan_only": [
+          "Crew Position Swap",
+          "Crew Team Swap",
+          "Guided Discussion",
+          "Impact Flashes",
+          "illum_limb"
+        ]
+      },
+      "examples": {
+        "Earth": {
+          "tagged": 692,
+          "inside_same_name_window": 0
+        },
+        "Orientale Basin": {
+          "tagged": 74,
+          "inside_same_name_window": 0
+        },
+        "Reiner Gamma": {
+          "tagged": 24,
+          "inside_same_name_window": 24
+        },
+        "Sunset": {
+          "tagged": 1553,
+          "inside_same_name_window": 845
+        },
+        "Vavilov Crater": {
+          "tagged": 67,
+          "inside_same_name_window": 0
+        }
+      },
+      "verified": "The mission plan and target-tag layer are not interchangeable ontologies or grouping systems. They share 14 exact names, while nine tag values are absent from the plan vocabulary and five plan names are absent from the tag vocabulary. Only 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window.",
+      "decision_use": "Use an independent schedule or task-native episode oracle for event grouping, and treat target tags as curated navigation metadata unless their population is separately audited. The fixed Sunset plan window remains primary; its tag concordance is corroborative.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+        "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+        "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+        "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+        "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+      },
+      "checks": [
+        {
+          "id": "task_readiness_replays",
+          "pass": true
+        },
+        {
+          "id": "schedule_tag_correspondence",
+          "pass": true,
+          "metrics": {
+            "scheduled_entries_with_target_and_window": 39,
+            "scheduled_target_names": 19,
+            "tagged_source_exposures": 3413,
+            "tag_values": 23,
+            "shared_exact_names": 14,
+            "tag_only_names": 9,
+            "plan_only_names": 5,
+            "tag_values_with_any_same_name_window_membership": 9,
+            "tag_values_with_zero_same_name_window_membership": 14,
+            "exposures_inside_any_same_name_plan_window": 1313,
+            "exposures_outside_all_same_name_plan_windows": 2100,
+            "same_name_window_membership_share": 0.38470553765016113,
+            "outside_same_name_window_share": 0.6152944623498389,
+            "sunset_tagged_exposures": 1553,
+            "sunset_inside_same_name_plan_window": 845,
+            "sunset_outside_same_name_plan_window": 708
+          },
+          "name_sets": {
+            "tag_only": [
+              "01_Discussion #1: Warm up",
+              "Deep Space",
+              "Landau",
+              "Limb",
+              "Nemst",
+              "Pierrazzo Crater",
+              "Sun",
+              "Terminator",
+              "Unknown"
+            ],
+            "plan_only": [
+              "Crew Position Swap",
+              "Crew Team Swap",
+              "Guided Discussion",
+              "Impact Flashes",
+              "illum_limb"
+            ]
+          },
+          "examples": {
+            "Earth": {
+              "tagged": 692,
+              "inside_same_name_window": 0
+            },
+            "Orientale Basin": {
+              "tagged": 74,
+              "inside_same_name_window": 0
+            },
+            "Reiner Gamma": {
+              "tagged": 24,
+              "inside_same_name_window": 24
+            },
+            "Sunset": {
+              "tagged": 1553,
+              "inside_same_name_window": 845
+            },
+            "Vavilov Crater": {
+              "tagged": 67,
+              "inside_same_name_window": 0
+            }
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_tags_are_event_ids": false,
+            "plan_names_are_exhaustive_labels": false,
+            "outside_window_tags_are_wrong": false,
+            "zero_match_means_planned_observation_missed": false,
+            "exact_name_match_is_independent_event": false,
+            "ontologies_merged": false,
+            "model_grouped_by_target_tag_as_event": false,
+            "outside_sunset_rows_are_new_events": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited event, label, correctness, ontology, grouping, discovery, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

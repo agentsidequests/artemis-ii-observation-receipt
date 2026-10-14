@@ -1,0 +1,80 @@
+{
+  "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-09T23:12:48Z",
+  "question": "Can any untested Artemis II archive relation beat both a truthful synthesis and deliberate stop on consequence, novelty headroom, independent discrimination, current testability, and complete burden without reopening a closed lane?",
+  "terminal_objective": "Find one genuinely impactful, defensible Artemis II insight candidate that justifies a new bounded test rather than another low-value continuation from the latest artifact.",
+  "method": "Archive-wide opportunity selection gate",
+  "authority": "Read-only public-source research and private local repository updates only. No publication, outreach, bulk image analysis, or scientific acceptance.",
+  "acceptance_owner": "Paul",
+  "source_cutoff_utc": "2026-10-09T23:59:59Z",
+  "baseline": {
+    "route": "truthful_synthesis_or_deliberate_stop",
+    "description": "Synthesize the already verified operational findings without a new scientific lead, or stop if no candidate offers a decision-changing test at proportionate burden."
+  },
+  "search_contract": {
+    "families": [
+      "lunar dust and horizon glow",
+      "camera clocks and multimodal timing",
+      "solar corona dynamics",
+      "moonlit full-disk Earth",
+      "limb and terminator morphology",
+      "Reiner Gamma perception",
+      "archive metadata integrity",
+      "operational adaptation"
+    ],
+    "excluded_lanes": [
+      "simple impact-flash confirmation",
+      "Orientale 10-60x perceptual headline",
+      "same-endpoint Vavilov-Hertzsprung roughness expansion",
+      "Glushko-Ohm static reflectance",
+      "Glushko-Ohm camera-native rescoring",
+      "OTR boundary-delay interpretation",
+      "bulk archive analysis without an admitted question"
+    ],
+    "stop_condition": "Stop when every credible family has one current primary-source comparison, the surviving candidate has an artifact-native discriminator and bounded next proof, and one more source cannot change the selected disposition."
+  },
+  "source_screen_path": "evidence/stage9a/source-screen.md",
+  "source_screen_sha256": "14f888d53476afbbb78aaffc4a394e186c2d73639409c4239435ddeb4b3cf047",
+  "candidate_inventory_path": "evidence/stage9a/candidate-inventory.json",
+  "candidate_inventory_sha256": "b24070c9c27667de9ab5a082781da5a143b1d0975711fe12904ca5c2ca6e5d48",
+  "gate_fields": [
+    "question_not_already_answered",
+    "current_archive_supports_minimum_test",
+    "independent_discriminator_available",
+    "does_not_reopen_closed_lane",
+    "pass_or_fail_changes_decision",
+    "bounded_complete_burden"
+  ],
+  "selection_rule": "A candidate is admitted only if every gate field is true. Rank admitted candidates lexicographically by consequence, distinctness from the direct baseline, discriminator quality, current testability, and lower complete burden. Do not sum ordinal labels into a false-precision score.",
+  "access_boundary": {
+    "new_candidate_pixel_bytes": 0,
+    "new_candidate_label_bytes": 0,
+    "existing_stage2a_pixels_reused_for_scoring": false,
+    "retained_stage9a_evidence_types": [
+      "primary-source screen",
+      "candidate inventory"
+    ]
+  },
+  "expected_result": {
+    "evidence_state": "VERIFIED_OPPORTUNITY_SELECTED",
+    "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+    "disposition": "ADMIT_NO_PIXEL_SOURCE_CONTROL_GATE",
+    "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+  },
+  "hard_negatives": [
+    "promote_potential_gray_feature_to_confirmed_lunar_dust",
+    "treat_search_absence_as_public_priority",
+    "select_already_published_corona_corroboration",
+    "reopen_closed_glushko_ohm_lane",
+    "open_new_candidate_pixels_before_a_source_control_contract",
+    "omit_truthful_synthesis_and_deliberate_stop_comparators",
+    "treat_external_camera_non_detection_as_a_refutation_without_sensitivity_equivalence"
+  ],
+  "next_step_logic": {
+    "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+    "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+    "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+    "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+  }
+}

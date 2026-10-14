@@ -1,0 +1,181 @@
+{
+  "receipt_version": "0.1.0",
+  "case_id": "artemis-ii-flashes",
+  "artifacts": [
+    {
+      "id": "flash-exposure-receipt",
+      "path": "results/stage11n-result.json",
+      "bytes": 26283,
+      "sha256": "930be47399e76dde2b72bbf21422e1ea21598115dff362afe869570eccb25ae5",
+      "derivation_state": "derived"
+    },
+    {
+      "id": "overlap-pixel-screen",
+      "path": "results/stage11p-overlap-pixel-screen.json",
+      "bytes": 30546,
+      "sha256": "7ab93b078e45fc5b381faa861373ccf51a2918a833dad0d5bff13fe810191af2",
+      "derivation_state": "derived"
+    },
+    {
+      "id": "injection-recovery-receipt",
+      "path": "results/stage11q-injection-recovery.json",
+      "bytes": 10875,
+      "sha256": "f8fc492f620a834aa05768e6a7318402188729a0ee60ba60f70c531cbf4585d0",
+      "derivation_state": "derived"
+    }
+  ],
+  "facts": {
+    "annotation_base_image_utc": "2026-04-07T01:04:00Z",
+    "shared_report_utc": "2026-04-07T00:51:15.947Z",
+    "moon_radius_km": 1740.0,
+    "conservative_duration_hours": 1.0
+  },
+  "candidates": [
+    {
+      "id": "event-1",
+      "disposition": "accepted",
+      "witnesses": [
+        "Reid Wiseman"
+      ],
+      "exact_time_known": false
+    },
+    {
+      "id": "event-2",
+      "disposition": "accepted",
+      "witnesses": [
+        "Reid Wiseman",
+        "Jeremy Hansen"
+      ],
+      "exact_time_known": false
+    },
+    {
+      "id": "event-3",
+      "disposition": "accepted",
+      "witnesses": [
+        "Jeremy Hansen"
+      ],
+      "exact_time_known": false
+    },
+    {
+      "id": "event-4",
+      "disposition": "accepted",
+      "witnesses": [
+        "Reid Wiseman",
+        "Jeremy Hansen",
+        "Victor Glover"
+      ],
+      "exact_time_known": false
+    },
+    {
+      "id": "event-5",
+      "disposition": "accepted",
+      "witnesses": [
+        "Reid Wiseman"
+      ],
+      "exact_time_known": false
+    }
+  ],
+  "observation_windows": [
+    {
+      "id": "later-saw3-30fps",
+      "start_utc": "2026-04-07T01:19:13Z",
+      "stop_utc": "2026-04-07T01:21:23Z",
+      "target": "Moon",
+      "capabilities": {
+        "source_pixel_equivalent": false,
+        "radiometrically_calibrated": false,
+        "detection_completeness_at_50_percent": false,
+        "target_resolved_for_localization": false
+      }
+    },
+    {
+      "id": "overlap-saw3-59.94fps",
+      "start_utc": "2026-04-07T00:51:10Z",
+      "stop_utc": "2026-04-07T00:51:25Z",
+      "target": "Moon",
+      "capabilities": {
+        "source_pixel_equivalent": false,
+        "radiometrically_calibrated": false,
+        "detection_completeness_at_50_percent": false,
+        "target_resolved_for_localization": false
+      }
+    }
+  ],
+  "measurement_function": {
+    "monitored_area_km2": null,
+    "live_time_hours": null,
+    "limiting_magnitude": null,
+    "detection_probability_surface": null,
+    "calibrated_brightness": null,
+    "confirmation_rule": "multi-witness human ledger with conservative exclusions"
+  },
+  "claims": [
+    {
+      "id": "accepted-ledger",
+      "proposition": "The public annotation contains five accepted events, eight witness marks, and three observers.",
+      "rule": {
+        "kind": "ledger_summary",
+        "disposition": "accepted",
+        "expected_event_count": 5,
+        "expected_witness_marks": 8,
+        "expected_unique_observers": 3
+      },
+      "claim_ceiling": "Credible event ledger, not calibrated sensitivity."
+    },
+    {
+      "id": "later-window-tested-ledger-events",
+      "proposition": "The later 30 fps window covered the annotation's 01:04 background-photo epoch.",
+      "rule": {
+        "kind": "window_after_boundary",
+        "window_id": "later-saw3-30fps",
+        "boundary_fact": "annotation_base_image_utc"
+      },
+      "claim_ceiling": "Metadata-time non-overlap only. The photo epoch is not ledger creation or an upper bound for all five accepted events; their event-level video coverage remains unestablished."
+    },
+    {
+      "id": "overlap-null-excludes-report",
+      "proposition": "The absence of a screened pulse in the overlap clip excludes the shared crew report.",
+      "rule": {
+        "kind": "window_capability_gate",
+        "window_id": "overlap-saw3-59.94fps",
+        "event_time_fact": "shared_report_utc",
+        "required_capabilities": [
+          "source_pixel_equivalent",
+          "radiometrically_calibrated",
+          "detection_completeness_at_50_percent",
+          "target_resolved_for_localization"
+        ]
+      },
+      "claim_ceiling": "Contextual temporal overlap, not event exclusion."
+    },
+    {
+      "id": "all-lunar-count-floor",
+      "proposition": "Five accepted events support a conservative whole-Moon one-hour detected-count floor.",
+      "rule": {
+        "kind": "count_floor_sphere",
+        "disposition": "accepted",
+        "radius_fact": "moon_radius_km",
+        "duration_fact": "conservative_duration_hours",
+        "expected_value_km2_hour": 1.314200547396414e-07,
+        "relative_tolerance": 1e-09
+      },
+      "claim_ceiling": "Detected-count floor under explicit assumptions, not calibrated flux."
+    },
+    {
+      "id": "calibrated-impact-flux",
+      "proposition": "The five events establish a calibrated brightness-threshold lunar impact flux.",
+      "rule": {
+        "kind": "required_measurement_fields",
+        "fields": [
+          "monitored_area_km2",
+          "live_time_hours",
+          "limiting_magnitude",
+          "detection_probability_surface",
+          "calibrated_brightness",
+          "confirmation_rule"
+        ]
+      },
+      "claim_ceiling": "Blocked until a recomputable measurement function is public."
+    }
+  ]
+}

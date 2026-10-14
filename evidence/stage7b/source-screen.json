@@ -1,0 +1,42 @@
+{
+  "screen_id": "artemis2-stage7b-independent-source-screen",
+  "formed_at_utc": "2026-10-09T22:07:56Z",
+  "decision_question": "Can the frozen transcript alone support a new controlled multi-target LOLA roughness panel before any additional instrument-value access?",
+  "access_boundary": {
+    "new_instrument_value_bytes": 0,
+    "new_control_target_value_bytes": 0,
+    "new_geologic_map_bytes": 0,
+    "stage7a_values_reused_for_scoring": false
+  },
+  "sources_screened": [
+    {
+      "title": "LOLA Gridded Data Record median absolute slope products",
+      "publisher": "NASA Goddard Planetary Geodesy Data Archive",
+      "source_class": "official product documentation",
+      "url": "https://pgda.gsfc.nasa.gov/products/70",
+      "accessed_utc": "2026-10-09T22:07:56Z",
+      "possible_role": "Shared roughness endpoint already used by Stage 7A",
+      "stage7b_disposition": "NO NEW ACCESS; the transcript admission gate is evaluated first."
+    },
+    {
+      "title": "LROC Empirically Normalized WAC Mosaic Data Record",
+      "publisher": "NASA PDS / Washington University ODE",
+      "source_class": "official product documentation",
+      "url": "https://ode.rsl.wustl.edu/moon/pagehelp/content/missions_instruments/lro/lroc/MDR/MDREMP.htm",
+      "accessed_utc": "2026-10-09T22:07:56Z",
+      "possible_role": "A separately preregistered reflectance test for Reiner Gamma or Glushko/Ohm",
+      "stage7b_disposition": "DOCUMENTATION ONLY; no raster values or tiles accessed. Reflectance cannot be mixed into the shared LOLA roughness endpoint."
+    },
+    {
+      "title": "Unified Geologic Map of the Moon, 1:5M, version 2",
+      "publisher": "U.S. Geological Survey Astrogeology Science Center",
+      "source_class": "official geologic map and GIS release",
+      "url": "https://astrogeology.usgs.gov/search/map/Moon/Geology/Unified_Geologic_Map_of_the_Moon_GIS_v2/",
+      "accessed_utc": "2026-10-09T22:07:56Z",
+      "possible_role": "Geologic-unit and relative-age control in a future cross-axis panel",
+      "stage7b_disposition": "METADATA ONLY; no GIS package downloaded. It cannot create missing transcript comparisons."
+    }
+  ],
+  "source_disposition": "NO_ACTION_FOR_STAGE7B_VALUE_ACCESS",
+  "learning_disposition": "Retain only two project-local cross-axis candidates. No external source card or cross-project method change is warranted."
+}

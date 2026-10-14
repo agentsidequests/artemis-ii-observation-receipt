@@ -1,0 +1,4558 @@
+{
+  "status": "VERIFIED_CONDITIONAL_ONE_ACTION_WITHHOLDING_SENSITIVITY",
+  "contract": {
+    "version": "1.0",
+    "date": "2026-10-12",
+    "starting_commit": "55993744e4ab8d116c041c3a43e32bb6d4d84688",
+    "objective": "Quantify whether withholding the one identity-ambiguous original action changes the named relationship, selection, weighting and completion conclusions, without replacing canonical receipts",
+    "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+    "capture_keys": [
+      "art002e015987",
+      "art002e015988",
+      "art002e015989",
+      "art002e015990",
+      "art002e015991"
+    ],
+    "expected_removed_products": 15,
+    "input_pins": [
+      {
+        "path": "paper-review/order-robust-reconstruction/result.json",
+        "bytes": 8776218,
+        "sha256": "cee99d8716d628b70191e682af118e61ff2f78b5018066df424fb023f19a4d34"
+      },
+      {
+        "path": "paper-review/order-robust-reconstruction/contract.json",
+        "bytes": 3343,
+        "sha256": "a673e694cd03b6a464b338a810759b31c7f8700002de9a94944e793611de3771"
+      },
+      {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+      },
+      {
+        "path": "results/stage11l-split-assignments.csv",
+        "bytes": 4573289,
+        "sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1"
+      },
+      {
+        "path": "results/stage10z-action-plan-membership.csv",
+        "bytes": 398284,
+        "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+      },
+      {
+        "path": "src/stage11r_hierarchical_test_isolation.py",
+        "bytes": 10817,
+        "sha256": "e86a21b857551622282ab503a9870357ee1d50403f412a131d9d0bf57a07e6f9"
+      },
+      {
+        "path": "src/stage11t_opportunity_concentration.py",
+        "bytes": 17662,
+        "sha256": "1d9fed505a97f807089a49dd2865ceae6a33dc813d1deffcaffde16932c34cc0"
+      },
+      {
+        "path": "src/stage11u_selection_weighting_cascade.py",
+        "bytes": 27067,
+        "sha256": "b9942e3feee9da312206b978131b8cee043ee6beb1cf5e7a3f8d98be931e8961"
+      },
+      {
+        "path": "src/stage11v_target_completion_bounds.py",
+        "bytes": 18603,
+        "sha256": "8453b379a7106829e40a9e30f014f3d7db8e77805982206e389dbc290b9d8b8f"
+      },
+      {
+        "path": "src/stage10w_target_tag_selection.py",
+        "bytes": 13546,
+        "sha256": "7a3d7de9e49efedb395bb5812b59b8b1f7c329d6166b205126d85abfd2a2d0d9"
+      },
+      {
+        "path": "results/stage11r-hierarchical-isolation.json",
+        "bytes": 4371,
+        "sha256": "38cb7f9573db05ae8664efe9ffbcf957e888f7fb962861deb7a6195d77194abe"
+      },
+      {
+        "path": "results/stage11t-result.json",
+        "bytes": 54807,
+        "sha256": "cad913c1c24ebd6f83da4821e4620a793a33559d9eb83009b6b654c2dde4957f"
+      },
+      {
+        "path": "results/stage11u-selection-weighting-cascade.json",
+        "bytes": 153823,
+        "sha256": "bd651dc716d05fe0bdfb4f7cdebd6b85e3980a86f8a33bbf67ea5797794e54c0"
+      },
+      {
+        "path": "results/stage11v-result.json",
+        "bytes": 153632,
+        "sha256": "cc69e994040cbe10c478a6a5ae566505a4340107908e5bc4be1f17066b88baaf"
+      },
+      {
+        "path": "results/stage10w-result.json",
+        "bytes": 86238,
+        "sha256": "5407373d27b424c0528a170432c86ea89dd75c137dc83757b25332c3d1a72520"
+      },
+      {
+        "path": "results/stage11n-result.json",
+        "bytes": 26283,
+        "sha256": "930be47399e76dde2b72bbf21422e1ea21598115dff362afe869570eccb25ae5"
+      },
+      {
+        "path": "results/stage11q-injection-recovery.json",
+        "bytes": 10875,
+        "sha256": "f8fc492f620a834aa05768e6a7318402188729a0ee60ba60f70c531cbf4585d0"
+      }
+    ],
+    "treatment": "Delete only all three representation rows of each of the five specified original capture keys, their matching assignment rows and this action's two plan-membership rows. Preserve every surviving field, original split, action/temporal keys and plan interval. Do not add art002e009301 or any new candidate family, merge identities, rehash splits or rebuild temporal clusters.",
+    "analysis": "Baseline and conditional subset use the frozen Stage 11R, 10W, 11U and 11V pure calculations, plus an in-memory composition of Stage 11T's unchanged weighting/overlap primitives. Require the baseline metrics to reproduce their canonical receipts before interpreting any delta.",
+    "oracle": "Exact deletion membership and source hashes; full native-ID relationship parity across input tables; original baseline replay; independent counts/ratios from rows; no-op control; wrong action/partial representation/wrong assignment/addition/field mutation rejection; shared-state versus changed-case numeric disposition.",
+    "limits": {
+      "canonical_counts_replaced": false,
+      "candidate_adopted": false,
+      "physical_identity": false,
+      "target_truth": false,
+      "new_images": false,
+      "scientific_acceptance": false,
+      "other_ambiguities_resolved": false
+    },
+    "effects": {
+      "network_requests": 0,
+      "new_image_bytes": 0,
+      "outreach": false,
+      "publication": false,
+      "remote_push": false
+    },
+    "stop": "Stop before writing on a source, baseline, deletion-scope, field-parity or table-join mismatch. The sensitivity is conditional, not a probability estimate, physical correction or comprehensive archive audit."
+  },
+  "baseline_replay_checks": {
+    "relationship": true,
+    "opportunity_weighting": true,
+    "selection_weighting": true,
+    "field_completion": true,
+    "selection": true
+  },
+  "removal": {
+    "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+    "capture_keys": [
+      "art002e015987",
+      "art002e015988",
+      "art002e015989",
+      "art002e015990",
+      "art002e015991"
+    ],
+    "products": 15,
+    "bytes_by_collection": {
+      "data_source": 151040000,
+      "data_raw": 457062880,
+      "data_processed": 1363439690
+    },
+    "archive_bytes": 1971542570,
+    "original_plan_orders": [
+      "28",
+      "29"
+    ],
+    "original_target_fields": [
+      "Moon"
+    ],
+    "original_activity_fields": [
+      "28_Eclipsed Moon (2/2)"
+    ],
+    "product_key_partitions": {
+      "test": 2,
+      "train": 13
+    },
+    "witnesses": [
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_source/fd06/art002e015987_nkz9019_src_v01.nef",
+        "collection_id": "data_source",
+        "archive_size_bytes": "30084608",
+        "capture_identity": "art002e015987",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "1",
+        "exposures_in_action": "5",
+        "bracket_value": "0",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015987_nkz9019_raw_v01.tif",
+        "collection_id": "data_raw",
+        "archive_size_bytes": "91412576",
+        "capture_identity": "art002e015987",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "1",
+        "exposures_in_action": "5",
+        "bracket_value": "0",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_processed/fd06/art002e015987_nkz9019_prc_v01.tif",
+        "collection_id": "data_processed",
+        "archive_size_bytes": "272687938",
+        "capture_identity": "art002e015987",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "1",
+        "exposures_in_action": "5",
+        "bracket_value": "0",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_source/fd06/art002e015988_nkz9019_src_v01.nef",
+        "collection_id": "data_source",
+        "archive_size_bytes": "29901824",
+        "capture_identity": "art002e015988",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "2",
+        "exposures_in_action": "5",
+        "bracket_value": "-2",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015988_nkz9019_raw_v01.tif",
+        "collection_id": "data_raw",
+        "archive_size_bytes": "91412576",
+        "capture_identity": "art002e015988",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "2",
+        "exposures_in_action": "5",
+        "bracket_value": "-2",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_processed/fd06/art002e015988_nkz9019_prc_v01.tif",
+        "collection_id": "data_processed",
+        "archive_size_bytes": "272687938",
+        "capture_identity": "art002e015988",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "2",
+        "exposures_in_action": "5",
+        "bracket_value": "-2",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_source/fd06/art002e015989_nkz9019_src_v01.nef",
+        "collection_id": "data_source",
+        "archive_size_bytes": "29983744",
+        "capture_identity": "art002e015989",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "3",
+        "exposures_in_action": "5",
+        "bracket_value": "-1",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015989_nkz9019_raw_v01.tif",
+        "collection_id": "data_raw",
+        "archive_size_bytes": "91412576",
+        "capture_identity": "art002e015989",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "3",
+        "exposures_in_action": "5",
+        "bracket_value": "-1",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_processed/fd06/art002e015989_nkz9019_prc_v01.tif",
+        "collection_id": "data_processed",
+        "archive_size_bytes": "272687938",
+        "capture_identity": "art002e015989",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "3",
+        "exposures_in_action": "5",
+        "bracket_value": "-1",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "test",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_source/fd06/art002e015990_nkz9019_src_v01.nef",
+        "collection_id": "data_source",
+        "archive_size_bytes": "30320128",
+        "capture_identity": "art002e015990",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "4",
+        "exposures_in_action": "5",
+        "bracket_value": "+1",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "test",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015990_nkz9019_raw_v01.tif",
+        "collection_id": "data_raw",
+        "archive_size_bytes": "91412576",
+        "capture_identity": "art002e015990",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "4",
+        "exposures_in_action": "5",
+        "bracket_value": "+1",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_processed/fd06/art002e015990_nkz9019_prc_v01.tif",
+        "collection_id": "data_processed",
+        "archive_size_bytes": "272687938",
+        "capture_identity": "art002e015990",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "4",
+        "exposures_in_action": "5",
+        "bracket_value": "+1",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_source/fd06/art002e015991_nkz9019_src_v01.nef",
+        "collection_id": "data_source",
+        "archive_size_bytes": "30749696",
+        "capture_identity": "art002e015991",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "5",
+        "exposures_in_action": "5",
+        "bracket_value": "+2",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015991_nkz9019_raw_v01.tif",
+        "collection_id": "data_raw",
+        "archive_size_bytes": "91412576",
+        "capture_identity": "art002e015991",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "5",
+        "exposures_in_action": "5",
+        "bracket_value": "+2",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      },
+      {
+        "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_processed/fd06/art002e015991_nkz9019_prc_v01.tif",
+        "collection_id": "data_processed",
+        "archive_size_bytes": "272687938",
+        "capture_identity": "art002e015991",
+        "action_id": "a2-action-1c22cc639e2f4792a76b8ca4",
+        "action_index": "2019",
+        "camera_serial": "3920019",
+        "action_start_utc": "2026-04-07T01:06:17.480Z",
+        "action_end_utc": "2026-04-07T01:06:19.780Z",
+        "exposure_position": "5",
+        "exposures_in_action": "5",
+        "bracket_value": "+2",
+        "activity_id": "28_Eclipsed Moon (2/2)",
+        "target_id": "Moon",
+        "activity_facet_fracture": "false",
+        "target_presence_fracture": "false",
+        "target_value_fracture": "false",
+        "temporal_cluster_1s": "a2-t1s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_2s": "a2-t2s-26893e4758ff739be9e0c25a",
+        "temporal_cluster_5s": "a2-t5s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_10s": "a2-t10s-e3b94e53f28a8c26715329ab",
+        "temporal_cluster_30s": "a2-t30s-6f67bef17f3ce2bf4c1c77c4",
+        "product_key_partition": "train",
+        "action_key_partition": "train",
+        "temporal_5s_key_partition": "train"
+      }
+    ]
+  },
+  "baseline": {
+    "relationship": {
+      "rows": 22818,
+      "train_products": 18307,
+      "test_products": 4511,
+      "partitions": [
+        "test",
+        "train"
+      ],
+      "unique_product_ids": 22818,
+      "capture_linked_test_products": 4307,
+      "action_only_linked_test_products": 204,
+      "action_isolated_test_products": 0,
+      "capture_linked_test_share": 0.9547772112613612,
+      "action_only_linked_test_share": 0.045222788738638886,
+      "action_isolated_test_share": 0.0,
+      "test_visible_capture_groups": 3679,
+      "capture_linked_test_capture_groups": 3611,
+      "capture_isolated_test_capture_groups": 68,
+      "test_visible_action_groups": 1937,
+      "action_isolated_test_action_groups": 0,
+      "crossing_action_groups": 1937,
+      "products_in_crossing_action_groups": 20601,
+      "share_all_products_in_crossing_actions": 0.9028398632658428
+    },
+    "selection": {
+      "coverage": {
+        "source_exposures": 7606,
+        "target_tag_present": 3413,
+        "target_tag_blank": 4193,
+        "target_tag_coverage": 0.4487246910333947,
+        "activity_values": 45,
+        "zero_coverage_activities": 17,
+        "zero_coverage_exposures": 1397,
+        "full_coverage_activities": 8,
+        "full_coverage_exposures": 1676,
+        "partial_coverage_activities": 20,
+        "partial_coverage_exposures": 4533,
+        "activity_tag_presence_cramers_v": 0.8204646313259204,
+        "activity_tag_presence_mutual_information_bits": 0.6421857066071989,
+        "activity_majority_lookup_correct": 6654,
+        "activity_majority_lookup_accuracy": 0.8748356560610044,
+        "global_majority_state_accuracy": 0.5512753089666053,
+        "activity_lookup_accuracy_lift": 0.3235603470943992,
+        "camera_tag_presence_cramers_v": 0.1929268299049601,
+        "camera_tag_presence_mutual_information_bits": 0.02704209912109003,
+        "sunset_tagged_exposures": 1553,
+        "sunset_share_of_tagged_exposures": 0.455024904775857
+      },
+      "activity_examples": {
+        "24_Sunset": {
+          "exposures": 1294,
+          "tagged": 1294
+        },
+        "12_Orientale Basin (2/2)": {
+          "exposures": 399,
+          "tagged": 0
+        },
+        "07_Whole Moon": {
+          "exposures": 456,
+          "tagged": 3
+        },
+        "h_Observation Break": {
+          "exposures": 284,
+          "tagged": 259
+        }
+      },
+      "camera_coverage": {
+        "3500015": {
+          "exposures": 6269,
+          "tagged": 2602,
+          "coverage": 0.4150582230020737
+        },
+        "3500017": {
+          "exposures": 256,
+          "tagged": 77,
+          "coverage": 0.30078125
+        },
+        "3920019": {
+          "exposures": 1081,
+          "tagged": 734,
+          "coverage": 0.6790009250693803
+        }
+      }
+    },
+    "opportunity_weighting": {
+      "active_windows": 36,
+      "exact_plan_names": 19,
+      "unique_active_actions": 1540,
+      "raw_concentration_equivalent_windows": {
+        "actions": 18.99998519330145,
+        "products": 16.823894158222735,
+        "archive_size_bytes": 14.70313411080405
+      },
+      "fractional_concentration_equivalent_windows": {
+        "actions": 18.03973671132567,
+        "products": 15.815014376869817,
+        "archive_size_bytes": 13.595033296553533
+      },
+      "collapsed_same_name_clusters": 32,
+      "collapsed_fractional_concentration_equivalent_windows": {
+        "actions": 17.3316963372212,
+        "products": 15.317957915097795,
+        "archive_size_bytes": 13.181026998196797
+      },
+      "replication_debt": {
+        "exact_windows_k2": 12,
+        "exact_windows_k3": 27,
+        "collapsed_clusters_k2": 13,
+        "collapsed_clusters_k3": 29
+      },
+      "exact_name_window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "collapsed_name_cluster_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 4,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 1,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "fractional_conservation": {
+        "actions": {
+          "expected_unique_total": 1540.0,
+          "fractional_window_total": 1540.0,
+          "collapsed_fractional_total": 1540.0,
+          "window_match": true,
+          "collapsed_match": true
+        },
+        "products": {
+          "expected_unique_total": 17136.0,
+          "fractional_window_total": 17136.0,
+          "collapsed_fractional_total": 17136.0,
+          "window_match": true,
+          "collapsed_match": true
+        },
+        "archive_size_bytes": {
+          "expected_unique_total": 1213824749710.0,
+          "fractional_window_total": 1213824749710.0,
+          "collapsed_fractional_total": 1213824749710.0,
+          "window_match": true,
+          "collapsed_match": true
+        }
+      },
+      "same_name_overlap_collapses": 4
+    },
+    "selection_weighting": {
+      "all_cohort": {
+        "actions": 2166,
+        "source_exposures": 7606,
+        "products": 22818,
+        "archive_size_bytes": 1625281365343
+      },
+      "selection_panel": {
+        "tagged_source_exposures": 3413,
+        "blank_source_exposures": 4193,
+        "sunset_tagged_source_exposures": 1553,
+        "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+        "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+        "nonblank_conditioning_amplification": 2.2285379431585115
+      },
+      "strict_tagged_weighting_panel": {
+        "selected_actions": 915,
+        "sunset_tagged_actions": 311,
+        "sunset_share_of_selected_actions": 0.33989071038251367,
+        "tagged_exposures": 3413,
+        "sunset_tagged_exposures": 1553,
+        "sunset_share_of_tagged_exposures": 0.455024904775857,
+        "tagged_products": 10239,
+        "sunset_tagged_products": 4659,
+        "sunset_share_of_tagged_products": 0.455024904775857,
+        "tagged_archive_size_bytes": 781104206358,
+        "sunset_tagged_archive_size_bytes": 409399017151,
+        "sunset_share_of_tagged_bytes": 0.5241285526548067,
+        "action_to_exposure_amplification": 1.338738867748904,
+        "exposure_to_byte_amplification": 1.1518678365813622,
+        "action_to_byte_amplification": 1.5420502433413124,
+        "representations_per_exposure": 3.0
+      },
+      "action_carried_sensitivity": {
+        "selected_action_exposures": 3495,
+        "sunset_action_exposures": 1555,
+        "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+        "selected_action_products": 10485,
+        "sunset_action_products": 4665,
+        "sunset_share_of_selected_action_products": 0.4449213161659514,
+        "selected_action_archive_size_bytes": 796556744230,
+        "sunset_action_archive_size_bytes": 410187365891,
+        "sunset_share_of_selected_action_bytes": 0.5149505906042036
+      },
+      "collection_byte_sensitivity": {
+        "data_source": {
+          "sunset_bytes": 34446621949,
+          "tagged_bytes": 70031223372,
+          "sunset_share": 0.4918751992382373
+        },
+        "data_raw": {
+          "sunset_bytes": 94177910368,
+          "tagged_bytes": 178638817504,
+          "sunset_share": 0.52719734536919
+        },
+        "data_processed": {
+          "sunset_bytes": 280774484834,
+          "tagged_bytes": 532434165482,
+          "sunset_share": 0.5273412245809236
+        }
+      },
+      "activity_structure_attribution": {
+        "activity_id": "24_Sunset",
+        "sunset_tagged_exposures_in_activity": 1294,
+        "sunset_tagged_exposures_all": 1553,
+        "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+        "outside_activity": {
+          "selected_actions": 656,
+          "sunset_tagged_actions": 52,
+          "sunset_share_of_selected_actions": 0.07926829268292683,
+          "tagged_exposures": 2119,
+          "sunset_tagged_exposures": 259,
+          "sunset_share_of_tagged_exposures": 0.12222746578574799,
+          "tagged_archive_size_bytes": 473833252413,
+          "sunset_tagged_archive_size_bytes": 102128063206,
+          "sunset_share_of_tagged_bytes": 0.21553587192522253
+        }
+      },
+      "all_tag_countercheck": {
+        "target_tag_values": 23,
+        "raw_action_tag_memberships": 918,
+        "fractional_action_weight_total": 915.0,
+        "multi_target_actions": 3,
+        "concentration_equivalent_target_tag_values": {
+          "fractional_actions": 5.063610769226117,
+          "exposures": 3.8227788157250044,
+          "products": 3.8227788157250044,
+          "archive_size_bytes": 3.191403784213298
+        },
+        "sunset_rank": {
+          "fractional_actions": 1,
+          "exposures": 1,
+          "products": 1,
+          "archive_size_bytes": 1
+        }
+      },
+      "structure_checks": {
+        "sunset_multitarget_actions": 0,
+        "sunset_partial_presence_actions": 2,
+        "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+        "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+      }
+    },
+    "field_completion": {
+      "source_exposures": 7606,
+      "nonblank_target_fields": 3413,
+      "blank_target_fields": 4193,
+      "observed_target_field_values": 23,
+      "blank_share": 0.5512753089666053,
+      "bounds_by_target_field_value": {
+        "01_Discussion #1: Warm up": {
+          "observed_count": 39,
+          "lower_count": 39,
+          "upper_count": 4232,
+          "observed_share_among_nonblank": 0.011426897157925579,
+          "lower_share_full_cohort": 0.005127530896660531,
+          "upper_share_full_cohort": 0.5564028398632659,
+          "bound_width": 0.5512753089666053
+        },
+        "Aristarchus Plateau": {
+          "observed_count": 26,
+          "lower_count": 26,
+          "upper_count": 4219,
+          "observed_share_among_nonblank": 0.007617931438617052,
+          "lower_share_full_cohort": 0.0034183539311070208,
+          "upper_share_full_cohort": 0.5546936628977124,
+          "bound_width": 0.5512753089666053
+        },
+        "Deep Space": {
+          "observed_count": 25,
+          "lower_count": 25,
+          "upper_count": 4218,
+          "observed_share_among_nonblank": 0.00732493407559332,
+          "lower_share_full_cohort": 0.003286878779910597,
+          "upper_share_full_cohort": 0.5545621877465159,
+          "bound_width": 0.5512753089666053
+        },
+        "Earth": {
+          "observed_count": 692,
+          "lower_count": 692,
+          "upper_count": 4885,
+          "observed_share_among_nonblank": 0.2027541752124231,
+          "lower_share_full_cohort": 0.09098080462792532,
+          "upper_share_full_cohort": 0.6422561135945306,
+          "bound_width": 0.5512753089666053
+        },
+        "Earthrise": {
+          "observed_count": 2,
+          "lower_count": 2,
+          "upper_count": 4195,
+          "observed_share_among_nonblank": 0.0005859947260474656,
+          "lower_share_full_cohort": 0.00026295030239284776,
+          "upper_share_full_cohort": 0.5515382592689981,
+          "bound_width": 0.5512753089666053
+        },
+        "Earthset": {
+          "observed_count": 14,
+          "lower_count": 14,
+          "upper_count": 4207,
+          "observed_share_among_nonblank": 0.004101963082332259,
+          "lower_share_full_cohort": 0.0018406521167499343,
+          "upper_share_full_cohort": 0.5531159610833553,
+          "bound_width": 0.5512753089666053
+        },
+        "Glushko Crater": {
+          "observed_count": 24,
+          "lower_count": 24,
+          "upper_count": 4217,
+          "observed_share_among_nonblank": 0.007031936712569587,
+          "lower_share_full_cohort": 0.003155403628714173,
+          "upper_share_full_cohort": 0.5544307125953195,
+          "bound_width": 0.5512753089666053
+        },
+        "Hertzsprung Basin": {
+          "observed_count": 12,
+          "lower_count": 12,
+          "upper_count": 4205,
+          "observed_share_among_nonblank": 0.0035159683562847933,
+          "lower_share_full_cohort": 0.0015777018143570865,
+          "upper_share_full_cohort": 0.5528530107809624,
+          "bound_width": 0.5512753089666053
+        },
+        "Landau": {
+          "observed_count": 7,
+          "lower_count": 7,
+          "upper_count": 4200,
+          "observed_share_among_nonblank": 0.0020509815411661296,
+          "lower_share_full_cohort": 0.0009203260583749671,
+          "upper_share_full_cohort": 0.5521956350249803,
+          "bound_width": 0.5512753089666053
+        },
+        "Limb": {
+          "observed_count": 6,
+          "lower_count": 6,
+          "upper_count": 4199,
+          "observed_share_among_nonblank": 0.0017579841781423966,
+          "lower_share_full_cohort": 0.0007888509071785432,
+          "upper_share_full_cohort": 0.5520641598737839,
+          "bound_width": 0.5512753089666053
+        },
+        "Moon": {
+          "observed_count": 280,
+          "lower_count": 280,
+          "upper_count": 4473,
+          "observed_share_among_nonblank": 0.08203926164664518,
+          "lower_share_full_cohort": 0.036813042334998686,
+          "upper_share_full_cohort": 0.588088351301604,
+          "bound_width": 0.5512753089666053
+        },
+        "Nemst": {
+          "observed_count": 3,
+          "lower_count": 3,
+          "upper_count": 4196,
+          "observed_share_among_nonblank": 0.0008789920890711983,
+          "lower_share_full_cohort": 0.0003944254535892716,
+          "upper_share_full_cohort": 0.5516697344201946,
+          "bound_width": 0.5512753089666053
+        },
+        "Ohm Crater": {
+          "observed_count": 68,
+          "lower_count": 68,
+          "upper_count": 4261,
+          "observed_share_among_nonblank": 0.019923820685613828,
+          "lower_share_full_cohort": 0.008940310281356823,
+          "upper_share_full_cohort": 0.5602156192479621,
+          "bound_width": 0.5512753089666053
+        },
+        "Orientale Basin": {
+          "observed_count": 74,
+          "lower_count": 74,
+          "upper_count": 4267,
+          "observed_share_among_nonblank": 0.021681804863756225,
+          "lower_share_full_cohort": 0.009729161188535366,
+          "upper_share_full_cohort": 0.5610044701551407,
+          "bound_width": 0.5512753089666053
+        },
+        "Pierrazzo Crater": {
+          "observed_count": 23,
+          "lower_count": 23,
+          "upper_count": 4216,
+          "observed_share_among_nonblank": 0.006738939349545854,
+          "lower_share_full_cohort": 0.0030239284775177492,
+          "upper_share_full_cohort": 0.554299237444123,
+          "bound_width": 0.5512753089666053
+        },
+        "Reiner Gamma": {
+          "observed_count": 24,
+          "lower_count": 24,
+          "upper_count": 4217,
+          "observed_share_among_nonblank": 0.007031936712569587,
+          "lower_share_full_cohort": 0.003155403628714173,
+          "upper_share_full_cohort": 0.5544307125953195,
+          "bound_width": 0.5512753089666053
+        },
+        "Sun": {
+          "observed_count": 81,
+          "lower_count": 81,
+          "upper_count": 4274,
+          "observed_share_among_nonblank": 0.023732786404922355,
+          "lower_share_full_cohort": 0.010649487246910333,
+          "upper_share_full_cohort": 0.5619247962135157,
+          "bound_width": 0.5512753089666053
+        },
+        "Sunrise": {
+          "observed_count": 181,
+          "lower_count": 181,
+          "upper_count": 4374,
+          "observed_share_among_nonblank": 0.05303252270729564,
+          "lower_share_full_cohort": 0.02379700236655272,
+          "upper_share_full_cohort": 0.5750723113331581,
+          "bound_width": 0.5512753089666053
+        },
+        "Sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "Terminator": {
+          "observed_count": 122,
+          "lower_count": 122,
+          "upper_count": 4315,
+          "observed_share_among_nonblank": 0.0357456782888954,
+          "lower_share_full_cohort": 0.016039968445963712,
+          "upper_share_full_cohort": 0.567315277412569,
+          "bound_width": 0.5512753089666053
+        },
+        "Unknown": {
+          "observed_count": 33,
+          "lower_count": 33,
+          "upper_count": 4226,
+          "observed_share_among_nonblank": 0.009668912979783182,
+          "lower_share_full_cohort": 0.004338679989481988,
+          "upper_share_full_cohort": 0.5556139889560873,
+          "bound_width": 0.5512753089666053
+        },
+        "Vavilov Crater": {
+          "observed_count": 67,
+          "lower_count": 67,
+          "upper_count": 4260,
+          "observed_share_among_nonblank": 0.019630823322590096,
+          "lower_share_full_cohort": 0.008808835130160399,
+          "upper_share_full_cohort": 0.5600841440967657,
+          "bound_width": 0.5512753089666053
+        },
+        "Whole Moon": {
+          "observed_count": 57,
+          "lower_count": 57,
+          "upper_count": 4250,
+          "observed_share_among_nonblank": 0.01670084969235277,
+          "lower_share_full_cohort": 0.007494083618196161,
+          "upper_share_full_cohort": 0.5587693925848015,
+          "bound_width": 0.5512753089666053
+        }
+      },
+      "sunset": {
+        "observed_count": 1553,
+        "lower_count": 1553,
+        "upper_count": 5746,
+        "observed_share_among_nonblank": 0.455024904775857,
+        "lower_share_full_cohort": 0.2041809098080463,
+        "upper_share_full_cohort": 0.7554562187746516,
+        "bound_width": 0.5512753089666053
+      },
+      "sunset_majority": {
+        "strict_majority_count": 3804,
+        "additional_blank_memberships_needed": 2251,
+        "required_fraction_of_blank_fields": 0.5368471261626521
+      },
+      "deterministic_completion_budgets": {
+        "10_percentage_points": {
+          "minimum_blank_fields_resolved": 3433,
+          "maximum_remaining_blank_fields": 760
+        },
+        "5_percentage_points": {
+          "minimum_blank_fields_resolved": 3813,
+          "maximum_remaining_blank_fields": 380
+        },
+        "1_percentage_point": {
+          "minimum_blank_fields_resolved": 4117,
+          "maximum_remaining_blank_fields": 76
+        }
+      },
+      "completion_witness": {
+        "source_rows": 7606,
+        "lower_sunset_count": 1553,
+        "upper_sunset_count": 5746,
+        "known_fields_preserved": true,
+        "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+        "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+      },
+      "extreme_assignments": {
+        "no_blank_fields_assigned_to_sunset": {
+          "sunset_count": 1553,
+          "cohort_count": 7606
+        },
+        "all_blank_fields_assigned_to_sunset": {
+          "sunset_count": 5746,
+          "cohort_count": 7606
+        }
+      }
+    }
+  },
+  "conditional_withheld": {
+    "relationship": {
+      "rows": 22803,
+      "train_products": 18294,
+      "test_products": 4509,
+      "partitions": [
+        "test",
+        "train"
+      ],
+      "unique_product_ids": 22803,
+      "capture_linked_test_products": 4305,
+      "action_only_linked_test_products": 204,
+      "action_isolated_test_products": 0,
+      "capture_linked_test_share": 0.9547571523619428,
+      "action_only_linked_test_share": 0.04524284763805722,
+      "action_isolated_test_share": 0.0,
+      "test_visible_capture_groups": 3677,
+      "capture_linked_test_capture_groups": 3609,
+      "capture_isolated_test_capture_groups": 68,
+      "test_visible_action_groups": 1936,
+      "action_isolated_test_action_groups": 0,
+      "crossing_action_groups": 1936,
+      "products_in_crossing_action_groups": 20586,
+      "share_all_products_in_crossing_actions": 0.9027759505328247
+    },
+    "selection": {
+      "coverage": {
+        "source_exposures": 7601,
+        "target_tag_present": 3408,
+        "target_tag_blank": 4193,
+        "target_tag_coverage": 0.44836205762399683,
+        "activity_values": 45,
+        "zero_coverage_activities": 17,
+        "zero_coverage_exposures": 1397,
+        "full_coverage_activities": 8,
+        "full_coverage_exposures": 1676,
+        "partial_coverage_activities": 20,
+        "partial_coverage_exposures": 4528,
+        "activity_tag_presence_cramers_v": 0.8203218062719659,
+        "activity_tag_presence_mutual_information_bits": 0.6419538199152138,
+        "activity_majority_lookup_correct": 6649,
+        "activity_majority_lookup_accuracy": 0.8747533219313248,
+        "global_majority_state_accuracy": 0.5516379423760032,
+        "activity_lookup_accuracy_lift": 0.32311537955532166,
+        "camera_tag_presence_cramers_v": 0.191617821336898,
+        "camera_tag_presence_mutual_information_bits": 0.026667450731009398,
+        "sunset_tagged_exposures": 1553,
+        "sunset_share_of_tagged_exposures": 0.4556924882629108
+      },
+      "activity_examples": {
+        "24_Sunset": {
+          "exposures": 1294,
+          "tagged": 1294
+        },
+        "12_Orientale Basin (2/2)": {
+          "exposures": 399,
+          "tagged": 0
+        },
+        "07_Whole Moon": {
+          "exposures": 456,
+          "tagged": 3
+        },
+        "h_Observation Break": {
+          "exposures": 284,
+          "tagged": 259
+        }
+      },
+      "camera_coverage": {
+        "3500015": {
+          "exposures": 6269,
+          "tagged": 2602,
+          "coverage": 0.4150582230020737
+        },
+        "3500017": {
+          "exposures": 256,
+          "tagged": 77,
+          "coverage": 0.30078125
+        },
+        "3920019": {
+          "exposures": 1076,
+          "tagged": 729,
+          "coverage": 0.6775092936802974
+        }
+      }
+    },
+    "opportunity_weighting": {
+      "active_windows": 36,
+      "exact_plan_names": 19,
+      "unique_active_actions": 1539,
+      "raw_concentration_equivalent_windows": {
+        "actions": 18.975894683784507,
+        "products": 16.79030859735889,
+        "archive_size_bytes": 14.650521057794823
+      },
+      "fractional_concentration_equivalent_windows": {
+        "actions": 18.023925150198043,
+        "products": 15.794363418009198,
+        "archive_size_bytes": 13.561460009588574
+      },
+      "collapsed_same_name_clusters": 32,
+      "collapsed_fractional_concentration_equivalent_windows": {
+        "actions": 17.328316933094342,
+        "products": 15.310812341784796,
+        "archive_size_bytes": 13.167848752017541
+      },
+      "replication_debt": {
+        "exact_windows_k2": 12,
+        "exact_windows_k3": 27,
+        "collapsed_clusters_k2": 13,
+        "collapsed_clusters_k3": 29
+      },
+      "exact_name_window_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 5,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 4,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "collapsed_name_cluster_counts": {
+        "Aristarchus Plateau": 1,
+        "Crew Position Swap": 1,
+        "Crew Team Swap": 5,
+        "Earth": 1,
+        "Earthrise": 1,
+        "Earthset": 1,
+        "Glushko Crater": 2,
+        "Guided Discussion": 4,
+        "Hertzsprung Basin": 1,
+        "Impact Flashes": 1,
+        "Moon": 1,
+        "Ohm Crater": 2,
+        "Orientale Basin": 2,
+        "Reiner Gamma": 1,
+        "Sunrise": 1,
+        "Sunset": 1,
+        "Vavilov Crater": 1,
+        "Whole Moon": 4,
+        "illum_limb": 1
+      },
+      "fractional_conservation": {
+        "actions": {
+          "expected_unique_total": 1539.0,
+          "fractional_window_total": 1539.0,
+          "collapsed_fractional_total": 1539.0,
+          "window_match": true,
+          "collapsed_match": true
+        },
+        "products": {
+          "expected_unique_total": 17121.0,
+          "fractional_window_total": 17121.0,
+          "collapsed_fractional_total": 17121.0,
+          "window_match": true,
+          "collapsed_match": true
+        },
+        "archive_size_bytes": {
+          "expected_unique_total": 1211853207140.0,
+          "fractional_window_total": 1211853207140.0,
+          "collapsed_fractional_total": 1211853207140.0,
+          "window_match": true,
+          "collapsed_match": true
+        }
+      },
+      "same_name_overlap_collapses": 4
+    },
+    "selection_weighting": {
+      "all_cohort": {
+        "actions": 2165,
+        "source_exposures": 7601,
+        "products": 22803,
+        "archive_size_bytes": 1623309822773
+      },
+      "selection_panel": {
+        "tagged_source_exposures": 3408,
+        "blank_source_exposures": 4193,
+        "sunset_tagged_source_exposures": 1553,
+        "sunset_tag_occupancy_all_source_exposures": 0.2043152216813577,
+        "sunset_share_of_tagged_source_exposures": 0.4556924882629108,
+        "nonblank_conditioning_amplification": 2.2303403755868545
+      },
+      "strict_tagged_weighting_panel": {
+        "selected_actions": 914,
+        "sunset_tagged_actions": 311,
+        "sunset_share_of_selected_actions": 0.3402625820568928,
+        "tagged_exposures": 3408,
+        "sunset_tagged_exposures": 1553,
+        "sunset_share_of_tagged_exposures": 0.4556924882629108,
+        "tagged_products": 10224,
+        "sunset_tagged_products": 4659,
+        "sunset_share_of_tagged_products": 0.4556924882629108,
+        "tagged_archive_size_bytes": 779132663788,
+        "sunset_tagged_archive_size_bytes": 409399017151,
+        "sunset_share_of_tagged_bytes": 0.5254548245488478,
+        "action_to_exposure_amplification": 1.339237730779101,
+        "exposure_to_byte_amplification": 1.1530908191001117,
+        "action_to_byte_amplification": 1.5442627319538484,
+        "representations_per_exposure": 3.0
+      },
+      "action_carried_sensitivity": {
+        "selected_action_exposures": 3490,
+        "sunset_action_exposures": 1555,
+        "sunset_share_of_selected_action_exposures": 0.4455587392550143,
+        "selected_action_products": 10470,
+        "sunset_action_products": 4665,
+        "sunset_share_of_selected_action_products": 0.4455587392550143,
+        "selected_action_archive_size_bytes": 794585201660,
+        "sunset_action_archive_size_bytes": 410187365891,
+        "sunset_share_of_selected_action_bytes": 0.5162282975243699
+      },
+      "collection_byte_sensitivity": {
+        "data_source": {
+          "sunset_bytes": 34446621949,
+          "tagged_bytes": 69880183372,
+          "sunset_share": 0.4929383451332252
+        },
+        "data_raw": {
+          "sunset_bytes": 94177910368,
+          "tagged_bytes": 178181754624,
+          "sunset_share": 0.5285496854980168
+        },
+        "data_processed": {
+          "sunset_bytes": 280774484834,
+          "tagged_bytes": 531070725792,
+          "sunset_share": 0.5286950893692615
+        }
+      },
+      "activity_structure_attribution": {
+        "activity_id": "24_Sunset",
+        "sunset_tagged_exposures_in_activity": 1294,
+        "sunset_tagged_exposures_all": 1553,
+        "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+        "outside_activity": {
+          "selected_actions": 655,
+          "sunset_tagged_actions": 52,
+          "sunset_share_of_selected_actions": 0.07938931297709924,
+          "tagged_exposures": 2114,
+          "sunset_tagged_exposures": 259,
+          "sunset_share_of_tagged_exposures": 0.12251655629139073,
+          "tagged_archive_size_bytes": 471861709843,
+          "sunset_tagged_archive_size_bytes": 102128063206,
+          "sunset_share_of_tagged_bytes": 0.21643642846117037
+        }
+      },
+      "all_tag_countercheck": {
+        "target_tag_values": 23,
+        "raw_action_tag_memberships": 917,
+        "fractional_action_weight_total": 914.0,
+        "multi_target_actions": 3,
+        "concentration_equivalent_target_tag_values": {
+          "fractional_actions": 5.057442873445271,
+          "exposures": 3.8150607087438724,
+          "products": 3.8150607087438724,
+          "archive_size_bytes": 3.1794788566207495
+        },
+        "sunset_rank": {
+          "fractional_actions": 1,
+          "exposures": 1,
+          "products": 1,
+          "archive_size_bytes": 1
+        }
+      },
+      "structure_checks": {
+        "sunset_multitarget_actions": 0,
+        "sunset_partial_presence_actions": 2,
+        "tagged_bytes_share_of_all_bytes": 0.4799654710750507,
+        "sunset_tagged_bytes_share_of_all_bytes": 0.2522001723932459
+      }
+    },
+    "field_completion": {
+      "source_exposures": 7601,
+      "nonblank_target_fields": 3408,
+      "blank_target_fields": 4193,
+      "observed_target_field_values": 23,
+      "blank_share": 0.5516379423760032,
+      "bounds_by_target_field_value": {
+        "01_Discussion #1: Warm up": {
+          "observed_count": 39,
+          "lower_count": 39,
+          "upper_count": 4232,
+          "observed_share_among_nonblank": 0.011443661971830986,
+          "lower_share_full_cohort": 0.005130903828443626,
+          "upper_share_full_cohort": 0.5567688462044468,
+          "bound_width": 0.5516379423760032
+        },
+        "Aristarchus Plateau": {
+          "observed_count": 26,
+          "lower_count": 26,
+          "upper_count": 4219,
+          "observed_share_among_nonblank": 0.007629107981220657,
+          "lower_share_full_cohort": 0.0034206025522957504,
+          "upper_share_full_cohort": 0.5550585449282989,
+          "bound_width": 0.5516379423760032
+        },
+        "Deep Space": {
+          "observed_count": 25,
+          "lower_count": 25,
+          "upper_count": 4218,
+          "observed_share_among_nonblank": 0.007335680751173709,
+          "lower_share_full_cohort": 0.0032890409156689907,
+          "upper_share_full_cohort": 0.5549269832916721,
+          "bound_width": 0.5516379423760032
+        },
+        "Earth": {
+          "observed_count": 692,
+          "lower_count": 692,
+          "upper_count": 4885,
+          "observed_share_among_nonblank": 0.20305164319248825,
+          "lower_share_full_cohort": 0.09104065254571767,
+          "upper_share_full_cohort": 0.6426785949217209,
+          "bound_width": 0.5516379423760032
+        },
+        "Earthrise": {
+          "observed_count": 2,
+          "lower_count": 2,
+          "upper_count": 4195,
+          "observed_share_among_nonblank": 0.0005868544600938967,
+          "lower_share_full_cohort": 0.0002631232732535193,
+          "upper_share_full_cohort": 0.5519010656492567,
+          "bound_width": 0.5516379423760032
+        },
+        "Earthset": {
+          "observed_count": 14,
+          "lower_count": 14,
+          "upper_count": 4207,
+          "observed_share_among_nonblank": 0.004107981220657277,
+          "lower_share_full_cohort": 0.0018418629127746348,
+          "upper_share_full_cohort": 0.5534798052887778,
+          "bound_width": 0.5516379423760032
+        },
+        "Glushko Crater": {
+          "observed_count": 24,
+          "lower_count": 24,
+          "upper_count": 4217,
+          "observed_share_among_nonblank": 0.007042253521126761,
+          "lower_share_full_cohort": 0.003157479279042231,
+          "upper_share_full_cohort": 0.5547954216550454,
+          "bound_width": 0.5516379423760032
+        },
+        "Hertzsprung Basin": {
+          "observed_count": 12,
+          "lower_count": 12,
+          "upper_count": 4205,
+          "observed_share_among_nonblank": 0.0035211267605633804,
+          "lower_share_full_cohort": 0.0015787396395211155,
+          "upper_share_full_cohort": 0.5532166820155243,
+          "bound_width": 0.5516379423760032
+        },
+        "Landau": {
+          "observed_count": 7,
+          "lower_count": 7,
+          "upper_count": 4200,
+          "observed_share_among_nonblank": 0.0020539906103286387,
+          "lower_share_full_cohort": 0.0009209314563873174,
+          "upper_share_full_cohort": 0.5525588738323904,
+          "bound_width": 0.5516379423760032
+        },
+        "Limb": {
+          "observed_count": 6,
+          "lower_count": 6,
+          "upper_count": 4199,
+          "observed_share_among_nonblank": 0.0017605633802816902,
+          "lower_share_full_cohort": 0.0007893698197605578,
+          "upper_share_full_cohort": 0.5524273121957637,
+          "bound_width": 0.5516379423760032
+        },
+        "Moon": {
+          "observed_count": 275,
+          "lower_count": 275,
+          "upper_count": 4468,
+          "observed_share_among_nonblank": 0.0806924882629108,
+          "lower_share_full_cohort": 0.0361794500723589,
+          "upper_share_full_cohort": 0.5878173924483621,
+          "bound_width": 0.5516379423760032
+        },
+        "Nemst": {
+          "observed_count": 3,
+          "lower_count": 3,
+          "upper_count": 4196,
+          "observed_share_among_nonblank": 0.0008802816901408451,
+          "lower_share_full_cohort": 0.0003946849098802789,
+          "upper_share_full_cohort": 0.5520326272858834,
+          "bound_width": 0.5516379423760032
+        },
+        "Ohm Crater": {
+          "observed_count": 68,
+          "lower_count": 68,
+          "upper_count": 4261,
+          "observed_share_among_nonblank": 0.01995305164319249,
+          "lower_share_full_cohort": 0.008946191290619656,
+          "upper_share_full_cohort": 0.5605841336666229,
+          "bound_width": 0.5516379423760032
+        },
+        "Orientale Basin": {
+          "observed_count": 74,
+          "lower_count": 74,
+          "upper_count": 4267,
+          "observed_share_among_nonblank": 0.02171361502347418,
+          "lower_share_full_cohort": 0.009735561110380214,
+          "upper_share_full_cohort": 0.5613735034863834,
+          "bound_width": 0.5516379423760032
+        },
+        "Pierrazzo Crater": {
+          "observed_count": 23,
+          "lower_count": 23,
+          "upper_count": 4216,
+          "observed_share_among_nonblank": 0.0067488262910798125,
+          "lower_share_full_cohort": 0.0030259176424154714,
+          "upper_share_full_cohort": 0.5546638600184186,
+          "bound_width": 0.5516379423760032
+        },
+        "Reiner Gamma": {
+          "observed_count": 24,
+          "lower_count": 24,
+          "upper_count": 4217,
+          "observed_share_among_nonblank": 0.007042253521126761,
+          "lower_share_full_cohort": 0.003157479279042231,
+          "upper_share_full_cohort": 0.5547954216550454,
+          "bound_width": 0.5516379423760032
+        },
+        "Sun": {
+          "observed_count": 81,
+          "lower_count": 81,
+          "upper_count": 4274,
+          "observed_share_among_nonblank": 0.023767605633802816,
+          "lower_share_full_cohort": 0.01065649256676753,
+          "upper_share_full_cohort": 0.5622944349427706,
+          "bound_width": 0.5516379423760032
+        },
+        "Sunrise": {
+          "observed_count": 181,
+          "lower_count": 181,
+          "upper_count": 4374,
+          "observed_share_among_nonblank": 0.053110328638497656,
+          "lower_share_full_cohort": 0.023812656229443493,
+          "upper_share_full_cohort": 0.5754505986054467,
+          "bound_width": 0.5516379423760032
+        },
+        "Sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.4556924882629108,
+          "lower_share_full_cohort": 0.2043152216813577,
+          "upper_share_full_cohort": 0.7559531640573609,
+          "bound_width": 0.5516379423760032
+        },
+        "Terminator": {
+          "observed_count": 122,
+          "lower_count": 122,
+          "upper_count": 4315,
+          "observed_share_among_nonblank": 0.0357981220657277,
+          "lower_share_full_cohort": 0.016050519668464675,
+          "upper_share_full_cohort": 0.5676884620444679,
+          "bound_width": 0.5516379423760032
+        },
+        "Unknown": {
+          "observed_count": 33,
+          "lower_count": 33,
+          "upper_count": 4226,
+          "observed_share_among_nonblank": 0.009683098591549295,
+          "lower_share_full_cohort": 0.004341534008683068,
+          "upper_share_full_cohort": 0.5559794763846863,
+          "bound_width": 0.5516379423760032
+        },
+        "Vavilov Crater": {
+          "observed_count": 67,
+          "lower_count": 67,
+          "upper_count": 4260,
+          "observed_share_among_nonblank": 0.01965962441314554,
+          "lower_share_full_cohort": 0.008814629653992895,
+          "upper_share_full_cohort": 0.5604525720299961,
+          "bound_width": 0.5516379423760032
+        },
+        "Whole Moon": {
+          "observed_count": 57,
+          "lower_count": 57,
+          "upper_count": 4250,
+          "observed_share_among_nonblank": 0.016725352112676055,
+          "lower_share_full_cohort": 0.007499013287725299,
+          "upper_share_full_cohort": 0.5591369556637285,
+          "bound_width": 0.5516379423760032
+        }
+      },
+      "sunset": {
+        "observed_count": 1553,
+        "lower_count": 1553,
+        "upper_count": 5746,
+        "observed_share_among_nonblank": 0.4556924882629108,
+        "lower_share_full_cohort": 0.2043152216813577,
+        "upper_share_full_cohort": 0.7559531640573609,
+        "bound_width": 0.5516379423760032
+      },
+      "sunset_majority": {
+        "strict_majority_count": 3801,
+        "additional_blank_memberships_needed": 2248,
+        "required_fraction_of_blank_fields": 0.5361316479847364
+      },
+      "deterministic_completion_budgets": {
+        "10_percentage_points": {
+          "minimum_blank_fields_resolved": 3433,
+          "maximum_remaining_blank_fields": 760
+        },
+        "5_percentage_points": {
+          "minimum_blank_fields_resolved": 3813,
+          "maximum_remaining_blank_fields": 380
+        },
+        "1_percentage_point": {
+          "minimum_blank_fields_resolved": 4117,
+          "maximum_remaining_blank_fields": 76
+        }
+      },
+      "completion_witness": {
+        "source_rows": 7601,
+        "lower_sunset_count": 1553,
+        "upper_sunset_count": 5746,
+        "known_fields_preserved": true,
+        "csv_sha256": "7832d6eaf2c7eeb94dd04e312c3f9d2a70b2413dfbdcbb6e1378bb188791d354",
+        "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+      },
+      "extreme_assignments": {
+        "no_blank_fields_assigned_to_sunset": {
+          "sunset_count": 1553,
+          "cohort_count": 7601
+        },
+        "all_blank_fields_assigned_to_sunset": {
+          "sunset_count": 5746,
+          "cohort_count": 7601
+        }
+      }
+    }
+  },
+  "conclusions": {
+    "zero_action_isolated_test_products": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    },
+    "tagged_subset_incomplete_and_activity_structured": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    },
+    "selected_sunset_action_minority_byte_majority": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    },
+    "source_tier_sunset_minority_raw_processed_majorities": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    },
+    "most_sunset_tagged_keys_from_24_sunset_activity": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    },
+    "outside_24_sunset_activity_byte_share_below_half": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    },
+    "raw_window_concentration_action_above_product_above_byte": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    },
+    "sunset_field_completion_interval_spans_half": {
+      "baseline": true,
+      "withheld": true,
+      "same_boolean_disposition": true
+    }
+  },
+  "comparison": [
+    {
+      "metric": "field_completion.blank_share",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.blank_target_fields",
+      "baseline": 4193,
+      "withheld": 4193,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.lower_count",
+      "baseline": 39,
+      "withheld": 39,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.lower_share_full_cohort",
+      "baseline": 0.005127530896660531,
+      "withheld": 0.005130903828443626,
+      "delta": 3.3729317830948763e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.observed_count",
+      "baseline": 39,
+      "withheld": 39,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.observed_share_among_nonblank",
+      "baseline": 0.011426897157925579,
+      "withheld": 0.011443661971830986,
+      "delta": 1.6764813905407322e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.upper_count",
+      "baseline": 4232,
+      "withheld": 4232,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.upper_share_full_cohort",
+      "baseline": 0.5564028398632659,
+      "withheld": 0.5567688462044468,
+      "delta": 0.00036600634118089115,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Aristarchus Plateau.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Aristarchus Plateau.lower_count",
+      "baseline": 26,
+      "withheld": 26,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Aristarchus Plateau.lower_share_full_cohort",
+      "baseline": 0.0034183539311070208,
+      "withheld": 0.0034206025522957504,
+      "delta": 2.2486211887296284e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Aristarchus Plateau.observed_count",
+      "baseline": 26,
+      "withheld": 26,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Aristarchus Plateau.observed_share_among_nonblank",
+      "baseline": 0.007617931438617052,
+      "withheld": 0.007629107981220657,
+      "delta": 1.117654260360517e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Aristarchus Plateau.upper_count",
+      "baseline": 4219,
+      "withheld": 4219,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Aristarchus Plateau.upper_share_full_cohort",
+      "baseline": 0.5546936628977124,
+      "withheld": 0.5550585449282989,
+      "delta": 0.0003648820305864886,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Deep Space.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Deep Space.lower_count",
+      "baseline": 25,
+      "withheld": 25,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Deep Space.lower_share_full_cohort",
+      "baseline": 0.003286878779910597,
+      "withheld": 0.0032890409156689907,
+      "delta": 2.1621357583936733e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Deep Space.observed_count",
+      "baseline": 25,
+      "withheld": 25,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Deep Space.observed_share_among_nonblank",
+      "baseline": 0.00732493407559332,
+      "withheld": 0.007335680751173709,
+      "delta": 1.074667558038922e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Deep Space.upper_count",
+      "baseline": 4218,
+      "withheld": 4218,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Deep Space.upper_share_full_cohort",
+      "baseline": 0.5545621877465159,
+      "withheld": 0.5549269832916721,
+      "delta": 0.0003647955451562268,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earth.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earth.lower_count",
+      "baseline": 692,
+      "withheld": 692,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earth.lower_share_full_cohort",
+      "baseline": 0.09098080462792532,
+      "withheld": 0.09104065254571767,
+      "delta": 5.9847917792343885e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earth.observed_count",
+      "baseline": 692,
+      "withheld": 692,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earth.observed_share_among_nonblank",
+      "baseline": 0.2027541752124231,
+      "withheld": 0.20305164319248825,
+      "delta": 0.0002974679800651636,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earth.upper_count",
+      "baseline": 4885,
+      "withheld": 4885,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earth.upper_share_full_cohort",
+      "baseline": 0.6422561135945306,
+      "withheld": 0.6426785949217209,
+      "delta": 0.00042248132719024944,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthrise.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthrise.lower_count",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthrise.lower_share_full_cohort",
+      "baseline": 0.00026295030239284776,
+      "withheld": 0.0002631232732535193,
+      "delta": 1.7297086067153073e-07,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthrise.observed_count",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthrise.observed_share_among_nonblank",
+      "baseline": 0.0005859947260474656,
+      "withheld": 0.0005868544600938967,
+      "delta": 8.597340464311419e-07,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthrise.upper_count",
+      "baseline": 4195,
+      "withheld": 4195,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthrise.upper_share_full_cohort",
+      "baseline": 0.5515382592689981,
+      "withheld": 0.5519010656492567,
+      "delta": 0.0003628063802585402,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthset.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthset.lower_count",
+      "baseline": 14,
+      "withheld": 14,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthset.lower_share_full_cohort",
+      "baseline": 0.0018406521167499343,
+      "withheld": 0.0018418629127746348,
+      "delta": 1.2107960247005525e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthset.observed_count",
+      "baseline": 14,
+      "withheld": 14,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthset.observed_share_among_nonblank",
+      "baseline": 0.004101963082332259,
+      "withheld": 0.004107981220657277,
+      "delta": 6.018138325018102e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthset.upper_count",
+      "baseline": 4207,
+      "withheld": 4207,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Earthset.upper_share_full_cohort",
+      "baseline": 0.5531159610833553,
+      "withheld": 0.5534798052887778,
+      "delta": 0.0003638442054225699,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Glushko Crater.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Glushko Crater.lower_count",
+      "baseline": 24,
+      "withheld": 24,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Glushko Crater.lower_share_full_cohort",
+      "baseline": 0.003155403628714173,
+      "withheld": 0.003157479279042231,
+      "delta": 2.075650328058152e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Glushko Crater.observed_count",
+      "baseline": 24,
+      "withheld": 24,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Glushko Crater.observed_share_among_nonblank",
+      "baseline": 0.007031936712569587,
+      "withheld": 0.007042253521126761,
+      "delta": 1.0316808557174137e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Glushko Crater.upper_count",
+      "baseline": 4217,
+      "withheld": 4217,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Glushko Crater.upper_share_full_cohort",
+      "baseline": 0.5544307125953195,
+      "withheld": 0.5547954216550454,
+      "delta": 0.000364709059725854,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Hertzsprung Basin.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Hertzsprung Basin.lower_count",
+      "baseline": 12,
+      "withheld": 12,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Hertzsprung Basin.lower_share_full_cohort",
+      "baseline": 0.0015777018143570865,
+      "withheld": 0.0015787396395211155,
+      "delta": 1.037825164029076e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Hertzsprung Basin.observed_count",
+      "baseline": 12,
+      "withheld": 12,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Hertzsprung Basin.observed_share_among_nonblank",
+      "baseline": 0.0035159683562847933,
+      "withheld": 0.0035211267605633804,
+      "delta": 5.1584042785870685e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Hertzsprung Basin.upper_count",
+      "baseline": 4205,
+      "withheld": 4205,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Hertzsprung Basin.upper_share_full_cohort",
+      "baseline": 0.5528530107809624,
+      "withheld": 0.5532166820155243,
+      "delta": 0.0003636712345619353,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Landau.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Landau.lower_count",
+      "baseline": 7,
+      "withheld": 7,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Landau.lower_share_full_cohort",
+      "baseline": 0.0009203260583749671,
+      "withheld": 0.0009209314563873174,
+      "delta": 6.053980123502762e-07,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Landau.observed_count",
+      "baseline": 7,
+      "withheld": 7,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Landau.observed_share_among_nonblank",
+      "baseline": 0.0020509815411661296,
+      "withheld": 0.0020539906103286387,
+      "delta": 3.009069162509051e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Landau.upper_count",
+      "baseline": 4200,
+      "withheld": 4200,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Landau.upper_share_full_cohort",
+      "baseline": 0.5521956350249803,
+      "withheld": 0.5525588738323904,
+      "delta": 0.0003632388074101822,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Limb.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Limb.lower_count",
+      "baseline": 6,
+      "withheld": 6,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Limb.lower_share_full_cohort",
+      "baseline": 0.0007888509071785432,
+      "withheld": 0.0007893698197605578,
+      "delta": 5.18912582014538e-07,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Limb.observed_count",
+      "baseline": 6,
+      "withheld": 6,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Limb.observed_share_among_nonblank",
+      "baseline": 0.0017579841781423966,
+      "withheld": 0.0017605633802816902,
+      "delta": 2.5792021392935342e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Limb.upper_count",
+      "baseline": 4199,
+      "withheld": 4199,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Limb.upper_share_full_cohort",
+      "baseline": 0.5520641598737839,
+      "withheld": 0.5524273121957637,
+      "delta": 0.0003631523219798094,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Moon.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Moon.lower_count",
+      "baseline": 280,
+      "withheld": 275,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Moon.lower_share_full_cohort",
+      "baseline": 0.036813042334998686,
+      "withheld": 0.0361794500723589,
+      "delta": -0.0006335922626397872,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Moon.observed_count",
+      "baseline": 280,
+      "withheld": 275,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Moon.observed_share_among_nonblank",
+      "baseline": 0.08203926164664518,
+      "withheld": 0.0806924882629108,
+      "delta": -0.001346773383734387,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Moon.upper_count",
+      "baseline": 4473,
+      "withheld": 4468,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Moon.upper_share_full_cohort",
+      "baseline": 0.588088351301604,
+      "withheld": 0.5878173924483621,
+      "delta": -0.0002709588532419094,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Nemst.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Nemst.lower_count",
+      "baseline": 3,
+      "withheld": 3,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Nemst.lower_share_full_cohort",
+      "baseline": 0.0003944254535892716,
+      "withheld": 0.0003946849098802789,
+      "delta": 2.59456291007269e-07,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Nemst.observed_count",
+      "baseline": 3,
+      "withheld": 3,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Nemst.observed_share_among_nonblank",
+      "baseline": 0.0008789920890711983,
+      "withheld": 0.0008802816901408451,
+      "delta": 1.2896010696467671e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Nemst.upper_count",
+      "baseline": 4196,
+      "withheld": 4196,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Nemst.upper_share_full_cohort",
+      "baseline": 0.5516697344201946,
+      "withheld": 0.5520326272858834,
+      "delta": 0.00036289286568880197,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Ohm Crater.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Ohm Crater.lower_count",
+      "baseline": 68,
+      "withheld": 68,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Ohm Crater.lower_share_full_cohort",
+      "baseline": 0.008940310281356823,
+      "withheld": 0.008946191290619656,
+      "delta": 5.881009262832804e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Ohm Crater.observed_count",
+      "baseline": 68,
+      "withheld": 68,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Ohm Crater.observed_share_among_nonblank",
+      "baseline": 0.019923820685613828,
+      "withheld": 0.01995305164319249,
+      "delta": 2.9230957578660344e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Ohm Crater.upper_count",
+      "baseline": 4261,
+      "withheld": 4261,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Ohm Crater.upper_share_full_cohort",
+      "baseline": 0.5602156192479621,
+      "withheld": 0.5605841336666229,
+      "delta": 0.00036851441866070367,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Orientale Basin.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Orientale Basin.lower_count",
+      "baseline": 74,
+      "withheld": 74,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Orientale Basin.lower_share_full_cohort",
+      "baseline": 0.009729161188535366,
+      "withheld": 0.009735561110380214,
+      "delta": 6.399921844847667e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Orientale Basin.observed_count",
+      "baseline": 74,
+      "withheld": 74,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Orientale Basin.observed_share_among_nonblank",
+      "baseline": 0.021681804863756225,
+      "withheld": 0.02171361502347418,
+      "delta": 3.181015971795431e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Orientale Basin.upper_count",
+      "baseline": 4267,
+      "withheld": 4267,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Orientale Basin.upper_share_full_cohort",
+      "baseline": 0.5610044701551407,
+      "withheld": 0.5613735034863834,
+      "delta": 0.00036903333124271853,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Pierrazzo Crater.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Pierrazzo Crater.lower_count",
+      "baseline": 23,
+      "withheld": 23,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Pierrazzo Crater.lower_share_full_cohort",
+      "baseline": 0.0030239284775177492,
+      "withheld": 0.0030259176424154714,
+      "delta": 1.989164897722197e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Pierrazzo Crater.observed_count",
+      "baseline": 23,
+      "withheld": 23,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Pierrazzo Crater.observed_share_among_nonblank",
+      "baseline": 0.006738939349545854,
+      "withheld": 0.0067488262910798125,
+      "delta": 9.886941533958186e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Pierrazzo Crater.upper_count",
+      "baseline": 4216,
+      "withheld": 4216,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Pierrazzo Crater.upper_share_full_cohort",
+      "baseline": 0.554299237444123,
+      "withheld": 0.5546638600184186,
+      "delta": 0.0003646225742955922,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Reiner Gamma.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Reiner Gamma.lower_count",
+      "baseline": 24,
+      "withheld": 24,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Reiner Gamma.lower_share_full_cohort",
+      "baseline": 0.003155403628714173,
+      "withheld": 0.003157479279042231,
+      "delta": 2.075650328058152e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Reiner Gamma.observed_count",
+      "baseline": 24,
+      "withheld": 24,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Reiner Gamma.observed_share_among_nonblank",
+      "baseline": 0.007031936712569587,
+      "withheld": 0.007042253521126761,
+      "delta": 1.0316808557174137e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Reiner Gamma.upper_count",
+      "baseline": 4217,
+      "withheld": 4217,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Reiner Gamma.upper_share_full_cohort",
+      "baseline": 0.5544307125953195,
+      "withheld": 0.5547954216550454,
+      "delta": 0.000364709059725854,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sun.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sun.lower_count",
+      "baseline": 81,
+      "withheld": 81,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sun.lower_share_full_cohort",
+      "baseline": 0.010649487246910333,
+      "withheld": 0.01065649256676753,
+      "delta": 7.005319857197184e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sun.observed_count",
+      "baseline": 81,
+      "withheld": 81,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sun.observed_share_among_nonblank",
+      "baseline": 0.023732786404922355,
+      "withheld": 0.023767605633802816,
+      "delta": 3.481922888046163e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sun.upper_count",
+      "baseline": 4274,
+      "withheld": 4274,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sun.upper_share_full_cohort",
+      "baseline": 0.5619247962135157,
+      "withheld": 0.5622944349427706,
+      "delta": 0.0003696387292549952,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunrise.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunrise.lower_count",
+      "baseline": 181,
+      "withheld": 181,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunrise.lower_share_full_cohort",
+      "baseline": 0.02379700236655272,
+      "withheld": 0.023812656229443493,
+      "delta": 1.5653862890773612e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunrise.observed_count",
+      "baseline": 181,
+      "withheld": 181,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunrise.observed_share_among_nonblank",
+      "baseline": 0.05303252270729564,
+      "withheld": 0.053110328638497656,
+      "delta": 7.780593120201851e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunrise.upper_count",
+      "baseline": 4374,
+      "withheld": 4374,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunrise.upper_share_full_cohort",
+      "baseline": 0.5750723113331581,
+      "withheld": 0.5754505986054467,
+      "delta": 0.00037828727228861325,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunset.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunset.lower_count",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunset.lower_share_full_cohort",
+      "baseline": 0.2041809098080463,
+      "withheld": 0.2043152216813577,
+      "delta": 0.00013431187331142125,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunset.observed_count",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunset.observed_share_among_nonblank",
+      "baseline": 0.455024904775857,
+      "withheld": 0.4556924882629108,
+      "delta": 0.0006675834870538133,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunset.upper_count",
+      "baseline": 5746,
+      "withheld": 5746,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Sunset.upper_share_full_cohort",
+      "baseline": 0.7554562187746516,
+      "withheld": 0.7559531640573609,
+      "delta": 0.0004969452827092713,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Terminator.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Terminator.lower_count",
+      "baseline": 122,
+      "withheld": 122,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Terminator.lower_share_full_cohort",
+      "baseline": 0.016039968445963712,
+      "withheld": 0.016050519668464675,
+      "delta": 1.0551222500963103e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Terminator.observed_count",
+      "baseline": 122,
+      "withheld": 122,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Terminator.observed_share_among_nonblank",
+      "baseline": 0.0357456782888954,
+      "withheld": 0.0357981220657277,
+      "delta": 5.2443776832306055e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Terminator.upper_count",
+      "baseline": 4315,
+      "withheld": 4315,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Terminator.upper_share_full_cohort",
+      "baseline": 0.567315277412569,
+      "withheld": 0.5676884620444679,
+      "delta": 0.00037318463189883744,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Unknown.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Unknown.lower_count",
+      "baseline": 33,
+      "withheld": 33,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Unknown.lower_share_full_cohort",
+      "baseline": 0.004338679989481988,
+      "withheld": 0.004341534008683068,
+      "delta": 2.854019201080013e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Unknown.observed_count",
+      "baseline": 33,
+      "withheld": 33,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Unknown.observed_share_among_nonblank",
+      "baseline": 0.009668912979783182,
+      "withheld": 0.009683098591549295,
+      "delta": 1.4185611766113354e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Unknown.upper_count",
+      "baseline": 4226,
+      "withheld": 4226,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Unknown.upper_share_full_cohort",
+      "baseline": 0.5556139889560873,
+      "withheld": 0.5559794763846863,
+      "delta": 0.0003654874285989873,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Vavilov Crater.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Vavilov Crater.lower_count",
+      "baseline": 67,
+      "withheld": 67,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Vavilov Crater.lower_share_full_cohort",
+      "baseline": 0.008808835130160399,
+      "withheld": 0.008814629653992895,
+      "delta": 5.794523832496415e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Vavilov Crater.observed_count",
+      "baseline": 67,
+      "withheld": 67,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Vavilov Crater.observed_share_among_nonblank",
+      "baseline": 0.019630823322590096,
+      "withheld": 0.01965962441314554,
+      "delta": 2.8801090555443526e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Vavilov Crater.upper_count",
+      "baseline": 4260,
+      "withheld": 4260,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Vavilov Crater.upper_share_full_cohort",
+      "baseline": 0.5600841440967657,
+      "withheld": 0.5604525720299961,
+      "delta": 0.0003684279332304419,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Whole Moon.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Whole Moon.lower_count",
+      "baseline": 57,
+      "withheld": 57,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Whole Moon.lower_share_full_cohort",
+      "baseline": 0.007494083618196161,
+      "withheld": 0.007499013287725299,
+      "delta": 4.929669529137731e-06,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Whole Moon.observed_count",
+      "baseline": 57,
+      "withheld": 57,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Whole Moon.observed_share_among_nonblank",
+      "baseline": 0.01670084969235277,
+      "withheld": 0.016725352112676055,
+      "delta": 2.4502420323285756e-05,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Whole Moon.upper_count",
+      "baseline": 4250,
+      "withheld": 4250,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.bounds_by_target_field_value.Whole Moon.upper_share_full_cohort",
+      "baseline": 0.5587693925848015,
+      "withheld": 0.5591369556637285,
+      "delta": 0.00036756307892693574,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.completion_witness.csv_sha256",
+      "baseline": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+      "withheld": "7832d6eaf2c7eeb94dd04e312c3f9d2a70b2413dfbdcbb6e1378bb188791d354",
+      "delta": null,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.completion_witness.interpretation",
+      "baseline": "Two possible binary field completions, not imputed physical labels or training data.",
+      "withheld": "Two possible binary field completions, not imputed physical labels or training data.",
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.completion_witness.known_fields_preserved",
+      "baseline": true,
+      "withheld": true,
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.completion_witness.lower_sunset_count",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.completion_witness.source_rows",
+      "baseline": 7606,
+      "withheld": 7601,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.completion_witness.upper_sunset_count",
+      "baseline": 5746,
+      "withheld": 5746,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.deterministic_completion_budgets.10_percentage_points.maximum_remaining_blank_fields",
+      "baseline": 760,
+      "withheld": 760,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.deterministic_completion_budgets.10_percentage_points.minimum_blank_fields_resolved",
+      "baseline": 3433,
+      "withheld": 3433,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.deterministic_completion_budgets.1_percentage_point.maximum_remaining_blank_fields",
+      "baseline": 76,
+      "withheld": 76,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.deterministic_completion_budgets.1_percentage_point.minimum_blank_fields_resolved",
+      "baseline": 4117,
+      "withheld": 4117,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.deterministic_completion_budgets.5_percentage_points.maximum_remaining_blank_fields",
+      "baseline": 380,
+      "withheld": 380,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.deterministic_completion_budgets.5_percentage_points.minimum_blank_fields_resolved",
+      "baseline": 3813,
+      "withheld": 3813,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.extreme_assignments.all_blank_fields_assigned_to_sunset.cohort_count",
+      "baseline": 7606,
+      "withheld": 7601,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.extreme_assignments.all_blank_fields_assigned_to_sunset.sunset_count",
+      "baseline": 5746,
+      "withheld": 5746,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.extreme_assignments.no_blank_fields_assigned_to_sunset.cohort_count",
+      "baseline": 7606,
+      "withheld": 7601,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.extreme_assignments.no_blank_fields_assigned_to_sunset.sunset_count",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.nonblank_target_fields",
+      "baseline": 3413,
+      "withheld": 3408,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.observed_target_field_values",
+      "baseline": 23,
+      "withheld": 23,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.source_exposures",
+      "baseline": 7606,
+      "withheld": 7601,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.sunset.bound_width",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.sunset.lower_count",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.sunset.lower_share_full_cohort",
+      "baseline": 0.2041809098080463,
+      "withheld": 0.2043152216813577,
+      "delta": 0.00013431187331142125,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.sunset.observed_count",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.sunset.observed_share_among_nonblank",
+      "baseline": 0.455024904775857,
+      "withheld": 0.4556924882629108,
+      "delta": 0.0006675834870538133,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.sunset.upper_count",
+      "baseline": 5746,
+      "withheld": 5746,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "field_completion.sunset.upper_share_full_cohort",
+      "baseline": 0.7554562187746516,
+      "withheld": 0.7559531640573609,
+      "delta": 0.0004969452827092713,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.sunset_majority.additional_blank_memberships_needed",
+      "baseline": 2251,
+      "withheld": 2248,
+      "delta": -3,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.sunset_majority.required_fraction_of_blank_fields",
+      "baseline": 0.5368471261626521,
+      "withheld": 0.5361316479847364,
+      "delta": -0.0007154781779156183,
+      "changed": true
+    },
+    {
+      "metric": "field_completion.sunset_majority.strict_majority_count",
+      "baseline": 3804,
+      "withheld": 3801,
+      "delta": -3,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.active_windows",
+      "baseline": 36,
+      "withheld": 36,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_fractional_concentration_equivalent_windows.actions",
+      "baseline": 17.3316963372212,
+      "withheld": 17.328316933094342,
+      "delta": -0.0033794041268571107,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_fractional_concentration_equivalent_windows.archive_size_bytes",
+      "baseline": 13.181026998196797,
+      "withheld": 13.167848752017541,
+      "delta": -0.013178246179256448,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_fractional_concentration_equivalent_windows.products",
+      "baseline": 15.317957915097795,
+      "withheld": 15.310812341784796,
+      "delta": -0.007145573312998366,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Aristarchus Plateau",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Crew Position Swap",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Crew Team Swap",
+      "baseline": 5,
+      "withheld": 5,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Earth",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Earthrise",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Earthset",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Glushko Crater",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Guided Discussion",
+      "baseline": 4,
+      "withheld": 4,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Hertzsprung Basin",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Impact Flashes",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Moon",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Ohm Crater",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Orientale Basin",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Reiner Gamma",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Sunrise",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Sunset",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Vavilov Crater",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.Whole Moon",
+      "baseline": 4,
+      "withheld": 4,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_name_cluster_counts.illum_limb",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.collapsed_same_name_clusters",
+      "baseline": 32,
+      "withheld": 32,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Aristarchus Plateau",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Crew Position Swap",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Crew Team Swap",
+      "baseline": 5,
+      "withheld": 5,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Earth",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Earthrise",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Earthset",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Glushko Crater",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Guided Discussion",
+      "baseline": 5,
+      "withheld": 5,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Hertzsprung Basin",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Impact Flashes",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Moon",
+      "baseline": 4,
+      "withheld": 4,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Ohm Crater",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Orientale Basin",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Reiner Gamma",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Sunrise",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Sunset",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Vavilov Crater",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.Whole Moon",
+      "baseline": 4,
+      "withheld": 4,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_name_window_counts.illum_limb",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.exact_plan_names",
+      "baseline": 19,
+      "withheld": 19,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.fractional_concentration_equivalent_windows.actions",
+      "baseline": 18.03973671132567,
+      "withheld": 18.023925150198043,
+      "delta": -0.01581156112762727,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_concentration_equivalent_windows.archive_size_bytes",
+      "baseline": 13.595033296553533,
+      "withheld": 13.561460009588574,
+      "delta": -0.03357328696495898,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_concentration_equivalent_windows.products",
+      "baseline": 15.815014376869817,
+      "withheld": 15.794363418009198,
+      "delta": -0.020650958860619184,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.actions.collapsed_fractional_total",
+      "baseline": 1540.0,
+      "withheld": 1539.0,
+      "delta": -1.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.actions.collapsed_match",
+      "baseline": true,
+      "withheld": true,
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.actions.expected_unique_total",
+      "baseline": 1540.0,
+      "withheld": 1539.0,
+      "delta": -1.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.actions.fractional_window_total",
+      "baseline": 1540.0,
+      "withheld": 1539.0,
+      "delta": -1.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.actions.window_match",
+      "baseline": true,
+      "withheld": true,
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.archive_size_bytes.collapsed_fractional_total",
+      "baseline": 1213824749710.0,
+      "withheld": 1211853207140.0,
+      "delta": -1971542570.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.archive_size_bytes.collapsed_match",
+      "baseline": true,
+      "withheld": true,
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.archive_size_bytes.expected_unique_total",
+      "baseline": 1213824749710.0,
+      "withheld": 1211853207140.0,
+      "delta": -1971542570.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.archive_size_bytes.fractional_window_total",
+      "baseline": 1213824749710.0,
+      "withheld": 1211853207140.0,
+      "delta": -1971542570.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.archive_size_bytes.window_match",
+      "baseline": true,
+      "withheld": true,
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.products.collapsed_fractional_total",
+      "baseline": 17136.0,
+      "withheld": 17121.0,
+      "delta": -15.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.products.collapsed_match",
+      "baseline": true,
+      "withheld": true,
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.products.expected_unique_total",
+      "baseline": 17136.0,
+      "withheld": 17121.0,
+      "delta": -15.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.products.fractional_window_total",
+      "baseline": 17136.0,
+      "withheld": 17121.0,
+      "delta": -15.0,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.fractional_conservation.products.window_match",
+      "baseline": true,
+      "withheld": true,
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.raw_concentration_equivalent_windows.actions",
+      "baseline": 18.99998519330145,
+      "withheld": 18.975894683784507,
+      "delta": -0.024090509516941694,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.raw_concentration_equivalent_windows.archive_size_bytes",
+      "baseline": 14.70313411080405,
+      "withheld": 14.650521057794823,
+      "delta": -0.05261305300922814,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.raw_concentration_equivalent_windows.products",
+      "baseline": 16.823894158222735,
+      "withheld": 16.79030859735889,
+      "delta": -0.03358556086384468,
+      "changed": true
+    },
+    {
+      "metric": "opportunity_weighting.replication_debt.collapsed_clusters_k2",
+      "baseline": 13,
+      "withheld": 13,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.replication_debt.collapsed_clusters_k3",
+      "baseline": 29,
+      "withheld": 29,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.replication_debt.exact_windows_k2",
+      "baseline": 12,
+      "withheld": 12,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.replication_debt.exact_windows_k3",
+      "baseline": 27,
+      "withheld": 27,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.same_name_overlap_collapses",
+      "baseline": 4,
+      "withheld": 4,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "opportunity_weighting.unique_active_actions",
+      "baseline": 1540,
+      "withheld": 1539,
+      "delta": -1,
+      "changed": true
+    },
+    {
+      "metric": "relationship.action_isolated_test_action_groups",
+      "baseline": 0,
+      "withheld": 0,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "relationship.action_isolated_test_products",
+      "baseline": 0,
+      "withheld": 0,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "relationship.action_isolated_test_share",
+      "baseline": 0.0,
+      "withheld": 0.0,
+      "delta": 0.0,
+      "changed": false
+    },
+    {
+      "metric": "relationship.action_only_linked_test_products",
+      "baseline": 204,
+      "withheld": 204,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "relationship.action_only_linked_test_share",
+      "baseline": 0.045222788738638886,
+      "withheld": 0.04524284763805722,
+      "delta": 2.005889941833483e-05,
+      "changed": true
+    },
+    {
+      "metric": "relationship.capture_isolated_test_capture_groups",
+      "baseline": 68,
+      "withheld": 68,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "relationship.capture_linked_test_capture_groups",
+      "baseline": 3611,
+      "withheld": 3609,
+      "delta": -2,
+      "changed": true
+    },
+    {
+      "metric": "relationship.capture_linked_test_products",
+      "baseline": 4307,
+      "withheld": 4305,
+      "delta": -2,
+      "changed": true
+    },
+    {
+      "metric": "relationship.capture_linked_test_share",
+      "baseline": 0.9547772112613612,
+      "withheld": 0.9547571523619428,
+      "delta": -2.0058899418362586e-05,
+      "changed": true
+    },
+    {
+      "metric": "relationship.crossing_action_groups",
+      "baseline": 1937,
+      "withheld": 1936,
+      "delta": -1,
+      "changed": true
+    },
+    {
+      "metric": "relationship.products_in_crossing_action_groups",
+      "baseline": 20601,
+      "withheld": 20586,
+      "delta": -15,
+      "changed": true
+    },
+    {
+      "metric": "relationship.rows",
+      "baseline": 22818,
+      "withheld": 22803,
+      "delta": -15,
+      "changed": true
+    },
+    {
+      "metric": "relationship.share_all_products_in_crossing_actions",
+      "baseline": 0.9028398632658428,
+      "withheld": 0.9027759505328247,
+      "delta": -6.391273301808997e-05,
+      "changed": true
+    },
+    {
+      "metric": "relationship.test_products",
+      "baseline": 4511,
+      "withheld": 4509,
+      "delta": -2,
+      "changed": true
+    },
+    {
+      "metric": "relationship.test_visible_action_groups",
+      "baseline": 1937,
+      "withheld": 1936,
+      "delta": -1,
+      "changed": true
+    },
+    {
+      "metric": "relationship.test_visible_capture_groups",
+      "baseline": 3679,
+      "withheld": 3677,
+      "delta": -2,
+      "changed": true
+    },
+    {
+      "metric": "relationship.train_products",
+      "baseline": 18307,
+      "withheld": 18294,
+      "delta": -13,
+      "changed": true
+    },
+    {
+      "metric": "relationship.unique_product_ids",
+      "baseline": 22818,
+      "withheld": 22803,
+      "delta": -15,
+      "changed": true
+    },
+    {
+      "metric": "selection.activity_examples.07_Whole Moon.exposures",
+      "baseline": 456,
+      "withheld": 456,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.activity_examples.07_Whole Moon.tagged",
+      "baseline": 3,
+      "withheld": 3,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.activity_examples.12_Orientale Basin (2/2).exposures",
+      "baseline": 399,
+      "withheld": 399,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.activity_examples.12_Orientale Basin (2/2).tagged",
+      "baseline": 0,
+      "withheld": 0,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.activity_examples.24_Sunset.exposures",
+      "baseline": 1294,
+      "withheld": 1294,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.activity_examples.24_Sunset.tagged",
+      "baseline": 1294,
+      "withheld": 1294,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.activity_examples.h_Observation Break.exposures",
+      "baseline": 284,
+      "withheld": 284,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.activity_examples.h_Observation Break.tagged",
+      "baseline": 259,
+      "withheld": 259,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.camera_coverage.3500015.coverage",
+      "baseline": 0.4150582230020737,
+      "withheld": 0.4150582230020737,
+      "delta": 0.0,
+      "changed": false
+    },
+    {
+      "metric": "selection.camera_coverage.3500015.exposures",
+      "baseline": 6269,
+      "withheld": 6269,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.camera_coverage.3500015.tagged",
+      "baseline": 2602,
+      "withheld": 2602,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.camera_coverage.3500017.coverage",
+      "baseline": 0.30078125,
+      "withheld": 0.30078125,
+      "delta": 0.0,
+      "changed": false
+    },
+    {
+      "metric": "selection.camera_coverage.3500017.exposures",
+      "baseline": 256,
+      "withheld": 256,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.camera_coverage.3500017.tagged",
+      "baseline": 77,
+      "withheld": 77,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.camera_coverage.3920019.coverage",
+      "baseline": 0.6790009250693803,
+      "withheld": 0.6775092936802974,
+      "delta": -0.0014916313890828148,
+      "changed": true
+    },
+    {
+      "metric": "selection.camera_coverage.3920019.exposures",
+      "baseline": 1081,
+      "withheld": 1076,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection.camera_coverage.3920019.tagged",
+      "baseline": 734,
+      "withheld": 729,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.activity_lookup_accuracy_lift",
+      "baseline": 0.3235603470943992,
+      "withheld": 0.32311537955532166,
+      "delta": -0.0004449675390775232,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.activity_majority_lookup_accuracy",
+      "baseline": 0.8748356560610044,
+      "withheld": 0.8747533219313248,
+      "delta": -8.233412967961762e-05,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.activity_majority_lookup_correct",
+      "baseline": 6654,
+      "withheld": 6649,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.activity_tag_presence_cramers_v",
+      "baseline": 0.8204646313259204,
+      "withheld": 0.8203218062719659,
+      "delta": -0.0001428250539544651,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.activity_tag_presence_mutual_information_bits",
+      "baseline": 0.6421857066071989,
+      "withheld": 0.6419538199152138,
+      "delta": -0.0002318866919850393,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.activity_values",
+      "baseline": 45,
+      "withheld": 45,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.coverage.camera_tag_presence_cramers_v",
+      "baseline": 0.1929268299049601,
+      "withheld": 0.191617821336898,
+      "delta": -0.0013090085680620978,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.camera_tag_presence_mutual_information_bits",
+      "baseline": 0.02704209912109003,
+      "withheld": 0.026667450731009398,
+      "delta": -0.0003746483900806327,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.full_coverage_activities",
+      "baseline": 8,
+      "withheld": 8,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.coverage.full_coverage_exposures",
+      "baseline": 1676,
+      "withheld": 1676,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.coverage.global_majority_state_accuracy",
+      "baseline": 0.5512753089666053,
+      "withheld": 0.5516379423760032,
+      "delta": 0.00036263340939790556,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.partial_coverage_activities",
+      "baseline": 20,
+      "withheld": 20,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.coverage.partial_coverage_exposures",
+      "baseline": 4533,
+      "withheld": 4528,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.source_exposures",
+      "baseline": 7606,
+      "withheld": 7601,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.sunset_share_of_tagged_exposures",
+      "baseline": 0.455024904775857,
+      "withheld": 0.4556924882629108,
+      "delta": 0.0006675834870538133,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.sunset_tagged_exposures",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.coverage.target_tag_blank",
+      "baseline": 4193,
+      "withheld": 4193,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.coverage.target_tag_coverage",
+      "baseline": 0.4487246910333947,
+      "withheld": 0.44836205762399683,
+      "delta": -0.00036263340939785005,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.target_tag_present",
+      "baseline": 3413,
+      "withheld": 3408,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection.coverage.zero_coverage_activities",
+      "baseline": 17,
+      "withheld": 17,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection.coverage.zero_coverage_exposures",
+      "baseline": 1397,
+      "withheld": 1397,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.selected_action_archive_size_bytes",
+      "baseline": 796556744230,
+      "withheld": 794585201660,
+      "delta": -1971542570,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.selected_action_exposures",
+      "baseline": 3495,
+      "withheld": 3490,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.selected_action_products",
+      "baseline": 10485,
+      "withheld": 10470,
+      "delta": -15,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.sunset_action_archive_size_bytes",
+      "baseline": 410187365891,
+      "withheld": 410187365891,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.sunset_action_exposures",
+      "baseline": 1555,
+      "withheld": 1555,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.sunset_action_products",
+      "baseline": 4665,
+      "withheld": 4665,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.sunset_share_of_selected_action_bytes",
+      "baseline": 0.5149505906042036,
+      "withheld": 0.5162282975243699,
+      "delta": 0.001277706920166377,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.sunset_share_of_selected_action_exposures",
+      "baseline": 0.4449213161659514,
+      "withheld": 0.4455587392550143,
+      "delta": 0.0006374230890629495,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.action_carried_sensitivity.sunset_share_of_selected_action_products",
+      "baseline": 0.4449213161659514,
+      "withheld": 0.4455587392550143,
+      "delta": 0.0006374230890629495,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.activity_id",
+      "baseline": "24_Sunset",
+      "withheld": "24_Sunset",
+      "delta": null,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.selected_actions",
+      "baseline": 656,
+      "withheld": 655,
+      "delta": -1,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.sunset_share_of_selected_actions",
+      "baseline": 0.07926829268292683,
+      "withheld": 0.07938931297709924,
+      "delta": 0.00012102029417240812,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.sunset_share_of_tagged_bytes",
+      "baseline": 0.21553587192522253,
+      "withheld": 0.21643642846117037,
+      "delta": 0.0009005565359478385,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.sunset_share_of_tagged_exposures",
+      "baseline": 0.12222746578574799,
+      "withheld": 0.12251655629139073,
+      "delta": 0.00028909050564274175,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.sunset_tagged_actions",
+      "baseline": 52,
+      "withheld": 52,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.sunset_tagged_archive_size_bytes",
+      "baseline": 102128063206,
+      "withheld": 102128063206,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.sunset_tagged_exposures",
+      "baseline": 259,
+      "withheld": 259,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.tagged_archive_size_bytes",
+      "baseline": 473833252413,
+      "withheld": 471861709843,
+      "delta": -1971542570,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.outside_activity.tagged_exposures",
+      "baseline": 2119,
+      "withheld": 2114,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.share_of_sunset_tagged_exposures_from_activity",
+      "baseline": 0.8332260141661301,
+      "withheld": 0.8332260141661301,
+      "delta": 0.0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.sunset_tagged_exposures_all",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.activity_structure_attribution.sunset_tagged_exposures_in_activity",
+      "baseline": 1294,
+      "withheld": 1294,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.all_cohort.actions",
+      "baseline": 2166,
+      "withheld": 2165,
+      "delta": -1,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_cohort.archive_size_bytes",
+      "baseline": 1625281365343,
+      "withheld": 1623309822773,
+      "delta": -1971542570,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_cohort.products",
+      "baseline": 22818,
+      "withheld": 22803,
+      "delta": -15,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_cohort.source_exposures",
+      "baseline": 7606,
+      "withheld": 7601,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.archive_size_bytes",
+      "baseline": 3.191403784213298,
+      "withheld": 3.1794788566207495,
+      "delta": -0.011924927592548595,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.exposures",
+      "baseline": 3.8227788157250044,
+      "withheld": 3.8150607087438724,
+      "delta": -0.007718106981132067,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.fractional_actions",
+      "baseline": 5.063610769226117,
+      "withheld": 5.057442873445271,
+      "delta": -0.006167895780846422,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.products",
+      "baseline": 3.8227788157250044,
+      "withheld": 3.8150607087438724,
+      "delta": -0.007718106981132067,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.fractional_action_weight_total",
+      "baseline": 915.0,
+      "withheld": 914.0,
+      "delta": -1.0,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.multi_target_actions",
+      "baseline": 3,
+      "withheld": 3,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.raw_action_tag_memberships",
+      "baseline": 918,
+      "withheld": 917,
+      "delta": -1,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.sunset_rank.archive_size_bytes",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.sunset_rank.exposures",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.sunset_rank.fractional_actions",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.sunset_rank.products",
+      "baseline": 1,
+      "withheld": 1,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.all_tag_countercheck.target_tag_values",
+      "baseline": 23,
+      "withheld": 23,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_processed.sunset_bytes",
+      "baseline": 280774484834,
+      "withheld": 280774484834,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_processed.sunset_share",
+      "baseline": 0.5273412245809236,
+      "withheld": 0.5286950893692615,
+      "delta": 0.0013538647883378774,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_processed.tagged_bytes",
+      "baseline": 532434165482,
+      "withheld": 531070725792,
+      "delta": -1363439690,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_raw.sunset_bytes",
+      "baseline": 94177910368,
+      "withheld": 94177910368,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_raw.sunset_share",
+      "baseline": 0.52719734536919,
+      "withheld": 0.5285496854980168,
+      "delta": 0.00135234012882679,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_raw.tagged_bytes",
+      "baseline": 178638817504,
+      "withheld": 178181754624,
+      "delta": -457062880,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_source.sunset_bytes",
+      "baseline": 34446621949,
+      "withheld": 34446621949,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_source.sunset_share",
+      "baseline": 0.4918751992382373,
+      "withheld": 0.4929383451332252,
+      "delta": 0.0010631458949879047,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.collection_byte_sensitivity.data_source.tagged_bytes",
+      "baseline": 70031223372,
+      "withheld": 69880183372,
+      "delta": -151040000,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.selection_panel.blank_source_exposures",
+      "baseline": 4193,
+      "withheld": 4193,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.selection_panel.nonblank_conditioning_amplification",
+      "baseline": 2.2285379431585115,
+      "withheld": 2.2303403755868545,
+      "delta": 0.0018024324283429927,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.selection_panel.sunset_share_of_tagged_source_exposures",
+      "baseline": 0.455024904775857,
+      "withheld": 0.4556924882629108,
+      "delta": 0.0006675834870538133,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.selection_panel.sunset_tag_occupancy_all_source_exposures",
+      "baseline": 0.2041809098080463,
+      "withheld": 0.2043152216813577,
+      "delta": 0.00013431187331142125,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.selection_panel.sunset_tagged_source_exposures",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.selection_panel.tagged_source_exposures",
+      "baseline": 3413,
+      "withheld": 3408,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.action_to_byte_amplification",
+      "baseline": 1.5420502433413124,
+      "withheld": 1.5442627319538484,
+      "delta": 0.00221248861253609,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.action_to_exposure_amplification",
+      "baseline": 1.338738867748904,
+      "withheld": 1.339237730779101,
+      "delta": 0.0004988630301969721,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.exposure_to_byte_amplification",
+      "baseline": 1.1518678365813622,
+      "withheld": 1.1530908191001117,
+      "delta": 0.001222982518749527,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.representations_per_exposure",
+      "baseline": 3.0,
+      "withheld": 3.0,
+      "delta": 0.0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.selected_actions",
+      "baseline": 915,
+      "withheld": 914,
+      "delta": -1,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_share_of_selected_actions",
+      "baseline": 0.33989071038251367,
+      "withheld": 0.3402625820568928,
+      "delta": 0.0003718716743791317,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_share_of_tagged_bytes",
+      "baseline": 0.5241285526548067,
+      "withheld": 0.5254548245488478,
+      "delta": 0.001326271894041109,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_share_of_tagged_exposures",
+      "baseline": 0.455024904775857,
+      "withheld": 0.4556924882629108,
+      "delta": 0.0006675834870538133,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_share_of_tagged_products",
+      "baseline": 0.455024904775857,
+      "withheld": 0.4556924882629108,
+      "delta": 0.0006675834870538133,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_tagged_actions",
+      "baseline": 311,
+      "withheld": 311,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_tagged_archive_size_bytes",
+      "baseline": 409399017151,
+      "withheld": 409399017151,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_tagged_exposures",
+      "baseline": 1553,
+      "withheld": 1553,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.sunset_tagged_products",
+      "baseline": 4659,
+      "withheld": 4659,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.tagged_archive_size_bytes",
+      "baseline": 781104206358,
+      "withheld": 779132663788,
+      "delta": -1971542570,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.tagged_exposures",
+      "baseline": 3413,
+      "withheld": 3408,
+      "delta": -5,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.strict_tagged_weighting_panel.tagged_products",
+      "baseline": 10239,
+      "withheld": 10224,
+      "delta": -15,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.structure_checks.sunset_multitarget_actions",
+      "baseline": 0,
+      "withheld": 0,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.structure_checks.sunset_partial_presence_actions",
+      "baseline": 2,
+      "withheld": 2,
+      "delta": 0,
+      "changed": false
+    },
+    {
+      "metric": "selection_weighting.structure_checks.sunset_tagged_bytes_share_of_all_bytes",
+      "baseline": 0.2518942417484743,
+      "withheld": 0.2522001723932459,
+      "delta": 0.0003059306447715793,
+      "changed": true
+    },
+    {
+      "metric": "selection_weighting.structure_checks.tagged_bytes_share_of_all_bytes",
+      "baseline": 0.48059629736366016,
+      "withheld": 0.4799654710750507,
+      "delta": -0.0006308262886094429,
+      "changed": true
+    }
+  ],
+  "scope_checks": {
+    "active_window_names_unchanged": true,
+    "replication_debt_unchanged": true,
+    "completion_budgets_unchanged": true
+  },
+  "limits": {
+    "canonical_counts_replaced": false,
+    "candidate_adopted": false,
+    "physical_identity": false,
+    "target_truth": false,
+    "new_images": false,
+    "scientific_acceptance": false,
+    "other_ambiguities_resolved": false
+  },
+  "effects": {
+    "network_requests": 0,
+    "new_image_bytes": 0,
+    "outreach": false,
+    "publication": false,
+    "remote_push": false
+  },
+  "detection_disposition": "Protected detection receipts remain byte-identical and are not recomputed; no detection-completeness or flux claim is upgraded.",
+  "provenance": {
+    "source_sha256": "d88eb00f181026725141b48eb127d6b762a3ab6d7a6ebb94270b71da60c4edaf",
+    "input_pins": [
+      {
+        "path": "paper-review/order-robust-reconstruction/result.json",
+        "bytes": 8776218,
+        "sha256": "cee99d8716d628b70191e682af118e61ff2f78b5018066df424fb023f19a4d34"
+      },
+      {
+        "path": "paper-review/order-robust-reconstruction/contract.json",
+        "bytes": 3343,
+        "sha256": "a673e694cd03b6a464b338a810759b31c7f8700002de9a94944e793611de3771"
+      },
+      {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+      },
+      {
+        "path": "results/stage11l-split-assignments.csv",
+        "bytes": 4573289,
+        "sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1"
+      },
+      {
+        "path": "results/stage10z-action-plan-membership.csv",
+        "bytes": 398284,
+        "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+      },
+      {
+        "path": "src/stage11r_hierarchical_test_isolation.py",
+        "bytes": 10817,
+        "sha256": "e86a21b857551622282ab503a9870357ee1d50403f412a131d9d0bf57a07e6f9"
+      },
+      {
+        "path": "src/stage11t_opportunity_concentration.py",
+        "bytes": 17662,
+        "sha256": "1d9fed505a97f807089a49dd2865ceae6a33dc813d1deffcaffde16932c34cc0"
+      },
+      {
+        "path": "src/stage11u_selection_weighting_cascade.py",
+        "bytes": 27067,
+        "sha256": "b9942e3feee9da312206b978131b8cee043ee6beb1cf5e7a3f8d98be931e8961"
+      },
+      {
+        "path": "src/stage11v_target_completion_bounds.py",
+        "bytes": 18603,
+        "sha256": "8453b379a7106829e40a9e30f014f3d7db8e77805982206e389dbc290b9d8b8f"
+      },
+      {
+        "path": "src/stage10w_target_tag_selection.py",
+        "bytes": 13546,
+        "sha256": "7a3d7de9e49efedb395bb5812b59b8b1f7c329d6166b205126d85abfd2a2d0d9"
+      },
+      {
+        "path": "results/stage11r-hierarchical-isolation.json",
+        "bytes": 4371,
+        "sha256": "38cb7f9573db05ae8664efe9ffbcf957e888f7fb962861deb7a6195d77194abe"
+      },
+      {
+        "path": "results/stage11t-result.json",
+        "bytes": 54807,
+        "sha256": "cad913c1c24ebd6f83da4821e4620a793a33559d9eb83009b6b654c2dde4957f"
+      },
+      {
+        "path": "results/stage11u-selection-weighting-cascade.json",
+        "bytes": 153823,
+        "sha256": "bd651dc716d05fe0bdfb4f7cdebd6b85e3980a86f8a33bbf67ea5797794e54c0"
+      },
+      {
+        "path": "results/stage11v-result.json",
+        "bytes": 153632,
+        "sha256": "cc69e994040cbe10c478a6a5ae566505a4340107908e5bc4be1f17066b88baaf"
+      },
+      {
+        "path": "results/stage10w-result.json",
+        "bytes": 86238,
+        "sha256": "5407373d27b424c0528a170432c86ea89dd75c137dc83757b25332c3d1a72520"
+      },
+      {
+        "path": "results/stage11n-result.json",
+        "bytes": 26283,
+        "sha256": "930be47399e76dde2b72bbf21422e1ea21598115dff362afe869570eccb25ae5"
+      },
+      {
+        "path": "results/stage11q-injection-recovery.json",
+        "bytes": 10875,
+        "sha256": "f8fc492f620a834aa05768e6a7318402188729a0ee60ba60f70c531cbf4585d0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {"match": {"gather.common.mission": "artemis2"}},
+        {"match": {"bundle_id": "artemis2_orion_camera"}},
+        {"match": {"collection_id": "data_raw_image"}},
+        {
+          "range": {
+            "gather.time.start_time": {
+              "gte": "2026-04-07T00:32:14Z",
+              "lte": "2026-04-07T00:35:14Z"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "size": 100,
+  "sort": [{"gather.time.start_time": {"order": "asc"}}]
+}

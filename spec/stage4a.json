@@ -1,0 +1,160 @@
+{
+  "testbed_id": "artemis2-capture-friction-stage4a-product-canary",
+  "version": "0.4.0",
+  "formed_at_utc": "2026-10-09T20:18:42Z",
+  "question": "Does the official PDS inventory contain any independently timed camera or vehicle-stream product whose acquisition interval overlaps the two-observer flash-report interval?",
+  "method": "Testing and Validation",
+  "decisive_invariant": "Only an official PDS product label with an acquisition start or interval overlapping the frozen report interval may be admitted. Transcript time, filename time, label creation time, activity tags, and derivative copies are not acquisition or physical-validation oracles.",
+  "artifact_native_falsifier": "No inventory member has a label-defined acquisition start inside the report interval or a label-defined acquisition interval that overlaps it.",
+  "recovery": "If label timing or inventory membership cannot be resolved, retain the transcript-only candidate and complete Stage 3B. Do not infer coverage from filenames or download media to rescue the label canary.",
+  "environment": {
+    "runtime_contract": "Python 3 standard library only for scored verification.",
+    "network_contract": "No network during scored verification.",
+    "timezone_contract": "All timestamps are UTC; label creation and archive-harvest times are never acquisition times."
+  },
+  "report_interval": {
+    "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash.",
+    "start_utc": "2026-04-07T00:51:15.947Z",
+    "end_utc": "2026-04-07T00:51:57.628Z",
+    "duration_seconds": 41.681
+  },
+  "sources": {
+    "manifest_path": "evidence/stage4a/source-manifest.json",
+    "manifest_bytes": 4530,
+    "manifest_sha256": "db84d3aa9355a583809d05cfcd30ecb27594848d92ee6e9dd3d6c682a0b413ec",
+    "atlas_query_path": "evidence/stage4a/atlas-overlap-query.json",
+    "atlas_query_bytes": 1022,
+    "atlas_query_sha256": "902d6b08d4c0a11f931e90ac9db0621bd144728d827009b398ae4839e523d4ac",
+    "atlas_response_path": "evidence/stage4a/source/atlas-overlap-response.json",
+    "expected_atlas_hits": 21,
+    "video_inventory_path": "evidence/stage4a/source/collection_data_video_inventory.csv",
+    "video_inventory_members": 22,
+    "image_inventory_path": "evidence/stage4a/source/collection_data_raw_inventory.csv",
+    "image_inventory_members": 10329
+  },
+  "admission": {
+    "canonical_collections": [
+      {
+        "bundle": "artemis2_orion_camera",
+        "collection": "data_video",
+        "timing_rule": "label_interval_overlap"
+      },
+      {
+        "bundle": "artemis2_crew_camera",
+        "collection": "data_raw",
+        "timing_rule": "label_start_inside"
+      }
+    ],
+    "target_name": "Moon",
+    "derivative_collections_not_independent": [
+      "data_processed",
+      "data_source"
+    ]
+  },
+  "expected_products": [
+    {
+      "kind": "continuous_video",
+      "label_path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+      "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1010962338_saw3_raw.mp4",
+      "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+      "start_utc": "2026-04-06T23:38:11Z",
+      "stop_utc": "2026-04-07T01:37:57Z",
+      "payload_bytes": 2960238197,
+      "activity_id": "Other"
+    },
+    {
+      "kind": "continuous_video",
+      "label_path": "evidence/stage4a/source/art002m1020962338_saw3_raw_v01.xml",
+      "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1020962338_saw3_raw.mp4",
+      "file_name": "art002m1020962338_saw3_raw_v01.mp4",
+      "start_utc": "2026-04-06T23:38:11Z",
+      "stop_utc": "2026-04-07T01:37:45Z",
+      "payload_bytes": 2921875198,
+      "activity_id": "Other"
+    },
+    {
+      "kind": "raw_image",
+      "label_path": "evidence/stage4a/source/art002e015907_nkz9019_raw_v01.xml",
+      "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015907_nkz9019_raw.tif",
+      "file_name": "art002e015907_nkz9019_raw_v01.tif",
+      "start_utc": "2026-04-07T00:51:51.83Z",
+      "exposure_seconds": 1.0,
+      "payload_bytes": 91412576,
+      "activity_id": "24_Sunset"
+    },
+    {
+      "kind": "raw_image",
+      "label_path": "evidence/stage4a/source/art002e015908_nkz9019_raw_v01.xml",
+      "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015908_nkz9019_raw.tif",
+      "file_name": "art002e015908_nkz9019_raw_v01.tif",
+      "start_utc": "2026-04-07T00:51:53.02Z",
+      "exposure_seconds": 0.25,
+      "payload_bytes": 91412576,
+      "activity_id": "25_Discussion #6: Forward Look"
+    },
+    {
+      "kind": "raw_image",
+      "label_path": "evidence/stage4a/source/art002e015909_nkz9019_raw_v01.xml",
+      "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015909_nkz9019_raw.tif",
+      "file_name": "art002e015909_nkz9019_raw_v01.tif",
+      "start_utc": "2026-04-07T00:51:53.34Z",
+      "exposure_seconds": 0.5,
+      "payload_bytes": 91412576,
+      "activity_id": "24_Sunset"
+    },
+    {
+      "kind": "raw_image",
+      "label_path": "evidence/stage4a/source/art002e015910_nkz9019_raw_v01.xml",
+      "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015910_nkz9019_raw.tif",
+      "file_name": "art002e015910_nkz9019_raw_v01.tif",
+      "start_utc": "2026-04-07T00:51:53.92Z",
+      "exposure_seconds": 2.0,
+      "payload_bytes": 91412576,
+      "activity_id": "24_Sunset"
+    },
+    {
+      "kind": "raw_image",
+      "label_path": "evidence/stage4a/source/art002e015911_nkz9019_raw_v01.xml",
+      "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015911_nkz9019_raw.tif",
+      "file_name": "art002e015911_nkz9019_raw_v01.tif",
+      "start_utc": "2026-04-07T00:51:56.10Z",
+      "exposure_seconds": 4.0,
+      "payload_bytes": 91412576,
+      "activity_id": "24_Sunset"
+    }
+  ],
+  "expected_result": {
+    "evidence_state": "VERIFIED_CAPTURE_AVAILABLE",
+    "atlas_hits": 21,
+    "admitted_products": 7,
+    "continuous_video_products": 2,
+    "raw_image_products": 5,
+    "full_interval_video_products": 2,
+    "image_starts_inside_interval": 5,
+    "derivative_records_excluded": 10,
+    "unrelated_records_excluded": 4,
+    "full_payload_bytes": 6339176275,
+    "activity_tag_counts": {
+      "24_Sunset": 4,
+      "25_Discussion #6: Forward Look": 1,
+      "Other": 2
+    },
+    "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+    "disposition": "NOMINATE_TINY_STAGE5_SUBSET"
+  },
+  "claim_ceiling": "Official labels establish acquisition coverage and a bounded metadata inconsistency only. They do not show that a flash is visible, that the products point at the reported location, that the two observers saw a lunar impact, or that the 41.681-second report interval is an event duration.",
+  "hard_negatives": [
+    "label_creation_time_is_acquisition",
+    "derivatives_are_independent_acquisitions",
+    "target_tag_validates_impact",
+    "report_interval_is_flash_duration",
+    "outside_interval_product_is_admitted"
+  ],
+  "next_step_logic": {
+    "recommended": "Run a Stage 5 transport canary for one SAW3 channel around 00:51:10Z-00:51:25Z, proving whether a tiny byte-range or server-side clip is feasible before accepting a 2.96 GB full-product download.",
+    "why": "The continuous stream is the only admitted product that spans the first report; the five still exposures begin about 36 seconds later and cannot by timing alone capture the initially reported transient. Both full video channels plus five raw frames total 6.34 GB.",
+    "alternative": "Inspect only lightweight browse/source derivatives of the five Z9 frames as camera-state and pointing controls, not as impact validation.",
+    "fallback": "If bounded video extraction is infeasible or the nominated segment lacks a usable lunar view, complete Stage 3B and retain the candidate as transcript-supported but physically unvalidated.",
+    "stop": "Do not download full media, interpret pixels, geolocate a flash, or make a public novelty claim in Stage 4A."
+  }
+}

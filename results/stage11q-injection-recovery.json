@@ -1,0 +1,376 @@
+{
+  "testbed_id": "artemis2-stage11q-transcoded-injection-recovery",
+  "version": "1.0.0",
+  "pass": true,
+  "evidence_state": "VERIFIED_TRANSCODED_INJECTION_RECOVERY",
+  "checks": {
+    "source_identities": true,
+    "all_frames_decoded": true,
+    "baseline_candidate_free": true,
+    "all_trials_executed": true,
+    "recovery_curve_nondecreasing": true,
+    "claim_boundaries_preserved": true
+  },
+  "source_identities": [
+    {
+      "path": "evidence/stage11o/derived/art002m1010962338_saw3_005110_005125_stage11o.mp4",
+      "bytes": 666376,
+      "sha256": "a2dc14c6060de9bb8858d4d9d49b207c99d6dacdd5943fb84bb3448f67762eec",
+      "match": true
+    },
+    {
+      "path": "results/stage11p-overlap-pixel-screen.json",
+      "bytes": 30546,
+      "sha256": "7ab93b078e45fc5b381faa861373ccf51a2918a833dad0d5bff13fe810191af2",
+      "match": true
+    }
+  ],
+  "baseline": {
+    "frames": 900,
+    "roi_xyxy": [
+      340,
+      90,
+      410,
+      160
+    ],
+    "roi_sum_median": 2996.0,
+    "roi_sum_mad": 541.5,
+    "candidate_frames": 0,
+    "analytic_added_dn_for_robust_z_at_median": 4816.974609325049,
+    "analytic_added_dn_for_relative_threshold_at_median": 599.2,
+    "controlling_threshold_at_median": "robust_z"
+  },
+  "injection_model": {
+    "description": "normalized_two_dimensional_gaussian_added_in_grayscale_digital_counts_then_rounded_and_clipped_to_uint8",
+    "sigma_pixels": 0.85,
+    "kernel_radius_pixels": 4,
+    "locations_xy": [
+      [
+        371,
+        122
+      ],
+      [
+        374,
+        122
+      ],
+      [
+        376,
+        122
+      ],
+      [
+        371,
+        124
+      ],
+      [
+        374,
+        124
+      ],
+      [
+        376,
+        124
+      ],
+      [
+        371,
+        126
+      ],
+      [
+        374,
+        126
+      ],
+      [
+        376,
+        126
+      ]
+    ],
+    "start_frames": [
+      250,
+      280,
+      310,
+      340,
+      370,
+      400
+    ],
+    "durations_frames": [
+      1,
+      2,
+      3
+    ],
+    "trial_count": 1458
+  },
+  "recovery_curve": [
+    {
+      "requested_integrated_dn_per_frame": 250,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 251,
+      "realized_added_dn_per_frame_median": 251.0,
+      "realized_added_dn_per_frame_max": 251
+    },
+    {
+      "requested_integrated_dn_per_frame": 500,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 494,
+      "realized_added_dn_per_frame_median": 494.0,
+      "realized_added_dn_per_frame_max": 494
+    },
+    {
+      "requested_integrated_dn_per_frame": 1000,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 906,
+      "realized_added_dn_per_frame_median": 981.0,
+      "realized_added_dn_per_frame_max": 996
+    },
+    {
+      "requested_integrated_dn_per_frame": 2000,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 1346,
+      "realized_added_dn_per_frame_median": 1694.0,
+      "realized_added_dn_per_frame_max": 1804
+    },
+    {
+      "requested_integrated_dn_per_frame": 4000,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 1704,
+      "realized_added_dn_per_frame_median": 2307.0,
+      "realized_added_dn_per_frame_max": 2555
+    },
+    {
+      "requested_integrated_dn_per_frame": 6000,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 1940,
+      "realized_added_dn_per_frame_median": 2560.5,
+      "realized_added_dn_per_frame_max": 2877
+    },
+    {
+      "requested_integrated_dn_per_frame": 8000,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 2172,
+      "realized_added_dn_per_frame_median": 2792.5,
+      "realized_added_dn_per_frame_max": 3109
+    },
+    {
+      "requested_integrated_dn_per_frame": 12000,
+      "trials": 162,
+      "recovered": 0,
+      "recovery_fraction": 0.0,
+      "realized_added_dn_per_frame_min": 2626,
+      "realized_added_dn_per_frame_median": 3264.5,
+      "realized_added_dn_per_frame_max": 3581
+    },
+    {
+      "requested_integrated_dn_per_frame": 16000,
+      "trials": 162,
+      "recovered": 9,
+      "recovery_fraction": 0.05555555555555555,
+      "realized_added_dn_per_frame_min": 2896,
+      "realized_added_dn_per_frame_median": 3638.0,
+      "realized_added_dn_per_frame_max": 4046
+    }
+  ],
+  "duration_curves": {
+    "1": [
+      {
+        "requested_integrated_dn_per_frame": 250,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 500,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 1000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 2000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 4000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 6000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 8000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 12000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 16000,
+        "trials": 54,
+        "recovered": 3,
+        "recovery_fraction": 0.05555555555555555
+      }
+    ],
+    "2": [
+      {
+        "requested_integrated_dn_per_frame": 250,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 500,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 1000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 2000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 4000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 6000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 8000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 12000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 16000,
+        "trials": 54,
+        "recovered": 3,
+        "recovery_fraction": 0.05555555555555555
+      }
+    ],
+    "3": [
+      {
+        "requested_integrated_dn_per_frame": 250,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 500,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 1000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 2000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 4000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 6000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 8000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 12000,
+        "trials": 54,
+        "recovered": 0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "requested_integrated_dn_per_frame": 16000,
+        "trials": 54,
+        "recovered": 3,
+        "recovery_fraction": 0.05555555555555555
+      }
+    ]
+  },
+  "threshold_summary": {
+    "first_amplitude_with_any_recovery": 16000,
+    "first_amplitude_at_or_above_50_percent": null,
+    "first_amplitude_at_or_above_90_percent": null,
+    "maximum_tested_amplitude": 16000,
+    "maximum_tested_recovery_fraction": 0.05555555555555555
+  },
+  "interpretation": "Digital-domain sensitivity of the frozen Stage 11P screen on the transcoded clip. It is not a physical brightness limit, source-pixel test, flight-sensor characterization, or event exclusion.",
+  "claim_boundaries": {
+    "injected_dn_is_physical_brightness": false,
+    "recovery_curve_describes_source_pixels": false,
+    "recovery_curve_describes_flight_sensor_performance": false,
+    "zero_candidates_excludes_crew_event": false,
+    "synthetic_gaussian_is_a_validated_flash_model": false,
+    "injected_duration_estimates_real_flash_duration": false
+  },
+  "claim_ceiling": "Private deterministic injection and recovery on a transcoded contextual clip. No physical brightness, impact energy, impactor size, flight-sensor performance, source-pixel equivalence, event exclusion, or NASA acceptance.",
+  "next_step_logic": {
+    "if_recovery_requires_large_digital_signal": "Use the result to quantify the weakness of the frozen contextual screen in clip-native units, not to constrain physical flash brightness.",
+    "if_recovery_is_high_at_small_signal": "Retain the same physical and source-pixel boundaries; digital recovery alone does not calibrate the clip.",
+    "if_curve_is_not_monotonic": "Fail the canary and inspect clipping, threshold recomputation, and trial aggregation before interpretation.",
+    "stop": "Do not tune the synthetic pulse, screen threshold, locations, or timing after viewing the curve. A physical detectability claim requires source pixels and calibration."
+  }
+}

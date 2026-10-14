@@ -1,0 +1,78 @@
+{
+  "testbed_id": "artemis2-plan-execution-curation-triangulation-stage10f",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:08:00Z",
+  "question": "Is the repeated Flight Day 6 A-B-A activity pattern consistent with a partial per-frame human override layered on timestamp-derived plan labels?",
+  "terminal_objective": "Identify the strongest supported mechanism for the action-facet fractures without converting circumstantial alignment into an edit-history claim.",
+  "method": "Triangulate the repeated metadata signature against official label-generation rules, target-tag rules, requested timing, contemporaneous audio, and NASA's as-executed timeline description",
+  "authority": "Read-only public-source evidence and private local repository updates only. No image pixels, publication, outreach, source correction, scientific acceptance, or claim of inaccessible edit history.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10c_result_path": "results/stage10c-result.json",
+    "user_guide_text_path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+    "outgoing_target_request_path": "corpus/artemis2_outgoing_target_request.json",
+    "transcript_path": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+    "ntrs_api_url": "https://ntrs.nasa.gov/api/citations/20260009221",
+    "ntrs_api_path": "evidence/stage10f/source/ntrs-20260009221.json",
+    "ntrs_download_url": "https://ntrs.nasa.gov/api/citations/20260009221/downloads/YoungPreliminary%20Science%20ReportFINAL",
+    "parent_report_work_path": "work/impact-reframe/Artemis-II-Preliminary-Science-Report.pdf",
+    "parent_report_bytes": 143769154,
+    "parent_report_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+    "report_page_number": 30,
+    "report_page_path": "evidence/stage10f/source/preliminary-science-report-page-30.pdf",
+    "report_page_text_path": "evidence/stage10f/source/preliminary-science-report-page-30.txt",
+    "receipt_path": "evidence/stage10f/acquisition-receipt.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "repeated_actions": 13,
+    "repeated_frames": 39,
+    "signature_activity_ids": [
+      "15_Discussion #4: Terminator",
+      "14_Crew Choice #2",
+      "15_Discussion #4: Terminator"
+    ],
+    "signature_target_ids": ["Terminator", null, "Terminator"],
+    "signature_bracket_values": ["0", "-2", "+2"],
+    "signature_start": "2026-04-06T21:47:06.850Z",
+    "signature_end": "2026-04-06T21:47:56.420Z",
+    "discussion_frames_with_terminator_target": 26,
+    "crew_choice_frames_without_target": 13,
+    "crew_choice_request_time": "06 Apr 2026 21:42:00",
+    "crew_choice_request_duration_minutes": 8,
+    "discussion_request_time": "06 Apr 2026 21:50:00",
+    "discussion_request_duration_minutes": 15,
+    "transcript_cues": [
+      ["2026-04-06 21:46:29.808", "Now I'm looking down the Terminator."],
+      ["2026-04-06 21:47:05.582", "brownish area"],
+      ["2026-04-06 21:47:37.823", "this was so worth the trip"]
+    ]
+  },
+  "mechanism_states": {
+    "verified": "A timestamp-to-plan pathway and a human-override pathway are both officially documented; target tags are manual and subset-only. The repeated metadata signature and contemporaneous context reproduce exactly.",
+    "supported_inference": "A partial per-frame curation pass is the strongest current explanation: selected 0 and +2 exposures jointly received Discussion #4 plus Terminator, while every intervening -2 exposure retained Crew Choice and no target. This is an inference from alignment, not a recovered edit log.",
+    "alternative_explanations": [
+      "An undocumented automated rule produced the same exposure-position pattern.",
+      "The final LTP timing differed materially from the archived request timing.",
+      "One or more source-label defects coincidentally mimic a partial override pass."
+    ],
+    "decision_use": "Treat activity_id as a mixed provenance field—planned-by-time unless selectively reinterpreted—not as a uniform ground-truth class. Reconstruct actions and preserve target-presence state at plan/execution transitions."
+  },
+  "hard_negatives": [
+    "declare_human_override_proven",
+    "declare_crew_choice_labels_wrong",
+    "declare_discussion_labels_correct",
+    "treat_every_missing_target_as_an_unoverridden_default",
+    "infer_image_content_from_transcript",
+    "claim_scalar_schema_caused_partial_curation",
+    "generalize_mechanism_to_every_archive_fracture",
+    "open_pixels_to_reconstruct_edit_history"
+  ],
+  "claim_ceiling": "Stage 10F may establish the official two-path activity-label procedure, the exact repeated activity/target/exposure-position association, and contemporaneous plan/execution context. It may rank partial per-frame curation as the strongest supported explanation. It cannot prove which records were human-overridden, identify correct labels, infer image content, assert that missing target always means default labeling, assign causality to scalar schema, or generalize one mechanism to every fracture without edit logs.",
+  "next_step_logic": {
+    "if_alignment_fails": "Retire the partial-override explanation and preserve only the verified retrieval-unit mismatch.",
+    "if_alignment_holds_without_edit_logs": "Use the mechanism only as a ranked explanation and test its distinct prediction: activity and target changes should remain coupled across representations and other structured fracture clusters.",
+    "if_authoritative_edit_logs_appear": "Replace inference with direct provenance and reclassify each fracture by generation path.",
+    "recheck_trigger": "Archive-generation logs, revised labels, final LTP timing evidence, or a counterexample where activity changes without the predicted curation coupling."
+  }
+}

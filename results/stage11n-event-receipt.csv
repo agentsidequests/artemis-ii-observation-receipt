@@ -1,0 +1,6 @@
+event_id,observers,witness_count,annotation_note,exact_event_utc,transcript_mapping,overlapping_30fps_event_frame,inference_state
+1,Reid Wiseman,1,blue mark; central near 4 o'clock,not independently resolved,not assigned one-to-one,not established,NASA-confirmed annotated event; no calibrated brightness or exposure denominator
+2,Reid Wiseman; Jeremy Hansen,2,blue and red marks; circled; near 8 o'clock,not independently resolved,not assigned one-to-one,not established,NASA-confirmed annotated event; no calibrated brightness or exposure denominator
+3,Jeremy Hansen,1,red mark; near 3 o'clock,not independently resolved,not assigned one-to-one,not established,NASA-confirmed annotated event; no calibrated brightness or exposure denominator
+4,Reid Wiseman; Jeremy Hansen; Victor Glover,3,"blue, red, and green marks; circled; later; near 6 o'clock",not independently resolved,not assigned one-to-one,not established,NASA-confirmed annotated event; no calibrated brightness or exposure denominator
+5,Reid Wiseman,1,blue mark; towards end; near 12 o'clock,not independently resolved,not assigned one-to-one,not established,NASA-confirmed annotated event; no calibrated brightness or exposure denominator

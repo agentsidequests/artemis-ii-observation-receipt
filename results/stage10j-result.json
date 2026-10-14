@@ -1,0 +1,2854 @@
+{
+  "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_FRACTIONAL_STOP_EXPANSION_AND_CROSS_DAY_RECURRENCE",
+  "source_records": 10329,
+  "complete_brackets": 2166,
+  "exposures_in_complete_brackets": 7606,
+  "unadmitted_records": 2723,
+  "pattern_counts": {
+    "0,-1,+1": 290,
+    "0,-2/3,+2/3": 61,
+    "0,-2,+2": 1261,
+    "0,-4/3,-2/3,+2/3,+4/3": 2,
+    "0,-2,-1,+1,+2": 226,
+    "0,-6,-3,+3,+6": 326
+  },
+  "brackets_by_flight_day": {
+    "1": 85,
+    "2": 148,
+    "3": 61,
+    "4": 57,
+    "5": 70,
+    "6": 1721,
+    "7": 24,
+    "8": 0,
+    "9": 0,
+    "10": 0
+  },
+  "activity_fractures": 25,
+  "activity_fracture_rate": 0.011542012927054479,
+  "fractures_by_flight_day": {
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 1,
+    "5": 0,
+    "6": 21,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0
+  },
+  "fractional_pattern_actions": 63,
+  "fractional_pattern_fractures": 4,
+  "target_presence_fractures": 23,
+  "target_value_fractures": 1,
+  "stage10e_generalization_superseded": true,
+  "new_cross_day_fractures": [
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-03T23:32:38.970Z",
+      "end_time": "2026-04-03T23:32:39.140Z",
+      "span_seconds": 0.17,
+      "file_names": [
+        "art002e009166_nkd5015_raw_v01.tif",
+        "art002e009167_nkd5015_raw_v01.tif",
+        "art002e023743_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        1557,
+        1558,
+        1559
+      ],
+      "file_numbers": [
+        6113,
+        6114,
+        6115
+      ],
+      "bracket_values": [
+        "0",
+        "-2/3",
+        "+2/3"
+      ],
+      "activity_ids": [
+        "PAO",
+        "PAO",
+        "Other"
+      ],
+      "target_ids": [
+        "Earth",
+        "Earth",
+        null
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-03T23:45:52.040Z",
+      "end_time": "2026-04-03T23:45:52.220Z",
+      "span_seconds": 0.18,
+      "file_names": [
+        "art002e023768_nkd5015_raw_v01.tif",
+        "art002e023769_nkd5015_raw_v01.tif",
+        "art002e009168_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        1657,
+        1658,
+        1659
+      ],
+      "file_numbers": [
+        6213,
+        6214,
+        6215
+      ],
+      "bracket_values": [
+        "0",
+        "-2/3",
+        "+2/3"
+      ],
+      "activity_ids": [
+        "Other",
+        "Other",
+        "PAO"
+      ],
+      "target_ids": [
+        null,
+        null,
+        "Moon"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-04T02:03:18.300Z",
+      "end_time": "2026-04-04T02:03:18.480Z",
+      "span_seconds": 0.18,
+      "file_names": [
+        "art002e023913_nkd5015_raw_v01.tif",
+        "art002e009006_nkd5015_raw_v01.tif",
+        "art002e023914_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        1669,
+        1670,
+        1671
+      ],
+      "file_numbers": [
+        6264,
+        6265,
+        6266
+      ],
+      "bracket_values": [
+        "0",
+        "-2/3",
+        "+2/3"
+      ],
+      "activity_ids": [
+        "Other",
+        "PAO",
+        "Other"
+      ],
+      "target_ids": [
+        null,
+        "Moon",
+        null
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500017",
+      "start_time": "2026-04-05T06:35:10.340Z",
+      "end_time": "2026-04-05T06:35:10.680Z",
+      "span_seconds": 0.34,
+      "file_names": [
+        "art002e009180_nkd5017_raw_v01.tif",
+        "art002e024136_nkd5017_raw_v01.tif",
+        "art002e009181_nkd5017_raw_v01.tif",
+        "art002e009182_nkd5017_raw_v01.tif",
+        "art002e009183_nkd5017_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        1525,
+        1526,
+        1527,
+        1528,
+        1529
+      ],
+      "file_numbers": [
+        6453,
+        6454,
+        6455,
+        6456,
+        6457
+      ],
+      "bracket_values": [
+        "0",
+        "-4/3",
+        "-2/3",
+        "+2/3",
+        "+4/3"
+      ],
+      "activity_ids": [
+        "PAO",
+        "Other",
+        "PAO",
+        "PAO",
+        "PAO"
+      ],
+      "target_ids": [
+        "Earth",
+        null,
+        "Earth",
+        "Earth",
+        "Earth"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    }
+  ],
+  "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+  "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+  "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+  "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+  "next_step_logic": {
+    "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+    "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+    "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+    "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+  },
+  "checks": [
+    {
+      "id": "source_identity",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "prior_four_pattern_replay",
+      "pass": true
+    },
+    {
+      "id": "complete_source_replay",
+      "pass": true,
+      "records": 10329,
+      "page_errors": []
+    },
+    {
+      "id": "expanded_complete_action_denominator",
+      "pass": true,
+      "complete_brackets": 2166,
+      "exposures": 7606,
+      "unadmitted": 2723,
+      "patterns": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "by_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_actions": 63
+    },
+    {
+      "id": "cross_day_fracture_recurrence",
+      "pass": true,
+      "fractures": 25,
+      "by_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_fractures": 4,
+      "target_presence": 23,
+      "target_value": 1
+    },
+    {
+      "id": "stage10e_fd6_only_generalization_superseded",
+      "pass": true
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "fd6_only": false,
+        "exhaustive": false,
+        "pao_correct": false,
+        "other_correct": false,
+        "all_errors": false,
+        "mechanism_scope": "stage10f_repeated_signature",
+        "partial_brackets": false
+      },
+      "pixel_payload_bytes": 0
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "retain_flight_day_6_only_generalization": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "retain_flight_day_6_only_generalization",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": true,
+            "exhaustive": false,
+            "pao_correct": false,
+            "other_correct": false,
+            "all_errors": false,
+            "mechanism_scope": "stage10f_repeated_signature",
+            "partial_brackets": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    },
+    "call_six_patterns_exhaustive": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "call_six_patterns_exhaustive",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": false,
+            "exhaustive": true,
+            "pao_correct": false,
+            "other_correct": false,
+            "all_errors": false,
+            "mechanism_scope": "stage10f_repeated_signature",
+            "partial_brackets": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    },
+    "infer_pao_labels_correct": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "infer_pao_labels_correct",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": false,
+            "exhaustive": false,
+            "pao_correct": true,
+            "other_correct": false,
+            "all_errors": false,
+            "mechanism_scope": "stage10f_repeated_signature",
+            "partial_brackets": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    },
+    "infer_other_labels_correct": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "infer_other_labels_correct",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": false,
+            "exhaustive": false,
+            "pao_correct": false,
+            "other_correct": true,
+            "all_errors": false,
+            "mechanism_scope": "stage10f_repeated_signature",
+            "partial_brackets": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    },
+    "call_every_fracture_a_metadata_error": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "call_every_fracture_a_metadata_error",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": false,
+            "exhaustive": false,
+            "pao_correct": false,
+            "other_correct": false,
+            "all_errors": true,
+            "mechanism_scope": "stage10f_repeated_signature",
+            "partial_brackets": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    },
+    "generalize_stage10f_mechanism_cross_day": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "generalize_stage10f_mechanism_cross_day",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": false,
+            "exhaustive": false,
+            "pao_correct": false,
+            "other_correct": false,
+            "all_errors": false,
+            "mechanism_scope": "all_fractures",
+            "partial_brackets": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    },
+    "admit_partial_brackets": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "admit_partial_brackets",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": false,
+            "exhaustive": false,
+            "pao_correct": false,
+            "other_correct": false,
+            "all_errors": false,
+            "mechanism_scope": "stage10f_repeated_signature",
+            "partial_brackets": true
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_to_resolve_cross_day_labels": {
+      "testbed_id": "artemis2-fractional-stop-bracket-expansion-stage10j",
+      "mutation": "open_pixels_to_resolve_cross_day_labels",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 10329,
+      "complete_brackets": 2166,
+      "exposures_in_complete_brackets": 7606,
+      "unadmitted_records": 2723,
+      "pattern_counts": {
+        "0,-1,+1": 290,
+        "0,-2/3,+2/3": 61,
+        "0,-2,+2": 1261,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-2,-1,+1,+2": 226,
+        "0,-6,-3,+3,+6": 326
+      },
+      "brackets_by_flight_day": {
+        "1": 85,
+        "2": 148,
+        "3": 61,
+        "4": 57,
+        "5": 70,
+        "6": 1721,
+        "7": 24,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "activity_fractures": 25,
+      "activity_fracture_rate": 0.011542012927054479,
+      "fractures_by_flight_day": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 21,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "fractional_pattern_actions": 63,
+      "fractional_pattern_fractures": 4,
+      "target_presence_fractures": 23,
+      "target_value_fractures": 1,
+      "stage10e_generalization_superseded": true,
+      "new_cross_day_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:32:38.970Z",
+          "end_time": "2026-04-03T23:32:39.140Z",
+          "span_seconds": 0.17,
+          "file_names": [
+            "art002e009166_nkd5015_raw_v01.tif",
+            "art002e009167_nkd5015_raw_v01.tif",
+            "art002e023743_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1557,
+            1558,
+            1559
+          ],
+          "file_numbers": [
+            6113,
+            6114,
+            6115
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            "Earth",
+            "Earth",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-03T23:45:52.040Z",
+          "end_time": "2026-04-03T23:45:52.220Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023768_nkd5015_raw_v01.tif",
+            "art002e023769_nkd5015_raw_v01.tif",
+            "art002e009168_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1657,
+            1658,
+            1659
+          ],
+          "file_numbers": [
+            6213,
+            6214,
+            6215
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "Other",
+            "PAO"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Moon"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-04T02:03:18.300Z",
+          "end_time": "2026-04-04T02:03:18.480Z",
+          "span_seconds": 0.18,
+          "file_names": [
+            "art002e023913_nkd5015_raw_v01.tif",
+            "art002e009006_nkd5015_raw_v01.tif",
+            "art002e023914_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1669,
+            1670,
+            1671
+          ],
+          "file_numbers": [
+            6264,
+            6265,
+            6266
+          ],
+          "bracket_values": [
+            "0",
+            "-2/3",
+            "+2/3"
+          ],
+          "activity_ids": [
+            "Other",
+            "PAO",
+            "Other"
+          ],
+          "target_ids": [
+            null,
+            "Moon",
+            null
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500017",
+          "start_time": "2026-04-05T06:35:10.340Z",
+          "end_time": "2026-04-05T06:35:10.680Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009180_nkd5017_raw_v01.tif",
+            "art002e024136_nkd5017_raw_v01.tif",
+            "art002e009181_nkd5017_raw_v01.tif",
+            "art002e009182_nkd5017_raw_v01.tif",
+            "art002e009183_nkd5017_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            1525,
+            1526,
+            1527,
+            1528,
+            1529
+          ],
+          "file_numbers": [
+            6453,
+            6454,
+            6455,
+            6456,
+            6457
+          ],
+          "bracket_values": [
+            "0",
+            "-4/3",
+            "-2/3",
+            "+2/3",
+            "+4/3"
+          ],
+          "activity_ids": [
+            "PAO",
+            "Other",
+            "PAO",
+            "PAO",
+            "PAO"
+          ],
+          "target_ids": [
+            "Earth",
+            null,
+            "Earth",
+            "Earth",
+            "Earth"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "verified": "Adding two camera-native fractional-stop patterns raises the verified complete-bracket census from 2,103 to 2,166 and the activity-fracture count from 21 to 25. Four newly admitted fractures occur outside Flight Day 6: three on Flight Day 3 and one on Flight Day 4.",
+      "falsification": "Stage 10E's Flight-Day-6-only result was true only inside its four-pattern oracle. It does not survive the residual-driven six-pattern changed case and is superseded as a general concentration claim.",
+      "bounded_inference": "Action-facet fragmentation is a cross-day retrieval risk, while the repeated Discussion #4 / Crew Choice signature remains a distinct Flight Day 6 mechanism case. The expanded six-pattern census is still not an exhaustive census of every camera action.",
+      "decision_use": "Keep camera-action reconstruction as a mission-wide sampling guard. Treat Stage 10F's partial-curation mechanism as local to its repeated Flight Day 6 signature unless separate provenance evidence explains the PAO/Other cross-day fractures.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10J may establish complete actions and fractures under the six frozen symmetric bracket patterns, the four cross-day changed cases, and the falsification of a Flight-Day-6-only generalization. It cannot call the pattern set exhaustive, admit partial sequences, decide correct activities or targets, call every fracture an error, generalize the Stage 10F mechanism beyond its signature, estimate rates for unadmitted actions, or infer image content.",
+      "next_step_logic": {
+        "if_no_cross_day_fractures": "Retain the Flight Day 6 concentration claim inside the expanded oracle.",
+        "if_cross_day_fractures_recur": "Adopt mission-wide action reconstruction while keeping mechanism claims cluster-specific.",
+        "if_more_symmetric_patterns_are_evidenced": "Freeze another bounded oracle expansion before changing denominators.",
+        "recheck_trigger": "A new complete bracket pattern, revised PDS labels, or authoritative activity-generation provenance."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "prior_four_pattern_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_source_replay",
+          "pass": true,
+          "records": 10329,
+          "page_errors": []
+        },
+        {
+          "id": "expanded_complete_action_denominator",
+          "pass": true,
+          "complete_brackets": 2166,
+          "exposures": 7606,
+          "unadmitted": 2723,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2/3,+2/3": 61,
+            "0,-2,+2": 1261,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-2,-1,+1,+2": 226,
+            "0,-6,-3,+3,+6": 326
+          },
+          "by_day": {
+            "1": 85,
+            "2": 148,
+            "3": 61,
+            "4": 57,
+            "5": 70,
+            "6": 1721,
+            "7": 24,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_actions": 63
+        },
+        {
+          "id": "cross_day_fracture_recurrence",
+          "pass": true,
+          "fractures": 25,
+          "by_day": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 21,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "fractional_fractures": 4,
+          "target_presence": 23,
+          "target_value": 1
+        },
+        {
+          "id": "stage10e_fd6_only_generalization_superseded",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "fd6_only": false,
+            "exhaustive": false,
+            "pao_correct": false,
+            "other_correct": false,
+            "all_errors": false,
+            "mechanism_scope": "stage10f_repeated_signature",
+            "partial_brackets": false
+          },
+          "pixel_payload_bytes": 1
+        }
+      ],
+      "errors": [
+        "A prohibited concentration, completeness, correctness, mechanism, partial-sequence, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

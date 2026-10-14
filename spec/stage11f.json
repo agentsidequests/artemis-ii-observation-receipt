@@ -1,0 +1,55 @@
+{
+  "testbed_id": "artemis2-plan-window-protocol-weighting-stage11f",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T15:18:00Z",
+  "question": "Does the product/action weighting difference seen in the Sunset canary recur across active planned windows because acquisition protocols use different bracket lengths?",
+  "terminal_objective": "Classify every active plan window by its admitted per-action exposure counts and quantify product/action and byte/action ranges without treating windows as a partition or inferring image content.",
+  "method": "Replay Stage 11E, join each nonblank Stage 10Z plan membership to unique Stage 10O actions, classify a window as pure-three, pure-five, or mixed from the exposure count of every admitted action, and compare per-action product and byte weights. Do not sum windows because memberships overlap.",
+  "authority": "Private local relationship and accounting analysis only. No pixels, window-partition claim, image-content claim, representation-value judgment, actual sampler claim, observed model behavior, causal effect, archive-wide extrapolation, scientific result, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11e_spec_path": "spec/stage11e.json",
+    "membership_ledger_path": "results/stage10z-action-plan-membership.csv",
+    "relationship_manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "active_plan_windows": 36,
+    "pure_three_exposure_windows": 19,
+    "pure_five_exposure_windows": 11,
+    "mixed_exposure_windows": 6,
+    "minimum_products_per_action": 9.0,
+    "maximum_products_per_action": 15.0,
+    "median_products_per_action": 9.0,
+    "pure_five_vs_pure_three_product_weight": 1.6666666666666667,
+    "minimum_bytes_per_action": 546814165.1666666,
+    "maximum_bytes_per_action": 1970230826.0,
+    "maximum_vs_minimum_byte_weight": 3.6031086089356923,
+    "sunset_actions": 169,
+    "sunset_exposures_per_action": 5.0,
+    "sunset_products_per_action": 15.0,
+    "sunset_bytes_per_action": 1188767267.6390533,
+    "sunset_byte_weight_rank_descending": 4
+  },
+  "disposition": "ADMIT_MISSION_WIDE_PROTOCOL_WEIGHTING_CANARY",
+  "hard_negatives": [
+    "call_plan_windows_a_partition",
+    "call_product_weight_image_content_weight",
+    "call_five_exposure_windows_more_valuable",
+    "claim_actual_sampler_is_uniform_products",
+    "claim_observed_model_bias",
+    "claim_protocol_weighting_causal_performance_effect",
+    "generalize_to_unadmitted_archive_records",
+    "call_boundary_result_scientific_discovery",
+    "claim_novelty_or_priority",
+    "open_pixels_during_protocol_test"
+  ],
+  "claim_ceiling": "Stage 11F may establish that 19 of 36 active plan windows contain only admitted three-exposure actions, 11 contain only admitted five-exposure actions, and six are mixed. Because each exposure has three representations in the verified cohort, the pure-five windows carry 15 products per action versus nine for pure-three windows, a 1.666667-fold product weight at equal action count. Per-window byte/action values span 546.814 MB to 1.970 GB, and Sunset is in the 15-product/action class. It cannot treat overlapping plan windows as a partition, turn product weight into image-content or scientific-value weight, assert an actual sampler or observed model bias, infer a causal performance effect, extend to unadmitted archive records, or make a physical-science, novelty, or priority claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Use the 19/11/6 window census to show that implicit weighting is protocol-wide, not a Sunset-only anomaly; retain Sunset as the vivid high-volume example.",
+    "if_a_model_task_is_selected": "Balance or report action and event weights explicitly, and include bracket length or exposure count as a metadata control.",
+    "if_overlapping_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger; window totals cannot be summed as disjoint cohorts.",
+    "if_a_new_action_pattern_is_admitted": "Recompute this census before reusing any ratio.",
+    "recheck_trigger": "A revised action oracle, relationship manifest, plan ledger, or actual sampler."
+  }
+}

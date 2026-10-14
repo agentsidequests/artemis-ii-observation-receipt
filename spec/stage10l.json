@@ -1,0 +1,59 @@
+{
+  "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:37:00Z",
+  "question": "Does every exposure in the verified six-pattern complete-action cohort have one source, one raw, and one processed Atlas product, and what exact product-to-action ratio follows if it does?",
+  "terminal_objective": "Quantify the strongest exact representation-to-observation denominator change without generalizing beyond the verified complete-action cohort.",
+  "method": "Reconstruct the 7,606 exposure identities from the Stage 10J source receipts, issue one metadata-only Atlas aggregation over exactly those identities, require per-identity and per-collection three-way parity, and compare the resulting product count with the frozen 2,166 complete actions.",
+  "authority": "Read-only public metadata acquisition and private local repository updates only. No image pixels, publication, outreach, archive mutation, scientific-evidence inflation claim, archive-wide action estimate, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "atlas_endpoint": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+    "stage10a_receipt_path": "evidence/stage10a/acquisition-receipt.json",
+    "stage10e_receipt_path": "evidence/stage10e/acquisition-receipt.json",
+    "stage10c_spec_path": "spec/stage10c.json",
+    "stage10j_result_path": "results/stage10j-result.json",
+    "rejected_query_path": "evidence/stage10l/source/atlas-complete-action-products-query.json",
+    "atlas_batch_dir": "evidence/stage10l/source/batches",
+    "batch_size": 100,
+    "receipt_path": "evidence/stage10l/acquisition-receipt.json",
+    "max_response_bytes_per_batch": 2000000,
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "complete_actions": 2166,
+    "capture_identities": 7606,
+    "expected_products": 22818,
+    "expected_collections": {
+      "data_source": 7606,
+      "data_raw": 7606,
+      "data_processed": 7606
+    },
+    "expected_products_per_identity": 3,
+    "expected_collection_bytes": {
+      "data_source": 150708337459,
+      "data_raw": 370489806656,
+      "data_processed": 1104083221228
+    },
+    "expected_total_bytes": 1625281365343,
+    "exposures_per_action": 3.5115420129270545,
+    "products_per_action": 10.534626038781163
+  },
+  "hard_negatives": [
+    "count_products_as_independent_scientific_observations",
+    "generalize_ratio_to_all_archive_products",
+    "call_six_pattern_action_cohort_exhaustive",
+    "infer_representations_are_wasteful_duplicates",
+    "infer_archive_quality_from_ratio",
+    "omit_snapshot_date",
+    "claim_global_priority",
+    "open_pixels_for_count_reconciliation"
+  ],
+  "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+  "next_step_logic": {
+    "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+    "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+    "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+    "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+  }
+}

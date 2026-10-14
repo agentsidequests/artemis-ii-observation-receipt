@@ -1,0 +1,144 @@
+{
+  "oracle": "implementation-diverse frozen-metadata recount, not independent science validation",
+  "powershell": "7.6.5",
+  "script_sha256": "8D0474ADC98CF6C0C6B22F53AABC1A831943CB9093E851A2570991796BC74121",
+  "source_sha256": "8EDD58437CC609229EDB5ABB41C4E00048BB420354F1AC17A269DA92C17E4729",
+  "source_exposures": 7606,
+  "nonblank_target_fields": 3413,
+  "blank_target_fields": 4193,
+  "bounds_by_field_value": {
+    "01_Discussion #1: Warm up": {
+      "observed": 39,
+      "lower_count": 39,
+      "upper_count": 4232
+    },
+    "Aristarchus Plateau": {
+      "observed": 26,
+      "lower_count": 26,
+      "upper_count": 4219
+    },
+    "Deep Space": {
+      "observed": 25,
+      "lower_count": 25,
+      "upper_count": 4218
+    },
+    "Earth": {
+      "observed": 692,
+      "lower_count": 692,
+      "upper_count": 4885
+    },
+    "Earthrise": {
+      "observed": 2,
+      "lower_count": 2,
+      "upper_count": 4195
+    },
+    "Earthset": {
+      "observed": 14,
+      "lower_count": 14,
+      "upper_count": 4207
+    },
+    "Glushko Crater": {
+      "observed": 24,
+      "lower_count": 24,
+      "upper_count": 4217
+    },
+    "Hertzsprung Basin": {
+      "observed": 12,
+      "lower_count": 12,
+      "upper_count": 4205
+    },
+    "Landau": {
+      "observed": 7,
+      "lower_count": 7,
+      "upper_count": 4200
+    },
+    "Limb": {
+      "observed": 6,
+      "lower_count": 6,
+      "upper_count": 4199
+    },
+    "Moon": {
+      "observed": 280,
+      "lower_count": 280,
+      "upper_count": 4473
+    },
+    "Nemst": {
+      "observed": 3,
+      "lower_count": 3,
+      "upper_count": 4196
+    },
+    "Ohm Crater": {
+      "observed": 68,
+      "lower_count": 68,
+      "upper_count": 4261
+    },
+    "Orientale Basin": {
+      "observed": 74,
+      "lower_count": 74,
+      "upper_count": 4267
+    },
+    "Pierrazzo Crater": {
+      "observed": 23,
+      "lower_count": 23,
+      "upper_count": 4216
+    },
+    "Reiner Gamma": {
+      "observed": 24,
+      "lower_count": 24,
+      "upper_count": 4217
+    },
+    "Sun": {
+      "observed": 81,
+      "lower_count": 81,
+      "upper_count": 4274
+    },
+    "Sunrise": {
+      "observed": 181,
+      "lower_count": 181,
+      "upper_count": 4374
+    },
+    "Sunset": {
+      "observed": 1553,
+      "lower_count": 1553,
+      "upper_count": 5746
+    },
+    "Terminator": {
+      "observed": 122,
+      "lower_count": 122,
+      "upper_count": 4315
+    },
+    "Unknown": {
+      "observed": 33,
+      "lower_count": 33,
+      "upper_count": 4226
+    },
+    "Vavilov Crater": {
+      "observed": 67,
+      "lower_count": 67,
+      "upper_count": 4260
+    },
+    "Whole Moon": {
+      "observed": 57,
+      "lower_count": 57,
+      "upper_count": 4250
+    }
+  },
+  "sunset_lower_share": 0.2041809098080463,
+  "sunset_upper_share": 0.7554562187746516,
+  "sunset_strict_majority_additional_count": 2251,
+  "deterministic_completion_budgets": {
+    "1/10": {
+      "resolved": 3433,
+      "remaining": 760
+    },
+    "1/20": {
+      "resolved": 3813,
+      "remaining": 380
+    },
+    "1/100": {
+      "resolved": 4117,
+      "remaining": 76
+    }
+  },
+  "pixel_payloads_read": false
+}

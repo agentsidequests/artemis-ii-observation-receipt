@@ -1,0 +1,883 @@
+{
+  "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_COMPLETE_ACTION_REPRESENTATION_COMPRESSION",
+  "complete_actions": 2166,
+  "capture_identities": 7606,
+  "products": 22818,
+  "collection_counts": {
+    "data_source": 7606,
+    "data_raw": 7606,
+    "data_processed": 7606
+  },
+  "collection_bytes": {
+    "data_source": 150708337459,
+    "data_raw": 370489806656,
+    "data_processed": 1104083221228
+  },
+  "total_bytes": 1625281365343,
+  "exposures_per_action": 3.5115420129270545,
+  "products_per_action": 10.534626038781163,
+  "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+  "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+  "next_step_logic": {
+    "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+    "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+    "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+    "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+  },
+  "checks": [
+    {
+      "id": "source_identity",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "complete_action_cohort_replay",
+      "pass": true
+    },
+    {
+      "id": "per_identity_three_way_parity",
+      "pass": true,
+      "batches": 77,
+      "identities": 7606,
+      "products": 22818,
+      "collections": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "parity_failures": 0
+    },
+    {
+      "id": "cohort_product_footprint",
+      "pass": true,
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343
+    },
+    {
+      "id": "exact_denominator_ratios",
+      "pass": true,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163
+    },
+    {
+      "id": "bounded_route_recovery",
+      "pass": true,
+      "route_recovery": {
+        "initial_failure": "HTTP_403_LARGE_REQUEST",
+        "failure_class": "SURFACE_PREREQUISITE_MISSING",
+        "fallback": "same_endpoint_bounded_batches"
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "products_are_scientific_observations": false,
+        "scope": "verified_complete_six_pattern_cohort",
+        "actions_exhaustive": false,
+        "representations_wasteful": false,
+        "archive_quality_inferred": false,
+        "snapshot_date_required": true,
+        "global_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "count_products_as_independent_scientific_observations": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "count_products_as_independent_scientific_observations",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": true,
+            "scope": "verified_complete_six_pattern_cohort",
+            "actions_exhaustive": false,
+            "representations_wasteful": false,
+            "archive_quality_inferred": false,
+            "snapshot_date_required": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    },
+    "generalize_ratio_to_all_archive_products": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "generalize_ratio_to_all_archive_products",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": false,
+            "scope": "all_archive_products",
+            "actions_exhaustive": false,
+            "representations_wasteful": false,
+            "archive_quality_inferred": false,
+            "snapshot_date_required": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    },
+    "call_six_pattern_action_cohort_exhaustive": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "call_six_pattern_action_cohort_exhaustive",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": false,
+            "scope": "verified_complete_six_pattern_cohort",
+            "actions_exhaustive": true,
+            "representations_wasteful": false,
+            "archive_quality_inferred": false,
+            "snapshot_date_required": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    },
+    "infer_representations_are_wasteful_duplicates": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "infer_representations_are_wasteful_duplicates",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": false,
+            "scope": "verified_complete_six_pattern_cohort",
+            "actions_exhaustive": false,
+            "representations_wasteful": true,
+            "archive_quality_inferred": false,
+            "snapshot_date_required": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    },
+    "infer_archive_quality_from_ratio": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "infer_archive_quality_from_ratio",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": false,
+            "scope": "verified_complete_six_pattern_cohort",
+            "actions_exhaustive": false,
+            "representations_wasteful": false,
+            "archive_quality_inferred": true,
+            "snapshot_date_required": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    },
+    "omit_snapshot_date": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "omit_snapshot_date",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": false,
+            "scope": "verified_complete_six_pattern_cohort",
+            "actions_exhaustive": false,
+            "representations_wasteful": false,
+            "archive_quality_inferred": false,
+            "snapshot_date_required": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    },
+    "claim_global_priority": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "claim_global_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": false,
+            "scope": "verified_complete_six_pattern_cohort",
+            "actions_exhaustive": false,
+            "representations_wasteful": false,
+            "archive_quality_inferred": false,
+            "snapshot_date_required": true,
+            "global_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_count_reconciliation": {
+      "testbed_id": "artemis2-complete-action-representation-compression-stage10l",
+      "mutation": "open_pixels_for_count_reconciliation",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "products": 22818,
+      "collection_counts": {
+        "data_source": 7606,
+        "data_raw": 7606,
+        "data_processed": 7606
+      },
+      "collection_bytes": {
+        "data_source": 150708337459,
+        "data_raw": 370489806656,
+        "data_processed": 1104083221228
+      },
+      "total_bytes": 1625281365343,
+      "exposures_per_action": 3.5115420129270545,
+      "products_per_action": 10.534626038781163,
+      "verified": "Every one of the 7,606 exposure identities in the verified complete six-pattern cohort has exactly one source, one raw, and one processed Atlas product. The cohort therefore contains 22,818 products representing 2,166 complete actions: 3.511542 exposures and 10.534626 products per action.",
+      "decision_use": "This is the strongest exact denominator-collision demonstration: in the dated complete-action cohort, a product count is 10.53 times the reconstructed physical-action count. It is a unit conversion, not an archive-wide inflation, quality, duplication-value, or scientific-evidence claim.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10L may establish exact three-representation parity and the 22,818-product / 7,606-exposure / 2,166-action ratios for the verified complete six-pattern Nikon cohort in the preserved Atlas snapshot. It cannot treat products as independent scientific observations, generalize the ratio to unadmitted records or other product classes, call the action cohort exhaustive, judge representation value or archive quality, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_three_way_parity_holds": "Use the 10.53-products-per-complete-action ratio as the strongest exact demonstration of denominator collision, always scoped to the verified cohort and dated snapshot.",
+        "if_parity_fails": "Report the exact mismatch and keep the prior bounded three-way examples; do not compute the cohort ratio.",
+        "if_new_action_patterns_are_admitted": "Recompute the cohort before reusing the ratio.",
+        "recheck_trigger": "A revised Atlas snapshot, Nikon collection update, PDS label change, or expanded complete-action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_action_cohort_replay",
+          "pass": true
+        },
+        {
+          "id": "per_identity_three_way_parity",
+          "pass": true,
+          "batches": 77,
+          "identities": 7606,
+          "products": 22818,
+          "collections": {
+            "data_source": 7606,
+            "data_raw": 7606,
+            "data_processed": 7606
+          },
+          "parity_failures": 0
+        },
+        {
+          "id": "cohort_product_footprint",
+          "pass": true,
+          "collection_bytes": {
+            "data_source": 150708337459,
+            "data_raw": 370489806656,
+            "data_processed": 1104083221228
+          },
+          "total_bytes": 1625281365343
+        },
+        {
+          "id": "exact_denominator_ratios",
+          "pass": true,
+          "exposures_per_action": 3.5115420129270545,
+          "products_per_action": 10.534626038781163
+        },
+        {
+          "id": "bounded_route_recovery",
+          "pass": true,
+          "route_recovery": {
+            "initial_failure": "HTTP_403_LARGE_REQUEST",
+            "failure_class": "SURFACE_PREREQUISITE_MISSING",
+            "fallback": "same_endpoint_bounded_batches"
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_are_scientific_observations": false,
+            "scope": "verified_complete_six_pattern_cohort",
+            "actions_exhaustive": false,
+            "representations_wasteful": false,
+            "archive_quality_inferred": false,
+            "snapshot_date_required": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited independence, scope, completeness, value, quality, novelty, date, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

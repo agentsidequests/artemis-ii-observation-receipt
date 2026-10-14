@@ -1,0 +1,921 @@
+{
+  "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_TRANSCRIPT_ALIGNED_OBSERVATION_EPISODE",
+  "alignment": {
+    "inside_utterances": 35,
+    "inside_speaker_counts": {
+      "Hansen": 34,
+      "Wiseman": 1
+    },
+    "first_inside_utc": "2026-04-07T00:34:36.342Z",
+    "first_inside_offset_seconds": 1.802,
+    "last_inside_utc": "2026-04-07T00:36:52.164Z",
+    "last_inside_lead_seconds": 5.986,
+    "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+    "nearest_prior_lead_seconds": 2.084,
+    "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+    "nearest_after_offset_seconds": 0.013,
+    "required_inside_terms": [
+      "streamer",
+      "plume",
+      "glow",
+      "moon",
+      "sun"
+    ]
+  },
+  "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+  "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+    "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+    "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+    "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+  },
+  "checks": [
+    {
+      "id": "stage10p_cluster_identity",
+      "pass": true
+    },
+    {
+      "id": "transcript_identity",
+      "pass": true
+    },
+    {
+      "id": "transcript_interval_alignment",
+      "pass": true,
+      "derived": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "episode_kind": "time_bounded_observation_episode",
+        "visual_redundancy_established": false,
+        "transcript_kind": "independent_execution_record",
+        "speaker_camera_attribution": false,
+        "result_kind": "expected_crossing_hazard",
+        "scope": "one_verified_cohort_episode",
+        "performance_effect_inferred": false,
+        "scientific_discovery_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_episode_a_semantic_scene": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "call_episode_a_semantic_scene",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "semantic_scene",
+            "visual_redundancy_established": false,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "call_every_image_visually_redundant": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "call_every_image_visually_redundant",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": true,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "call_transcript_pixel_ground_truth": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "call_transcript_pixel_ground_truth",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": false,
+            "transcript_kind": "pixel_ground_truth",
+            "speaker_camera_attribution": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "attribute_camera_to_named_speaker": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "attribute_camera_to_named_speaker",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": false,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": true,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "call_expected_crossing_observed_leakage": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "call_expected_crossing_observed_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": false,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": false,
+            "result_kind": "observed_leakage",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "generalize_episode_to_archive": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "generalize_episode_to_archive",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": false,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "all_archive_products",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "infer_model_performance_effect": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "infer_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": false,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": true,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "claim_scientific_discovery_or_priority": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "claim_scientific_discovery_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": false,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_alignment_canary": {
+      "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+      "mutation": "open_pixels_for_alignment_canary",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "alignment": {
+        "inside_utterances": 35,
+        "inside_speaker_counts": {
+          "Hansen": 34,
+          "Wiseman": 1
+        },
+        "first_inside_utc": "2026-04-07T00:34:36.342Z",
+        "first_inside_offset_seconds": 1.802,
+        "last_inside_utc": "2026-04-07T00:36:52.164Z",
+        "last_inside_lead_seconds": 5.986,
+        "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+        "nearest_prior_lead_seconds": 2.084,
+        "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+        "nearest_after_offset_seconds": 0.013,
+        "required_inside_terms": [
+          "streamer",
+          "plume",
+          "glow",
+          "moon",
+          "sun"
+        ]
+      },
+      "verified": "The exact 143.61-second Stage 10P Sunset interval contains 35 timestamped transcript utterances (34 Hansen, one Wiseman) about the Sun, Moon, glow, plume, and streamer. Related utterances bracket the interval by 2.084 seconds before and 0.013 seconds after.",
+      "decision_use": "This independent execution record supports calling the concentration microcase one time-bounded observation episode. It makes the grouping hazard concrete without establishing semantic scene identity or visual redundancy.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+        "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+        "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+        "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+      },
+      "checks": [
+        {
+          "id": "stage10p_cluster_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_identity",
+          "pass": true
+        },
+        {
+          "id": "transcript_interval_alignment",
+          "pass": true,
+          "derived": {
+            "inside_utterances": 35,
+            "inside_speaker_counts": {
+              "Hansen": 34,
+              "Wiseman": 1
+            },
+            "first_inside_utc": "2026-04-07T00:34:36.342Z",
+            "first_inside_offset_seconds": 1.802,
+            "last_inside_utc": "2026-04-07T00:36:52.164Z",
+            "last_inside_lead_seconds": 5.986,
+            "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+            "nearest_prior_lead_seconds": 2.084,
+            "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+            "nearest_after_offset_seconds": 0.013,
+            "required_inside_terms": [
+              "streamer",
+              "plume",
+              "glow",
+              "moon",
+              "sun"
+            ]
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "episode_kind": "time_bounded_observation_episode",
+            "visual_redundancy_established": false,
+            "transcript_kind": "independent_execution_record",
+            "speaker_camera_attribution": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "one_verified_cohort_episode",
+            "performance_effect_inferred": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, visual, attribution, leakage, scope, performance, discovery, priority, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

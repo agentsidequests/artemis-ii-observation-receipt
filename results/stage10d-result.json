@@ -1,0 +1,1324 @@
+{
+  "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_MULTI_UNIT_ARCHIVE_WITH_HEADLINE_CONSISTENT_SUBTOTAL",
+  "mission_products": 32133,
+  "mission_bytes": 2526790075510,
+  "mission_decimal_terabytes": 2.52679007551,
+  "bundle_counts": {
+    "artemis2_crew_camera": 30987,
+    "artemis2_orion_camera": 1034,
+    "artemis2_mission_audio": 112
+  },
+  "bundle_bytes": {
+    "artemis2_crew_camera": 2483983778461,
+    "artemis2_orion_camera": 42021916455,
+    "artemis2_mission_audio": 784380594
+  },
+  "crew_collection_counts": {
+    "data_processed": 10329,
+    "data_raw": 10329,
+    "data_source": 10329
+  },
+  "crew_collection_bytes": {
+    "data_processed": 1692902139098,
+    "data_raw": 567936940640,
+    "data_source": 223144698723
+  },
+  "mission_bytes_excluding_processed_crew_collection": 833887936412,
+  "nonprocessed_decimal_gigabytes": 833.887936412,
+  "forward_look_product_records": 6,
+  "forward_look_internal_ids": [
+    "art002e015902",
+    "art002e015908"
+  ],
+  "forward_look_action_product_records": 30,
+  "forward_look_action_internal_ids": 10,
+  "forward_look_action_collection_counts": {
+    "data_raw": 10,
+    "data_processed": 10,
+    "data_source": 10
+  },
+  "forward_look_action_activity_counts": {
+    "24_Sunset": 24,
+    "25_Discussion #6: Forward Look": 6
+  },
+  "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+  "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+  "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+  "next_step_logic": {
+    "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+    "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+    "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+    "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+  },
+  "checks": [
+    {
+      "id": "source_identity",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "exact_atlas_product_footprint",
+      "pass": true,
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      }
+    },
+    {
+      "id": "headline_consistent_subtotal",
+      "pass": true,
+      "bytes": 833887936412,
+      "decimal_gigabytes": 833.887936412
+    },
+    {
+      "id": "official_statement_and_product_semantics",
+      "pass": true
+    },
+    {
+      "id": "bounded_activity_representation_multiplication",
+      "pass": true,
+      "product_records": 6,
+      "internal_id_counts": {
+        "art002e015902": 3,
+        "art002e015908": 3
+      },
+      "collection_counts": {
+        "data_raw": 2,
+        "data_processed": 2,
+        "data_source": 2
+      }
+    },
+    {
+      "id": "bounded_action_representation_multiplication",
+      "pass": true,
+      "product_records": 30,
+      "internal_ids": 10,
+      "collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "nasa_statement_declared_false": false,
+        "formula_declared_documented": false,
+        "representations_declared_independent_observations": false,
+        "products_collapsed_to_one_file": false,
+        "processed_omission_declared_intentional": false,
+        "global_identity_parity_claimed": false,
+        "snapshot_declared_permanent": false
+      },
+      "pixel_payload_bytes": 0
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_nasa_800gb_statement_false": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "call_nasa_800gb_statement_false",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": true,
+            "formula_declared_documented": false,
+            "representations_declared_independent_observations": false,
+            "products_collapsed_to_one_file": false,
+            "processed_omission_declared_intentional": false,
+            "global_identity_parity_claimed": false,
+            "snapshot_declared_permanent": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    },
+    "claim_nasa_documented_the_accounting_formula": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "claim_nasa_documented_the_accounting_formula",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": false,
+            "formula_declared_documented": true,
+            "representations_declared_independent_observations": false,
+            "products_collapsed_to_one_file": false,
+            "processed_omission_declared_intentional": false,
+            "global_identity_parity_claimed": false,
+            "snapshot_declared_permanent": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    },
+    "count_each_representation_as_an_independent_observation": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "count_each_representation_as_an_independent_observation",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": false,
+            "formula_declared_documented": false,
+            "representations_declared_independent_observations": true,
+            "products_collapsed_to_one_file": false,
+            "processed_omission_declared_intentional": false,
+            "global_identity_parity_claimed": false,
+            "snapshot_declared_permanent": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    },
+    "collapse_three_products_into_one_downloadable_file": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "collapse_three_products_into_one_downloadable_file",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": false,
+            "formula_declared_documented": false,
+            "representations_declared_independent_observations": false,
+            "products_collapsed_to_one_file": true,
+            "processed_omission_declared_intentional": false,
+            "global_identity_parity_claimed": false,
+            "snapshot_declared_permanent": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    },
+    "claim_processed_products_were_intentionally_omitted": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "claim_processed_products_were_intentionally_omitted",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": false,
+            "formula_declared_documented": false,
+            "representations_declared_independent_observations": false,
+            "products_collapsed_to_one_file": false,
+            "processed_omission_declared_intentional": true,
+            "global_identity_parity_claimed": false,
+            "snapshot_declared_permanent": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    },
+    "generalize_two_action_identity_to_every_product": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "generalize_two_action_identity_to_every_product",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": false,
+            "formula_declared_documented": false,
+            "representations_declared_independent_observations": false,
+            "products_collapsed_to_one_file": false,
+            "processed_omission_declared_intentional": false,
+            "global_identity_parity_claimed": true,
+            "snapshot_declared_permanent": false
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    },
+    "claim_atlas_snapshot_is_permanent": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "claim_atlas_snapshot_is_permanent",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": false,
+            "formula_declared_documented": false,
+            "representations_declared_independent_observations": false,
+            "products_collapsed_to_one_file": false,
+            "processed_omission_declared_intentional": false,
+            "global_identity_parity_claimed": false,
+            "snapshot_declared_permanent": true
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_to_reconcile_archive_units": {
+      "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+      "mutation": "open_pixels_to_reconcile_archive_units",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "mission_products": 32133,
+      "mission_bytes": 2526790075510,
+      "mission_decimal_terabytes": 2.52679007551,
+      "bundle_counts": {
+        "artemis2_crew_camera": 30987,
+        "artemis2_orion_camera": 1034,
+        "artemis2_mission_audio": 112
+      },
+      "bundle_bytes": {
+        "artemis2_crew_camera": 2483983778461,
+        "artemis2_orion_camera": 42021916455,
+        "artemis2_mission_audio": 784380594
+      },
+      "crew_collection_counts": {
+        "data_processed": 10329,
+        "data_raw": 10329,
+        "data_source": 10329
+      },
+      "crew_collection_bytes": {
+        "data_processed": 1692902139098,
+        "data_raw": 567936940640,
+        "data_source": 223144698723
+      },
+      "mission_bytes_excluding_processed_crew_collection": 833887936412,
+      "nonprocessed_decimal_gigabytes": 833.887936412,
+      "forward_look_product_records": 6,
+      "forward_look_internal_ids": [
+        "art002e015902",
+        "art002e015908"
+      ],
+      "forward_look_action_product_records": 30,
+      "forward_look_action_internal_ids": 10,
+      "forward_look_action_collection_counts": {
+        "data_raw": 10,
+        "data_processed": 10,
+        "data_source": 10
+      },
+      "forward_look_action_activity_counts": {
+        "24_Sunset": 24,
+        "25_Discussion #6: Forward Look": 6
+      },
+      "verified_interpretation": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+      "bounded_inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting\u2014but not proving\u2014that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+      "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+      "next_step_logic": {
+        "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+        "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+        "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+        "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "exact_atlas_product_footprint",
+          "pass": true,
+          "mission_products": 32133,
+          "mission_bytes": 2526790075510,
+          "bundle_counts": {
+            "artemis2_crew_camera": 30987,
+            "artemis2_orion_camera": 1034,
+            "artemis2_mission_audio": 112
+          },
+          "bundle_bytes": {
+            "artemis2_crew_camera": 2483983778461,
+            "artemis2_orion_camera": 42021916455,
+            "artemis2_mission_audio": 784380594
+          },
+          "crew_collection_counts": {
+            "data_processed": 10329,
+            "data_raw": 10329,
+            "data_source": 10329
+          },
+          "crew_collection_bytes": {
+            "data_processed": 1692902139098,
+            "data_raw": 567936940640,
+            "data_source": 223144698723
+          }
+        },
+        {
+          "id": "headline_consistent_subtotal",
+          "pass": true,
+          "bytes": 833887936412,
+          "decimal_gigabytes": 833.887936412
+        },
+        {
+          "id": "official_statement_and_product_semantics",
+          "pass": true
+        },
+        {
+          "id": "bounded_activity_representation_multiplication",
+          "pass": true,
+          "product_records": 6,
+          "internal_id_counts": {
+            "art002e015902": 3,
+            "art002e015908": 3
+          },
+          "collection_counts": {
+            "data_raw": 2,
+            "data_processed": 2,
+            "data_source": 2
+          }
+        },
+        {
+          "id": "bounded_action_representation_multiplication",
+          "pass": true,
+          "product_records": 30,
+          "internal_ids": 10,
+          "collection_counts": {
+            "data_raw": 10,
+            "data_processed": 10,
+            "data_source": 10
+          },
+          "activity_counts": {
+            "24_Sunset": 24,
+            "25_Discussion #6: Forward Look": 6
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "nasa_statement_declared_false": false,
+            "formula_declared_documented": false,
+            "representations_declared_independent_observations": false,
+            "products_collapsed_to_one_file": false,
+            "processed_omission_declared_intentional": false,
+            "global_identity_parity_claimed": false,
+            "snapshot_declared_permanent": false
+          },
+          "pixel_payload_bytes": 1
+        }
+      ],
+      "errors": [
+        "A prohibited accusation, provenance, intent, identity, permanence, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

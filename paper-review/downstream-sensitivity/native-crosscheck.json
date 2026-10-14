@@ -1,0 +1,55 @@
+{
+  "status": "VERIFIED_IMPLEMENTATION_DIVERSE_ROW_RECOUNT",
+  "verified_input_pins": 17,
+  "exact_witness_rows": 15,
+  "retained_products": 22803,
+  "retained_capture_keys": 7601,
+  "retained_actions": 2165,
+  "relationship_bins": {
+    "test_products": 4509,
+    "capture_linked_test_products": 4305,
+    "action_only_linked_test_products": 204,
+    "action_isolated_test_products": 0
+  },
+  "source_field_counts": {
+    "tagged": 3408,
+    "blank": 4193,
+    "sunset": 1553
+  },
+  "selected_action_counts": {
+    "selected": 914,
+    "sunset": 311
+  },
+  "selected_bytes_by_tier": {
+    "data_source": {
+      "selected": 69880183372,
+      "sunset": 34446621949,
+      "sunset_share": 0.4929383451332252
+    },
+    "data_raw": {
+      "selected": 178181754624,
+      "sunset": 94177910368,
+      "sunset_share": 0.5285496854980168
+    },
+    "data_processed": {
+      "selected": 531070725792,
+      "sunset": 280774484834,
+      "sunset_share": 0.5286950893692615
+    }
+  },
+  "removed_bytes_by_tier": {
+    "data_source": 151040000,
+    "data_raw": 457062880,
+    "data_processed": 1363439690
+  },
+  "combined_selected_bytes": 779132663788,
+  "combined_sunset_bytes": 409399017151,
+  "completion_majority_needed": 2248.0,
+  "retained_active_windows": 36,
+  "affected_original_plan_orders": [
+    "28",
+    "29"
+  ],
+  "independence_limit": "Native CSV field, identity, split-bin, count, byte, share, bound and overlap recount only. Does not independently reconstruct camera paths, derive concentration/cluster formulas or validate physical identity, content labels or scientific acceptance.",
+  "script_sha256": "990fadbd725a6efadf5e126da4c704015e5c3acd7a76ef6da84f75e7f9537f6d"
+}

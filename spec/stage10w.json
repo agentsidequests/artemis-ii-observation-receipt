@@ -1,0 +1,70 @@
+{
+  "testbed_id": "artemis2-target-tag-selection-stage10w",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T14:36:00Z",
+  "question": "Are nonblank target tags a representative label set for the complete-action cohort, or is tag presence itself strongly structured by acquisition context?",
+  "terminal_objective": "Pressure-test the Stage 10U camera-target canary and any future supervised target task by measuring target-tag coverage without treating blank tags as negative labels or opening pixels.",
+  "method": "Use one source-representation row per verified exposure, reduce target_id to present versus blank, measure coverage by camera and scheduled activity, and score only an explicitly in-sample activity-majority diagnostic lookup against the global majority state.",
+  "authority": "Private local metadata and document analysis only. No pixels, target imputation, ground-truth claim, random-missingness claim, labeler-intent claim, held-out prediction claim, archive-wide class-prevalence claim, publication, scientific-discovery claim, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10u_spec_path": "spec/stage10u.json",
+    "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "data_user_guide_path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "source_exposures": 7606,
+    "target_tag_present": 3413,
+    "target_tag_blank": 4193,
+    "target_tag_coverage": 0.4487246910333947,
+    "activity_values": 45,
+    "zero_coverage_activities": 17,
+    "zero_coverage_exposures": 1397,
+    "full_coverage_activities": 8,
+    "full_coverage_exposures": 1676,
+    "partial_coverage_activities": 20,
+    "partial_coverage_exposures": 4533,
+    "activity_tag_presence_cramers_v": 0.8204646313259204,
+    "activity_tag_presence_mutual_information_bits": 0.6421857066071989,
+    "activity_majority_lookup_correct": 6654,
+    "activity_majority_lookup_accuracy": 0.8748356560610044,
+    "global_majority_state_accuracy": 0.5512753089666053,
+    "activity_lookup_accuracy_lift": 0.3235603470943992,
+    "camera_tag_presence_cramers_v": 0.1929268299049601,
+    "camera_tag_presence_mutual_information_bits": 0.02704209912109003,
+    "sunset_tagged_exposures": 1553,
+    "sunset_share_of_tagged_exposures": 0.455024904775857
+  },
+  "frozen_examples": {
+    "24_Sunset": {"exposures": 1294, "tagged": 1294},
+    "12_Orientale Basin (2/2)": {"exposures": 399, "tagged": 0},
+    "07_Whole Moon": {"exposures": 456, "tagged": 3},
+    "h_Observation Break": {"exposures": 284, "tagged": 259}
+  },
+  "camera_coverage": {
+    "3500015": {"exposures": 6269, "tagged": 2602, "coverage": 0.4150582230020737},
+    "3500017": {"exposures": 256, "tagged": 77, "coverage": 0.30078125},
+    "3920019": {"exposures": 1081, "tagged": 734, "coverage": 0.6790009250693803}
+  },
+  "hard_negatives": [
+    "call_blank_tags_negative_examples",
+    "call_target_tags_ground_truth",
+    "call_missingness_random",
+    "infer_labeler_intent",
+    "impute_targets_from_activity",
+    "call_activity_lookup_held_out_model",
+    "attribute_stage10u_association_only_to_acquisition",
+    "generalize_tagged_class_prevalence_to_archive",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_tag_selection_canary"
+  ],
+  "claim_ceiling": "Stage 10W may establish that target tags are present for 3,413 of 7,606 source exposures in the verified complete-action cohort and that tag presence is strongly nonuniform across scheduled activities and more modestly nonuniform across cameras. It may qualify Stage 10U by showing that camera-target association in the tagged subset can reflect both acquisition and curation structure. It cannot treat blanks as negative examples, validate the nonblank tags, call missingness statistically random or formally MNAR, infer labeler intent, impute targets, call an in-sample lookup a held-out model, estimate archive-wide target prevalence, inspect pixels, or claim scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_target_classification_is_selected": "Freeze the intended population, audit or relabel a task-native sample including blanks, and report label-presence baselines before training on target values.",
+    "if_tagged_subset_retrieval_is_selected": "The subset can support a scoped retrieval task if target tags are treated as curated navigation metadata rather than exhaustive truth.",
+    "if_plan_bounded_sunset_result_is_used": "Keep the plan boundary primary and target-tag unanimity corroborative; the fixed time window does not depend on filtering by target_id.",
+    "if_no_supervised_target_task_is_selected": "Preserve this as a selection-bias guard and do not manufacture labels from activity or camera metadata.",
+    "recheck_trigger": "A target-label audit, task-specific relabeling sample, revised PDS tags, or a public supervised Artemis II target model."
+  }
+}

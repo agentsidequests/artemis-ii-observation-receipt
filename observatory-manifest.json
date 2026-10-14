@@ -1,0 +1,55 @@
+{
+  "edition": "v9",
+  "new_science": false,
+  "publicly_published": false,
+  "source_data_sha256": "d41fe206bf1ece970c11e7a96e47e4ba605e97eec7f75a1d553a83e26160d3e1",
+  "base_v8_page_sha256": "86650bf1c81b0709a263b00d1d4b25efb6c408113e2488f17b0abc9fe37e8166",
+  "technical_notebook_sha256": "0098bfbd28c7e31f2a25165d4ade5825486a306ad6f5a00eba33fc6a74f0f268",
+  "media": [
+    {
+      "path": "presentation/media/art002e009301-nasa-public.jpg",
+      "sha256": "1bb6387479474ea44221dbb7627f603bf3ceb6e3c6ce2af5a75e7b50147bfe17",
+      "role": "Public-release eclipse JPEG; editorial context, not a flash image.",
+      "bytes": 75677,
+      "credit": "NASA / NASA PDS",
+      "unchanged": true
+    },
+    {
+      "path": "corpus/evidence/stage8b/art002e012264_nkd5015_prc_v01.png",
+      "sha256": "8b3eb98c789f69019a2a989d5e63d181dc6abe22fb4a0eb206114e616aa85433",
+      "role": "Existing NASA/PDS browse image, unchanged. Display-only zoom; not a Sunset image or new measurement.",
+      "bytes": 8842542,
+      "credit": "NASA / NASA PDS",
+      "unchanged": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "presentation/observatory/index.html",
+      "bytes": 24116,
+      "sha256": "5258a1f17589fbc87003f670ba37461eb24f3c55153ade9b3d0196b8fd90dbd7"
+    },
+    {
+      "path": "presentation/observatory/style.css",
+      "bytes": 30740,
+      "sha256": "ec784925cbb7ae1d4df7d64a54316d753b636d251f017e9aa8c75e0ec650f0fd"
+    },
+    {
+      "path": "presentation/observatory/app.js",
+      "bytes": 14874,
+      "sha256": "ccc42c021f34a55a33dd4e199f0706e73b254f60ee80d9cca17625ce3609f871"
+    },
+    {
+      "path": "presentation/reader.js",
+      "bytes": 8669,
+      "sha256": "936a9c0490d4c84e0b8d2170a5fbf1d8cd656f0c1331571dc0e7afe3a35ed364"
+    }
+  ],
+  "files": [
+    {
+      "path": "Artemis-II-Interactive-Field-Guide-v9-2026-10-14.html",
+      "bytes": 12269878,
+      "sha256": "fab010c6da048df873e0257145bbbe42e2cb4ea5e0679e7735e8ee41f9cdb0fb"
+    }
+  ]
+}

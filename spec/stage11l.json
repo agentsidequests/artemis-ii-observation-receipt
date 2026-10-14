@@ -1,0 +1,103 @@
+{
+  "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T21:30:00Z",
+  "question": "Can a compact deterministic receipt distinguish a product-level split that fractures declared relationships from action- and temporal-group-preserving alternatives on the verified cohort?",
+  "terminal_objective": "Test the proposed validation mechanism itself on one frozen metadata-only canary, without treating the canary partition as a scientifically valid task split or evidence about any deployed pipeline.",
+  "engineering_contract": {
+    "subject": "A deterministic assignment artifact and content-bound receipt for the Stage 10O relationship manifest.",
+    "baseline": "Assign each product independently from a stable hash of product_id.",
+    "treatments": [
+      "Assign all products in one reconstructed complete action from a stable hash of action_id.",
+      "Assign all products in one conditional five-second same-camera temporal group from a stable hash of temporal_cluster_5s."
+    ],
+    "frozen_task": "Mechanically test preservation of the declared action and conditional five-second relationship keys under an 80/20 train/test canary.",
+    "oracle": "Recompute every assignment from the frozen source bytes, seed, algorithm, and declared key; then count whether each protected key spans more than one partition.",
+    "hard_negative": "A product-keyed artifact must not pass an action-preservation claim, and an action-keyed artifact must not pass a five-second-group-preservation claim.",
+    "rollback": "If the receipt cannot detect assignment, source-identity, completeness, or claim-boundary mutations, keep the public recommendation conceptual and do not cite this stage."
+  },
+  "authority": "Private local deterministic metadata analysis only. No pixels, model training, publication, outreach, semantic-scene claim, operational NASA claim, observed-leakage claim, or performance-effect claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "relationship_manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "relationship_manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+    "assignment_artifact_path": "results/stage11l-split-assignments.csv",
+    "receipt_path": "results/stage11l-split-receipt.json",
+    "pixel_payload_bytes": 0
+  },
+  "algorithm": {
+    "name": "sha256-group-threshold",
+    "version": "1.0.0",
+    "seed": "artemis2-split-receipt-canary-v1",
+    "hash_input": "utf8(seed + NUL + grouping_key)",
+    "decision": "train when the unsigned big-endian integer represented by the first eight digest bytes is below floor(2^64 * 4 / 5); test otherwise",
+    "train_numerator": 4,
+    "train_denominator": 5
+  },
+  "frozen_observables": {
+    "products": 22818,
+    "complete_actions": 2166,
+    "temporal_5s_groups": 816,
+    "assignment_bytes": 4573289,
+    "assignment_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+    "receipt_bytes": 4216,
+    "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+    "policies": {
+      "product_key": {
+        "grouping_key": "product_id",
+        "products_by_partition": {"test": 4511, "train": 18307},
+        "test_product_share": 0.1976948023490227,
+        "actions_visible_by_partition": {"test": 1937, "train": 2166},
+        "temporal_5s_groups_visible_by_partition": {"test": 762, "train": 816},
+        "crossing_action_groups": 1937,
+        "products_in_crossing_action_groups": 20601,
+        "crossing_temporal_5s_groups": 762,
+        "actions_in_crossing_temporal_5s_groups": 2105,
+        "products_in_crossing_temporal_5s_groups": 22251
+      },
+      "action_key": {
+        "grouping_key": "action_id",
+        "products_by_partition": {"test": 4314, "train": 18504},
+        "test_product_share": 0.18906126742045753,
+        "actions_visible_by_partition": {"test": 416, "train": 1750},
+        "temporal_5s_groups_visible_by_partition": {"test": 271, "train": 702},
+        "crossing_action_groups": 0,
+        "products_in_crossing_action_groups": 0,
+        "crossing_temporal_5s_groups": 157,
+        "actions_in_crossing_temporal_5s_groups": 1216,
+        "products_in_crossing_temporal_5s_groups": 13236
+      },
+      "temporal_5s_key": {
+        "grouping_key": "temporal_cluster_5s",
+        "products_by_partition": {"test": 4431, "train": 18387},
+        "test_product_share": 0.19418879831711808,
+        "actions_visible_by_partition": {"test": 417, "train": 1749},
+        "temporal_5s_groups_visible_by_partition": {"test": 163, "train": 653},
+        "crossing_action_groups": 0,
+        "products_in_crossing_action_groups": 0,
+        "crossing_temporal_5s_groups": 0,
+        "actions_in_crossing_temporal_5s_groups": 0,
+        "products_in_crossing_temporal_5s_groups": 0
+      }
+    }
+  },
+  "hard_negatives": [
+    "mismatch_source_hash",
+    "tamper_partition_assignment",
+    "drop_assignment_row",
+    "misdeclare_product_policy_as_action_safe",
+    "call_temporal_groups_semantic_scenes",
+    "call_crossing_observed_model_leakage",
+    "infer_model_performance_effect",
+    "claim_five_seconds_is_universal",
+    "open_pixels_for_split_canary"
+  ],
+  "claim_ceiling": "Stage 11L may establish that one deterministic canary assignment and its validator preserve or fracture the declared action and conditional five-second relationship keys exactly as reported, and that the content-bound receipt rejects the tested source, assignment, completeness, policy, semantic, leakage, performance, universality, and pixel-access mutations. It cannot establish that five seconds defines a semantic scene, that the canary is a valid split for a scientific task, that any real pipeline leaked information, that preserving declared groups guarantees independence, that model performance changes, that the proposed fields are operationally sufficient for NASA or PDS, or that the mechanism is globally novel.",
+  "next_step_logic": {
+    "if_receipt_verifies": "Use the canary as executable evidence that the proposed receipt can detect declared-group fractures; keep actual task validity and specialist acceptance separate.",
+    "if_action_split_crosses_temporal_groups": "State explicitly that action protection is necessary for this cohort but insufficient for a task that declares the five-second relation relevant.",
+    "if_any_mutation_is_accepted": "Do not cite the receipt as an executable recommendation; repair the validator or narrow the recommendation.",
+    "if_a_real_model_task_is_proposed": "Replace the conditional temporal key with the task-native dependence oracle, freeze labels and transformations, and issue a new receipt rather than reusing this canary assignment.",
+    "recheck_trigger": "A real task, revised relationship manifest, authoritative episode identifier, specialist correction, or changed split algorithm."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "testbed_id": "artemis2-task-conditioned-unit-ladder-stage10t",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T14:00:00Z",
+  "question": "What sample count and split are defensible for different tasks applied to the plan-bounded Sunset block?",
+  "terminal_objective": "Turn the plan-bounded concentration into an explicit estimand decision rather than prescribing one universal deduplication or split rule.",
+  "method": "Replay Stage 10S, freeze its nested candidate-unit counts, enumerate all train/test allocations of the single scheduled Sunset event, and separate new-event generalization from within-event and representation-level tasks.",
+  "authority": "Private local deterministic analysis only. No pixels, model training, publication, independence claim for candidate units, actual leakage claim, performance estimate, universal split prescription, scientific-discovery claim, or cross-mission generalization.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10s_spec_path": "spec/stage10s.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "archive_products": 2535,
+    "exposure_identities": 845,
+    "complete_actions": 169,
+    "conditional_five_second_clusters": 24,
+    "scheduled_sunset_events": 1,
+    "product_to_event_ratio": 2535.0,
+    "exposure_to_event_ratio": 845.0,
+    "action_to_event_ratio": 169.0,
+    "cluster_to_event_ratio": 24.0,
+    "possible_binary_event_allocations": 2,
+    "valid_two_sided_event_allocations": 0,
+    "invalid_within_event_substitutions": 4
+  },
+  "unit_ladder": [
+    {
+      "unit": "archive_product",
+      "count": 2535,
+      "valid_for": "retrieval, storage, and representation-specific processing",
+      "not_established": "independent observations"
+    },
+    {
+      "unit": "exposure_identity",
+      "count": 845,
+      "valid_for": "keeping source, raw, and processed forms of one exposure together",
+      "not_established": "independence from bracket siblings or nearby exposures"
+    },
+    {
+      "unit": "complete_camera_action",
+      "count": 169,
+      "valid_for": "keeping each five-exposure bracket action together",
+      "not_established": "independence from adjacent actions, the other camera, or the event"
+    },
+    {
+      "unit": "conditional_five_second_same_camera_cluster",
+      "count": 24,
+      "valid_for": "one declared same-camera temporal-adjacency sensitivity",
+      "not_established": "semantic scene or cross-camera episode independence"
+    },
+    {
+      "unit": "scheduled_sunset_event",
+      "count": 1,
+      "valid_for": "new-Sunset-event split boundary within the mission plan",
+      "not_established": "cross-mission representativeness or a universal episode oracle"
+    }
+  ],
+  "task_routes": {
+    "new_sunset_event_generalization": "No two-sided internal event split is feasible. Hold this event entirely in train or test and obtain a second comparable event for the other side, or narrow the claim.",
+    "within_event_temporal_generalization": "A time-forward or blocked holdout may be appropriate after freezing horizon, gap, camera relations, and the narrower within-event estimand.",
+    "representation_or_hdr_task": "Group at least by exposure or complete bracket action according to what the target uses; do not split sibling representations or bracket exposures across partitions.",
+    "retrieval_or_storage_task": "Product and byte counts are valid workload units, but they are not scientific sample counts."
+  },
+  "hard_negatives": [
+    "call_every_unit_independent",
+    "choose_one_universal_unit",
+    "claim_event_level_modeling_impossible",
+    "call_within_event_evaluation_invalid",
+    "invent_second_sunset_event",
+    "call_hypothetical_split_observed_leakage",
+    "infer_model_performance_effect",
+    "claim_cross_mission_representativeness",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_unit_ladder"
+  ],
+  "claim_ceiling": "Stage 10T may establish that the same fixed eight-minute block has five task-relevant counts—2,535 products, 845 exposure identities, 169 complete bracket actions, 24 conditional same-camera bursts, and one scheduled Sunset event—and that none is a universal independent-sample count. With one event, there are two binary whole-event allocations and zero allocations that put at least one distinct Sunset event in both train and test. Splitting at any finer listed level can support only a narrower within-event or representation-level estimand, not new-Sunset-event generalization. It cannot establish visual similarity, independence at any listed level, actual leakage, model performance, a universally correct split, cross-mission representativeness, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_public_analysis_is_later_authorized": "Frame the result as task-conditioned sample size and a one-event evaluation impossibility, not as generic duplicate removal or a claim that the archive is flawed.",
+    "if_new_event_generalization_is_the_task": "Require a second comparable event or external dataset before estimating performance; keep the Artemis II Sunset event wholly on one side.",
+    "if_within_event_modeling_is_the_task": "Freeze the prediction horizon, temporal gap, camera coupling, action grouping, and deployment surface before partitioning.",
+    "if_no_model_task_is_selected": "Preserve the ladder and stop; do not create arbitrary train/test membership merely because the manifest can support it.",
+    "recheck_trigger": "A real model task, a second comparable event, or an authoritative episode identifier."
+  }
+}

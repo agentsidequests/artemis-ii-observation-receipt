@@ -1,0 +1,105 @@
+{
+  "testbed_id": "artemis2-task-readiness-separation-stage10x",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T14:45:00Z",
+  "question": "Which concrete analysis tasks are supportable by the current Artemis II crew-camera archive, and which fail for distinct reasons that no single generic train/test split can repair?",
+  "terminal_objective": "Compress the unit, label, camera, and representation findings into a falsifiable task-readiness map without calling the archive globally ready or unready.",
+  "method": "Replay Stages 10T through 10W, then require each candidate task to name its estimand, admissible evidence unit, current status, limiting boundary, and smallest evidence addition that could change that status.",
+  "authority": "Private local evidence synthesis only. No pixels, model training, benchmark construction, publication, archive-quality verdict, scientific-discovery claim, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "required_prior_states": {
+      "stage10t": "VERIFIED_TASK_CONDITIONED_UNIT_LADDER",
+      "stage10u": "VERIFIED_CAMERA_TARGET_ASSOCIATION_CANARY",
+      "stage10v": "VERIFIED_STORAGE_WEIGHT_NOT_CALIBRATION_LEVEL",
+      "stage10w": "VERIFIED_NONUNIFORM_TARGET_TAG_COVERAGE"
+    },
+    "pixel_payload_bytes": 0
+  },
+  "task_matrix": [
+    {
+      "task": "archive_retrieval_and_footprint_audit",
+      "status": "SUPPORTED_NOW",
+      "estimand": "product retrieval burden, representation inventory, and source-to-product relationships",
+      "admissible_unit": "archive product, exposure identity, or byte count when explicitly named",
+      "limiting_boundary": "not a scientific image-content or independent-sample claim",
+      "status_changer": "No additional evidence is required for the frozen cohort; re-run if the archive changes."
+    },
+    {
+      "task": "within_identity_representation_transformation",
+      "status": "SUPPORTED_NOW_WITH_CLAIM_LIMIT",
+      "estimand": "differences among source, raw, and processed representations of the same exposure",
+      "admissible_unit": "exposure identity with sibling representations kept together",
+      "limiting_boundary": "processed is an uncalibrated vendor interpretation, not physical truth",
+      "status_changer": "A task-specific pixel oracle can support a bounded transformation claim; calibration is separately required for physical measurement."
+    },
+    {
+      "task": "within_event_temporal_or_hdr_modeling",
+      "status": "CONDITIONALLY_SUPPORTABLE",
+      "estimand": "prediction or reconstruction within the single scheduled Sunset event",
+      "admissible_unit": "time-blocked action or larger task-native temporal group",
+      "limiting_boundary": "horizon, gap, camera coupling, target construction, and representation are not yet frozen",
+      "status_changer": "Freeze a deployment-shaped protocol and pixel-level oracle; keep the claim within this event."
+    },
+    {
+      "task": "supervised_archive_target_classification",
+      "status": "NOT_YET_SUPPORTABLE",
+      "estimand": "target classification over a declared archive population",
+      "admissible_unit": "event-safe groups from a task-specific audited label population",
+      "limiting_boundary": "only 44.872% of cohort exposures are tagged; coverage is activity-structured and camera is predictive inside the curated subset",
+      "status_changer": "Audit or relabel a population that includes blanks, define deployment prevalence, and require camera-only plus event-aware controls."
+    },
+    {
+      "task": "new_sunset_event_generalization",
+      "status": "NOT_INTERNALLY_IDENTIFIABLE",
+      "estimand": "performance on a distinct future or external Sunset event",
+      "admissible_unit": "whole scheduled Sunset event",
+      "limiting_boundary": "the mission plan contains one Sunset event, yielding zero two-sided internal event allocations",
+      "status_changer": "Obtain a second comparable event or external dataset and keep whole events on opposite sides."
+    },
+    {
+      "task": "calibrated_color_or_photometry",
+      "status": "NOT_SUPPORTED_BY_ARCHIVED_TIERS_ALONE",
+      "estimand": "instrument-independent color or physical radiometric quantity",
+      "admissible_unit": "externally calibrated measurement tied to a validated instrument response",
+      "limiting_boundary": "the official guide provides no calibrated products and warns that processed color cannot be completely verified or quantified",
+      "status_changer": "Supply and validate an external calibration chain appropriate to the intended physical quantity."
+    }
+  ],
+  "frozen_summary": {
+    "tasks": 6,
+    "supported_now": 1,
+    "supported_now_with_claim_limit": 1,
+    "conditionally_supportable": 1,
+    "not_yet_supportable": 1,
+    "not_internally_identifiable": 1,
+    "not_supported_by_archived_tiers_alone": 1,
+    "independent_blocker_families": 4
+  },
+  "blocker_families": {
+    "unit_and_event": "The deployment unit determines the sample count; one event cannot estimate new-event generalization.",
+    "label_population": "Manual subset tagging does not define an exhaustive supervised population, and blanks are unknown rather than negatives.",
+    "acquisition_context": "Camera identity is a meaningful metadata baseline inside the tagged subset, with acquisition and curation mechanisms unresolved.",
+    "measurement_level": "Source, raw, and processed tiers answer different representation questions; none alone is calibrated physical measurement."
+  },
+  "hard_negatives": [
+    "call_archive_globally_benchmark_ready",
+    "call_archive_globally_unusable",
+    "call_retrieval_a_scientific_model",
+    "call_within_event_new_event_generalization",
+    "use_blank_tags_as_negative_labels",
+    "omit_camera_only_baseline",
+    "call_processed_tier_calibrated",
+    "claim_one_split_repairs_all_boundaries",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_readiness_synthesis"
+  ],
+  "claim_ceiling": "Stage 10X may establish that current Artemis II crew-camera evidence has task-dependent readiness: retrieval accounting and bounded within-identity representation work are supportable now; within-event modeling is conditional on a task-native protocol; archive-wide target classification is not yet supportable from the curated tags; new-Sunset-event generalization is not internally identifiable from one event; and calibrated color or photometry is not supported by the archived tiers alone. These limitations arise from at least four distinct boundary families, so no single generic split repairs them. It cannot call the archive globally benchmark-ready, globally unusable, scientifically defective, or incapable of future task-specific use; it cannot establish pixel similarity, actual leakage, model performance, label correctness, calibration, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_public_analysis_is_later_authorized": "Lead with the denominator collapse as the memorable case, then use the readiness matrix to show why task definition—not file volume—determines what can be learned.",
+    "if_a_real_benchmark_is_selected": "Choose one row, satisfy its exact status-changing evidence, and freeze a task-native acceptance contract before opening pixels or partitioning data.",
+    "if_new_event_generalization_is_required": "Seek external comparable events; do not relabel within-event fragments as independent events.",
+    "if_no_real_task_is_selected": "Preserve the map and stop; do not manufacture a generic benchmark.",
+    "recheck_trigger": "A concrete modeling task, audited label set, external comparable event, calibration chain, revised archive, or public Artemis II benchmark."
+  }
+}

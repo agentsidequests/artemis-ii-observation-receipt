@@ -1,0 +1,73 @@
+{
+  "testbed_id": "artemis2-byte-rank-factorization-stage11k",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T16:15:00Z",
+  "question": "Does byte prominence merely repeat product-count prominence, or add a distinct representation-size weight?",
+  "terminal_objective": "Cross-classify action-to-product and action-to-byte rank reversals across the same strictly comparable active-window pairs and factor bytes per action into products per action times mean bytes per product.",
+  "method": "Replay the Stage 11F active-window census and Stage 11J product-reversal attribution. For each pair with strict action, product, and byte orderings, classify whether product and byte order each reverse relative to actions. Verify the exact bytes/action identity for every window and freeze representative product-only and byte-only counterexamples.",
+  "authority": "Private local relationship and accounting analysis only. No pixels, representation-quality inference, scientific-importance ranking, actual sampler, observed model behavior, causal effect, universal correction, deletion recommendation, archive-wide extrapolation, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11f_spec_path": "spec/stage11f.json",
+    "stage11j_spec_path": "spec/stage11j.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "strictly_comparable_action_product_byte_pairs": 621,
+    "product_and_byte_reversals": 35,
+    "product_only_reversals": 3,
+    "byte_only_reversals": 24,
+    "neither_reverses": 559,
+    "total_product_reversals": 38,
+    "total_byte_reversals": 59,
+    "byte_reversal_overlap_with_product_reversal_share": 0.5932203389830508,
+    "byte_only_share_of_byte_reversals": 0.4067796610169492,
+    "all_window_byte_rates_factor_exactly": true
+  },
+  "frozen_examples": {
+    "product_only": {
+      "higher_action_order": "30",
+      "higher_action_name": "Sunrise",
+      "higher_action_actions": 74,
+      "higher_action_products": 744,
+      "higher_action_bytes": 59126259404,
+      "lower_action_order": "18",
+      "lower_action_name": "Earthset",
+      "lower_action_actions": 60,
+      "lower_action_products": 900,
+      "lower_action_bytes": 55013917328
+    },
+    "byte_only": {
+      "higher_action_order": "1",
+      "higher_action_name": "Guided Discussion",
+      "higher_action_actions": 12,
+      "higher_action_products": 108,
+      "higher_action_bytes": 6561769982,
+      "lower_action_order": "i",
+      "lower_action_name": "Crew Position Swap",
+      "lower_action_actions": 4,
+      "lower_action_products": 60,
+      "lower_action_bytes": 7880923304
+    }
+  },
+  "disposition": "ADMIT_BYTE_WEIGHT_AS_DISTINCT_ARCHIVE_LAYER",
+  "hard_negatives": [
+    "claim_byte_rank_is_scientific_importance",
+    "claim_mean_bytes_per_product_is_quality",
+    "claim_actual_sampler_is_uniform_bytes",
+    "claim_observed_model_bias",
+    "claim_causal_performance_effect",
+    "claim_one_universal_correct_weighting",
+    "recommend_discarding_large_products",
+    "generalize_to_unadmitted_archive_records",
+    "claim_novelty_or_priority",
+    "open_pixels_during_byte_factorization"
+  ],
+  "claim_ceiling": "Stage 11K may establish that among 621 strictly comparable active-window pairs, 35 reverse under both product and byte units, three reverse under products only, 24 reverse under bytes only, and 559 reverse under neither. It may establish the exact identity bytes/action = products/action × mean bytes/product and therefore show that byte prominence adds a distinct representation-size weight to protocol-derived product multiplicity. It cannot interpret byte size as quality or scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect, nominate a universal correction, recommend deletion, extend beyond admitted active windows, or make a novelty, priority, or physical-science claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Use product counts to explain protocol-derived sample weighting and bytes to explain retrieval burden; do not collapse the two into one mechanism.",
+    "if_a_model_task_is_selected": "Do not weight examples by storage bytes unless that estimand is explicit; preserve product sizes as metadata for retrieval and systems planning.",
+    "if_representation_encoding_or_inventory_changes": "Recompute the byte layer because mean bytes/product may change even when product counts do not.",
+    "recheck_trigger": "A revised window set, relationship manifest, representation inventory, encoding policy, or actual sampler."
+  }
+}

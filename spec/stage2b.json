@@ -1,0 +1,267 @@
+{
+  "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+  "version": "0.6.0",
+  "formed_at_utc": "2026-10-09T20:56:43Z",
+  "question": "Do small fixed-camera image sequences for Earthset, Sunset, and Sunrise reproduce the verified Earthrise availability-window non-overlap, or show a different placement relation?",
+  "method": "Testing and Validation",
+  "decisive_invariant": "Each event is scored independently from one hash-pinned SAW Cam 3 sequence and its PDS4 acquisition timestamps. Transcript cues may nominate the frozen neighborhood but may not define an image state, a physical transition, or an availability-window endpoint.",
+  "artifact_native_falsifier": "A frozen sequence shows a label-bound, strict 30-second cadence and an admissible limb/contact progression whose derived physical-event bracket has a different relation to the exact OTR availability window than Earthrise, or an event independently stops because the camera view cannot support that oracle.",
+  "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+  "environment": {
+    "runtime_contract": "Python 3 standard library only for acquisition receipts and scored verification.",
+    "network_contract": "Network is allowed for the three exact predeclared Atlas metadata queries and, only after actual product identities are frozen, the exact selected PDS files. Scored verification is local and network-free.",
+    "timezone_contract": "All timestamps are UTC. No local-time conversion is permitted.",
+    "source_policy": "Issue a one-byte HTTP range probe to each exact PDS URL, require a 206 response whose Content-Range declares the full size, and record the exact resolved delivery URL. Admit the full GET only when that declared size fits the per-file, per-event, and aggregate budget. Do not enumerate, widen, or substitute products after pixel inspection.",
+    "source_policy_recovery_note": "Version 0.4.0 stopped at zero body bytes because the official origin redirects HEAD to a delivery host that rejects HEAD with HTTP 403. Version 0.4.1 then showed that sequential product-number projection is invalid: the predicted first Earthset identity is absent while a known Earthrise identity remains range-readable. Version 0.4.2 froze three time-bounded Atlas metadata queries; Earthset resolved, but the exact Sunset query returned two consecutive zero-body 504 responses. Version 0.4.3 stops polling Atlas and freezes the 85,008-byte official raw-image collection inventory as the identity-only fallback before any frame payload is acquired."
+  },
+  "oracle": {
+    "kind": "fixed_camera_image_state_transitions",
+    "camera": "Orion Solar Array Wing Camera 3",
+    "sampling_seconds": 30,
+    "bundle_lidvid": "urn:nasa:pds:artemis2_orion_camera::1.0",
+    "archive_base": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/",
+    "independence": "PARTIALLY_INDEPENDENT",
+    "independence_note": "Transcript review nominated each small neighborhood. The scored states and times must come only from the fixed camera and its PDS4 labels."
+  },
+  "acquisition_budget": {
+    "aggregate_max_bytes": 100663296,
+    "max_files": 72,
+    "max_jpeg_bytes_each": 4194304,
+    "max_label_bytes_each": 65536,
+    "retry_policy": "No alternate product discovery or repeated broad retry. One retry of the same exact URL is permitted only after a zero-byte transient transport failure.",
+    "budget_stop": "Stop the affected event before the request that would exceed its ceiling; stop all acquisition before the request that would exceed the aggregate ceiling.",
+    "pixel_subset": {
+      "admitted_events": ["earthset", "sunset"],
+      "excluded_events": ["sunrise"],
+      "selected_frames": 12,
+      "max_files": 24,
+      "aggregate_max_bytes": 62914560,
+      "rule": "Acquire only the browse JPEG and browse label for each exact selected raw label. Sunrise stops before pixel acquisition."
+    }
+  },
+  "candidate_discovery": {
+    "endpoint": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+    "query_paths": {
+      "earthset": "evidence/stage2b/atlas-query-earthset.json",
+      "sunset": "evidence/stage2b/atlas-query-sunset.json",
+      "sunrise": "evidence/stage2b/atlas-query-sunrise.json"
+    },
+    "max_response_bytes_each": 2097152,
+    "max_hits_each": 100,
+    "selection_rule": "From each exact query response, retain only canonical artemis2_orion_camera data_raw_image products whose file name is SAW3 raw data, whose PDS acquisition start lies inside the frozen event range, and whose related browse product is present. Sort strictly by PDS acquisition start. Freeze the returned label, browse identity, and timestamps before any frame payload download.",
+    "stop_rule": "Stop that event before pixel acquisition if Atlas or the complete label scan cannot resolve a unique canonical SAW3 sequence inside the frozen range, or if the resolved sequence cannot structurally support the required transition and stability check. Initial projected frame counts are not source facts and do not override the complete label inventory.",
+    "inventory_fallback": {
+      "activation": "The exact Sunset Atlas query returned two consecutive HTTP 504 responses with zero response bytes.",
+      "url": "https://pds.nasa.gov/data/pds4/releases/img/artemis2_orion_camera-20261007/collection_data_raw_image_inventory.csv",
+      "expected_bytes_from_head": 85008,
+      "sha256": "159bbd98aea41c6cde8227fba6ce8cd26a6cb023ce2dcf894f07416e57c7d00c",
+      "max_bytes": 131072,
+      "scope": "Identity discovery only. Use the known hash-pinned Earthrise SAW3 frame as the time anchor, retain only inventory SAW3 raw-image identities, and require exact raw-label timestamps to confirm every selected frame before any browse image is admitted.",
+      "no_rescue": "Do not fetch the raw TIFF collection, enumerate other cameras, infer timestamps from product numbers alone, or widen an event window.",
+      "label_scan": {
+        "selection": "Every and only SAW3 raw-image member in the hash-pinned inventory; labels are metadata, not image payloads.",
+        "expected_members": 189,
+        "default_path_template": "data_raw_image/fd06/{inventory_product_stem}_v01.xml",
+        "path_overrides": [
+          {
+            "product_number_min": 31154,
+            "product_number_max": 31261,
+            "path_template": "data_raw_image/fd05/{inventory_product_stem}_v01.xml",
+            "basis": "Bounded one-byte probes of both contiguous-cluster endpoints resolved under fd05 and returned 403 under fd06. The directory is treated only as an archive route; the label's flight-day field remains separate evidence."
+          }
+        ],
+        "max_files": 189,
+        "max_label_bytes_each": 65536,
+        "aggregate_max_bytes": 3145728,
+        "event_selection": "After all admitted labels are local and hash-pinned, select only timestamps inside the three already-frozen event ranges. No product-number interpolation is allowed.",
+        "stop_rule": "Stop without pixels if any inventory member cannot be resolved under its frozen path, any label exceeds the caps, the aggregate cap would be exceeded, or label timestamps cannot identify a strict fixed-camera sequence for an event. Archive directory names and label-declared flight days are recorded independently and are not required to agree."
+      }
+    }
+  },
+  "otr": {
+    "path": "corpus/artemis2_outgoing_target_request.json",
+    "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+    "field_semantics": "observation_availability_window"
+  },
+  "events": [
+    {
+      "event_id": "earthset",
+      "target": "Earthset",
+      "rejected_sequential_projection": [16214, 16215, 16216, 16217, 16218, 16219, 16220, 16221],
+      "candidate_time_range_utc": ["2026-04-06T22:40:14Z", "2026-04-06T22:43:44Z"],
+      "initial_projected_frame_count": 8,
+      "selected_frame_count": 8,
+      "source_disposition": "ADMISSIBLE_SOURCE_SEQUENCE",
+      "max_bytes": 33554432,
+      "otr_start_utc": "2026-04-06T22:42:19.730197Z",
+      "otr_end_utc": "2026-04-06T22:45:36.380230Z",
+      "state_order": ["FULL_VISIBLE", "PARTIAL", "NOT_VISIBLE"],
+      "state_definitions": {
+        "FULL_VISIBLE": "The illuminated Earth footprint is fully separated from the lunar occulting limb in the stable fixed-camera region.",
+        "PARTIAL": "Illuminated Earth is visible but the lunar limb removes part of the stable pre-set footprint.",
+        "NOT_VISIBLE": "No illuminated Earth pixels are visible at the expected limb location while the fixed view remains interpretable."
+      },
+      "required_transition_brackets": ["occultation_onset", "complete_disappearance"],
+      "stability_requirement": "At least one pre-transition FULL_VISIBLE frame and one following NOT_VISIBLE frame after complete disappearance.",
+      "selected_frames": [
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016278_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:40:14Z", "bytes": 12068, "sha256": "6521e1c1d70b0f9a93a8a897f18d1504f6f832e8eb9f3d19886a4f69ba965f08"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016279_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:40:44Z", "bytes": 12069, "sha256": "421e05360a7554ab6e4d105de8a14e44a1b71584231c704b1ba7704e1f8ae677"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016280_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:41:14Z", "bytes": 12069, "sha256": "557036b3aa9672982b29f861d2b6eb282c409f653634b95b9685b983861e7320"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016281_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:41:44Z", "bytes": 12068, "sha256": "2e4f3f5ca0d01fef6a7b83fcafdfb6e066ad6cb6f2be2c621a4c1262026b54d1"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e009567_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:42:14Z", "bytes": 12068, "sha256": "a3f25db4afaddf797c8655bc0e70490c857be104785496abe65dd2a44e27cab3"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016282_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:42:44Z", "bytes": 12069, "sha256": "6bcf11088101174248efa3d3ffbaf3510d586d08a09c120d3513346e93b41a91"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016283_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:43:14Z", "bytes": 12068, "sha256": "ffaf658f50a42b5cf044753a59274000ed7068e0d704f3afae96e6e2be93485d"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016284_saw3_raw_v01.xml", "time_utc": "2026-04-06T22:43:44Z", "bytes": 12068, "sha256": "1a96fbca19e9380084053108895a27aeae388236884ebb6a5dc53a6ea0ee3355"}
+      ]
+    },
+    {
+      "event_id": "sunset",
+      "target": "Sunset",
+      "rejected_sequential_projection": [16438, 16439, 16440, 16441, 16442, 16443, 16444],
+      "candidate_time_range_utc": ["2026-04-07T00:32:14Z", "2026-04-07T00:35:14Z"],
+      "initial_projected_frame_count": 7,
+      "selected_frame_count": 4,
+      "source_disposition": "ADMISSIBLE_SOURCE_SEQUENCE",
+      "max_bytes": 29360128,
+      "otr_start_utc": "2026-04-07T00:35:08.308985Z",
+      "otr_end_utc": "2026-04-07T00:36:51.116085Z",
+      "state_order": ["SUN_VISIBLE", "PARTIAL", "SUN_OCCULTED"],
+      "state_definitions": {
+        "SUN_VISIBLE": "The direct solar photosphere is fully separated from the lunar occulting limb in the fixed-camera view.",
+        "PARTIAL": "The direct solar photosphere is visible but partly occulted by the lunar limb.",
+        "SUN_OCCULTED": "No direct solar photosphere is visible while the lunar limb remains identifiable; corona or glow does not count as photosphere."
+      },
+      "required_transition_brackets": ["occultation_onset", "complete_occultation"],
+      "stability_requirement": "At least one SUN_VISIBLE frame and one following SUN_OCCULTED frame after complete occultation.",
+      "selected_frames": [
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016305_saw3_raw_v01.xml", "time_utc": "2026-04-07T00:33:39Z", "bytes": 12068, "sha256": "a79b8e44bceb83c8be03f0920c2e8ccd90d2a49ce63d69bf5d7f29639dceb9d0"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016306_saw3_raw_v01.xml", "time_utc": "2026-04-07T00:34:09Z", "bytes": 12068, "sha256": "175fc081c5e5ed6d5c29eba02091452782a2227218dfa41cba9032af578dfdc0"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e009569_saw3_raw_v01.xml", "time_utc": "2026-04-07T00:34:39Z", "bytes": 12114, "sha256": "df5deb2a293b3ceed93a728d9c061ee3a74e7a31bb927dcdede57b8291b00fbf"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016307_saw3_raw_v01.xml", "time_utc": "2026-04-07T00:35:09Z", "bytes": 12050, "sha256": "294be5b3b073ff7fbe99b89b22d70dc182372ad3f8d0b57e79a94b284a1259d0"}
+      ]
+    },
+    {
+      "event_id": "sunrise",
+      "target": "Sunrise",
+      "rejected_sequential_projection": [16552, 16553, 16554, 16555, 16556, 16557, 16558, 16559, 16560],
+      "candidate_time_range_utc": ["2026-04-07T01:29:14Z", "2026-04-07T01:33:14Z"],
+      "initial_projected_frame_count": 9,
+      "selected_frame_count": 3,
+      "source_disposition": "NOT_ADMISSIBLE_CAMERA_VIEW",
+      "source_stop_reason": "The complete SAW3 label inventory contains only three frames in the frozen range, ending at 01:30:39Z. The frozen oracle requires a following SUN_VISIBLE stability frame after full clearance, so this sequence cannot attest both transition and stability without widening after observation.",
+      "max_bytes": 37748736,
+      "otr_start_utc": "2026-04-07T01:31:02.595594Z",
+      "otr_end_utc": "2026-04-07T01:33:11.253602Z",
+      "state_order": ["SUN_OCCULTED", "PARTIAL", "SUN_VISIBLE"],
+      "state_definitions": {
+        "SUN_OCCULTED": "No direct solar photosphere is visible while the lunar limb remains identifiable; corona or glow does not count as photosphere.",
+        "PARTIAL": "The direct solar photosphere is visible but partly occulted by the lunar limb.",
+        "SUN_VISIBLE": "The direct solar photosphere is fully separated from the lunar occulting limb in the fixed-camera view."
+      },
+      "required_transition_brackets": ["first_photosphere_visibility", "full_photosphere_clearance"],
+      "stability_requirement": "At least one SUN_OCCULTED frame and one following SUN_VISIBLE frame after full clearance.",
+      "selected_frames": [
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016337_saw3_raw_v01.xml", "time_utc": "2026-04-07T01:29:39Z", "bytes": 12068, "sha256": "8bf9560ba8a9772046456a966fccfa5783f89484f7ead7881e60721be58aab5d"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016338_saw3_raw_v01.xml", "time_utc": "2026-04-07T01:30:09Z", "bytes": 12068, "sha256": "b9c422c0eb2075a0bc52c51c1152d1e91c231b33597229e2f01fb8010fe81032"},
+        {"raw_label_path": "evidence/stage2b/label-scan/source/art002e016339_saw3_raw_v01.xml", "time_utc": "2026-04-07T01:30:39Z", "bytes": 12068, "sha256": "7fd913f6202f5cc4c832f62d5345698f1bc5fac2f852ff5a95ff11c2e5ea04c5"}
+      ]
+    }
+  ],
+  "source_template": {
+    "browse_image": "browse_source/fd06/{raw_product_stem_without_raw}_src_v01.jpg",
+    "browse_label": "browse_source/fd06/{raw_product_stem_without_raw}_src_v01.xml"
+  },
+  "evidence": {
+    "acquisition_contract_sha256": "fcf2d9098029a6289e07d4983e0d93cb498fe8d54fe32a93b53de3e38f94ae42",
+    "acquisition_receipt": {
+      "path": "evidence/stage2b/acquisition-receipt.json",
+      "sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6"
+    },
+    "source_manifest": {
+      "path": "evidence/stage2b/source-manifest.json",
+      "sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f"
+    },
+    "label_scan_receipt": {
+      "path": "evidence/stage2b/label-scan-receipt.json",
+      "sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a"
+    },
+    "label_scan_manifest": {
+      "path": "evidence/stage2b/label-scan-manifest.json",
+      "sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67"
+    },
+    "visual_classification": {
+      "path": "evidence/stage2b/visual-classification.json",
+      "sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c"
+    }
+  },
+  "admission_checks": [
+    "Every retained file matches a source-manifest byte length and SHA-256.",
+    "Each browse label binds its JPEG to the corresponding raw-image logical identifier.",
+    "Every timestamp comes from the raw-image PDS4 label and matches the predeclared candidate time at strict 30-second cadence.",
+    "The camera identity is SAW Cam 3 for every frame; camera channels are never mixed inside an event.",
+    "The event's frozen state definitions can be applied without using transcript wording or OTR endpoints as the pixel oracle.",
+    "The required transition brackets and stability frame are present inside the frozen sequence.",
+    "The OTR values are read from the pinned source and retained only as availability-window endpoints."
+  ],
+  "independent_stop_rule": {
+    "state": "NOT_ADMISSIBLE_CAMERA_VIEW",
+    "trigger": "For that event only, stop if source identity, camera identity, cadence, fixed-view interpretability, relevant limb/contact visibility, required state progression, or stability support fails inside the frozen sequence.",
+    "no_rescue": "Do not extend the time range, change camera, use transcript time as the oracle, infer through saturation or obstruction, or substitute OTR endpoints after observing pixels."
+  },
+  "pattern_classification": {
+    "REPEATED_NON_OVERLAP": "All three admissible replications have no availability-window overlap with their independently bracketed physical transition.",
+    "MIXED_PLACEMENT": "At least one admissible replication overlaps and at least one of the four total events, including Earthrise, does not overlap.",
+    "INSUFFICIENT_ADMISSIBLE_REPLICATIONS": "Fewer than two of Earthset, Sunset, and Sunrise yield an admissible physical-transition bracket.",
+    "SINGLE_ADMISSIBLE_REPLICATION": "Exactly one of Earthset, Sunset, and Sunrise yields an admissible physical-transition bracket; report it without a repeated-pattern claim."
+  },
+  "expected_result": {
+    "evidence_state": "VERIFIED_SINGLE_ADMISSIBLE_REPLICATION",
+    "pattern": "SINGLE_ADMISSIBLE_REPLICATION",
+    "disposition": "RETAIN_EARTHSET_COUNTEREXAMPLE_WITHOUT_PATTERN_CLAIM",
+    "events": {
+      "earthset": {
+        "status": "VERIFIED_OVERLAP",
+        "states": ["FULL_VISIBLE", "FULL_VISIBLE", "FULL_VISIBLE", "FULL_VISIBLE", "PARTIAL", "PARTIAL", "PARTIAL", "NOT_VISIBLE"],
+        "transition_brackets": {
+          "occultation_onset": {
+            "lower_exclusive_utc": "2026-04-06T22:41:44Z",
+            "upper_inclusive_utc": "2026-04-06T22:42:14Z"
+          },
+          "complete_disappearance": {
+            "lower_exclusive_utc": "2026-04-06T22:43:14Z",
+            "upper_inclusive_utc": "2026-04-06T22:43:44Z"
+          },
+          "terminal_state_check_utc": "2026-04-06T22:43:44Z"
+        },
+        "coverage_relation": "OVERLAPS_EVENT",
+        "minimum_guaranteed_overlap_seconds": 54.269803,
+        "availability_duration_seconds": 196.650033
+      },
+      "sunset": {
+        "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+        "states": ["SUN_VISIBLE", "SUN_VISIBLE", "PARTIAL", "PARTIAL"],
+        "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE"
+      },
+      "sunrise": {
+        "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+        "states": [],
+        "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK"
+      }
+    }
+  },
+  "hard_negatives": [
+    "shift_image_timestamps_plus_300_seconds",
+    "substitute_transcript_times_for_image_states",
+    "change_camera_inside_event",
+    "invent_state_through_saturation_or_obstruction",
+    "extend_frozen_sequence_after_pixel_inspection",
+    "treat_availability_endpoint_as_physical_contact"
+  ],
+  "next_step_logic": {
+    "if_repeated_non_overlap": "Compare the four-event placement pattern against current NASA planning documentation and prior art before forming any operational interpretation.",
+    "if_mixed_placement": "Treat event-specific window placement as the lead result and inspect only the smallest metadata difference that could explain the contrast without inferring cause.",
+    "if_single_admissible": "Retain Earthset as a bounded counterexample to Earthrise non-overlap, make no recurrence claim, and compare only the smallest plan metadata or current primary documentation that could explain the placement contrast before acquiring more pixels.",
+    "if_insufficient": "Retain Earthrise as the only verified physical-coverage result; do not widen acquisition merely to manufacture replication.",
+    "if_rejected": "Return to the last verified Git checkpoint and preserve the acquisition receipt and failure layer."
+  }
+}

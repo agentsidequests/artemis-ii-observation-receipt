@@ -1,0 +1,81 @@
+{
+  "classification_id": "artemis2-earthrise-saw3-visual-oracle-v1",
+  "formed_at_utc": "2026-10-09T19:46:28Z",
+  "camera": "Orion Solar Array Wing Camera 3",
+  "sampling_seconds": 30,
+  "independence": "PARTIALLY_INDEPENDENT",
+  "independence_note": "The Earthrise neighborhood was nominated after transcript review, but every scored state and timestamp comes from the fixed SAW Cam 3 image sequence and its PDS4 data label, not from transcript wording or OTR endpoints.",
+  "state_definitions": {
+    "NOT_VISIBLE": "No illuminated Earth pixels are visible in the fixed region of interest.",
+    "PARTIAL": "Illuminated Earth is visible, but lunar occultation still removes part of the stable post-rise illuminated footprint.",
+    "FULL_CLEAR": "The illuminated Earth footprint has reached the stable post-rise size and remains stable in the following frame. This describes clearance from lunar occultation, not Earth's illuminated phase."
+  },
+  "measurement_note": "The component measurements are a fixed corroborating diagnostic from an RGB-to-luminance threshold of 36 in full-image ROI (1800,700)-(3200,1900). Visual state remains the oracle because threshold area alone does not identify the occulting body.",
+  "frames": [
+    {
+      "image": "art002e016296_saw3_src_v01.jpg",
+      "raw_label": "art002e016296_saw3_raw_v01.xml",
+      "time_utc": "2026-04-06T23:21:14Z",
+      "state": "NOT_VISIBLE",
+      "component_pixels": 0,
+      "component_width": 0,
+      "component_height": 0
+    },
+    {
+      "image": "art002e016297_saw3_src_v01.jpg",
+      "raw_label": "art002e016297_saw3_raw_v01.xml",
+      "time_utc": "2026-04-06T23:21:44Z",
+      "state": "PARTIAL",
+      "component_pixels": 98,
+      "component_width": 18,
+      "component_height": 18
+    },
+    {
+      "image": "art002e016298_saw3_src_v01.jpg",
+      "raw_label": "art002e016298_saw3_raw_v01.xml",
+      "time_utc": "2026-04-06T23:22:14Z",
+      "state": "PARTIAL",
+      "component_pixels": 477,
+      "component_width": 30,
+      "component_height": 47
+    },
+    {
+      "image": "art002e016299_saw3_src_v01.jpg",
+      "raw_label": "art002e016299_saw3_raw_v01.xml",
+      "time_utc": "2026-04-06T23:22:44Z",
+      "state": "PARTIAL",
+      "component_pixels": 2130,
+      "component_width": 113,
+      "component_height": 136
+    },
+    {
+      "image": "art002e016300_saw3_src_v01.jpg",
+      "raw_label": "art002e016300_saw3_raw_v01.xml",
+      "time_utc": "2026-04-06T23:23:14Z",
+      "state": "FULL_CLEAR",
+      "component_pixels": 4050,
+      "component_width": 111,
+      "component_height": 136
+    },
+    {
+      "image": "art002e016301_saw3_src_v01.jpg",
+      "raw_label": "art002e016301_saw3_raw_v01.xml",
+      "time_utc": "2026-04-06T23:23:44Z",
+      "state": "FULL_CLEAR",
+      "component_pixels": 4187,
+      "component_width": 110,
+      "component_height": 136
+    }
+  ],
+  "frozen_brackets": {
+    "first_visible_contact": {
+      "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+      "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+    },
+    "full_clearance": {
+      "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+      "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+    },
+    "stability_check_utc": "2026-04-06T23:23:44Z"
+  }
+}

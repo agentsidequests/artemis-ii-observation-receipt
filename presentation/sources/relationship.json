@@ -1,0 +1,84 @@
+{
+  "testbed_id": "artemis2-stage11r-hierarchical-test-isolation",
+  "version": "1.0.0",
+  "pass": true,
+  "evidence_state": "VERIFIED_HIERARCHICAL_TEST_ISOLATION_AUDIT",
+  "checks": {
+    "source_identities": true,
+    "only_train_and_test_partitions": true,
+    "unique_product_ids": true,
+    "complete_partition": true,
+    "mutually_exclusive_test_bins": true,
+    "receipt_action_crossings_agree": true,
+    "receipt_crossing_products_agree": true,
+    "frozen_observables": true,
+    "claim_boundaries_preserved": true,
+    "zero_pixel_access": true
+  },
+  "source_identities": [
+    {
+      "path": "results/stage11l-split-assignments.csv",
+      "bytes": 4573289,
+      "sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+      "match": true
+    },
+    {
+      "path": "results/stage11l-split-receipt.json",
+      "bytes": 4216,
+      "sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+      "match": true
+    }
+  ],
+  "structural_isolation": {
+    "rows": 22818,
+    "train_products": 18307,
+    "test_products": 4511,
+    "partitions": [
+      "test",
+      "train"
+    ],
+    "unique_product_ids": 22818,
+    "capture_linked_test_products": 4307,
+    "action_only_linked_test_products": 204,
+    "action_isolated_test_products": 0,
+    "capture_linked_test_share": 0.9547772112613612,
+    "action_only_linked_test_share": 0.045222788738638886,
+    "action_isolated_test_share": 0.0,
+    "test_visible_capture_groups": 3679,
+    "capture_linked_test_capture_groups": 3611,
+    "capture_isolated_test_capture_groups": 68,
+    "test_visible_action_groups": 1937,
+    "action_isolated_test_action_groups": 0,
+    "crossing_action_groups": 1937,
+    "products_in_crossing_action_groups": 20601,
+    "share_all_products_in_crossing_actions": 0.9028398632658428
+  },
+  "formula": {
+    "identity": "test = capture-linked + action-only-linked + action-isolated",
+    "observed": "4511 = 4307 + 204 + 0",
+    "classification_order": [
+      "exact capture identity present in training",
+      "capture absent but complete action present in training",
+      "complete action absent from training"
+    ]
+  },
+  "interpretation": "The frozen product-key canary has no test product isolated from training at the reconstructed complete-action layer. This is structural overlap, not observed leakage, pixel similarity, statistical dependence, or harm.",
+  "claim_boundaries": {
+    "shared_capture_proves_pixel_leakage": false,
+    "shared_action_proves_statistical_dependence": false,
+    "zero_action_isolated_products_invalidates_every_task": false,
+    "the_canary_is_an_observed_pipeline": false,
+    "the_canary_estimates_model_performance_inflation": false,
+    "the_action_key_is_a_complete_event_oracle": false,
+    "the_result_is_independent_replication": false
+  },
+  "claim_ceiling": "Stage 11R may establish that, in the frozen Stage 11L product-key canary, all 4,511 test products share either their exact capture identity or their reconstructed complete action with at least one training product, including 4,307 exact-capture-linked and 204 action-only-linked test products. It cannot establish pixel similarity, statistical dependence, observed leakage, model shortcut use, performance inflation, scientific-task invalidity, a complete event oracle, independent replication, NASA acceptance, or global novelty.",
+  "next_step_logic": {
+    "if_no_test_product_is_action_isolated": "Use the result as a structural isolation failure for this canary and require a task-native protected group before interpreting an evaluation score.",
+    "if_some_test_products_are_action_isolated": "Report the complete three-bin distribution and do not generalize isolation beyond the declared action relation.",
+    "if_capture_and_action_counts_do_not_sum_to_test": "Fail the stage and inspect missing, duplicate, or malformed assignments before interpretation.",
+    "if_a_real_task_is_proposed": "Freeze its estimand, labels, transformations, and required dependence relation, then issue a new receipt instead of reusing this canary.",
+    "recheck_trigger": "A revised relationship manifest, changed split assignment, authoritative episode key, actual model task, or specialist correction."
+  },
+  "pixel_payload_bytes_opened": 0
+}

@@ -1,0 +1,15 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-reflectance-canary-stage8a",
+  "formed_at_utc": "2026-10-09T22:14:19Z",
+  "status": "FORMED_NO_VALUE_ACCESS",
+  "spec_path": "spec/stage8a.json",
+  "spec_sha256": "441736b343bea08dd4742891b24342cdb0105b033ad324fe9a5193d2ccbf9a17",
+  "semantic_path": "evidence/stage8a/semantic-coding.json",
+  "semantic_sha256": "92c2f867cbdce91922d8b88768dddfaff5b2b2a280a8e9c0825ce61db97acc21",
+  "outcome_value_bytes_accessed": 0,
+  "outcome_images_inspected": 0,
+  "source_metadata_documents_screened": 1,
+  "frozen_geometry": "For each crater, use a 1.5-3.0 crater-radius annulus and a 10-degree half-width ray sector centered on the great-circle bearing to Aristarchus Plateau; pool equal-width flanks centered 30 degrees to either side.",
+  "frozen_primary_oracle": "Each local contrast >= 0.05; similarity ratio >= 0.75; Glushko local contrast > Ohm local contrast.",
+  "stop_rule": "Stop before WAC values if transcript identity, target coordinates, symmetric geometry, exact 566 nm products, or thresholds cannot be verified from non-outcome sources."
+}

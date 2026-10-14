@@ -1,0 +1,80 @@
+{
+  "extract_id": "artemis2-stage9b-source-control-extracts-v1",
+  "accessed_on": "2026-10-09",
+  "sources": [
+    {
+      "id": "nasa_gray_feature_event",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/20260009221",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "section": "5.5.1",
+      "pages": [63, 64],
+      "finding": "NASA identifies the episode as a potential sighting by Koch at 23:22:39 UTC through a camera, records the competing mountain and optical-effect interpretations, and concludes that no lofted dust or exospheric glow was definitively detected."
+    },
+    {
+      "id": "nasa_earthrise_terrain_control",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/20260009221",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "section": "5.8.1",
+      "pages": [78, 79],
+      "finding": "NASA maps visible limb features in crew image art002e009280 to the rims of Al-Biruni and Goddard using the NASA/JAXA SLDEM 60 m elevation model. This is a real terrain control for one Earthrise image, not complete event-burst geometry."
+    },
+    {
+      "id": "nasa_earthrise_photogrammetry_clock_limit",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/20260009221",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "section": "7.5",
+      "pages": [103, 104],
+      "finding": "For art002e009280, NASA obtained a pixel-level terrain match at 23:22:44.5 UTC, 14.2 seconds later than the D5 timestamp 23:22:30.29 UTC. The report treats this as a discrepancy for future analysis, so camera time alone cannot supply exact event geometry."
+    },
+    {
+      "id": "nasa_low_light_instrument_requirement",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/20260009221",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "section": "9.7",
+      "page": 115,
+      "finding": "NASA recommends a dedicated low-light camera optimized for limb and horizon observations because it would provide quantifiable measurements of extended faint sources and enable confident detection or non-detection of lofted dust."
+    },
+    {
+      "id": "nasa_window_and_camera_limits",
+      "title": "Artemis II Lunar Science Data User Guide",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/artemis2_data_user_guide.pdf",
+      "parent_sha256": "c4f5ab25363ca3f8fc17bb776e9fc90c19707c8a18c9255648aef34d6a7b0bd2",
+      "parent_byte_count": 8320046,
+      "sections": ["3.1", "3.1.2", "3.1.3"],
+      "pages": [14, 15, 16],
+      "finding": "The D5 viewfinder was used as a magnifying monocle. Window 2 was the preferred 400 mm imaging window, but pre-mission characterization through the complete three-pane stack could not be performed, the panes can distort images, and the D5 cameras were not calibrated to mission-specific science requirements beyond geometric lens distortion."
+    },
+    {
+      "id": "nasa_pcd_clock_and_transcript_semantics",
+      "title": "Artemis II Lunar Science Data User Guide",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/artemis2_data_user_guide.pdf",
+      "parent_sha256": "c4f5ab25363ca3f8fc17bb776e9fc90c19707c8a18c9255648aef34d6a7b0bd2",
+      "parent_byte_count": 8320046,
+      "sections": ["3.2.1", "5.4.1", "5.4.2"],
+      "pages": [17, 30, 31],
+      "finding": "PCD3 recorded Koch and Wiseman during flyby. PCDs and handheld cameras referenced the Orion clock. Transcript UTC was derived from audio metadata after WhisperX alignment and then manually checked; PDS labels carry the audio start time derived from duration and the embedded end time."
+    },
+    {
+      "id": "pds_current_archive_state",
+      "title": "Artemis II Mission Archives",
+      "publisher": "NASA Planetary Data System Geosciences Node",
+      "url": "https://pds-geosciences.wustl.edu/missions/artemis2/index.htm",
+      "retained_path": "evidence/stage9b/source/pds-artemis2-mission-page-2026-10-09.html",
+      "finding": "The 7 October 2026 release includes crew-camera, Orion-camera, and mission-audio data; the SPICE bundle remains marked delayed on the retained 9 October page."
+    }
+  ]
+}

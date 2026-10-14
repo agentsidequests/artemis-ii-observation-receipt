@@ -1,0 +1,53 @@
+{
+  "receipt_id": "artemis2-stage10h-source-volume-reconciliation-v1",
+  "completed_at_utc": "2026-10-10T12:05:00Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "external_parent_sources": [
+    {
+      "url": "https://ntrs.nasa.gov/api/citations/20260009221/downloads/YoungPreliminary%20Science%20ReportFINAL",
+      "bytes": 143769154,
+      "sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "role": "official full parent report; exact Table 4.1 page preserved locally"
+    }
+  ],
+  "sources": [
+    {
+      "path": "evidence/stage10h/source/preliminary-science-report-page-31.pdf",
+      "bytes": 137474,
+      "sha256": "00a6ee3ab2220937ae29689985e2a7dc12d05925fcef4d3d626b765b03b88bee",
+      "role": "focused official PDF page containing Science Data Summary Table 4.1",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa"
+    },
+    {
+      "path": "evidence/stage10h/source/preliminary-science-report-page-31.txt",
+      "bytes": 1822,
+      "sha256": "6462084da3fbf57a979725e5a3fa81539debf7ff6abe2bf98c273c612e248bbc",
+      "role": "pypdf text extraction of focused Table 4.1 page"
+    },
+    {
+      "path": "evidence/stage10d/source/atlas-mission-footprint-response.json",
+      "bytes": 1422,
+      "sha256": "fd93dd2acd44dccd8e72a098a3f1fb888ba5686bf313315552d53fc555bf0b5a",
+      "role": "frozen current Atlas product-count and archive-size aggregations"
+    },
+    {
+      "path": "evidence/stage10d/source/nasa-release.html",
+      "bytes": 287259,
+      "sha256": "2f4bed039abb00459518db5bbbdf15a8f9a9b2955b289b51b874183c1123930f",
+      "role": "official more-than-800-GB release statement"
+    },
+    {
+      "path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+      "bytes": 174179,
+      "sha256": "3533de2c32617b9d1a2ff29022771dab5d29ac6bbaa15dd3554f23a992a8d31e",
+      "role": "official source/additional-format and video-conversion semantics"
+    },
+    {
+      "path": "results/stage10d-result.json",
+      "bytes": 60116,
+      "sha256": "dfee8c8fa479338bd7e8edef575520093b9a3a030e46d1cf05df1d20e5c02417",
+      "role": "prior 833.9-GB hypothesis to be explicitly tested and superseded"
+    }
+  ]
+}

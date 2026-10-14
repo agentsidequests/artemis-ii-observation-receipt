@@ -1,0 +1,85 @@
+{
+  "testbed_id": "artemis2-archive-unit-normalization-stage10d",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T11:58:00Z",
+  "question": "Do the public headline, Atlas product inventory, and camera-action evidence count different units, and can their apparent size discrepancy be reconciled without calling either source wrong?",
+  "terminal_objective": "Separate observation, representation, product, and physical-action units before using archive counts or sizes as evidence.",
+  "method": "Exact Atlas count-and-byte aggregation plus bounded product-identity replay against NASA's release statement and the official Data User Guide",
+  "authority": "Read-only acquisition of public official sources and private local repository updates only. No image pixels, publication, outreach, scientific acceptance, or correction of source records.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "atlas_endpoint": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+    "atlas_queries": {
+      "mission_footprint": "evidence/stage10d/source/atlas-mission-footprint-query.json",
+      "forward_look_products": "evidence/stage10d/source/atlas-forward-look-products-query.json",
+      "forward_look_actions": "evidence/stage10d/source/atlas-forward-look-actions-query.json"
+    },
+    "nasa_release_url": "https://www.nasa.gov/blogs/artemis/2026/10/07/nasa-releases-artemis-ii-lunar-science-data-images/",
+    "nasa_release_path": "evidence/stage10d/source/nasa-release.html",
+    "user_guide_url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_data_user_guide.pdf",
+    "user_guide_path": "evidence/stage10d/source/artemis2_data_user_guide.pdf",
+    "user_guide_text_path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+    "receipt_path": "evidence/stage10d/acquisition-receipt.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "mission_products": 32133,
+    "mission_bytes": 2526790075510,
+    "bundle_counts": {
+      "artemis2_crew_camera": 30987,
+      "artemis2_orion_camera": 1034,
+      "artemis2_mission_audio": 112
+    },
+    "bundle_bytes": {
+      "artemis2_crew_camera": 2483983778461,
+      "artemis2_orion_camera": 42021916455,
+      "artemis2_mission_audio": 784380594
+    },
+    "crew_collection_counts": {
+      "data_source": 10329,
+      "data_raw": 10329,
+      "data_processed": 10329
+    },
+    "crew_collection_bytes": {
+      "data_source": 223144698723,
+      "data_raw": 567936940640,
+      "data_processed": 1692902139098
+    },
+    "mission_bytes_excluding_processed_crew_collection": 833887936412,
+    "forward_look_product_records": 6,
+    "forward_look_internal_ids": ["art002e015902", "art002e015908"],
+    "forward_look_action_product_records": 30,
+    "forward_look_action_internal_ids": 10,
+    "forward_look_action_collection_counts": {
+      "data_source": 10,
+      "data_raw": 10,
+      "data_processed": 10
+    },
+    "forward_look_action_activity_counts": {
+      "24_Sunset": 24,
+      "25_Discussion #6: Forward Look": 6
+    }
+  },
+  "interpretation": {
+    "verified": "The Atlas snapshot contains three equally sized crew-camera product collections and 2.526790075510 TB of data products. Excluding the processed crew-camera collection leaves 833.887936412 GB. In the bounded Forward Look case, two activity-tagged exposure IDs become six products across source, raw, and processed representations, and the ten exposures in their two complete actions become thirty products.",
+    "inference": "The 833.9 GB subtotal is arithmetically consistent with NASA's 'more than 800 gigabytes' statement, suggesting—but not proving—that the headline excludes the processed crew-camera representation. The official source does not document that accounting formula.",
+    "decision_use": "Normalize archive searches by NASA internal ID and reconstruct camera actions before counting evidence; retain collection identity when estimating download or processing burden."
+  },
+  "hard_negatives": [
+    "call_nasa_800gb_statement_false",
+    "claim_nasa_documented_the_accounting_formula",
+    "count_each_representation_as_an_independent_observation",
+    "collapse_three_products_into_one_downloadable_file",
+    "claim_processed_products_were_intentionally_omitted",
+    "generalize_two_action_identity_to_every_product",
+    "claim_atlas_snapshot_is_permanent",
+    "open_pixels_to_reconcile_archive_units"
+  ],
+  "claim_ceiling": "Stage 10D may establish the exact Atlas product counts and archive.size sums in the preserved snapshot, official product-type semantics, and the bounded Forward Look representation multiplication. It may say the 833.9 GB subtotal is consistent with NASA's 'more than 800 gigabytes' statement. It cannot call NASA's statement false, claim NASA documented or intentionally used that subtotal, treat every representation as an independent observation, prove perfect representation parity for every crew exposure, generalize a live Atlas snapshot indefinitely, or infer scientific content.",
+  "next_step_logic": {
+    "if_no_unit_mismatch": "Retire the archive-accounting lead and return to the action-facet result alone.",
+    "if_bounded_only": "Keep normalization as a Forward Look case-study guard and avoid archive-wide product-to-observation claims.",
+    "if_archive_counts_and_bounded_identity_agree": "Test internal-ID parity across the complete crew-camera inventory and all-flight-day camera-action recurrence before broadening the insight.",
+    "recheck_trigger": "A changed Atlas snapshot, revised archive release, or authoritative NASA accounting note may change the totals or interpretation."
+  }
+}

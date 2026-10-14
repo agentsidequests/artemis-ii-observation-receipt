@@ -1,0 +1,70 @@
+{
+  "testbed_id": "artemis2-schedule-tag-non-equivalence-stage10y",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T14:48:00Z",
+  "question": "Can target tags be substituted for scheduled observation windows when defining events or evaluation groups?",
+  "terminal_objective": "Pressure-test the event and label boundaries by measuring exact-name correspondence between the mission target plan and target-tagged source exposures.",
+  "method": "Use one source-representation row per verified exposure. Parse every plan entry with a target, request time, and duration. Count plan target names, tag values, their set overlap, and exposures whose complete action is contained by at least one exact-same-name plan window. Treat overlap as a correspondence diagnostic, not a correctness oracle.",
+  "authority": "Private local metadata and plan analysis only. No pixels, label correctness, event independence, annotation-error claim, missing-event claim, ontology merge, model training, publication, scientific-discovery claim, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10x_spec_path": "spec/stage10x.json",
+    "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "plan_path": "corpus/artemis2_outgoing_target_request.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "scheduled_entries_with_target_and_window": 39,
+    "scheduled_target_names": 19,
+    "tagged_source_exposures": 3413,
+    "tag_values": 23,
+    "shared_exact_names": 14,
+    "tag_only_names": 9,
+    "plan_only_names": 5,
+    "tag_values_with_any_same_name_window_membership": 9,
+    "tag_values_with_zero_same_name_window_membership": 14,
+    "exposures_inside_any_same_name_plan_window": 1313,
+    "exposures_outside_all_same_name_plan_windows": 2100,
+    "same_name_window_membership_share": 0.38470553765016116,
+    "outside_same_name_window_share": 0.6152944623498389,
+    "sunset_tagged_exposures": 1553,
+    "sunset_inside_same_name_plan_window": 845,
+    "sunset_outside_same_name_plan_window": 708
+  },
+  "frozen_name_sets": {
+    "tag_only": [
+      "01_Discussion #1: Warm up", "Deep Space", "Landau", "Limb", "Nemst",
+      "Pierrazzo Crater", "Sun", "Terminator", "Unknown"
+    ],
+    "plan_only": [
+      "Crew Position Swap", "Crew Team Swap", "Guided Discussion", "Impact Flashes", "illum_limb"
+    ]
+  },
+  "frozen_examples": {
+    "Earth": {"tagged": 692, "inside_same_name_window": 0},
+    "Orientale Basin": {"tagged": 74, "inside_same_name_window": 0},
+    "Reiner Gamma": {"tagged": 24, "inside_same_name_window": 24},
+    "Sunset": {"tagged": 1553, "inside_same_name_window": 845},
+    "Vavilov Crater": {"tagged": 67, "inside_same_name_window": 0}
+  },
+  "hard_negatives": [
+    "call_target_tags_event_ids",
+    "call_plan_names_exhaustive_labels",
+    "call_outside_window_tags_wrong",
+    "call_zero_match_planned_observation_missed",
+    "call_exact_name_match_independent_event",
+    "merge_plan_and_tag_ontologies",
+    "group_model_by_target_tag_as_event",
+    "call_sunset_outside_rows_new_events",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_schedule_tag_canary"
+  ],
+  "claim_ceiling": "Stage 10Y may establish that the plan target-name vocabulary and target-tag vocabulary are non-equivalent and that exact-name temporal correspondence is incomplete: 14 names overlap, nine appear only as tags, five appear only in the plan, and 1,313 of 3,413 tagged source exposures have complete actions inside an exact-same-name scheduled window. It may establish that target tags cannot be silently substituted for scheduled event identifiers or grouping keys. It cannot determine whether either vocabulary is more correct, call an outside-window tag erroneous, infer a missed planned observation, treat an exact match as an independent event, merge ontologies, infer new Sunset events from the 708 outside-window rows, inspect pixels, or claim scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_event_generalization_is_the_task": "Define events from an independent schedule or task-native episode oracle, then audit tag correspondence; do not group by target_id alone.",
+    "if_target_classification_is_the_task": "Declare whether the target is the curated tag vocabulary, planned-target vocabulary, or a new audited ontology; their populations are not interchangeable.",
+    "if_sunset_is_the_public_example": "Keep the independent eight-minute plan window primary and describe its unanimous Sunset tags as corroboration, while noting that 708 other Sunset-tagged exposures are not automatically separate events.",
+    "if_no_task_needs_schedule_tag_alignment": "Preserve this as a non-substitution guard and stop.",
+    "recheck_trigger": "A task-native event ontology, post-mission verified tags, revised plan, or public model that treats target tags as event identifiers."
+  }
+}

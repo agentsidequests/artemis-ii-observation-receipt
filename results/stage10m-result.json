@@ -1,0 +1,841 @@
+{
+  "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_EXPECTED_RANDOM_SPLIT_GROUP_CROSSING_HAZARD",
+  "three_exposure_actions": 1612,
+  "five_exposure_actions": 554,
+  "complete_actions": 2166,
+  "capture_identities": 7606,
+  "scenarios": {
+    "0.7": {
+      "identity_group_cross_probability": 0.63,
+      "expected_cross_identity_groups": 4791.78,
+      "expected_cross_action_groups_product_split": 2098.288099494197,
+      "product_split_action_cross_rate": 0.9687387347618638,
+      "expected_cross_action_groups_exposure_split": 1475.103,
+      "exposure_split_action_cross_rate": 0.6810263157894737,
+      "action_group_split_cross_rate": 0.0
+    },
+    "0.8": {
+      "identity_group_cross_probability": 0.47999999999999987,
+      "expected_cross_identity_groups": 3650.879999999999,
+      "expected_cross_action_groups_product_split": 1930.1480549646335,
+      "product_split_action_cross_rate": 0.8911117520612343,
+      "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+      "exposure_split_action_cross_rate": 0.5291080332409971,
+      "action_group_split_cross_rate": 0.0
+    },
+    "0.9": {
+      "identity_group_cross_probability": 0.2699999999999999,
+      "expected_cross_identity_groups": 2053.6199999999994,
+      "expected_cross_action_groups_product_split": 1427.4144829395636,
+      "product_split_action_cross_rate": 0.6590094565741291,
+      "expected_cross_action_groups_exposure_split": 662.1029999999998,
+      "exposure_split_action_cross_rate": 0.305680055401662,
+      "action_group_split_cross_rate": 0.0
+    }
+  },
+  "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+  "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+  "next_step_logic": {
+    "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+    "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+    "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+    "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+  },
+  "checks": [
+    {
+      "id": "source_cohort_replay",
+      "pass": true,
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554
+    },
+    {
+      "id": "frozen_split_scenarios",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "grouping_unit_ordering",
+      "pass": true
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "result_kind": "expected_group_crossing_hazard",
+        "existing_pipeline_contaminated": false,
+        "representations_byte_identical": false,
+        "bracket_siblings_identical": false,
+        "scope": "verified_complete_action_cohort",
+        "action_grouping_universal": false,
+        "statistical_significance": false,
+        "global_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_expected_crossing_observed_leakage": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "call_expected_crossing_observed_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "observed_leakage",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": false,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": false,
+            "statistical_significance": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_an_existing_pipeline_is_contaminated": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "claim_an_existing_pipeline_is_contaminated",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": true,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": false,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": false,
+            "statistical_significance": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "treat_three_representations_as_byte_identical": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "treat_three_representations_as_byte_identical",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": true,
+            "bracket_siblings_identical": false,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": false,
+            "statistical_significance": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_bracket_siblings_identical_images": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "call_bracket_siblings_identical_images",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": true,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": false,
+            "statistical_significance": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "generalize_beyond_complete_action_cohort": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "generalize_beyond_complete_action_cohort",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": false,
+            "scope": "all_archive_products",
+            "action_grouping_universal": false,
+            "statistical_significance": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_action_grouping_solves_every_evaluation_leak": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "claim_action_grouping_solves_every_evaluation_leak",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": false,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": true,
+            "statistical_significance": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_statistical_significance": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "claim_statistical_significance",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": false,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": false,
+            "statistical_significance": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_global_priority": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "claim_global_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": false,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": false,
+            "statistical_significance": false,
+            "global_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_split_model": {
+      "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+      "mutation": "open_pixels_for_split_model",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "three_exposure_actions": 1612,
+      "five_exposure_actions": 554,
+      "complete_actions": 2166,
+      "capture_identities": 7606,
+      "scenarios": {
+        "0.7": {
+          "identity_group_cross_probability": 0.63,
+          "expected_cross_identity_groups": 4791.78,
+          "expected_cross_action_groups_product_split": 2098.288099494197,
+          "product_split_action_cross_rate": 0.9687387347618638,
+          "expected_cross_action_groups_exposure_split": 1475.103,
+          "exposure_split_action_cross_rate": 0.6810263157894737,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.8": {
+          "identity_group_cross_probability": 0.47999999999999987,
+          "expected_cross_identity_groups": 3650.879999999999,
+          "expected_cross_action_groups_product_split": 1930.1480549646335,
+          "product_split_action_cross_rate": 0.8911117520612343,
+          "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+          "exposure_split_action_cross_rate": 0.5291080332409971,
+          "action_group_split_cross_rate": 0.0
+        },
+        "0.9": {
+          "identity_group_cross_probability": 0.2699999999999999,
+          "expected_cross_identity_groups": 2053.6199999999994,
+          "expected_cross_action_groups_product_split": 1427.4144829395636,
+          "product_split_action_cross_rate": 0.6590094565741291,
+          "expected_cross_action_groups_exposure_split": 662.1029999999998,
+          "exposure_split_action_cross_rate": 0.305680055401662,
+          "action_group_split_cross_rate": 0.0
+        }
+      },
+      "verified": "Under the frozen independent 80/20 product-level split model, an expected 1,930.148 of 2,166 complete actions (89.111%) place related products on both sides. Grouping the three representations by exposure but splitting exposure identities independently still crosses an expected 1,146.048 actions (52.911%). Splitting by complete action crosses zero by construction.",
+      "decision_use": "For image-model evaluation on this verified cohort, use the reconstructed action identity as the minimum split key rather than product or exposure ID. This controls the exact representation and bracket-sibling dependence measured here; a real task may require broader grouping by scene, target, time, or source episode.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+      "next_step_logic": {
+        "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+        "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+        "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+        "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+      },
+      "checks": [
+        {
+          "id": "source_cohort_replay",
+          "pass": true,
+          "three_exposure_actions": 1612,
+          "five_exposure_actions": 554
+        },
+        {
+          "id": "frozen_split_scenarios",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "grouping_unit_ordering",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "result_kind": "expected_group_crossing_hazard",
+            "existing_pipeline_contaminated": false,
+            "representations_byte_identical": false,
+            "bracket_siblings_identical": false,
+            "scope": "verified_complete_action_cohort",
+            "action_grouping_universal": false,
+            "statistical_significance": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited observation, contamination, identity, scope, sufficiency, significance, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

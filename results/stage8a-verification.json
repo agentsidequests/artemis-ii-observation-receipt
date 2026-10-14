@@ -1,0 +1,325 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-reflectance-canary-stage8a",
+  "source_mutation": null,
+  "pass": true,
+  "signal_pass": false,
+  "partial_pass": false,
+  "evidence_state": "NO_REFLECTANCE_CONCORDANCE",
+  "disposition": "STOP_GLUSHKO_OHM_REFLECTANCE_LANE",
+  "frozen_claim": {
+    "primary": "Glushko and Ohm ray brightness is similar",
+    "secondary_direction": "Glushko rays are slightly brighter than Ohm rays"
+  },
+  "primary": {
+    "targets": {
+      "ohm": {
+        "ray_pixel_count": 6314,
+        "background_pixel_count": 12631,
+        "ray_median_reflectance": 0.11066797375679016,
+        "background_median_reflectance": 0.11078528314828873,
+        "local_contrast": -0.0010588896662523692
+      },
+      "glushko": {
+        "ray_pixel_count": 2557,
+        "background_pixel_count": 5100,
+        "ray_median_reflectance": 0.09393863379955292,
+        "background_median_reflectance": 0.0958695225417614,
+        "local_contrast": -0.020140798566795542
+      }
+    },
+    "similarity_ratio": null,
+    "glushko_greater_than_ohm": false
+  },
+  "primary_contrast_pass": false,
+  "primary_similarity_pass": false,
+  "primary_direction_pass": false,
+  "robustness": [
+    {
+      "annulus_crater_radii": [
+        1.25,
+        2.5
+      ],
+      "sector_half_width_deg": 8.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 3512,
+          "background_pixel_count": 7013,
+          "ray_median_reflectance": 0.107161495834589,
+          "background_median_reflectance": 0.1074414849281311,
+          "local_contrast": -0.0026059682042684634
+        },
+        "glushko": {
+          "ray_pixel_count": 1418,
+          "background_pixel_count": 2860,
+          "ray_median_reflectance": 0.09000333771109581,
+          "background_median_reflectance": 0.0941699929535389,
+          "local_contrast": -0.04424610336860498
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        1.25,
+        2.5
+      ],
+      "sector_half_width_deg": 10.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 4386,
+          "background_pixel_count": 8772,
+          "ray_median_reflectance": 0.10641157254576683,
+          "background_median_reflectance": 0.1073458157479763,
+          "local_contrast": -0.008703117077267961
+        },
+        "glushko": {
+          "ray_pixel_count": 1771,
+          "background_pixel_count": 3540,
+          "ray_median_reflectance": 0.08998920023441315,
+          "background_median_reflectance": 0.09406815096735954,
+          "local_contrast": -0.043361655257386104
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        1.25,
+        2.5
+      ],
+      "sector_half_width_deg": 12.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 5264,
+          "background_pixel_count": 10518,
+          "ray_median_reflectance": 0.10559435933828354,
+          "background_median_reflectance": 0.10709242895245552,
+          "local_contrast": -0.013988566968044593
+        },
+        "glushko": {
+          "ray_pixel_count": 2127,
+          "background_pixel_count": 4255,
+          "ray_median_reflectance": 0.08984560519456863,
+          "background_median_reflectance": 0.09412176162004471,
+          "local_contrast": -0.04543217585257562
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        1.5,
+        3.0
+      ],
+      "sector_half_width_deg": 8.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 5055,
+          "background_pixel_count": 10111,
+          "ray_median_reflectance": 0.11162964254617691,
+          "background_median_reflectance": 0.11104563623666763,
+          "local_contrast": 0.005259155868715141
+        },
+        "glushko": {
+          "ray_pixel_count": 2041,
+          "background_pixel_count": 4115,
+          "ray_median_reflectance": 0.09380313754081726,
+          "background_median_reflectance": 0.0958511158823967,
+          "local_contrast": -0.021366244124817264
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        1.5,
+        3.0
+      ],
+      "sector_half_width_deg": 10.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 6314,
+          "background_pixel_count": 12631,
+          "ray_median_reflectance": 0.11066797375679016,
+          "background_median_reflectance": 0.11078528314828873,
+          "local_contrast": -0.0010588896662523692
+        },
+        "glushko": {
+          "ray_pixel_count": 2557,
+          "background_pixel_count": 5100,
+          "ray_median_reflectance": 0.09393863379955292,
+          "background_median_reflectance": 0.0958695225417614,
+          "local_contrast": -0.020140798566795542
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        1.5,
+        3.0
+      ],
+      "sector_half_width_deg": 12.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 7582,
+          "background_pixel_count": 15159,
+          "ray_median_reflectance": 0.10978810861706734,
+          "background_median_reflectance": 0.11021160334348679,
+          "local_contrast": -0.0038425602529307207
+        },
+        "glushko": {
+          "ray_pixel_count": 3066,
+          "background_pixel_count": 6126,
+          "ray_median_reflectance": 0.09394687041640282,
+          "background_median_reflectance": 0.09613479301333427,
+          "local_contrast": -0.022758904745631314
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        2.0,
+        4.0
+      ],
+      "sector_half_width_deg": 8.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 9007,
+          "background_pixel_count": 18008,
+          "ray_median_reflectance": 0.11113040894269943,
+          "background_median_reflectance": 0.11056587472558022,
+          "local_contrast": 0.0051058630750253345
+        },
+        "glushko": {
+          "ray_pixel_count": 3637,
+          "background_pixel_count": 7306,
+          "ray_median_reflectance": 0.09543412178754807,
+          "background_median_reflectance": 0.0977478176355362,
+          "local_contrast": -0.023670051198636532
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        2.0,
+        4.0
+      ],
+      "sector_half_width_deg": 10.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 11252,
+          "background_pixel_count": 22507,
+          "ray_median_reflectance": 0.11065021902322769,
+          "background_median_reflectance": 0.11037873476743698,
+          "local_contrast": 0.0024595702819271803
+        },
+        "glushko": {
+          "ray_pixel_count": 4545,
+          "background_pixel_count": 9080,
+          "ray_median_reflectance": 0.09566589444875717,
+          "background_median_reflectance": 0.09769134595990181,
+          "local_contrast": -0.020733172332132684
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    },
+    {
+      "annulus_crater_radii": [
+        2.0,
+        4.0
+      ],
+      "sector_half_width_deg": 12.0,
+      "targets": {
+        "ohm": {
+          "ray_pixel_count": 13505,
+          "background_pixel_count": 27003,
+          "ray_median_reflectance": 0.11029975861310959,
+          "background_median_reflectance": 0.11010703444480896,
+          "local_contrast": 0.0017503347472066506
+        },
+        "glushko": {
+          "ray_pixel_count": 5452,
+          "background_pixel_count": 10898,
+          "ray_median_reflectance": 0.09588378295302391,
+          "background_median_reflectance": 0.09779825806617737,
+          "local_contrast": -0.019575758822391147
+        }
+      },
+      "similarity_ratio": null,
+      "glushko_greater_than_ohm": false
+    }
+  ],
+  "robustness_contrast_similarity_count": 0,
+  "robustness_direction_count": 0,
+  "robustness_cells": 9,
+  "sampling": {
+    "ohm": {
+      "axis_bearing_deg": 70.16372506959942,
+      "sample_range_zero_based_inclusive": [
+        3936,
+        4539
+      ],
+      "maximum_outer_km": 134.92,
+      "candidate_pixel_centers": 268448,
+      "valid_pixel_centers": 268448,
+      "rejected_values": 0
+    },
+    "glushko": {
+      "axis_bearing_deg": 51.66351161261801,
+      "sample_range_zero_based_inclusive": [
+        600,
+        977
+      ],
+      "maximum_outer_km": 87.66,
+      "candidate_pixel_centers": 108645,
+      "valid_pixel_centers": 108645,
+      "rejected_values": 0
+    }
+  },
+  "accepted_science_network_bytes": 21847168,
+  "complete_testbed_network_bytes": 66162790,
+  "network_bytes_in_verification": 0,
+  "claim_ceiling": "A pass would establish only bounded cross-axis concordance between one astronaut's same-session ordinal comparison and one frozen 566 nm local-contrast proxy for two named ray sectors. It would not reconstruct the crew's viewing geometry or spectral stimulus, establish causal perception, control geology or substrate completely, establish observer generality, make raster pixels independent samples, show statistical significance, demonstrate scientific novelty, validate ray boundaries beyond the named-axis proxy, or create a publishable scientific result.",
+  "next_step_logic": {
+    "if_pass": "Retain the result as a stronger private canary. Before any public or scientific claim, require one independent observation or endpoint that was not used to choose the geometry, plus specialist review of the photometric and geologic controls.",
+    "if_partial": "Retain the exact split between similarity, local contrast, and direction. Do not rewrite the astronaut claim or thresholds; decide whether a second independently frozen band or observation could discriminate the mismatch.",
+    "if_fail": "Stop the Glushko-Ohm reflectance lane and preserve the transcript observation as qualitative only.",
+    "if_indeterminate": "Repair only a named source identity, label, or projection defect without changing the semantic claim, regions, band, or oracle; otherwise stop."
+  },
+  "checks": [
+    {
+      "id": "formed_design_and_hard_negatives",
+      "pass": true
+    },
+    {
+      "id": "bounded_acquisition_receipt",
+      "pass": true,
+      "accepted_science_network_bytes": 21847168,
+      "complete_testbed_network_bytes": 66162790
+    },
+    {
+      "id": "source_manifest_identity",
+      "pass": true
+    },
+    {
+      "id": "science_label_contract",
+      "pass": true
+    },
+    {
+      "id": "minimum_sector_pixels",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

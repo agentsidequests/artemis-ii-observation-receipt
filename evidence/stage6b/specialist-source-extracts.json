@@ -1,0 +1,63 @@
+{
+  "extract_id": "artemis2-stage6b-specialist-pressure-test-sources",
+  "version": "1.0.0",
+  "accessed_on": "2026-10-09",
+  "sources": [
+    {
+      "id": "nasa_orientale_comparison",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Preliminary%20Science%20Report.pdf",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "pages": [37, 38, 39],
+      "finding": "NASA states that an Orientale textural change described by the crew is apparent in a LOLA-derived roughness map but not in a Diviner-derived rock-abundance map, suggesting sensitivity to hectometer-scale terrain properties rather than 1-2 m rocks. NASA characterizes the integration as qualitative and says the crew observations are consistent with existing orbital interpretations."
+    },
+    {
+      "id": "nasa_resolution_case_scope",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Preliminary%20Science%20Report.pdf",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "pages": [39, 101, 102],
+      "finding": "NASA derives the 1-6 km nadir-at-pericynthion range from one Rimae Sirsalis feature-recognition case and explicitly says landmark recognition varied with proximity, viewing angle, illumination, and competing illuminated or colored objects. It also says feature detectability was influenced by brightness rather than physical size alone."
+    },
+    {
+      "id": "rosenburg_lola_roughness_method",
+      "title": "Global surface slopes and roughness of the Moon from the Lunar Orbiter Laser Altimeter",
+      "publisher": "Journal of Geophysical Research: Planets",
+      "published": "2011",
+      "doi": "10.1029/2010JE003716",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2010JE003716",
+      "finding": "LOLA roughness is scale-dependent. The paper computes slope or deviation at baselines from tens of meters to kilometers, then aggregates values in regional windows. For example, point-to-point slopes are averaged in 0.5-degree windows, about 15 km, spaced 0.25 degrees, about 7.5 km; other products use 30 km windows. A measurement baseline is therefore not the spatial extent of the displayed map pattern or a directly visible object size."
+    },
+    {
+      "id": "nasa_lola_product_definition",
+      "title": "Lunar slopes and Hurst exponent",
+      "publisher": "NASA Planetary Geology, Geophysics and Geochemistry Laboratory",
+      "url": "https://pgda.gsfc.nasa.gov/products/70",
+      "finding": "NASA documents point-to-point roughness-related slope baselines of 57 m, 225 m, and 560 m, with results binned in overlapping angular windows and interpolated into a map. The Hurst product draws on baselines from 57 m to 2.7 km and 1-degree windows. The product separates measurement baseline, aggregation support, and output-map sampling."
+    },
+    {
+      "id": "subresolution_texture_psychophysics_scope",
+      "title": "Human perception of subresolution fineness of dense textures based on image intensity statistics",
+      "publisher": "Journal of Vision",
+      "published": "2017",
+      "doi": "10.1167/17.4.8",
+      "pmid": "28423413",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28423413/",
+      "finding": "Controlled experiments found that observers could discriminate the fineness of hair-like dense line textures whose elements were below eye or display resolution by using image-level contrast and intensity-histogram cues. The experiment did not test lunar terrain, remote geologic mapping, oblique orbital viewing, or a LOLA roughness product."
+    },
+    {
+      "id": "bounded_semantic_concordance_search",
+      "source_class": "bounded current prior-art search",
+      "queries": [
+        "astronaut verbal observations quantitative geologic mapping remote sensing lunar crew descriptions paper",
+        "Apollo crew verbal observations lunar geology map units paper qualitative descriptions",
+        "planetary science natural language crew observations remote sensing terrain classification"
+      ],
+      "finding": "Primary Apollo and USGS records establish that astronaut descriptions are scientific evidence and have long been integrated with photographs, samples, and maps. No current source was located that performs the proposed held-out quantitative comparison of Artemis II texture language against multiple independent lunar terrain layers. Search absence does not establish novelty or priority."
+    }
+  ]
+}

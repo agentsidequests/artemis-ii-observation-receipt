@@ -1,0 +1,4780 @@
+{
+  "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_ISOLATED_SCALAR_AMBIGUITY",
+  "source_records": 8423,
+  "focus_activity_id": "25_Discussion #6: Forward Look",
+  "focus_records": [
+    {
+      "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+      "file_name": "art002e015902_nkz9019_raw_v01.tif",
+      "time": "2026-04-07T00:50:46.820Z",
+      "bundle_id": "artemis2_crew_camera",
+      "collection_id": "data_raw",
+      "flight_day": "6",
+      "activity_id": "25_Discussion #6: Forward Look",
+      "target_id": null,
+      "serial": "3920019",
+      "shutter_count": "2948",
+      "file_number": "0771",
+      "shooting_mode": "Continuous, Exposure Bracketing",
+      "auto_bracket_order": "0,-,+",
+      "bracket_value": "0",
+      "focal_length": "35.0",
+      "iso": "1600",
+      "instrument_serial_number": "3920019",
+      "iso_number": "1600"
+    },
+    {
+      "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+      "file_name": "art002e015908_nkz9019_raw_v01.tif",
+      "time": "2026-04-07T00:51:53.020Z",
+      "bundle_id": "artemis2_crew_camera",
+      "collection_id": "data_raw",
+      "flight_day": "6",
+      "activity_id": "25_Discussion #6: Forward Look",
+      "target_id": null,
+      "serial": "3920019",
+      "shutter_count": "2954",
+      "file_number": "0777",
+      "shooting_mode": "Continuous, Exposure Bracketing",
+      "auto_bracket_order": "0,-,+",
+      "bracket_value": "-2",
+      "focal_length": "35.0",
+      "iso": "1600",
+      "instrument_serial_number": "3920019",
+      "iso_number": "1600"
+    }
+  ],
+  "focus_record_count": 2,
+  "physical_actions_touched": 2,
+  "focus_only_complete_actions": 0,
+  "companion_records_needed_for_complete_actions": 8,
+  "focus_brackets": [
+    {
+      "serial": "3920019",
+      "start_time": "2026-04-07T00:50:46.820Z",
+      "end_time": "2026-04-07T00:50:49.110Z",
+      "span_seconds": 2.29,
+      "file_names": [
+        "art002e015902_nkz9019_raw_v01.tif",
+        "art002e015903_nkz9019_raw_v01.tif",
+        "art002e015904_nkz9019_raw_v01.tif",
+        "art002e015905_nkz9019_raw_v01.tif",
+        "art002e015906_nkz9019_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        2948,
+        2949,
+        2950,
+        2951,
+        2952
+      ],
+      "file_numbers": [
+        771,
+        772,
+        773,
+        774,
+        775
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "25_Discussion #6: Forward Look",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset"
+      ],
+      "target_ids": [
+        null,
+        "Sunset",
+        "Sunset",
+        "Sunset",
+        "Sunset"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3920019",
+      "start_time": "2026-04-07T00:51:51.830Z",
+      "end_time": "2026-04-07T00:51:56.100Z",
+      "span_seconds": 4.27,
+      "file_names": [
+        "art002e015907_nkz9019_raw_v01.tif",
+        "art002e015908_nkz9019_raw_v01.tif",
+        "art002e015909_nkz9019_raw_v01.tif",
+        "art002e015910_nkz9019_raw_v01.tif",
+        "art002e015911_nkz9019_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        2953,
+        2954,
+        2955,
+        2956,
+        2957
+      ],
+      "file_numbers": [
+        776,
+        777,
+        778,
+        779,
+        780
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "24_Sunset",
+        "25_Discussion #6: Forward Look",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset"
+      ],
+      "target_ids": [
+        "Sunset",
+        null,
+        "Sunset",
+        "Sunset",
+        "Sunset"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    }
+  ],
+  "neighbor_contexts": [
+    {
+      "focus": {
+        "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+        "file_name": "art002e015902_nkz9019_raw_v01.tif",
+        "time": "2026-04-07T00:50:46.820Z",
+        "bundle_id": "artemis2_crew_camera",
+        "collection_id": "data_raw",
+        "flight_day": "6",
+        "activity_id": "25_Discussion #6: Forward Look",
+        "target_id": null,
+        "serial": "3920019",
+        "shutter_count": "2948",
+        "file_number": "0771",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0",
+        "focal_length": "35.0",
+        "iso": "1600",
+        "instrument_serial_number": "3920019",
+        "iso_number": "1600"
+      },
+      "previous": {
+        "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+        "file_name": "art002e015901_nkz9019_raw_v01.tif",
+        "time": "2026-04-07T00:50:19.670Z",
+        "bundle_id": "artemis2_crew_camera",
+        "collection_id": "data_raw",
+        "flight_day": "6",
+        "activity_id": "24_Sunset",
+        "target_id": "Sunset",
+        "serial": "3920019",
+        "shutter_count": "2947",
+        "file_number": "0770",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0",
+        "focal_length": "35.0",
+        "iso": "1600",
+        "instrument_serial_number": "3920019",
+        "iso_number": "1600"
+      },
+      "following": {
+        "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+        "file_name": "art002e015903_nkz9019_raw_v01.tif",
+        "time": "2026-04-07T00:50:47.390Z",
+        "bundle_id": "artemis2_crew_camera",
+        "collection_id": "data_raw",
+        "flight_day": "6",
+        "activity_id": "24_Sunset",
+        "target_id": "Sunset",
+        "serial": "3920019",
+        "shutter_count": "2949",
+        "file_number": "0772",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2",
+        "focal_length": "35.0",
+        "iso": "1600",
+        "instrument_serial_number": "3920019",
+        "iso_number": "1600"
+      },
+      "previous_shutter_delta": 1,
+      "following_shutter_delta": 1
+    },
+    {
+      "focus": {
+        "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+        "file_name": "art002e015908_nkz9019_raw_v01.tif",
+        "time": "2026-04-07T00:51:53.020Z",
+        "bundle_id": "artemis2_crew_camera",
+        "collection_id": "data_raw",
+        "flight_day": "6",
+        "activity_id": "25_Discussion #6: Forward Look",
+        "target_id": null,
+        "serial": "3920019",
+        "shutter_count": "2954",
+        "file_number": "0777",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2",
+        "focal_length": "35.0",
+        "iso": "1600",
+        "instrument_serial_number": "3920019",
+        "iso_number": "1600"
+      },
+      "previous": {
+        "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+        "file_name": "art002e015907_nkz9019_raw_v01.tif",
+        "time": "2026-04-07T00:51:51.830Z",
+        "bundle_id": "artemis2_crew_camera",
+        "collection_id": "data_raw",
+        "flight_day": "6",
+        "activity_id": "24_Sunset",
+        "target_id": "Sunset",
+        "serial": "3920019",
+        "shutter_count": "2953",
+        "file_number": "0776",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0",
+        "focal_length": "35.0",
+        "iso": "1600",
+        "instrument_serial_number": "3920019",
+        "iso_number": "1600"
+      },
+      "following": {
+        "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+        "file_name": "art002e015909_nkz9019_raw_v01.tif",
+        "time": "2026-04-07T00:51:53.340Z",
+        "bundle_id": "artemis2_crew_camera",
+        "collection_id": "data_raw",
+        "flight_day": "6",
+        "activity_id": "24_Sunset",
+        "target_id": "Sunset",
+        "serial": "3920019",
+        "shutter_count": "2955",
+        "file_number": "0778",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-1",
+        "focal_length": "35.0",
+        "iso": "1600",
+        "instrument_serial_number": "3920019",
+        "iso_number": "1600"
+      },
+      "previous_shutter_delta": 1,
+      "following_shutter_delta": 1
+    }
+  ],
+  "schema_activity_id_max_occurs": "1",
+  "focus_within_nominal_plan_window": true,
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+  "next_step_logic": {
+    "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+    "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+    "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+    "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+  },
+  "checks": [
+    {
+      "id": "source_identity",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "stage10a_replay",
+      "pass": true
+    },
+    {
+      "id": "complete_focus_facet_census",
+      "pass": true,
+      "activity_count": 2,
+      "records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ]
+    },
+    {
+      "id": "isolated_same_camera_singletons",
+      "pass": true,
+      "contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "physical_action_fragmentation",
+      "pass": true,
+      "physical_actions": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed": 8
+    },
+    {
+      "id": "scalar_activity_schema",
+      "pass": true,
+      "max_occurs": "1"
+    },
+    {
+      "id": "plan_is_timing_context_not_execution_oracle",
+      "pass": true,
+      "planned_start": "2026-04-07T00:44:00+00:00",
+      "planned_end": "2026-04-07T00:54:00+00:00",
+      "focus_within_nominal_window": true
+    },
+    {
+      "id": "contemporaneous_operational_context",
+      "pass": true,
+      "missing_cues": []
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "boundary_claim": false,
+        "labels_declared_wrong": false,
+        "discussion_execution_inferred": false,
+        "image_content_inferred": false,
+        "schema_declared_causal": false,
+        "concurrent_activity_declared_impossible": false,
+        "scope": "flight_day_6_raw_crew_camera"
+      },
+      "pixel_payload_bytes": 0
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_isolated_singletons_a_temporal_boundary": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "call_isolated_singletons_a_temporal_boundary",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": true,
+            "labels_declared_wrong": false,
+            "discussion_execution_inferred": false,
+            "image_content_inferred": false,
+            "schema_declared_causal": false,
+            "concurrent_activity_declared_impossible": false,
+            "scope": "flight_day_6_raw_crew_camera"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    },
+    "declare_the_forward_look_labels_wrong": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "declare_the_forward_look_labels_wrong",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": false,
+            "labels_declared_wrong": true,
+            "discussion_execution_inferred": false,
+            "image_content_inferred": false,
+            "schema_declared_causal": false,
+            "concurrent_activity_declared_impossible": false,
+            "scope": "flight_day_6_raw_crew_camera"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    },
+    "treat_activity_id_as_discussion_execution_evidence": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "treat_activity_id_as_discussion_execution_evidence",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": false,
+            "labels_declared_wrong": false,
+            "discussion_execution_inferred": true,
+            "image_content_inferred": false,
+            "schema_declared_causal": false,
+            "concurrent_activity_declared_impossible": false,
+            "scope": "flight_day_6_raw_crew_camera"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    },
+    "infer_image_content_from_nearby_transcript": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "infer_image_content_from_nearby_transcript",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": false,
+            "labels_declared_wrong": false,
+            "discussion_execution_inferred": false,
+            "image_content_inferred": true,
+            "schema_declared_causal": false,
+            "concurrent_activity_declared_impossible": false,
+            "scope": "flight_day_6_raw_crew_camera"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    },
+    "claim_scalar_cardinality_caused_the_observed_assignments": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "claim_scalar_cardinality_caused_the_observed_assignments",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": false,
+            "labels_declared_wrong": false,
+            "discussion_execution_inferred": false,
+            "image_content_inferred": false,
+            "schema_declared_causal": true,
+            "concurrent_activity_declared_impossible": false,
+            "scope": "flight_day_6_raw_crew_camera"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    },
+    "claim_the_schema_forbids_real_world_concurrent_activity": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "claim_the_schema_forbids_real_world_concurrent_activity",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": false,
+            "labels_declared_wrong": false,
+            "discussion_execution_inferred": false,
+            "image_content_inferred": false,
+            "schema_declared_causal": false,
+            "concurrent_activity_declared_impossible": true,
+            "scope": "flight_day_6_raw_crew_camera"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    },
+    "generalize_two_records_to_all_artemis_metadata": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "generalize_two_records_to_all_artemis_metadata",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": false,
+            "labels_declared_wrong": false,
+            "discussion_execution_inferred": false,
+            "image_content_inferred": false,
+            "schema_declared_causal": false,
+            "concurrent_activity_declared_impossible": false,
+            "scope": "all_artemis_metadata"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_to_choose_the_correct_activity": {
+      "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+      "mutation": "open_pixels_to_choose_the_correct_activity",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "focus_activity_id": "25_Discussion #6: Forward Look",
+      "focus_records": [
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+          "file_name": "art002e015902_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:50:46.820Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2948",
+          "file_number": "0771",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        },
+        {
+          "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "time": "2026-04-07T00:51:53.020Z",
+          "bundle_id": "artemis2_crew_camera",
+          "collection_id": "data_raw",
+          "flight_day": "6",
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_id": null,
+          "serial": "3920019",
+          "shutter_count": "2954",
+          "file_number": "0777",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "focal_length": "35.0",
+          "iso": "1600",
+          "instrument_serial_number": "3920019",
+          "iso_number": "1600"
+        }
+      ],
+      "focus_record_count": 2,
+      "physical_actions_touched": 2,
+      "focus_only_complete_actions": 0,
+      "companion_records_needed_for_complete_actions": 8,
+      "focus_brackets": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "neighbor_contexts": [
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+            "file_name": "art002e015902_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:46.820Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2948",
+            "file_number": "0771",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+            "file_name": "art002e015901_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:19.670Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2947",
+            "file_number": "0770",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+            "file_name": "art002e015903_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:50:47.390Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2949",
+            "file_number": "0772",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        },
+        {
+          "focus": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+            "file_name": "art002e015908_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.020Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "25_Discussion #6: Forward Look",
+            "target_id": null,
+            "serial": "3920019",
+            "shutter_count": "2954",
+            "file_number": "0777",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-2",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+            "file_name": "art002e015907_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:51.830Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2953",
+            "file_number": "0776",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "0",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "following": {
+            "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+            "file_name": "art002e015909_nkz9019_raw_v01.tif",
+            "time": "2026-04-07T00:51:53.340Z",
+            "bundle_id": "artemis2_crew_camera",
+            "collection_id": "data_raw",
+            "flight_day": "6",
+            "activity_id": "24_Sunset",
+            "target_id": "Sunset",
+            "serial": "3920019",
+            "shutter_count": "2955",
+            "file_number": "0778",
+            "shooting_mode": "Continuous, Exposure Bracketing",
+            "auto_bracket_order": "0,-,+",
+            "bracket_value": "-1",
+            "focal_length": "35.0",
+            "iso": "1600",
+            "instrument_serial_number": "3920019",
+            "iso_number": "1600"
+          },
+          "previous_shutter_delta": 1,
+          "following_shutter_delta": 1
+        }
+      ],
+      "schema_activity_id_max_occurs": "1",
+      "focus_within_nominal_plan_window": true,
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+      "next_step_logic": {
+        "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+        "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+        "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+        "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "stage10a_replay",
+          "pass": true
+        },
+        {
+          "id": "complete_focus_facet_census",
+          "pass": true,
+          "activity_count": 2,
+          "records": [
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+              "file_name": "art002e015902_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:50:46.820Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2948",
+              "file_number": "0771",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "0",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            },
+            {
+              "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+              "file_name": "art002e015908_nkz9019_raw_v01.tif",
+              "time": "2026-04-07T00:51:53.020Z",
+              "bundle_id": "artemis2_crew_camera",
+              "collection_id": "data_raw",
+              "flight_day": "6",
+              "activity_id": "25_Discussion #6: Forward Look",
+              "target_id": null,
+              "serial": "3920019",
+              "shutter_count": "2954",
+              "file_number": "0777",
+              "shooting_mode": "Continuous, Exposure Bracketing",
+              "auto_bracket_order": "0,-,+",
+              "bracket_value": "-2",
+              "focal_length": "35.0",
+              "iso": "1600",
+              "instrument_serial_number": "3920019",
+              "iso_number": "1600"
+            }
+          ]
+        },
+        {
+          "id": "isolated_same_camera_singletons",
+          "pass": true,
+          "contexts": [
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015902_nkz9019_raw_v01.tif",
+                "file_name": "art002e015902_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:46.820Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2948",
+                "file_number": "0771",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015901_nkz9019_raw_v01.tif",
+                "file_name": "art002e015901_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:19.670Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2947",
+                "file_number": "0770",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015903_nkz9019_raw_v01.tif",
+                "file_name": "art002e015903_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:50:47.390Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2949",
+                "file_number": "0772",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            },
+            {
+              "focus": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015908_nkz9019_raw_v01.tif",
+                "file_name": "art002e015908_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.020Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "25_Discussion #6: Forward Look",
+                "target_id": null,
+                "serial": "3920019",
+                "shutter_count": "2954",
+                "file_number": "0777",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-2",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015907_nkz9019_raw_v01.tif",
+                "file_name": "art002e015907_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:51.830Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2953",
+                "file_number": "0776",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "0",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "following": {
+                "id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015909_nkz9019_raw_v01.tif",
+                "file_name": "art002e015909_nkz9019_raw_v01.tif",
+                "time": "2026-04-07T00:51:53.340Z",
+                "bundle_id": "artemis2_crew_camera",
+                "collection_id": "data_raw",
+                "flight_day": "6",
+                "activity_id": "24_Sunset",
+                "target_id": "Sunset",
+                "serial": "3920019",
+                "shutter_count": "2955",
+                "file_number": "0778",
+                "shooting_mode": "Continuous, Exposure Bracketing",
+                "auto_bracket_order": "0,-,+",
+                "bracket_value": "-1",
+                "focal_length": "35.0",
+                "iso": "1600",
+                "instrument_serial_number": "3920019",
+                "iso_number": "1600"
+              },
+              "previous_shutter_delta": 1,
+              "following_shutter_delta": 1
+            }
+          ]
+        },
+        {
+          "id": "physical_action_fragmentation",
+          "pass": true,
+          "physical_actions": 2,
+          "focus_only_complete_actions": 0,
+          "companion_records_needed": 8
+        },
+        {
+          "id": "scalar_activity_schema",
+          "pass": true,
+          "max_occurs": "1"
+        },
+        {
+          "id": "plan_is_timing_context_not_execution_oracle",
+          "pass": true,
+          "planned_start": "2026-04-07T00:44:00+00:00",
+          "planned_end": "2026-04-07T00:54:00+00:00",
+          "focus_within_nominal_window": true
+        },
+        {
+          "id": "contemporaneous_operational_context",
+          "pass": true,
+          "missing_cues": []
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "boundary_claim": false,
+            "labels_declared_wrong": false,
+            "discussion_execution_inferred": false,
+            "image_content_inferred": false,
+            "schema_declared_causal": false,
+            "concurrent_activity_declared_impossible": false,
+            "scope": "flight_day_6_raw_crew_camera"
+          },
+          "pixel_payload_bytes": 1
+        }
+      ],
+      "errors": [
+        "A prohibited causal, execution, content, scope, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

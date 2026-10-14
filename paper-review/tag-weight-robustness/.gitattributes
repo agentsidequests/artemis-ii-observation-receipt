@@ -1,0 +1,4 @@
+* -text
+# Preserve producer-native evidence without interpreting CRLF as prose defects.
+full-regression.log -whitespace
+native-crosscheck.json -whitespace

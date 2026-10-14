@@ -1,0 +1,873 @@
+{
+  "baseline": {
+    "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+    "version": "0.5.2",
+    "run_at_utc": "2026-10-09T20:30:04Z",
+    "mutation": "none",
+    "pass": true,
+    "evidence_state": "VERIFIED_BUDGET_STOP",
+    "receipt_state": "BUDGET_EXHAUSTED",
+    "range_transport_verified": true,
+    "clip_materialized": false,
+    "accepted_media_body_bytes": 67108864,
+    "full_product_bytes": 2960238197,
+    "fraction_of_full_product": 0.02267,
+    "top_level_atoms": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32,
+        "header_bytes": 8
+      },
+      {
+        "type": "free",
+        "offset": 32,
+        "size": 8,
+        "header_bytes": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 40,
+        "size": 2929948217,
+        "header_bytes": 8
+      },
+      {
+        "type": "moov",
+        "offset": 2929948257,
+        "size": 30289940,
+        "header_bytes": 8
+      }
+    ],
+    "checks": [
+      {
+        "id": "source_manifest_identity",
+        "pass": true
+      },
+      {
+        "id": "source_file_identities",
+        "pass": true,
+        "files": [
+          {
+            "path": "evidence/stage5a/frozen-run-spec.json",
+            "pass": true,
+            "bytes": 4196,
+            "sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8"
+          },
+          {
+            "path": "evidence/stage5a/attempt-1-source-redirect-receipt.json",
+            "pass": true,
+            "bytes": 1366,
+            "sha256": "a84e9673f17c7e843beb65ad53d391c08d739c91e7c547c5e0d8e333c7a44798"
+          },
+          {
+            "path": "evidence/stage5a/acquisition-receipt.json",
+            "pass": true,
+            "bytes": 6502,
+            "sha256": "fd18abd0ff1dabbd2fd4f1447d6d0a00f10453586debe08256a591cea26c31b1"
+          }
+        ]
+      },
+      {
+        "id": "frozen_run_contract",
+        "pass": true
+      },
+      {
+        "id": "zero_media_redirect_stop",
+        "pass": true,
+        "accepted_media_body_bytes": 0
+      },
+      {
+        "id": "source_head_identity",
+        "pass": true,
+        "content_length": "2960238197",
+        "accept_ranges": "bytes",
+        "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4"
+      },
+      {
+        "id": "bounded_range_transport",
+        "pass": true,
+        "http_206_requests": 5,
+        "media_body_bytes": 67108864,
+        "errors": []
+      },
+      {
+        "id": "mp4_top_level_geometry",
+        "pass": true,
+        "atoms": [
+          [
+            "ftyp",
+            0,
+            32
+          ],
+          [
+            "free",
+            32,
+            8
+          ],
+          [
+            "mdat",
+            40,
+            2929948217
+          ],
+          [
+            "moov",
+            2929948257,
+            30289940
+          ]
+        ]
+      },
+      {
+        "id": "hard_budget_stop",
+        "pass": true,
+        "state": "BUDGET_EXHAUSTED",
+        "accepted_media_body_bytes": 67108864,
+        "budget_limit_bytes": 67108864
+      },
+      {
+        "id": "no_clip_claim_laundering",
+        "pass": true,
+        "clip_count": 0,
+        "ffmpeg_exit_code": 3199971767
+      },
+      {
+        "id": "raw_client_abort_misclassification_preserved",
+        "pass": true,
+        "count": 1,
+        "bounded_interpretation": "The raw acquisition helper mislabeled one Windows client-close signal as a transport error. The terminal state was independently the exact byte-budget stop; the helper now classifies this socket condition as CLIENT_CLOSED_RANGE."
+      }
+    ],
+    "errors": [],
+    "claim_ceiling": "Stage 5A can prove only its observed transport outcome. VERIFIED_BOUNDED_EXTRACTION would prove materialization within the frozen client-side byte budget; VERIFIED_BUDGET_STOP proves exact range support and budget enforcement but not clip materialization or the failure of every bounded extraction strategy. Neither state establishes what the pixels show, camera pointing, lunar geolocation, a physical flash, impact causation, or scientific novelty.",
+    "next_step_logic": {
+      "on_success": "Inspect the extracted 15-second clip only through a separately frozen Stage 5B content and pointing oracle; do not widen to channel 2 or the still burst by default.",
+      "on_transport_failure": "Complete Stage 3B and retain the flash as transcript-supported but physically unvalidated unless a cheaper official server-side subset route appears.",
+      "on_valid_transport_but_rejected_artifact": "Repair only the local extraction representation if the receipt proves range support and material budget remains; otherwise use the transport-failure route.",
+      "stop": "Stop before any full-product download, second-channel inspection, still-image inspection, pixel interpretation, geolocation, or impact claim."
+    }
+  },
+  "hard_negatives": {
+    "budget_not_exhausted": {
+      "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+      "version": "0.5.2",
+      "run_at_utc": "2026-10-09T20:30:04Z",
+      "mutation": "budget_not_exhausted",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "receipt_state": "BUDGET_EXHAUSTED",
+      "range_transport_verified": true,
+      "clip_materialized": false,
+      "accepted_media_body_bytes": 67108863,
+      "full_product_bytes": 2960238197,
+      "fraction_of_full_product": 0.02267,
+      "top_level_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32,
+          "header_bytes": 8
+        },
+        {
+          "type": "free",
+          "offset": 32,
+          "size": 8,
+          "header_bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 40,
+          "size": 2929948217,
+          "header_bytes": 8
+        },
+        {
+          "type": "moov",
+          "offset": 2929948257,
+          "size": 30289940,
+          "header_bytes": 8
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage5a/frozen-run-spec.json",
+              "pass": true,
+              "bytes": 4196,
+              "sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8"
+            },
+            {
+              "path": "evidence/stage5a/attempt-1-source-redirect-receipt.json",
+              "pass": true,
+              "bytes": 1366,
+              "sha256": "a84e9673f17c7e843beb65ad53d391c08d739c91e7c547c5e0d8e333c7a44798"
+            },
+            {
+              "path": "evidence/stage5a/acquisition-receipt.json",
+              "pass": true,
+              "bytes": 6502,
+              "sha256": "fd18abd0ff1dabbd2fd4f1447d6d0a00f10453586debe08256a591cea26c31b1"
+            }
+          ]
+        },
+        {
+          "id": "frozen_run_contract",
+          "pass": true
+        },
+        {
+          "id": "zero_media_redirect_stop",
+          "pass": true,
+          "accepted_media_body_bytes": 0
+        },
+        {
+          "id": "source_head_identity",
+          "pass": true,
+          "content_length": "2960238197",
+          "accept_ranges": "bytes",
+          "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4"
+        },
+        {
+          "id": "bounded_range_transport",
+          "pass": true,
+          "http_206_requests": 5,
+          "media_body_bytes": 67108864,
+          "errors": []
+        },
+        {
+          "id": "mp4_top_level_geometry",
+          "pass": true,
+          "atoms": [
+            [
+              "ftyp",
+              0,
+              32
+            ],
+            [
+              "free",
+              32,
+              8
+            ],
+            [
+              "mdat",
+              40,
+              2929948217
+            ],
+            [
+              "moov",
+              2929948257,
+              30289940
+            ]
+          ]
+        },
+        {
+          "id": "hard_budget_stop",
+          "pass": false,
+          "state": "BUDGET_EXHAUSTED",
+          "accepted_media_body_bytes": 67108863,
+          "budget_limit_bytes": 67108864
+        },
+        {
+          "id": "no_clip_claim_laundering",
+          "pass": true,
+          "clip_count": 0,
+          "ffmpeg_exit_code": 3199971767
+        },
+        {
+          "id": "raw_client_abort_misclassification_preserved",
+          "pass": true,
+          "count": 1,
+          "bounded_interpretation": "The raw acquisition helper mislabeled one Windows client-close signal as a transport error. The terminal state was independently the exact byte-budget stop; the helper now classifies this socket condition as CLIENT_CLOSED_RANGE."
+        }
+      ],
+      "errors": [
+        "Terminal receipt does not prove the exact 64 MiB budget stop"
+      ],
+      "claim_ceiling": "Stage 5A can prove only its observed transport outcome. VERIFIED_BOUNDED_EXTRACTION would prove materialization within the frozen client-side byte budget; VERIFIED_BUDGET_STOP proves exact range support and budget enforcement but not clip materialization or the failure of every bounded extraction strategy. Neither state establishes what the pixels show, camera pointing, lunar geolocation, a physical flash, impact causation, or scientific novelty.",
+      "next_step_logic": null
+    },
+    "source_total_changed": {
+      "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+      "version": "0.5.2",
+      "run_at_utc": "2026-10-09T20:30:04Z",
+      "mutation": "source_total_changed",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "receipt_state": "BUDGET_EXHAUSTED",
+      "range_transport_verified": false,
+      "clip_materialized": false,
+      "accepted_media_body_bytes": 67108864,
+      "full_product_bytes": 2960238197,
+      "fraction_of_full_product": 0.02267,
+      "top_level_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32,
+          "header_bytes": 8
+        },
+        {
+          "type": "free",
+          "offset": 32,
+          "size": 8,
+          "header_bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 40,
+          "size": 2929948217,
+          "header_bytes": 8
+        },
+        {
+          "type": "moov",
+          "offset": 2929948257,
+          "size": 30289940,
+          "header_bytes": 8
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage5a/frozen-run-spec.json",
+              "pass": true,
+              "bytes": 4196,
+              "sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8"
+            },
+            {
+              "path": "evidence/stage5a/attempt-1-source-redirect-receipt.json",
+              "pass": true,
+              "bytes": 1366,
+              "sha256": "a84e9673f17c7e843beb65ad53d391c08d739c91e7c547c5e0d8e333c7a44798"
+            },
+            {
+              "path": "evidence/stage5a/acquisition-receipt.json",
+              "pass": true,
+              "bytes": 6502,
+              "sha256": "fd18abd0ff1dabbd2fd4f1447d6d0a00f10453586debe08256a591cea26c31b1"
+            }
+          ]
+        },
+        {
+          "id": "frozen_run_contract",
+          "pass": true
+        },
+        {
+          "id": "zero_media_redirect_stop",
+          "pass": true,
+          "accepted_media_body_bytes": 0
+        },
+        {
+          "id": "source_head_identity",
+          "pass": true,
+          "content_length": "2960238197",
+          "accept_ranges": "bytes",
+          "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4"
+        },
+        {
+          "id": "bounded_range_transport",
+          "pass": false,
+          "http_206_requests": 5,
+          "media_body_bytes": 67108864,
+          "errors": [
+            "request 0 Content-Range mismatch"
+          ]
+        },
+        {
+          "id": "mp4_top_level_geometry",
+          "pass": true,
+          "atoms": [
+            [
+              "ftyp",
+              0,
+              32
+            ],
+            [
+              "free",
+              32,
+              8
+            ],
+            [
+              "mdat",
+              40,
+              2929948217
+            ],
+            [
+              "moov",
+              2929948257,
+              30289940
+            ]
+          ]
+        },
+        {
+          "id": "hard_budget_stop",
+          "pass": true,
+          "state": "BUDGET_EXHAUSTED",
+          "accepted_media_body_bytes": 67108864,
+          "budget_limit_bytes": 67108864
+        },
+        {
+          "id": "no_clip_claim_laundering",
+          "pass": true,
+          "clip_count": 0,
+          "ffmpeg_exit_code": 3199971767
+        },
+        {
+          "id": "raw_client_abort_misclassification_preserved",
+          "pass": true,
+          "count": 1,
+          "bounded_interpretation": "The raw acquisition helper mislabeled one Windows client-close signal as a transport error. The terminal state was independently the exact byte-budget stop; the helper now classifies this socket condition as CLIENT_CLOSED_RANGE."
+        }
+      ],
+      "errors": [
+        "request 0 Content-Range mismatch"
+      ],
+      "claim_ceiling": "Stage 5A can prove only its observed transport outcome. VERIFIED_BOUNDED_EXTRACTION would prove materialization within the frozen client-side byte budget; VERIFIED_BUDGET_STOP proves exact range support and budget enforcement but not clip materialization or the failure of every bounded extraction strategy. Neither state establishes what the pixels show, camera pointing, lunar geolocation, a physical flash, impact causation, or scientific novelty.",
+      "next_step_logic": null
+    },
+    "clip_claim_without_artifact": {
+      "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+      "version": "0.5.2",
+      "run_at_utc": "2026-10-09T20:30:04Z",
+      "mutation": "clip_claim_without_artifact",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "receipt_state": "VERIFIED_BOUNDED_EXTRACTION",
+      "range_transport_verified": true,
+      "clip_materialized": false,
+      "accepted_media_body_bytes": 67108864,
+      "full_product_bytes": 2960238197,
+      "fraction_of_full_product": 0.02267,
+      "top_level_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32,
+          "header_bytes": 8
+        },
+        {
+          "type": "free",
+          "offset": 32,
+          "size": 8,
+          "header_bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 40,
+          "size": 2929948217,
+          "header_bytes": 8
+        },
+        {
+          "type": "moov",
+          "offset": 2929948257,
+          "size": 30289940,
+          "header_bytes": 8
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage5a/frozen-run-spec.json",
+              "pass": true,
+              "bytes": 4196,
+              "sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8"
+            },
+            {
+              "path": "evidence/stage5a/attempt-1-source-redirect-receipt.json",
+              "pass": true,
+              "bytes": 1366,
+              "sha256": "a84e9673f17c7e843beb65ad53d391c08d739c91e7c547c5e0d8e333c7a44798"
+            },
+            {
+              "path": "evidence/stage5a/acquisition-receipt.json",
+              "pass": true,
+              "bytes": 6502,
+              "sha256": "fd18abd0ff1dabbd2fd4f1447d6d0a00f10453586debe08256a591cea26c31b1"
+            }
+          ]
+        },
+        {
+          "id": "frozen_run_contract",
+          "pass": true
+        },
+        {
+          "id": "zero_media_redirect_stop",
+          "pass": true,
+          "accepted_media_body_bytes": 0
+        },
+        {
+          "id": "source_head_identity",
+          "pass": true,
+          "content_length": "2960238197",
+          "accept_ranges": "bytes",
+          "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4"
+        },
+        {
+          "id": "bounded_range_transport",
+          "pass": true,
+          "http_206_requests": 5,
+          "media_body_bytes": 67108864,
+          "errors": []
+        },
+        {
+          "id": "mp4_top_level_geometry",
+          "pass": true,
+          "atoms": [
+            [
+              "ftyp",
+              0,
+              32
+            ],
+            [
+              "free",
+              32,
+              8
+            ],
+            [
+              "mdat",
+              40,
+              2929948217
+            ],
+            [
+              "moov",
+              2929948257,
+              30289940
+            ]
+          ]
+        },
+        {
+          "id": "hard_budget_stop",
+          "pass": false,
+          "state": "VERIFIED_BOUNDED_EXTRACTION",
+          "accepted_media_body_bytes": 67108864,
+          "budget_limit_bytes": 67108864
+        },
+        {
+          "id": "no_clip_claim_laundering",
+          "pass": true,
+          "clip_count": 0,
+          "ffmpeg_exit_code": 3199971767
+        },
+        {
+          "id": "raw_client_abort_misclassification_preserved",
+          "pass": true,
+          "count": 1,
+          "bounded_interpretation": "The raw acquisition helper mislabeled one Windows client-close signal as a transport error. The terminal state was independently the exact byte-budget stop; the helper now classifies this socket condition as CLIENT_CLOSED_RANGE."
+        }
+      ],
+      "errors": [
+        "Terminal receipt does not prove the exact 64 MiB budget stop"
+      ],
+      "claim_ceiling": "Stage 5A can prove only its observed transport outcome. VERIFIED_BOUNDED_EXTRACTION would prove materialization within the frozen client-side byte budget; VERIFIED_BUDGET_STOP proves exact range support and budget enforcement but not clip materialization or the failure of every bounded extraction strategy. Neither state establishes what the pixels show, camera pointing, lunar geolocation, a physical flash, impact causation, or scientific novelty.",
+      "next_step_logic": null
+    },
+    "unrestricted_request_admitted": {
+      "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+      "version": "0.5.2",
+      "run_at_utc": "2026-10-09T20:30:04Z",
+      "mutation": "unrestricted_request_admitted",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "receipt_state": "BUDGET_EXHAUSTED",
+      "range_transport_verified": false,
+      "clip_materialized": false,
+      "accepted_media_body_bytes": 67108864,
+      "full_product_bytes": 2960238197,
+      "fraction_of_full_product": 0.02267,
+      "top_level_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32,
+          "header_bytes": 8
+        },
+        {
+          "type": "free",
+          "offset": 32,
+          "size": 8,
+          "header_bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 40,
+          "size": 2929948217,
+          "header_bytes": 8
+        },
+        {
+          "type": "moov",
+          "offset": 2929948257,
+          "size": 30289940,
+          "header_bytes": 8
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage5a/frozen-run-spec.json",
+              "pass": true,
+              "bytes": 4196,
+              "sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8"
+            },
+            {
+              "path": "evidence/stage5a/attempt-1-source-redirect-receipt.json",
+              "pass": true,
+              "bytes": 1366,
+              "sha256": "a84e9673f17c7e843beb65ad53d391c08d739c91e7c547c5e0d8e333c7a44798"
+            },
+            {
+              "path": "evidence/stage5a/acquisition-receipt.json",
+              "pass": true,
+              "bytes": 6502,
+              "sha256": "fd18abd0ff1dabbd2fd4f1447d6d0a00f10453586debe08256a591cea26c31b1"
+            }
+          ]
+        },
+        {
+          "id": "frozen_run_contract",
+          "pass": true
+        },
+        {
+          "id": "zero_media_redirect_stop",
+          "pass": true,
+          "accepted_media_body_bytes": 0
+        },
+        {
+          "id": "source_head_identity",
+          "pass": true,
+          "content_length": "2960238197",
+          "accept_ranges": "bytes",
+          "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4"
+        },
+        {
+          "id": "bounded_range_transport",
+          "pass": false,
+          "http_206_requests": 5,
+          "media_body_bytes": 66060288,
+          "errors": [
+            "request 0 has an invalid or unrestricted range"
+          ]
+        },
+        {
+          "id": "mp4_top_level_geometry",
+          "pass": true,
+          "atoms": [
+            [
+              "ftyp",
+              0,
+              32
+            ],
+            [
+              "free",
+              32,
+              8
+            ],
+            [
+              "mdat",
+              40,
+              2929948217
+            ],
+            [
+              "moov",
+              2929948257,
+              30289940
+            ]
+          ]
+        },
+        {
+          "id": "hard_budget_stop",
+          "pass": false,
+          "state": "BUDGET_EXHAUSTED",
+          "accepted_media_body_bytes": 67108864,
+          "budget_limit_bytes": 67108864
+        },
+        {
+          "id": "no_clip_claim_laundering",
+          "pass": true,
+          "clip_count": 0,
+          "ffmpeg_exit_code": 3199971767
+        },
+        {
+          "id": "raw_client_abort_misclassification_preserved",
+          "pass": true,
+          "count": 1,
+          "bounded_interpretation": "The raw acquisition helper mislabeled one Windows client-close signal as a transport error. The terminal state was independently the exact byte-budget stop; the helper now classifies this socket condition as CLIENT_CLOSED_RANGE."
+        }
+      ],
+      "errors": [
+        "request 0 has an invalid or unrestricted range",
+        "Terminal receipt does not prove the exact 64 MiB budget stop"
+      ],
+      "claim_ceiling": "Stage 5A can prove only its observed transport outcome. VERIFIED_BOUNDED_EXTRACTION would prove materialization within the frozen client-side byte budget; VERIFIED_BUDGET_STOP proves exact range support and budget enforcement but not clip materialization or the failure of every bounded extraction strategy. Neither state establishes what the pixels show, camera pointing, lunar geolocation, a physical flash, impact causation, or scientific novelty.",
+      "next_step_logic": null
+    },
+    "moov_geometry_changed": {
+      "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+      "version": "0.5.2",
+      "run_at_utc": "2026-10-09T20:30:04Z",
+      "mutation": "moov_geometry_changed",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "receipt_state": "BUDGET_EXHAUSTED",
+      "range_transport_verified": true,
+      "clip_materialized": false,
+      "accepted_media_body_bytes": 67108864,
+      "full_product_bytes": 2960238197,
+      "fraction_of_full_product": 0.02267,
+      "top_level_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "size": 32,
+          "header_bytes": 8
+        },
+        {
+          "type": "free",
+          "offset": 32,
+          "size": 8,
+          "header_bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 40,
+          "size": 2929948217,
+          "header_bytes": 8
+        },
+        {
+          "type": "moov",
+          "offset": 2929948257,
+          "size": 30289941,
+          "header_bytes": 8
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage5a/frozen-run-spec.json",
+              "pass": true,
+              "bytes": 4196,
+              "sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8"
+            },
+            {
+              "path": "evidence/stage5a/attempt-1-source-redirect-receipt.json",
+              "pass": true,
+              "bytes": 1366,
+              "sha256": "a84e9673f17c7e843beb65ad53d391c08d739c91e7c547c5e0d8e333c7a44798"
+            },
+            {
+              "path": "evidence/stage5a/acquisition-receipt.json",
+              "pass": true,
+              "bytes": 6502,
+              "sha256": "fd18abd0ff1dabbd2fd4f1447d6d0a00f10453586debe08256a591cea26c31b1"
+            }
+          ]
+        },
+        {
+          "id": "frozen_run_contract",
+          "pass": true
+        },
+        {
+          "id": "zero_media_redirect_stop",
+          "pass": true,
+          "accepted_media_body_bytes": 0
+        },
+        {
+          "id": "source_head_identity",
+          "pass": true,
+          "content_length": "2960238197",
+          "accept_ranges": "bytes",
+          "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4"
+        },
+        {
+          "id": "bounded_range_transport",
+          "pass": true,
+          "http_206_requests": 5,
+          "media_body_bytes": 67108864,
+          "errors": []
+        },
+        {
+          "id": "mp4_top_level_geometry",
+          "pass": false,
+          "atoms": [
+            [
+              "ftyp",
+              0,
+              32
+            ],
+            [
+              "free",
+              32,
+              8
+            ],
+            [
+              "mdat",
+              40,
+              2929948217
+            ],
+            [
+              "moov",
+              2929948257,
+              30289941
+            ]
+          ]
+        },
+        {
+          "id": "hard_budget_stop",
+          "pass": true,
+          "state": "BUDGET_EXHAUSTED",
+          "accepted_media_body_bytes": 67108864,
+          "budget_limit_bytes": 67108864
+        },
+        {
+          "id": "no_clip_claim_laundering",
+          "pass": true,
+          "clip_count": 0,
+          "ffmpeg_exit_code": 3199971767
+        },
+        {
+          "id": "raw_client_abort_misclassification_preserved",
+          "pass": true,
+          "count": 1,
+          "bounded_interpretation": "The raw acquisition helper mislabeled one Windows client-close signal as a transport error. The terminal state was independently the exact byte-budget stop; the helper now classifies this socket condition as CLIENT_CLOSED_RANGE."
+        }
+      ],
+      "errors": [
+        "MP4 top-level atom geometry differs from the frozen receipt"
+      ],
+      "claim_ceiling": "Stage 5A can prove only its observed transport outcome. VERIFIED_BOUNDED_EXTRACTION would prove materialization within the frozen client-side byte budget; VERIFIED_BUDGET_STOP proves exact range support and budget enforcement but not clip materialization or the failure of every bounded extraction strategy. Neither state establishes what the pixels show, camera pointing, lunar geolocation, a physical flash, impact causation, or scientific novelty.",
+      "next_step_logic": null
+    }
+  },
+  "hard_negatives_pass": true,
+  "pass": true,
+  "evidence_state": "VERIFIED_BUDGET_STOP"
+}

@@ -1,0 +1,44 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-reflectance-canary-stage8a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "classification": "ARTIFACT_ERROR",
+      "source_surface": "PDS4 extras/browse WAC_EMP GeoTIFFs",
+      "files": [
+        {
+          "name": "WAC_EMP_566NM_E300N2250_064P.TIF",
+          "bytes": 22150537,
+          "md5": "9a145e2eaedecc57b3edfd64c13b5ac1"
+        },
+        {
+          "name": "WAC_EMP_566NM_E300N3150_064P.TIF",
+          "bytes": 22150537,
+          "md5": "0e8be40bf524df8662bce018e3653f02"
+        }
+      ],
+      "falsifier": "The detached labels identify Product_Browse, while the TIFFs expose 8-bit grayscale values. The science products are Product_Observational IEEE754LSBSingle arrays.",
+      "effect": "No region metric, image rendering, visual inspection, or candidate classification was performed from the browse values.",
+      "disposition": "REJECT_BROWSE_REPRESENTATION_AND_REMOVE_LOCAL_TIFS"
+    },
+    {
+      "attempt": 2,
+      "classification": "METADATA_QUALIFIED",
+      "source_surface": "PDS4 science Product_Observational labels",
+      "files": [
+        {
+          "path": "evidence/stage8a/source/WAC_EMP_566NM_E300N2250_064P.science.xml",
+          "bytes": 14143,
+          "sha256": "00ed3ba99b136d912edcf29dc4ae2e5eea7d3ff86b7f978026a5a4ced443ebbf"
+        },
+        {
+          "path": "evidence/stage8a/source/WAC_EMP_566NM_E300N3150_064P.science.xml",
+          "bytes": 14143,
+          "sha256": "1c54bc30c975d19ce1fbcbb3073f6c6990d2cbff03610677e9926e0058c7923b"
+        }
+      ],
+      "qualified_contract": "PDS4 version 2.0; 3840 by 5760; 64 pixels per degree; 23040-byte attached header; little-endian float32 samples; bounded full-row byte ranges only.",
+      "disposition": "ADMIT_BOUNDED_SCIENCE_IMG_RANGE_ACQUISITION"
+    }
+  ]
+}

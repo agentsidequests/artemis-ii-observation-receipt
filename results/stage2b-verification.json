@@ -1,0 +1,3805 @@
+{
+  "baseline": {
+    "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+    "version": "0.6.0",
+    "run_at_utc": "2026-10-09T21:13:37Z",
+    "mutation": "none",
+    "pass": true,
+    "evidence_state": "VERIFIED_SINGLE_ADMISSIBLE_REPLICATION",
+    "disposition": "RETAIN_EARTHSET_COUNTEREXAMPLE_WITHOUT_PATTERN_CLAIM",
+    "pattern": "SINGLE_ADMISSIBLE_REPLICATION",
+    "admissible_replications": 1,
+    "events": {
+      "earthset": {
+        "status": "VERIFIED_OVERLAP",
+        "states": [
+          "FULL_VISIBLE",
+          "FULL_VISIBLE",
+          "FULL_VISIBLE",
+          "FULL_VISIBLE",
+          "PARTIAL",
+          "PARTIAL",
+          "PARTIAL",
+          "NOT_VISIBLE"
+        ],
+        "frames": [
+          {
+            "time_utc": "2026-04-06T22:40:14Z",
+            "image": "art002e016278_saw3_src_v01.jpg",
+            "raw_label": "art002e016278_saw3_raw_v01.xml",
+            "state": "FULL_VISIBLE"
+          },
+          {
+            "time_utc": "2026-04-06T22:40:44Z",
+            "image": "art002e016279_saw3_src_v01.jpg",
+            "raw_label": "art002e016279_saw3_raw_v01.xml",
+            "state": "FULL_VISIBLE"
+          },
+          {
+            "time_utc": "2026-04-06T22:41:14Z",
+            "image": "art002e016280_saw3_src_v01.jpg",
+            "raw_label": "art002e016280_saw3_raw_v01.xml",
+            "state": "FULL_VISIBLE"
+          },
+          {
+            "time_utc": "2026-04-06T22:41:44Z",
+            "image": "art002e016281_saw3_src_v01.jpg",
+            "raw_label": "art002e016281_saw3_raw_v01.xml",
+            "state": "FULL_VISIBLE"
+          },
+          {
+            "time_utc": "2026-04-06T22:42:14Z",
+            "image": "art002e009567_saw3_src_v01.jpg",
+            "raw_label": "art002e009567_saw3_raw_v01.xml",
+            "state": "PARTIAL"
+          },
+          {
+            "time_utc": "2026-04-06T22:42:44Z",
+            "image": "art002e016282_saw3_src_v01.jpg",
+            "raw_label": "art002e016282_saw3_raw_v01.xml",
+            "state": "PARTIAL"
+          },
+          {
+            "time_utc": "2026-04-06T22:43:14Z",
+            "image": "art002e016283_saw3_src_v01.jpg",
+            "raw_label": "art002e016283_saw3_raw_v01.xml",
+            "state": "PARTIAL"
+          },
+          {
+            "time_utc": "2026-04-06T22:43:44Z",
+            "image": "art002e016284_saw3_src_v01.jpg",
+            "raw_label": "art002e016284_saw3_raw_v01.xml",
+            "state": "NOT_VISIBLE"
+          }
+        ],
+        "transition_brackets": {
+          "occultation_onset": {
+            "lower_exclusive_utc": "2026-04-06T22:41:44Z",
+            "upper_inclusive_utc": "2026-04-06T22:42:14Z"
+          },
+          "complete_disappearance": {
+            "lower_exclusive_utc": "2026-04-06T22:43:14Z",
+            "upper_inclusive_utc": "2026-04-06T22:43:44Z"
+          },
+          "terminal_state_check_utc": "2026-04-06T22:43:44Z"
+        },
+        "availability_window": {
+          "start_utc": "2026-04-06T22:42:19.730197Z",
+          "end_utc": "2026-04-06T22:45:36.380230Z",
+          "duration_seconds": 196.650033
+        },
+        "coverage_relation": "OVERLAPS_EVENT",
+        "minimum_guaranteed_overlap_seconds": 54.269803
+      },
+      "sunset": {
+        "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+        "states": [
+          "SUN_VISIBLE",
+          "SUN_VISIBLE",
+          "PARTIAL",
+          "PARTIAL"
+        ],
+        "frames": [
+          {
+            "time_utc": "2026-04-07T00:33:39Z",
+            "image": "art002e016305_saw3_src_v01.jpg",
+            "raw_label": "art002e016305_saw3_raw_v01.xml",
+            "state": "SUN_VISIBLE"
+          },
+          {
+            "time_utc": "2026-04-07T00:34:09Z",
+            "image": "art002e016306_saw3_src_v01.jpg",
+            "raw_label": "art002e016306_saw3_raw_v01.xml",
+            "state": "SUN_VISIBLE"
+          },
+          {
+            "time_utc": "2026-04-07T00:34:39Z",
+            "image": "art002e009569_saw3_src_v01.jpg",
+            "raw_label": "art002e009569_saw3_raw_v01.xml",
+            "state": "PARTIAL"
+          },
+          {
+            "time_utc": "2026-04-07T00:35:09Z",
+            "image": "art002e016307_saw3_src_v01.jpg",
+            "raw_label": "art002e016307_saw3_raw_v01.xml",
+            "state": "PARTIAL"
+          }
+        ],
+        "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE",
+        "availability_window": {
+          "start_utc": "2026-04-07T00:35:08.308985Z",
+          "end_utc": "2026-04-07T00:36:51.116085Z",
+          "duration_seconds": 102.8071
+        }
+      },
+      "sunrise": {
+        "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+        "states": [],
+        "frames": [],
+        "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK",
+        "availability_window": {
+          "start_utc": "2026-04-07T01:31:02.595594Z",
+          "end_utc": "2026-04-07T01:33:11.253602Z",
+          "duration_seconds": 128.658008
+        }
+      }
+    },
+    "acquisition": {
+      "accepted_files": 24,
+      "accepted_bytes": 29181381,
+      "aggregate_max_bytes": 62914560,
+      "network_bytes_in_verification": 0
+    },
+    "checks": [
+      {
+        "id": "acquisition_receipt_identity",
+        "pass": true,
+        "observed_sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6",
+        "error": "acquisition_receipt identity mismatch"
+      },
+      {
+        "id": "source_manifest_identity",
+        "pass": true,
+        "observed_sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f",
+        "error": "source_manifest identity mismatch"
+      },
+      {
+        "id": "label_scan_receipt_identity",
+        "pass": true,
+        "observed_sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a",
+        "error": "label_scan_receipt identity mismatch"
+      },
+      {
+        "id": "label_scan_manifest_identity",
+        "pass": true,
+        "observed_sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67",
+        "error": "label_scan_manifest identity mismatch"
+      },
+      {
+        "id": "visual_classification_identity",
+        "pass": true,
+        "observed_sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c",
+        "error": "visual_classification identity mismatch"
+      },
+      {
+        "id": "bounded_acquisition_receipt",
+        "pass": true,
+        "accepted_bytes": 29181381,
+        "accepted_files": 24,
+        "error": "Bounded acquisition receipt differs from the frozen result"
+      },
+      {
+        "id": "source_manifest_cardinality",
+        "pass": true,
+        "observed": 24,
+        "error": "Source manifest does not contain exactly 24 files"
+      },
+      {
+        "id": "source_identity:art002e016278_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016278_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016279_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016279_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016280_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016280_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016281_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016281_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e009567_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e009567_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016282_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016282_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016283_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016283_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016284_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016284_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016305_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016305_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016306_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016306_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e009569_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e009569_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml"
+      },
+      {
+        "id": "source_identity:art002e016307_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg"
+      },
+      {
+        "id": "source_identity:art002e016307_saw3_src_v01.xml",
+        "pass": true,
+        "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml"
+      },
+      {
+        "id": "oracle_and_field_semantics",
+        "pass": true,
+        "error": "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+      },
+      {
+        "id": "earthset:frozen_frame_count",
+        "pass": true,
+        "observed": 8,
+        "expected": 8,
+        "error": "earthset frame sequence was widened or shortened"
+      },
+      {
+        "id": "earthset:raw_identity:art002e016278_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016278_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e016278_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:raw_identity:art002e016279_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016279_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e016279_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:raw_identity:art002e016280_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016280_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e016280_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:raw_identity:art002e016281_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016281_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e016281_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:raw_identity:art002e009567_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e009567_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e009567_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:raw_identity:art002e016282_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016282_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e016282_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:raw_identity:art002e016283_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016283_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e016283_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:raw_identity:art002e016284_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016284_saw3_raw_v01.xml"
+      },
+      {
+        "id": "earthset:label_binding:art002e016284_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg"
+      },
+      {
+        "id": "earthset:thirty_second_cadence",
+        "pass": true,
+        "observed_seconds": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "error": "earthset is not a complete strict 30-second sequence"
+      },
+      {
+        "id": "sunset:frozen_frame_count",
+        "pass": true,
+        "observed": 4,
+        "expected": 4,
+        "error": "sunset frame sequence was widened or shortened"
+      },
+      {
+        "id": "sunset:raw_identity:art002e016305_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016305_saw3_raw_v01.xml"
+      },
+      {
+        "id": "sunset:label_binding:art002e016305_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg"
+      },
+      {
+        "id": "sunset:raw_identity:art002e016306_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016306_saw3_raw_v01.xml"
+      },
+      {
+        "id": "sunset:label_binding:art002e016306_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg"
+      },
+      {
+        "id": "sunset:raw_identity:art002e009569_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e009569_saw3_raw_v01.xml"
+      },
+      {
+        "id": "sunset:label_binding:art002e009569_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg"
+      },
+      {
+        "id": "sunset:raw_identity:art002e016307_saw3_raw_v01.xml",
+        "pass": true,
+        "error": "Raw label identity mismatch: art002e016307_saw3_raw_v01.xml"
+      },
+      {
+        "id": "sunset:label_binding:art002e016307_saw3_src_v01.jpg",
+        "pass": true,
+        "error": "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg"
+      },
+      {
+        "id": "sunset:thirty_second_cadence",
+        "pass": true,
+        "observed_seconds": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "error": "sunset is not a complete strict 30-second sequence"
+      },
+      {
+        "id": "sunrise:pre_pixel_stop",
+        "pass": true,
+        "error": "Sunrise did not preserve its frozen pre-pixel stop"
+      },
+      {
+        "id": "sunset:independent_stop",
+        "pass": true,
+        "observed_states": [
+          "SUN_VISIBLE",
+          "SUN_VISIBLE",
+          "PARTIAL",
+          "PARTIAL"
+        ],
+        "error": "Sunset did not preserve the missing-terminal-state stop"
+      },
+      {
+        "id": "otr_identity",
+        "pass": true,
+        "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+        "error": "OTR identity mismatch"
+      },
+      {
+        "id": "earthset:otr_source_values",
+        "pass": true,
+        "error": "earthset OTR values differ from the frozen availability window"
+      },
+      {
+        "id": "sunset:otr_source_values",
+        "pass": true,
+        "error": "sunset OTR values differ from the frozen availability window"
+      },
+      {
+        "id": "sunrise:otr_source_values",
+        "pass": true,
+        "error": "sunrise OTR values differ from the frozen availability window"
+      },
+      {
+        "id": "earthset:verified_overlap",
+        "pass": true,
+        "observed_relation": "OVERLAPS_EVENT",
+        "minimum_guaranteed_overlap_seconds": 54.269803,
+        "error": "Earthset result differs from the frozen expected overlap"
+      },
+      {
+        "id": "independent_event_stops",
+        "pass": true,
+        "error": "Sunset or Sunrise stop differs from the frozen result"
+      },
+      {
+        "id": "pattern_classification",
+        "pass": true,
+        "observed": "SINGLE_ADMISSIBLE_REPLICATION",
+        "admissible_replications": 1,
+        "error": "Pattern classification differs from the frozen expected result"
+      }
+    ],
+    "errors": [],
+    "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+    "next_step_logic": "Retain Earthset as a bounded counterexample to Earthrise non-overlap, make no recurrence claim, and compare only the smallest plan metadata or current primary documentation that could explain the placement contrast before acquiring more pixels."
+  },
+  "hard_negatives": {
+    "shift_image_timestamps_plus_300_seconds": {
+      "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+      "version": "0.6.0",
+      "run_at_utc": "2026-10-09T21:13:37Z",
+      "mutation": "shift_image_timestamps_plus_300_seconds",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "pattern": "SINGLE_ADMISSIBLE_REPLICATION",
+      "admissible_replications": 1,
+      "events": {
+        "earthset": {
+          "status": "VERIFIED_OVERLAP",
+          "states": [
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "NOT_VISIBLE"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-06T22:45:14Z",
+              "image": "art002e016278_saw3_src_v01.jpg",
+              "raw_label": "art002e016278_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:45:44Z",
+              "image": "art002e016279_saw3_src_v01.jpg",
+              "raw_label": "art002e016279_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:46:14Z",
+              "image": "art002e016280_saw3_src_v01.jpg",
+              "raw_label": "art002e016280_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:46:44Z",
+              "image": "art002e016281_saw3_src_v01.jpg",
+              "raw_label": "art002e016281_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:47:14Z",
+              "image": "art002e009567_saw3_src_v01.jpg",
+              "raw_label": "art002e009567_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:47:44Z",
+              "image": "art002e016282_saw3_src_v01.jpg",
+              "raw_label": "art002e016282_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:48:14Z",
+              "image": "art002e016283_saw3_src_v01.jpg",
+              "raw_label": "art002e016283_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:48:44Z",
+              "image": "art002e016284_saw3_src_v01.jpg",
+              "raw_label": "art002e016284_saw3_raw_v01.xml",
+              "state": "NOT_VISIBLE"
+            }
+          ],
+          "transition_brackets": {
+            "occultation_onset": {
+              "lower_exclusive_utc": "2026-04-06T22:46:44Z",
+              "upper_inclusive_utc": "2026-04-06T22:47:14Z"
+            },
+            "complete_disappearance": {
+              "lower_exclusive_utc": "2026-04-06T22:48:14Z",
+              "upper_inclusive_utc": "2026-04-06T22:48:44Z"
+            },
+            "terminal_state_check_utc": "2026-04-06T22:48:44Z"
+          },
+          "availability_window": {
+            "start_utc": "2026-04-06T22:42:19.730197Z",
+            "end_utc": "2026-04-06T22:45:36.380230Z",
+            "duration_seconds": 196.650033
+          },
+          "coverage_relation": "UNESTABLISHED",
+          "minimum_guaranteed_overlap_seconds": null
+        },
+        "sunset": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-07T00:38:39Z",
+              "image": "art002e016305_saw3_src_v01.jpg",
+              "raw_label": "art002e016305_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:39:09Z",
+              "image": "art002e016306_saw3_src_v01.jpg",
+              "raw_label": "art002e016306_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:39:39Z",
+              "image": "art002e009569_saw3_src_v01.jpg",
+              "raw_label": "art002e009569_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-07T00:40:09Z",
+              "image": "art002e016307_saw3_src_v01.jpg",
+              "raw_label": "art002e016307_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            }
+          ],
+          "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE",
+          "availability_window": {
+            "start_utc": "2026-04-07T00:35:08.308985Z",
+            "end_utc": "2026-04-07T00:36:51.116085Z",
+            "duration_seconds": 102.8071
+          }
+        },
+        "sunrise": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [],
+          "frames": [],
+          "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK",
+          "availability_window": {
+            "start_utc": "2026-04-07T01:31:02.595594Z",
+            "end_utc": "2026-04-07T01:33:11.253602Z",
+            "duration_seconds": 128.658008
+          }
+        }
+      },
+      "acquisition": {
+        "accepted_files": 24,
+        "accepted_bytes": 29181381,
+        "aggregate_max_bytes": 62914560,
+        "network_bytes_in_verification": 0
+      },
+      "checks": [
+        {
+          "id": "acquisition_receipt_identity",
+          "pass": true,
+          "observed_sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6",
+          "error": "acquisition_receipt identity mismatch"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f",
+          "error": "source_manifest identity mismatch"
+        },
+        {
+          "id": "label_scan_receipt_identity",
+          "pass": true,
+          "observed_sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a",
+          "error": "label_scan_receipt identity mismatch"
+        },
+        {
+          "id": "label_scan_manifest_identity",
+          "pass": true,
+          "observed_sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67",
+          "error": "label_scan_manifest identity mismatch"
+        },
+        {
+          "id": "visual_classification_identity",
+          "pass": true,
+          "observed_sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c",
+          "error": "visual_classification identity mismatch"
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "accepted_bytes": 29181381,
+          "accepted_files": 24,
+          "error": "Bounded acquisition receipt differs from the frozen result"
+        },
+        {
+          "id": "source_manifest_cardinality",
+          "pass": true,
+          "observed": 24,
+          "error": "Source manifest does not contain exactly 24 files"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml"
+        },
+        {
+          "id": "oracle_and_field_semantics",
+          "pass": true,
+          "error": "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+        },
+        {
+          "id": "earthset:frozen_frame_count",
+          "pass": true,
+          "observed": 8,
+          "expected": 8,
+          "error": "earthset frame sequence was widened or shortened"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016278_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016278_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016278_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016279_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016279_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016279_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016280_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016280_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016280_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016281_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016281_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016281_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e009567_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009567_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e009567_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016282_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016282_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016282_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016283_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016283_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016283_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016284_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016284_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016284_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "earthset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunset:frozen_frame_count",
+          "pass": true,
+          "observed": 4,
+          "expected": 4,
+          "error": "sunset frame sequence was widened or shortened"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016305_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016305_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016305_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016306_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016306_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016306_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e009569_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009569_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e009569_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016307_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016307_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016307_saw3_src_v01.jpg",
+          "pass": false,
+          "error": "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "sunset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunrise:pre_pixel_stop",
+          "pass": true,
+          "error": "Sunrise did not preserve its frozen pre-pixel stop"
+        },
+        {
+          "id": "sunset:independent_stop",
+          "pass": true,
+          "observed_states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "error": "Sunset did not preserve the missing-terminal-state stop"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+          "error": "OTR identity mismatch"
+        },
+        {
+          "id": "earthset:otr_source_values",
+          "pass": true,
+          "error": "earthset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunset:otr_source_values",
+          "pass": true,
+          "error": "sunset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunrise:otr_source_values",
+          "pass": true,
+          "error": "sunrise OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "earthset:verified_overlap",
+          "pass": false,
+          "observed_relation": "UNESTABLISHED",
+          "minimum_guaranteed_overlap_seconds": null,
+          "error": "Earthset result differs from the frozen expected overlap"
+        },
+        {
+          "id": "independent_event_stops",
+          "pass": true,
+          "error": "Sunset or Sunrise stop differs from the frozen result"
+        },
+        {
+          "id": "pattern_classification",
+          "pass": true,
+          "observed": "SINGLE_ADMISSIBLE_REPLICATION",
+          "admissible_replications": 1,
+          "error": "Pattern classification differs from the frozen expected result"
+        }
+      ],
+      "errors": [
+        "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg",
+        "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg",
+        "Earthset result differs from the frozen expected overlap"
+      ],
+      "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+      "next_step_logic": null
+    },
+    "substitute_transcript_times_for_image_states": {
+      "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+      "version": "0.6.0",
+      "run_at_utc": "2026-10-09T21:13:37Z",
+      "mutation": "substitute_transcript_times_for_image_states",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "pattern": "SINGLE_ADMISSIBLE_REPLICATION",
+      "admissible_replications": 1,
+      "events": {
+        "earthset": {
+          "status": "VERIFIED_OVERLAP",
+          "states": [
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "NOT_VISIBLE"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-06T22:40:14Z",
+              "image": "art002e016278_saw3_src_v01.jpg",
+              "raw_label": "art002e016278_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:40:44Z",
+              "image": "art002e016279_saw3_src_v01.jpg",
+              "raw_label": "art002e016279_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:14Z",
+              "image": "art002e016280_saw3_src_v01.jpg",
+              "raw_label": "art002e016280_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:44Z",
+              "image": "art002e016281_saw3_src_v01.jpg",
+              "raw_label": "art002e016281_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:14Z",
+              "image": "art002e009567_saw3_src_v01.jpg",
+              "raw_label": "art002e009567_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:44Z",
+              "image": "art002e016282_saw3_src_v01.jpg",
+              "raw_label": "art002e016282_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:14Z",
+              "image": "art002e016283_saw3_src_v01.jpg",
+              "raw_label": "art002e016283_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:44Z",
+              "image": "art002e016284_saw3_src_v01.jpg",
+              "raw_label": "art002e016284_saw3_raw_v01.xml",
+              "state": "NOT_VISIBLE"
+            }
+          ],
+          "transition_brackets": {
+            "occultation_onset": {
+              "lower_exclusive_utc": "2026-04-06T22:41:44Z",
+              "upper_inclusive_utc": "2026-04-06T22:42:14Z"
+            },
+            "complete_disappearance": {
+              "lower_exclusive_utc": "2026-04-06T22:43:14Z",
+              "upper_inclusive_utc": "2026-04-06T22:43:44Z"
+            },
+            "terminal_state_check_utc": "2026-04-06T22:43:44Z"
+          },
+          "availability_window": {
+            "start_utc": "2026-04-06T22:42:19.730197Z",
+            "end_utc": "2026-04-06T22:45:36.380230Z",
+            "duration_seconds": 196.650033
+          },
+          "coverage_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803
+        },
+        "sunset": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-07T00:33:39Z",
+              "image": "art002e016305_saw3_src_v01.jpg",
+              "raw_label": "art002e016305_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:09Z",
+              "image": "art002e016306_saw3_src_v01.jpg",
+              "raw_label": "art002e016306_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:39Z",
+              "image": "art002e009569_saw3_src_v01.jpg",
+              "raw_label": "art002e009569_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-07T00:35:09Z",
+              "image": "art002e016307_saw3_src_v01.jpg",
+              "raw_label": "art002e016307_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            }
+          ],
+          "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE",
+          "availability_window": {
+            "start_utc": "2026-04-07T00:35:08.308985Z",
+            "end_utc": "2026-04-07T00:36:51.116085Z",
+            "duration_seconds": 102.8071
+          }
+        },
+        "sunrise": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [],
+          "frames": [],
+          "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK",
+          "availability_window": {
+            "start_utc": "2026-04-07T01:31:02.595594Z",
+            "end_utc": "2026-04-07T01:33:11.253602Z",
+            "duration_seconds": 128.658008
+          }
+        }
+      },
+      "acquisition": {
+        "accepted_files": 24,
+        "accepted_bytes": 29181381,
+        "aggregate_max_bytes": 62914560,
+        "network_bytes_in_verification": 0
+      },
+      "checks": [
+        {
+          "id": "acquisition_receipt_identity",
+          "pass": true,
+          "observed_sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6",
+          "error": "acquisition_receipt identity mismatch"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f",
+          "error": "source_manifest identity mismatch"
+        },
+        {
+          "id": "label_scan_receipt_identity",
+          "pass": true,
+          "observed_sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a",
+          "error": "label_scan_receipt identity mismatch"
+        },
+        {
+          "id": "label_scan_manifest_identity",
+          "pass": true,
+          "observed_sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67",
+          "error": "label_scan_manifest identity mismatch"
+        },
+        {
+          "id": "visual_classification_identity",
+          "pass": true,
+          "observed_sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c",
+          "error": "visual_classification identity mismatch"
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "accepted_bytes": 29181381,
+          "accepted_files": 24,
+          "error": "Bounded acquisition receipt differs from the frozen result"
+        },
+        {
+          "id": "source_manifest_cardinality",
+          "pass": true,
+          "observed": 24,
+          "error": "Source manifest does not contain exactly 24 files"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml"
+        },
+        {
+          "id": "oracle_and_field_semantics",
+          "pass": false,
+          "error": "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+        },
+        {
+          "id": "earthset:frozen_frame_count",
+          "pass": true,
+          "observed": 8,
+          "expected": 8,
+          "error": "earthset frame sequence was widened or shortened"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016278_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016278_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016279_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016279_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016280_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016280_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016281_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016281_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e009567_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009567_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016282_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016282_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016283_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016283_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016284_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016284_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "earthset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunset:frozen_frame_count",
+          "pass": true,
+          "observed": 4,
+          "expected": 4,
+          "error": "sunset frame sequence was widened or shortened"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016305_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016305_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016306_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016306_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e009569_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009569_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016307_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016307_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "sunset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunrise:pre_pixel_stop",
+          "pass": true,
+          "error": "Sunrise did not preserve its frozen pre-pixel stop"
+        },
+        {
+          "id": "sunset:independent_stop",
+          "pass": true,
+          "observed_states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "error": "Sunset did not preserve the missing-terminal-state stop"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+          "error": "OTR identity mismatch"
+        },
+        {
+          "id": "earthset:otr_source_values",
+          "pass": true,
+          "error": "earthset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunset:otr_source_values",
+          "pass": true,
+          "error": "sunset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunrise:otr_source_values",
+          "pass": true,
+          "error": "sunrise OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "earthset:verified_overlap",
+          "pass": true,
+          "observed_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803,
+          "error": "Earthset result differs from the frozen expected overlap"
+        },
+        {
+          "id": "independent_event_stops",
+          "pass": true,
+          "error": "Sunset or Sunrise stop differs from the frozen result"
+        },
+        {
+          "id": "pattern_classification",
+          "pass": true,
+          "observed": "SINGLE_ADMISSIBLE_REPLICATION",
+          "admissible_replications": 1,
+          "error": "Pattern classification differs from the frozen expected result"
+        }
+      ],
+      "errors": [
+        "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+      ],
+      "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+      "next_step_logic": null
+    },
+    "change_camera_inside_event": {
+      "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+      "version": "0.6.0",
+      "run_at_utc": "2026-10-09T21:13:37Z",
+      "mutation": "change_camera_inside_event",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "pattern": "SINGLE_ADMISSIBLE_REPLICATION",
+      "admissible_replications": 1,
+      "events": {
+        "earthset": {
+          "status": "VERIFIED_OVERLAP",
+          "states": [
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "NOT_VISIBLE"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-06T22:40:14Z",
+              "image": "art002e016278_saw3_src_v01.jpg",
+              "raw_label": "art002e016278_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:40:44Z",
+              "image": "art002e016279_saw3_src_v01.jpg",
+              "raw_label": "art002e016279_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:14Z",
+              "image": "art002e016280_saw3_src_v01.jpg",
+              "raw_label": "art002e016280_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:44Z",
+              "image": "art002e016281_saw3_src_v01.jpg",
+              "raw_label": "art002e016281_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:14Z",
+              "image": "art002e009567_saw3_src_v01.jpg",
+              "raw_label": "art002e009567_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:44Z",
+              "image": "art002e016282_saw3_src_v01.jpg",
+              "raw_label": "art002e016282_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:14Z",
+              "image": "art002e016283_saw3_src_v01.jpg",
+              "raw_label": "art002e016283_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:44Z",
+              "image": "art002e016284_saw3_src_v01.jpg",
+              "raw_label": "art002e016284_saw3_raw_v01.xml",
+              "state": "NOT_VISIBLE"
+            }
+          ],
+          "transition_brackets": {
+            "occultation_onset": {
+              "lower_exclusive_utc": "2026-04-06T22:41:44Z",
+              "upper_inclusive_utc": "2026-04-06T22:42:14Z"
+            },
+            "complete_disappearance": {
+              "lower_exclusive_utc": "2026-04-06T22:43:14Z",
+              "upper_inclusive_utc": "2026-04-06T22:43:44Z"
+            },
+            "terminal_state_check_utc": "2026-04-06T22:43:44Z"
+          },
+          "availability_window": {
+            "start_utc": "2026-04-06T22:42:19.730197Z",
+            "end_utc": "2026-04-06T22:45:36.380230Z",
+            "duration_seconds": 196.650033
+          },
+          "coverage_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803
+        },
+        "sunset": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-07T00:33:39Z",
+              "image": "art002e016305_saw3_src_v01.jpg",
+              "raw_label": "art002e016305_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:09Z",
+              "image": "art002e016306_saw3_src_v01.jpg",
+              "raw_label": "art002e016306_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:39Z",
+              "image": "art002e009569_saw3_src_v01.jpg",
+              "raw_label": "art002e009569_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-07T00:35:09Z",
+              "image": "art002e016307_saw3_src_v01.jpg",
+              "raw_label": "art002e016307_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            }
+          ],
+          "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE",
+          "availability_window": {
+            "start_utc": "2026-04-07T00:35:08.308985Z",
+            "end_utc": "2026-04-07T00:36:51.116085Z",
+            "duration_seconds": 102.8071
+          }
+        },
+        "sunrise": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [],
+          "frames": [],
+          "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK",
+          "availability_window": {
+            "start_utc": "2026-04-07T01:31:02.595594Z",
+            "end_utc": "2026-04-07T01:33:11.253602Z",
+            "duration_seconds": 128.658008
+          }
+        }
+      },
+      "acquisition": {
+        "accepted_files": 24,
+        "accepted_bytes": 29181381,
+        "aggregate_max_bytes": 62914560,
+        "network_bytes_in_verification": 0
+      },
+      "checks": [
+        {
+          "id": "acquisition_receipt_identity",
+          "pass": true,
+          "observed_sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6",
+          "error": "acquisition_receipt identity mismatch"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f",
+          "error": "source_manifest identity mismatch"
+        },
+        {
+          "id": "label_scan_receipt_identity",
+          "pass": true,
+          "observed_sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a",
+          "error": "label_scan_receipt identity mismatch"
+        },
+        {
+          "id": "label_scan_manifest_identity",
+          "pass": true,
+          "observed_sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67",
+          "error": "label_scan_manifest identity mismatch"
+        },
+        {
+          "id": "visual_classification_identity",
+          "pass": true,
+          "observed_sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c",
+          "error": "visual_classification identity mismatch"
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "accepted_bytes": 29181381,
+          "accepted_files": 24,
+          "error": "Bounded acquisition receipt differs from the frozen result"
+        },
+        {
+          "id": "source_manifest_cardinality",
+          "pass": true,
+          "observed": 24,
+          "error": "Source manifest does not contain exactly 24 files"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml"
+        },
+        {
+          "id": "oracle_and_field_semantics",
+          "pass": false,
+          "error": "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+        },
+        {
+          "id": "earthset:frozen_frame_count",
+          "pass": true,
+          "observed": 8,
+          "expected": 8,
+          "error": "earthset frame sequence was widened or shortened"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016278_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016278_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016279_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016279_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016280_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016280_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016281_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016281_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e009567_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009567_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016282_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016282_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016283_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016283_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016284_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016284_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "earthset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunset:frozen_frame_count",
+          "pass": true,
+          "observed": 4,
+          "expected": 4,
+          "error": "sunset frame sequence was widened or shortened"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016305_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016305_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016306_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016306_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e009569_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009569_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016307_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016307_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "sunset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunrise:pre_pixel_stop",
+          "pass": true,
+          "error": "Sunrise did not preserve its frozen pre-pixel stop"
+        },
+        {
+          "id": "sunset:independent_stop",
+          "pass": true,
+          "observed_states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "error": "Sunset did not preserve the missing-terminal-state stop"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+          "error": "OTR identity mismatch"
+        },
+        {
+          "id": "earthset:otr_source_values",
+          "pass": true,
+          "error": "earthset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunset:otr_source_values",
+          "pass": true,
+          "error": "sunset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunrise:otr_source_values",
+          "pass": true,
+          "error": "sunrise OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "earthset:verified_overlap",
+          "pass": true,
+          "observed_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803,
+          "error": "Earthset result differs from the frozen expected overlap"
+        },
+        {
+          "id": "independent_event_stops",
+          "pass": true,
+          "error": "Sunset or Sunrise stop differs from the frozen result"
+        },
+        {
+          "id": "pattern_classification",
+          "pass": true,
+          "observed": "SINGLE_ADMISSIBLE_REPLICATION",
+          "admissible_replications": 1,
+          "error": "Pattern classification differs from the frozen expected result"
+        }
+      ],
+      "errors": [
+        "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+      ],
+      "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+      "next_step_logic": null
+    },
+    "invent_state_through_saturation_or_obstruction": {
+      "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+      "version": "0.6.0",
+      "run_at_utc": "2026-10-09T21:13:37Z",
+      "mutation": "invent_state_through_saturation_or_obstruction",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "pattern": "SINGLE_ADMISSIBLE_REPLICATION",
+      "admissible_replications": 1,
+      "events": {
+        "earthset": {
+          "status": "VERIFIED_OVERLAP",
+          "states": [
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "NOT_VISIBLE"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-06T22:40:14Z",
+              "image": "art002e016278_saw3_src_v01.jpg",
+              "raw_label": "art002e016278_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:40:44Z",
+              "image": "art002e016279_saw3_src_v01.jpg",
+              "raw_label": "art002e016279_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:14Z",
+              "image": "art002e016280_saw3_src_v01.jpg",
+              "raw_label": "art002e016280_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:44Z",
+              "image": "art002e016281_saw3_src_v01.jpg",
+              "raw_label": "art002e016281_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:14Z",
+              "image": "art002e009567_saw3_src_v01.jpg",
+              "raw_label": "art002e009567_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:44Z",
+              "image": "art002e016282_saw3_src_v01.jpg",
+              "raw_label": "art002e016282_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:14Z",
+              "image": "art002e016283_saw3_src_v01.jpg",
+              "raw_label": "art002e016283_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:44Z",
+              "image": "art002e016284_saw3_src_v01.jpg",
+              "raw_label": "art002e016284_saw3_raw_v01.xml",
+              "state": "NOT_VISIBLE"
+            }
+          ],
+          "transition_brackets": {
+            "occultation_onset": {
+              "lower_exclusive_utc": "2026-04-06T22:41:44Z",
+              "upper_inclusive_utc": "2026-04-06T22:42:14Z"
+            },
+            "complete_disappearance": {
+              "lower_exclusive_utc": "2026-04-06T22:43:14Z",
+              "upper_inclusive_utc": "2026-04-06T22:43:44Z"
+            },
+            "terminal_state_check_utc": "2026-04-06T22:43:44Z"
+          },
+          "availability_window": {
+            "start_utc": "2026-04-06T22:42:19.730197Z",
+            "end_utc": "2026-04-06T22:45:36.380230Z",
+            "duration_seconds": 196.650033
+          },
+          "coverage_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803
+        },
+        "sunset": {
+          "status": "ADMISSIBLE_PHYSICAL_TRANSITION",
+          "states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "SUN_OCCULTED"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-07T00:33:39Z",
+              "image": "art002e016305_saw3_src_v01.jpg",
+              "raw_label": "art002e016305_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:09Z",
+              "image": "art002e016306_saw3_src_v01.jpg",
+              "raw_label": "art002e016306_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:39Z",
+              "image": "art002e009569_saw3_src_v01.jpg",
+              "raw_label": "art002e009569_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-07T00:35:09Z",
+              "image": "art002e016307_saw3_src_v01.jpg",
+              "raw_label": "art002e016307_saw3_raw_v01.xml",
+              "state": "SUN_OCCULTED"
+            }
+          ],
+          "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE",
+          "availability_window": {
+            "start_utc": "2026-04-07T00:35:08.308985Z",
+            "end_utc": "2026-04-07T00:36:51.116085Z",
+            "duration_seconds": 102.8071
+          }
+        },
+        "sunrise": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [],
+          "frames": [],
+          "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK",
+          "availability_window": {
+            "start_utc": "2026-04-07T01:31:02.595594Z",
+            "end_utc": "2026-04-07T01:33:11.253602Z",
+            "duration_seconds": 128.658008
+          }
+        }
+      },
+      "acquisition": {
+        "accepted_files": 24,
+        "accepted_bytes": 29181381,
+        "aggregate_max_bytes": 62914560,
+        "network_bytes_in_verification": 0
+      },
+      "checks": [
+        {
+          "id": "acquisition_receipt_identity",
+          "pass": true,
+          "observed_sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6",
+          "error": "acquisition_receipt identity mismatch"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f",
+          "error": "source_manifest identity mismatch"
+        },
+        {
+          "id": "label_scan_receipt_identity",
+          "pass": true,
+          "observed_sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a",
+          "error": "label_scan_receipt identity mismatch"
+        },
+        {
+          "id": "label_scan_manifest_identity",
+          "pass": true,
+          "observed_sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67",
+          "error": "label_scan_manifest identity mismatch"
+        },
+        {
+          "id": "visual_classification_identity",
+          "pass": true,
+          "observed_sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c",
+          "error": "visual_classification identity mismatch"
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "accepted_bytes": 29181381,
+          "accepted_files": 24,
+          "error": "Bounded acquisition receipt differs from the frozen result"
+        },
+        {
+          "id": "source_manifest_cardinality",
+          "pass": true,
+          "observed": 24,
+          "error": "Source manifest does not contain exactly 24 files"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml"
+        },
+        {
+          "id": "oracle_and_field_semantics",
+          "pass": true,
+          "error": "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+        },
+        {
+          "id": "earthset:frozen_frame_count",
+          "pass": true,
+          "observed": 8,
+          "expected": 8,
+          "error": "earthset frame sequence was widened or shortened"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016278_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016278_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016279_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016279_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016280_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016280_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016281_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016281_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e009567_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009567_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016282_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016282_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016283_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016283_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016284_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016284_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "earthset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunset:frozen_frame_count",
+          "pass": true,
+          "observed": 4,
+          "expected": 4,
+          "error": "sunset frame sequence was widened or shortened"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016305_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016305_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016306_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016306_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e009569_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009569_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016307_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016307_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "sunset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunrise:pre_pixel_stop",
+          "pass": true,
+          "error": "Sunrise did not preserve its frozen pre-pixel stop"
+        },
+        {
+          "id": "sunset:independent_stop",
+          "pass": false,
+          "observed_states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "SUN_OCCULTED"
+          ],
+          "error": "Sunset did not preserve the missing-terminal-state stop"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+          "error": "OTR identity mismatch"
+        },
+        {
+          "id": "earthset:otr_source_values",
+          "pass": true,
+          "error": "earthset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunset:otr_source_values",
+          "pass": true,
+          "error": "sunset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunrise:otr_source_values",
+          "pass": true,
+          "error": "sunrise OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "earthset:verified_overlap",
+          "pass": true,
+          "observed_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803,
+          "error": "Earthset result differs from the frozen expected overlap"
+        },
+        {
+          "id": "independent_event_stops",
+          "pass": false,
+          "error": "Sunset or Sunrise stop differs from the frozen result"
+        },
+        {
+          "id": "pattern_classification",
+          "pass": true,
+          "observed": "SINGLE_ADMISSIBLE_REPLICATION",
+          "admissible_replications": 1,
+          "error": "Pattern classification differs from the frozen expected result"
+        }
+      ],
+      "errors": [
+        "Sunset did not preserve the missing-terminal-state stop",
+        "Sunset or Sunrise stop differs from the frozen result"
+      ],
+      "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+      "next_step_logic": null
+    },
+    "extend_frozen_sequence_after_pixel_inspection": {
+      "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+      "version": "0.6.0",
+      "run_at_utc": "2026-10-09T21:13:37Z",
+      "mutation": "extend_frozen_sequence_after_pixel_inspection",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "pattern": "UNESTABLISHED",
+      "admissible_replications": 0,
+      "events": {
+        "earthset": {
+          "status": "ADMISSIBLE_PHYSICAL_TRANSITION",
+          "states": [
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "NOT_VISIBLE",
+            "NOT_VISIBLE"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-06T22:40:14Z",
+              "image": "art002e016278_saw3_src_v01.jpg",
+              "raw_label": "art002e016278_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:40:44Z",
+              "image": "art002e016279_saw3_src_v01.jpg",
+              "raw_label": "art002e016279_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:14Z",
+              "image": "art002e016280_saw3_src_v01.jpg",
+              "raw_label": "art002e016280_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:44Z",
+              "image": "art002e016281_saw3_src_v01.jpg",
+              "raw_label": "art002e016281_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:14Z",
+              "image": "art002e009567_saw3_src_v01.jpg",
+              "raw_label": "art002e009567_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:44Z",
+              "image": "art002e016282_saw3_src_v01.jpg",
+              "raw_label": "art002e016282_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:14Z",
+              "image": "art002e016283_saw3_src_v01.jpg",
+              "raw_label": "art002e016283_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:44Z",
+              "image": "art002e016284_saw3_src_v01.jpg",
+              "raw_label": "art002e016284_saw3_raw_v01.xml",
+              "state": "NOT_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:44:14Z",
+              "image": "art002e016284_saw3_src_v01.jpg",
+              "raw_label": "art002e016284_saw3_raw_v01.xml",
+              "state": "NOT_VISIBLE"
+            }
+          ],
+          "transition_brackets": null,
+          "availability_window": {
+            "start_utc": "2026-04-06T22:42:19.730197Z",
+            "end_utc": "2026-04-06T22:45:36.380230Z",
+            "duration_seconds": 196.650033
+          },
+          "coverage_relation": "UNESTABLISHED",
+          "minimum_guaranteed_overlap_seconds": null
+        },
+        "sunset": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-07T00:33:39Z",
+              "image": "art002e016305_saw3_src_v01.jpg",
+              "raw_label": "art002e016305_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:09Z",
+              "image": "art002e016306_saw3_src_v01.jpg",
+              "raw_label": "art002e016306_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:39Z",
+              "image": "art002e009569_saw3_src_v01.jpg",
+              "raw_label": "art002e009569_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-07T00:35:09Z",
+              "image": "art002e016307_saw3_src_v01.jpg",
+              "raw_label": "art002e016307_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            }
+          ],
+          "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE",
+          "availability_window": {
+            "start_utc": "2026-04-07T00:35:08.308985Z",
+            "end_utc": "2026-04-07T00:36:51.116085Z",
+            "duration_seconds": 102.8071
+          }
+        },
+        "sunrise": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [],
+          "frames": [],
+          "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK",
+          "availability_window": {
+            "start_utc": "2026-04-07T01:31:02.595594Z",
+            "end_utc": "2026-04-07T01:33:11.253602Z",
+            "duration_seconds": 128.658008
+          }
+        }
+      },
+      "acquisition": {
+        "accepted_files": 24,
+        "accepted_bytes": 29181381,
+        "aggregate_max_bytes": 62914560,
+        "network_bytes_in_verification": 0
+      },
+      "checks": [
+        {
+          "id": "acquisition_receipt_identity",
+          "pass": true,
+          "observed_sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6",
+          "error": "acquisition_receipt identity mismatch"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f",
+          "error": "source_manifest identity mismatch"
+        },
+        {
+          "id": "label_scan_receipt_identity",
+          "pass": true,
+          "observed_sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a",
+          "error": "label_scan_receipt identity mismatch"
+        },
+        {
+          "id": "label_scan_manifest_identity",
+          "pass": true,
+          "observed_sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67",
+          "error": "label_scan_manifest identity mismatch"
+        },
+        {
+          "id": "visual_classification_identity",
+          "pass": true,
+          "observed_sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c",
+          "error": "visual_classification identity mismatch"
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "accepted_bytes": 29181381,
+          "accepted_files": 24,
+          "error": "Bounded acquisition receipt differs from the frozen result"
+        },
+        {
+          "id": "source_manifest_cardinality",
+          "pass": true,
+          "observed": 24,
+          "error": "Source manifest does not contain exactly 24 files"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml"
+        },
+        {
+          "id": "oracle_and_field_semantics",
+          "pass": true,
+          "error": "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+        },
+        {
+          "id": "earthset:frozen_frame_count",
+          "pass": false,
+          "observed": 9,
+          "expected": 8,
+          "error": "earthset frame sequence was widened or shortened"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016278_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016278_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016279_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016279_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016280_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016280_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016281_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016281_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e009567_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009567_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016282_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016282_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016283_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016283_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016284_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016284_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:thirty_second_cadence",
+          "pass": false,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "earthset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunset:frozen_frame_count",
+          "pass": true,
+          "observed": 4,
+          "expected": 4,
+          "error": "sunset frame sequence was widened or shortened"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016305_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016305_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016306_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016306_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e009569_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009569_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016307_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016307_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "sunset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunrise:pre_pixel_stop",
+          "pass": true,
+          "error": "Sunrise did not preserve its frozen pre-pixel stop"
+        },
+        {
+          "id": "sunset:independent_stop",
+          "pass": true,
+          "observed_states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "error": "Sunset did not preserve the missing-terminal-state stop"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+          "error": "OTR identity mismatch"
+        },
+        {
+          "id": "earthset:otr_source_values",
+          "pass": true,
+          "error": "earthset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunset:otr_source_values",
+          "pass": true,
+          "error": "sunset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunrise:otr_source_values",
+          "pass": true,
+          "error": "sunrise OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "earthset:verified_overlap",
+          "pass": false,
+          "observed_relation": "UNESTABLISHED",
+          "minimum_guaranteed_overlap_seconds": null,
+          "error": "Earthset result differs from the frozen expected overlap"
+        },
+        {
+          "id": "independent_event_stops",
+          "pass": true,
+          "error": "Sunset or Sunrise stop differs from the frozen result"
+        },
+        {
+          "id": "pattern_classification",
+          "pass": false,
+          "observed": "UNESTABLISHED",
+          "admissible_replications": 0,
+          "error": "Pattern classification differs from the frozen expected result"
+        }
+      ],
+      "errors": [
+        "earthset frame sequence was widened or shortened",
+        "earthset is not a complete strict 30-second sequence",
+        "Earthset result differs from the frozen expected overlap",
+        "Pattern classification differs from the frozen expected result"
+      ],
+      "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+      "next_step_logic": null
+    },
+    "treat_availability_endpoint_as_physical_contact": {
+      "testbed_id": "artemis2-observation-execution-stage2b-fixed-camera-replication",
+      "version": "0.6.0",
+      "run_at_utc": "2026-10-09T21:13:37Z",
+      "mutation": "treat_availability_endpoint_as_physical_contact",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "pattern": "SINGLE_ADMISSIBLE_REPLICATION",
+      "admissible_replications": 1,
+      "events": {
+        "earthset": {
+          "status": "VERIFIED_OVERLAP",
+          "states": [
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "FULL_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "NOT_VISIBLE"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-06T22:40:14Z",
+              "image": "art002e016278_saw3_src_v01.jpg",
+              "raw_label": "art002e016278_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:40:44Z",
+              "image": "art002e016279_saw3_src_v01.jpg",
+              "raw_label": "art002e016279_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:14Z",
+              "image": "art002e016280_saw3_src_v01.jpg",
+              "raw_label": "art002e016280_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:41:44Z",
+              "image": "art002e016281_saw3_src_v01.jpg",
+              "raw_label": "art002e016281_saw3_raw_v01.xml",
+              "state": "FULL_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:14Z",
+              "image": "art002e009567_saw3_src_v01.jpg",
+              "raw_label": "art002e009567_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:42:44Z",
+              "image": "art002e016282_saw3_src_v01.jpg",
+              "raw_label": "art002e016282_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:14Z",
+              "image": "art002e016283_saw3_src_v01.jpg",
+              "raw_label": "art002e016283_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-06T22:43:44Z",
+              "image": "art002e016284_saw3_src_v01.jpg",
+              "raw_label": "art002e016284_saw3_raw_v01.xml",
+              "state": "NOT_VISIBLE"
+            }
+          ],
+          "transition_brackets": {
+            "occultation_onset": {
+              "lower_exclusive_utc": "2026-04-06T22:41:44Z",
+              "upper_inclusive_utc": "2026-04-06T22:42:14Z"
+            },
+            "complete_disappearance": {
+              "lower_exclusive_utc": "2026-04-06T22:43:14Z",
+              "upper_inclusive_utc": "2026-04-06T22:43:44Z"
+            },
+            "terminal_state_check_utc": "2026-04-06T22:43:44Z"
+          },
+          "availability_window": {
+            "start_utc": "2026-04-06T22:42:19.730197Z",
+            "end_utc": "2026-04-06T22:45:36.380230Z",
+            "duration_seconds": 196.650033
+          },
+          "coverage_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803
+        },
+        "sunset": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "frames": [
+            {
+              "time_utc": "2026-04-07T00:33:39Z",
+              "image": "art002e016305_saw3_src_v01.jpg",
+              "raw_label": "art002e016305_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:09Z",
+              "image": "art002e016306_saw3_src_v01.jpg",
+              "raw_label": "art002e016306_saw3_raw_v01.xml",
+              "state": "SUN_VISIBLE"
+            },
+            {
+              "time_utc": "2026-04-07T00:34:39Z",
+              "image": "art002e009569_saw3_src_v01.jpg",
+              "raw_label": "art002e009569_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            },
+            {
+              "time_utc": "2026-04-07T00:35:09Z",
+              "image": "art002e016307_saw3_src_v01.jpg",
+              "raw_label": "art002e016307_saw3_raw_v01.xml",
+              "state": "PARTIAL"
+            }
+          ],
+          "reason_code": "MISSING_TERMINAL_AND_STABILITY_STATE",
+          "availability_window": {
+            "start_utc": "2026-04-07T00:35:08.308985Z",
+            "end_utc": "2026-04-07T00:36:51.116085Z",
+            "duration_seconds": 102.8071
+          }
+        },
+        "sunrise": {
+          "status": "NOT_ADMISSIBLE_CAMERA_VIEW",
+          "states": [],
+          "frames": [],
+          "reason_code": "SOURCE_SEQUENCE_CANNOT_SUPPORT_STABILITY_CHECK",
+          "availability_window": {
+            "start_utc": "2026-04-07T01:31:02.595594Z",
+            "end_utc": "2026-04-07T01:33:11.253602Z",
+            "duration_seconds": 128.658008
+          }
+        }
+      },
+      "acquisition": {
+        "accepted_files": 24,
+        "accepted_bytes": 29181381,
+        "aggregate_max_bytes": 62914560,
+        "network_bytes_in_verification": 0
+      },
+      "checks": [
+        {
+          "id": "acquisition_receipt_identity",
+          "pass": true,
+          "observed_sha256": "524718d57bd841c8149be93658e3bfd5e0a87d5db7ddcd5ecc0da2a1ec89cea6",
+          "error": "acquisition_receipt identity mismatch"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "d123c67ceb072462e9ce8d4f046569c156339435bcfd026bb8a78485c2f4097f",
+          "error": "source_manifest identity mismatch"
+        },
+        {
+          "id": "label_scan_receipt_identity",
+          "pass": true,
+          "observed_sha256": "117c4d3051057e1125579f8e7cf7a1f45b70444c01584a11d11605523eee888a",
+          "error": "label_scan_receipt identity mismatch"
+        },
+        {
+          "id": "label_scan_manifest_identity",
+          "pass": true,
+          "observed_sha256": "66af7e16f579cdbf9fee33458519e645ae205c5bc6f46ae82c7b1a75d16cab67",
+          "error": "label_scan_manifest identity mismatch"
+        },
+        {
+          "id": "visual_classification_identity",
+          "pass": true,
+          "observed_sha256": "5c751e44e0a13662f6962376c34371f92ce112d14cadd17891facf581b5e781c",
+          "error": "visual_classification identity mismatch"
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "accepted_bytes": 29181381,
+          "accepted_files": 24,
+          "error": "Bounded acquisition receipt differs from the frozen result"
+        },
+        {
+          "id": "source_manifest_cardinality",
+          "pass": true,
+          "observed": 24,
+          "error": "Source manifest does not contain exactly 24 files"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016278_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016278_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016279_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016279_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016280_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016280_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016281_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016281_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009567_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e009567_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016282_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016282_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016283_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016283_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016284_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/earthset/art002e016284_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016305_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016305_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016306_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016306_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e009569_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e009569_saw3_src_v01.xml"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "source_identity:art002e016307_saw3_src_v01.xml",
+          "pass": true,
+          "error": "Source identity mismatch: evidence/stage2b/source/sunset/art002e016307_saw3_src_v01.xml"
+        },
+        {
+          "id": "oracle_and_field_semantics",
+          "pass": false,
+          "error": "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+        },
+        {
+          "id": "earthset:frozen_frame_count",
+          "pass": true,
+          "observed": 8,
+          "expected": 8,
+          "error": "earthset frame sequence was widened or shortened"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016278_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016278_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016278_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016278_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016279_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016279_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016279_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016279_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016280_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016280_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016280_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016280_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016281_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016281_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016281_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016281_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e009567_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009567_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e009567_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009567_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016282_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016282_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016282_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016282_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016283_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016283_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016283_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016283_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:raw_identity:art002e016284_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016284_saw3_raw_v01.xml"
+        },
+        {
+          "id": "earthset:label_binding:art002e016284_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016284_saw3_src_v01.jpg"
+        },
+        {
+          "id": "earthset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "earthset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunset:frozen_frame_count",
+          "pass": true,
+          "observed": 4,
+          "expected": 4,
+          "error": "sunset frame sequence was widened or shortened"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016305_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016305_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016305_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016305_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016306_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016306_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016306_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016306_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e009569_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e009569_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e009569_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e009569_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:raw_identity:art002e016307_saw3_raw_v01.xml",
+          "pass": true,
+          "error": "Raw label identity mismatch: art002e016307_saw3_raw_v01.xml"
+        },
+        {
+          "id": "sunset:label_binding:art002e016307_saw3_src_v01.jpg",
+          "pass": true,
+          "error": "Browse/raw/timestamp binding failed: art002e016307_saw3_src_v01.jpg"
+        },
+        {
+          "id": "sunset:thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "error": "sunset is not a complete strict 30-second sequence"
+        },
+        {
+          "id": "sunrise:pre_pixel_stop",
+          "pass": true,
+          "error": "Sunrise did not preserve its frozen pre-pixel stop"
+        },
+        {
+          "id": "sunset:independent_stop",
+          "pass": true,
+          "observed_states": [
+            "SUN_VISIBLE",
+            "SUN_VISIBLE",
+            "PARTIAL",
+            "PARTIAL"
+          ],
+          "error": "Sunset did not preserve the missing-terminal-state stop"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+          "error": "OTR identity mismatch"
+        },
+        {
+          "id": "earthset:otr_source_values",
+          "pass": true,
+          "error": "earthset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunset:otr_source_values",
+          "pass": true,
+          "error": "sunset OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "sunrise:otr_source_values",
+          "pass": true,
+          "error": "sunrise OTR values differ from the frozen availability window"
+        },
+        {
+          "id": "earthset:verified_overlap",
+          "pass": true,
+          "observed_relation": "OVERLAPS_EVENT",
+          "minimum_guaranteed_overlap_seconds": 54.269803,
+          "error": "Earthset result differs from the frozen expected overlap"
+        },
+        {
+          "id": "independent_event_stops",
+          "pass": true,
+          "error": "Sunset or Sunrise stop differs from the frozen result"
+        },
+        {
+          "id": "pattern_classification",
+          "pass": true,
+          "observed": "SINGLE_ADMISSIBLE_REPLICATION",
+          "admissible_replications": 1,
+          "error": "Pattern classification differs from the frozen expected result"
+        }
+      ],
+      "errors": [
+        "The mutated evidence substitutes a disallowed oracle, camera, or endpoint meaning"
+      ],
+      "claim_ceiling": "Per-event availability-window coverage or non-coverage for three frozen SAW Cam 3 sequences, followed by a bounded four-event pattern classification. No endpoint-equivalence, boundary-delay, cause, mission-wide planning rule, operational-impact, or scientific interpretation claim.",
+      "next_step_logic": null
+    }
+  },
+  "hard_negatives_pass": true,
+  "pass": true,
+  "evidence_state": "VERIFIED_SINGLE_ADMISSIBLE_REPLICATION"
+}

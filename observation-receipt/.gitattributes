@@ -1,0 +1,2 @@
+# Keep deterministic fixtures and generated source archives on LF bytes.
+* text=auto eol=lf

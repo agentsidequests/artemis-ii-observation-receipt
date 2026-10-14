@@ -1,0 +1,179 @@
+{
+  "version": "1.2.0",
+  "private": true,
+  "new_science": false,
+  "reader_edition": "2026-10-14",
+  "reader_surface": "v8",
+  "editorial_media": [
+    {
+      "path": "presentation/media/art002e009301-nasa-public.jpg",
+      "bytes": 75677,
+      "sha256": "1bb6387479474ea44221dbb7627f603bf3ceb6e3c6ce2af5a75e7b50147bfe17",
+      "credit": "NASA",
+      "source_page": "https://www.nasa.gov/image-detail/amf-art002e009301/",
+      "not_nef_processing_or_photometry": true
+    }
+  ],
+  "figure_sources": [
+    {
+      "path": "Artemis-II-Chart-1-One-Sunset.png",
+      "sha256": "7b349a822b766d687c629538f1b2838dd2a88b539476b7860d6085e3ebde012f",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-1-One-Sunset.png",
+      "mobile_sha256": "f61bbbfdc805bf6ea3bc6543c3038c90f5d8cc8ba5fdf518311e418d8ef8deb4",
+      "editorial_path": "presentation/editorial/figures/figure-01-desktop.svg",
+      "editorial_sha256": "634fbd08cf833cf6121eea83fc987a2e17dc2657da4ab10231048c838cc41ebb",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-01-phone.svg",
+      "editorial_mobile_sha256": "148cf7ff574dd36d3e883a4a9288455ddaac547966b3aa6c3011578195d1f065",
+      "sharing_png_path": "presentation/editorial/figures/figure-01-desktop.png",
+      "sharing_png_sha256": "27b4bbbd8b7a5fa8ff8c640e330eb655181a890485df0e89a9cf305c42296d48"
+    },
+    {
+      "path": "Artemis-II-Chart-9-Selection-Weighting-Cascade.png",
+      "sha256": "f1ce2b5540fc570d24f51221e7ec9c73a4ffd2a6cebd646d407fced2120d0ea5",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-9-Selection-Weighting-Cascade.png",
+      "mobile_sha256": "dbc958da167a70f35af28d9830d3e15678ba20b49a6444c22676cf938a171058",
+      "editorial_path": "presentation/editorial/figures/figure-02-desktop.svg",
+      "editorial_sha256": "27a67e0a66b8fa70fbefd7e62721991a88c5a1d0b475d785112446f1e971bbba",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-02-phone.svg",
+      "editorial_mobile_sha256": "d56ea026c6c4ae5a8e3c7cda5922061fb230eac786c9f806e913780ce980e3bd",
+      "sharing_png_path": "presentation/editorial/figures/figure-02-desktop.png",
+      "sharing_png_sha256": "1f360a6ab31f265a995d16999c7aa79bf33cd92859521c9de4a9422077b53049"
+    },
+    {
+      "path": "Artemis-II-Chart-2-Hidden-Weight.png",
+      "sha256": "35f1514cc3290abbca9ed85e04f86edfa4e05bb2017c98cd5ddb466bd81219bc",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-2-Hidden-Weight.png",
+      "mobile_sha256": "29d83b69614616bbf05dc4d62ab298f475f4fa6ce0482836fa7a18733a8d9b60",
+      "editorial_path": "presentation/editorial/figures/figure-03-desktop.svg",
+      "editorial_sha256": "910b8b654735553268f230f6553e02caebcffecbcf373683cf6af86f203ff963",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-03-phone.svg",
+      "editorial_mobile_sha256": "a6204cc6f5cc3c0fb2a893163ffbc90f2943fde47628d141c1e9902be341039d",
+      "sharing_png_path": "presentation/editorial/figures/figure-03-desktop.png",
+      "sharing_png_sha256": "c0d7d3d7df8e519f4c4528bbcd01111d4eb9a09cbc78521f678c471d132c8efd"
+    },
+    {
+      "path": "Artemis-II-Chart-3-Rank-Reversal.png",
+      "sha256": "d9fc2e0487854b15b6a6f3b66be8b8426f7217ba38a80034b775a736fc675c81",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-3-Rank-Reversal.png",
+      "mobile_sha256": "0fc24d8abc47f8262b2561fb81d254c74bb307ea7e6426bc594f07b2ef11e77c",
+      "editorial_path": "presentation/editorial/figures/figure-04-desktop.svg",
+      "editorial_sha256": "2a7d2549945776fcbbca2cf38e3dfef561f0a41549cb3b488ea9a5f7db11a071",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-04-phone.svg",
+      "editorial_mobile_sha256": "d585bf7432fda7850f6506750fbf7d4ee0d734808f8fc9a3d5a797b52d44cf18",
+      "sharing_png_path": "presentation/editorial/figures/figure-04-desktop.png",
+      "sharing_png_sha256": "1987c7a1dd24f6a3539a150afb075b0406230724d3ddfaf9f1aaca5468604f38"
+    },
+    {
+      "path": "Artemis-II-Chart-7-Opportunity-Concentration.png",
+      "sha256": "46bc70aebf9fd5a4ba343afd6642660eb3df511b57149156c954b7e062eb3cbc",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-7-Opportunity-Concentration.png",
+      "mobile_sha256": "b61deb700c0cac6a12cf45353734bfd9c3fbc2005900eb87f6ae17269ad129b0",
+      "editorial_path": "presentation/editorial/figures/figure-05-desktop.svg",
+      "editorial_sha256": "3df1b16c76641b598060bf74ec01ae5b18b0215a3a4b1d2a803090d12cfa657b",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-05-phone.svg",
+      "editorial_mobile_sha256": "a8974cf26231f1858685a2f844da937968ca583e470e366640b6e5b4bf588c70",
+      "sharing_png_path": "presentation/editorial/figures/figure-05-desktop.png",
+      "sharing_png_sha256": "887e106a602a6437370b6be49db097d08d7c23ba588701cb8648a08e65fbb331"
+    },
+    {
+      "path": "Artemis-II-Chart-4-Split-Hazard.png",
+      "sha256": "98899fa7da23d78cc2ce5afcbcf91ab98ad3ed6eb0b158bd2113ea66cb002885",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-4-Split-Hazard.png",
+      "mobile_sha256": "578e4d7a5ff4d577b7cd7419f19919f6ef5f0e8ee0805d2fc733de2e9e92abbd",
+      "editorial_path": "presentation/editorial/figures/figure-06-desktop.svg",
+      "editorial_sha256": "06d05339892549bf514164b0e2e09b8030518811dd325b6cea8df14ec9646dca",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-06-phone.svg",
+      "editorial_mobile_sha256": "408fac71494a2a2607792deb4438d69487b2b2564f56764ec657ab8bb351fecd",
+      "sharing_png_path": "presentation/editorial/figures/figure-06-desktop.png",
+      "sharing_png_sha256": "b9f3d36e0dcc40a1b2940c029c28d27e80fbcdcb075eb6463661972a7cf26362"
+    },
+    {
+      "path": "Artemis-II-Chart-8-Attention-Conditioned-Detection.png",
+      "sha256": "16f3c19804a793eda51c773a6c87b2b23fef424076be10fd4fb09f223ac3f13c",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-8-Attention-Conditioned-Detection.png",
+      "mobile_sha256": "a86e79624c3db01fdb9ef733540937dfaac570fffcd81ce76da1b2a43a3307f2",
+      "editorial_path": "presentation/editorial/figures/figure-07-desktop.svg",
+      "editorial_sha256": "5751c885ecc8539ad6fbb0a17e2293269e79666b603a46b22abd7d9b1f3afe76",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-07-phone.svg",
+      "editorial_mobile_sha256": "62f4eb7e0b0ec072270f298742d252de523b1656879aba797801b2933ca4746c",
+      "sharing_png_path": "presentation/editorial/figures/figure-07-desktop.png",
+      "sharing_png_sha256": "bd07b6789521fa3a218a90e6092bc288c301ea4bc0cd54d258b2f8b9254796c4"
+    },
+    {
+      "path": "Artemis-II-Chart-5-Archive-vs-Analysis.png",
+      "sha256": "a3f89404aa4f784fc88f9a0902f396726efa7a97f415b9011f6b45155a1ca721",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-5-Archive-vs-Analysis.png",
+      "mobile_sha256": "b12f5e183436c5a14a56c9e759d41487ca550592b395d61681cfd1267482cb70",
+      "editorial_path": "presentation/editorial/figures/figure-08-desktop.svg",
+      "editorial_sha256": "e08524497f16d6a7e5e5e0c190006c27fb798a710a18492995908028369c5ddf",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-08-phone.svg",
+      "editorial_mobile_sha256": "59a59531c6a9750df399352f3d8e2a409f6b0d9332c19c17bd24caedecbea3bc",
+      "sharing_png_path": "presentation/editorial/figures/figure-08-desktop.png",
+      "sharing_png_sha256": "deaa501c9261820b2a548548c16c2c22848fa2a6dfb395bde607eaf4dada48fa"
+    },
+    {
+      "path": "Artemis-II-Chart-6-Task-Readiness.png",
+      "sha256": "631b8cdaa2b10b701b6a11be1e465f3bf9ac7310e188871d887d579f8d9b327a",
+      "mobile_path": "presentation/mobile/Artemis-II-Chart-6-Task-Readiness.png",
+      "mobile_sha256": "f64754bc60b3b1952dfb4d662438f20e03f205dbcf8276c7de62f3c12a1ea75b",
+      "editorial_path": "presentation/editorial/figures/figure-09-desktop.svg",
+      "editorial_sha256": "a9008faba5662e3102364c92417170bdb73557446df4247536644375ff8dbe90",
+      "editorial_mobile_path": "presentation/editorial/figures/figure-09-phone.svg",
+      "editorial_mobile_sha256": "407e32b6fc33259bc8a57caf28860bb8b6bd2c677718de99b29e6969556aef21",
+      "sharing_png_path": "presentation/editorial/figures/figure-09-desktop.png",
+      "sharing_png_sha256": "68e253f254b69a6fc848654d90d7e10bb751d92c453aab2027483c695c3f755b"
+    }
+  ],
+  "figure_values_sha256": "777ff0d62103c4917349afd4845f5f4d03df9ca9f63f55fe909ec4c1d3b3eb69",
+  "data": {
+    "path": "presentation/data.json",
+    "bytes": 289967,
+    "sha256": "d41fe206bf1ece970c11e7a96e47e4ba605e97eec7f75a1d553a83e26160d3e1"
+  },
+  "document_sources": [
+    {
+      "path": "PUBLIC-ANALYSIS-DRAFT.md",
+      "bytes": 33850,
+      "sha256": "ecae04e905ebc22dcba9ac6dd38da54682fb2305e4aab1446ce3c0cada2fa458",
+      "reading": "Artemis-II-Essay-2026-10-13.html"
+    },
+    {
+      "path": "ARTEMIS-II-TWO-GATE-SPECIALIST-REVIEW-PACKET.md",
+      "bytes": 38942,
+      "sha256": "f39e64211e97d813b0ec8207b3c2e41fbe1430578bc98a06d59b9870b631bad6",
+      "reading": "Artemis-II-Specialist-Review-2026-10-13.html"
+    }
+  ],
+  "files": [
+    {
+      "path": "Artemis-II-Interactive-Presentation-2026-10-13.html",
+      "bytes": 429816,
+      "sha256": "86650bf1c81b0709a263b00d1d4b25efb6c408113e2488f17b0abc9fe37e8166"
+    },
+    {
+      "path": "Artemis-II-Essay-2026-10-13.html",
+      "bytes": 159168,
+      "sha256": "9f18554eb68b398b26d0b5441a4c75ed4d08ab8d5008e11cc810262738305de0"
+    },
+    {
+      "path": "Artemis-II-Essay-2026-10-13.md",
+      "bytes": 33850,
+      "sha256": "ecae04e905ebc22dcba9ac6dd38da54682fb2305e4aab1446ce3c0cada2fa458"
+    },
+    {
+      "path": "Artemis-II-Specialist-Review-2026-10-13.html",
+      "bytes": 54117,
+      "sha256": "fe761f80ae85dd5ece69fbae641f49ed03f3a097b3aba483a4b24e0e9c17064e"
+    },
+    {
+      "path": "Artemis-II-Specialist-Review-2026-10-13.md",
+      "bytes": 38942,
+      "sha256": "f39e64211e97d813b0ec8207b3c2e41fbe1430578bc98a06d59b9870b631bad6"
+    },
+    {
+      "path": "Artemis-II-Presentation-Guide-2026-10-13.md",
+      "bytes": 10173,
+      "sha256": "6173b30ea3840138a568e9d66e2b8da2bf2da665df55a14191ef6265239c7727"
+    }
+  ]
+}

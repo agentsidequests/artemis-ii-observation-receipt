@@ -1,0 +1,20 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-stimulus-recoverability-stage8b",
+  "formed_at_utc": "2026-10-09T22:31:36Z",
+  "status": "FORMED_METADATA_ONLY_NO_PIXEL_ACCESS",
+  "spec_path": "spec/stage8b.json",
+  "spec_sha256": "adb7b8207e586ac6e17fbf5192f1d6a4aec981e2c870fdd2053fa29cf14b7497",
+  "original_formation_spec_sha256": "17a86f33dab3f7d48463d6e1b3c6700f090be15a158990c28f5b04221cf83ba6",
+  "formation_time_correction_path": "evidence/stage8b/formation-time-correction-receipt.json",
+  "browse_pixel_bytes_accessed_before_formation": 0,
+  "browse_images_inspected_before_formation": 0,
+  "metadata_access_before_formation": "Official transcript, Atlas search-result metadata, selected PDS4-label metadata, and the PDS release calendar were screened. No selected browse-image pixel object was downloaded or inspected.",
+  "frozen_scene_count": 3,
+  "frozen_roles": [
+    "matched_glushko",
+    "matched_ohm",
+    "joint_context"
+  ],
+  "frozen_classification": "Full human reconstruction requires dimensions A-F; a camera-native proxy requires A-D and cannot inherit E or F.",
+  "stop_rule": "Stop after classifying A-F from the three selected scenes and released authoritative metadata; do not search for more favorable imagery."
+}

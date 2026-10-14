@@ -1,0 +1,25 @@
+{
+  "source_path": "evidence\\stage11n\\source\\artemis-ii-preliminary-science-report.pdf",
+  "source_bytes": 143769154,
+  "source_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+  "source_page_count": 134,
+  "selected_source_pdf_pages_1_indexed": [
+    33,
+    34,
+    35,
+    112,
+    114,
+    115,
+    116
+  ],
+  "outputs": {
+    "artemis-ii-preliminary-report-flash-pages.pdf": {
+      "bytes": 419031,
+      "sha256": "dfa32e82628b02914ec7a5bcbd46b30daf66ecb51bc02e08bf8f6592fe2d9206"
+    },
+    "artemis-ii-preliminary-report-flash-pages.txt": {
+      "bytes": 28013,
+      "sha256": "0a619736de266fd8091fea010ef7fef28ff21dc211615e74961535932dff8d92"
+    }
+  }
+}

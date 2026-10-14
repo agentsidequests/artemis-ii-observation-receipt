@@ -1,0 +1,65 @@
+{
+  "testbed_id": "artemis2-cross-camera-sunset-episode-stage10r",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T13:14:00Z",
+  "question": "Does the transcript-aligned Sunset episode cross camera and activity-facet boundaries that action IDs and same-camera temporal clusters cannot capture?",
+  "terminal_objective": "Test the strongest remaining counterexample to treating action-level or same-camera grouping as a complete dependence boundary.",
+  "method": "Replay the complete Stage 10P cluster census, exhaustively select every five-second cluster overlapping the verified Stage 10Q interval, require all additional clusters to be nested, on a distinct camera, and share the Sunset target, then freeze combined product, exposure, action, byte, activity, and transcript-overlap values.",
+  "authority": "Private local metadata and transcript analysis only. No pixels, model training, publication, camera-operator attribution, label-correctness claim, semantic scene claim, visual-duplication claim, observed leakage, performance effect, scientific-discovery claim, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10p_spec_path": "spec/stage10p.json",
+    "stage10q_spec_path": "spec/stage10q.json",
+    "stage10o_spec_path": "spec/stage10o.json",
+    "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "transcript_path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "primary_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+    "secondary_cluster_ids": [
+      "a2-t5s-ef6f756db2ab3f650e8f0001",
+      "a2-t5s-c5d11d84256eb6c6958733c7",
+      "a2-t5s-683aafd93b4de35ecd939ec6"
+    ],
+    "secondary_cluster_count": 3,
+    "primary_camera": "3500015",
+    "secondary_camera": "3920019",
+    "primary_activity": "24_Sunset",
+    "secondary_activity_ids": ["24_Sunset", "h_Observation Break"],
+    "shared_target": "Sunset",
+    "secondary_products": 780,
+    "secondary_capture_identities": 260,
+    "secondary_complete_actions": 52,
+    "secondary_archive_size_bytes": 102487188104,
+    "secondary_transcript_utterances": 24,
+    "combined_products": 2010,
+    "combined_capture_identities": 670,
+    "combined_complete_actions": 134,
+    "combined_archive_size_bytes": 177543697399,
+    "cohort_product_share": 0.088088351301604,
+    "cohort_capture_share": 0.088088351301604,
+    "cohort_action_share": 0.061865189289012,
+    "cohort_byte_share": 0.10923874547809825,
+    "distinct_cameras": 2,
+    "distinct_activity_ids": 2
+  },
+  "hard_negatives": [
+    "call_episode_a_semantic_scene",
+    "call_images_duplicates_or_visually_redundant",
+    "call_activity_labels_incorrect",
+    "attribute_cameras_to_named_speakers",
+    "call_cross_camera_relation_observed_leakage",
+    "generalize_episode_to_archive",
+    "infer_model_performance_effect",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_cross_camera_canary"
+  ],
+  "claim_ceiling": "Stage 10R may establish that one independently transcript-aligned Sunset observation episode contains four overlapping capture runs from two cameras and two different activity facets: 2,010 products representing 670 exposures and 134 reconstructed actions, totaling 177.543697399 GB—8.809% of products and exposures, 6.187% of actions, and 10.924% of bytes in the verified complete-action cohort. It may show that action IDs, one camera's temporal clusters, or one activity facet are not sufficient universal episode keys. It cannot establish one semantic scene, image duplication or visual redundancy, activity-label error, camera-operator identity, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_cross_camera_episode_verifies": "Make the cross-camera, cross-facet Sunset episode the lead microcase; use it to show why the evaluation unit must follow the task's real observation episode rather than a file, exposure, action, camera, or facet by default.",
+    "if_a_real_model_task_is_selected": "Freeze the task's prediction target and an episode-level dependence oracle before creating partitions.",
+    "if_visual_similarity_matters": "Use a separate pixel-access test; do not inherit visual similarity from shared time, target, or transcript context.",
+    "recheck_trigger": "An authoritative episode identifier, revised manifest or transcript, or real model pipeline."
+  }
+}

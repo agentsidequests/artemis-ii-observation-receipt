@@ -1,0 +1,61 @@
+{
+  "testbed_id": "artemis2-source-volume-archive-footprint-reconciliation-stage10h",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:05:00Z",
+  "question": "What does NASA's more-than-800-GB statement measure, and how does it relate to the larger Atlas-visible archive footprint?",
+  "terminal_objective": "Replace a plausible but undocumented subtotal hypothesis with the official source-data denominator and preserve the distinct operational meanings of source files, archive products, and analysis units.",
+  "method": "Reproduce NASA Preliminary Science Report Table 4.1, compare it with the release wording, Atlas archive.size aggregations, and official archive-format conversion rules, then falsify incompatible accounting claims.",
+  "authority": "Read-only public-source evidence and private local repository updates only. No pixels, publication, outreach, source correction, completeness accusation, or scientific acceptance.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "report_page_text_path": "evidence/stage10h/source/preliminary-science-report-page-31.txt",
+    "atlas_response_path": "evidence/stage10d/source/atlas-mission-footprint-response.json",
+    "nasa_release_path": "evidence/stage10d/source/nasa-release.html",
+    "user_guide_text_path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+    "stage10d_result_path": "results/stage10d-result.json",
+    "receipt_path": "evidence/stage10h/acquisition-receipt.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "source_file_count": 11591,
+    "source_volume_gb": 814.51,
+    "source_crew_files": 10407,
+    "source_crew_volume_gb": 210.29,
+    "source_orion_still_files": 1040,
+    "source_orion_still_volume_gb": 3.14,
+    "source_orion_video_files": 22,
+    "source_orion_video_volume_gb": 598.20,
+    "source_audio_files": 115,
+    "source_audio_volume_gb": 2.86,
+    "source_other_files": 7,
+    "source_other_volume_gb": 0.02,
+    "atlas_product_count": 32133,
+    "atlas_archive_bytes": 2526790075510,
+    "atlas_video_products": 22,
+    "atlas_video_bytes": 26268401779,
+    "prior_subtotal_gb": 833.887936412
+  },
+  "interpretation": {
+    "verified": "NASA's 814.51 GB is an explicit source-data volume for 11,591 files received and archived by the Lunar Science Team. The current Atlas snapshot instead sums 32,133 archive products across source and additional representations to 2.526790075510 TB. These are different ledgers, not competing measurements of one fixed payload.",
+    "falsification": "The prior 833.887936412 GB subtotal happens to fit the release's rounded wording, but Table 4.1 supplies the documented basis: 814.51 GB of source files. The earlier processed-crew-omission explanation is superseded.",
+    "video_bridge": "Table 4.1 reports 598.20 GB of source MXF video, while Atlas exposes 22 MP4 video products totaling 26.268401779 GB. The User Guide documents a frame-rate-aware H.264 conversion with substantial file-size reduction, so the two figures must not be treated as missing bytes or equivalent-format totals.",
+    "decision_use": "Use 814.51 GB and 11,591 files for received source-data scale; use Atlas product counts and archive.size for current retrieval and compute burden; use stable exposure identities and reconstructed camera actions for evidentiary sampling. Never substitute one ledger for another."
+  },
+  "hard_negatives": [
+    "claim_833gb_is_documented_headline_basis",
+    "claim_2527tb_is_source_data_volume",
+    "claim_815gb_is_current_download_footprint",
+    "treat_archive_products_as_independent_observations",
+    "call_video_size_difference_missing_data",
+    "call_format_conversions_wasteful_duplicates",
+    "infer_current_release_completeness_from_count_difference",
+    "open_pixels_to_reconcile_ledger_units"
+  ],
+  "claim_ceiling": "Stage 10H may establish NASA's documented 11,591-file, 814.51-GB source-data ledger; the preserved Atlas snapshot's 32,133-product, 2.526790075510-TB archive footprint; and the official MXF-to-MP4 conversion explanation. It may supersede the Stage 10D headline-accounting hypothesis. It cannot call 2.527 TB source data, call 814.51 GB the current all-product download burden, treat representations as independent observations or waste, infer loss of scientific content from byte reduction, or infer release completeness from source-versus-Atlas count differences.",
+  "next_step_logic": {
+    "if_official_table_fails": "Retain the Stage 10D subtotal only as an undocumented arithmetic resemblance and do not assign the headline denominator.",
+    "if_source_and_archive_ledgers_reproduce": "Adopt a three-ledger model separating source acquisition, archive retrieval, and analysis evidence units.",
+    "if_format_conversion_is_undocumented": "Report the video-size difference without causal interpretation.",
+    "recheck_trigger": "A revised NASA science report, PDS archive release, Atlas snapshot, or formal data-volume accounting note may change counts or conversions."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "testbed_id": "artemis2-planned-target-window-replication-stage11a",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T15:05:00Z",
+  "question": "Is Sunset's single scheduled-window limitation exceptional, or do other plan target-name classes also lack internal window-level replication?",
+  "terminal_objective": "Generalize the one-window feasibility check across active target names in the mission plan without treating scheduled windows as independent semantic events.",
+  "method": "Replay the complete action-to-plan ledger, reduce its nonblank memberships to unique scheduled windows keyed by plan order and target name, count active windows per exact plan target-name value, and separate singleton from repeated names. Do not use target tags or pixels.",
+  "authority": "Private local plan and membership-ledger analysis only. No pixels, target-tag substitution, independent-event claim, execution-completeness claim, image-content claim, model partition, model performance, archive defect, publication, scientific-discovery claim, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10z_spec_path": "spec/stage10z.json",
+    "membership_ledger_path": "results/stage10z-action-plan-membership.csv",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "active_plan_windows": 36,
+    "active_plan_target_names": 19,
+    "singleton_target_names": 12,
+    "repeated_target_names": 7,
+    "singleton_target_name_share": 0.631578947368421,
+    "repeated_target_name_share": 0.3684210526315789,
+    "singleton_valid_two_sided_window_allocations": 0
+  },
+  "frozen_window_counts": {
+    "Aristarchus Plateau": 1,
+    "Crew Position Swap": 1,
+    "Earth": 1,
+    "Earthrise": 1,
+    "Earthset": 1,
+    "Hertzsprung Basin": 1,
+    "Impact Flashes": 1,
+    "Reiner Gamma": 1,
+    "Sunrise": 1,
+    "Sunset": 1,
+    "Vavilov Crater": 1,
+    "illum_limb": 1,
+    "Glushko Crater": 2,
+    "Ohm Crater": 2,
+    "Orientale Basin": 2,
+    "Moon": 4,
+    "Whole Moon": 4,
+    "Crew Team Swap": 5,
+    "Guided Discussion": 5
+  },
+  "hard_negatives": [
+    "call_active_windows_independent_events",
+    "call_repeated_targets_evaluation_ready",
+    "substitute_target_tags_for_plan_names",
+    "claim_singleton_targets_observed_only_once",
+    "claim_singleton_targets_scientifically_insufficient",
+    "generalize_to_all_archive_target_classes",
+    "assign_model_partition_from_plan_count",
+    "infer_model_performance_effect",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_replication_census"
+  ],
+  "claim_ceiling": "Stage 11A may establish that the 36 timed plan windows containing at least one verified complete action use 19 exact plan target-name values, of which 12 occur in one active window and seven occur in multiple active windows. For each singleton name, no internal split can place distinct same-name scheduled windows on both sides. It cannot establish that scheduled windows are independent semantic events, that repeated names are evaluation-ready, that a named observation occurred only once outside the plan, that target tags share the plan ontology, that singleton names are scientifically insufficient, that all archive target classes follow this distribution, or any model-performance, scientific-discovery, novelty, or priority claim.",
+  "next_step_logic": {
+    "if_new_window_generalization_is_the_task": "For a singleton plan name, require an external comparable window or narrow the claim; for a repeated name, first test temporal separation, overlap, camera coupling, and semantic comparability.",
+    "if_new_event_generalization_is_the_task": "Treat this census only as a feasibility lower bound; define semantic events independently because multiple windows can belong to one episode.",
+    "if_target_classification_is_the_task": "Do not transfer these plan-name counts to the curated target-tag vocabulary.",
+    "if_public_analysis_is_later_authorized": "Use the 12-of-19 census to show that Sunset is a vivid example of a broader replication constraint, while keeping the exact task and window/event distinction visible.",
+    "recheck_trigger": "A task-native event ontology, additional mission data, revised plan, or external comparable observations."
+  }
+}

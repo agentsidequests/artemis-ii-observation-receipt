@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/observation-receipt-v0.1.schema.json",
+  "title": "Observation Receipt case",
+  "type": "object",
+  "required": [
+    "receipt_version",
+    "case_id",
+    "artifacts",
+    "facts",
+    "candidates",
+    "observation_windows",
+    "measurement_function",
+    "claims"
+  ],
+  "properties": {
+    "receipt_version": {"const": "0.1.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "bytes", "sha256", "derivation_state"],
+        "properties": {
+          "id": {"type": "string"},
+          "path": {"type": "string"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "derivation_state": {"enum": ["source", "derived", "transcoded"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "facts": {"type": "object"},
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "disposition", "witnesses", "exact_time_known"],
+        "properties": {
+          "id": {"type": "string"},
+          "disposition": {"enum": ["accepted", "ambiguous", "rejected", "retracted"]},
+          "witnesses": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+          "exact_time_known": {"type": "boolean"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "observation_windows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "start_utc", "stop_utc", "target", "capabilities"],
+        "properties": {
+          "id": {"type": "string"},
+          "start_utc": {"type": "string", "format": "date-time"},
+          "stop_utc": {"type": "string", "format": "date-time"},
+          "target": {"type": "string"},
+          "capabilities": {"type": "object", "additionalProperties": {"type": "boolean"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "measurement_function": {"type": "object"},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "proposition", "rule", "claim_ceiling"],
+        "properties": {
+          "id": {"type": "string"},
+          "proposition": {"type": "string"},
+          "rule": {
+            "type": "object",
+            "required": ["kind"],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "ledger_summary",
+                  "window_after_boundary",
+                  "window_capability_gate",
+                  "count_floor_sphere",
+                  "required_measurement_fields"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "claim_ceiling": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

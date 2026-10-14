@@ -1,0 +1,77 @@
+{
+  "extract_id": "artemis2-stage6a-impact-reframe-sources",
+  "version": "1.0.0",
+  "accessed_on": "2026-10-09",
+  "sources": [
+    {
+      "id": "preliminary_report_orientale_texture",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Preliminary%20Science%20Report.pdf",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "page": 38,
+      "finding": "The report says the crew-described textural change at Orientale is apparent in the LOLA-derived roughness map but not in the Diviner-derived rock-abundance map. It interprets this as sensitivity to hectometer-scale terrain properties rather than the distribution of 1-2 m rocks."
+    },
+    {
+      "id": "preliminary_report_human_resolution",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Preliminary%20Science%20Report.pdf",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "pages": [101, 102],
+      "finding": "Using the crew's inability to resolve a 2.5 km-wide rille unaided at 16,700 km and ability to see it through a 400 mm optical viewfinder, the report bounds unaided lunar-feature resolvability at greater than 0.5 and less than 3 arcminutes, or about 1-6 km nadir at pericynthion."
+    },
+    {
+      "id": "preliminary_report_multiscale_human_vision",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Preliminary%20Science%20Report.pdf",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "pages": [105, 106],
+      "finding": "The report characterizes trained humans as contextual observers with a wide field of view and multi-scale perception, while calibrated instruments provide systematic quantitative measurement."
+    },
+    {
+      "id": "preliminary_report_color_limit",
+      "title": "Artemis II Preliminary Science Report",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Preliminary%20Science%20Report.pdf",
+      "parent_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa",
+      "parent_byte_count": 143769154,
+      "pages": [35, 36, 114, 115],
+      "finding": "The report states that no handheld or vehicle camera was calibrated, color and photometric analysis is qualitative, and future missions should use calibrated imaging or spectroscopy plus a stable color reference."
+    },
+    {
+      "id": "data_user_guide_target_metadata_limit",
+      "title": "Artemis II Lunar Science Data User Guide",
+      "publisher": "NASA",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/artemis2_data_user_guide.pdf",
+      "parent_sha256": "c4f5ab25363ca3f8fc17bb776e9fc90c19707c8a18c9255648aef34d6a7b0bd2",
+      "parent_byte_count": 8320046,
+      "pages": [36, 37],
+      "finding": "The guide says scheduled activity tags are usually assigned from timestamps, while primary and secondary target tags were manually applied to only a subset and were not thoroughly verified post-mission; errors may remain."
+    },
+    {
+      "id": "subresolution_texture_psychophysics",
+      "title": "Human perception of subresolution fineness of dense textures based on image intensity statistics",
+      "publisher": "Journal of Vision",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28423413/",
+      "doi": "10.1167/17.4.8",
+      "published": "2017",
+      "finding": "Controlled psychophysical experiments found that observers could discriminate subresolution texture fineness using diagnostic image-level intensity statistics. This establishes mechanism plausibility only; it does not validate the Artemis II case."
+    },
+    {
+      "id": "current_coverage_search",
+      "source_class": "bounded current prior-art search",
+      "queries": [
+        "Artemis II LOLA-derived roughness crew texture",
+        "Artemis II hectometer-scale human observations Orientale",
+        "Artemis II Diviner roughness Orientale astronauts",
+        "Artemis II crew observations roughness Orientale"
+      ],
+      "result": "No current non-NASA coverage was located that connects the Orientale cross-instrument texture result to the mission's unaided object-resolution bound. Search absence does not establish novelty or priority."
+    }
+  ]
+}

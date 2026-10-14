@@ -1,0 +1,1707 @@
+{
+  "manifest_id": "artemis2-stage2b-saw3-label-scan-manifest-v1",
+  "inventory_sha256": "159bbd98aea41c6cde8227fba6ce8cd26a6cb023ce2dcf894f07416e57c7d00c",
+  "files": [
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009561_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009561_saw3_raw_v01.xml",
+      "bytes": 13061,
+      "sha256": "de28aca0de2542aff7c10a11b3146c333f8e7bc67dfca744820d7d250f839302",
+      "time_utc": "2026-04-06T18:46:24Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009562_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009562_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "ec302b064c7e33ef51b926e6722de2a19a279412ea328f08db36179688efccb4",
+      "time_utc": "2026-04-06T19:18:24Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009563_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009563_saw3_raw_v01.xml",
+      "bytes": 12512,
+      "sha256": "b408292f5e9e61a1e900fae4daf468af5be03f2fa6c7b0a8b38de214252584a9",
+      "time_utc": "2026-04-06T19:34:24Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009564_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009564_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "b9756d7a3c95663f8e7294db4508530938e47c4bfc36faba3c205f0aa2a3ae33",
+      "time_utc": "2026-04-06T20:22:24Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009565_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009565_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "0930d0cc60c50f9498fdde347d5b0a3bb345d0156e6fe43232498133fb60c43e",
+      "time_utc": "2026-04-06T21:10:24Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009566_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009566_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "d24532ad75705095f9cc0cf851970a2bef68cf7b84f51cc967790a77b0f331d2",
+      "time_utc": "2026-04-06T21:50:25Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009567_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009567_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "a3f25db4afaddf797c8655bc0e70490c857be104785496abe65dd2a44e27cab3",
+      "time_utc": "2026-04-06T22:42:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009568_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009568_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "9e4b9bf054b35c838aeb6916c87fa5692f0a6a16fb00870634395eee201a9487",
+      "time_utc": "2026-04-06T22:56:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009569_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009569_saw3_raw_v01.xml",
+      "bytes": 12114,
+      "sha256": "df5deb2a293b3ceed93a728d9c061ee3a74e7a31bb927dcdede57b8291b00fbf",
+      "time_utc": "2026-04-07T00:34:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009570_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009570_saw3_raw_v01.xml",
+      "bytes": 12110,
+      "sha256": "3cd450461749d4b0cfaefc5ef9044024ead8472d1c3ef8e401c90fa6ae91988a",
+      "time_utc": "2026-04-07T01:10:19Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009571_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009571_saw3_raw_v01.xml",
+      "bytes": 12110,
+      "sha256": "6a73d830ca1c7abb45e89142b601c8fabe1b3e5e5fbf81ede95a4d6f29fbfec4",
+      "time_utc": "2026-04-07T01:10:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009572_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009572_saw3_raw_v01.xml",
+      "bytes": 12111,
+      "sha256": "61b12da06104acfd73379256529ef09f8b4b695c0a10ef4def354dc1f66fb628",
+      "time_utc": "2026-04-07T01:11:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009573_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009573_saw3_raw_v01.xml",
+      "bytes": 12111,
+      "sha256": "0464a622667b0c2cbf7fc881725a41054647c9e42931a414ec7cd9e6aa5029c2",
+      "time_utc": "2026-04-07T01:11:49Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009574_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009574_saw3_raw_v01.xml",
+      "bytes": 12115,
+      "sha256": "575067b06efafa5d2c535f13bf45b0d2c52e84837a24706981ce44bfe6de51e2",
+      "time_utc": "2026-04-07T01:28:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e009575_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e009575_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "21333cd096f18e8ae14ec2ee7646c4faf1842ab65886d1013ac3b49b4dc1597f",
+      "time_utc": "2026-04-07T01:28:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016275_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016275_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "e58ddd51dbd2f2302b31cc1217e441540cac484dc330165eaa756e939c0524c8",
+      "time_utc": "2026-04-06T22:38:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016276_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016276_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "fd1949eb93f521d09d7e08d7146c269cc7903c4440e14b29af706122dceaf956",
+      "time_utc": "2026-04-06T22:39:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016277_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016277_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "fb4e14e7bd789fb1e82104d28f18403089f4033404fe54d5aa9b63811e3befcf",
+      "time_utc": "2026-04-06T22:39:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016278_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016278_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "6521e1c1d70b0f9a93a8a897f18d1504f6f832e8eb9f3d19886a4f69ba965f08",
+      "time_utc": "2026-04-06T22:40:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016279_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016279_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "421e05360a7554ab6e4d105de8a14e44a1b71584231c704b1ba7704e1f8ae677",
+      "time_utc": "2026-04-06T22:40:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016280_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016280_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "557036b3aa9672982b29f861d2b6eb282c409f653634b95b9685b983861e7320",
+      "time_utc": "2026-04-06T22:41:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016281_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016281_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "2e4f3f5ca0d01fef6a7b83fcafdfb6e066ad6cb6f2be2c621a4c1262026b54d1",
+      "time_utc": "2026-04-06T22:41:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016282_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016282_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "6bcf11088101174248efa3d3ffbaf3510d586d08a09c120d3513346e93b41a91",
+      "time_utc": "2026-04-06T22:42:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016283_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016283_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "ffaf658f50a42b5cf044753a59274000ed7068e0d704f3afae96e6e2be93485d",
+      "time_utc": "2026-04-06T22:43:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016284_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016284_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "1a96fbca19e9380084053108895a27aeae388236884ebb6a5dc53a6ea0ee3355",
+      "time_utc": "2026-04-06T22:43:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016285_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016285_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "038baef60a353517f2c5593ed63f62aed06446f0ad67c91bbb1b58d53af7506f",
+      "time_utc": "2026-04-06T22:44:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016286_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016286_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "d7cf99aa1b74596df29ba4e2582618e427731ea4c54f08d74996d44da389de8e",
+      "time_utc": "2026-04-06T22:44:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016287_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016287_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "375f3a7c931ffe0f2e5e084e93654d30a3239d8a7a15ce0e04d81cc36d1c52d5",
+      "time_utc": "2026-04-06T23:16:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016288_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016288_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "6a84f864a09ad172fcbaafb06c9ec9ff582789bdf993b000347123dd79e74b6a",
+      "time_utc": "2026-04-06T23:17:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016289_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016289_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "f68a42ce17a0066b094ce553da383ae266f2aede42c407b0dd65f0e65a00742c",
+      "time_utc": "2026-04-06T23:17:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016290_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016290_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "34ed63415e5b29a72b113a0cad5555713c3dfedec00b93565d848135ce32a426",
+      "time_utc": "2026-04-06T23:18:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016291_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016291_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "99d8f524be54d2d52f9cedcbbb1b46d8a02e8d6d62e28259a6b02bfe071a4088",
+      "time_utc": "2026-04-06T23:18:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016292_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016292_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "0017908517bf56a0e38ac21dfd152d25ba97c5e64e1db987b6dfa8c9e83b156c",
+      "time_utc": "2026-04-06T23:19:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016293_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016293_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "79c1e4e4924d687fd49e6913974e1d53fba76c1764b66a6e67d0fc69c29f02c1",
+      "time_utc": "2026-04-06T23:19:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016294_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016294_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "90240031e2af0966481172748f43ac7b8b4b7e212de740020adab201d9ae17fc",
+      "time_utc": "2026-04-06T23:20:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016295_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016295_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "f689a25962b3a15fc6894c11d06ee29ca6dd17a54aa5f68a3c3a4189c2ff39c9",
+      "time_utc": "2026-04-06T23:20:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016296_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016296_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "a526d6e190570d5a79a2d2987c027bbaf7cc499d5fc30c2a1080ad27ada96222",
+      "time_utc": "2026-04-06T23:21:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2A_LABEL"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016297_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016297_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "a60c9892665fc72dbdf11f62db6b5c2fada1e2af30ec4ac05647b701a1852b5b",
+      "time_utc": "2026-04-06T23:21:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2A_LABEL"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016298_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016298_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "30233719018d3c6cd772269cafb285ef6ab0eb61347c67850a4070e6f6b11ca7",
+      "time_utc": "2026-04-06T23:22:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2A_LABEL"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016299_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016299_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "c2d3407e26a0df5fc7ea3b0f62f0e823855270705e6d4b4a829482f5813ac3d4",
+      "time_utc": "2026-04-06T23:22:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2A_LABEL"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016300_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016300_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "ad531d06c3eae11cd85fd9be2d9678375e46ac6380dc2f0e9cfcca6050bf17f4",
+      "time_utc": "2026-04-06T23:23:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2A_LABEL"
+    },
+    {
+      "path": "evidence/stage2a/source/art002e016301_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016301_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "477dfee13f04e5d2611a920a294762b7fb0494a7ec0bec0ede814fad09d4b17b",
+      "time_utc": "2026-04-06T23:23:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2A_LABEL"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016302_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016302_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "e622a9927be3cd9334b4b442d0e8fe848457206e24d04320d079d5fbf5e0438c",
+      "time_utc": "2026-04-06T23:24:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016303_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016303_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "ecda92b958434562f3550f31fd086474ab7de1258eb67d1f5711e7a607ba17f8",
+      "time_utc": "2026-04-06T23:24:44Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016304_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016304_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "0bc76053d435a2b93614c3b3749a340cc8ca285981f842757ee1da9e316f645e",
+      "time_utc": "2026-04-06T23:25:14Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016305_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016305_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "a79b8e44bceb83c8be03f0920c2e8ccd90d2a49ce63d69bf5d7f29639dceb9d0",
+      "time_utc": "2026-04-07T00:33:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016306_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016306_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "175fc081c5e5ed6d5c29eba02091452782a2227218dfa41cba9032af578dfdc0",
+      "time_utc": "2026-04-07T00:34:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016307_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016307_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "294be5b3b073ff7fbe99b89b22d70dc182372ad3f8d0b57e79a94b284a1259d0",
+      "time_utc": "2026-04-07T00:35:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016308_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016308_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "fb6a2ba32d4bfd39fd232818cb3fbebbccaff3f1762330e5b03fe9b87f192253",
+      "time_utc": "2026-04-07T00:35:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016309_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016309_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "9edb797dd4b531f6aba656e6c801799452217436621530fb846102e2bc759fa7",
+      "time_utc": "2026-04-07T00:36:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016310_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016310_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "3910a41d7e4ff6c1d31c09cec34a75a7ab6e5a9085a90f86ff1e7c774c69791a",
+      "time_utc": "2026-04-07T00:36:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016311_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016311_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "863c8c67e0951af79081d7af8783d08bc892adfe3be736598710edc6690e1bb1",
+      "time_utc": "2026-04-07T00:37:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016312_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016312_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "e46e779b3a4c90be24ab028e96e0f471cba8712c03e4d48adb80db55229462da",
+      "time_utc": "2026-04-07T00:37:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016313_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016313_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "6677343b32c3cd7dda11be09d4dc9b5c723d6f0dbde0c2aa7ff4265faf2bb776",
+      "time_utc": "2026-04-07T00:38:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016314_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016314_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "dfc1e110a50fa97bf24b9a0398551cbd4a62950a87f097b5d08bca058c5412ba",
+      "time_utc": "2026-04-07T00:38:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016315_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016315_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "94c600a8423c3fd2bb7482ea0c7e9c6a04b7c1f137eea5ee9d9b1df3eebe46e2",
+      "time_utc": "2026-04-07T00:39:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016316_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016316_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "eee3940b444ca123624d553011ac01d39148bb8859b27c23c4b00e36c6c47f80",
+      "time_utc": "2026-04-07T00:39:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016317_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016317_saw3_raw_v01.xml",
+      "bytes": 12048,
+      "sha256": "edfc8b3e9cb3905330d89678b3be840946a1d567462441de30542ef606a1b57d",
+      "time_utc": "2026-04-07T00:40:29Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016318_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016318_saw3_raw_v01.xml",
+      "bytes": 12048,
+      "sha256": "7e7326a2c45cd1c44ed32980ec3e76c5e67c068ac74aecb295026c7c2abb8a50",
+      "time_utc": "2026-04-07T00:40:54Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016319_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016319_saw3_raw_v01.xml",
+      "bytes": 12049,
+      "sha256": "edb34b5dfea03897f399c95c550b758013996f927df1ae7bf6719e54127fcc9e",
+      "time_utc": "2026-04-07T00:41:24Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016320_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016320_saw3_raw_v01.xml",
+      "bytes": 12049,
+      "sha256": "1c0d633e7d237fb7c083faabda95d26a4943668579784846e93a4f505af45c74",
+      "time_utc": "2026-04-07T00:41:59Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016321_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016321_saw3_raw_v01.xml",
+      "bytes": 12048,
+      "sha256": "a7f9f82a62efd26e68596310e98e12b0d769c50b54918d7019c405bd7d13634c",
+      "time_utc": "2026-04-07T00:55:24Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016322_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016322_saw3_raw_v01.xml",
+      "bytes": 12048,
+      "sha256": "80fd5b33fe9eadff1e3fcda9264d25e6640c7f3fe055e8a9935653d36d7f9cd3",
+      "time_utc": "2026-04-07T00:55:49Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016323_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016323_saw3_raw_v01.xml",
+      "bytes": 12049,
+      "sha256": "12268611aa28a64538c853bcb13fc68a171b98cce60d7e3bca218cbd4787c7bc",
+      "time_utc": "2026-04-07T00:56:19Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016324_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016324_saw3_raw_v01.xml",
+      "bytes": 12049,
+      "sha256": "14a30fe6268fddea1ec37952c06966275e1e840bd43a0803ba73f211706e847b",
+      "time_utc": "2026-04-07T00:56:54Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016325_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016325_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "1c0332aabf89c51a6bfcc0ecbb20aa075299092f2089f394f5b9aa16c44535e6",
+      "time_utc": "2026-04-07T01:22:40Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016326_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016326_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "f51db6d638ffa6abb4d84fd401b2f175d1a9bae4e582f8ec38e5999fd295ed18",
+      "time_utc": "2026-04-07T01:23:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016327_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016327_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "462ca246f2c8a896c82047e59ac9f6eb2b70b40342788f5b29741e3da9869fef",
+      "time_utc": "2026-04-07T01:23:40Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016328_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016328_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "adbbea54cc18de310bac634289b077abbb255ac12c801e15c0a0136681cb6822",
+      "time_utc": "2026-04-07T01:24:10Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016329_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016329_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "dc182157d9ffbbd8853bc295375d61f0f004cf9e9e07b94ad9ce9062a868453b",
+      "time_utc": "2026-04-07T01:24:40Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016330_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016330_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "0fc01d77bb3bfd9fafba0cd2c620b963e5f0ac74fb9128ff8fb5781f1bffe022",
+      "time_utc": "2026-04-07T01:25:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016331_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016331_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "86eda170e6e55859d57fd1fc3048807607f95be375be7ecae4e29301ecbaac0b",
+      "time_utc": "2026-04-07T01:25:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016332_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016332_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "c7514a2542899d5c176e198169fcace354a56bdd0e70ec3c0694a8360f1f26bd",
+      "time_utc": "2026-04-07T01:26:10Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016333_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016333_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "d443564886e3aecd1b9a44d50d18b0079381b4d3ff09a48d7e8d292b3004d81a",
+      "time_utc": "2026-04-07T01:26:40Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016334_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016334_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "891ae96585a6e3809e510c44e2e9d13709a03609e340b1dedb2df03cadca21a5",
+      "time_utc": "2026-04-07T01:27:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016335_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016335_saw3_raw_v01.xml",
+      "bytes": 12050,
+      "sha256": "7bd2668752ece06f468484c903af45fd7f998ddc35a87bb227a18b97a1c21dd1",
+      "time_utc": "2026-04-07T01:27:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016336_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016336_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "b405423ad203f583b4f48f1d65db57975ff63e519bde67bd959ce52fb63ee0f5",
+      "time_utc": "2026-04-07T01:29:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016337_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016337_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "8bf9560ba8a9772046456a966fccfa5783f89484f7ead7881e60721be58aab5d",
+      "time_utc": "2026-04-07T01:29:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016338_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016338_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "b9c422c0eb2075a0bc52c51c1152d1e91c231b33597229e2f01fb8010fe81032",
+      "time_utc": "2026-04-07T01:30:09Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e016339_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e016339_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "7fd913f6202f5cc4c832f62d5345698f1bc5fac2f852ff5a95ff11c2e5ea04c5",
+      "time_utc": "2026-04-07T01:30:39Z",
+      "flight_day": 6,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e018935_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd06/art002e018935_saw3_raw_v01.xml",
+      "bytes": 12066,
+      "sha256": "6c1cf05a2a41253a3f8536b633beeee97bf5d94bb4049ff64cd3008b69fe6b3e",
+      "time_utc": "2026-04-08T22:24:26Z",
+      "flight_day": 8,
+      "transfer": "REUSED_HASH_PINNED_STAGE2B_CHECKPOINT"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031154_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031154_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "3bdd5445f01a92bdac4c1e3d5323206105de38647901830cb9ca0fdedc6e03ff",
+      "time_utc": "2026-04-06T17:45:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031155_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031155_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "b307bbdf3df4d0ce431076c8dae4f47ba77c4fee21aa79a3e16b30e758e82bd1",
+      "time_utc": "2026-04-06T17:53:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031156_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031156_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "bba19d4f5982aa72d5b616475859fe17aaacbd9c72c15227bb6c8a93039a3b35",
+      "time_utc": "2026-04-06T17:57:04Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031157_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031157_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "8370729ee7c1033d56a0edb64d2c623f5c8828d10c696a29cfa7a38ecae10e07",
+      "time_utc": "2026-04-06T17:58:29Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031158_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031158_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "fc15e9e381069cc42c9b076af550f759b849d05f2f4ec74adcbcf8bd4db6622a",
+      "time_utc": "2026-04-06T18:06:29Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031159_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031159_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "6362bfb8f1a0e09439ad1e2c2bf0e8effb0012c843a2d3fd260108ad2287eb22",
+      "time_utc": "2026-04-06T18:14:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031160_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031160_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "4199e2fec690e1178a49ecf81753a6faf61842e1ffd67199f58416c220489725",
+      "time_utc": "2026-04-06T18:22:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031161_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031161_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "1a758cf4c7d200fea0a2e3a288d07288e9353b099fbb8ceaa9aeb8fdb592b479",
+      "time_utc": "2026-04-06T18:30:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031162_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031162_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "806d646d4aa5c442d18243b0ea938113b28a83ae277e955351d31ea3901b9a4a",
+      "time_utc": "2026-04-06T18:38:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031163_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031163_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "6b5b2b733faf88db3e3c8ea6df4b5dc4a8731818335bf6b228574e6b17763eb6",
+      "time_utc": "2026-04-06T18:54:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031164_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031164_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "2bbcea078e93ce0304716e038f1a73d33ab9af317f9e494a336311ef1758a031",
+      "time_utc": "2026-04-06T19:02:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031165_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031165_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "99d0830a4d70e5016ec5d14cb766b60ffa6fd1d390c89abc3cc0a53667772fea",
+      "time_utc": "2026-04-06T19:10:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031166_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031166_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "2ed207dc7f8324dd1b1de8df6fca77b4d31e05c0686e30a7a7ba54d9e3e96ad6",
+      "time_utc": "2026-04-06T19:26:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031167_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031167_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "226d5be83fd8e9411b4b1a903bbd19db8d425c354eb2498bcd7514c287438e32",
+      "time_utc": "2026-04-06T19:42:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031168_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031168_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "6569f80f1713792f818ba5a7f9d81024ebba8b06c7442ac8d63beece9b14f12d",
+      "time_utc": "2026-04-06T19:50:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031169_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031169_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "855b2f36f2b8e8cf2af39471062a18c62b5c4d7385a988e36eaffc57325e1386",
+      "time_utc": "2026-04-06T19:58:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031170_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031170_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "5ec0e0e44adf73ebebddd48ff9a64b950f7a28a63baf2fe0c8560b868920ba6a",
+      "time_utc": "2026-04-06T20:06:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031171_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031171_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "b1601cc7e52892516a43c8c452156446de962f0e82e64096ec4f2162db78d544",
+      "time_utc": "2026-04-06T20:14:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031172_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031172_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "292daef445bcce320ff1f9288a1eabeb949340e022fef9311a0581d2c5382700",
+      "time_utc": "2026-04-06T20:30:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031173_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031173_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "cee05958b74e6be567df5ad4d2841ec36ac26ebd93d4be7e7abaf1fc8c216ba9",
+      "time_utc": "2026-04-06T20:38:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031174_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031174_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "8575d7178b825e931dbd26c3c36002b543f955a40eb131b9697a72ab39660607",
+      "time_utc": "2026-04-06T20:46:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031175_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031175_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "e7fc7d91f08f848616a83ef1cba98c74a90a0b86daf76d2dbfa1b9aec351eade",
+      "time_utc": "2026-04-06T20:54:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031176_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031176_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "ab372098703c94c34bfb87282d757d9e39c32218fef65a1c16e3027ac411a856",
+      "time_utc": "2026-04-06T21:02:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031177_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031177_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "a09451d829983ce1c33451743ef37ef7e480a0fa75d2c6daa0a34183711dc2fc",
+      "time_utc": "2026-04-06T21:18:24Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031178_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031178_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "9dee7940085e9782a9f58367a5de5c3a60dcc89b9b1b3e108c177ac41d17d3c3",
+      "time_utc": "2026-04-06T21:26:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031179_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031179_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "ca1d62ee14483ee1ea26eecf95fdbb9f9b65b55d15a758bbef5af0643333ac48",
+      "time_utc": "2026-04-06T21:34:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031180_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031180_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "22d2c26bf5d5871763bb7bbf15e843c3b9b9bb7c4a5077381d2457f09b181c54",
+      "time_utc": "2026-04-06T21:42:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031181_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031181_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "09c1d8e0c6260ada38691bf420e8a4b59a0a8ec303b483408158f55db3559ca1",
+      "time_utc": "2026-04-06T21:58:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031182_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031182_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "b159bd3338f7a698642b5b22980ca2e1b03b972d4a53db16933163c081532e99",
+      "time_utc": "2026-04-06T22:06:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031183_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031183_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "de0b76944802dd52c5ec06c53dd7215a605692e49b7434008b3fa645e52a2ac3",
+      "time_utc": "2026-04-06T22:14:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031184_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031184_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "aabdf0a4c808af04c468fd3307d96d55667f7c9ac730293e3c71746009c37c0a",
+      "time_utc": "2026-04-06T22:22:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031185_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031185_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "cae7deb6f85ccb745cd434a81d2668517e1bd8b7c0164a14c8fbd21114dca9a8",
+      "time_utc": "2026-04-06T22:30:25Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031186_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031186_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "dcdf65f9c4dde322412e474590d2df626a7c949fdcc015d366174bd505dd1221",
+      "time_utc": "2026-04-06T22:34:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031187_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031187_saw3_raw_v01.xml",
+      "bytes": 12067,
+      "sha256": "a356bd2e8be99e92f82fb16d94ce118cc6b7fd36a48db8f13250d0ef27663b5c",
+      "time_utc": "2026-04-06T22:34:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031188_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031188_saw3_raw_v01.xml",
+      "bytes": 12067,
+      "sha256": "ab9dc89b312539ce0d58d58ea2fd59caf6a960f7202bb4f7ea6a4137dacc6f66",
+      "time_utc": "2026-04-06T22:35:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031189_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031189_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "5a80a7878d101491be5bc5023b36bce53d5e67a677c6c39816a3ebd2667cc2e0",
+      "time_utc": "2026-04-06T22:35:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031190_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031190_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "3c7843ecf72e68877d83dc2e69510bc6b342638557b7fd5f4b0f137e57853054",
+      "time_utc": "2026-04-06T22:36:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031191_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031191_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "a45c12f885f8be5760d3365095b83260d782dcae385e0c642d3b96bf5304c235",
+      "time_utc": "2026-04-06T22:36:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031192_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031192_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "c40ca455898581ad0029c6c315f2ed4f7e917db573780861b94482f00ae92780",
+      "time_utc": "2026-04-06T22:37:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031193_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031193_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "28a35fbe137d08c5eab8e3a3c31a8d8a55b8676b6529c1cd6a7909100d52d423",
+      "time_utc": "2026-04-06T22:37:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031194_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031194_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "02420a9c9d1f88142951c69d6264a8d6005ac7d7b5743575b428b3062eec7f67",
+      "time_utc": "2026-04-06T22:38:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031195_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031195_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "c4f5973efefc0ec64887a66965cecde93226d33577fe3f5b3069f67c00513738",
+      "time_utc": "2026-04-06T22:45:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031196_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031196_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "5778f5966d392df5a20b9715bf0dfd8618bfbae903763d9ac069c01fad9dff2f",
+      "time_utc": "2026-04-06T22:45:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031197_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031197_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "0abba6bcc2ea876de5d9b7e97eb212be7d405db63d81a6b79f1c2813fc49438d",
+      "time_utc": "2026-04-06T22:46:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031198_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031198_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "82823d253af191aee92ef5120c8e402d081d7c967885e92b3e9fa145983f470e",
+      "time_utc": "2026-04-06T22:46:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031199_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031199_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "d3776f6a433093d0a855848e916f699ccb88adc85e8a667417fed3189ee7e34e",
+      "time_utc": "2026-04-06T22:47:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031200_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031200_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "b5343701f13e677301e3a8ee347f51f654c45c34f2e40045d66ebfe25f50b316",
+      "time_utc": "2026-04-06T22:47:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031201_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031201_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "37a66763b49850143f1062b25967bb67a7aa30e01e6877c6e9986925e724a2fe",
+      "time_utc": "2026-04-06T22:48:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031202_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031202_saw3_raw_v01.xml",
+      "bytes": 12067,
+      "sha256": "5c5c349f64fd316ebf5635aff9ca20daa4c25fe2f39f109e90c58fd7d5bb305c",
+      "time_utc": "2026-04-06T22:48:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031203_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031203_saw3_raw_v01.xml",
+      "bytes": 12054,
+      "sha256": "130887fb788d28101f0454d73f1f1ade5219076bf6adcd6a629411d51363c703",
+      "time_utc": "2026-04-06T22:49:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031204_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031204_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "06fcd473b413ddb13a6d0dc657a71e00c3c0c93cd610bcc2bb664a84105bfc80",
+      "time_utc": "2026-04-06T22:49:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031205_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031205_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "8d52d6b9ce7d886a64dced9c862399c20c3c83e4203801ba25f56670c6f8f55c",
+      "time_utc": "2026-04-06T22:50:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031206_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031206_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "b1c8b05e9bd0eab2b79bf26f4d271e90f5e42de244817e8082e5aeff2dd248e3",
+      "time_utc": "2026-04-06T22:50:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031207_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031207_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "e2bdf008e22c282544104fb04aa437420e523dd2461440580bb7297e769420a6",
+      "time_utc": "2026-04-06T22:51:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031208_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031208_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "1e5208199f0f36839c7a3bb5708985bd28c4857f8af773c2d61c21bc152abe72",
+      "time_utc": "2026-04-06T22:51:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031209_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031209_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "dba28f39a708b103aec9f20b20e6384f52b230b711ea27fd6721a09b181e2251",
+      "time_utc": "2026-04-06T22:52:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031210_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031210_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "be2a20c872e0b006d5fb03a5d2e74a1a98b12eb22efc23b012bc0419db347e59",
+      "time_utc": "2026-04-06T22:52:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031211_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031211_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "a253e92efb3bca102832fa9f8a242bc4b7ca892a2dd775c4401bfbcd8063549c",
+      "time_utc": "2026-04-06T22:53:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031212_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031212_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "b284e18b4ae390375e08b61bab7cfa568984b476df3ff06ec697136817d00a5d",
+      "time_utc": "2026-04-06T22:53:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031213_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031213_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "c69bf452619bf0d2fa9aa6f41c020b7ff3211db8dfd8b26a67d082c326a6157e",
+      "time_utc": "2026-04-06T22:54:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031214_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031214_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "b183317873e29fbba26130bdbf941d763b8a005ee1b45002c75821fd28eafe9c",
+      "time_utc": "2026-04-06T22:54:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031215_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031215_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "03d3fa5ba78705c98658f993c1cd2edb567e2cbd9901748fc36e1867ba8cfebf",
+      "time_utc": "2026-04-06T22:55:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031216_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031216_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "7d8a956d507cc635b37ceb8bb8725fc9751e69ea4d7d90ae692cc27e4966b608",
+      "time_utc": "2026-04-06T22:55:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031217_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031217_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "afbfd8cf3573f2618524ffe06741b8efb721a92c370244f35bd7d2722210a04b",
+      "time_utc": "2026-04-06T22:56:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031218_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031218_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "747b99509810952355543339780019f708fd92f2741d046b0d29bd7962fcd6f4",
+      "time_utc": "2026-04-06T22:57:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031219_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031219_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "99e46a0351da6a183d18d395da181e1c4e3963bb11f8ab7612882482e9f4e121",
+      "time_utc": "2026-04-06T22:57:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031220_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031220_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "d04973c902685cf9c61989aeb6ddaf0a6c45f5b8ef68f15724444649a42c566b",
+      "time_utc": "2026-04-06T22:58:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031221_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031221_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "d25f9c90291b2808d7b04b88b2af1f52ef07db1ea176616b954fb1440f7e45cd",
+      "time_utc": "2026-04-06T22:58:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031222_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031222_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "9d18b73c088aa2305c4fb5d3f31e268567f32580f6c1ff8e0c63c5ac02c63b88",
+      "time_utc": "2026-04-06T22:59:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031223_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031223_saw3_raw_v01.xml",
+      "bytes": 12067,
+      "sha256": "185fe810c4e7ca8cfd434118b1abb5b3ae7f7543d6533603c63285082457398c",
+      "time_utc": "2026-04-06T22:59:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031224_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031224_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "635262150712d3647221060e2ed68ae91660af7f910ab2fe6f4d954b1a52d0f3",
+      "time_utc": "2026-04-06T23:00:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031225_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031225_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "2772f948e41dd140a2890e1f2099b19917f8151330b05fee646248cd11ba0315",
+      "time_utc": "2026-04-06T23:00:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031226_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031226_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "571b24572f569b4b001171ad53b8acce797238a7904c7233d3b813db970d767c",
+      "time_utc": "2026-04-06T23:01:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031227_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031227_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "d40d0c67d56707fc8aa0cdf2b75878b628e58a710f04e16d621e8749050c9c13",
+      "time_utc": "2026-04-06T23:01:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031228_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031228_saw3_raw_v01.xml",
+      "bytes": 12067,
+      "sha256": "4e0d1ad5335f55584e5d55eb00874f09ae74e260285ac45a1f1d5c345919ee2d",
+      "time_utc": "2026-04-06T23:02:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031229_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031229_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "72216e0d7075d8d0fe0ad45cf1d9d06ddc95380d1d4e24c5b19b2b589c343a83",
+      "time_utc": "2026-04-06T23:02:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031230_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031230_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "75cf0c2b92707f66a346b9a6fc44c752aaf5e6eef5c624df185a82da8f5c9ed5",
+      "time_utc": "2026-04-06T23:03:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031231_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031231_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "31e5af2ed982f4abfd4d1158ab6c35405bc63929aba4061885a68617cc98259c",
+      "time_utc": "2026-04-06T23:03:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031232_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031232_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "c8d9bfd361107693918329f1af747cd1bd16d0410c770a24ae644fcb3f1fa86c",
+      "time_utc": "2026-04-06T23:04:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031233_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031233_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "cb3f5a3d0979a495b4dfe44b54641613b4e77f2ce977f5686b6a567ab242a0bb",
+      "time_utc": "2026-04-06T23:04:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031234_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031234_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "57dc973fa8459cd35d601246375e50d4e4e1ed3729a74149fac61c522f80c708",
+      "time_utc": "2026-04-06T23:05:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031235_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031235_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "997548f8edd8bf06bf91094a1f8d6a90a4e0f4fc39d5db37f2579b2e9b5f0693",
+      "time_utc": "2026-04-06T23:05:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031236_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031236_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "4609952254070b7a2ee841142e36e78120cccc89131168c5a254544e9a69670a",
+      "time_utc": "2026-04-06T23:06:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031237_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031237_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "8651950780d005fbdcd7b9edacdd08af8aad36ae66d187c5c22cba160d6e010b",
+      "time_utc": "2026-04-06T23:06:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031238_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031238_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "7bed39d8e6e86e5f57e429174293de3f4943b5d6cf30693bb3a42f0f9be5c57f",
+      "time_utc": "2026-04-06T23:07:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031239_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031239_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "c3a9012217a7801b03f66764f26f4121a72c3328b8516439d55e14737033ce98",
+      "time_utc": "2026-04-06T23:07:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031240_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031240_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "654fde2cd79e3a0c94f2673c31d8b0a5d89868681beb124b82b117b2dc07038d",
+      "time_utc": "2026-04-06T23:08:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031241_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031241_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "1acbde0a57a4679849edccf3f3e5468fba8e1424fe7b378e902b5f56da1a2e1f",
+      "time_utc": "2026-04-06T23:08:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031242_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031242_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "70c9cf5e6c4a44e3728cf027346a37ee420c36f6980fe56fee4c36182c6bb212",
+      "time_utc": "2026-04-06T23:09:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031243_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031243_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "cae63ba83913f69117adedfa410c981d46e847907b729af550af0f4081305a6b",
+      "time_utc": "2026-04-06T23:09:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031244_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031244_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "313d95a1b697e86f0125e90f134f6616cb0d85b5fe6c5b07eef761966388f61a",
+      "time_utc": "2026-04-06T23:10:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031245_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031245_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "23f70150e39237e3a3ef06957b6d2f6df5df29f8f10cde1dbdbdeef98c47cbc7",
+      "time_utc": "2026-04-06T23:10:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031246_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031246_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "5e4546870bb85899bf8763642645120055eff03ef3d721cb0ad18f3acf0ae28b",
+      "time_utc": "2026-04-06T23:11:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031247_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031247_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "e26d338ec1cd734e0b3641b8ffc441ac6c73feb65fdf38b8a0a27f2fc8346f82",
+      "time_utc": "2026-04-06T23:11:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031248_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031248_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "fe8d000659d94b93d0ad45d3595b15ee3b9bf88e06a722fd73e0beb21de02683",
+      "time_utc": "2026-04-06T23:12:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031249_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031249_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "97656e42c7151249a2a29f907ad1921b373614b2900f6cf0e81d50b0321fed99",
+      "time_utc": "2026-04-06T23:12:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031250_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031250_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "8c770bbae878823839e1da8b782678c241214ab9eb94995517288eadcf8fcc49",
+      "time_utc": "2026-04-06T23:13:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031251_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031251_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "e9910f346e435173641f89b347d9a23ded7c8bc1124ecddfc940557da22ecb8a",
+      "time_utc": "2026-04-06T23:13:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031252_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031252_saw3_raw_v01.xml",
+      "bytes": 12066,
+      "sha256": "483cf1881217bb91a43921d88f65e17df2cdf6450e00b89aa1d484f2f7966971",
+      "time_utc": "2026-04-06T23:14:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031253_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031253_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "586caaced95c6fc07777b22e8622c451f227c8e613be103b75e67b255385a1b6",
+      "time_utc": "2026-04-06T23:14:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031254_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031254_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "3fd860f16931e37ebc1067ff40701663cefa30521ce2f02df119fe79b85087f5",
+      "time_utc": "2026-04-06T23:15:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031255_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031255_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "a268129580e7eb89205f0f7bf8774bce58b1088c92ec57df25032ef5cb74e8c5",
+      "time_utc": "2026-04-06T23:15:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031256_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031256_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "111121c9a23fa52c2089637d8ad3050ef5c3636dfd279d9a7908638f85dbc355",
+      "time_utc": "2026-04-06T23:16:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031257_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031257_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "8b89f715c5eb420f65ebd595d799d7c39fbc65d2b061f534f81cbf5c2cd4c2e2",
+      "time_utc": "2026-04-06T23:25:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031258_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031258_saw3_raw_v01.xml",
+      "bytes": 12068,
+      "sha256": "66269051451407a78deea547e2345eea99000d3b9b62010e4e4b300133c4c085",
+      "time_utc": "2026-04-06T23:26:14Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031259_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031259_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "6a428607f14c84384adf296f4c9a7474b8c28be3558287215aa9c310acd07f7b",
+      "time_utc": "2026-04-06T23:26:44Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031260_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031260_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "861f7f67837f42e9cfde28245450c5895100985d3466f748f10b29e144da6beb",
+      "time_utc": "2026-04-06T23:27:26Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    },
+    {
+      "path": "evidence/stage2b/label-scan/source/art002e031261_saw3_raw_v01.xml",
+      "archive_path": "data_raw_image/fd05/art002e031261_saw3_raw_v01.xml",
+      "bytes": 12069,
+      "sha256": "25bb14bf249edba561fbf721f91df4ec6c2b0640a0edc7526f75db29375e402c",
+      "time_utc": "2026-04-06T23:28:01Z",
+      "flight_day": 6,
+      "transfer": "DOWNLOADED"
+    }
+  ]
+}

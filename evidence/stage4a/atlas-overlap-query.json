@@ -1,0 +1,52 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "gather.common.mission": "artemis2"
+          }
+        }
+      ],
+      "should": [
+        {
+          "bool": {
+            "must": [
+              {
+                "range": {
+                  "gather.time.start_time": {
+                    "lte": "2026-04-07T00:51:57.628Z"
+                  }
+                }
+              },
+              {
+                "range": {
+                  "gather.time.stop_time": {
+                    "gte": "2026-04-07T00:51:15.947Z"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "range": {
+            "gather.time.start_time": {
+              "gte": "2026-04-07T00:51:15.947Z",
+              "lte": "2026-04-07T00:51:57.628Z"
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  },
+  "size": 100,
+  "sort": [
+    {
+      "gather.time.start_time": {
+        "order": "asc"
+      }
+    }
+  ]
+}

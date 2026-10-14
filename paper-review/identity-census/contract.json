@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "date": "2026-10-12",
+  "starting_commit": "0866eb4d89c1bc68ec4cef7dc8d0bc6e275d7562",
+  "objective": "Census distinct raw-product IDs with matching retained camera metadata and test their intersection with the existing counted cohort without certifying physical identity or changing a denominator",
+  "scope": "Frozen raw crew-camera metadata assembled by Stages 10A and 10E, queried flight days 1 through 10, snapshot 10 October 2026; not a current archive or pixel census",
+  "inputs": [
+    {"path": "evidence/stage10a/acquisition-receipt.json", "bytes": 6454, "sha256": "bdc0580214ca5aff0c6a3635533dda2d4d4ec48125fa6575609b818f7f3e5ecd"},
+    {"path": "evidence/stage10e/acquisition-receipt.json", "bytes": 6153, "sha256": "dc8d7280c3e88d188d1642c5206f473475e94c0f72d30d46c4579c168659790b"},
+    {"path": "results/stage10o-product-relationship-manifest.csv", "bytes": 10072026, "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"},
+    {"path": "spec/stage10c.json", "bytes": 5328, "sha256": "d9786cb629da07ae956dfdd6fb136216bac731fd38f767253227d61553d8d2b4"},
+    {"path": "spec/stage10j.json", "bytes": 4722, "sha256": "ba4bce1fb07e4860d071a781900b463ff7ad81873cafc255d31d1e6497612a2f"},
+    {"path": "src/stage10c_camera_action_integrity.py", "bytes": 17008, "sha256": "5be9a83b64462cd240b6d5086c2a747df97fa2ae14adfe70569044c60b4ed866"},
+    {"path": "src/stage10a_metadata_integrity.py", "bytes": 20627, "sha256": "3cd547fc6ae194d7f9c133bc6cfaba010c7a74b4cdbece6cc00eec52eb3744f5"},
+    {"path": "src/artemis_testbed.py", "bytes": 13060, "sha256": "8bb303413e5e594ef5270ade7939739afe909dcdafbd5ff7b08fbdb7497f944e"}
+  ],
+  "expected_raw_records": 10329,
+  "expected_day_counts": {"1": 273, "2": 616, "3": 253, "4": 276, "5": 311, "6": 8423, "7": 98, "8": 79, "9": 0, "10": 0},
+  "expected_manifest": {"products": 22818, "capture_keys": 7606, "actions": 2166},
+  "strict_fields": ["serial", "file_number", "shutter_count", "utc", "iso", "focal_length", "shooting_mode", "auto_bracket_order", "bracket_value"],
+  "core_fields": ["serial", "file_number", "shutter_count", "utc"],
+  "key_rule": "All named fields must be single nonblank strings; preserve lexical values and leading zeros. Missing/multiple/non-string values are unkeyable, not matching nulls. UTC-semantic comparison is a separate diagnostic requiring an explicit offset.",
+  "native_id_rule": "One distinct product ID and capture stem per raw record; multiple representations are not pooled into this census",
+  "conditional_diagnostic": "Wrap the existing unmodified six-pattern action finder: original input order, reversed input order, and hypothetical one-representative-per-exact-nine-field-group lists choosing minimum or maximum product ID. All other records, patterns, counter/settings/span rules and source order remain unchanged. This is identifier-selection and reconstruction sensitivity, not physical deduplication or a corrected census.",
+  "follow_on_diagnostic": "After the predeclared reversal exposes a count difference, profile only the existing sort key (serial plus parsed shutter_count, with its existing zero sentinel). These ties are ordering ambiguity, not aliases. Count nonblank tags in each diagnostic's admitted identifier set to separate selection from reconstruction; do not choose a correct target value.",
+  "limits": {"source_byte_identity": false, "physical_exposure_identity": false, "counts_revised": false, "tag_correctness": false, "pixel_similarity": false, "actual_pipeline_leakage": false, "calibrated_flux": false, "live_archive_coverage": false, "scientific_acceptance": false},
+  "effects": {"network_requests": 0, "image_payload_bytes": 0, "outreach": false, "publication": false, "remote_push": false},
+  "stop": "Reject a source/hash, completeness, scope, duplicate-ID or baseline-replay mismatch. Do not retry denied archive reads or infer a valid physical merge from a candidate match. Preserve original science receipts."
+}

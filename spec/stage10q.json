@@ -1,0 +1,52 @@
+{
+  "testbed_id": "artemis2-sunset-transcript-alignment-stage10q",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T13:09:00Z",
+  "question": "Does an independent execution record support treating Stage 10P's largest conditional cluster as one time-bounded observation episode without claiming visual redundancy or semantic scene identity?",
+  "terminal_objective": "Test whether the strongest concentration microcase is independently time-aligned with a continuous crew observation record.",
+  "method": "Verify Stage 10P, pin the exact PCD3 transcript bytes, select transcript rows whose UTC timestamps fall inside the frozen cluster interval, and measure the nearest boundary rows plus a small set of observation-content anchors.",
+  "authority": "Private local metadata and transcript analysis only. No pixels, model training, publication, speaker-to-camera attribution, semantic scene claim, visual-similarity claim, observed leakage, performance effect, scientific-discovery claim, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10p_spec_path": "spec/stage10p.json",
+    "transcript_path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+    "transcript_bytes": 36880,
+    "transcript_sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+    "cluster_start_utc": "2026-04-07T00:34:34.540Z",
+    "cluster_end_utc": "2026-04-07T00:36:58.150Z",
+    "cluster_span_seconds": 143.61,
+    "inside_utterances": 35,
+    "inside_speaker_counts": {"Hansen": 34, "Wiseman": 1},
+    "first_inside_utc": "2026-04-07T00:34:36.342Z",
+    "first_inside_offset_seconds": 1.802,
+    "last_inside_utc": "2026-04-07T00:36:52.164Z",
+    "last_inside_lead_seconds": 5.986,
+    "nearest_prior_utc": "2026-04-07T00:34:32.456Z",
+    "nearest_prior_lead_seconds": 2.084,
+    "nearest_after_utc": "2026-04-07T00:36:58.163Z",
+    "nearest_after_offset_seconds": 0.013,
+    "required_inside_terms": ["streamer", "plume", "glow", "moon", "sun"]
+  },
+  "hard_negatives": [
+    "call_episode_a_semantic_scene",
+    "call_every_image_visually_redundant",
+    "call_transcript_pixel_ground_truth",
+    "attribute_camera_to_named_speaker",
+    "call_expected_crossing_observed_leakage",
+    "generalize_episode_to_archive",
+    "infer_model_performance_effect",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_alignment_canary"
+  ],
+  "claim_ceiling": "Stage 10Q may establish that the exact Stage 10P interval is independently time-aligned with a dense, topically coherent crew observation record: 35 timestamped utterances occur inside the 143.61-second cluster, bracketed by related utterances 2.084 seconds before and 0.013 seconds after. This supports calling it a time-bounded observation episode. It cannot establish one semantic scene, visual similarity or redundancy among images, transcript-to-camera operator identity, activity-label correctness, observed leakage, a model-performance effect, archive-wide representativeness, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_alignment_verifies": "Use the independently time-aligned Sunset episode as the concrete opening case for the archive-hierarchy and evaluation-split argument, with the visual-similarity and actual-pipeline boundaries adjacent.",
+    "if_a_real_model_task_is_selected": "Freeze its prediction target and dependence oracle before assigning this episode or any action to a partition.",
+    "if_visual_redundancy_matters": "Create a separate pixel-access test with an image-similarity oracle and budget; do not inherit that conclusion from timing or transcript content.",
+    "recheck_trigger": "A revised transcript, relationship manifest, authoritative capture-episode identifier, or real model pipeline."
+  }
+}

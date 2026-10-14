@@ -1,0 +1,815 @@
+{
+  "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+  "metrics": {
+    "active_plan_windows": 36,
+    "strictly_comparable_action_product_pairs": 621,
+    "equal_product_rate_comparable_pairs": 222,
+    "unequal_product_rate_comparable_pairs": 399,
+    "equal_product_rate_reversals": 0,
+    "unequal_product_rate_reversals": 38,
+    "all_reversals_cross_unequal_product_rates": true,
+    "all_higher_action_windows_have_lower_product_rate": true,
+    "all_window_product_rates_equal_three_times_exposure_rates": true,
+    "constant_representations_per_capture": 3
+  },
+  "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+  "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+  "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+    "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+    "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+    "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+  },
+  "checks": [
+    {
+      "id": "protocol_weighting_canary_replays",
+      "pass": true
+    },
+    {
+      "id": "weight_factorization_canary_replays",
+      "pass": true
+    },
+    {
+      "id": "rank_reversal_attribution",
+      "pass": true,
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "scientific_importance_ranking": false,
+        "actual_sampler": "unspecified",
+        "observed_model_bias": false,
+        "causal_performance_effect": false,
+        "formal_informative_cluster_size": false,
+        "one_universal_correct_weighting": false,
+        "discard_representations_or_brackets": false,
+        "scope": "verified_active_plan_windows",
+        "novelty_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "claim_scientific_importance_ranking": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "claim_scientific_importance_ranking",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": true,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_actual_sampler_is_uniform_products": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "claim_actual_sampler_is_uniform_products",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "uniform_products",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_observed_model_bias": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "claim_observed_model_bias",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": true,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_causal_performance_effect": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "claim_causal_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": true,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_formal_informative_cluster_size": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "call_formal_informative_cluster_size",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": true,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_one_universal_correct_weighting": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "claim_one_universal_correct_weighting",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": true,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "recommend_discarding_representations_or_brackets": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "recommend_discarding_representations_or_brackets",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": true,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "generalize_to_unadmitted_archive_records": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "generalize_to_unadmitted_archive_records",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "entire_archive",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_novelty_or_priority": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "claim_novelty_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_during_attribution": {
+      "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+      "mutation": "open_pixels_during_attribution",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "strictly_comparable_action_product_pairs": 621,
+        "equal_product_rate_comparable_pairs": 222,
+        "unequal_product_rate_comparable_pairs": 399,
+        "equal_product_rate_reversals": 0,
+        "unequal_product_rate_reversals": 38,
+        "all_reversals_cross_unequal_product_rates": true,
+        "all_higher_action_windows_have_lower_product_rate": true,
+        "all_window_product_rates_equal_three_times_exposure_rates": true,
+        "constant_representations_per_capture": 3
+      },
+      "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+      "verified": "All 38 action-to-product plan-window rank reversals occur across unequal products-per-action rates, and in every case the window with more actions has the lower rate. With exactly three representations per capture throughout the admitted cohort, exposure-protocol composition is the varying multiplicity behind these product-rank reversals.",
+      "decision_use": "The acquisition protocol becomes an implicit observation-weighting policy only when the hierarchy is flattened to products. This is an arithmetic property of the admitted archive structure, not evidence that an actual model used that sampler or suffered bias.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+        "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+        "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "weight_factorization_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "rank_reversal_attribution",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "strictly_comparable_action_product_pairs": 621,
+            "equal_product_rate_comparable_pairs": 222,
+            "unequal_product_rate_comparable_pairs": 399,
+            "equal_product_rate_reversals": 0,
+            "unequal_product_rate_reversals": 38,
+            "all_reversals_cross_unequal_product_rates": true,
+            "all_higher_action_windows_have_lower_product_rate": true,
+            "all_window_product_rates_equal_three_times_exposure_rates": true,
+            "constant_representations_per_capture": 3
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "scientific_importance_ranking": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "formal_informative_cluster_size": false,
+            "one_universal_correct_weighting": false,
+            "discard_representations_or_brackets": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited importance, sampler, model, causal, cluster-size, correction, deletion, scope, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

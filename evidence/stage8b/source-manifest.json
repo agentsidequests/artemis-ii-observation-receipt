@@ -1,0 +1,132 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-stimulus-recoverability-stage8b",
+  "created_at_utc": "2026-10-09T22:35:29Z",
+  "files": [
+    {
+      "kind": "existing_target_request",
+      "product_id": "artemis2_outgoing_target_request",
+      "path": "corpus/artemis2_outgoing_target_request.json",
+      "url": "existing hash-pinned official source retained by the testbed",
+      "bytes": 59800,
+      "network_bytes_this_stage": 0,
+      "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012217_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012217_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012217_nkd5015_prc_v01.xml",
+      "bytes": 528807,
+      "network_bytes_this_stage": 528807,
+      "sha256": "5388c7c90c0a9144b32b5fa9b196f51ad26b11a0baf5b00b9f41a4a8d8ff1ac8"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012218_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012218_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012218_nkd5015_prc_v01.xml",
+      "bytes": 19781,
+      "network_bytes_this_stage": 19781,
+      "sha256": "e51c4f14279bc8a8dabaa2d568d296c581dfdd27b0222b1dde0ba398a1915652"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012219_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012219_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012219_nkd5015_prc_v01.xml",
+      "bytes": 567679,
+      "network_bytes_this_stage": 567679,
+      "sha256": "c98d391b90ec1b3fdf0e1c0e927ff056ad3c26a5fe433b2ec473d04ed18afbe1"
+    },
+    {
+      "kind": "browse_image",
+      "product_id": "art002e012219_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012219_nkd5015_prc_v01.png",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/browse/fd06/art002e012219_nkd5015_prc_v01.png",
+      "bytes": 7846515,
+      "network_bytes_this_stage": 7846515,
+      "sha256": "c222d9d43e23822368415cf2af2d3303796ef580db0af11d73c8c480189c1eef"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012250_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012250_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012250_nkd5015_prc_v01.xml",
+      "bytes": 789768,
+      "network_bytes_this_stage": 789768,
+      "sha256": "acbbc246ca1c75885b2e5c9597b18dc419cd16e4636389b007dbf33c643fb7ab"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012251_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012251_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012251_nkd5015_prc_v01.xml",
+      "bytes": 653116,
+      "network_bytes_this_stage": 653116,
+      "sha256": "b3ba23c3e92270dec4382a4733f030837e2b76dd4ab7eed4f5c26ceb220cb979"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012252_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012252_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012252_nkd5015_prc_v01.xml",
+      "bytes": 809377,
+      "network_bytes_this_stage": 809377,
+      "sha256": "6b163449fd896f3c9d911ee97133ebf75d551157ecb38173bf88a46659dcc6c8"
+    },
+    {
+      "kind": "browse_image",
+      "product_id": "art002e012252_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012252_nkd5015_prc_v01.png",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/browse/fd06/art002e012252_nkd5015_prc_v01.png",
+      "bytes": 9364757,
+      "network_bytes_this_stage": 9364757,
+      "sha256": "9282cc8f05d00aa07c512789b66e6b4e10cade06241e9f313c63c2faaf48fbc4"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012262_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012262_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012262_nkd5015_prc_v01.xml",
+      "bytes": 503484,
+      "network_bytes_this_stage": 503484,
+      "sha256": "29b5674424f0d222bb65b0d67e06dceadca551f95395734f52dcf5ed2157af86"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012263_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012263_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012263_nkd5015_prc_v01.xml",
+      "bytes": 19539,
+      "network_bytes_this_stage": 19539,
+      "sha256": "dc54b59f12080f16ff57b2072c4662def2b15d71618248d5b108677a65054fb1"
+    },
+    {
+      "kind": "science_label",
+      "product_id": "art002e012264_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012264_nkd5015_prc_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/art002e012264_nkd5015_prc_v01.xml",
+      "bytes": 469552,
+      "network_bytes_this_stage": 469552,
+      "sha256": "5f0f8f2a60f256d05984a63a7c94cc018b20dc5f41a8c819fd2300238eb28228"
+    },
+    {
+      "kind": "browse_image",
+      "product_id": "art002e012264_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012264_nkd5015_prc_v01.png",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/browse/fd06/art002e012264_nkd5015_prc_v01.png",
+      "bytes": 8842542,
+      "network_bytes_this_stage": 8842542,
+      "sha256": "8b3eb98c789f69019a2a989d5e63d181dc6abe22fb4a0eb206114e616aa85433"
+    },
+    {
+      "kind": "release_calendar",
+      "product_id": "PDS_Data_Release_Calendar_20261008_v0",
+      "path": "corpus/evidence/stage8b/PDS_Data_Release_Calendar_20261008_v0.xlsx",
+      "url": "https://pds.nasa.gov/datasearch/subscription-service/PDS_Data_Release_Calendar_20261008_v0.xlsx",
+      "bytes": 309523,
+      "network_bytes_this_stage": 309523,
+      "sha256": "0783e0429a8c85a756e4cdc07f9a1bd56b3d5f74d96dcc885076f216bc191116"
+    }
+  ]
+}

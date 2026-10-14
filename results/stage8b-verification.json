@@ -1,0 +1,283 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-stimulus-recoverability-stage8b",
+  "source_mutation": null,
+  "pass": true,
+  "evidence_state": "CAMERA_NATIVE_STIMULUS_PROXY_AVAILABLE",
+  "disposition": "ADMIT_SEPARATE_CAMERA_NATIVE_CANARY",
+  "dimensions": {
+    "A": {
+      "satisfied": true,
+      "evidence": "Hash-pinned official labels place Glushko at 2026-04-06T19:17:12.47Z, Ohm at 19:25:15.53Z, and the joint frame at 19:27:31.04Z, inside the frozen hash-pinned transcript intervals."
+    },
+    "B": {
+      "satisfied": true,
+      "evidence": "All three PNGs decoded. The selected target regions and ray structures are visible, and dense official label control points fall within 0.156 degrees of the official Glushko/Ohm coordinates."
+    },
+    "C": {
+      "satisfied": true,
+      "evidence": "The selected Glushko and Ohm labels both report Nikon D5, the same 80-400 mm lens, 400 mm, f/8, ISO 400, and 0.001 s."
+    },
+    "D": {
+      "satisfied": true,
+      "evidence": "The 19:27:31.04Z wider frame is officially tagged with Glushko and secondary target Ohm; both coordinate-localized ray-crater regions are visibly present in the same image."
+    },
+    "E": {
+      "satisfied": false,
+      "evidence": "The labels provide strong 2-D fitted pixel-to-lunar-coordinate control and image footprints, but not spacecraft position, attitude, a physical camera pointing model, or incidence/emission/phase geometry. The official 2026-10-08 PDS calendar lists Artemis II SPICE with anticipated date 2026-10-10 and actual release date TBD. Therefore complete line-of-sight plus lighting reconstruction is not currently recoverable."
+    },
+    "F": {
+      "satisfied": false,
+      "evidence": "The target request separates unaided-eye and camera actions, but the scored transcript comparison does not fix naked-eye versus optical viewfinder versus display mediation. The released records do not supply the operative window transmission/angle model, eye/display mapping, or Hansen's changing visual adaptation."
+    }
+  },
+  "images": [
+    {
+      "role": "matched_glushko",
+      "product_id": "art002e012219_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012219_nkd5015_prc_v01.png",
+      "decode_success": true,
+      "image_dimensions": [
+        5568,
+        3712
+      ],
+      "named_target_content_visible": true,
+      "material_clipping_or_obstruction": false,
+      "window_reflection_or_glare_visible": false,
+      "inspection_limit": "Glushko's crater and radial bright-ray system are plainly visible near the label-derived target control point. No fine brightness comparison was made.",
+      "official_target_coordinate_deg": {
+        "latitude": 8.11,
+        "longitude_east": 282.33
+      },
+      "nearest_label_control_point": {
+        "angular_separation_deg": 0.08926240105423826,
+        "vertical_coordinate_pixel": 2601.622818759049,
+        "horizontal_coordinate_pixel": 1289.803692084942,
+        "pixel_latitude_deg": 8.156130873203669,
+        "pixel_longitude_east_deg": 282.2528099737573
+      },
+      "label_pixel_intercept_count": 976
+    },
+    {
+      "role": "matched_ohm",
+      "product_id": "art002e012252_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012252_nkd5015_prc_v01.png",
+      "decode_success": true,
+      "image_dimensions": [
+        5568,
+        3712
+      ],
+      "named_target_content_visible": true,
+      "material_clipping_or_obstruction": false,
+      "window_reflection_or_glare_visible": false,
+      "inspection_limit": "Ohm's crater and surrounding ray structure are visibly resolved near the label-derived target control point. The lunar limb is in frame but does not clip or obstruct the target region. No fine brightness comparison was made.",
+      "official_target_coordinate_deg": {
+        "latitude": 18.32,
+        "longitude_east": 246.22
+      },
+      "nearest_label_control_point": {
+        "angular_separation_deg": 0.13273657094008148,
+        "vertical_coordinate_pixel": 2654.92777019486,
+        "horizontal_coordinate_pixel": 2085.19574233832,
+        "pixel_latitude_deg": 18.287310996035952,
+        "pixel_longitude_east_deg": 246.35551703022253
+      },
+      "label_pixel_intercept_count": 1408
+    },
+    {
+      "role": "joint_context",
+      "product_id": "art002e012264_nkd5015_prc_v01",
+      "path": "corpus/evidence/stage8b/art002e012264_nkd5015_prc_v01.png",
+      "decode_success": true,
+      "image_dimensions": [
+        5568,
+        3712
+      ],
+      "named_target_content_visible": true,
+      "material_clipping_or_obstruction": false,
+      "window_reflection_or_glare_visible": false,
+      "inspection_limit": "Both coordinate-localized target regions and their bright-ray structures are visible in the same wider frame. The view supports shared photographic context, not equal retinal scale or photometric comparability.",
+      "official_target_coordinates_deg": {
+        "glushko": {
+          "latitude": 8.11,
+          "longitude_east": 282.33
+        },
+        "ohm": {
+          "latitude": 18.32,
+          "longitude_east": 246.22
+        }
+      },
+      "nearest_label_control_points": {
+        "glushko": {
+          "angular_separation_deg": 0.1552688833315982,
+          "vertical_coordinate_pixel": 4021.6564837717183,
+          "horizontal_coordinate_pixel": 2945.1585424710424,
+          "pixel_latitude_deg": 7.954741624064184,
+          "pixel_longitude_east_deg": 282.3318245788339
+        },
+        "ohm": {
+          "angular_separation_deg": 0.13250286587203836,
+          "vertical_coordinate_pixel": 1053.1909528459819,
+          "horizontal_coordinate_pixel": 2774.191768219112,
+          "pixel_latitude_deg": 18.370174160297303,
+          "pixel_longitude_east_deg": 246.34918345447673
+        }
+      },
+      "label_pixel_intercept_count": 801
+    }
+  ],
+  "total_network_bytes": 30724440,
+  "verification_network_bytes": 0,
+  "claim_ceiling": "A full pass would establish source recoverability, not that the recovered reconstruction is scientifically correct or perceptually identical. A camera-proxy result would establish only that official, time-correlated, camera-state-matched photographic records can support a bounded same-session comparison. It would not reconstruct Hansen's retinal stimulus, establish the camera as the judgment carrier, recover complete spacecraft or window geometry, control visual adaptation, explain the Stage 8A mismatch causally, validate a photometric measurement, establish novelty, or support a public scientific claim.",
+  "next_step_logic": {
+    "if_full_human_stimulus": "Form a separate reconstruction test with the recovered geometry and optical assumptions exposed; do not treat availability as validation.",
+    "if_camera_proxy": "Admit one separately frozen camera-native paired-and-joint-image canary. Keep its claim photographic and same-session; do not call it Hansen's actual stimulus.",
+    "if_metadata_only": "Stop image interpretation. Preserve the product/time mapping as metadata and close the stimulus lane unless a source defect can be repaired without changing selection.",
+    "if_no_reconstruction": "Close the recoverability lane and retain the transcript as qualitative mission evidence only.",
+    "if_indeterminate": "Repair only the named source identity, corrupted object, or missing inspection record; do not select a more favorable scene.",
+    "recheck_trigger": "When official Artemis II SPICE becomes actually available, re-attest dimensions E and F. New trajectory geometry may change E; it cannot by itself satisfy F."
+  },
+  "checks": [
+    {
+      "id": "formed_design_and_hard_negatives",
+      "pass": true
+    },
+    {
+      "id": "hash_pinned_source_manifest",
+      "pass": true
+    },
+    {
+      "id": "selected_pds4_label_contracts",
+      "pass": true,
+      "products": {
+        "art002e012219_nkd5015_prc_v01": {
+          "pass": true,
+          "start_date_time": "2026-04-06T19:17:12.47Z",
+          "target_ids": [
+            "Glushko Crater",
+            "Grimaldi Basin",
+            "Reiner Gamma"
+          ],
+          "camera_name": "NIKON D5",
+          "lens_name": "AF-S Nikkor 80-400mm f/4.5-5.6G ED VR",
+          "focal_length_mm": "400.0",
+          "f_number": "8.0",
+          "iso": "400",
+          "exposure_seconds": "0.001",
+          "pixel_intercept_count": 976
+        },
+        "art002e012252_nkd5015_prc_v01": {
+          "pass": true,
+          "start_date_time": "2026-04-06T19:25:15.53Z",
+          "target_ids": [
+            "Ohm Crater"
+          ],
+          "camera_name": "NIKON D5",
+          "lens_name": "AF-S Nikkor 80-400mm f/4.5-5.6G ED VR",
+          "focal_length_mm": "400.0",
+          "f_number": "8.0",
+          "iso": "400",
+          "exposure_seconds": "0.001",
+          "pixel_intercept_count": 1408
+        },
+        "art002e012264_nkd5015_prc_v01": {
+          "pass": true,
+          "start_date_time": "2026-04-06T19:27:31.04Z",
+          "target_ids": [
+            "Glushko Crater",
+            "Ohm Crater"
+          ],
+          "camera_name": "NIKON D5",
+          "lens_name": "AF-S Nikkor 80-400mm f/4.5-5.6G ED VR",
+          "focal_length_mm": "260.0",
+          "f_number": "8.0",
+          "iso": "400",
+          "exposure_seconds": "0.001",
+          "pixel_intercept_count": 801
+        }
+      }
+    },
+    {
+      "id": "bounded_three_scene_acquisition",
+      "pass": true,
+      "total_network_bytes": 30724440
+    },
+    {
+      "id": "decoded_visible_browse_images",
+      "pass": true,
+      "products": {
+        "art002e012219_nkd5015_prc_v01": {
+          "pass": true,
+          "dimensions": [
+            5568,
+            3712
+          ]
+        },
+        "art002e012252_nkd5015_prc_v01": {
+          "pass": true,
+          "dimensions": [
+            5568,
+            3712
+          ]
+        },
+        "art002e012264_nkd5015_prc_v01": {
+          "pass": true,
+          "dimensions": [
+            5568,
+            3712
+          ]
+        }
+      }
+    },
+    {
+      "id": "official_coordinate_control_points",
+      "pass": true,
+      "products": {
+        "art002e012219_nkd5015_prc_v01": {
+          "Glushko Crater": {
+            "pass": true,
+            "nearest_control_point_deg": 0.08926240105423826
+          }
+        },
+        "art002e012252_nkd5015_prc_v01": {
+          "Ohm Crater": {
+            "pass": true,
+            "nearest_control_point_deg": 0.13273657094008148
+          }
+        },
+        "art002e012264_nkd5015_prc_v01": {
+          "Glushko Crater": {
+            "pass": true,
+            "nearest_control_point_deg": 0.1552688833315982
+          },
+          "Ohm Crater": {
+            "pass": true,
+            "nearest_control_point_deg": 0.13250286587203836
+          }
+        }
+      }
+    },
+    {
+      "id": "dated_artemis_spice_release_state",
+      "pass": true,
+      "calendar_row": {
+        "A": "Moon",
+        "B": "Artemis II",
+        "C": "SPICE",
+        "D": "1",
+        "E": "Irregular",
+        "F": "46305",
+        "G": "TBD",
+        "H": "-"
+      }
+    },
+    {
+      "id": "complete_inspection_record",
+      "pass": true
+    },
+    {
+      "id": "dimension_evidence_and_limits",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

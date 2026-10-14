@@ -1,0 +1,1657 @@
+{
+  "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_TEMPORAL_ADJACENCY_SPLIT_SENSITIVITY",
+  "complete_actions": 2166,
+  "train_probability": 0.8,
+  "scenarios": {
+    "1": {
+      "clusters": 2051,
+      "multi_action_clusters": 66,
+      "actions_in_multi_action_clusters": 181,
+      "maximum_cluster_actions": 13,
+      "expected_crossing_clusters": 26.515041697791993,
+      "expected_actions_in_crossing_clusters": 87.62587167129598,
+      "expected_action_exposure_rate": 0.0404551577429806
+    },
+    "2": {
+      "clusters": 1377,
+      "multi_action_clusters": 228,
+      "actions_in_multi_action_clusters": 1017,
+      "maximum_cluster_actions": 66,
+      "expected_crossing_clusters": 114.28457616706768,
+      "expected_actions_in_crossing_clusters": 699.9842255603617,
+      "expected_action_exposure_rate": 0.32316907920607646
+    },
+    "5": {
+      "clusters": 816,
+      "multi_action_clusters": 306,
+      "actions_in_multi_action_clusters": 1656,
+      "maximum_cluster_actions": 82,
+      "expected_crossing_clusters": 159.23066992467923,
+      "expected_actions_in_crossing_clusters": 1239.003659450896,
+      "expected_action_exposure_rate": 0.5720238501620019
+    },
+    "10": {
+      "clusters": 538,
+      "multi_action_clusters": 284,
+      "actions_in_multi_action_clusters": 1912,
+      "maximum_cluster_actions": 91,
+      "expected_crossing_clusters": 162.561419616593,
+      "expected_actions_in_crossing_clusters": 1533.1554515240464,
+      "expected_action_exposure_rate": 0.7078280016269836
+    },
+    "30": {
+      "clusters": 254,
+      "multi_action_clusters": 196,
+      "actions_in_multi_action_clusters": 2108,
+      "maximum_cluster_actions": 156,
+      "expected_crossing_clusters": 128.25165644220786,
+      "expected_actions_in_crossing_clusters": 1866.950188759596,
+      "expected_action_exposure_rate": 0.8619345285132022
+    }
+  },
+  "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+  "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+  "primary_five_second": {
+    "clusters": 816,
+    "multi_action_clusters": 306,
+    "actions_in_multi_action_clusters": 1656,
+    "maximum_cluster_actions": 82,
+    "expected_crossing_clusters": 159.23066992467923,
+    "expected_actions_in_crossing_clusters": 1239.003659450896,
+    "expected_action_exposure_rate": 0.5720238501620019
+  },
+  "five_second_facet_diagnostic": {
+    "multi_action_clusters": 306,
+    "single_activity_clusters": 290,
+    "mixed_activity_clusters": 16,
+    "no_activity_clusters": 0,
+    "single_activity_rate": 0.9477124183006536,
+    "target_bearing_clusters": 139,
+    "single_target_clusters": 132,
+    "mixed_target_clusters": 7,
+    "no_target_clusters": 167,
+    "single_target_rate_among_target_bearing": 0.9496402877697842
+  },
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+  "next_step_logic": {
+    "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+    "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+    "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+    "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+  },
+  "checks": [
+    {
+      "id": "source_action_replay",
+      "pass": true,
+      "actions": 2166
+    },
+    {
+      "id": "frozen_threshold_sensitivity",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "broader_grouping_increases_action_exposure",
+      "pass": true
+    },
+    {
+      "id": "five_second_facet_concordance",
+      "pass": true,
+      "diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "clusters_are_semantic_scenes": false,
+        "result_kind": "conditional_expected_crossing",
+        "action_grouping_universally_sufficient": false,
+        "threshold_status": "sensitivity_set",
+        "camera_scope": "same_serial_only",
+        "action_scope": "verified_complete_actions",
+        "performance_effect_inferred": false,
+        "global_priority": false,
+        "facet_evidence_status": "non_independent_structural_diagnostic",
+        "facets_are_correct_or_images_similar": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_temporal_clusters_semantic_scenes": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "call_temporal_clusters_semantic_scenes",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": true,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_expected_crossing_observed_leakage": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "call_expected_crossing_observed_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "observed_leakage",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_action_grouping_is_universally_sufficient": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "claim_action_grouping_is_universally_sufficient",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": true,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "promote_one_threshold_to_ground_truth": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "promote_one_threshold_to_ground_truth",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "five_seconds_is_ground_truth",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "mix_camera_serials_in_clusters": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "mix_camera_serials_in_clusters",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "all_cameras_one_sequence",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "count_unadmitted_records_as_actions": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "count_unadmitted_records_as_actions",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "all_records",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "infer_model_performance_effect": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "infer_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": true,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_global_priority": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "claim_global_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": true,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_facet_concordance_independent_validation": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "call_facet_concordance_independent_validation",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "independent_validation",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "infer_facets_are_correct_or_images_are_similar": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "infer_facets_are_correct_or_images_are_similar",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_temporal_sensitivity": {
+      "testbed_id": "artemis2-temporal-adjacency-split-sensitivity-stage10n",
+      "mutation": "open_pixels_for_temporal_sensitivity",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "complete_actions": 2166,
+      "train_probability": 0.8,
+      "scenarios": {
+        "1": {
+          "clusters": 2051,
+          "multi_action_clusters": 66,
+          "actions_in_multi_action_clusters": 181,
+          "maximum_cluster_actions": 13,
+          "expected_crossing_clusters": 26.515041697791993,
+          "expected_actions_in_crossing_clusters": 87.62587167129598,
+          "expected_action_exposure_rate": 0.0404551577429806
+        },
+        "2": {
+          "clusters": 1377,
+          "multi_action_clusters": 228,
+          "actions_in_multi_action_clusters": 1017,
+          "maximum_cluster_actions": 66,
+          "expected_crossing_clusters": 114.28457616706768,
+          "expected_actions_in_crossing_clusters": 699.9842255603617,
+          "expected_action_exposure_rate": 0.32316907920607646
+        },
+        "5": {
+          "clusters": 816,
+          "multi_action_clusters": 306,
+          "actions_in_multi_action_clusters": 1656,
+          "maximum_cluster_actions": 82,
+          "expected_crossing_clusters": 159.23066992467923,
+          "expected_actions_in_crossing_clusters": 1239.003659450896,
+          "expected_action_exposure_rate": 0.5720238501620019
+        },
+        "10": {
+          "clusters": 538,
+          "multi_action_clusters": 284,
+          "actions_in_multi_action_clusters": 1912,
+          "maximum_cluster_actions": 91,
+          "expected_crossing_clusters": 162.561419616593,
+          "expected_actions_in_crossing_clusters": 1533.1554515240464,
+          "expected_action_exposure_rate": 0.7078280016269836
+        },
+        "30": {
+          "clusters": 254,
+          "multi_action_clusters": 196,
+          "actions_in_multi_action_clusters": 2108,
+          "maximum_cluster_actions": 156,
+          "expected_crossing_clusters": 128.25165644220786,
+          "expected_actions_in_crossing_clusters": 1866.950188759596,
+          "expected_action_exposure_rate": 0.8619345285132022
+        }
+      },
+      "verified": "Action-level grouping removes the exact representation and bracket-sibling crossings modeled in Stage 10M, but it does not guarantee temporal-episode independence. Under a conditional five-second same-camera adjacency rule, 1,656 of 2,166 actions lie in multi-action clusters; independent 80/20 action assignment puts an expected 1,239.004 actions (57.202%) in clusters that cross the partition. The conditional rate ranges from 4.046% at one second to 86.193% at thirty seconds. At five seconds, 290 of 306 multi-action clusters carry one activity value across all admitted exposures, and 132 of 139 target-bearing clusters carry one target value. Because those facets are time-derived and partly curated, this is structural concordance rather than independent scene validation.",
+      "decision_use": "Treat reconstructed action identity as a necessary minimum grouping key, not a complete evaluation design. A real task must freeze whether scene, target, time, operator, or acquisition episode creates broader dependence before a split is built.",
+      "primary_five_second": {
+        "clusters": 816,
+        "multi_action_clusters": 306,
+        "actions_in_multi_action_clusters": 1656,
+        "maximum_cluster_actions": 82,
+        "expected_crossing_clusters": 159.23066992467923,
+        "expected_actions_in_crossing_clusters": 1239.003659450896,
+        "expected_action_exposure_rate": 0.5720238501620019
+      },
+      "five_second_facet_diagnostic": {
+        "multi_action_clusters": 306,
+        "single_activity_clusters": 290,
+        "mixed_activity_clusters": 16,
+        "no_activity_clusters": 0,
+        "single_activity_rate": 0.9477124183006536,
+        "target_bearing_clusters": 139,
+        "single_target_clusters": 132,
+        "mixed_target_clusters": 7,
+        "no_target_clusters": 167,
+        "single_target_rate_among_target_bearing": 0.9496402877697842
+      },
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10N may establish a threshold-sensitive conditional split hazard for temporally adjacent same-camera complete actions in the verified cohort and report non-independent concordance with archive activity and target facets. It cannot call temporal clusters semantic scenes or independent observations, claim observed leakage or a performance effect, designate a universal time threshold, call action grouping universally sufficient, treat time-derived and partly curated facets as independent validation or ground truth, infer facet correctness or image similarity, include unadmitted records as actions, mix cameras into one temporal sequence, infer image content, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_risk_changes_materially_with_threshold": "Treat action identity as the exact minimum grouping key, not a complete evaluation design; freeze the real task and its scene, target, time, or episode dependence before splitting.",
+        "if_a_real_model_task_is_proposed": "Choose and justify a task-native broader grouping oracle before training, then test actual partition overlap rather than importing this conditional estimate.",
+        "if_new_action_patterns_are_admitted": "Reconstruct actions and recompute every temporal threshold before reuse.",
+        "recheck_trigger": "A real AI task, image-content similarity evidence, authoritative acquisition-episode identifiers, revised timestamps, or an expanded action oracle."
+      },
+      "checks": [
+        {
+          "id": "source_action_replay",
+          "pass": true,
+          "actions": 2166
+        },
+        {
+          "id": "frozen_threshold_sensitivity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "broader_grouping_increases_action_exposure",
+          "pass": true
+        },
+        {
+          "id": "five_second_facet_concordance",
+          "pass": true,
+          "diagnostic": {
+            "multi_action_clusters": 306,
+            "single_activity_clusters": 290,
+            "mixed_activity_clusters": 16,
+            "no_activity_clusters": 0,
+            "single_activity_rate": 0.9477124183006536,
+            "target_bearing_clusters": 139,
+            "single_target_clusters": 132,
+            "mixed_target_clusters": 7,
+            "no_target_clusters": 167,
+            "single_target_rate_among_target_bearing": 0.9496402877697842
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "clusters_are_semantic_scenes": false,
+            "result_kind": "conditional_expected_crossing",
+            "action_grouping_universally_sufficient": false,
+            "threshold_status": "sensitivity_set",
+            "camera_scope": "same_serial_only",
+            "action_scope": "verified_complete_actions",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "facet_evidence_status": "non_independent_structural_diagnostic",
+            "facets_are_correct_or_images_similar": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited semantic, observed, sufficiency, threshold, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

@@ -1,0 +1,48 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "gather.common.mission": "artemis2"
+          }
+        },
+        {
+          "range": {
+            "gather.time.start_time": {
+              "gte": "2026-04-06T23:22:37Z",
+              "lte": "2026-04-06T23:22:49.5Z"
+            }
+          }
+        }
+      ],
+      "should": [
+        {
+          "bool": {
+            "must": [
+              { "match": { "bundle_id": "artemis2_crew_camera" } },
+              { "match": { "collection_id": "data_raw" } }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "must": [
+              { "match": { "bundle_id": "artemis2_orion_camera" } },
+              { "match": { "collection_id": "data_raw_image" } }
+            ]
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  },
+  "size": 100,
+  "sort": [
+    {
+      "gather.time.start_time": {
+        "order": "asc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1285 @@
+{
+  "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_CAMERA_TARGET_ASSOCIATION_CANARY",
+  "association": {
+    "source_exposures": 7606,
+    "labeled_exposures": 3413,
+    "target_classes": 23,
+    "camera_serials": 3,
+    "camera_exclusive_target_classes": 19,
+    "camera_exclusive_labeled_exposures": 807,
+    "camera_exclusive_exposure_share": 0.23644887196015235,
+    "sunset_exposures": 1553,
+    "non_sunset_exposures": 1860,
+    "z9_labeled_exposures": 734,
+    "z9_sunset_exposures": 593,
+    "rule_true_positive": 593,
+    "rule_true_negative": 1719,
+    "rule_false_positive": 141,
+    "rule_false_negative": 960,
+    "rule_accuracy": 0.6774099033108703,
+    "majority_accuracy": 0.544975095224143,
+    "rule_accuracy_lift": 0.13243480808672725,
+    "rule_balanced_accuracy": 0.6530175726481524,
+    "rule_precision": 0.8079019073569482,
+    "rule_sensitivity": 0.381841596909208,
+    "rule_specificity": 0.9241935483870968,
+    "cramers_v": 0.40651381844599277,
+    "mutual_information_bits": 0.27646179152660544
+  },
+  "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+  "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+    "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+    "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+    "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+    "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+  },
+  "checks": [
+    {
+      "id": "task_conditioned_unit_receipt",
+      "pass": true
+    },
+    {
+      "id": "independent_document_nomination_and_label_limit",
+      "pass": true
+    },
+    {
+      "id": "camera_target_association",
+      "pass": true,
+      "derived": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      }
+    },
+    {
+      "id": "camera_not_necessary_or_sufficient",
+      "pass": true
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "target_labels_ground_truth": false,
+        "camera_causes_target": false,
+        "camera_identity_sufficient": false,
+        "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+        "pixels_encode_camera": false,
+        "image_model_uses_shortcut": false,
+        "result_kind": "metadata_association_canary",
+        "performance_effect_inferred": false,
+        "scope": "verified_complete_action_labeled_exposures",
+        "scientific_discovery_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_target_labels_ground_truth": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "call_target_labels_ground_truth",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": true,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_camera_causes_target": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "claim_camera_causes_target",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": true,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_camera_identity_sufficient": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "claim_camera_identity_sufficient",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": true,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_diagnostic_rule_held_out_model": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "call_diagnostic_rule_held_out_model",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "held_out_pixel_model",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "infer_pixels_encode_camera": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "infer_pixels_encode_camera",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": true,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_image_model_uses_shortcut": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "claim_image_model_uses_shortcut",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": true,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_association_observed_leakage": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "call_association_observed_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "observed_leakage",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "infer_model_performance_effect": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "infer_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": true,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "generalize_association_beyond_cohort": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "generalize_association_beyond_cohort",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "all_archive_and_future_missions",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_scientific_discovery_or_priority": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "claim_scientific_discovery_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_camera_target_canary": {
+      "testbed_id": "artemis2-camera-target-shortcut-canary-stage10u",
+      "mutation": "open_pixels_for_camera_target_canary",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "association": {
+        "source_exposures": 7606,
+        "labeled_exposures": 3413,
+        "target_classes": 23,
+        "camera_serials": 3,
+        "camera_exclusive_target_classes": 19,
+        "camera_exclusive_labeled_exposures": 807,
+        "camera_exclusive_exposure_share": 0.23644887196015235,
+        "sunset_exposures": 1553,
+        "non_sunset_exposures": 1860,
+        "z9_labeled_exposures": 734,
+        "z9_sunset_exposures": 593,
+        "rule_true_positive": 593,
+        "rule_true_negative": 1719,
+        "rule_false_positive": 141,
+        "rule_false_negative": 960,
+        "rule_accuracy": 0.6774099033108703,
+        "majority_accuracy": 0.544975095224143,
+        "rule_accuracy_lift": 0.13243480808672725,
+        "rule_balanced_accuracy": 0.6530175726481524,
+        "rule_precision": 0.8079019073569482,
+        "rule_sensitivity": 0.381841596909208,
+        "rule_specificity": 0.9241935483870968,
+        "cramers_v": 0.40651381844599277,
+        "mutual_information_bits": 0.27646179152660544
+      },
+      "verified": "Among 3,413 source exposures with nonblank target labels in the verified complete-action cohort, 19 of 23 target classes occur on one camera only and account for 807 exposures. The Data User Guide independently identifies the Z9 as the primary eclipse camera; 593 of its 734 labeled exposures carry Sunset. The descriptive rule 'predict Sunset iff Z9' scores 67.741% accuracy against a 54.498% majority baseline, but only 38.184% sensitivity.",
+      "decision_use": "Treat camera identity as a prospective shortcut variable for any later target classifier. Require a camera-only baseline and camera/event-stratified evaluation before interpreting pixel performance. The metadata association does not prove that pixels reveal camera identity or that a model would exploit it.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10U may establish a descriptive acquisition-device/target-label association in the verified complete-action cohort: among 3,413 source exposures with nonblank target labels, 19 of 23 target classes occur on one camera only and account for 807 exposures; 593 of 734 labeled Z9 exposures carry Sunset. The document-nominated rule 'predict Sunset iff Z9' scores 67.741% accuracy versus a 54.498% majority baseline, 65.302% balanced accuracy, 80.790% precision, and 38.184% sensitivity. Sunset itself spans two cameras, so camera identity is neither necessary nor sufficient. The result cannot establish target-label correctness, causation, pixel-encoded camera identity, actual model shortcut use, leakage, a held-out performance gain, archive-wide or cross-mission prevalence, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_target_classification_is_selected": "Require a camera-only metadata baseline and camera/event-stratified evaluation before interpreting pixel-model performance; report unsupported camera-target cells rather than hiding them in a random split.",
+        "if_pixels_are_used": "Test camera identifiability and target performance under camera-held-out or balanced conditions separately; do not infer a pixel shortcut from metadata association alone.",
+        "if_new_event_generalization_is_selected": "The Stage 10T single-event limit still controls; camera balancing cannot manufacture a second Sunset event.",
+        "if_no_target_model_is_selected": "Preserve this as a prospective confounding canary and do not train a model merely to make the hazard concrete.",
+        "recheck_trigger": "A real target-classification task, validated target labels, additional comparable events, or a public Artemis II image model."
+      },
+      "checks": [
+        {
+          "id": "task_conditioned_unit_receipt",
+          "pass": true
+        },
+        {
+          "id": "independent_document_nomination_and_label_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_target_association",
+          "pass": true,
+          "derived": {
+            "source_exposures": 7606,
+            "labeled_exposures": 3413,
+            "target_classes": 23,
+            "camera_serials": 3,
+            "camera_exclusive_target_classes": 19,
+            "camera_exclusive_labeled_exposures": 807,
+            "camera_exclusive_exposure_share": 0.23644887196015235,
+            "sunset_exposures": 1553,
+            "non_sunset_exposures": 1860,
+            "z9_labeled_exposures": 734,
+            "z9_sunset_exposures": 593,
+            "rule_true_positive": 593,
+            "rule_true_negative": 1719,
+            "rule_false_positive": 141,
+            "rule_false_negative": 960,
+            "rule_accuracy": 0.6774099033108703,
+            "majority_accuracy": 0.544975095224143,
+            "rule_accuracy_lift": 0.13243480808672725,
+            "rule_balanced_accuracy": 0.6530175726481524,
+            "rule_precision": 0.8079019073569482,
+            "rule_sensitivity": 0.381841596909208,
+            "rule_specificity": 0.9241935483870968,
+            "cramers_v": 0.40651381844599277,
+            "mutual_information_bits": 0.27646179152660544
+          }
+        },
+        {
+          "id": "camera_not_necessary_or_sufficient",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "target_labels_ground_truth": false,
+            "camera_causes_target": false,
+            "camera_identity_sufficient": false,
+            "diagnostic_rule_kind": "document_nominated_descriptive_rule",
+            "pixels_encode_camera": false,
+            "image_model_uses_shortcut": false,
+            "result_kind": "metadata_association_canary",
+            "performance_effect_inferred": false,
+            "scope": "verified_complete_action_labeled_exposures",
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited correctness, causal, sufficiency, model, leakage, performance, scope, discovery, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

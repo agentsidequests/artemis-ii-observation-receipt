@@ -1,0 +1,97 @@
+{
+  "testbed_id": "artemis2-plan-realization-boundary-stage11c",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T15:08:00Z",
+  "question": "Does the second Glushko scheduled window bound the transcript-indicated realized observation closely enough to serve as a content cohort without another registration layer?",
+  "terminal_objective": "Compare one explicitly repeated plan window with content-led transcript anchors and the complete-action relationship manifest before any pixel access.",
+  "method": "Replay Stage 11B, verify the source transcript bytes and four exact anchors, then count camera-3500015 complete actions by action-start time in half-open scheduled, transcript-envelope, overlap, post-transition, and explicit-diversion intervals. Treat the transcript envelope as a registration canary, not pixel ground truth.",
+  "authority": "Private local metadata and transcript analysis only. No pixels, image-content label, target presence, complete realized-event boundary, model split, model performance, causal explanation, scientific result, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11b_spec_path": "spec/stage11b.json",
+    "relationship_manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "transcript_path": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv",
+    "transcript_bytes": 11799,
+    "transcript_sha256": "829c8efd0b12607b3746c5c49a04bedcdd157995efad2495a5b2f236551fb436",
+    "camera_serial": "3500015",
+    "pixel_payload_bytes": 0
+  },
+  "anchors": {
+    "realized_envelope_start": {
+      "utc": "2026-04-06T21:05:34.191Z",
+      "text": "Okay, going to Glushko."
+    },
+    "explicit_diversion_start": {
+      "utc": "2026-04-06T21:08:09.284Z",
+      "text": "Alright, I'm just going to take a picture here."
+    },
+    "explicit_diversion_end": {
+      "utc": "2026-04-06T21:09:09.899Z",
+      "text": "We're still in the swap, so I still got some time here, but I'll just keep doing Glushko, and then I'll go on and use the rest of my time on something else."
+    },
+    "realized_envelope_end": {
+      "utc": "2026-04-06T21:15:28.066Z",
+      "text": "I'm moving on to Orientale."
+    }
+  },
+  "scheduled_window": {
+    "start_utc": "2026-04-06T21:10:00Z",
+    "end_utc": "2026-04-06T21:18:00Z",
+    "plan_order": "11",
+    "plan_target_name": "Glushko Crater"
+  },
+  "frozen_segments": {
+    "transcript_envelope": {
+      "actions": 28, "exposures": 84, "products": 252, "archive_size_bytes": 15473455239,
+      "activity_ids": {"d_Cabin and Window Teams Swap": 17, "11_Glushko Crater (2/2)": 11}
+    },
+    "scheduled_window": {
+      "actions": 34, "exposures": 102, "products": 306, "archive_size_bytes": 18880768944,
+      "activity_ids": {"11_Glushko Crater (2/2)": 34}
+    },
+    "transcript_envelope_before_schedule": {
+      "actions": 17, "exposures": 51, "products": 153, "archive_size_bytes": 9394573833,
+      "activity_ids": {"d_Cabin and Window Teams Swap": 17}
+    },
+    "schedule_transcript_overlap": {
+      "actions": 11, "exposures": 33, "products": 99, "archive_size_bytes": 6078881406,
+      "activity_ids": {"11_Glushko Crater (2/2)": 11}
+    },
+    "scheduled_window_after_orientale_transition": {
+      "actions": 23, "exposures": 69, "products": 207, "archive_size_bytes": 12801887538,
+      "activity_ids": {"11_Glushko Crater (2/2)": 23}
+    },
+    "explicit_internal_diversion": {
+      "actions": 4, "exposures": 12, "products": 36, "archive_size_bytes": 2195742960,
+      "activity_ids": {"d_Cabin and Window Teams Swap": 4}
+    }
+  },
+  "frozen_overlap_measures": {
+    "scheduled_actions_before_transition_share": 0.3235294117647059,
+    "scheduled_actions_after_transition_share": 0.6764705882352942,
+    "transcript_envelope_actions_before_schedule_share": 0.6071428571428571,
+    "transcript_envelope_actions_inside_schedule_share": 0.39285714285714285,
+    "action_interval_jaccard": 0.21568627450980393
+  },
+  "disposition": "REQUIRE_REALIZED_SEGMENT_REGISTRATION_BEFORE_PAIRED_WINDOW_TASK",
+  "hard_negatives": [
+    "call_plan_window_realized_event",
+    "call_activity_id_image_content_truth",
+    "call_transcript_envelope_single_target_ground_truth",
+    "call_post_transition_actions_orientale_pixels",
+    "call_preplan_actions_glushko_pixels",
+    "assign_model_partition_before_registration",
+    "claim_model_performance_effect",
+    "call_boundary_result_scientific_discovery",
+    "claim_novelty_or_priority",
+    "open_pixels_during_boundary_test"
+  ],
+  "claim_ceiling": "Stage 11C may establish that, for the second Glushko repeat, the scheduled interval and a transcript-indicated activity envelope select materially different complete-action cohorts: 17 of 28 transcript-envelope actions precede the schedule, while 23 of 34 scheduled-window actions begin after the explicit spoken transition to Orientale. It may establish that the activity_id boundary follows the schedule rather than those spoken anchors and that the transcript envelope itself contains an explicit four-action diversion. It cannot identify what any image depicts, call the transcript envelope complete or single-target ground truth, label the post-transition pixels Orientale or the pre-window pixels Glushko, assign a valid model split, or make a performance, causal, scientific, novelty, or priority claim.",
+  "next_step_logic": {
+    "if_paired_window_task_continues": "Reconstruct realized segments from transcript anchors plus image-content registration, preserve diversions and target transitions, then freeze comparable camera-state strata before modeling.",
+    "if_pixels_are_not_opened": "Retain Glushko as a high-value candidate but downgrade plan windows and activity_id values from content cohorts to navigation priors.",
+    "if_registration_cannot_separate_targets": "Stop the paired-window task; do not repair it by trusting the schedule, activity_id, or blank target tags.",
+    "if_registration_succeeds": "Compare whole registered segments or task-shaped matched strata, and describe the evaluation as within-mission paired observation rather than new-event generalization or calibrated photometry.",
+    "recheck_trigger": "A pixel-level target registration, a camera-pose/geometry product, a revised activity annotation, or an independently curated realized-observation ledger."
+  }
+}

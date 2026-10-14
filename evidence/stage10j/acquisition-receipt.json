@@ -1,0 +1,26 @@
+{
+  "receipt_id": "artemis2-stage10j-fractional-bracket-expansion-v1",
+  "completed_at_utc": "2026-10-10T12:25:00Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "sources": [
+    {
+      "path": "evidence/stage10a/acquisition-receipt.json",
+      "bytes": 6454,
+      "sha256": "bdc0580214ca5aff0c6a3635533dda2d4d4ec48125fa6575609b818f7f3e5ecd",
+      "role": "complete Flight Day 6 raw Nikon metadata pages"
+    },
+    {
+      "path": "evidence/stage10e/acquisition-receipt.json",
+      "bytes": 6153,
+      "sha256": "dc8d7280c3e88d188d1642c5206f473475e94c0f72d30d46c4579c168659790b",
+      "role": "complete other-flight-day raw Nikon metadata pages"
+    },
+    {
+      "path": "results/stage10e-result.json",
+      "bytes": 263013,
+      "sha256": "398319b545958ad277a5a7352e44d28d2c5eeb2d21c558780849cec4c4cc292f",
+      "role": "prior four-pattern all-day result to test and supersede where required"
+    }
+  ]
+}

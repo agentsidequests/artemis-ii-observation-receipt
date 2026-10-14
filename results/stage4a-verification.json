@@ -1,0 +1,1845 @@
+{
+  "baseline": {
+    "testbed_id": "artemis2-capture-friction-stage4a-product-canary",
+    "version": "0.4.0",
+    "run_at_utc": "2026-10-09T20:20:32Z",
+    "mutation": "none",
+    "pass": true,
+    "evidence_state": "VERIFIED_CAPTURE_AVAILABLE",
+    "disposition": "NOMINATE_TINY_STAGE5_SUBSET",
+    "report_interval": {
+      "start_utc": "2026-04-07T00:51:15.947000Z",
+      "end_utc": "2026-04-07T00:51:57.628000Z",
+      "duration_seconds": 41.681,
+      "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+    },
+    "products": [
+      {
+        "kind": "continuous_video",
+        "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1010962338_saw3_raw.mp4",
+        "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+        "start_utc": "2026-04-06T23:38:11Z",
+        "stop_utc": "2026-04-07T01:37:57Z",
+        "exposure_seconds": null,
+        "payload_bytes": 2960238197,
+        "activity_id": "Other",
+        "target_names": [
+          "Moon"
+        ],
+        "inventory_member": true,
+        "timing_rule_pass": true,
+        "pass": true
+      },
+      {
+        "kind": "continuous_video",
+        "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1020962338_saw3_raw.mp4",
+        "file_name": "art002m1020962338_saw3_raw_v01.mp4",
+        "start_utc": "2026-04-06T23:38:11Z",
+        "stop_utc": "2026-04-07T01:37:45Z",
+        "exposure_seconds": null,
+        "payload_bytes": 2921875198,
+        "activity_id": "Other",
+        "target_names": [
+          "Moon"
+        ],
+        "inventory_member": true,
+        "timing_rule_pass": true,
+        "pass": true
+      },
+      {
+        "kind": "raw_image",
+        "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015907_nkz9019_raw.tif",
+        "file_name": "art002e015907_nkz9019_raw_v01.tif",
+        "start_utc": "2026-04-07T00:51:51.83Z",
+        "stop_utc": null,
+        "exposure_seconds": 1.0,
+        "payload_bytes": 91412576,
+        "activity_id": "24_Sunset",
+        "target_names": [
+          "Moon"
+        ],
+        "inventory_member": true,
+        "timing_rule_pass": true,
+        "pass": true
+      },
+      {
+        "kind": "raw_image",
+        "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015908_nkz9019_raw.tif",
+        "file_name": "art002e015908_nkz9019_raw_v01.tif",
+        "start_utc": "2026-04-07T00:51:53.02Z",
+        "stop_utc": null,
+        "exposure_seconds": 0.25,
+        "payload_bytes": 91412576,
+        "activity_id": "25_Discussion #6: Forward Look",
+        "target_names": [
+          "Moon"
+        ],
+        "inventory_member": true,
+        "timing_rule_pass": true,
+        "pass": true
+      },
+      {
+        "kind": "raw_image",
+        "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015909_nkz9019_raw.tif",
+        "file_name": "art002e015909_nkz9019_raw_v01.tif",
+        "start_utc": "2026-04-07T00:51:53.34Z",
+        "stop_utc": null,
+        "exposure_seconds": 0.5,
+        "payload_bytes": 91412576,
+        "activity_id": "24_Sunset",
+        "target_names": [
+          "Moon"
+        ],
+        "inventory_member": true,
+        "timing_rule_pass": true,
+        "pass": true
+      },
+      {
+        "kind": "raw_image",
+        "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015910_nkz9019_raw.tif",
+        "file_name": "art002e015910_nkz9019_raw_v01.tif",
+        "start_utc": "2026-04-07T00:51:53.92Z",
+        "stop_utc": null,
+        "exposure_seconds": 2.0,
+        "payload_bytes": 91412576,
+        "activity_id": "24_Sunset",
+        "target_names": [
+          "Moon"
+        ],
+        "inventory_member": true,
+        "timing_rule_pass": true,
+        "pass": true
+      },
+      {
+        "kind": "raw_image",
+        "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015911_nkz9019_raw.tif",
+        "file_name": "art002e015911_nkz9019_raw_v01.tif",
+        "start_utc": "2026-04-07T00:51:56.10Z",
+        "stop_utc": null,
+        "exposure_seconds": 4.0,
+        "payload_bytes": 91412576,
+        "activity_id": "24_Sunset",
+        "target_names": [
+          "Moon"
+        ],
+        "inventory_member": true,
+        "timing_rule_pass": true,
+        "pass": true
+      }
+    ],
+    "atlas_summary": {
+      "total_hits": 21,
+      "admitted_products": 7,
+      "derivative_records_excluded": 10,
+      "unrelated_records_excluded": 4
+    },
+    "payload_burden": {
+      "full_product_bytes": 6339176275,
+      "decimal_gigabytes": 6.339,
+      "gibibytes": 5.904
+    },
+    "metadata_friction": {
+      "activity_tag_counts": {
+        "24_Sunset": 4,
+        "25_Discussion #6: Forward Look": 1,
+        "Other": 2
+      },
+      "bounded_interpretation": "The five-frame Z9 burst carries two activity IDs: one Forward Look label and four Sunset labels. This is an official metadata inconsistency within the nominated burst, not evidence of pointing, content, cause, or operator error."
+    },
+    "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+    "checks": [
+      {
+        "id": "source_manifest_identity",
+        "pass": true
+      },
+      {
+        "id": "source_file_identities",
+        "pass": true,
+        "files": [
+          {
+            "path": "evidence/stage4a/source/atlas-overlap-response.json",
+            "pass": true,
+            "bytes": 372799,
+            "sha256": "4d185e99ea027367bfc7a3e2ca036fc50b18f7d5ac32b38445b6e174b497c027"
+          },
+          {
+            "path": "evidence/stage4a/source/collection_data_video.xml",
+            "pass": true,
+            "bytes": 5384,
+            "sha256": "4ccba5b5dcd8abd7d642c0aae7d1a1f9531394a7450eb7976a85cb013b4657c6"
+          },
+          {
+            "path": "evidence/stage4a/source/collection_data_video_inventory.csv",
+            "pass": true,
+            "bytes": 1848,
+            "sha256": "8a74779a799d5445e770f2dcc36ad1e215d5bb4f11cb1fe90a9ada78ca60dfb3"
+          },
+          {
+            "path": "evidence/stage4a/source/collection_data_raw.xml",
+            "pass": true,
+            "bytes": 5987,
+            "sha256": "fdb30aeeb0359132c38603fab7ebcc7865f1fa014e1519124b4d4876ee2a072e"
+          },
+          {
+            "path": "evidence/stage4a/source/collection_data_raw_inventory.csv",
+            "pass": true,
+            "bytes": 826320,
+            "sha256": "4158f927e9342db5098855617e32a685e34bf4139f58ebb97eb9579740f7c152"
+          },
+          {
+            "path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+            "pass": true,
+            "bytes": 16912,
+            "sha256": "0aea63e269f2aae75b41dc2cf9b8b31559fca1b2c8a81f8edf61c751e7d08ec3"
+          },
+          {
+            "path": "evidence/stage4a/source/art002m1020962338_saw3_raw_v01.xml",
+            "pass": true,
+            "bytes": 16912,
+            "sha256": "16d43b0c5b269c433679fc2ab868cdce16775253c9cd45e0192a23556456a2d3"
+          },
+          {
+            "path": "evidence/stage4a/source/art002e015907_nkz9019_raw_v01.xml",
+            "pass": true,
+            "bytes": 20074,
+            "sha256": "3f6a00fa4bc32ac48a00ede7fc8dbc1f521c0880270eb0821823ae65305f183a"
+          },
+          {
+            "path": "evidence/stage4a/source/art002e015908_nkz9019_raw_v01.xml",
+            "pass": true,
+            "bytes": 20034,
+            "sha256": "f507d447ba8fe674b103f9d8321ab701a060f17abfa713724d50d7deda890457"
+          },
+          {
+            "path": "evidence/stage4a/source/art002e015909_nkz9019_raw_v01.xml",
+            "pass": true,
+            "bytes": 20077,
+            "sha256": "6d00e4f73e5f3bcbbc45b3ee11bf30e884696a3525683b1d9fa1307aa4d82672"
+          },
+          {
+            "path": "evidence/stage4a/source/art002e015910_nkz9019_raw_v01.xml",
+            "pass": true,
+            "bytes": 20075,
+            "sha256": "aa8f80cef073aed4bdce31d2951287f8d533dcf517b51293048ec151504e8384"
+          },
+          {
+            "path": "evidence/stage4a/source/art002e015911_nkz9019_raw_v01.xml",
+            "pass": true,
+            "bytes": 20075,
+            "sha256": "0d9acb8b1452aa44888bb4c72b66fe701600449621ce06dc1bc0e71bb51e29be"
+          }
+        ],
+        "query_pass": true
+      },
+      {
+        "id": "report_interval_semantics",
+        "pass": true,
+        "duration_seconds": 41.681,
+        "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+      },
+      {
+        "id": "atlas_query_contract",
+        "pass": true
+      },
+      {
+        "id": "atlas_response_inventory",
+        "pass": true,
+        "total_hits": 21
+      },
+      {
+        "id": "canonical_product_admission",
+        "pass": true,
+        "admitted": [
+          "art002e015907_nkz9019_raw_v01.tif",
+          "art002e015908_nkz9019_raw_v01.tif",
+          "art002e015909_nkz9019_raw_v01.tif",
+          "art002e015910_nkz9019_raw_v01.tif",
+          "art002e015911_nkz9019_raw_v01.tif",
+          "art002m1010962338_saw3_raw_v01.mp4",
+          "art002m1020962338_saw3_raw_v01.mp4"
+        ],
+        "derivative_records_excluded": 10,
+        "unrelated_records_excluded": 4
+      },
+      {
+        "id": "collection_inventory_counts",
+        "pass": true,
+        "video_members": 22,
+        "image_members": 10329
+      },
+      {
+        "id": "label_inventory_and_timing",
+        "pass": true,
+        "product_count": 7
+      },
+      {
+        "id": "frozen_result",
+        "pass": true,
+        "observed": {
+          "evidence_state": "VERIFIED_CAPTURE_AVAILABLE",
+          "atlas_hits": 21,
+          "admitted_products": 7,
+          "continuous_video_products": 2,
+          "raw_image_products": 5,
+          "full_interval_video_products": 2,
+          "image_starts_inside_interval": 5,
+          "derivative_records_excluded": 10,
+          "unrelated_records_excluded": 4,
+          "full_payload_bytes": 6339176275,
+          "activity_tag_counts": {
+            "24_Sunset": 4,
+            "25_Discussion #6: Forward Look": 1,
+            "Other": 2
+          },
+          "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+          "disposition": "NOMINATE_TINY_STAGE5_SUBSET"
+        }
+      }
+    ],
+    "errors": [],
+    "claim_ceiling": "Official labels establish acquisition coverage and a bounded metadata inconsistency only. They do not show that a flash is visible, that the products point at the reported location, that the two observers saw a lunar impact, or that the 41.681-second report interval is an event duration.",
+    "next_step_logic": {
+      "recommended": "Run a Stage 5 transport canary for one SAW3 channel around 00:51:10Z-00:51:25Z, proving whether a tiny byte-range or server-side clip is feasible before accepting a 2.96 GB full-product download.",
+      "why": "The continuous stream is the only admitted product that spans the first report; the five still exposures begin about 36 seconds later and cannot by timing alone capture the initially reported transient. Both full video channels plus five raw frames total 6.34 GB.",
+      "alternative": "Inspect only lightweight browse/source derivatives of the five Z9 frames as camera-state and pointing controls, not as impact validation.",
+      "fallback": "If bounded video extraction is infeasible or the nominated segment lacks a usable lunar view, complete Stage 3B and retain the candidate as transcript-supported but physically unvalidated.",
+      "stop": "Do not download full media, interpret pixels, geolocate a flash, or make a public novelty claim in Stage 4A."
+    }
+  },
+  "hard_negatives": {
+    "label_creation_time_is_acquisition": {
+      "testbed_id": "artemis2-capture-friction-stage4a-product-canary",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:20:32Z",
+      "mutation": "label_creation_time_is_acquisition",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "report_interval": {
+        "start_utc": "2026-04-07T00:51:15.947000Z",
+        "end_utc": "2026-04-07T00:51:57.628000Z",
+        "duration_seconds": 41.681,
+        "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+      },
+      "products": [
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1010962338_saw3_raw.mp4",
+          "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:57Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2960238197,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1020962338_saw3_raw.mp4",
+          "file_name": "art002m1020962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:45Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2921875198,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015907_nkz9019_raw.tif",
+          "file_name": "art002e015907_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:51.83Z",
+          "stop_utc": null,
+          "exposure_seconds": 1.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015908_nkz9019_raw.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.02Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.25,
+          "payload_bytes": 91412576,
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015909_nkz9019_raw.tif",
+          "file_name": "art002e015909_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.34Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.5,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015910_nkz9019_raw.tif",
+          "file_name": "art002e015910_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.92Z",
+          "stop_utc": null,
+          "exposure_seconds": 2.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015911_nkz9019_raw.tif",
+          "file_name": "art002e015911_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:56.10Z",
+          "stop_utc": null,
+          "exposure_seconds": 4.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        }
+      ],
+      "atlas_summary": {
+        "total_hits": 21,
+        "admitted_products": 7,
+        "derivative_records_excluded": 10,
+        "unrelated_records_excluded": 4
+      },
+      "payload_burden": {
+        "full_product_bytes": 6339176275,
+        "decimal_gigabytes": 6.339,
+        "gibibytes": 5.904
+      },
+      "metadata_friction": {
+        "activity_tag_counts": {
+          "24_Sunset": 4,
+          "25_Discussion #6: Forward Look": 1,
+          "Other": 2
+        },
+        "bounded_interpretation": "The five-frame Z9 burst carries two activity IDs: one Forward Look label and four Sunset labels. This is an official metadata inconsistency within the nominated burst, not evidence of pointing, content, cause, or operator error."
+      },
+      "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage4a/source/atlas-overlap-response.json",
+              "pass": true,
+              "bytes": 372799,
+              "sha256": "4d185e99ea027367bfc7a3e2ca036fc50b18f7d5ac32b38445b6e174b497c027"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video.xml",
+              "pass": true,
+              "bytes": 5384,
+              "sha256": "4ccba5b5dcd8abd7d642c0aae7d1a1f9531394a7450eb7976a85cb013b4657c6"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video_inventory.csv",
+              "pass": true,
+              "bytes": 1848,
+              "sha256": "8a74779a799d5445e770f2dcc36ad1e215d5bb4f11cb1fe90a9ada78ca60dfb3"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw.xml",
+              "pass": true,
+              "bytes": 5987,
+              "sha256": "fdb30aeeb0359132c38603fab7ebcc7865f1fa014e1519124b4d4876ee2a072e"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw_inventory.csv",
+              "pass": true,
+              "bytes": 826320,
+              "sha256": "4158f927e9342db5098855617e32a685e34bf4139f58ebb97eb9579740f7c152"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "0aea63e269f2aae75b41dc2cf9b8b31559fca1b2c8a81f8edf61c751e7d08ec3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1020962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "16d43b0c5b269c433679fc2ab868cdce16775253c9cd45e0192a23556456a2d3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015907_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20074,
+              "sha256": "3f6a00fa4bc32ac48a00ede7fc8dbc1f521c0880270eb0821823ae65305f183a"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015908_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20034,
+              "sha256": "f507d447ba8fe674b103f9d8321ab701a060f17abfa713724d50d7deda890457"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015909_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20077,
+              "sha256": "6d00e4f73e5f3bcbbc45b3ee11bf30e884696a3525683b1d9fa1307aa4d82672"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015910_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "aa8f80cef073aed4bdce31d2951287f8d533dcf517b51293048ec151504e8384"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015911_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "0d9acb8b1452aa44888bb4c72b66fe701600449621ce06dc1bc0e71bb51e29be"
+            }
+          ],
+          "query_pass": true
+        },
+        {
+          "id": "report_interval_semantics",
+          "pass": true,
+          "duration_seconds": 41.681,
+          "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+        },
+        {
+          "id": "atlas_query_contract",
+          "pass": true
+        },
+        {
+          "id": "atlas_response_inventory",
+          "pass": true,
+          "total_hits": 21
+        },
+        {
+          "id": "canonical_product_admission",
+          "pass": true,
+          "admitted": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif",
+            "art002m1010962338_saw3_raw_v01.mp4",
+            "art002m1020962338_saw3_raw_v01.mp4"
+          ],
+          "derivative_records_excluded": 10,
+          "unrelated_records_excluded": 4
+        },
+        {
+          "id": "collection_inventory_counts",
+          "pass": true,
+          "video_members": 22,
+          "image_members": 10329
+        },
+        {
+          "id": "label_inventory_and_timing",
+          "pass": true,
+          "product_count": 7
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "atlas_hits": 21,
+            "admitted_products": 7,
+            "continuous_video_products": 2,
+            "raw_image_products": 5,
+            "full_interval_video_products": 2,
+            "image_starts_inside_interval": 5,
+            "derivative_records_excluded": 10,
+            "unrelated_records_excluded": 4,
+            "full_payload_bytes": 6339176275,
+            "activity_tag_counts": {
+              "24_Sunset": 4,
+              "25_Discussion #6: Forward Look": 1,
+              "Other": 2
+            },
+            "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Label creation time cannot substitute for acquisition time",
+        "Observed Stage 4A result differs from the frozen contract"
+      ],
+      "claim_ceiling": "Official labels establish acquisition coverage and a bounded metadata inconsistency only. They do not show that a flash is visible, that the products point at the reported location, that the two observers saw a lunar impact, or that the 41.681-second report interval is an event duration.",
+      "next_step_logic": null
+    },
+    "derivatives_are_independent_acquisitions": {
+      "testbed_id": "artemis2-capture-friction-stage4a-product-canary",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:20:32Z",
+      "mutation": "derivatives_are_independent_acquisitions",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "report_interval": {
+        "start_utc": "2026-04-07T00:51:15.947000Z",
+        "end_utc": "2026-04-07T00:51:57.628000Z",
+        "duration_seconds": 41.681,
+        "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+      },
+      "products": [
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1010962338_saw3_raw.mp4",
+          "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:57Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2960238197,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1020962338_saw3_raw.mp4",
+          "file_name": "art002m1020962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:45Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2921875198,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015907_nkz9019_raw.tif",
+          "file_name": "art002e015907_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:51.83Z",
+          "stop_utc": null,
+          "exposure_seconds": 1.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015908_nkz9019_raw.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.02Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.25,
+          "payload_bytes": 91412576,
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015909_nkz9019_raw.tif",
+          "file_name": "art002e015909_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.34Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.5,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015910_nkz9019_raw.tif",
+          "file_name": "art002e015910_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.92Z",
+          "stop_utc": null,
+          "exposure_seconds": 2.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015911_nkz9019_raw.tif",
+          "file_name": "art002e015911_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:56.10Z",
+          "stop_utc": null,
+          "exposure_seconds": 4.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        }
+      ],
+      "atlas_summary": {
+        "total_hits": 21,
+        "admitted_products": 17,
+        "derivative_records_excluded": 10,
+        "unrelated_records_excluded": -6
+      },
+      "payload_burden": {
+        "full_product_bytes": 6339176275,
+        "decimal_gigabytes": 6.339,
+        "gibibytes": 5.904
+      },
+      "metadata_friction": {
+        "activity_tag_counts": {
+          "24_Sunset": 4,
+          "25_Discussion #6: Forward Look": 1,
+          "Other": 2
+        },
+        "bounded_interpretation": "The five-frame Z9 burst carries two activity IDs: one Forward Look label and four Sunset labels. This is an official metadata inconsistency within the nominated burst, not evidence of pointing, content, cause, or operator error."
+      },
+      "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage4a/source/atlas-overlap-response.json",
+              "pass": true,
+              "bytes": 372799,
+              "sha256": "4d185e99ea027367bfc7a3e2ca036fc50b18f7d5ac32b38445b6e174b497c027"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video.xml",
+              "pass": true,
+              "bytes": 5384,
+              "sha256": "4ccba5b5dcd8abd7d642c0aae7d1a1f9531394a7450eb7976a85cb013b4657c6"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video_inventory.csv",
+              "pass": true,
+              "bytes": 1848,
+              "sha256": "8a74779a799d5445e770f2dcc36ad1e215d5bb4f11cb1fe90a9ada78ca60dfb3"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw.xml",
+              "pass": true,
+              "bytes": 5987,
+              "sha256": "fdb30aeeb0359132c38603fab7ebcc7865f1fa014e1519124b4d4876ee2a072e"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw_inventory.csv",
+              "pass": true,
+              "bytes": 826320,
+              "sha256": "4158f927e9342db5098855617e32a685e34bf4139f58ebb97eb9579740f7c152"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "0aea63e269f2aae75b41dc2cf9b8b31559fca1b2c8a81f8edf61c751e7d08ec3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1020962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "16d43b0c5b269c433679fc2ab868cdce16775253c9cd45e0192a23556456a2d3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015907_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20074,
+              "sha256": "3f6a00fa4bc32ac48a00ede7fc8dbc1f521c0880270eb0821823ae65305f183a"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015908_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20034,
+              "sha256": "f507d447ba8fe674b103f9d8321ab701a060f17abfa713724d50d7deda890457"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015909_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20077,
+              "sha256": "6d00e4f73e5f3bcbbc45b3ee11bf30e884696a3525683b1d9fa1307aa4d82672"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015910_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "aa8f80cef073aed4bdce31d2951287f8d533dcf517b51293048ec151504e8384"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015911_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "0d9acb8b1452aa44888bb4c72b66fe701600449621ce06dc1bc0e71bb51e29be"
+            }
+          ],
+          "query_pass": true
+        },
+        {
+          "id": "report_interval_semantics",
+          "pass": true,
+          "duration_seconds": 41.681,
+          "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+        },
+        {
+          "id": "atlas_query_contract",
+          "pass": true
+        },
+        {
+          "id": "atlas_response_inventory",
+          "pass": true,
+          "total_hits": 21
+        },
+        {
+          "id": "canonical_product_admission",
+          "pass": false,
+          "admitted": [
+            "art002e015907_nkz9019_prc_v01.tif",
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015907_nkz9019_src_v01.nef",
+            "art002e015908_nkz9019_prc_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_src_v01.nef",
+            "art002e015909_nkz9019_prc_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_src_v01.nef",
+            "art002e015910_nkz9019_prc_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_src_v01.nef",
+            "art002e015911_nkz9019_prc_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_src_v01.nef",
+            "art002m1010962338_saw3_raw_v01.mp4",
+            "art002m1020962338_saw3_raw_v01.mp4"
+          ],
+          "derivative_records_excluded": 10,
+          "unrelated_records_excluded": -6
+        },
+        {
+          "id": "collection_inventory_counts",
+          "pass": true,
+          "video_members": 22,
+          "image_members": 10329
+        },
+        {
+          "id": "label_inventory_and_timing",
+          "pass": true,
+          "product_count": 7
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "atlas_hits": 21,
+            "admitted_products": 7,
+            "continuous_video_products": 2,
+            "raw_image_products": 5,
+            "full_interval_video_products": 2,
+            "image_starts_inside_interval": 5,
+            "derivative_records_excluded": 10,
+            "unrelated_records_excluded": -6,
+            "full_payload_bytes": 6339176275,
+            "activity_tag_counts": {
+              "24_Sunset": 4,
+              "25_Discussion #6: Forward Look": 1,
+              "Other": 2
+            },
+            "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Canonical Atlas product set differs from the seven-product contract",
+        "Observed Stage 4A result differs from the frozen contract"
+      ],
+      "claim_ceiling": "Official labels establish acquisition coverage and a bounded metadata inconsistency only. They do not show that a flash is visible, that the products point at the reported location, that the two observers saw a lunar impact, or that the 41.681-second report interval is an event duration.",
+      "next_step_logic": null
+    },
+    "target_tag_validates_impact": {
+      "testbed_id": "artemis2-capture-friction-stage4a-product-canary",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:20:32Z",
+      "mutation": "target_tag_validates_impact",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "report_interval": {
+        "start_utc": "2026-04-07T00:51:15.947000Z",
+        "end_utc": "2026-04-07T00:51:57.628000Z",
+        "duration_seconds": 41.681,
+        "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+      },
+      "products": [
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1010962338_saw3_raw.mp4",
+          "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:57Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2960238197,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1020962338_saw3_raw.mp4",
+          "file_name": "art002m1020962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:45Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2921875198,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015907_nkz9019_raw.tif",
+          "file_name": "art002e015907_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:51.83Z",
+          "stop_utc": null,
+          "exposure_seconds": 1.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015908_nkz9019_raw.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.02Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.25,
+          "payload_bytes": 91412576,
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015909_nkz9019_raw.tif",
+          "file_name": "art002e015909_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.34Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.5,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015910_nkz9019_raw.tif",
+          "file_name": "art002e015910_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.92Z",
+          "stop_utc": null,
+          "exposure_seconds": 2.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015911_nkz9019_raw.tif",
+          "file_name": "art002e015911_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:56.10Z",
+          "stop_utc": null,
+          "exposure_seconds": 4.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        }
+      ],
+      "atlas_summary": {
+        "total_hits": 21,
+        "admitted_products": 7,
+        "derivative_records_excluded": 10,
+        "unrelated_records_excluded": 4
+      },
+      "payload_burden": {
+        "full_product_bytes": 6339176275,
+        "decimal_gigabytes": 6.339,
+        "gibibytes": 5.904
+      },
+      "metadata_friction": {
+        "activity_tag_counts": {
+          "24_Sunset": 4,
+          "25_Discussion #6: Forward Look": 1,
+          "Other": 2
+        },
+        "bounded_interpretation": "The five-frame Z9 burst carries two activity IDs: one Forward Look label and four Sunset labels. This is an official metadata inconsistency within the nominated burst, not evidence of pointing, content, cause, or operator error."
+      },
+      "flash_state": "VALIDATED_LUNAR_IMPACT",
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage4a/source/atlas-overlap-response.json",
+              "pass": true,
+              "bytes": 372799,
+              "sha256": "4d185e99ea027367bfc7a3e2ca036fc50b18f7d5ac32b38445b6e174b497c027"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video.xml",
+              "pass": true,
+              "bytes": 5384,
+              "sha256": "4ccba5b5dcd8abd7d642c0aae7d1a1f9531394a7450eb7976a85cb013b4657c6"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video_inventory.csv",
+              "pass": true,
+              "bytes": 1848,
+              "sha256": "8a74779a799d5445e770f2dcc36ad1e215d5bb4f11cb1fe90a9ada78ca60dfb3"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw.xml",
+              "pass": true,
+              "bytes": 5987,
+              "sha256": "fdb30aeeb0359132c38603fab7ebcc7865f1fa014e1519124b4d4876ee2a072e"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw_inventory.csv",
+              "pass": true,
+              "bytes": 826320,
+              "sha256": "4158f927e9342db5098855617e32a685e34bf4139f58ebb97eb9579740f7c152"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "0aea63e269f2aae75b41dc2cf9b8b31559fca1b2c8a81f8edf61c751e7d08ec3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1020962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "16d43b0c5b269c433679fc2ab868cdce16775253c9cd45e0192a23556456a2d3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015907_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20074,
+              "sha256": "3f6a00fa4bc32ac48a00ede7fc8dbc1f521c0880270eb0821823ae65305f183a"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015908_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20034,
+              "sha256": "f507d447ba8fe674b103f9d8321ab701a060f17abfa713724d50d7deda890457"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015909_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20077,
+              "sha256": "6d00e4f73e5f3bcbbc45b3ee11bf30e884696a3525683b1d9fa1307aa4d82672"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015910_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "aa8f80cef073aed4bdce31d2951287f8d533dcf517b51293048ec151504e8384"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015911_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "0d9acb8b1452aa44888bb4c72b66fe701600449621ce06dc1bc0e71bb51e29be"
+            }
+          ],
+          "query_pass": true
+        },
+        {
+          "id": "report_interval_semantics",
+          "pass": true,
+          "duration_seconds": 41.681,
+          "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+        },
+        {
+          "id": "atlas_query_contract",
+          "pass": true
+        },
+        {
+          "id": "atlas_response_inventory",
+          "pass": true,
+          "total_hits": 21
+        },
+        {
+          "id": "canonical_product_admission",
+          "pass": true,
+          "admitted": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif",
+            "art002m1010962338_saw3_raw_v01.mp4",
+            "art002m1020962338_saw3_raw_v01.mp4"
+          ],
+          "derivative_records_excluded": 10,
+          "unrelated_records_excluded": 4
+        },
+        {
+          "id": "collection_inventory_counts",
+          "pass": true,
+          "video_members": 22,
+          "image_members": 10329
+        },
+        {
+          "id": "label_inventory_and_timing",
+          "pass": true,
+          "product_count": 7
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "atlas_hits": 21,
+            "admitted_products": 7,
+            "continuous_video_products": 2,
+            "raw_image_products": 5,
+            "full_interval_video_products": 2,
+            "image_starts_inside_interval": 5,
+            "derivative_records_excluded": 10,
+            "unrelated_records_excluded": 4,
+            "full_payload_bytes": 6339176275,
+            "activity_tag_counts": {
+              "24_Sunset": 4,
+              "25_Discussion #6: Forward Look": 1,
+              "Other": 2
+            },
+            "flash_state": "VALIDATED_LUNAR_IMPACT",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Target or activity tags cannot validate a physical lunar impact",
+        "Observed Stage 4A result differs from the frozen contract"
+      ],
+      "claim_ceiling": "Official labels establish acquisition coverage and a bounded metadata inconsistency only. They do not show that a flash is visible, that the products point at the reported location, that the two observers saw a lunar impact, or that the 41.681-second report interval is an event duration.",
+      "next_step_logic": null
+    },
+    "report_interval_is_flash_duration": {
+      "testbed_id": "artemis2-capture-friction-stage4a-product-canary",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:20:32Z",
+      "mutation": "report_interval_is_flash_duration",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "report_interval": {
+        "start_utc": "2026-04-07T00:51:15.947000Z",
+        "end_utc": "2026-04-07T00:51:57.628000Z",
+        "duration_seconds": 41.681,
+        "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+      },
+      "products": [
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1010962338_saw3_raw.mp4",
+          "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:57Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2960238197,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1020962338_saw3_raw.mp4",
+          "file_name": "art002m1020962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:45Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2921875198,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015907_nkz9019_raw.tif",
+          "file_name": "art002e015907_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:51.83Z",
+          "stop_utc": null,
+          "exposure_seconds": 1.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015908_nkz9019_raw.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.02Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.25,
+          "payload_bytes": 91412576,
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015909_nkz9019_raw.tif",
+          "file_name": "art002e015909_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.34Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.5,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015910_nkz9019_raw.tif",
+          "file_name": "art002e015910_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.92Z",
+          "stop_utc": null,
+          "exposure_seconds": 2.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015911_nkz9019_raw.tif",
+          "file_name": "art002e015911_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:56.10Z",
+          "stop_utc": null,
+          "exposure_seconds": 4.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        }
+      ],
+      "atlas_summary": {
+        "total_hits": 21,
+        "admitted_products": 7,
+        "derivative_records_excluded": 10,
+        "unrelated_records_excluded": 4
+      },
+      "payload_burden": {
+        "full_product_bytes": 6339176275,
+        "decimal_gigabytes": 6.339,
+        "gibibytes": 5.904
+      },
+      "metadata_friction": {
+        "activity_tag_counts": {
+          "24_Sunset": 4,
+          "25_Discussion #6: Forward Look": 1,
+          "Other": 2
+        },
+        "bounded_interpretation": "The five-frame Z9 burst carries two activity IDs: one Forward Look label and four Sunset labels. This is an official metadata inconsistency within the nominated burst, not evidence of pointing, content, cause, or operator error."
+      },
+      "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage4a/source/atlas-overlap-response.json",
+              "pass": true,
+              "bytes": 372799,
+              "sha256": "4d185e99ea027367bfc7a3e2ca036fc50b18f7d5ac32b38445b6e174b497c027"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video.xml",
+              "pass": true,
+              "bytes": 5384,
+              "sha256": "4ccba5b5dcd8abd7d642c0aae7d1a1f9531394a7450eb7976a85cb013b4657c6"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video_inventory.csv",
+              "pass": true,
+              "bytes": 1848,
+              "sha256": "8a74779a799d5445e770f2dcc36ad1e215d5bb4f11cb1fe90a9ada78ca60dfb3"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw.xml",
+              "pass": true,
+              "bytes": 5987,
+              "sha256": "fdb30aeeb0359132c38603fab7ebcc7865f1fa014e1519124b4d4876ee2a072e"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw_inventory.csv",
+              "pass": true,
+              "bytes": 826320,
+              "sha256": "4158f927e9342db5098855617e32a685e34bf4139f58ebb97eb9579740f7c152"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "0aea63e269f2aae75b41dc2cf9b8b31559fca1b2c8a81f8edf61c751e7d08ec3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1020962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "16d43b0c5b269c433679fc2ab868cdce16775253c9cd45e0192a23556456a2d3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015907_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20074,
+              "sha256": "3f6a00fa4bc32ac48a00ede7fc8dbc1f521c0880270eb0821823ae65305f183a"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015908_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20034,
+              "sha256": "f507d447ba8fe674b103f9d8321ab701a060f17abfa713724d50d7deda890457"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015909_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20077,
+              "sha256": "6d00e4f73e5f3bcbbc45b3ee11bf30e884696a3525683b1d9fa1307aa4d82672"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015910_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "aa8f80cef073aed4bdce31d2951287f8d533dcf517b51293048ec151504e8384"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015911_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "0d9acb8b1452aa44888bb4c72b66fe701600449621ce06dc1bc0e71bb51e29be"
+            }
+          ],
+          "query_pass": true
+        },
+        {
+          "id": "report_interval_semantics",
+          "pass": true,
+          "duration_seconds": 41.681,
+          "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+        },
+        {
+          "id": "atlas_query_contract",
+          "pass": true
+        },
+        {
+          "id": "atlas_response_inventory",
+          "pass": true,
+          "total_hits": 21
+        },
+        {
+          "id": "canonical_product_admission",
+          "pass": true,
+          "admitted": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif",
+            "art002m1010962338_saw3_raw_v01.mp4",
+            "art002m1020962338_saw3_raw_v01.mp4"
+          ],
+          "derivative_records_excluded": 10,
+          "unrelated_records_excluded": 4
+        },
+        {
+          "id": "collection_inventory_counts",
+          "pass": true,
+          "video_members": 22,
+          "image_members": 10329
+        },
+        {
+          "id": "label_inventory_and_timing",
+          "pass": true,
+          "product_count": 7
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "atlas_hits": 21,
+            "admitted_products": 7,
+            "continuous_video_products": 2,
+            "raw_image_products": 5,
+            "full_interval_video_products": 2,
+            "image_starts_inside_interval": 5,
+            "derivative_records_excluded": 10,
+            "unrelated_records_excluded": 4,
+            "full_payload_bytes": 6339176275,
+            "activity_tag_counts": {
+              "24_Sunset": 4,
+              "25_Discussion #6: Forward Look": 1,
+              "Other": 2
+            },
+            "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "The report interval cannot be treated as the physical flash duration",
+        "Observed Stage 4A result differs from the frozen contract"
+      ],
+      "claim_ceiling": "Official labels establish acquisition coverage and a bounded metadata inconsistency only. They do not show that a flash is visible, that the products point at the reported location, that the two observers saw a lunar impact, or that the 41.681-second report interval is an event duration.",
+      "next_step_logic": null
+    },
+    "outside_interval_product_is_admitted": {
+      "testbed_id": "artemis2-capture-friction-stage4a-product-canary",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:20:32Z",
+      "mutation": "outside_interval_product_is_admitted",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "report_interval": {
+        "start_utc": "2026-04-07T00:51:15.947000Z",
+        "end_utc": "2026-04-07T00:51:57.628000Z",
+        "duration_seconds": 41.681,
+        "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+      },
+      "products": [
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1010962338_saw3_raw.mp4",
+          "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:57Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2960238197,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "continuous_video",
+          "lid": "urn:nasa:pds:artemis2_orion_camera:data_video:art002m1020962338_saw3_raw.mp4",
+          "file_name": "art002m1020962338_saw3_raw_v01.mp4",
+          "start_utc": "2026-04-06T23:38:11Z",
+          "stop_utc": "2026-04-07T01:37:45Z",
+          "exposure_seconds": null,
+          "payload_bytes": 2921875198,
+          "activity_id": "Other",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015907_nkz9019_raw.tif",
+          "file_name": "art002e015907_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:51.83Z",
+          "stop_utc": null,
+          "exposure_seconds": 1.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": false
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015908_nkz9019_raw.tif",
+          "file_name": "art002e015908_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.02Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.25,
+          "payload_bytes": 91412576,
+          "activity_id": "25_Discussion #6: Forward Look",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015909_nkz9019_raw.tif",
+          "file_name": "art002e015909_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.34Z",
+          "stop_utc": null,
+          "exposure_seconds": 0.5,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015910_nkz9019_raw.tif",
+          "file_name": "art002e015910_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:53.92Z",
+          "stop_utc": null,
+          "exposure_seconds": 2.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        },
+        {
+          "kind": "raw_image",
+          "lid": "urn:nasa:pds:artemis2_crew_camera:data_raw:art002e015911_nkz9019_raw.tif",
+          "file_name": "art002e015911_nkz9019_raw_v01.tif",
+          "start_utc": "2026-04-07T00:51:56.10Z",
+          "stop_utc": null,
+          "exposure_seconds": 4.0,
+          "payload_bytes": 91412576,
+          "activity_id": "24_Sunset",
+          "target_names": [
+            "Moon"
+          ],
+          "inventory_member": true,
+          "timing_rule_pass": true,
+          "pass": true
+        }
+      ],
+      "atlas_summary": {
+        "total_hits": 21,
+        "admitted_products": 7,
+        "derivative_records_excluded": 10,
+        "unrelated_records_excluded": 4
+      },
+      "payload_burden": {
+        "full_product_bytes": 6339176275,
+        "decimal_gigabytes": 6.339,
+        "gibibytes": 5.904
+      },
+      "metadata_friction": {
+        "activity_tag_counts": {
+          "24_Sunset": 4,
+          "25_Discussion #6: Forward Look": 1,
+          "Other": 2
+        },
+        "bounded_interpretation": "The five-frame Z9 burst carries two activity IDs: one Forward Look label and four Sunset labels. This is an official metadata inconsistency within the nominated burst, not evidence of pointing, content, cause, or operator error."
+      },
+      "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+      "checks": [
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "source_file_identities",
+          "pass": true,
+          "files": [
+            {
+              "path": "evidence/stage4a/source/atlas-overlap-response.json",
+              "pass": true,
+              "bytes": 372799,
+              "sha256": "4d185e99ea027367bfc7a3e2ca036fc50b18f7d5ac32b38445b6e174b497c027"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video.xml",
+              "pass": true,
+              "bytes": 5384,
+              "sha256": "4ccba5b5dcd8abd7d642c0aae7d1a1f9531394a7450eb7976a85cb013b4657c6"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_video_inventory.csv",
+              "pass": true,
+              "bytes": 1848,
+              "sha256": "8a74779a799d5445e770f2dcc36ad1e215d5bb4f11cb1fe90a9ada78ca60dfb3"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw.xml",
+              "pass": true,
+              "bytes": 5987,
+              "sha256": "fdb30aeeb0359132c38603fab7ebcc7865f1fa014e1519124b4d4876ee2a072e"
+            },
+            {
+              "path": "evidence/stage4a/source/collection_data_raw_inventory.csv",
+              "pass": true,
+              "bytes": 826320,
+              "sha256": "4158f927e9342db5098855617e32a685e34bf4139f58ebb97eb9579740f7c152"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "0aea63e269f2aae75b41dc2cf9b8b31559fca1b2c8a81f8edf61c751e7d08ec3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002m1020962338_saw3_raw_v01.xml",
+              "pass": true,
+              "bytes": 16912,
+              "sha256": "16d43b0c5b269c433679fc2ab868cdce16775253c9cd45e0192a23556456a2d3"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015907_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20074,
+              "sha256": "3f6a00fa4bc32ac48a00ede7fc8dbc1f521c0880270eb0821823ae65305f183a"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015908_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20034,
+              "sha256": "f507d447ba8fe674b103f9d8321ab701a060f17abfa713724d50d7deda890457"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015909_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20077,
+              "sha256": "6d00e4f73e5f3bcbbc45b3ee11bf30e884696a3525683b1d9fa1307aa4d82672"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015910_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "aa8f80cef073aed4bdce31d2951287f8d533dcf517b51293048ec151504e8384"
+            },
+            {
+              "path": "evidence/stage4a/source/art002e015911_nkz9019_raw_v01.xml",
+              "pass": true,
+              "bytes": 20075,
+              "sha256": "0d9acb8b1452aa44888bb4c72b66fe701600449621ce06dc1bc0e71bb51e29be"
+            }
+          ],
+          "query_pass": true
+        },
+        {
+          "id": "report_interval_semantics",
+          "pass": true,
+          "duration_seconds": 41.681,
+          "meaning": "Interval from Wiseman's first report to Hansen's explicit impact-flash characterization; not the physical duration of a flash."
+        },
+        {
+          "id": "atlas_query_contract",
+          "pass": true
+        },
+        {
+          "id": "atlas_response_inventory",
+          "pass": true,
+          "total_hits": 21
+        },
+        {
+          "id": "canonical_product_admission",
+          "pass": true,
+          "admitted": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif",
+            "art002m1010962338_saw3_raw_v01.mp4",
+            "art002m1020962338_saw3_raw_v01.mp4"
+          ],
+          "derivative_records_excluded": 10,
+          "unrelated_records_excluded": 4
+        },
+        {
+          "id": "collection_inventory_counts",
+          "pass": true,
+          "video_members": 22,
+          "image_members": 10329
+        },
+        {
+          "id": "label_inventory_and_timing",
+          "pass": false,
+          "product_count": 7
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "atlas_hits": 21,
+            "admitted_products": 7,
+            "continuous_video_products": 2,
+            "raw_image_products": 5,
+            "full_interval_video_products": 2,
+            "image_starts_inside_interval": 5,
+            "derivative_records_excluded": 10,
+            "unrelated_records_excluded": 4,
+            "full_payload_bytes": 6339176275,
+            "activity_tag_counts": {
+              "24_Sunset": 4,
+              "25_Discussion #6: Forward Look": 1,
+              "Other": 2
+            },
+            "flash_state": "UNVALIDATED_CAPTURE_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Product label or timing failed: art002e015907_nkz9019_raw_v01.tif",
+        "One or more admitted products failed label, inventory, or timing checks",
+        "Observed Stage 4A result differs from the frozen contract"
+      ],
+      "claim_ceiling": "Official labels establish acquisition coverage and a bounded metadata inconsistency only. They do not show that a flash is visible, that the products point at the reported location, that the two observers saw a lunar impact, or that the 41.681-second report interval is an event duration.",
+      "next_step_logic": null
+    }
+  },
+  "hard_negatives_pass": true,
+  "pass": true,
+  "evidence_state": "VERIFIED_CAPTURE_AVAILABLE"
+}

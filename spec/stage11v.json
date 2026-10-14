@@ -1,0 +1,65 @@
+{
+  "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+  "version": "1.1.0",
+  "formed_at_utc": "2026-10-11T20:32:00Z",
+  "reviewed_at_utc": "2026-10-11T23:24:33Z",
+  "question": "What does the observed Sunset share identify about its full-cohort target-field share when blank target fields remain unconstrained?",
+  "baseline": "Report Sunset as 1,553 of 3,413 nonblank target fields, or 45.502%, without converting the 4,193 blank fields into negatives.",
+  "treatment": "Treat each observed nonblank target field as fixed and each blank field as an unconstrained binary membership for one target-field value at a time. Compute the exact marginal bounds for every observed value, construct all 7,606 row-level Sunset completion witnesses, verify the majority tipping point, and distinguish deterministic completion-width guarantees from sample-based estimation.",
+  "oracle": "Pass only when the frozen manifest identity, Stage 11U replay, cohort partition, exact Sunset bounds, equal-width identity, row-level extremes, majority and deterministic-width arithmetic, jointly unattainable upper-endpoint boundary and zero-pixel access verify and every declaration hard negative is rejected. Marginal intervals remain simultaneously valid constraints; they are not a joint distribution.",
+  "authority": "Private deterministic metadata accounting only. The bounds describe possible completions of the current target field under explicit assumptions. They do not validate tags, infer image content, estimate physical prevalence, or define a joint multiclass distribution.",
+  "acceptance_owner": "Paul",
+  "sources": [
+    {
+      "path": "results/stage10o-product-relationship-manifest.csv",
+      "bytes": 10072026,
+      "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+    }
+  ],
+  "frozen_observables": {
+    "source_exposures": 7606,
+    "nonblank_target_fields": 3413,
+    "blank_target_fields": 4193,
+    "observed_target_field_values": 23,
+    "blank_share": 0.5512753089666053,
+    "sunset": {
+      "observed_count": 1553,
+      "lower_count": 1553,
+      "upper_count": 5746,
+      "observed_share_among_nonblank": 0.455024904775857,
+      "lower_share_full_cohort": 0.2041809098080463,
+      "upper_share_full_cohort": 0.7554562187746516,
+      "bound_width": 0.5512753089666053
+    },
+    "sunset_majority": {
+      "strict_majority_count": 3804,
+      "additional_blank_memberships_needed": 2251,
+      "required_fraction_of_blank_fields": 0.536847126162652
+    },
+    "deterministic_completion_budgets": {
+      "10_percentage_points": {"minimum_blank_fields_resolved": 3433, "maximum_remaining_blank_fields": 760},
+      "5_percentage_points": {"minimum_blank_fields_resolved": 3813, "maximum_remaining_blank_fields": 380},
+      "1_percentage_point": {"minimum_blank_fields_resolved": 4117, "maximum_remaining_blank_fields": 76}
+    }
+  },
+  "hard_negatives": [
+    "call_blank_fields_negative",
+    "call_nonblank_tags_validated",
+    "narrow_sunset_bound_without_assumption",
+    "call_lower_bound_prevalence",
+    "call_upper_bound_prevalence",
+    "call_marginal_bounds_simultaneous_distribution",
+    "call_bounds_physical_prevalence",
+    "generalize_beyond_frozen_cohort",
+    "claim_nasa_acceptance_novelty_or_priority",
+    "open_pixels_for_completion_bounds"
+  ],
+  "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+  "next_step_logic": {
+    "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+    "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+    "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+    "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+    "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+  }
+}

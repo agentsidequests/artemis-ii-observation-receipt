@@ -1,0 +1,3 @@
+# Byte identity is part of the source contract, including native CSV CRLF.
+* -text
+manifest.csv -whitespace

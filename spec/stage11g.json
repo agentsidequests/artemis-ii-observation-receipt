@@ -1,0 +1,75 @@
+{
+  "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T15:36:00Z",
+  "question": "Does changing the counting unit merely rescale active plan windows, or can it reverse which window appears larger?",
+  "terminal_objective": "Measure strict pairwise ordering reversals between action count and product or byte footprint across the verified active plan windows, without treating the overlapping windows as a partition or equating size with scientific importance.",
+  "method": "Replay Stage 11F, compare every unordered pair of its 36 active windows, and classify each comparison as concordant, reversed, or tied when action count is contrasted with product count and archive bytes. Preserve explicit reversal examples and the all-unit Sunset top rank. Do not sum windows.",
+  "authority": "Private local relationship and accounting analysis only. No pixels, plan-partition claim, scientific-importance ranking, actual sampler claim, model-bias claim, causal performance effect, universal correction, archive-wide extrapolation, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11f_spec_path": "spec/stage11f.json",
+    "stage11f_result_path": "results/stage11f-result.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "active_plan_windows": 36,
+    "unordered_window_pairs": 630,
+    "action_product_strictly_comparable_pairs": 621,
+    "action_product_reversed_pairs": 38,
+    "action_product_concordant_pairs": 583,
+    "action_product_tied_pairs": 9,
+    "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+    "action_byte_strictly_comparable_pairs": 621,
+    "action_byte_reversed_pairs": 59,
+    "action_byte_concordant_pairs": 562,
+    "action_byte_tied_pairs": 9,
+    "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+    "sunset_action_rank_descending": 1,
+    "sunset_product_rank_descending": 1,
+    "sunset_byte_rank_descending": 1
+  },
+  "frozen_product_reversal_examples": [
+    {
+      "more_actions_order": "2",
+      "more_actions_name": "Guided Discussion",
+      "more_actions_actions": 76,
+      "more_actions_products": 684,
+      "more_products_order": "18",
+      "more_products_name": "Earthset",
+      "more_products_actions": 60,
+      "more_products_products": 900
+    },
+    {
+      "more_actions_order": "7",
+      "more_actions_name": "Whole Moon",
+      "more_actions_actions": 150,
+      "more_actions_products": 1350,
+      "more_products_order": "h",
+      "more_products_name": "Crew Team Swap",
+      "more_products_actions": 124,
+      "more_products_products": 1860
+    }
+  ],
+  "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+  "hard_negatives": [
+    "call_plan_windows_a_partition",
+    "call_prominence_scientific_importance",
+    "call_window_ordering_unit_invariant",
+    "claim_actual_sampler_is_uniform_products",
+    "claim_observed_model_bias",
+    "claim_causal_performance_effect",
+    "claim_one_universal_correct_weighting",
+    "generalize_to_unadmitted_archive_records",
+    "claim_novelty_or_priority",
+    "open_pixels_during_rank_test"
+  ],
+  "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+    "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+    "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+    "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+    "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+  }
+}

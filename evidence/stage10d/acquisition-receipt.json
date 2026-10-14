@@ -1,0 +1,93 @@
+{
+  "receipt_id": "artemis2-stage10d-archive-unit-acquisition-v1",
+  "completed_at_utc": "2026-10-10T11:50:58Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "sources": [
+    {
+      "path": "evidence/stage10d/source/atlas-mission-footprint-query.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 639,
+      "sha256": "5e0a8d24500aa3927ca7b1bd97d7d83c15488f33dc84a831dc86e192be0976c1",
+      "role": "frozen mission_footprint query"
+    },
+    {
+      "path": "evidence/stage10d/source/atlas-mission-footprint-response.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 1422,
+      "sha256": "fd93dd2acd44dccd8e72a098a3f1fb888ba5686bf313315552d53fc555bf0b5a",
+      "role": "Atlas mission_footprint response",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "1422"
+      }
+    },
+    {
+      "path": "evidence/stage10d/source/atlas-forward-look-products-query.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 667,
+      "sha256": "2b66da077648aa8afb04e1cab7d6ef63c7002ae59b34c10b532548ba5fac2c76",
+      "role": "frozen forward_look_products query"
+    },
+    {
+      "path": "evidence/stage10d/source/atlas-forward-look-products-response.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 3234,
+      "sha256": "d56283f58a3e7a4e794fa97f4603357f9914c2f56546560a687bcb42062cbe09",
+      "role": "Atlas forward_look_products response",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "3234"
+      }
+    },
+    {
+      "path": "evidence/stage10d/source/atlas-forward-look-actions-query.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 986,
+      "sha256": "90c06ca35443692c13ebb3a85d19a64a8b5048121dad4692911cfdf4a5ba861a",
+      "role": "frozen forward_look_actions query"
+    },
+    {
+      "path": "evidence/stage10d/source/atlas-forward-look-actions-response.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 16668,
+      "sha256": "4ecf2a521f445531a45a93b390c936c9be9039739da9da556ca7bd116a5513a6",
+      "role": "Atlas forward_look_actions response",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "16668"
+      }
+    },
+    {
+      "path": "evidence/stage10d/source/nasa-release.html",
+      "url": "https://www.nasa.gov/blogs/artemis/2026/10/07/nasa-releases-artemis-ii-lunar-science-data-images/",
+      "bytes": 287259,
+      "sha256": "2f4bed039abb00459518db5bbbdf15a8f9a9b2955b289b51b874183c1123930f",
+      "role": "official NASA release statement",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8"
+      }
+    },
+    {
+      "path": "evidence/stage10d/source/artemis2_data_user_guide.pdf",
+      "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_data_user_guide.pdf",
+      "bytes": 8320046,
+      "sha256": "c4f5ab25363ca3f8fc17bb776e9fc90c19707c8a18c9255648aef34d6a7b0bd2",
+      "role": "official Artemis II Data User Guide",
+      "headers": {
+        "content-type": "application/pdf",
+        "last-modified": "Mon, 05 Oct 2026 19:45:00 GMT",
+        "etag": "\"95b2f2255dd1:0\"",
+        "content-length": "8320046"
+      }
+    },
+    {
+      "path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+      "url": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_data_user_guide.pdf",
+      "bytes": 174179,
+      "sha256": "3533de2c32617b9d1a2ff29022771dab5d29ac6bbaa15dd3554f23a992a8d31e",
+      "role": "deterministic full-text extraction of official Data User Guide",
+      "extractor": "pypdf"
+    }
+  ]
+}

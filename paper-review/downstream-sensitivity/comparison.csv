@@ -1,0 +1,393 @@
+metric,baseline,withheld,delta,changed
+field_completion.blank_share,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.blank_target_fields,4193,4193,0,False
+field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.lower_count,39,39,0,False
+field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.lower_share_full_cohort,0.005127530896660531,0.005130903828443626,3.3729317830948763e-06,True
+field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.observed_count,39,39,0,False
+field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.observed_share_among_nonblank,0.011426897157925579,0.011443661971830986,1.6764813905407322e-05,True
+field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.upper_count,4232,4232,0,False
+field_completion.bounds_by_target_field_value.01_Discussion #1: Warm up.upper_share_full_cohort,0.5564028398632659,0.5567688462044468,0.00036600634118089115,True
+field_completion.bounds_by_target_field_value.Aristarchus Plateau.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Aristarchus Plateau.lower_count,26,26,0,False
+field_completion.bounds_by_target_field_value.Aristarchus Plateau.lower_share_full_cohort,0.0034183539311070208,0.0034206025522957504,2.2486211887296284e-06,True
+field_completion.bounds_by_target_field_value.Aristarchus Plateau.observed_count,26,26,0,False
+field_completion.bounds_by_target_field_value.Aristarchus Plateau.observed_share_among_nonblank,0.007617931438617052,0.007629107981220657,1.117654260360517e-05,True
+field_completion.bounds_by_target_field_value.Aristarchus Plateau.upper_count,4219,4219,0,False
+field_completion.bounds_by_target_field_value.Aristarchus Plateau.upper_share_full_cohort,0.5546936628977124,0.5550585449282989,0.0003648820305864886,True
+field_completion.bounds_by_target_field_value.Deep Space.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Deep Space.lower_count,25,25,0,False
+field_completion.bounds_by_target_field_value.Deep Space.lower_share_full_cohort,0.003286878779910597,0.0032890409156689907,2.1621357583936733e-06,True
+field_completion.bounds_by_target_field_value.Deep Space.observed_count,25,25,0,False
+field_completion.bounds_by_target_field_value.Deep Space.observed_share_among_nonblank,0.00732493407559332,0.007335680751173709,1.074667558038922e-05,True
+field_completion.bounds_by_target_field_value.Deep Space.upper_count,4218,4218,0,False
+field_completion.bounds_by_target_field_value.Deep Space.upper_share_full_cohort,0.5545621877465159,0.5549269832916721,0.0003647955451562268,True
+field_completion.bounds_by_target_field_value.Earth.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Earth.lower_count,692,692,0,False
+field_completion.bounds_by_target_field_value.Earth.lower_share_full_cohort,0.09098080462792532,0.09104065254571767,5.9847917792343885e-05,True
+field_completion.bounds_by_target_field_value.Earth.observed_count,692,692,0,False
+field_completion.bounds_by_target_field_value.Earth.observed_share_among_nonblank,0.2027541752124231,0.20305164319248825,0.0002974679800651636,True
+field_completion.bounds_by_target_field_value.Earth.upper_count,4885,4885,0,False
+field_completion.bounds_by_target_field_value.Earth.upper_share_full_cohort,0.6422561135945306,0.6426785949217209,0.00042248132719024944,True
+field_completion.bounds_by_target_field_value.Earthrise.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Earthrise.lower_count,2,2,0,False
+field_completion.bounds_by_target_field_value.Earthrise.lower_share_full_cohort,0.00026295030239284776,0.0002631232732535193,1.7297086067153073e-07,True
+field_completion.bounds_by_target_field_value.Earthrise.observed_count,2,2,0,False
+field_completion.bounds_by_target_field_value.Earthrise.observed_share_among_nonblank,0.0005859947260474656,0.0005868544600938967,8.597340464311419e-07,True
+field_completion.bounds_by_target_field_value.Earthrise.upper_count,4195,4195,0,False
+field_completion.bounds_by_target_field_value.Earthrise.upper_share_full_cohort,0.5515382592689981,0.5519010656492567,0.0003628063802585402,True
+field_completion.bounds_by_target_field_value.Earthset.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Earthset.lower_count,14,14,0,False
+field_completion.bounds_by_target_field_value.Earthset.lower_share_full_cohort,0.0018406521167499343,0.0018418629127746348,1.2107960247005525e-06,True
+field_completion.bounds_by_target_field_value.Earthset.observed_count,14,14,0,False
+field_completion.bounds_by_target_field_value.Earthset.observed_share_among_nonblank,0.004101963082332259,0.004107981220657277,6.018138325018102e-06,True
+field_completion.bounds_by_target_field_value.Earthset.upper_count,4207,4207,0,False
+field_completion.bounds_by_target_field_value.Earthset.upper_share_full_cohort,0.5531159610833553,0.5534798052887778,0.0003638442054225699,True
+field_completion.bounds_by_target_field_value.Glushko Crater.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Glushko Crater.lower_count,24,24,0,False
+field_completion.bounds_by_target_field_value.Glushko Crater.lower_share_full_cohort,0.003155403628714173,0.003157479279042231,2.075650328058152e-06,True
+field_completion.bounds_by_target_field_value.Glushko Crater.observed_count,24,24,0,False
+field_completion.bounds_by_target_field_value.Glushko Crater.observed_share_among_nonblank,0.007031936712569587,0.007042253521126761,1.0316808557174137e-05,True
+field_completion.bounds_by_target_field_value.Glushko Crater.upper_count,4217,4217,0,False
+field_completion.bounds_by_target_field_value.Glushko Crater.upper_share_full_cohort,0.5544307125953195,0.5547954216550454,0.000364709059725854,True
+field_completion.bounds_by_target_field_value.Hertzsprung Basin.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Hertzsprung Basin.lower_count,12,12,0,False
+field_completion.bounds_by_target_field_value.Hertzsprung Basin.lower_share_full_cohort,0.0015777018143570865,0.0015787396395211155,1.037825164029076e-06,True
+field_completion.bounds_by_target_field_value.Hertzsprung Basin.observed_count,12,12,0,False
+field_completion.bounds_by_target_field_value.Hertzsprung Basin.observed_share_among_nonblank,0.0035159683562847933,0.0035211267605633804,5.1584042785870685e-06,True
+field_completion.bounds_by_target_field_value.Hertzsprung Basin.upper_count,4205,4205,0,False
+field_completion.bounds_by_target_field_value.Hertzsprung Basin.upper_share_full_cohort,0.5528530107809624,0.5532166820155243,0.0003636712345619353,True
+field_completion.bounds_by_target_field_value.Landau.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Landau.lower_count,7,7,0,False
+field_completion.bounds_by_target_field_value.Landau.lower_share_full_cohort,0.0009203260583749671,0.0009209314563873174,6.053980123502762e-07,True
+field_completion.bounds_by_target_field_value.Landau.observed_count,7,7,0,False
+field_completion.bounds_by_target_field_value.Landau.observed_share_among_nonblank,0.0020509815411661296,0.0020539906103286387,3.009069162509051e-06,True
+field_completion.bounds_by_target_field_value.Landau.upper_count,4200,4200,0,False
+field_completion.bounds_by_target_field_value.Landau.upper_share_full_cohort,0.5521956350249803,0.5525588738323904,0.0003632388074101822,True
+field_completion.bounds_by_target_field_value.Limb.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Limb.lower_count,6,6,0,False
+field_completion.bounds_by_target_field_value.Limb.lower_share_full_cohort,0.0007888509071785432,0.0007893698197605578,5.18912582014538e-07,True
+field_completion.bounds_by_target_field_value.Limb.observed_count,6,6,0,False
+field_completion.bounds_by_target_field_value.Limb.observed_share_among_nonblank,0.0017579841781423966,0.0017605633802816902,2.5792021392935342e-06,True
+field_completion.bounds_by_target_field_value.Limb.upper_count,4199,4199,0,False
+field_completion.bounds_by_target_field_value.Limb.upper_share_full_cohort,0.5520641598737839,0.5524273121957637,0.0003631523219798094,True
+field_completion.bounds_by_target_field_value.Moon.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Moon.lower_count,280,275,-5,True
+field_completion.bounds_by_target_field_value.Moon.lower_share_full_cohort,0.036813042334998686,0.0361794500723589,-0.0006335922626397872,True
+field_completion.bounds_by_target_field_value.Moon.observed_count,280,275,-5,True
+field_completion.bounds_by_target_field_value.Moon.observed_share_among_nonblank,0.08203926164664518,0.0806924882629108,-0.001346773383734387,True
+field_completion.bounds_by_target_field_value.Moon.upper_count,4473,4468,-5,True
+field_completion.bounds_by_target_field_value.Moon.upper_share_full_cohort,0.588088351301604,0.5878173924483621,-0.0002709588532419094,True
+field_completion.bounds_by_target_field_value.Nemst.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Nemst.lower_count,3,3,0,False
+field_completion.bounds_by_target_field_value.Nemst.lower_share_full_cohort,0.0003944254535892716,0.0003946849098802789,2.59456291007269e-07,True
+field_completion.bounds_by_target_field_value.Nemst.observed_count,3,3,0,False
+field_completion.bounds_by_target_field_value.Nemst.observed_share_among_nonblank,0.0008789920890711983,0.0008802816901408451,1.2896010696467671e-06,True
+field_completion.bounds_by_target_field_value.Nemst.upper_count,4196,4196,0,False
+field_completion.bounds_by_target_field_value.Nemst.upper_share_full_cohort,0.5516697344201946,0.5520326272858834,0.00036289286568880197,True
+field_completion.bounds_by_target_field_value.Ohm Crater.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Ohm Crater.lower_count,68,68,0,False
+field_completion.bounds_by_target_field_value.Ohm Crater.lower_share_full_cohort,0.008940310281356823,0.008946191290619656,5.881009262832804e-06,True
+field_completion.bounds_by_target_field_value.Ohm Crater.observed_count,68,68,0,False
+field_completion.bounds_by_target_field_value.Ohm Crater.observed_share_among_nonblank,0.019923820685613828,0.01995305164319249,2.9230957578660344e-05,True
+field_completion.bounds_by_target_field_value.Ohm Crater.upper_count,4261,4261,0,False
+field_completion.bounds_by_target_field_value.Ohm Crater.upper_share_full_cohort,0.5602156192479621,0.5605841336666229,0.00036851441866070367,True
+field_completion.bounds_by_target_field_value.Orientale Basin.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Orientale Basin.lower_count,74,74,0,False
+field_completion.bounds_by_target_field_value.Orientale Basin.lower_share_full_cohort,0.009729161188535366,0.009735561110380214,6.399921844847667e-06,True
+field_completion.bounds_by_target_field_value.Orientale Basin.observed_count,74,74,0,False
+field_completion.bounds_by_target_field_value.Orientale Basin.observed_share_among_nonblank,0.021681804863756225,0.02171361502347418,3.181015971795431e-05,True
+field_completion.bounds_by_target_field_value.Orientale Basin.upper_count,4267,4267,0,False
+field_completion.bounds_by_target_field_value.Orientale Basin.upper_share_full_cohort,0.5610044701551407,0.5613735034863834,0.00036903333124271853,True
+field_completion.bounds_by_target_field_value.Pierrazzo Crater.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Pierrazzo Crater.lower_count,23,23,0,False
+field_completion.bounds_by_target_field_value.Pierrazzo Crater.lower_share_full_cohort,0.0030239284775177492,0.0030259176424154714,1.989164897722197e-06,True
+field_completion.bounds_by_target_field_value.Pierrazzo Crater.observed_count,23,23,0,False
+field_completion.bounds_by_target_field_value.Pierrazzo Crater.observed_share_among_nonblank,0.006738939349545854,0.0067488262910798125,9.886941533958186e-06,True
+field_completion.bounds_by_target_field_value.Pierrazzo Crater.upper_count,4216,4216,0,False
+field_completion.bounds_by_target_field_value.Pierrazzo Crater.upper_share_full_cohort,0.554299237444123,0.5546638600184186,0.0003646225742955922,True
+field_completion.bounds_by_target_field_value.Reiner Gamma.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Reiner Gamma.lower_count,24,24,0,False
+field_completion.bounds_by_target_field_value.Reiner Gamma.lower_share_full_cohort,0.003155403628714173,0.003157479279042231,2.075650328058152e-06,True
+field_completion.bounds_by_target_field_value.Reiner Gamma.observed_count,24,24,0,False
+field_completion.bounds_by_target_field_value.Reiner Gamma.observed_share_among_nonblank,0.007031936712569587,0.007042253521126761,1.0316808557174137e-05,True
+field_completion.bounds_by_target_field_value.Reiner Gamma.upper_count,4217,4217,0,False
+field_completion.bounds_by_target_field_value.Reiner Gamma.upper_share_full_cohort,0.5544307125953195,0.5547954216550454,0.000364709059725854,True
+field_completion.bounds_by_target_field_value.Sun.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Sun.lower_count,81,81,0,False
+field_completion.bounds_by_target_field_value.Sun.lower_share_full_cohort,0.010649487246910333,0.01065649256676753,7.005319857197184e-06,True
+field_completion.bounds_by_target_field_value.Sun.observed_count,81,81,0,False
+field_completion.bounds_by_target_field_value.Sun.observed_share_among_nonblank,0.023732786404922355,0.023767605633802816,3.481922888046163e-05,True
+field_completion.bounds_by_target_field_value.Sun.upper_count,4274,4274,0,False
+field_completion.bounds_by_target_field_value.Sun.upper_share_full_cohort,0.5619247962135157,0.5622944349427706,0.0003696387292549952,True
+field_completion.bounds_by_target_field_value.Sunrise.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Sunrise.lower_count,181,181,0,False
+field_completion.bounds_by_target_field_value.Sunrise.lower_share_full_cohort,0.02379700236655272,0.023812656229443493,1.5653862890773612e-05,True
+field_completion.bounds_by_target_field_value.Sunrise.observed_count,181,181,0,False
+field_completion.bounds_by_target_field_value.Sunrise.observed_share_among_nonblank,0.05303252270729564,0.053110328638497656,7.780593120201851e-05,True
+field_completion.bounds_by_target_field_value.Sunrise.upper_count,4374,4374,0,False
+field_completion.bounds_by_target_field_value.Sunrise.upper_share_full_cohort,0.5750723113331581,0.5754505986054467,0.00037828727228861325,True
+field_completion.bounds_by_target_field_value.Sunset.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Sunset.lower_count,1553,1553,0,False
+field_completion.bounds_by_target_field_value.Sunset.lower_share_full_cohort,0.2041809098080463,0.2043152216813577,0.00013431187331142125,True
+field_completion.bounds_by_target_field_value.Sunset.observed_count,1553,1553,0,False
+field_completion.bounds_by_target_field_value.Sunset.observed_share_among_nonblank,0.455024904775857,0.4556924882629108,0.0006675834870538133,True
+field_completion.bounds_by_target_field_value.Sunset.upper_count,5746,5746,0,False
+field_completion.bounds_by_target_field_value.Sunset.upper_share_full_cohort,0.7554562187746516,0.7559531640573609,0.0004969452827092713,True
+field_completion.bounds_by_target_field_value.Terminator.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Terminator.lower_count,122,122,0,False
+field_completion.bounds_by_target_field_value.Terminator.lower_share_full_cohort,0.016039968445963712,0.016050519668464675,1.0551222500963103e-05,True
+field_completion.bounds_by_target_field_value.Terminator.observed_count,122,122,0,False
+field_completion.bounds_by_target_field_value.Terminator.observed_share_among_nonblank,0.0357456782888954,0.0357981220657277,5.2443776832306055e-05,True
+field_completion.bounds_by_target_field_value.Terminator.upper_count,4315,4315,0,False
+field_completion.bounds_by_target_field_value.Terminator.upper_share_full_cohort,0.567315277412569,0.5676884620444679,0.00037318463189883744,True
+field_completion.bounds_by_target_field_value.Unknown.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Unknown.lower_count,33,33,0,False
+field_completion.bounds_by_target_field_value.Unknown.lower_share_full_cohort,0.004338679989481988,0.004341534008683068,2.854019201080013e-06,True
+field_completion.bounds_by_target_field_value.Unknown.observed_count,33,33,0,False
+field_completion.bounds_by_target_field_value.Unknown.observed_share_among_nonblank,0.009668912979783182,0.009683098591549295,1.4185611766113354e-05,True
+field_completion.bounds_by_target_field_value.Unknown.upper_count,4226,4226,0,False
+field_completion.bounds_by_target_field_value.Unknown.upper_share_full_cohort,0.5556139889560873,0.5559794763846863,0.0003654874285989873,True
+field_completion.bounds_by_target_field_value.Vavilov Crater.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Vavilov Crater.lower_count,67,67,0,False
+field_completion.bounds_by_target_field_value.Vavilov Crater.lower_share_full_cohort,0.008808835130160399,0.008814629653992895,5.794523832496415e-06,True
+field_completion.bounds_by_target_field_value.Vavilov Crater.observed_count,67,67,0,False
+field_completion.bounds_by_target_field_value.Vavilov Crater.observed_share_among_nonblank,0.019630823322590096,0.01965962441314554,2.8801090555443526e-05,True
+field_completion.bounds_by_target_field_value.Vavilov Crater.upper_count,4260,4260,0,False
+field_completion.bounds_by_target_field_value.Vavilov Crater.upper_share_full_cohort,0.5600841440967657,0.5604525720299961,0.0003684279332304419,True
+field_completion.bounds_by_target_field_value.Whole Moon.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.bounds_by_target_field_value.Whole Moon.lower_count,57,57,0,False
+field_completion.bounds_by_target_field_value.Whole Moon.lower_share_full_cohort,0.007494083618196161,0.007499013287725299,4.929669529137731e-06,True
+field_completion.bounds_by_target_field_value.Whole Moon.observed_count,57,57,0,False
+field_completion.bounds_by_target_field_value.Whole Moon.observed_share_among_nonblank,0.01670084969235277,0.016725352112676055,2.4502420323285756e-05,True
+field_completion.bounds_by_target_field_value.Whole Moon.upper_count,4250,4250,0,False
+field_completion.bounds_by_target_field_value.Whole Moon.upper_share_full_cohort,0.5587693925848015,0.5591369556637285,0.00036756307892693574,True
+field_completion.completion_witness.csv_sha256,ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3,7832d6eaf2c7eeb94dd04e312c3f9d2a70b2413dfbdcbb6e1378bb188791d354,,True
+field_completion.completion_witness.interpretation,"Two possible binary field completions, not imputed physical labels or training data.","Two possible binary field completions, not imputed physical labels or training data.",,False
+field_completion.completion_witness.known_fields_preserved,True,True,,False
+field_completion.completion_witness.lower_sunset_count,1553,1553,0,False
+field_completion.completion_witness.source_rows,7606,7601,-5,True
+field_completion.completion_witness.upper_sunset_count,5746,5746,0,False
+field_completion.deterministic_completion_budgets.10_percentage_points.maximum_remaining_blank_fields,760,760,0,False
+field_completion.deterministic_completion_budgets.10_percentage_points.minimum_blank_fields_resolved,3433,3433,0,False
+field_completion.deterministic_completion_budgets.1_percentage_point.maximum_remaining_blank_fields,76,76,0,False
+field_completion.deterministic_completion_budgets.1_percentage_point.minimum_blank_fields_resolved,4117,4117,0,False
+field_completion.deterministic_completion_budgets.5_percentage_points.maximum_remaining_blank_fields,380,380,0,False
+field_completion.deterministic_completion_budgets.5_percentage_points.minimum_blank_fields_resolved,3813,3813,0,False
+field_completion.extreme_assignments.all_blank_fields_assigned_to_sunset.cohort_count,7606,7601,-5,True
+field_completion.extreme_assignments.all_blank_fields_assigned_to_sunset.sunset_count,5746,5746,0,False
+field_completion.extreme_assignments.no_blank_fields_assigned_to_sunset.cohort_count,7606,7601,-5,True
+field_completion.extreme_assignments.no_blank_fields_assigned_to_sunset.sunset_count,1553,1553,0,False
+field_completion.nonblank_target_fields,3413,3408,-5,True
+field_completion.observed_target_field_values,23,23,0,False
+field_completion.source_exposures,7606,7601,-5,True
+field_completion.sunset.bound_width,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+field_completion.sunset.lower_count,1553,1553,0,False
+field_completion.sunset.lower_share_full_cohort,0.2041809098080463,0.2043152216813577,0.00013431187331142125,True
+field_completion.sunset.observed_count,1553,1553,0,False
+field_completion.sunset.observed_share_among_nonblank,0.455024904775857,0.4556924882629108,0.0006675834870538133,True
+field_completion.sunset.upper_count,5746,5746,0,False
+field_completion.sunset.upper_share_full_cohort,0.7554562187746516,0.7559531640573609,0.0004969452827092713,True
+field_completion.sunset_majority.additional_blank_memberships_needed,2251,2248,-3,True
+field_completion.sunset_majority.required_fraction_of_blank_fields,0.5368471261626521,0.5361316479847364,-0.0007154781779156183,True
+field_completion.sunset_majority.strict_majority_count,3804,3801,-3,True
+opportunity_weighting.active_windows,36,36,0,False
+opportunity_weighting.collapsed_fractional_concentration_equivalent_windows.actions,17.3316963372212,17.328316933094342,-0.0033794041268571107,True
+opportunity_weighting.collapsed_fractional_concentration_equivalent_windows.archive_size_bytes,13.181026998196797,13.167848752017541,-0.013178246179256448,True
+opportunity_weighting.collapsed_fractional_concentration_equivalent_windows.products,15.317957915097795,15.310812341784796,-0.007145573312998366,True
+opportunity_weighting.collapsed_name_cluster_counts.Aristarchus Plateau,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Crew Position Swap,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Crew Team Swap,5,5,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Earth,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Earthrise,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Earthset,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Glushko Crater,2,2,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Guided Discussion,4,4,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Hertzsprung Basin,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Impact Flashes,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Moon,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Ohm Crater,2,2,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Orientale Basin,2,2,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Reiner Gamma,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Sunrise,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Sunset,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Vavilov Crater,1,1,0,False
+opportunity_weighting.collapsed_name_cluster_counts.Whole Moon,4,4,0,False
+opportunity_weighting.collapsed_name_cluster_counts.illum_limb,1,1,0,False
+opportunity_weighting.collapsed_same_name_clusters,32,32,0,False
+opportunity_weighting.exact_name_window_counts.Aristarchus Plateau,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Crew Position Swap,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Crew Team Swap,5,5,0,False
+opportunity_weighting.exact_name_window_counts.Earth,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Earthrise,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Earthset,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Glushko Crater,2,2,0,False
+opportunity_weighting.exact_name_window_counts.Guided Discussion,5,5,0,False
+opportunity_weighting.exact_name_window_counts.Hertzsprung Basin,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Impact Flashes,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Moon,4,4,0,False
+opportunity_weighting.exact_name_window_counts.Ohm Crater,2,2,0,False
+opportunity_weighting.exact_name_window_counts.Orientale Basin,2,2,0,False
+opportunity_weighting.exact_name_window_counts.Reiner Gamma,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Sunrise,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Sunset,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Vavilov Crater,1,1,0,False
+opportunity_weighting.exact_name_window_counts.Whole Moon,4,4,0,False
+opportunity_weighting.exact_name_window_counts.illum_limb,1,1,0,False
+opportunity_weighting.exact_plan_names,19,19,0,False
+opportunity_weighting.fractional_concentration_equivalent_windows.actions,18.03973671132567,18.023925150198043,-0.01581156112762727,True
+opportunity_weighting.fractional_concentration_equivalent_windows.archive_size_bytes,13.595033296553533,13.561460009588574,-0.03357328696495898,True
+opportunity_weighting.fractional_concentration_equivalent_windows.products,15.815014376869817,15.794363418009198,-0.020650958860619184,True
+opportunity_weighting.fractional_conservation.actions.collapsed_fractional_total,1540.0,1539.0,-1.0,True
+opportunity_weighting.fractional_conservation.actions.collapsed_match,True,True,,False
+opportunity_weighting.fractional_conservation.actions.expected_unique_total,1540.0,1539.0,-1.0,True
+opportunity_weighting.fractional_conservation.actions.fractional_window_total,1540.0,1539.0,-1.0,True
+opportunity_weighting.fractional_conservation.actions.window_match,True,True,,False
+opportunity_weighting.fractional_conservation.archive_size_bytes.collapsed_fractional_total,1213824749710.0,1211853207140.0,-1971542570.0,True
+opportunity_weighting.fractional_conservation.archive_size_bytes.collapsed_match,True,True,,False
+opportunity_weighting.fractional_conservation.archive_size_bytes.expected_unique_total,1213824749710.0,1211853207140.0,-1971542570.0,True
+opportunity_weighting.fractional_conservation.archive_size_bytes.fractional_window_total,1213824749710.0,1211853207140.0,-1971542570.0,True
+opportunity_weighting.fractional_conservation.archive_size_bytes.window_match,True,True,,False
+opportunity_weighting.fractional_conservation.products.collapsed_fractional_total,17136.0,17121.0,-15.0,True
+opportunity_weighting.fractional_conservation.products.collapsed_match,True,True,,False
+opportunity_weighting.fractional_conservation.products.expected_unique_total,17136.0,17121.0,-15.0,True
+opportunity_weighting.fractional_conservation.products.fractional_window_total,17136.0,17121.0,-15.0,True
+opportunity_weighting.fractional_conservation.products.window_match,True,True,,False
+opportunity_weighting.raw_concentration_equivalent_windows.actions,18.99998519330145,18.975894683784507,-0.024090509516941694,True
+opportunity_weighting.raw_concentration_equivalent_windows.archive_size_bytes,14.70313411080405,14.650521057794823,-0.05261305300922814,True
+opportunity_weighting.raw_concentration_equivalent_windows.products,16.823894158222735,16.79030859735889,-0.03358556086384468,True
+opportunity_weighting.replication_debt.collapsed_clusters_k2,13,13,0,False
+opportunity_weighting.replication_debt.collapsed_clusters_k3,29,29,0,False
+opportunity_weighting.replication_debt.exact_windows_k2,12,12,0,False
+opportunity_weighting.replication_debt.exact_windows_k3,27,27,0,False
+opportunity_weighting.same_name_overlap_collapses,4,4,0,False
+opportunity_weighting.unique_active_actions,1540,1539,-1,True
+relationship.action_isolated_test_action_groups,0,0,0,False
+relationship.action_isolated_test_products,0,0,0,False
+relationship.action_isolated_test_share,0.0,0.0,0.0,False
+relationship.action_only_linked_test_products,204,204,0,False
+relationship.action_only_linked_test_share,0.045222788738638886,0.04524284763805722,2.005889941833483e-05,True
+relationship.capture_isolated_test_capture_groups,68,68,0,False
+relationship.capture_linked_test_capture_groups,3611,3609,-2,True
+relationship.capture_linked_test_products,4307,4305,-2,True
+relationship.capture_linked_test_share,0.9547772112613612,0.9547571523619428,-2.0058899418362586e-05,True
+relationship.crossing_action_groups,1937,1936,-1,True
+relationship.products_in_crossing_action_groups,20601,20586,-15,True
+relationship.rows,22818,22803,-15,True
+relationship.share_all_products_in_crossing_actions,0.9028398632658428,0.9027759505328247,-6.391273301808997e-05,True
+relationship.test_products,4511,4509,-2,True
+relationship.test_visible_action_groups,1937,1936,-1,True
+relationship.test_visible_capture_groups,3679,3677,-2,True
+relationship.train_products,18307,18294,-13,True
+relationship.unique_product_ids,22818,22803,-15,True
+selection.activity_examples.07_Whole Moon.exposures,456,456,0,False
+selection.activity_examples.07_Whole Moon.tagged,3,3,0,False
+selection.activity_examples.12_Orientale Basin (2/2).exposures,399,399,0,False
+selection.activity_examples.12_Orientale Basin (2/2).tagged,0,0,0,False
+selection.activity_examples.24_Sunset.exposures,1294,1294,0,False
+selection.activity_examples.24_Sunset.tagged,1294,1294,0,False
+selection.activity_examples.h_Observation Break.exposures,284,284,0,False
+selection.activity_examples.h_Observation Break.tagged,259,259,0,False
+selection.camera_coverage.3500015.coverage,0.4150582230020737,0.4150582230020737,0.0,False
+selection.camera_coverage.3500015.exposures,6269,6269,0,False
+selection.camera_coverage.3500015.tagged,2602,2602,0,False
+selection.camera_coverage.3500017.coverage,0.30078125,0.30078125,0.0,False
+selection.camera_coverage.3500017.exposures,256,256,0,False
+selection.camera_coverage.3500017.tagged,77,77,0,False
+selection.camera_coverage.3920019.coverage,0.6790009250693803,0.6775092936802974,-0.0014916313890828148,True
+selection.camera_coverage.3920019.exposures,1081,1076,-5,True
+selection.camera_coverage.3920019.tagged,734,729,-5,True
+selection.coverage.activity_lookup_accuracy_lift,0.3235603470943992,0.32311537955532166,-0.0004449675390775232,True
+selection.coverage.activity_majority_lookup_accuracy,0.8748356560610044,0.8747533219313248,-8.233412967961762e-05,True
+selection.coverage.activity_majority_lookup_correct,6654,6649,-5,True
+selection.coverage.activity_tag_presence_cramers_v,0.8204646313259204,0.8203218062719659,-0.0001428250539544651,True
+selection.coverage.activity_tag_presence_mutual_information_bits,0.6421857066071989,0.6419538199152138,-0.0002318866919850393,True
+selection.coverage.activity_values,45,45,0,False
+selection.coverage.camera_tag_presence_cramers_v,0.1929268299049601,0.191617821336898,-0.0013090085680620978,True
+selection.coverage.camera_tag_presence_mutual_information_bits,0.02704209912109003,0.026667450731009398,-0.0003746483900806327,True
+selection.coverage.full_coverage_activities,8,8,0,False
+selection.coverage.full_coverage_exposures,1676,1676,0,False
+selection.coverage.global_majority_state_accuracy,0.5512753089666053,0.5516379423760032,0.00036263340939790556,True
+selection.coverage.partial_coverage_activities,20,20,0,False
+selection.coverage.partial_coverage_exposures,4533,4528,-5,True
+selection.coverage.source_exposures,7606,7601,-5,True
+selection.coverage.sunset_share_of_tagged_exposures,0.455024904775857,0.4556924882629108,0.0006675834870538133,True
+selection.coverage.sunset_tagged_exposures,1553,1553,0,False
+selection.coverage.target_tag_blank,4193,4193,0,False
+selection.coverage.target_tag_coverage,0.4487246910333947,0.44836205762399683,-0.00036263340939785005,True
+selection.coverage.target_tag_present,3413,3408,-5,True
+selection.coverage.zero_coverage_activities,17,17,0,False
+selection.coverage.zero_coverage_exposures,1397,1397,0,False
+selection_weighting.action_carried_sensitivity.selected_action_archive_size_bytes,796556744230,794585201660,-1971542570,True
+selection_weighting.action_carried_sensitivity.selected_action_exposures,3495,3490,-5,True
+selection_weighting.action_carried_sensitivity.selected_action_products,10485,10470,-15,True
+selection_weighting.action_carried_sensitivity.sunset_action_archive_size_bytes,410187365891,410187365891,0,False
+selection_weighting.action_carried_sensitivity.sunset_action_exposures,1555,1555,0,False
+selection_weighting.action_carried_sensitivity.sunset_action_products,4665,4665,0,False
+selection_weighting.action_carried_sensitivity.sunset_share_of_selected_action_bytes,0.5149505906042036,0.5162282975243699,0.001277706920166377,True
+selection_weighting.action_carried_sensitivity.sunset_share_of_selected_action_exposures,0.4449213161659514,0.4455587392550143,0.0006374230890629495,True
+selection_weighting.action_carried_sensitivity.sunset_share_of_selected_action_products,0.4449213161659514,0.4455587392550143,0.0006374230890629495,True
+selection_weighting.activity_structure_attribution.activity_id,24_Sunset,24_Sunset,,False
+selection_weighting.activity_structure_attribution.outside_activity.selected_actions,656,655,-1,True
+selection_weighting.activity_structure_attribution.outside_activity.sunset_share_of_selected_actions,0.07926829268292683,0.07938931297709924,0.00012102029417240812,True
+selection_weighting.activity_structure_attribution.outside_activity.sunset_share_of_tagged_bytes,0.21553587192522253,0.21643642846117037,0.0009005565359478385,True
+selection_weighting.activity_structure_attribution.outside_activity.sunset_share_of_tagged_exposures,0.12222746578574799,0.12251655629139073,0.00028909050564274175,True
+selection_weighting.activity_structure_attribution.outside_activity.sunset_tagged_actions,52,52,0,False
+selection_weighting.activity_structure_attribution.outside_activity.sunset_tagged_archive_size_bytes,102128063206,102128063206,0,False
+selection_weighting.activity_structure_attribution.outside_activity.sunset_tagged_exposures,259,259,0,False
+selection_weighting.activity_structure_attribution.outside_activity.tagged_archive_size_bytes,473833252413,471861709843,-1971542570,True
+selection_weighting.activity_structure_attribution.outside_activity.tagged_exposures,2119,2114,-5,True
+selection_weighting.activity_structure_attribution.share_of_sunset_tagged_exposures_from_activity,0.8332260141661301,0.8332260141661301,0.0,False
+selection_weighting.activity_structure_attribution.sunset_tagged_exposures_all,1553,1553,0,False
+selection_weighting.activity_structure_attribution.sunset_tagged_exposures_in_activity,1294,1294,0,False
+selection_weighting.all_cohort.actions,2166,2165,-1,True
+selection_weighting.all_cohort.archive_size_bytes,1625281365343,1623309822773,-1971542570,True
+selection_weighting.all_cohort.products,22818,22803,-15,True
+selection_weighting.all_cohort.source_exposures,7606,7601,-5,True
+selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.archive_size_bytes,3.191403784213298,3.1794788566207495,-0.011924927592548595,True
+selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.exposures,3.8227788157250044,3.8150607087438724,-0.007718106981132067,True
+selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.fractional_actions,5.063610769226117,5.057442873445271,-0.006167895780846422,True
+selection_weighting.all_tag_countercheck.concentration_equivalent_target_tag_values.products,3.8227788157250044,3.8150607087438724,-0.007718106981132067,True
+selection_weighting.all_tag_countercheck.fractional_action_weight_total,915.0,914.0,-1.0,True
+selection_weighting.all_tag_countercheck.multi_target_actions,3,3,0,False
+selection_weighting.all_tag_countercheck.raw_action_tag_memberships,918,917,-1,True
+selection_weighting.all_tag_countercheck.sunset_rank.archive_size_bytes,1,1,0,False
+selection_weighting.all_tag_countercheck.sunset_rank.exposures,1,1,0,False
+selection_weighting.all_tag_countercheck.sunset_rank.fractional_actions,1,1,0,False
+selection_weighting.all_tag_countercheck.sunset_rank.products,1,1,0,False
+selection_weighting.all_tag_countercheck.target_tag_values,23,23,0,False
+selection_weighting.collection_byte_sensitivity.data_processed.sunset_bytes,280774484834,280774484834,0,False
+selection_weighting.collection_byte_sensitivity.data_processed.sunset_share,0.5273412245809236,0.5286950893692615,0.0013538647883378774,True
+selection_weighting.collection_byte_sensitivity.data_processed.tagged_bytes,532434165482,531070725792,-1363439690,True
+selection_weighting.collection_byte_sensitivity.data_raw.sunset_bytes,94177910368,94177910368,0,False
+selection_weighting.collection_byte_sensitivity.data_raw.sunset_share,0.52719734536919,0.5285496854980168,0.00135234012882679,True
+selection_weighting.collection_byte_sensitivity.data_raw.tagged_bytes,178638817504,178181754624,-457062880,True
+selection_weighting.collection_byte_sensitivity.data_source.sunset_bytes,34446621949,34446621949,0,False
+selection_weighting.collection_byte_sensitivity.data_source.sunset_share,0.4918751992382373,0.4929383451332252,0.0010631458949879047,True
+selection_weighting.collection_byte_sensitivity.data_source.tagged_bytes,70031223372,69880183372,-151040000,True
+selection_weighting.selection_panel.blank_source_exposures,4193,4193,0,False
+selection_weighting.selection_panel.nonblank_conditioning_amplification,2.2285379431585115,2.2303403755868545,0.0018024324283429927,True
+selection_weighting.selection_panel.sunset_share_of_tagged_source_exposures,0.455024904775857,0.4556924882629108,0.0006675834870538133,True
+selection_weighting.selection_panel.sunset_tag_occupancy_all_source_exposures,0.2041809098080463,0.2043152216813577,0.00013431187331142125,True
+selection_weighting.selection_panel.sunset_tagged_source_exposures,1553,1553,0,False
+selection_weighting.selection_panel.tagged_source_exposures,3413,3408,-5,True
+selection_weighting.strict_tagged_weighting_panel.action_to_byte_amplification,1.5420502433413124,1.5442627319538484,0.00221248861253609,True
+selection_weighting.strict_tagged_weighting_panel.action_to_exposure_amplification,1.338738867748904,1.339237730779101,0.0004988630301969721,True
+selection_weighting.strict_tagged_weighting_panel.exposure_to_byte_amplification,1.1518678365813622,1.1530908191001117,0.001222982518749527,True
+selection_weighting.strict_tagged_weighting_panel.representations_per_exposure,3.0,3.0,0.0,False
+selection_weighting.strict_tagged_weighting_panel.selected_actions,915,914,-1,True
+selection_weighting.strict_tagged_weighting_panel.sunset_share_of_selected_actions,0.33989071038251367,0.3402625820568928,0.0003718716743791317,True
+selection_weighting.strict_tagged_weighting_panel.sunset_share_of_tagged_bytes,0.5241285526548067,0.5254548245488478,0.001326271894041109,True
+selection_weighting.strict_tagged_weighting_panel.sunset_share_of_tagged_exposures,0.455024904775857,0.4556924882629108,0.0006675834870538133,True
+selection_weighting.strict_tagged_weighting_panel.sunset_share_of_tagged_products,0.455024904775857,0.4556924882629108,0.0006675834870538133,True
+selection_weighting.strict_tagged_weighting_panel.sunset_tagged_actions,311,311,0,False
+selection_weighting.strict_tagged_weighting_panel.sunset_tagged_archive_size_bytes,409399017151,409399017151,0,False
+selection_weighting.strict_tagged_weighting_panel.sunset_tagged_exposures,1553,1553,0,False
+selection_weighting.strict_tagged_weighting_panel.sunset_tagged_products,4659,4659,0,False
+selection_weighting.strict_tagged_weighting_panel.tagged_archive_size_bytes,781104206358,779132663788,-1971542570,True
+selection_weighting.strict_tagged_weighting_panel.tagged_exposures,3413,3408,-5,True
+selection_weighting.strict_tagged_weighting_panel.tagged_products,10239,10224,-15,True
+selection_weighting.structure_checks.sunset_multitarget_actions,0,0,0,False
+selection_weighting.structure_checks.sunset_partial_presence_actions,2,2,0,False
+selection_weighting.structure_checks.sunset_tagged_bytes_share_of_all_bytes,0.2518942417484743,0.2522001723932459,0.0003059306447715793,True
+selection_weighting.structure_checks.tagged_bytes_share_of_all_bytes,0.48059629736366016,0.4799654710750507,-0.0006308262886094429,True

@@ -1,0 +1,11 @@
+candidate_id,mark_id,observer,time_state,marked_at_utc,elicitation_state,independence_state,dependency_group,source_artifact_id,source_locator
+event-1,event-1-reid,Reid Wiseman,unknown,,unknown,not_established,annotation-event-1,artemis-event-ledger,event-1
+event-2,event-2-reid,Reid Wiseman,unknown,,unknown,not_established,annotation-event-2,artemis-event-ledger,event-2 row 1
+event-2,event-2-jeremy,Jeremy Hansen,unknown,,unknown,not_established,annotation-event-2,artemis-event-ledger,event-2 row 2
+event-3,event-3-jeremy,Jeremy Hansen,unknown,,unknown,not_established,annotation-event-3,artemis-event-ledger,event-3
+event-4,event-4-reid,Reid Wiseman,unknown,,unknown,not_established,annotation-event-4,artemis-event-ledger,event-4 row 1
+event-4,event-4-jeremy,Jeremy Hansen,unknown,,unknown,not_established,annotation-event-4,artemis-event-ledger,event-4 row 2
+event-4,event-4-victor,Victor Glover,unknown,,unknown,not_established,annotation-event-4,artemis-event-ledger,event-4 row 3
+event-5,event-5-reid,Reid Wiseman,unknown,,unknown,not_established,annotation-event-5,artemis-event-ledger,event-5
+shared-transcript-report,shared-report-reid,Reid Wiseman,exact,2026-04-07T00:51:15.947Z,unprompted,not_established,shared-transcript-report,shared-report-excerpt,row 1
+shared-transcript-report,shared-report-jeremy,Jeremy Hansen,exact,2026-04-07T00:51:54.985Z,socially_cued,dependent,shared-transcript-report,shared-report-excerpt,row 3

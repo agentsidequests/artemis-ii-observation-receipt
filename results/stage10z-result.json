@@ -1,0 +1,1882 @@
+{
+  "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_MANY_TO_MANY_ACTION_PLAN_LEDGER",
+  "membership": {
+    "complete_actions": 2166,
+    "plan_entries_with_target_and_window": 39,
+    "plan_windows_with_actions": 36,
+    "action_plan_relationships": 1602,
+    "ledger_rows_including_unmatched": 2228,
+    "actions_with_no_plan_membership": 626,
+    "actions_with_one_plan_membership": 1482,
+    "actions_with_two_plan_memberships": 54,
+    "actions_with_three_plan_memberships": 4,
+    "actions_with_multiple_plan_memberships": 58,
+    "maximum_plan_memberships_per_action": 3,
+    "assigned_action_share": 0.7109879963065558,
+    "multi_assigned_action_share": 0.02677746999076639,
+    "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+    "unique_assigned_exposures": 5712,
+    "window_summed_exposures": 5960,
+    "window_exposure_inflation": 0.04341736694677871,
+    "unique_assigned_products": 17136,
+    "window_summed_products": 17880,
+    "unique_assigned_bytes": 1213824749710,
+    "window_summed_bytes": 1279763791687,
+    "window_byte_inflation": 0.05432336257170055,
+    "unassigned_products": 5682,
+    "unassigned_bytes": 411456615633,
+    "unassigned_byte_share": 0.2531602369945133,
+    "relationship_manifest_bytes": 10072026,
+    "combined_relationship_layer_bytes": 10470310,
+    "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+    "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+  },
+  "membership_distribution": {
+    "0": {
+      "actions": 626,
+      "exposures": 1894,
+      "products": 5682,
+      "bytes": 411456615633
+    },
+    "1": {
+      "actions": 1482,
+      "exposures": 5484,
+      "products": 16452,
+      "bytes": 1155766631037
+    },
+    "2": {
+      "actions": 54,
+      "exposures": 208,
+      "products": 624,
+      "bytes": 50177195369
+    },
+    "3": {
+      "actions": 4,
+      "exposures": 20,
+      "products": 60,
+      "bytes": 7880923304
+    }
+  },
+  "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+  "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+  "ledger_path": "results/stage10z-action-plan-membership.csv",
+  "ledger_bytes": 398284,
+  "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+    "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+    "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+    "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+    "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+  },
+  "checks": [
+    {
+      "id": "schedule_tag_guard_replays",
+      "pass": true
+    },
+    {
+      "id": "many_to_many_membership_structure",
+      "pass": true,
+      "metrics": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      }
+    },
+    {
+      "id": "deterministic_complete_membership_ledger",
+      "pass": true,
+      "ledger_path": "results\\stage10z-action-plan-membership.csv",
+      "rows": 2228,
+      "bytes": 398284,
+      "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "single_plan_membership_forced": false,
+        "unassigned_actions_retained": true,
+        "plan_windows_are_partition": false,
+        "overlap_deduplication_required": true,
+        "unassigned_actions_in_scope": true,
+        "target_inferred_from_plan": false,
+        "membership_is_independent_event": false,
+        "model_partition_assigned": false,
+        "scientific_discovery_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "force_single_plan_membership": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "force_single_plan_membership",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": true,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "drop_unassigned_actions": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "drop_unassigned_actions",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": false,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_plan_windows_a_partition": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "call_plan_windows_a_partition",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": true,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "sum_overlapping_windows_without_deduplication": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "sum_overlapping_windows_without_deduplication",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": false,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_unassigned_actions_out_of_scope": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "call_unassigned_actions_out_of_scope",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": false,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "infer_target_from_plan_membership": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "infer_target_from_plan_membership",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": true,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "call_membership_an_independent_event": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "call_membership_an_independent_event",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": true,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "assign_model_partition_from_membership": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "assign_model_partition_from_membership",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": true,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "claim_scientific_discovery_or_priority": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "claim_scientific_discovery_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_membership_ledger": {
+      "testbed_id": "artemis2-action-plan-membership-ledger-stage10z",
+      "mutation": "open_pixels_for_membership_ledger",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "membership": {
+        "complete_actions": 2166,
+        "plan_entries_with_target_and_window": 39,
+        "plan_windows_with_actions": 36,
+        "action_plan_relationships": 1602,
+        "ledger_rows_including_unmatched": 2228,
+        "actions_with_no_plan_membership": 626,
+        "actions_with_one_plan_membership": 1482,
+        "actions_with_two_plan_memberships": 54,
+        "actions_with_three_plan_memberships": 4,
+        "actions_with_multiple_plan_memberships": 58,
+        "maximum_plan_memberships_per_action": 3,
+        "assigned_action_share": 0.7109879963065558,
+        "multi_assigned_action_share": 0.02677746999076639,
+        "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+        "unique_assigned_exposures": 5712,
+        "window_summed_exposures": 5960,
+        "window_exposure_inflation": 0.04341736694677871,
+        "unique_assigned_products": 17136,
+        "window_summed_products": 17880,
+        "unique_assigned_bytes": 1213824749710,
+        "window_summed_bytes": 1279763791687,
+        "window_byte_inflation": 0.05432336257170055,
+        "unassigned_products": 5682,
+        "unassigned_bytes": 411456615633,
+        "unassigned_byte_share": 0.2531602369945133,
+        "relationship_manifest_bytes": 10072026,
+        "combined_relationship_layer_bytes": 10470310,
+        "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+        "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+      },
+      "membership_distribution": {
+        "0": {
+          "actions": 626,
+          "exposures": 1894,
+          "products": 5682,
+          "bytes": 411456615633
+        },
+        "1": {
+          "actions": 1482,
+          "exposures": 5484,
+          "products": 16452,
+          "bytes": 1155766631037
+        },
+        "2": {
+          "actions": 54,
+          "exposures": 208,
+          "products": 624,
+          "bytes": 50177195369
+        },
+        "3": {
+          "actions": 4,
+          "exposures": 20,
+          "products": 60,
+          "bytes": 7880923304
+        }
+      },
+      "verified": "Scheduled plan windows do not partition the 2,166 complete actions. Of those actions, 626 match no timed plan window, 1,482 match one, 54 match two, and four match three. The deterministic ledger preserves all actions and all 1,602 action-window relationships without forcing a single owner.",
+      "decision_use": "Use the ledger as a many-to-many join. Dropping unmatched actions would omit 25.316% of cohort bytes; summing overlapping plan windows without action-level deduplication would overcount assigned bytes by 5.432%.",
+      "ledger_path": "results/stage10z-action-plan-membership.csv",
+      "ledger_bytes": 398284,
+      "ledger_sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10Z may establish that scheduled-window membership is many-to-many and incomplete for the verified complete-action cohort: 626 actions match no timed plan window, 1,482 match one, 54 match two, and four match three. It may provide a deterministic 2,228-row ledger that preserves all 2,166 actions and all 1,602 action-window relationships. It may quantify that na\u00efvely summing plan-window totals would overcount assigned exposure rows by 4.342% and assigned bytes by 5.432%, while dropping unmatched actions would omit 25.316% of cohort bytes. It may establish that the two deterministic relationship ledgers total 10,470,310 bytes\u20140.000644% of the 1.625-TB cohort footprint. It cannot establish a canonical event ontology, independence, one true owner, target correctness, target imputation, a model partition, archive defect, scientific discovery, novelty, or priority.",
+      "next_step_logic": {
+        "if_schedule_bounded_analysis_is_selected": "Join through the membership ledger, retain unmatched actions, and deduplicate action identities when aggregating overlapping windows.",
+        "if_one_event_per_action_is_required": "Supply a task-native precedence or episode rule and test it separately; do not derive one from plan containment alone.",
+        "if_model_evaluation_is_selected": "Choose the deployment event oracle first, then map it onto this ledger; membership alone does not assign train/test partitions.",
+        "if_public_analysis_is_later_authorized": "Use the ledger as constructive proof that the archive can be made analysis-ready without flattening its experimental structure.",
+        "recheck_trigger": "A revised mission plan, authoritative event identifiers, a task-native episode oracle, or an archive refresh."
+      },
+      "checks": [
+        {
+          "id": "schedule_tag_guard_replays",
+          "pass": true
+        },
+        {
+          "id": "many_to_many_membership_structure",
+          "pass": true,
+          "metrics": {
+            "complete_actions": 2166,
+            "plan_entries_with_target_and_window": 39,
+            "plan_windows_with_actions": 36,
+            "action_plan_relationships": 1602,
+            "ledger_rows_including_unmatched": 2228,
+            "actions_with_no_plan_membership": 626,
+            "actions_with_one_plan_membership": 1482,
+            "actions_with_two_plan_memberships": 54,
+            "actions_with_three_plan_memberships": 4,
+            "actions_with_multiple_plan_memberships": 58,
+            "maximum_plan_memberships_per_action": 3,
+            "assigned_action_share": 0.7109879963065558,
+            "multi_assigned_action_share": 0.02677746999076639,
+            "relationship_inflation_over_unique_assigned_actions": 0.04025974025974026,
+            "unique_assigned_exposures": 5712,
+            "window_summed_exposures": 5960,
+            "window_exposure_inflation": 0.04341736694677871,
+            "unique_assigned_products": 17136,
+            "window_summed_products": 17880,
+            "unique_assigned_bytes": 1213824749710,
+            "window_summed_bytes": 1279763791687,
+            "window_byte_inflation": 0.05432336257170055,
+            "unassigned_products": 5682,
+            "unassigned_bytes": 411456615633,
+            "unassigned_byte_share": 0.2531602369945133,
+            "relationship_manifest_bytes": 10072026,
+            "combined_relationship_layer_bytes": 10470310,
+            "combined_relationship_layer_cohort_fraction": 6.442152247152813e-06,
+            "cohort_to_relationship_layer_byte_ratio": 155227.62605338334
+          },
+          "distribution": {
+            "0": {
+              "actions": 626,
+              "exposures": 1894,
+              "products": 5682,
+              "bytes": 411456615633
+            },
+            "1": {
+              "actions": 1482,
+              "exposures": 5484,
+              "products": 16452,
+              "bytes": 1155766631037
+            },
+            "2": {
+              "actions": 54,
+              "exposures": 208,
+              "products": 624,
+              "bytes": 50177195369
+            },
+            "3": {
+              "actions": 4,
+              "exposures": 20,
+              "products": 60,
+              "bytes": 7880923304
+            }
+          }
+        },
+        {
+          "id": "deterministic_complete_membership_ledger",
+          "pass": true,
+          "ledger_path": "results\\stage10z-action-plan-membership.csv",
+          "rows": 2228,
+          "bytes": 398284,
+          "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "single_plan_membership_forced": false,
+            "unassigned_actions_retained": true,
+            "plan_windows_are_partition": false,
+            "overlap_deduplication_required": true,
+            "unassigned_actions_in_scope": true,
+            "target_inferred_from_plan": false,
+            "membership_is_independent_event": false,
+            "model_partition_assigned": false,
+            "scientific_discovery_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited one-owner, dropping, partition, double-count, target, event, model, discovery, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

@@ -1,0 +1,199 @@
+{
+  "parent_path": "paper-review/order-robust-reconstruction/result.json",
+  "parent_sha256": "cee99d8716d628b70191e682af118e61ff2f78b5018066df424fb023f19a4d34",
+  "family": {
+    "family_id": "metadata-path-367ea6271b9585eb9da7d369150ec96662e99489560acd4d428f9df66d6a291a",
+    "slots": [
+      {
+        "metadata": {
+          "serial": "3920019",
+          "file_number": "0856",
+          "shutter_count": "3033",
+          "utc": "2026-04-07T01:06:17.480Z",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0"
+        },
+        "members": [
+          {
+            "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015987_nkz9019_raw_v01.tif",
+            "capture_key": "art002e015987",
+            "side_metadata": {
+              "flight_day": [
+                "6"
+              ],
+              "activity_id": [
+                "28_Eclipsed Moon (2/2)"
+              ],
+              "target_id": [
+                "Moon"
+              ]
+            },
+            "baseline_action_ids": [
+              "a2-action-1c22cc639e2f4792a76b8ca4"
+            ]
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "serial": "3920019",
+          "file_number": "0857",
+          "shutter_count": "3034",
+          "utc": "2026-04-07T01:06:18.070Z",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2"
+        },
+        "members": [
+          {
+            "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015988_nkz9019_raw_v01.tif",
+            "capture_key": "art002e015988",
+            "side_metadata": {
+              "flight_day": [
+                "6"
+              ],
+              "activity_id": [
+                "28_Eclipsed Moon (2/2)"
+              ],
+              "target_id": [
+                "Moon"
+              ]
+            },
+            "baseline_action_ids": [
+              "a2-action-1c22cc639e2f4792a76b8ca4"
+            ]
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "serial": "3920019",
+          "file_number": "0858",
+          "shutter_count": "3035",
+          "utc": "2026-04-07T01:06:18.270Z",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-1"
+        },
+        "members": [
+          {
+            "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015989_nkz9019_raw_v01.tif",
+            "capture_key": "art002e015989",
+            "side_metadata": {
+              "flight_day": [
+                "6"
+              ],
+              "activity_id": [
+                "28_Eclipsed Moon (2/2)"
+              ],
+              "target_id": [
+                "Moon"
+              ]
+            },
+            "baseline_action_ids": [
+              "a2-action-1c22cc639e2f4792a76b8ca4"
+            ]
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "serial": "3920019",
+          "file_number": "0859",
+          "shutter_count": "3036",
+          "utc": "2026-04-07T01:06:18.600Z",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+1"
+        },
+        "members": [
+          {
+            "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015990_nkz9019_raw_v01.tif",
+            "capture_key": "art002e015990",
+            "side_metadata": {
+              "flight_day": [
+                "6"
+              ],
+              "activity_id": [
+                "28_Eclipsed Moon (2/2)"
+              ],
+              "target_id": [
+                "Moon"
+              ]
+            },
+            "baseline_action_ids": [
+              "a2-action-1c22cc639e2f4792a76b8ca4"
+            ]
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "serial": "3920019",
+          "file_number": "0860",
+          "shutter_count": "3037",
+          "utc": "2026-04-07T01:06:19.780Z",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2"
+        },
+        "members": [
+          {
+            "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e009301_nkz9019_raw_v01.tif",
+            "capture_key": "art002e009301",
+            "side_metadata": {
+              "flight_day": [
+                "6"
+              ],
+              "activity_id": [
+                "28_Eclipsed Moon (2/2)"
+              ],
+              "target_id": [
+                "Moon"
+              ]
+            },
+            "baseline_action_ids": []
+          },
+          {
+            "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015991_nkz9019_raw_v01.tif",
+            "capture_key": "art002e015991",
+            "side_metadata": {
+              "flight_day": [
+                "6"
+              ],
+              "activity_id": [
+                "28_Eclipsed Moon (2/2)"
+              ],
+              "target_id": [
+                "Moon"
+              ]
+            },
+            "baseline_action_ids": [
+              "a2-action-1c22cc639e2f4792a76b8ca4"
+            ]
+          }
+        ]
+      }
+    ],
+    "native_path_count": 2,
+    "identity_alternative_slots": 1,
+    "status": "IDENTITY_ALTERNATIVES_ABSTAIN",
+    "competition_component_id": null
+  },
+  "alternatives": [
+    "art002e009301",
+    "art002e015991"
+  ],
+  "scope": "Exact derived family excerpt, not physical identity validation. Parent is verified by the private preparation command, not bundled or independently reconstructed by the portable app."
+}

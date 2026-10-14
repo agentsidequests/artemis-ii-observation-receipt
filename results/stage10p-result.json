@@ -1,0 +1,946 @@
+{
+  "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_FIVE_SECOND_CAPTURE_RUN_CONCENTRATION",
+  "largest_cluster": {
+    "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+    "products": 1230,
+    "capture_identities": 410,
+    "complete_actions": 82,
+    "archive_size_bytes": 75056509295,
+    "start_utc": "2026-04-07T00:34:34.540Z",
+    "end_utc": "2026-04-07T00:36:58.150Z",
+    "span_seconds": 143.61,
+    "camera_serials": [
+      "3500015"
+    ],
+    "activity_ids": [
+      "24_Sunset"
+    ],
+    "target_ids": [
+      "Sunset"
+    ],
+    "products_per_action": 15.0,
+    "action_product_rows": {
+      "5": 1230
+    },
+    "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+    "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+    "cohort_product_share": 0.05390481199053379,
+    "cohort_byte_share": 0.0461806250262151,
+    "top_five_actions": 263,
+    "top_five_products": 3441,
+    "top_five_action_share": 0.12142197599261312,
+    "top_five_product_share": 0.1508019984222982
+  },
+  "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+  "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+  "next_step_logic": {
+    "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+    "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+    "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+    "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+  },
+  "checks": [
+    {
+      "id": "stage10o_manifest_identity",
+      "pass": true
+    },
+    {
+      "id": "largest_five_second_cluster",
+      "pass": true,
+      "derived": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "cluster_kind": "conditional_temporal_adjacency",
+        "labels_correct": false,
+        "cluster_independent_sample": false,
+        "result_kind": "expected_crossing_hazard",
+        "scope": "largest_five_second_cluster_in_verified_cohort",
+        "performance_effect_inferred": false,
+        "global_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_cluster_a_semantic_scene": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "call_cluster_a_semantic_scene",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "semantic_scene",
+            "labels_correct": false,
+            "cluster_independent_sample": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "largest_five_second_cluster_in_verified_cohort",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_activity_or_target_labels_correct": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "call_activity_or_target_labels_correct",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "conditional_temporal_adjacency",
+            "labels_correct": true,
+            "cluster_independent_sample": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "largest_five_second_cluster_in_verified_cohort",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_cluster_an_independent_sample": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "call_cluster_an_independent_sample",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "conditional_temporal_adjacency",
+            "labels_correct": false,
+            "cluster_independent_sample": true,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "largest_five_second_cluster_in_verified_cohort",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_expected_crossing_observed_leakage": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "call_expected_crossing_observed_leakage",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "conditional_temporal_adjacency",
+            "labels_correct": false,
+            "cluster_independent_sample": false,
+            "result_kind": "observed_leakage",
+            "scope": "largest_five_second_cluster_in_verified_cohort",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "generalize_largest_cluster_to_archive": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "generalize_largest_cluster_to_archive",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "conditional_temporal_adjacency",
+            "labels_correct": false,
+            "cluster_independent_sample": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "all_archive_products",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "infer_model_performance_effect": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "infer_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "conditional_temporal_adjacency",
+            "labels_correct": false,
+            "cluster_independent_sample": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "largest_five_second_cluster_in_verified_cohort",
+            "performance_effect_inferred": true,
+            "global_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_global_priority": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "claim_global_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "conditional_temporal_adjacency",
+            "labels_correct": false,
+            "cluster_independent_sample": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "largest_five_second_cluster_in_verified_cohort",
+            "performance_effect_inferred": false,
+            "global_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_concentration_canary": {
+      "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+      "mutation": "open_pixels_for_concentration_canary",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "largest_cluster": {
+        "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "products": 1230,
+        "capture_identities": 410,
+        "complete_actions": 82,
+        "archive_size_bytes": 75056509295,
+        "start_utc": "2026-04-07T00:34:34.540Z",
+        "end_utc": "2026-04-07T00:36:58.150Z",
+        "span_seconds": 143.61,
+        "camera_serials": [
+          "3500015"
+        ],
+        "activity_ids": [
+          "24_Sunset"
+        ],
+        "target_ids": [
+          "Sunset"
+        ],
+        "products_per_action": 15.0,
+        "action_product_rows": {
+          "5": 1230
+        },
+        "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+        "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+        "cohort_product_share": 0.05390481199053379,
+        "cohort_byte_share": 0.0461806250262151,
+        "top_five_actions": 263,
+        "top_five_products": 3441,
+        "top_five_action_share": 0.12142197599261312,
+        "top_five_product_share": 0.1508019984222982
+      },
+      "verified": "The largest conditional five-second same-camera cluster contains 1,230 downloadable products representing 410 exposures and 82 complete five-exposure actions over 143.61 seconds. Its products total 75.056509295 GB. Every admitted row carries camera serial 3500015, activity 24_Sunset, and target Sunset.",
+      "decision_use": "Use this as the concrete microcase for why a flat file split can divide one structured capture run across evaluation partitions. The metadata establishes concentration and label concordance, not semantic scene identity or actual leakage.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+      "next_step_logic": {
+        "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+        "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+        "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+        "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+      },
+      "checks": [
+        {
+          "id": "stage10o_manifest_identity",
+          "pass": true
+        },
+        {
+          "id": "largest_five_second_cluster",
+          "pass": true,
+          "derived": {
+            "cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "products": 1230,
+            "capture_identities": 410,
+            "complete_actions": 82,
+            "archive_size_bytes": 75056509295,
+            "start_utc": "2026-04-07T00:34:34.540Z",
+            "end_utc": "2026-04-07T00:36:58.150Z",
+            "span_seconds": 143.61,
+            "camera_serials": [
+              "3500015"
+            ],
+            "activity_ids": [
+              "24_Sunset"
+            ],
+            "target_ids": [
+              "Sunset"
+            ],
+            "products_per_action": 15.0,
+            "action_product_rows": {
+              "5": 1230
+            },
+            "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+            "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+            "cohort_product_share": 0.05390481199053379,
+            "cohort_byte_share": 0.0461806250262151,
+            "top_five_actions": 263,
+            "top_five_products": 3441,
+            "top_five_action_share": 0.12142197599261312,
+            "top_five_product_share": 0.1508019984222982
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "cluster_kind": "conditional_temporal_adjacency",
+            "labels_correct": false,
+            "cluster_independent_sample": false,
+            "result_kind": "expected_crossing_hazard",
+            "scope": "largest_five_second_cluster_in_verified_cohort",
+            "performance_effect_inferred": false,
+            "global_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited scene, correctness, independence, observation, scope, performance, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

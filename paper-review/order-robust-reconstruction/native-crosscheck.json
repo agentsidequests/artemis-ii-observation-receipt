@@ -1,0 +1,16 @@
+{
+  "status": "PASS_NATIVE_SOURCE_MEMBERSHIP_AND_BASELINE_RECOUNT",
+  "checks": {
+    "source_native_ids": 10329,
+    "families": 2174,
+    "native_paths": 2225,
+    "exported_unique_native_ids": 7655,
+    "csv_rows": 7655,
+    "csv_unique_members": 7655,
+    "multi_id_slots": 23,
+    "baseline_actions": 2166,
+    "baseline_unambiguous": 2165,
+    "baseline_identity_ambiguous": 1
+  },
+  "limits": "Independently checks source fields, all matching-ID slot alternatives, counter/time/bracket constraints, original baseline coverage and CSV members. Not an independent enumeration of every full-snapshot path or physical validation."
+}

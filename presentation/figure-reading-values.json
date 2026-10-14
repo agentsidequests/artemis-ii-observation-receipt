@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "new_science": false,
+  "width": 720,
+  "minimum_data_label_size": 32,
+  "sources": [
+    {
+      "path": "results/stage11e-result.json",
+      "sha256": "17014bce9975af8f02e8aa3a1b8af54f033838672d4435268ef81c374abebce9"
+    },
+    {
+      "path": "results/stage11g-result.json",
+      "sha256": "1273a2d21bf5c8ffb7de649a1aff4372bce883f4c5b066babd08c1f97a9553ee"
+    },
+    {
+      "path": "results/stage11l-result.json",
+      "sha256": "7e7594c24b6442d668baa43c4b4648069a26994e9bf1d8f8b6a9a2facda6e027"
+    },
+    {
+      "path": "results/stage10x-result.json",
+      "sha256": "6c72cc055b13cfaae66cbe946410eb39622b39e0624ce943267e86af1e345dbf"
+    },
+    {
+      "path": "results/stage11s-result.json",
+      "sha256": "b9ad6eeb0652131d43474fdad2a56ff3283f459f2021be61b2dfb15c3d7c65f1"
+    },
+    {
+      "path": "results/stage11t-result.json",
+      "sha256": "cad913c1c24ebd6f83da4821e4620a793a33559d9eb83009b6b654c2dde4957f"
+    },
+    {
+      "path": "results/stage11u-selection-weighting-cascade.json",
+      "sha256": "bd651dc716d05fe0bdfb4f7cdebd6b85e3980a86f8a33bbf67ea5797794e54c0"
+    }
+  ],
+  "figures": [
+    {
+      "filename": "Artemis-II-Chart-1-One-Sunset.png",
+      "number": 1,
+      "title": "One Sunset. Four counts.",
+      "note": "Original frozen reconstruction, not certified physical counts or independent samples.",
+      "rows": [
+        {
+          "label": "Scheduled connected context",
+          "value": 1,
+          "unit": "context",
+          "color": "#FFB84D",
+          "maximum": null,
+          "detail": ""
+        },
+        {
+          "label": "Camera actions",
+          "value": 286,
+          "unit": "actions",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "Five exposure keys per action"
+        },
+        {
+          "label": "Capture keys",
+          "value": 1430,
+          "unit": "keys",
+          "color": "#7CA8FF",
+          "maximum": null,
+          "detail": "Three archive products per key"
+        },
+        {
+          "label": "Archive products",
+          "value": 4290,
+          "unit": "products",
+          "color": "#FF776D",
+          "maximum": null,
+          "detail": ""
+        }
+      ],
+      "kind": "flow",
+      "scale": ""
+    },
+    {
+      "filename": "Artemis-II-Chart-9-Selection-Weighting-Cascade.png",
+      "number": 2,
+      "title": "Same tag. Different share.",
+      "note": "Frozen metadata accounting. Not physical prevalence, model bias or observed pipeline behavior. Layer and action-carried sensitivities remain in the article.",
+      "rows": [
+        {
+          "label": "All source-exposure fields",
+          "value": 20.418090980804628,
+          "unit": "%",
+          "color": "#7CA8FF",
+          "maximum": 100,
+          "detail": "1,553 / 7,606"
+        },
+        {
+          "label": "Keep nonblank target fields",
+          "value": 45.5024904775857,
+          "unit": "%",
+          "color": "#59D7CA",
+          "maximum": 100,
+          "detail": "1,553 / 3,413"
+        },
+        {
+          "label": "Selected actions",
+          "value": 33.98907103825137,
+          "unit": "%",
+          "color": "#59D7CA",
+          "maximum": 100,
+          "detail": ""
+        },
+        {
+          "label": "Tagged exposures",
+          "value": 45.5024904775857,
+          "unit": "%",
+          "color": "#7CA8FF",
+          "maximum": 100,
+          "detail": ""
+        },
+        {
+          "label": "Derived products",
+          "value": 45.5024904775857,
+          "unit": "%",
+          "color": "#BDA0FF",
+          "maximum": 100,
+          "detail": ""
+        },
+        {
+          "label": "Attached bytes",
+          "value": 52.41285526548067,
+          "unit": "%",
+          "color": "#FFB84D",
+          "maximum": 100,
+          "detail": ""
+        }
+      ],
+      "kind": "rows",
+      "scale": "All tracks 0–100%; marker 50%. Filter: target_id IS NOT NULL AND target_id <> ''."
+    },
+    {
+      "filename": "Artemis-II-Chart-2-Hidden-Weight.png",
+      "number": 3,
+      "title": "The context stays fixed.",
+      "note": "Action-count reference, not an independence baseline. Descriptive shares, not a sampler or model effect.",
+      "rows": [
+        {
+          "label": "Camera actions",
+          "value": 13.204062788550322,
+          "unit": "%",
+          "color": "#7CA8FF",
+          "maximum": 25,
+          "detail": "Action-count reference"
+        },
+        {
+          "label": "Archive products",
+          "value": 18.800946621088617,
+          "unit": "%",
+          "color": "#FFB84D",
+          "maximum": 25,
+          "detail": "1.424× action share"
+        },
+        {
+          "label": "Archive bytes",
+          "value": 22.78532111354432,
+          "unit": "%",
+          "color": "#59D7CA",
+          "maximum": 25,
+          "detail": "1.726× action share"
+        }
+      ],
+      "kind": "rows",
+      "scale": "Every track 0–25%; values are shares of the whole cohort."
+    },
+    {
+      "filename": "Artemis-II-Chart-3-Rank-Reversal.png",
+      "number": 4,
+      "title": "Change the unit. Change the winner.",
+      "note": "Archive prominence, not scientific importance. The windows are the same; the units are not.",
+      "rows": [
+        {
+          "label": "ACTIONS: Guided Discussion",
+          "value": 76,
+          "unit": "actions",
+          "color": "#FFB84D",
+          "maximum": 80,
+          "detail": ""
+        },
+        {
+          "label": "ACTIONS: Earthset",
+          "value": 60,
+          "unit": "actions",
+          "color": "#59D7CA",
+          "maximum": 80,
+          "detail": ""
+        },
+        {
+          "label": "PRODUCTS: Guided Discussion",
+          "value": 684,
+          "unit": "products",
+          "color": "#FFB84D",
+          "maximum": 1000,
+          "detail": ""
+        },
+        {
+          "label": "PRODUCTS: Earthset",
+          "value": 900,
+          "unit": "products",
+          "color": "#59D7CA",
+          "maximum": 1000,
+          "detail": ""
+        }
+      ],
+      "kind": "rows",
+      "scale": "Action tracks 0–80. Product tracks 0–1,000. Compare within each unit."
+    },
+    {
+      "filename": "Artemis-II-Chart-7-Opportunity-Concentration.png",
+      "number": 5,
+      "title": "Thirty-six windows. Unequal weight.",
+      "note": "Nconcentration = 1 / sum(pᵢ²). Not effective sample size, independent events or a flight recommendation.",
+      "rows": [
+        {
+          "label": "Raw memberships: actions",
+          "value": 18.99998519330145,
+          "unit": "units",
+          "color": "#59D7CA",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Raw memberships: products",
+          "value": 16.823894158222735,
+          "unit": "units",
+          "color": "#FFB84D",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Raw memberships: bytes",
+          "value": 14.70313411080405,
+          "unit": "units",
+          "color": "#FF776D",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Fractional overlaps: actions",
+          "value": 18.03973671132567,
+          "unit": "units",
+          "color": "#59D7CA",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Fractional overlaps: products",
+          "value": 15.815014376869817,
+          "unit": "units",
+          "color": "#FFB84D",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Fractional overlaps: bytes",
+          "value": 13.595033296553533,
+          "unit": "units",
+          "color": "#FF776D",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Collapsed same-name overlaps: actions",
+          "value": 17.3316963372212,
+          "unit": "units",
+          "color": "#59D7CA",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Collapsed same-name overlaps: products",
+          "value": 15.317957915097795,
+          "unit": "units",
+          "color": "#FFB84D",
+          "maximum": 20,
+          "detail": ""
+        },
+        {
+          "label": "Collapsed same-name overlaps: bytes",
+          "value": 13.181026998196797,
+          "unit": "units",
+          "color": "#FF776D",
+          "maximum": 20,
+          "detail": ""
+        }
+      ],
+      "kind": "rows",
+      "scale": "All index tracks 0–20 concentration-equivalent window units. Equal original memberships would give 36."
+    },
+    {
+      "filename": "Artemis-II-Chart-4-Split-Hazard.png",
+      "number": 6,
+      "title": "A clean split can split an observation.",
+      "note": "Deterministic metadata canary, not an observed NASA sampler. Five seconds is a conditional relation, not a scene boundary. Zero crossings is only a declared-layer pass.",
+      "rows": [
+        {
+          "label": "Product-ID split",
+          "value": null,
+          "unit": "",
+          "color": "#FF776D",
+          "maximum": null,
+          "detail": "Action groups crossing: 1,937 / 2,166.\nFive-second groups crossing: 762 / 816."
+        },
+        {
+          "label": "Action-ID split",
+          "value": null,
+          "unit": "",
+          "color": "#FFB84D",
+          "maximum": null,
+          "detail": "Action groups crossing: 0 / 2,166.\nFive-second groups crossing: 157 / 816."
+        },
+        {
+          "label": "Five-second-group split",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "Action groups crossing: 0 / 2,166.\nFive-second groups crossing: 0 / 816."
+        }
+      ],
+      "kind": "rows",
+      "scale": ""
+    },
+    {
+      "filename": "Artemis-II-Chart-8-Attention-Conditioned-Detection.png",
+      "number": 7,
+      "title": "The observing process changed.",
+      "note": "Nonstationary opportunity. No prompt causation, one-to-one event mapping, detection probability or physical clustering is inferred.",
+      "rows": [
+        {
+          "label": "First report",
+          "value": null,
+          "unit": "",
+          "color": "#FFB84D",
+          "maximum": null,
+          "detail": "00:41:00.680 UTC"
+        },
+        {
+          "label": "Search intent",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "00:43:19.545 UTC"
+        },
+        {
+          "label": "Display dimmed",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "00:44:01.444 UTC"
+        },
+        {
+          "label": "Dedicated watch",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "00:44:59.421 UTC"
+        },
+        {
+          "label": "Shared report",
+          "value": null,
+          "unit": "",
+          "color": "#FFB84D",
+          "maximum": null,
+          "detail": "00:51:15.947 UTC"
+        },
+        {
+          "label": "Timeline return",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "00:53:19.564 UTC"
+        },
+        {
+          "label": "Ground query ends",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "00:59:05.829 UTC"
+        },
+        {
+          "label": "Prompt-proximate candidate",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "00:59:18.291 UTC"
+        },
+        {
+          "label": "Last clear report",
+          "value": null,
+          "unit": "",
+          "color": "#FFB84D",
+          "maximum": null,
+          "detail": "01:03:04.906 UTC"
+        }
+      ],
+      "kind": "timeline",
+      "scale": "Ordered anchors on 7 April 2026. Vertical spacing shows order, not elapsed time."
+    },
+    {
+      "filename": "Artemis-II-Chart-5-Archive-vs-Analysis.png",
+      "number": 8,
+      "title": "Keep identity. Add dependence.",
+      "note": "Illustrative pilot, not an accepted PDS or OGC carrier. Membership can be zero, one or many; unmatched is an alternative, not a simultaneous mapped state.",
+      "rows": [
+        {
+          "label": "PDS4 archive",
+          "value": null,
+          "unit": "",
+          "color": "#7CA8FF",
+          "maximum": null,
+          "detail": "Stable product identifiers and source lineage"
+        },
+        {
+          "label": "OGC training-data concepts",
+          "value": null,
+          "unit": "",
+          "color": "#BDA0FF",
+          "maximum": null,
+          "detail": "Task, sample, split role, provenance and quality"
+        },
+        {
+          "label": "Task companion",
+          "value": null,
+          "unit": "",
+          "color": "#FFB84D",
+          "maximum": null,
+          "detail": "Product → capture → action; declare protected relationships"
+        },
+        {
+          "label": "Window memberships",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "Preserve zero, one or many links. Do not force one owner."
+        }
+      ],
+      "kind": "flow",
+      "scale": ""
+    },
+    {
+      "filename": "Artemis-II-Chart-6-Task-Readiness.png",
+      "number": 9,
+      "title": "Readiness belongs to a task.",
+      "note": "Six bounded task states. No global ready/unusable verdict or specialist approval.",
+      "rows": [
+        {
+          "label": "Retrieval audit",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "Supported now. Products, identities, bytes"
+        },
+        {
+          "label": "Representation study",
+          "value": null,
+          "unit": "",
+          "color": "#59D7CA",
+          "maximum": null,
+          "detail": "Supported with limit. Keep sibling views together"
+        },
+        {
+          "label": "Within-event model",
+          "value": null,
+          "unit": "",
+          "color": "#FFB84D",
+          "maximum": null,
+          "detail": "Conditional. Freeze a deployment-shaped protocol"
+        },
+        {
+          "label": "Target classifier",
+          "value": null,
+          "unit": "",
+          "color": "#FF776D",
+          "maximum": null,
+          "detail": "Label audit needed. 44.872% tagged; camera associated with tags"
+        },
+        {
+          "label": "New-Sunset test",
+          "value": null,
+          "unit": "",
+          "color": "#BDA0FF",
+          "maximum": null,
+          "detail": "Second event needed. One scheduled event cannot test another"
+        },
+        {
+          "label": "Color / photometry",
+          "value": null,
+          "unit": "",
+          "color": "#7CA8FF",
+          "maximum": null,
+          "detail": "Calibration needed. Archived tiers alone are insufficient"
+        }
+      ],
+      "kind": "rows",
+      "scale": ""
+    }
+  ]
+}

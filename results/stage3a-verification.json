@@ -1,0 +1,3044 @@
+{
+  "baseline": {
+    "testbed_id": "artemis2-observation-execution-stage3a",
+    "version": "0.4.0",
+    "run_at_utc": "2026-10-09T20:07:32Z",
+    "mutation": "none",
+    "pass": true,
+    "evidence_state": "VERIFIED_PARTIAL_LEDGER",
+    "disposition": "CONTINUE_BOUNDED",
+    "plan_inventory": {
+      "numbered_targets": 30,
+      "schedule_controls": 9,
+      "exact_entry_anchors": 21,
+      "unresolved_entry_anchors": [
+        "Discussion #2: Near/Farside",
+        "Discussion #3: Farside Albedo/Color",
+        "Impact Flashes",
+        "Discussion #6: Forward Look",
+        "Eclipsed Moon (1/2)",
+        "Deep Space (1/2)",
+        "Eclipsed Moon (2/2)",
+        "Deep Space (2/2)",
+        "Sunrise"
+      ]
+    },
+    "schedule_summary": {
+      "early_anchor_count": 10,
+      "late_anchor_count": 11,
+      "on_time_anchor_count": 0,
+      "minimum_delta_seconds": -473.534,
+      "maximum_delta_seconds": 302.361,
+      "median_delta_seconds": 47.556,
+      "interpretation_limit": "Each delta compares a request timestamp with an explicit target-entry or recorder cue. It is an audit locator, not a physical-event time, dwell time, compliance score, or causal measure."
+    },
+    "entry_anchors": [
+      {
+        "id": "warmup",
+        "ltp_name": "Discussion #1: Warm up",
+        "planned_request_utc": "2026-04-06T18:45:00.000Z",
+        "entry_cue_utc": "2026-04-06T18:38:25.373Z",
+        "request_to_cue_delta_seconds": -394.627,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000028_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Hansen",
+        "cue_sha256": "47df603bca4a1e56b4ca9fbfd0bf9e5bf309d3e4d893c6182c5d71a184dc3bed",
+        "pass": true
+      },
+      {
+        "id": "glushko1",
+        "ltp_name": "Crater Duo: Glushko (1/2)",
+        "planned_request_utc": "2026-04-06T19:15:00.000Z",
+        "entry_cue_utc": "2026-04-06T19:10:39.785Z",
+        "request_to_cue_delta_seconds": -260.215,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Hansen",
+        "cue_sha256": "de37cd36a8e3c237a6284008aa8897adb002dd4d7e74aaa8858c80e7f603d09d",
+        "pass": true
+      },
+      {
+        "id": "ohm1",
+        "ltp_name": "Crater Duo: Ohm",
+        "planned_request_utc": "2026-04-06T19:23:00.000Z",
+        "entry_cue_utc": "2026-04-06T19:24:53.744Z",
+        "request_to_cue_delta_seconds": 113.744,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv",
+        "transcript_row": 3,
+        "speaker": "Hansen",
+        "cue_sha256": "1aa7d443811b2f830f920c1102e23610079a6a57493c1e8b42215686f7a3a035",
+        "pass": true
+      },
+      {
+        "id": "aristarchus",
+        "ltp_name": "Aristarchus Plateau",
+        "planned_request_utc": "2026-04-06T19:31:00.000Z",
+        "entry_cue_utc": "2026-04-06T19:33:16.723Z",
+        "request_to_cue_delta_seconds": 136.723,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000031_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Hansen",
+        "cue_sha256": "0b9fef2ec8dfa9e1aef330ef0ee8508d7268f475573cd2dfdbee61e058718862",
+        "pass": true
+      },
+      {
+        "id": "reiner",
+        "ltp_name": "Reiner Gamma",
+        "planned_request_utc": "2026-04-06T19:41:00.000Z",
+        "entry_cue_utc": "2026-04-06T19:41:47.556Z",
+        "request_to_cue_delta_seconds": 47.556,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000032_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Wiseman",
+        "cue_sha256": "f11df9ae5c3d0e4463efc72a0d7c092223509912f4da9ca732bcdc5feb7b792b",
+        "pass": true
+      },
+      {
+        "id": "wholemoon",
+        "ltp_name": "Whole Moon",
+        "planned_request_utc": "2026-04-06T20:05:00.000Z",
+        "entry_cue_utc": "2026-04-06T20:04:01.398Z",
+        "request_to_cue_delta_seconds": -58.602,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000034_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "7ae170796401976c5ead7b8e0278134315c930d2458d195c9172676e12a58591",
+        "pass": true
+      },
+      {
+        "id": "orientale1",
+        "ltp_name": "Orientale Basin (1/2)",
+        "planned_request_utc": "2026-04-06T20:15:00.000Z",
+        "entry_cue_utc": "2026-04-06T20:16:33.120Z",
+        "request_to_cue_delta_seconds": 93.12,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000035_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "526d728fc07c2a1aea893485ad1f95eb8df1b1803ba9ae9ddd5e58da301f1ce1",
+        "pass": true
+      },
+      {
+        "id": "crewchoice1",
+        "ltp_name": "Crew Choice #1",
+        "planned_request_utc": "2026-04-06T20:31:00.000Z",
+        "entry_cue_utc": "2026-04-06T20:34:15.826Z",
+        "request_to_cue_delta_seconds": 195.826,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000036_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "87d75f96b92fa96e2e3489b29e786e0a5dea3a725d42eff271dba48f1941843f",
+        "pass": true
+      },
+      {
+        "id": "glushko2",
+        "ltp_name": "Glushko Crater (2/2)",
+        "planned_request_utc": "2026-04-06T21:10:00.000Z",
+        "entry_cue_utc": "2026-04-06T21:02:35.278Z",
+        "request_to_cue_delta_seconds": -444.722,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv",
+        "transcript_row": 3,
+        "speaker": "Hansen",
+        "cue_sha256": "5377a0246ebd3607f2c67403ef9507faa7514c9ee0c68fac140498ed7e617503",
+        "pass": true
+      },
+      {
+        "id": "orientale2",
+        "ltp_name": "Orientale Basin (2/2)",
+        "planned_request_utc": "2026-04-06T21:18:00.000Z",
+        "entry_cue_utc": "2026-04-06T21:16:03.078Z",
+        "request_to_cue_delta_seconds": -116.922,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000039_pcd2_trn-csv_v01.csv",
+        "transcript_row": 4,
+        "speaker": "Hansen",
+        "cue_sha256": "edcccd3245ae88efc5df2f5c9b1981974950c2076ee71c688fcc2692beec9388",
+        "pass": true
+      },
+      {
+        "id": "hertzsprung",
+        "ltp_name": "Hertzsprung Basin",
+        "planned_request_utc": "2026-04-06T21:34:00.000Z",
+        "entry_cue_utc": "2026-04-06T21:35:45.524Z",
+        "request_to_cue_delta_seconds": 105.524,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000040_pcd2_trn-csv_v01.csv",
+        "transcript_row": 3,
+        "speaker": "Hansen",
+        "cue_sha256": "b9e6b26febe7173844c1251adf432a758a92a87f20a1ed6517b9bd5fe6e73979",
+        "pass": true
+      },
+      {
+        "id": "crewchoice2",
+        "ltp_name": "Crew Choice #2",
+        "planned_request_utc": "2026-04-06T21:42:00.000Z",
+        "entry_cue_utc": "2026-04-06T21:43:11.972Z",
+        "request_to_cue_delta_seconds": 71.972,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+        "transcript_row": 3,
+        "speaker": "Hansen",
+        "cue_sha256": "31c7916ac4fde467793d6d1e2efa8a177dd28113a0403024b0e3f95b4493e982",
+        "pass": true
+      },
+      {
+        "id": "discussion4",
+        "ltp_name": "Discussion #4: Terminator",
+        "planned_request_utc": "2026-04-06T21:50:00.000Z",
+        "entry_cue_utc": "2026-04-06T21:52:07.390Z",
+        "request_to_cue_delta_seconds": 127.39,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000042_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Hansen",
+        "cue_sha256": "dc978dad9797e08598958cd15eab0c657bfdd2261a360312ab8d3b70c09ec5ae",
+        "pass": true
+      },
+      {
+        "id": "ohm2",
+        "ltp_name": "Ohm Crater (2/2)",
+        "planned_request_utc": "2026-04-06T22:20:00.000Z",
+        "entry_cue_utc": "2026-04-06T22:15:47.775Z",
+        "request_to_cue_delta_seconds": -252.225,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "2a091cbfa0bba7be2b61272c66b3f0bc64eee475d715a6ed52cfbeadb6099c61",
+        "pass": true
+      },
+      {
+        "id": "limb",
+        "ltp_name": "Discussion #5: Limb",
+        "planned_request_utc": "2026-04-06T22:28:00.000Z",
+        "entry_cue_utc": "2026-04-06T22:26:19.059Z",
+        "request_to_cue_delta_seconds": -100.941,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000044_pcd2_trn-csv_v01.csv",
+        "transcript_row": 3,
+        "speaker": "Glover",
+        "cue_sha256": "25ec69f605c500d6a0d3946187030b5a58edd735b5c116ec46a11f8d92a88233",
+        "pass": true
+      },
+      {
+        "id": "earthset",
+        "ltp_name": "Earthset",
+        "planned_request_utc": "2026-04-06T22:38:00.000Z",
+        "entry_cue_utc": "2026-04-06T22:39:11.426Z",
+        "request_to_cue_delta_seconds": 71.426,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "357c9aaf94fa20d6aeec7ae38ca1955a9b74176e9c2c859105da49838d61d4d7",
+        "pass": true
+      },
+      {
+        "id": "vavilov",
+        "ltp_name": "Vavilov Crater",
+        "planned_request_utc": "2026-04-06T22:46:00.000Z",
+        "entry_cue_utc": "2026-04-06T22:45:13.701Z",
+        "request_to_cue_delta_seconds": -46.299,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "a727e5a0825e53cebf1126aced2fdedb40d499da7007d547dffcba179e966f08",
+        "pass": true
+      },
+      {
+        "id": "crewchoice3",
+        "ltp_name": "Crew Choice #3",
+        "planned_request_utc": "2026-04-06T22:54:00.000Z",
+        "entry_cue_utc": "2026-04-06T22:59:02.361Z",
+        "request_to_cue_delta_seconds": 302.361,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "0a809709a817336ae316c450a909b17d0fac2f5b281bb6502aef9f2791e751e4",
+        "pass": true
+      },
+      {
+        "id": "lofted_dust",
+        "ltp_name": "Lofted Lunar Dust",
+        "planned_request_utc": "2026-04-06T23:10:00.000Z",
+        "entry_cue_utc": "2026-04-06T23:11:14.352Z",
+        "request_to_cue_delta_seconds": 74.352,
+        "direction": "late",
+        "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "d1ec3752a68c16e8a315abfe0a4cd1d5a35002c1ca90aad97aa26438e0f3c414",
+        "pass": true
+      },
+      {
+        "id": "earthrise",
+        "ltp_name": "Earthrise",
+        "planned_request_utc": "2026-04-06T23:18:00.000Z",
+        "entry_cue_utc": "2026-04-06T23:16:25.893Z",
+        "request_to_cue_delta_seconds": -94.107,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+        "transcript_row": 2,
+        "speaker": "Glover",
+        "cue_sha256": "f6721bef84e47ccf5d4a2fb0800dcc0bb64a717f4eb6b97919730ea3c6b36dd1",
+        "pass": true
+      },
+      {
+        "id": "sunset",
+        "ltp_name": "Sunset",
+        "planned_request_utc": "2026-04-07T00:36:00.000Z",
+        "entry_cue_utc": "2026-04-07T00:28:06.466Z",
+        "request_to_cue_delta_seconds": -473.534,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+        "transcript_row": 3,
+        "speaker": "Hansen",
+        "cue_sha256": "02eb5a4e635ff35ac380e55450e3ee229582940f4506dedb66c2ad9c0ee6afa8",
+        "pass": true
+      }
+    ],
+    "attention_episodes": [
+      {
+        "id": "aristarchus_reiner_recovery",
+        "ltp_name": "Reiner Gamma",
+        "classification": "DOCUMENTATION_RECOVERY",
+        "first_cue_utc": "2026-04-06T19:46:14.978Z",
+        "last_cue_utc": "2026-04-06T19:46:33.103Z",
+        "transcript": "corpus/transcripts/art002a000033_pcd2_trn-csv_v01.csv",
+        "cues": [
+          {
+            "utc": "2026-04-06T19:46:14.978Z",
+            "speaker": "Hansen",
+            "transcript_row": 2,
+            "cue_sha256": "81c4a6af8d447172e9525e54352908daa097627c809859b5183206e608963371"
+          },
+          {
+            "utc": "2026-04-06T19:46:24.571Z",
+            "speaker": "Hansen",
+            "transcript_row": 3,
+            "cue_sha256": "6f133ebf672d1c948a938ac2ca951c0735332bc3f2558df2aa89c9c6921385a9"
+          },
+          {
+            "utc": "2026-04-06T19:46:33.103Z",
+            "speaker": "Hansen",
+            "transcript_row": 6,
+            "cue_sha256": "880298f741bbf9511ce3100fa614190c9634ed739abae1ec2f017127f68dfb64"
+          }
+        ],
+        "bounded_interpretation": "A communications failure did not erase all contemporaneous evidence; the crew explicitly identified recorder and note recovery paths. This blocks a missed-target inference.",
+        "counterevidence": null,
+        "independent_oracle": null,
+        "pass": true
+      },
+      {
+        "id": "vavilov_refocus",
+        "ltp_name": "Vavilov Crater",
+        "classification": "RESISTED_DIVERSION",
+        "first_cue_utc": "2026-04-06T22:45:23.339Z",
+        "last_cue_utc": "2026-04-06T22:45:23.339Z",
+        "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+        "cues": [
+          {
+            "utc": "2026-04-06T22:45:23.339Z",
+            "speaker": "Glover",
+            "transcript_row": 5,
+            "cue_sha256": "daa106ebb4939b37aee75f0c258fbd74c9ca5de05c0381ff1ff7b4953d6486fd"
+          }
+        ],
+        "bounded_interpretation": "The transcript explicitly names a salient alternative and a choice to retain the planned target. Salience is not displacement.",
+        "counterevidence": null,
+        "independent_oracle": null,
+        "pass": true
+      },
+      {
+        "id": "crew_choice_terminator",
+        "ltp_name": "Crew Choice #3",
+        "classification": "EXPECTED_CREW_CHOICE",
+        "first_cue_utc": "2026-04-06T22:59:15.776Z",
+        "last_cue_utc": "2026-04-06T23:02:07.980Z",
+        "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+        "cues": [
+          {
+            "utc": "2026-04-06T22:59:15.776Z",
+            "speaker": "Glover",
+            "transcript_row": 6,
+            "cue_sha256": "9bded8b4b2a07e7d6515e096fef14cdb6183e08c16a792c7ad23de32e8fcc005"
+          },
+          {
+            "utc": "2026-04-06T23:02:07.980Z",
+            "speaker": "Glover",
+            "transcript_row": 25,
+            "cue_sha256": "a599462316532674875d99afdcc5789d68908617c91bc0b66d5273dd5419251b"
+          }
+        ],
+        "bounded_interpretation": "Terminator attention occurred inside a free-choice period and is a hard negative for diversion.",
+        "counterevidence": null,
+        "independent_oracle": null,
+        "pass": true
+      },
+      {
+        "id": "impact_flash_recording_gap",
+        "ltp_name": "Impact Flashes",
+        "classification": "ENTRY_INTERVAL_CENSORED",
+        "first_cue_utc": "2026-04-06T23:11:17.215Z",
+        "last_cue_utc": "2026-04-06T23:11:41.982Z",
+        "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+        "cues": [
+          {
+            "utc": "2026-04-06T23:11:17.215Z",
+            "speaker": "Glover",
+            "transcript_row": 3,
+            "cue_sha256": "e80f1d5b34fe9b9cec9e7678bae7eb10e77ad6c6c759fcdda560ece2d7e41ecf"
+          },
+          {
+            "utc": "2026-04-06T23:11:41.982Z",
+            "speaker": "Glover",
+            "transcript_row": 6,
+            "cue_sha256": "806665c88af09e8d076cc9a5f750bb43fd48394775df371b6d1c98cfe2e28579"
+          }
+        ],
+        "bounded_interpretation": "The search began before its recorder cue, so entry time is bounded only as earlier than 23:11:17.215Z. The explicit negative observation is evidence of execution, not a missed target.",
+        "counterevidence": null,
+        "independent_oracle": null,
+        "pass": true
+      },
+      {
+        "id": "forward_look_flash_candidate",
+        "ltp_name": "Discussion #6: Forward Look",
+        "classification": "ATTENTION_SHIFT_CANDIDATE",
+        "first_cue_utc": "2026-04-07T00:44:59.421Z",
+        "last_cue_utc": "2026-04-07T00:53:19.564Z",
+        "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+        "cues": [
+          {
+            "utc": "2026-04-07T00:44:59.421Z",
+            "speaker": "Hansen",
+            "transcript_row": 231,
+            "cue_sha256": "4ec95842a0089a25bfc89df5fbf99698453083d64ac54e64c51ac53b50ce5d5d"
+          },
+          {
+            "utc": "2026-04-07T00:51:15.947Z",
+            "speaker": "Wiseman",
+            "transcript_row": 273,
+            "cue_sha256": "bf1b478e629a0e27f25f81b17409d3dee469bde655d2aedde5018d6b0bce05d6"
+          },
+          {
+            "utc": "2026-04-07T00:51:54.985Z",
+            "speaker": "Hansen",
+            "transcript_row": 280,
+            "cue_sha256": "424ef27bc3020429b2f7c23eda14d0430924b96fa3776dd781785a678bdc3ebb"
+          },
+          {
+            "utc": "2026-04-07T00:51:57.628Z",
+            "speaker": "Hansen",
+            "transcript_row": 281,
+            "cue_sha256": "137c347227ce70bf73bade1f23fa93c760d6d1460fc30e3d2cb9cf347e5885f5"
+          },
+          {
+            "utc": "2026-04-07T00:53:19.564Z",
+            "speaker": "Hansen",
+            "transcript_row": 291,
+            "cue_sha256": "1fe6e0f522a2dc77d5857d788b638dd9abcb7f5a34b074b21a5f70acd3b0d6a2"
+          }
+        ],
+        "bounded_interpretation": "Within the planned Forward Look window, flash-watching gained explicit attention, two crew reported the same pinpoint event, and the crew then re-synchronized to the timeline. The event and any displacement remain unvalidated.",
+        "counterevidence": "An earlier flash report in the same recording was followed by uncertainty about eclipse-glasses timing, and no independent image or instrument product is admitted here.",
+        "independent_oracle": false,
+        "pass": true
+      }
+    ],
+    "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+    "checks": [
+      {
+        "id": "corpus_identity",
+        "pass": true,
+        "observed": {
+          "file_count": 27,
+          "byte_count": 337208,
+          "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+        }
+      },
+      {
+        "id": "plan_inventory",
+        "pass": true,
+        "numbered_targets": 30,
+        "schedule_controls": 9
+      },
+      {
+        "id": "exact_entry_anchors",
+        "pass": true,
+        "observed": 21
+      },
+      {
+        "id": "silence_is_not_missed",
+        "pass": true,
+        "unresolved_entry_anchors": 9
+      },
+      {
+        "id": "attention_episode_oracles",
+        "pass": true,
+        "observed": 5
+      },
+      {
+        "id": "frozen_result",
+        "pass": true,
+        "observed": {
+          "evidence_state": "VERIFIED_PARTIAL_LEDGER",
+          "numbered_targets": 30,
+          "schedule_controls": 9,
+          "exact_entry_anchors": 21,
+          "unresolved_entry_anchors": 9,
+          "proven_missed_targets": 0,
+          "proven_diverted_targets": 0,
+          "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+          "disposition": "CONTINUE_BOUNDED"
+        }
+      }
+    ],
+    "errors": [],
+    "claim_ceiling": [
+      "The transcript contains exact target-entry anchors for 21 of 30 numbered plan entries.",
+      "Request-to-cue deltas vary in both directions and cannot be treated as uniform execution boundaries.",
+      "The frozen episodes establish one resisted diversion, one expected crew-choice allocation, one documentation recovery, and one interval-censored entry.",
+      "A two-observer flash candidate acquired attention during the Forward Look window and was followed by timeline re-synchronization.",
+      "No target is proven missed or diverted, and the flash is not independently validated."
+    ],
+    "next_step_logic": {
+      "recommended": "Run a label-first capture-friction and product-availability canary for 2026-04-07T00:51:15Z through 00:51:59Z before completing the remaining nine entry anchors or downloading broad imagery.",
+      "why": "The two-observer flash is the only Stage 3A candidate whose validation could materially change the scientific value of the archive; a tiny product check has higher information gain than expanding the ledger first.",
+      "fallback": "If no independently timed product covers the interval, complete Stage 3B for the nine unresolved entry anchors and keep the flash at transcript-candidate level.",
+      "stop": "Do not call the flash a lunar impact or claim planned work was displaced without an independent oracle and an explicit execution contrast."
+    }
+  },
+  "hard_negatives": {
+    "silence_means_missed": {
+      "testbed_id": "artemis2-observation-execution-stage3a",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:07:32Z",
+      "mutation": "silence_means_missed",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "plan_inventory": {
+        "numbered_targets": 30,
+        "schedule_controls": 9,
+        "exact_entry_anchors": 21,
+        "unresolved_entry_anchors": [
+          "Discussion #2: Near/Farside",
+          "Discussion #3: Farside Albedo/Color",
+          "Impact Flashes",
+          "Discussion #6: Forward Look",
+          "Eclipsed Moon (1/2)",
+          "Deep Space (1/2)",
+          "Eclipsed Moon (2/2)",
+          "Deep Space (2/2)",
+          "Sunrise"
+        ]
+      },
+      "schedule_summary": {
+        "early_anchor_count": 10,
+        "late_anchor_count": 11,
+        "on_time_anchor_count": 0,
+        "minimum_delta_seconds": -473.534,
+        "maximum_delta_seconds": 302.361,
+        "median_delta_seconds": 47.556,
+        "interpretation_limit": "Each delta compares a request timestamp with an explicit target-entry or recorder cue. It is an audit locator, not a physical-event time, dwell time, compliance score, or causal measure."
+      },
+      "entry_anchors": [
+        {
+          "id": "warmup",
+          "ltp_name": "Discussion #1: Warm up",
+          "planned_request_utc": "2026-04-06T18:45:00.000Z",
+          "entry_cue_utc": "2026-04-06T18:38:25.373Z",
+          "request_to_cue_delta_seconds": -394.627,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000028_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "47df603bca4a1e56b4ca9fbfd0bf9e5bf309d3e4d893c6182c5d71a184dc3bed",
+          "pass": true
+        },
+        {
+          "id": "glushko1",
+          "ltp_name": "Crater Duo: Glushko (1/2)",
+          "planned_request_utc": "2026-04-06T19:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:10:39.785Z",
+          "request_to_cue_delta_seconds": -260.215,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "de37cd36a8e3c237a6284008aa8897adb002dd4d7e74aaa8858c80e7f603d09d",
+          "pass": true
+        },
+        {
+          "id": "ohm1",
+          "ltp_name": "Crater Duo: Ohm",
+          "planned_request_utc": "2026-04-06T19:23:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:24:53.744Z",
+          "request_to_cue_delta_seconds": 113.744,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "1aa7d443811b2f830f920c1102e23610079a6a57493c1e8b42215686f7a3a035",
+          "pass": true
+        },
+        {
+          "id": "aristarchus",
+          "ltp_name": "Aristarchus Plateau",
+          "planned_request_utc": "2026-04-06T19:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:33:16.723Z",
+          "request_to_cue_delta_seconds": 136.723,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000031_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "0b9fef2ec8dfa9e1aef330ef0ee8508d7268f475573cd2dfdbee61e058718862",
+          "pass": true
+        },
+        {
+          "id": "reiner",
+          "ltp_name": "Reiner Gamma",
+          "planned_request_utc": "2026-04-06T19:41:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:41:47.556Z",
+          "request_to_cue_delta_seconds": 47.556,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000032_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Wiseman",
+          "cue_sha256": "f11df9ae5c3d0e4463efc72a0d7c092223509912f4da9ca732bcdc5feb7b792b",
+          "pass": true
+        },
+        {
+          "id": "wholemoon",
+          "ltp_name": "Whole Moon",
+          "planned_request_utc": "2026-04-06T20:05:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:04:01.398Z",
+          "request_to_cue_delta_seconds": -58.602,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000034_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "7ae170796401976c5ead7b8e0278134315c930d2458d195c9172676e12a58591",
+          "pass": true
+        },
+        {
+          "id": "orientale1",
+          "ltp_name": "Orientale Basin (1/2)",
+          "planned_request_utc": "2026-04-06T20:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:16:33.120Z",
+          "request_to_cue_delta_seconds": 93.12,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000035_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "526d728fc07c2a1aea893485ad1f95eb8df1b1803ba9ae9ddd5e58da301f1ce1",
+          "pass": true
+        },
+        {
+          "id": "crewchoice1",
+          "ltp_name": "Crew Choice #1",
+          "planned_request_utc": "2026-04-06T20:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:34:15.826Z",
+          "request_to_cue_delta_seconds": 195.826,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000036_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "87d75f96b92fa96e2e3489b29e786e0a5dea3a725d42eff271dba48f1941843f",
+          "pass": true
+        },
+        {
+          "id": "glushko2",
+          "ltp_name": "Glushko Crater (2/2)",
+          "planned_request_utc": "2026-04-06T21:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:02:35.278Z",
+          "request_to_cue_delta_seconds": -444.722,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "5377a0246ebd3607f2c67403ef9507faa7514c9ee0c68fac140498ed7e617503",
+          "pass": true
+        },
+        {
+          "id": "orientale2",
+          "ltp_name": "Orientale Basin (2/2)",
+          "planned_request_utc": "2026-04-06T21:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:16:03.078Z",
+          "request_to_cue_delta_seconds": -116.922,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000039_pcd2_trn-csv_v01.csv",
+          "transcript_row": 4,
+          "speaker": "Hansen",
+          "cue_sha256": "edcccd3245ae88efc5df2f5c9b1981974950c2076ee71c688fcc2692beec9388",
+          "pass": true
+        },
+        {
+          "id": "hertzsprung",
+          "ltp_name": "Hertzsprung Basin",
+          "planned_request_utc": "2026-04-06T21:34:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:35:45.524Z",
+          "request_to_cue_delta_seconds": 105.524,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000040_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "b9e6b26febe7173844c1251adf432a758a92a87f20a1ed6517b9bd5fe6e73979",
+          "pass": true
+        },
+        {
+          "id": "crewchoice2",
+          "ltp_name": "Crew Choice #2",
+          "planned_request_utc": "2026-04-06T21:42:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:43:11.972Z",
+          "request_to_cue_delta_seconds": 71.972,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "31c7916ac4fde467793d6d1e2efa8a177dd28113a0403024b0e3f95b4493e982",
+          "pass": true
+        },
+        {
+          "id": "discussion4",
+          "ltp_name": "Discussion #4: Terminator",
+          "planned_request_utc": "2026-04-06T21:50:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:52:07.390Z",
+          "request_to_cue_delta_seconds": 127.39,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000042_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "dc978dad9797e08598958cd15eab0c657bfdd2261a360312ab8d3b70c09ec5ae",
+          "pass": true
+        },
+        {
+          "id": "ohm2",
+          "ltp_name": "Ohm Crater (2/2)",
+          "planned_request_utc": "2026-04-06T22:20:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:15:47.775Z",
+          "request_to_cue_delta_seconds": -252.225,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "2a091cbfa0bba7be2b61272c66b3f0bc64eee475d715a6ed52cfbeadb6099c61",
+          "pass": true
+        },
+        {
+          "id": "limb",
+          "ltp_name": "Discussion #5: Limb",
+          "planned_request_utc": "2026-04-06T22:28:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:26:19.059Z",
+          "request_to_cue_delta_seconds": -100.941,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000044_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Glover",
+          "cue_sha256": "25ec69f605c500d6a0d3946187030b5a58edd735b5c116ec46a11f8d92a88233",
+          "pass": true
+        },
+        {
+          "id": "earthset",
+          "ltp_name": "Earthset",
+          "planned_request_utc": "2026-04-06T22:38:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:39:11.426Z",
+          "request_to_cue_delta_seconds": 71.426,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "357c9aaf94fa20d6aeec7ae38ca1955a9b74176e9c2c859105da49838d61d4d7",
+          "pass": true
+        },
+        {
+          "id": "vavilov",
+          "ltp_name": "Vavilov Crater",
+          "planned_request_utc": "2026-04-06T22:46:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:45:13.701Z",
+          "request_to_cue_delta_seconds": -46.299,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "a727e5a0825e53cebf1126aced2fdedb40d499da7007d547dffcba179e966f08",
+          "pass": true
+        },
+        {
+          "id": "crewchoice3",
+          "ltp_name": "Crew Choice #3",
+          "planned_request_utc": "2026-04-06T22:54:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:59:02.361Z",
+          "request_to_cue_delta_seconds": 302.361,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "0a809709a817336ae316c450a909b17d0fac2f5b281bb6502aef9f2791e751e4",
+          "pass": true
+        },
+        {
+          "id": "lofted_dust",
+          "ltp_name": "Lofted Lunar Dust",
+          "planned_request_utc": "2026-04-06T23:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:11:14.352Z",
+          "request_to_cue_delta_seconds": 74.352,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "d1ec3752a68c16e8a315abfe0a4cd1d5a35002c1ca90aad97aa26438e0f3c414",
+          "pass": true
+        },
+        {
+          "id": "earthrise",
+          "ltp_name": "Earthrise",
+          "planned_request_utc": "2026-04-06T23:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:16:25.893Z",
+          "request_to_cue_delta_seconds": -94.107,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "f6721bef84e47ccf5d4a2fb0800dcc0bb64a717f4eb6b97919730ea3c6b36dd1",
+          "pass": true
+        },
+        {
+          "id": "sunset",
+          "ltp_name": "Sunset",
+          "planned_request_utc": "2026-04-07T00:36:00.000Z",
+          "entry_cue_utc": "2026-04-07T00:28:06.466Z",
+          "request_to_cue_delta_seconds": -473.534,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "02eb5a4e635ff35ac380e55450e3ee229582940f4506dedb66c2ad9c0ee6afa8",
+          "pass": true
+        }
+      ],
+      "attention_episodes": [
+        {
+          "id": "aristarchus_reiner_recovery",
+          "ltp_name": "Reiner Gamma",
+          "classification": "DOCUMENTATION_RECOVERY",
+          "first_cue_utc": "2026-04-06T19:46:14.978Z",
+          "last_cue_utc": "2026-04-06T19:46:33.103Z",
+          "transcript": "corpus/transcripts/art002a000033_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T19:46:14.978Z",
+              "speaker": "Hansen",
+              "transcript_row": 2,
+              "cue_sha256": "81c4a6af8d447172e9525e54352908daa097627c809859b5183206e608963371"
+            },
+            {
+              "utc": "2026-04-06T19:46:24.571Z",
+              "speaker": "Hansen",
+              "transcript_row": 3,
+              "cue_sha256": "6f133ebf672d1c948a938ac2ca951c0735332bc3f2558df2aa89c9c6921385a9"
+            },
+            {
+              "utc": "2026-04-06T19:46:33.103Z",
+              "speaker": "Hansen",
+              "transcript_row": 6,
+              "cue_sha256": "880298f741bbf9511ce3100fa614190c9634ed739abae1ec2f017127f68dfb64"
+            }
+          ],
+          "bounded_interpretation": "A communications failure did not erase all contemporaneous evidence; the crew explicitly identified recorder and note recovery paths. This blocks a missed-target inference.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "vavilov_refocus",
+          "ltp_name": "Vavilov Crater",
+          "classification": "RESISTED_DIVERSION",
+          "first_cue_utc": "2026-04-06T22:45:23.339Z",
+          "last_cue_utc": "2026-04-06T22:45:23.339Z",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:45:23.339Z",
+              "speaker": "Glover",
+              "transcript_row": 5,
+              "cue_sha256": "daa106ebb4939b37aee75f0c258fbd74c9ca5de05c0381ff1ff7b4953d6486fd"
+            }
+          ],
+          "bounded_interpretation": "The transcript explicitly names a salient alternative and a choice to retain the planned target. Salience is not displacement.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "crew_choice_terminator",
+          "ltp_name": "Crew Choice #3",
+          "classification": "EXPECTED_CREW_CHOICE",
+          "first_cue_utc": "2026-04-06T22:59:15.776Z",
+          "last_cue_utc": "2026-04-06T23:02:07.980Z",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:59:15.776Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "9bded8b4b2a07e7d6515e096fef14cdb6183e08c16a792c7ad23de32e8fcc005"
+            },
+            {
+              "utc": "2026-04-06T23:02:07.980Z",
+              "speaker": "Glover",
+              "transcript_row": 25,
+              "cue_sha256": "a599462316532674875d99afdcc5789d68908617c91bc0b66d5273dd5419251b"
+            }
+          ],
+          "bounded_interpretation": "Terminator attention occurred inside a free-choice period and is a hard negative for diversion.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "impact_flash_recording_gap",
+          "ltp_name": "Impact Flashes",
+          "classification": "ENTRY_INTERVAL_CENSORED",
+          "first_cue_utc": "2026-04-06T23:11:17.215Z",
+          "last_cue_utc": "2026-04-06T23:11:41.982Z",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T23:11:17.215Z",
+              "speaker": "Glover",
+              "transcript_row": 3,
+              "cue_sha256": "e80f1d5b34fe9b9cec9e7678bae7eb10e77ad6c6c759fcdda560ece2d7e41ecf"
+            },
+            {
+              "utc": "2026-04-06T23:11:41.982Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "806665c88af09e8d076cc9a5f750bb43fd48394775df371b6d1c98cfe2e28579"
+            }
+          ],
+          "bounded_interpretation": "The search began before its recorder cue, so entry time is bounded only as earlier than 23:11:17.215Z. The explicit negative observation is evidence of execution, not a missed target.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "forward_look_flash_candidate",
+          "ltp_name": "Discussion #6: Forward Look",
+          "classification": "ATTENTION_SHIFT_CANDIDATE",
+          "first_cue_utc": "2026-04-07T00:44:59.421Z",
+          "last_cue_utc": "2026-04-07T00:53:19.564Z",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-07T00:44:59.421Z",
+              "speaker": "Hansen",
+              "transcript_row": 231,
+              "cue_sha256": "4ec95842a0089a25bfc89df5fbf99698453083d64ac54e64c51ac53b50ce5d5d"
+            },
+            {
+              "utc": "2026-04-07T00:51:15.947Z",
+              "speaker": "Wiseman",
+              "transcript_row": 273,
+              "cue_sha256": "bf1b478e629a0e27f25f81b17409d3dee469bde655d2aedde5018d6b0bce05d6"
+            },
+            {
+              "utc": "2026-04-07T00:51:54.985Z",
+              "speaker": "Hansen",
+              "transcript_row": 280,
+              "cue_sha256": "424ef27bc3020429b2f7c23eda14d0430924b96fa3776dd781785a678bdc3ebb"
+            },
+            {
+              "utc": "2026-04-07T00:51:57.628Z",
+              "speaker": "Hansen",
+              "transcript_row": 281,
+              "cue_sha256": "137c347227ce70bf73bade1f23fa93c760d6d1460fc30e3d2cb9cf347e5885f5"
+            },
+            {
+              "utc": "2026-04-07T00:53:19.564Z",
+              "speaker": "Hansen",
+              "transcript_row": 291,
+              "cue_sha256": "1fe6e0f522a2dc77d5857d788b638dd9abcb7f5a34b074b21a5f70acd3b0d6a2"
+            }
+          ],
+          "bounded_interpretation": "Within the planned Forward Look window, flash-watching gained explicit attention, two crew reported the same pinpoint event, and the crew then re-synchronized to the timeline. The event and any displacement remain unvalidated.",
+          "counterevidence": "An earlier flash report in the same recording was followed by uncertainty about eclipse-glasses timing, and no independent image or instrument product is admitted here.",
+          "independent_oracle": false,
+          "pass": true
+        }
+      ],
+      "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "plan_inventory",
+          "pass": true,
+          "numbered_targets": 30,
+          "schedule_controls": 9
+        },
+        {
+          "id": "exact_entry_anchors",
+          "pass": true,
+          "observed": 21
+        },
+        {
+          "id": "silence_is_not_missed",
+          "pass": false,
+          "unresolved_entry_anchors": 9
+        },
+        {
+          "id": "attention_episode_oracles",
+          "pass": true,
+          "observed": 5
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "numbered_targets": 30,
+            "schedule_controls": 9,
+            "exact_entry_anchors": 21,
+            "unresolved_entry_anchors": 9,
+            "proven_missed_targets": 0,
+            "proven_diverted_targets": 0,
+            "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Silence or a missing exact entry cue cannot establish MISSED",
+        "Observed Stage 3A result differs from the frozen contract"
+      ],
+      "claim_ceiling": [
+        "The transcript contains exact target-entry anchors for 21 of 30 numbered plan entries.",
+        "Request-to-cue deltas vary in both directions and cannot be treated as uniform execution boundaries.",
+        "The frozen episodes establish one resisted diversion, one expected crew-choice allocation, one documentation recovery, and one interval-censored entry.",
+        "A two-observer flash candidate acquired attention during the Forward Look window and was followed by timeline re-synchronization.",
+        "No target is proven missed or diverted, and the flash is not independently validated."
+      ],
+      "next_step_logic": null
+    },
+    "crew_choice_means_diverted": {
+      "testbed_id": "artemis2-observation-execution-stage3a",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:07:32Z",
+      "mutation": "crew_choice_means_diverted",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "plan_inventory": {
+        "numbered_targets": 30,
+        "schedule_controls": 9,
+        "exact_entry_anchors": 21,
+        "unresolved_entry_anchors": [
+          "Discussion #2: Near/Farside",
+          "Discussion #3: Farside Albedo/Color",
+          "Impact Flashes",
+          "Discussion #6: Forward Look",
+          "Eclipsed Moon (1/2)",
+          "Deep Space (1/2)",
+          "Eclipsed Moon (2/2)",
+          "Deep Space (2/2)",
+          "Sunrise"
+        ]
+      },
+      "schedule_summary": {
+        "early_anchor_count": 10,
+        "late_anchor_count": 11,
+        "on_time_anchor_count": 0,
+        "minimum_delta_seconds": -473.534,
+        "maximum_delta_seconds": 302.361,
+        "median_delta_seconds": 47.556,
+        "interpretation_limit": "Each delta compares a request timestamp with an explicit target-entry or recorder cue. It is an audit locator, not a physical-event time, dwell time, compliance score, or causal measure."
+      },
+      "entry_anchors": [
+        {
+          "id": "warmup",
+          "ltp_name": "Discussion #1: Warm up",
+          "planned_request_utc": "2026-04-06T18:45:00.000Z",
+          "entry_cue_utc": "2026-04-06T18:38:25.373Z",
+          "request_to_cue_delta_seconds": -394.627,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000028_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "47df603bca4a1e56b4ca9fbfd0bf9e5bf309d3e4d893c6182c5d71a184dc3bed",
+          "pass": true
+        },
+        {
+          "id": "glushko1",
+          "ltp_name": "Crater Duo: Glushko (1/2)",
+          "planned_request_utc": "2026-04-06T19:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:10:39.785Z",
+          "request_to_cue_delta_seconds": -260.215,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "de37cd36a8e3c237a6284008aa8897adb002dd4d7e74aaa8858c80e7f603d09d",
+          "pass": true
+        },
+        {
+          "id": "ohm1",
+          "ltp_name": "Crater Duo: Ohm",
+          "planned_request_utc": "2026-04-06T19:23:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:24:53.744Z",
+          "request_to_cue_delta_seconds": 113.744,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "1aa7d443811b2f830f920c1102e23610079a6a57493c1e8b42215686f7a3a035",
+          "pass": true
+        },
+        {
+          "id": "aristarchus",
+          "ltp_name": "Aristarchus Plateau",
+          "planned_request_utc": "2026-04-06T19:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:33:16.723Z",
+          "request_to_cue_delta_seconds": 136.723,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000031_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "0b9fef2ec8dfa9e1aef330ef0ee8508d7268f475573cd2dfdbee61e058718862",
+          "pass": true
+        },
+        {
+          "id": "reiner",
+          "ltp_name": "Reiner Gamma",
+          "planned_request_utc": "2026-04-06T19:41:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:41:47.556Z",
+          "request_to_cue_delta_seconds": 47.556,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000032_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Wiseman",
+          "cue_sha256": "f11df9ae5c3d0e4463efc72a0d7c092223509912f4da9ca732bcdc5feb7b792b",
+          "pass": true
+        },
+        {
+          "id": "wholemoon",
+          "ltp_name": "Whole Moon",
+          "planned_request_utc": "2026-04-06T20:05:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:04:01.398Z",
+          "request_to_cue_delta_seconds": -58.602,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000034_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "7ae170796401976c5ead7b8e0278134315c930d2458d195c9172676e12a58591",
+          "pass": true
+        },
+        {
+          "id": "orientale1",
+          "ltp_name": "Orientale Basin (1/2)",
+          "planned_request_utc": "2026-04-06T20:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:16:33.120Z",
+          "request_to_cue_delta_seconds": 93.12,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000035_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "526d728fc07c2a1aea893485ad1f95eb8df1b1803ba9ae9ddd5e58da301f1ce1",
+          "pass": true
+        },
+        {
+          "id": "crewchoice1",
+          "ltp_name": "Crew Choice #1",
+          "planned_request_utc": "2026-04-06T20:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:34:15.826Z",
+          "request_to_cue_delta_seconds": 195.826,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000036_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "87d75f96b92fa96e2e3489b29e786e0a5dea3a725d42eff271dba48f1941843f",
+          "pass": true
+        },
+        {
+          "id": "glushko2",
+          "ltp_name": "Glushko Crater (2/2)",
+          "planned_request_utc": "2026-04-06T21:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:02:35.278Z",
+          "request_to_cue_delta_seconds": -444.722,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "5377a0246ebd3607f2c67403ef9507faa7514c9ee0c68fac140498ed7e617503",
+          "pass": true
+        },
+        {
+          "id": "orientale2",
+          "ltp_name": "Orientale Basin (2/2)",
+          "planned_request_utc": "2026-04-06T21:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:16:03.078Z",
+          "request_to_cue_delta_seconds": -116.922,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000039_pcd2_trn-csv_v01.csv",
+          "transcript_row": 4,
+          "speaker": "Hansen",
+          "cue_sha256": "edcccd3245ae88efc5df2f5c9b1981974950c2076ee71c688fcc2692beec9388",
+          "pass": true
+        },
+        {
+          "id": "hertzsprung",
+          "ltp_name": "Hertzsprung Basin",
+          "planned_request_utc": "2026-04-06T21:34:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:35:45.524Z",
+          "request_to_cue_delta_seconds": 105.524,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000040_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "b9e6b26febe7173844c1251adf432a758a92a87f20a1ed6517b9bd5fe6e73979",
+          "pass": true
+        },
+        {
+          "id": "crewchoice2",
+          "ltp_name": "Crew Choice #2",
+          "planned_request_utc": "2026-04-06T21:42:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:43:11.972Z",
+          "request_to_cue_delta_seconds": 71.972,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "31c7916ac4fde467793d6d1e2efa8a177dd28113a0403024b0e3f95b4493e982",
+          "pass": true
+        },
+        {
+          "id": "discussion4",
+          "ltp_name": "Discussion #4: Terminator",
+          "planned_request_utc": "2026-04-06T21:50:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:52:07.390Z",
+          "request_to_cue_delta_seconds": 127.39,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000042_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "dc978dad9797e08598958cd15eab0c657bfdd2261a360312ab8d3b70c09ec5ae",
+          "pass": true
+        },
+        {
+          "id": "ohm2",
+          "ltp_name": "Ohm Crater (2/2)",
+          "planned_request_utc": "2026-04-06T22:20:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:15:47.775Z",
+          "request_to_cue_delta_seconds": -252.225,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "2a091cbfa0bba7be2b61272c66b3f0bc64eee475d715a6ed52cfbeadb6099c61",
+          "pass": true
+        },
+        {
+          "id": "limb",
+          "ltp_name": "Discussion #5: Limb",
+          "planned_request_utc": "2026-04-06T22:28:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:26:19.059Z",
+          "request_to_cue_delta_seconds": -100.941,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000044_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Glover",
+          "cue_sha256": "25ec69f605c500d6a0d3946187030b5a58edd735b5c116ec46a11f8d92a88233",
+          "pass": true
+        },
+        {
+          "id": "earthset",
+          "ltp_name": "Earthset",
+          "planned_request_utc": "2026-04-06T22:38:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:39:11.426Z",
+          "request_to_cue_delta_seconds": 71.426,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "357c9aaf94fa20d6aeec7ae38ca1955a9b74176e9c2c859105da49838d61d4d7",
+          "pass": true
+        },
+        {
+          "id": "vavilov",
+          "ltp_name": "Vavilov Crater",
+          "planned_request_utc": "2026-04-06T22:46:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:45:13.701Z",
+          "request_to_cue_delta_seconds": -46.299,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "a727e5a0825e53cebf1126aced2fdedb40d499da7007d547dffcba179e966f08",
+          "pass": true
+        },
+        {
+          "id": "crewchoice3",
+          "ltp_name": "Crew Choice #3",
+          "planned_request_utc": "2026-04-06T22:54:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:59:02.361Z",
+          "request_to_cue_delta_seconds": 302.361,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "0a809709a817336ae316c450a909b17d0fac2f5b281bb6502aef9f2791e751e4",
+          "pass": true
+        },
+        {
+          "id": "lofted_dust",
+          "ltp_name": "Lofted Lunar Dust",
+          "planned_request_utc": "2026-04-06T23:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:11:14.352Z",
+          "request_to_cue_delta_seconds": 74.352,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "d1ec3752a68c16e8a315abfe0a4cd1d5a35002c1ca90aad97aa26438e0f3c414",
+          "pass": true
+        },
+        {
+          "id": "earthrise",
+          "ltp_name": "Earthrise",
+          "planned_request_utc": "2026-04-06T23:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:16:25.893Z",
+          "request_to_cue_delta_seconds": -94.107,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "f6721bef84e47ccf5d4a2fb0800dcc0bb64a717f4eb6b97919730ea3c6b36dd1",
+          "pass": true
+        },
+        {
+          "id": "sunset",
+          "ltp_name": "Sunset",
+          "planned_request_utc": "2026-04-07T00:36:00.000Z",
+          "entry_cue_utc": "2026-04-07T00:28:06.466Z",
+          "request_to_cue_delta_seconds": -473.534,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "02eb5a4e635ff35ac380e55450e3ee229582940f4506dedb66c2ad9c0ee6afa8",
+          "pass": true
+        }
+      ],
+      "attention_episodes": [
+        {
+          "id": "aristarchus_reiner_recovery",
+          "ltp_name": "Reiner Gamma",
+          "classification": "DOCUMENTATION_RECOVERY",
+          "first_cue_utc": "2026-04-06T19:46:14.978Z",
+          "last_cue_utc": "2026-04-06T19:46:33.103Z",
+          "transcript": "corpus/transcripts/art002a000033_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T19:46:14.978Z",
+              "speaker": "Hansen",
+              "transcript_row": 2,
+              "cue_sha256": "81c4a6af8d447172e9525e54352908daa097627c809859b5183206e608963371"
+            },
+            {
+              "utc": "2026-04-06T19:46:24.571Z",
+              "speaker": "Hansen",
+              "transcript_row": 3,
+              "cue_sha256": "6f133ebf672d1c948a938ac2ca951c0735332bc3f2558df2aa89c9c6921385a9"
+            },
+            {
+              "utc": "2026-04-06T19:46:33.103Z",
+              "speaker": "Hansen",
+              "transcript_row": 6,
+              "cue_sha256": "880298f741bbf9511ce3100fa614190c9634ed739abae1ec2f017127f68dfb64"
+            }
+          ],
+          "bounded_interpretation": "A communications failure did not erase all contemporaneous evidence; the crew explicitly identified recorder and note recovery paths. This blocks a missed-target inference.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "vavilov_refocus",
+          "ltp_name": "Vavilov Crater",
+          "classification": "RESISTED_DIVERSION",
+          "first_cue_utc": "2026-04-06T22:45:23.339Z",
+          "last_cue_utc": "2026-04-06T22:45:23.339Z",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:45:23.339Z",
+              "speaker": "Glover",
+              "transcript_row": 5,
+              "cue_sha256": "daa106ebb4939b37aee75f0c258fbd74c9ca5de05c0381ff1ff7b4953d6486fd"
+            }
+          ],
+          "bounded_interpretation": "The transcript explicitly names a salient alternative and a choice to retain the planned target. Salience is not displacement.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "impact_flash_recording_gap",
+          "ltp_name": "Impact Flashes",
+          "classification": "ENTRY_INTERVAL_CENSORED",
+          "first_cue_utc": "2026-04-06T23:11:17.215Z",
+          "last_cue_utc": "2026-04-06T23:11:41.982Z",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T23:11:17.215Z",
+              "speaker": "Glover",
+              "transcript_row": 3,
+              "cue_sha256": "e80f1d5b34fe9b9cec9e7678bae7eb10e77ad6c6c759fcdda560ece2d7e41ecf"
+            },
+            {
+              "utc": "2026-04-06T23:11:41.982Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "806665c88af09e8d076cc9a5f750bb43fd48394775df371b6d1c98cfe2e28579"
+            }
+          ],
+          "bounded_interpretation": "The search began before its recorder cue, so entry time is bounded only as earlier than 23:11:17.215Z. The explicit negative observation is evidence of execution, not a missed target.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "forward_look_flash_candidate",
+          "ltp_name": "Discussion #6: Forward Look",
+          "classification": "ATTENTION_SHIFT_CANDIDATE",
+          "first_cue_utc": "2026-04-07T00:44:59.421Z",
+          "last_cue_utc": "2026-04-07T00:53:19.564Z",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-07T00:44:59.421Z",
+              "speaker": "Hansen",
+              "transcript_row": 231,
+              "cue_sha256": "4ec95842a0089a25bfc89df5fbf99698453083d64ac54e64c51ac53b50ce5d5d"
+            },
+            {
+              "utc": "2026-04-07T00:51:15.947Z",
+              "speaker": "Wiseman",
+              "transcript_row": 273,
+              "cue_sha256": "bf1b478e629a0e27f25f81b17409d3dee469bde655d2aedde5018d6b0bce05d6"
+            },
+            {
+              "utc": "2026-04-07T00:51:54.985Z",
+              "speaker": "Hansen",
+              "transcript_row": 280,
+              "cue_sha256": "424ef27bc3020429b2f7c23eda14d0430924b96fa3776dd781785a678bdc3ebb"
+            },
+            {
+              "utc": "2026-04-07T00:51:57.628Z",
+              "speaker": "Hansen",
+              "transcript_row": 281,
+              "cue_sha256": "137c347227ce70bf73bade1f23fa93c760d6d1460fc30e3d2cb9cf347e5885f5"
+            },
+            {
+              "utc": "2026-04-07T00:53:19.564Z",
+              "speaker": "Hansen",
+              "transcript_row": 291,
+              "cue_sha256": "1fe6e0f522a2dc77d5857d788b638dd9abcb7f5a34b074b21a5f70acd3b0d6a2"
+            }
+          ],
+          "bounded_interpretation": "Within the planned Forward Look window, flash-watching gained explicit attention, two crew reported the same pinpoint event, and the crew then re-synchronized to the timeline. The event and any displacement remain unvalidated.",
+          "counterevidence": "An earlier flash report in the same recording was followed by uncertainty about eclipse-glasses timing, and no independent image or instrument product is admitted here.",
+          "independent_oracle": false,
+          "pass": true
+        }
+      ],
+      "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "plan_inventory",
+          "pass": true,
+          "numbered_targets": 30,
+          "schedule_controls": 9
+        },
+        {
+          "id": "exact_entry_anchors",
+          "pass": true,
+          "observed": 21
+        },
+        {
+          "id": "silence_is_not_missed",
+          "pass": true,
+          "unresolved_entry_anchors": 9
+        },
+        {
+          "id": "attention_episode_oracles",
+          "pass": false,
+          "observed": 4
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "numbered_targets": 30,
+            "schedule_controls": 9,
+            "exact_entry_anchors": 21,
+            "unresolved_entry_anchors": 9,
+            "proven_missed_targets": 0,
+            "proven_diverted_targets": 0,
+            "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Attention episode crew_choice_terminator failed: classification DIVERTED is not admitted; expected EXPECTED_CREW_CHOICE",
+        "One or more attention episodes failed",
+        "Observed Stage 3A result differs from the frozen contract"
+      ],
+      "claim_ceiling": [
+        "The transcript contains exact target-entry anchors for 21 of 30 numbered plan entries.",
+        "Request-to-cue deltas vary in both directions and cannot be treated as uniform execution boundaries.",
+        "The frozen episodes establish one resisted diversion, one expected crew-choice allocation, one documentation recovery, and one interval-censored entry.",
+        "A two-observer flash candidate acquired attention during the Forward Look window and was followed by timeline re-synchronization.",
+        "No target is proven missed or diverted, and the flash is not independently validated."
+      ],
+      "next_step_logic": null
+    },
+    "background_mention_is_entry": {
+      "testbed_id": "artemis2-observation-execution-stage3a",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:07:32Z",
+      "mutation": "background_mention_is_entry",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "plan_inventory": {
+        "numbered_targets": 30,
+        "schedule_controls": 9,
+        "exact_entry_anchors": 21,
+        "unresolved_entry_anchors": [
+          "Discussion #2: Near/Farside",
+          "Discussion #3: Farside Albedo/Color",
+          "Impact Flashes",
+          "Discussion #6: Forward Look",
+          "Eclipsed Moon (1/2)",
+          "Deep Space (1/2)",
+          "Eclipsed Moon (2/2)",
+          "Deep Space (2/2)",
+          "Sunrise"
+        ]
+      },
+      "schedule_summary": {
+        "early_anchor_count": 10,
+        "late_anchor_count": 11,
+        "on_time_anchor_count": 0,
+        "minimum_delta_seconds": -473.534,
+        "maximum_delta_seconds": 302.361,
+        "median_delta_seconds": 47.556,
+        "interpretation_limit": "Each delta compares a request timestamp with an explicit target-entry or recorder cue. It is an audit locator, not a physical-event time, dwell time, compliance score, or causal measure."
+      },
+      "entry_anchors": [
+        {
+          "id": "warmup",
+          "ltp_name": "Discussion #1: Warm up",
+          "planned_request_utc": "2026-04-06T18:45:00.000Z",
+          "entry_cue_utc": "2026-04-06T18:38:25.373Z",
+          "request_to_cue_delta_seconds": -394.627,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000028_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "47df603bca4a1e56b4ca9fbfd0bf9e5bf309d3e4d893c6182c5d71a184dc3bed",
+          "pass": true
+        },
+        {
+          "id": "glushko1",
+          "ltp_name": "Crater Duo: Glushko (1/2)",
+          "planned_request_utc": "2026-04-06T19:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:10:39.785Z",
+          "request_to_cue_delta_seconds": -260.215,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "de37cd36a8e3c237a6284008aa8897adb002dd4d7e74aaa8858c80e7f603d09d",
+          "pass": true
+        },
+        {
+          "id": "ohm1",
+          "ltp_name": "Crater Duo: Ohm",
+          "planned_request_utc": "2026-04-06T19:23:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:24:53.744Z",
+          "request_to_cue_delta_seconds": 113.744,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "1aa7d443811b2f830f920c1102e23610079a6a57493c1e8b42215686f7a3a035",
+          "pass": true
+        },
+        {
+          "id": "aristarchus",
+          "ltp_name": "Aristarchus Plateau",
+          "planned_request_utc": "2026-04-06T19:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:33:16.723Z",
+          "request_to_cue_delta_seconds": 136.723,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000031_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "0b9fef2ec8dfa9e1aef330ef0ee8508d7268f475573cd2dfdbee61e058718862",
+          "pass": true
+        },
+        {
+          "id": "reiner",
+          "ltp_name": "Reiner Gamma",
+          "planned_request_utc": "2026-04-06T19:41:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:41:47.556Z",
+          "request_to_cue_delta_seconds": 47.556,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000032_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Wiseman",
+          "cue_sha256": "f11df9ae5c3d0e4463efc72a0d7c092223509912f4da9ca732bcdc5feb7b792b",
+          "pass": true
+        },
+        {
+          "id": "wholemoon",
+          "ltp_name": "Whole Moon",
+          "planned_request_utc": "2026-04-06T20:05:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:04:01.398Z",
+          "request_to_cue_delta_seconds": -58.602,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000034_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "7ae170796401976c5ead7b8e0278134315c930d2458d195c9172676e12a58591",
+          "pass": true
+        },
+        {
+          "id": "orientale1",
+          "ltp_name": "Orientale Basin (1/2)",
+          "planned_request_utc": "2026-04-06T20:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:16:33.120Z",
+          "request_to_cue_delta_seconds": 93.12,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000035_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "526d728fc07c2a1aea893485ad1f95eb8df1b1803ba9ae9ddd5e58da301f1ce1",
+          "pass": true
+        },
+        {
+          "id": "crewchoice1",
+          "ltp_name": "Crew Choice #1",
+          "planned_request_utc": "2026-04-06T20:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:34:15.826Z",
+          "request_to_cue_delta_seconds": 195.826,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000036_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "87d75f96b92fa96e2e3489b29e786e0a5dea3a725d42eff271dba48f1941843f",
+          "pass": true
+        },
+        {
+          "id": "glushko2",
+          "ltp_name": "Glushko Crater (2/2)",
+          "planned_request_utc": "2026-04-06T21:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:02:35.278Z",
+          "request_to_cue_delta_seconds": -444.722,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "5377a0246ebd3607f2c67403ef9507faa7514c9ee0c68fac140498ed7e617503",
+          "pass": true
+        },
+        {
+          "id": "orientale2",
+          "ltp_name": "Orientale Basin (2/2)",
+          "planned_request_utc": "2026-04-06T21:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:16:03.078Z",
+          "request_to_cue_delta_seconds": -116.922,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000039_pcd2_trn-csv_v01.csv",
+          "transcript_row": 4,
+          "speaker": "Hansen",
+          "cue_sha256": "edcccd3245ae88efc5df2f5c9b1981974950c2076ee71c688fcc2692beec9388",
+          "pass": true
+        },
+        {
+          "id": "hertzsprung",
+          "ltp_name": "Hertzsprung Basin",
+          "planned_request_utc": "2026-04-06T21:34:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:35:45.524Z",
+          "request_to_cue_delta_seconds": 105.524,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000040_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "b9e6b26febe7173844c1251adf432a758a92a87f20a1ed6517b9bd5fe6e73979",
+          "pass": true
+        },
+        {
+          "id": "crewchoice2",
+          "ltp_name": "Crew Choice #2",
+          "planned_request_utc": "2026-04-06T21:42:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:43:11.972Z",
+          "request_to_cue_delta_seconds": 71.972,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "31c7916ac4fde467793d6d1e2efa8a177dd28113a0403024b0e3f95b4493e982",
+          "pass": true
+        },
+        {
+          "id": "discussion4",
+          "ltp_name": "Discussion #4: Terminator",
+          "planned_request_utc": "2026-04-06T21:50:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:52:07.390Z",
+          "request_to_cue_delta_seconds": 127.39,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000042_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "dc978dad9797e08598958cd15eab0c657bfdd2261a360312ab8d3b70c09ec5ae",
+          "pass": true
+        },
+        {
+          "id": "ohm2",
+          "ltp_name": "Ohm Crater (2/2)",
+          "planned_request_utc": "2026-04-06T22:20:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:15:47.775Z",
+          "request_to_cue_delta_seconds": -252.225,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "2a091cbfa0bba7be2b61272c66b3f0bc64eee475d715a6ed52cfbeadb6099c61",
+          "pass": true
+        },
+        {
+          "id": "limb",
+          "ltp_name": "Discussion #5: Limb",
+          "planned_request_utc": "2026-04-06T22:28:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:26:19.059Z",
+          "request_to_cue_delta_seconds": -100.941,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000044_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Glover",
+          "cue_sha256": "25ec69f605c500d6a0d3946187030b5a58edd735b5c116ec46a11f8d92a88233",
+          "pass": true
+        },
+        {
+          "id": "earthset",
+          "ltp_name": "Earthset",
+          "planned_request_utc": "2026-04-06T22:38:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:39:11.426Z",
+          "request_to_cue_delta_seconds": 71.426,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "357c9aaf94fa20d6aeec7ae38ca1955a9b74176e9c2c859105da49838d61d4d7",
+          "pass": true
+        },
+        {
+          "id": "vavilov",
+          "ltp_name": "Vavilov Crater",
+          "planned_request_utc": "2026-04-06T22:46:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:45:13.701Z",
+          "request_to_cue_delta_seconds": -46.299,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "a727e5a0825e53cebf1126aced2fdedb40d499da7007d547dffcba179e966f08",
+          "pass": true
+        },
+        {
+          "id": "crewchoice3",
+          "ltp_name": "Crew Choice #3",
+          "planned_request_utc": "2026-04-06T22:54:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:59:02.361Z",
+          "request_to_cue_delta_seconds": 302.361,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "0a809709a817336ae316c450a909b17d0fac2f5b281bb6502aef9f2791e751e4",
+          "pass": true
+        },
+        {
+          "id": "lofted_dust",
+          "ltp_name": "Lofted Lunar Dust",
+          "planned_request_utc": "2026-04-06T23:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:11:14.352Z",
+          "request_to_cue_delta_seconds": 74.352,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "d1ec3752a68c16e8a315abfe0a4cd1d5a35002c1ca90aad97aa26438e0f3c414",
+          "pass": true
+        },
+        {
+          "id": "earthrise",
+          "ltp_name": "Earthrise",
+          "planned_request_utc": "2026-04-06T23:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:16:25.893Z",
+          "request_to_cue_delta_seconds": -94.107,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "f6721bef84e47ccf5d4a2fb0800dcc0bb64a717f4eb6b97919730ea3c6b36dd1",
+          "pass": true
+        },
+        {
+          "id": "sunset",
+          "ltp_name": "Sunset",
+          "planned_request_utc": "2026-04-07T00:36:00.000Z",
+          "entry_cue_utc": "2026-04-07T00:28:06.466Z",
+          "request_to_cue_delta_seconds": -473.534,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "02eb5a4e635ff35ac380e55450e3ee229582940f4506dedb66c2ad9c0ee6afa8",
+          "pass": true
+        }
+      ],
+      "attention_episodes": [
+        {
+          "id": "aristarchus_reiner_recovery",
+          "ltp_name": "Reiner Gamma",
+          "classification": "DOCUMENTATION_RECOVERY",
+          "first_cue_utc": "2026-04-06T19:46:14.978Z",
+          "last_cue_utc": "2026-04-06T19:46:33.103Z",
+          "transcript": "corpus/transcripts/art002a000033_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T19:46:14.978Z",
+              "speaker": "Hansen",
+              "transcript_row": 2,
+              "cue_sha256": "81c4a6af8d447172e9525e54352908daa097627c809859b5183206e608963371"
+            },
+            {
+              "utc": "2026-04-06T19:46:24.571Z",
+              "speaker": "Hansen",
+              "transcript_row": 3,
+              "cue_sha256": "6f133ebf672d1c948a938ac2ca951c0735332bc3f2558df2aa89c9c6921385a9"
+            },
+            {
+              "utc": "2026-04-06T19:46:33.103Z",
+              "speaker": "Hansen",
+              "transcript_row": 6,
+              "cue_sha256": "880298f741bbf9511ce3100fa614190c9634ed739abae1ec2f017127f68dfb64"
+            }
+          ],
+          "bounded_interpretation": "A communications failure did not erase all contemporaneous evidence; the crew explicitly identified recorder and note recovery paths. This blocks a missed-target inference.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "vavilov_refocus",
+          "ltp_name": "Vavilov Crater",
+          "classification": "RESISTED_DIVERSION",
+          "first_cue_utc": "2026-04-06T22:45:23.339Z",
+          "last_cue_utc": "2026-04-06T22:45:23.339Z",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:45:23.339Z",
+              "speaker": "Glover",
+              "transcript_row": 5,
+              "cue_sha256": "daa106ebb4939b37aee75f0c258fbd74c9ca5de05c0381ff1ff7b4953d6486fd"
+            }
+          ],
+          "bounded_interpretation": "The transcript explicitly names a salient alternative and a choice to retain the planned target. Salience is not displacement.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "crew_choice_terminator",
+          "ltp_name": "Crew Choice #3",
+          "classification": "EXPECTED_CREW_CHOICE",
+          "first_cue_utc": "2026-04-06T22:59:15.776Z",
+          "last_cue_utc": "2026-04-06T23:02:07.980Z",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:59:15.776Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "9bded8b4b2a07e7d6515e096fef14cdb6183e08c16a792c7ad23de32e8fcc005"
+            },
+            {
+              "utc": "2026-04-06T23:02:07.980Z",
+              "speaker": "Glover",
+              "transcript_row": 25,
+              "cue_sha256": "a599462316532674875d99afdcc5789d68908617c91bc0b66d5273dd5419251b"
+            }
+          ],
+          "bounded_interpretation": "Terminator attention occurred inside a free-choice period and is a hard negative for diversion.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "impact_flash_recording_gap",
+          "ltp_name": "Impact Flashes",
+          "classification": "ENTRY_INTERVAL_CENSORED",
+          "first_cue_utc": "2026-04-06T23:11:17.215Z",
+          "last_cue_utc": "2026-04-06T23:11:41.982Z",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T23:11:17.215Z",
+              "speaker": "Glover",
+              "transcript_row": 3,
+              "cue_sha256": "e80f1d5b34fe9b9cec9e7678bae7eb10e77ad6c6c759fcdda560ece2d7e41ecf"
+            },
+            {
+              "utc": "2026-04-06T23:11:41.982Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "806665c88af09e8d076cc9a5f750bb43fd48394775df371b6d1c98cfe2e28579"
+            }
+          ],
+          "bounded_interpretation": "The search began before its recorder cue, so entry time is bounded only as earlier than 23:11:17.215Z. The explicit negative observation is evidence of execution, not a missed target.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "forward_look_flash_candidate",
+          "ltp_name": "Discussion #6: Forward Look",
+          "classification": "ATTENTION_SHIFT_CANDIDATE",
+          "first_cue_utc": "2026-04-07T00:44:59.421Z",
+          "last_cue_utc": "2026-04-07T00:53:19.564Z",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-07T00:44:59.421Z",
+              "speaker": "Hansen",
+              "transcript_row": 231,
+              "cue_sha256": "4ec95842a0089a25bfc89df5fbf99698453083d64ac54e64c51ac53b50ce5d5d"
+            },
+            {
+              "utc": "2026-04-07T00:51:15.947Z",
+              "speaker": "Wiseman",
+              "transcript_row": 273,
+              "cue_sha256": "bf1b478e629a0e27f25f81b17409d3dee469bde655d2aedde5018d6b0bce05d6"
+            },
+            {
+              "utc": "2026-04-07T00:51:54.985Z",
+              "speaker": "Hansen",
+              "transcript_row": 280,
+              "cue_sha256": "424ef27bc3020429b2f7c23eda14d0430924b96fa3776dd781785a678bdc3ebb"
+            },
+            {
+              "utc": "2026-04-07T00:51:57.628Z",
+              "speaker": "Hansen",
+              "transcript_row": 281,
+              "cue_sha256": "137c347227ce70bf73bade1f23fa93c760d6d1460fc30e3d2cb9cf347e5885f5"
+            },
+            {
+              "utc": "2026-04-07T00:53:19.564Z",
+              "speaker": "Hansen",
+              "transcript_row": 291,
+              "cue_sha256": "1fe6e0f522a2dc77d5857d788b638dd9abcb7f5a34b074b21a5f70acd3b0d6a2"
+            }
+          ],
+          "bounded_interpretation": "Within the planned Forward Look window, flash-watching gained explicit attention, two crew reported the same pinpoint event, and the crew then re-synchronized to the timeline. The event and any displacement remain unvalidated.",
+          "counterevidence": "An earlier flash report in the same recording was followed by uncertainty about eclipse-glasses timing, and no independent image or instrument product is admitted here.",
+          "independent_oracle": false,
+          "pass": true
+        }
+      ],
+      "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "plan_inventory",
+          "pass": true,
+          "numbered_targets": 30,
+          "schedule_controls": 9
+        },
+        {
+          "id": "exact_entry_anchors",
+          "pass": true,
+          "observed": 21
+        },
+        {
+          "id": "silence_is_not_missed",
+          "pass": true,
+          "unresolved_entry_anchors": 9
+        },
+        {
+          "id": "attention_episode_oracles",
+          "pass": true,
+          "observed": 5
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "numbered_targets": 30,
+            "schedule_controls": 9,
+            "exact_entry_anchors": 21,
+            "unresolved_entry_anchors": 9,
+            "proven_missed_targets": 0,
+            "proven_diverted_targets": 0,
+            "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Entry anchor background_hertzsprung failed: background dialogue cannot establish target entry",
+        "Observed Stage 3A result differs from the frozen contract"
+      ],
+      "claim_ceiling": [
+        "The transcript contains exact target-entry anchors for 21 of 30 numbered plan entries.",
+        "Request-to-cue deltas vary in both directions and cannot be treated as uniform execution boundaries.",
+        "The frozen episodes establish one resisted diversion, one expected crew-choice allocation, one documentation recovery, and one interval-censored entry.",
+        "A two-observer flash candidate acquired attention during the Forward Look window and was followed by timeline re-synchronization.",
+        "No target is proven missed or diverted, and the flash is not independently validated."
+      ],
+      "next_step_logic": null
+    },
+    "overrun_proves_cause": {
+      "testbed_id": "artemis2-observation-execution-stage3a",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:07:32Z",
+      "mutation": "overrun_proves_cause",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "plan_inventory": {
+        "numbered_targets": 30,
+        "schedule_controls": 9,
+        "exact_entry_anchors": 20,
+        "unresolved_entry_anchors": [
+          "Discussion #2: Near/Farside",
+          "Crater Duo: Ohm",
+          "Discussion #3: Farside Albedo/Color",
+          "Impact Flashes",
+          "Discussion #6: Forward Look",
+          "Eclipsed Moon (1/2)",
+          "Deep Space (1/2)",
+          "Eclipsed Moon (2/2)",
+          "Deep Space (2/2)",
+          "Sunrise"
+        ]
+      },
+      "schedule_summary": {
+        "early_anchor_count": 10,
+        "late_anchor_count": 10,
+        "on_time_anchor_count": 0,
+        "minimum_delta_seconds": -473.534,
+        "maximum_delta_seconds": 302.361,
+        "median_delta_seconds": 0.628,
+        "interpretation_limit": "Each delta compares a request timestamp with an explicit target-entry or recorder cue. It is an audit locator, not a physical-event time, dwell time, compliance score, or causal measure."
+      },
+      "entry_anchors": [
+        {
+          "id": "warmup",
+          "ltp_name": "Discussion #1: Warm up",
+          "planned_request_utc": "2026-04-06T18:45:00.000Z",
+          "entry_cue_utc": "2026-04-06T18:38:25.373Z",
+          "request_to_cue_delta_seconds": -394.627,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000028_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "47df603bca4a1e56b4ca9fbfd0bf9e5bf309d3e4d893c6182c5d71a184dc3bed",
+          "pass": true
+        },
+        {
+          "id": "glushko1",
+          "ltp_name": "Crater Duo: Glushko (1/2)",
+          "planned_request_utc": "2026-04-06T19:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:10:39.785Z",
+          "request_to_cue_delta_seconds": -260.215,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "de37cd36a8e3c237a6284008aa8897adb002dd4d7e74aaa8858c80e7f603d09d",
+          "pass": true
+        },
+        {
+          "id": "aristarchus",
+          "ltp_name": "Aristarchus Plateau",
+          "planned_request_utc": "2026-04-06T19:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:33:16.723Z",
+          "request_to_cue_delta_seconds": 136.723,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000031_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "0b9fef2ec8dfa9e1aef330ef0ee8508d7268f475573cd2dfdbee61e058718862",
+          "pass": true
+        },
+        {
+          "id": "reiner",
+          "ltp_name": "Reiner Gamma",
+          "planned_request_utc": "2026-04-06T19:41:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:41:47.556Z",
+          "request_to_cue_delta_seconds": 47.556,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000032_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Wiseman",
+          "cue_sha256": "f11df9ae5c3d0e4463efc72a0d7c092223509912f4da9ca732bcdc5feb7b792b",
+          "pass": true
+        },
+        {
+          "id": "wholemoon",
+          "ltp_name": "Whole Moon",
+          "planned_request_utc": "2026-04-06T20:05:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:04:01.398Z",
+          "request_to_cue_delta_seconds": -58.602,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000034_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "7ae170796401976c5ead7b8e0278134315c930d2458d195c9172676e12a58591",
+          "pass": true
+        },
+        {
+          "id": "orientale1",
+          "ltp_name": "Orientale Basin (1/2)",
+          "planned_request_utc": "2026-04-06T20:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:16:33.120Z",
+          "request_to_cue_delta_seconds": 93.12,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000035_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "526d728fc07c2a1aea893485ad1f95eb8df1b1803ba9ae9ddd5e58da301f1ce1",
+          "pass": true
+        },
+        {
+          "id": "crewchoice1",
+          "ltp_name": "Crew Choice #1",
+          "planned_request_utc": "2026-04-06T20:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:34:15.826Z",
+          "request_to_cue_delta_seconds": 195.826,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000036_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "87d75f96b92fa96e2e3489b29e786e0a5dea3a725d42eff271dba48f1941843f",
+          "pass": true
+        },
+        {
+          "id": "glushko2",
+          "ltp_name": "Glushko Crater (2/2)",
+          "planned_request_utc": "2026-04-06T21:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:02:35.278Z",
+          "request_to_cue_delta_seconds": -444.722,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "5377a0246ebd3607f2c67403ef9507faa7514c9ee0c68fac140498ed7e617503",
+          "pass": true
+        },
+        {
+          "id": "orientale2",
+          "ltp_name": "Orientale Basin (2/2)",
+          "planned_request_utc": "2026-04-06T21:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:16:03.078Z",
+          "request_to_cue_delta_seconds": -116.922,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000039_pcd2_trn-csv_v01.csv",
+          "transcript_row": 4,
+          "speaker": "Hansen",
+          "cue_sha256": "edcccd3245ae88efc5df2f5c9b1981974950c2076ee71c688fcc2692beec9388",
+          "pass": true
+        },
+        {
+          "id": "hertzsprung",
+          "ltp_name": "Hertzsprung Basin",
+          "planned_request_utc": "2026-04-06T21:34:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:35:45.524Z",
+          "request_to_cue_delta_seconds": 105.524,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000040_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "b9e6b26febe7173844c1251adf432a758a92a87f20a1ed6517b9bd5fe6e73979",
+          "pass": true
+        },
+        {
+          "id": "crewchoice2",
+          "ltp_name": "Crew Choice #2",
+          "planned_request_utc": "2026-04-06T21:42:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:43:11.972Z",
+          "request_to_cue_delta_seconds": 71.972,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "31c7916ac4fde467793d6d1e2efa8a177dd28113a0403024b0e3f95b4493e982",
+          "pass": true
+        },
+        {
+          "id": "discussion4",
+          "ltp_name": "Discussion #4: Terminator",
+          "planned_request_utc": "2026-04-06T21:50:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:52:07.390Z",
+          "request_to_cue_delta_seconds": 127.39,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000042_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "dc978dad9797e08598958cd15eab0c657bfdd2261a360312ab8d3b70c09ec5ae",
+          "pass": true
+        },
+        {
+          "id": "ohm2",
+          "ltp_name": "Ohm Crater (2/2)",
+          "planned_request_utc": "2026-04-06T22:20:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:15:47.775Z",
+          "request_to_cue_delta_seconds": -252.225,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "2a091cbfa0bba7be2b61272c66b3f0bc64eee475d715a6ed52cfbeadb6099c61",
+          "pass": true
+        },
+        {
+          "id": "limb",
+          "ltp_name": "Discussion #5: Limb",
+          "planned_request_utc": "2026-04-06T22:28:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:26:19.059Z",
+          "request_to_cue_delta_seconds": -100.941,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000044_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Glover",
+          "cue_sha256": "25ec69f605c500d6a0d3946187030b5a58edd735b5c116ec46a11f8d92a88233",
+          "pass": true
+        },
+        {
+          "id": "earthset",
+          "ltp_name": "Earthset",
+          "planned_request_utc": "2026-04-06T22:38:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:39:11.426Z",
+          "request_to_cue_delta_seconds": 71.426,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "357c9aaf94fa20d6aeec7ae38ca1955a9b74176e9c2c859105da49838d61d4d7",
+          "pass": true
+        },
+        {
+          "id": "vavilov",
+          "ltp_name": "Vavilov Crater",
+          "planned_request_utc": "2026-04-06T22:46:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:45:13.701Z",
+          "request_to_cue_delta_seconds": -46.299,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "a727e5a0825e53cebf1126aced2fdedb40d499da7007d547dffcba179e966f08",
+          "pass": true
+        },
+        {
+          "id": "crewchoice3",
+          "ltp_name": "Crew Choice #3",
+          "planned_request_utc": "2026-04-06T22:54:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:59:02.361Z",
+          "request_to_cue_delta_seconds": 302.361,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "0a809709a817336ae316c450a909b17d0fac2f5b281bb6502aef9f2791e751e4",
+          "pass": true
+        },
+        {
+          "id": "lofted_dust",
+          "ltp_name": "Lofted Lunar Dust",
+          "planned_request_utc": "2026-04-06T23:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:11:14.352Z",
+          "request_to_cue_delta_seconds": 74.352,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "d1ec3752a68c16e8a315abfe0a4cd1d5a35002c1ca90aad97aa26438e0f3c414",
+          "pass": true
+        },
+        {
+          "id": "earthrise",
+          "ltp_name": "Earthrise",
+          "planned_request_utc": "2026-04-06T23:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:16:25.893Z",
+          "request_to_cue_delta_seconds": -94.107,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "f6721bef84e47ccf5d4a2fb0800dcc0bb64a717f4eb6b97919730ea3c6b36dd1",
+          "pass": true
+        },
+        {
+          "id": "sunset",
+          "ltp_name": "Sunset",
+          "planned_request_utc": "2026-04-07T00:36:00.000Z",
+          "entry_cue_utc": "2026-04-07T00:28:06.466Z",
+          "request_to_cue_delta_seconds": -473.534,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "02eb5a4e635ff35ac380e55450e3ee229582940f4506dedb66c2ad9c0ee6afa8",
+          "pass": true
+        }
+      ],
+      "attention_episodes": [
+        {
+          "id": "aristarchus_reiner_recovery",
+          "ltp_name": "Reiner Gamma",
+          "classification": "DOCUMENTATION_RECOVERY",
+          "first_cue_utc": "2026-04-06T19:46:14.978Z",
+          "last_cue_utc": "2026-04-06T19:46:33.103Z",
+          "transcript": "corpus/transcripts/art002a000033_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T19:46:14.978Z",
+              "speaker": "Hansen",
+              "transcript_row": 2,
+              "cue_sha256": "81c4a6af8d447172e9525e54352908daa097627c809859b5183206e608963371"
+            },
+            {
+              "utc": "2026-04-06T19:46:24.571Z",
+              "speaker": "Hansen",
+              "transcript_row": 3,
+              "cue_sha256": "6f133ebf672d1c948a938ac2ca951c0735332bc3f2558df2aa89c9c6921385a9"
+            },
+            {
+              "utc": "2026-04-06T19:46:33.103Z",
+              "speaker": "Hansen",
+              "transcript_row": 6,
+              "cue_sha256": "880298f741bbf9511ce3100fa614190c9634ed739abae1ec2f017127f68dfb64"
+            }
+          ],
+          "bounded_interpretation": "A communications failure did not erase all contemporaneous evidence; the crew explicitly identified recorder and note recovery paths. This blocks a missed-target inference.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "vavilov_refocus",
+          "ltp_name": "Vavilov Crater",
+          "classification": "RESISTED_DIVERSION",
+          "first_cue_utc": "2026-04-06T22:45:23.339Z",
+          "last_cue_utc": "2026-04-06T22:45:23.339Z",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:45:23.339Z",
+              "speaker": "Glover",
+              "transcript_row": 5,
+              "cue_sha256": "daa106ebb4939b37aee75f0c258fbd74c9ca5de05c0381ff1ff7b4953d6486fd"
+            }
+          ],
+          "bounded_interpretation": "The transcript explicitly names a salient alternative and a choice to retain the planned target. Salience is not displacement.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "crew_choice_terminator",
+          "ltp_name": "Crew Choice #3",
+          "classification": "EXPECTED_CREW_CHOICE",
+          "first_cue_utc": "2026-04-06T22:59:15.776Z",
+          "last_cue_utc": "2026-04-06T23:02:07.980Z",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:59:15.776Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "9bded8b4b2a07e7d6515e096fef14cdb6183e08c16a792c7ad23de32e8fcc005"
+            },
+            {
+              "utc": "2026-04-06T23:02:07.980Z",
+              "speaker": "Glover",
+              "transcript_row": 25,
+              "cue_sha256": "a599462316532674875d99afdcc5789d68908617c91bc0b66d5273dd5419251b"
+            }
+          ],
+          "bounded_interpretation": "Terminator attention occurred inside a free-choice period and is a hard negative for diversion.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "impact_flash_recording_gap",
+          "ltp_name": "Impact Flashes",
+          "classification": "ENTRY_INTERVAL_CENSORED",
+          "first_cue_utc": "2026-04-06T23:11:17.215Z",
+          "last_cue_utc": "2026-04-06T23:11:41.982Z",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T23:11:17.215Z",
+              "speaker": "Glover",
+              "transcript_row": 3,
+              "cue_sha256": "e80f1d5b34fe9b9cec9e7678bae7eb10e77ad6c6c759fcdda560ece2d7e41ecf"
+            },
+            {
+              "utc": "2026-04-06T23:11:41.982Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "806665c88af09e8d076cc9a5f750bb43fd48394775df371b6d1c98cfe2e28579"
+            }
+          ],
+          "bounded_interpretation": "The search began before its recorder cue, so entry time is bounded only as earlier than 23:11:17.215Z. The explicit negative observation is evidence of execution, not a missed target.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "forward_look_flash_candidate",
+          "ltp_name": "Discussion #6: Forward Look",
+          "classification": "ATTENTION_SHIFT_CANDIDATE",
+          "first_cue_utc": "2026-04-07T00:44:59.421Z",
+          "last_cue_utc": "2026-04-07T00:53:19.564Z",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-07T00:44:59.421Z",
+              "speaker": "Hansen",
+              "transcript_row": 231,
+              "cue_sha256": "4ec95842a0089a25bfc89df5fbf99698453083d64ac54e64c51ac53b50ce5d5d"
+            },
+            {
+              "utc": "2026-04-07T00:51:15.947Z",
+              "speaker": "Wiseman",
+              "transcript_row": 273,
+              "cue_sha256": "bf1b478e629a0e27f25f81b17409d3dee469bde655d2aedde5018d6b0bce05d6"
+            },
+            {
+              "utc": "2026-04-07T00:51:54.985Z",
+              "speaker": "Hansen",
+              "transcript_row": 280,
+              "cue_sha256": "424ef27bc3020429b2f7c23eda14d0430924b96fa3776dd781785a678bdc3ebb"
+            },
+            {
+              "utc": "2026-04-07T00:51:57.628Z",
+              "speaker": "Hansen",
+              "transcript_row": 281,
+              "cue_sha256": "137c347227ce70bf73bade1f23fa93c760d6d1460fc30e3d2cb9cf347e5885f5"
+            },
+            {
+              "utc": "2026-04-07T00:53:19.564Z",
+              "speaker": "Hansen",
+              "transcript_row": 291,
+              "cue_sha256": "1fe6e0f522a2dc77d5857d788b638dd9abcb7f5a34b074b21a5f70acd3b0d6a2"
+            }
+          ],
+          "bounded_interpretation": "Within the planned Forward Look window, flash-watching gained explicit attention, two crew reported the same pinpoint event, and the crew then re-synchronized to the timeline. The event and any displacement remain unvalidated.",
+          "counterevidence": "An earlier flash report in the same recording was followed by uncertainty about eclipse-glasses timing, and no independent image or instrument product is admitted here.",
+          "independent_oracle": false,
+          "pass": true
+        }
+      ],
+      "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "plan_inventory",
+          "pass": true,
+          "numbered_targets": 30,
+          "schedule_controls": 9
+        },
+        {
+          "id": "exact_entry_anchors",
+          "pass": false,
+          "observed": 20
+        },
+        {
+          "id": "silence_is_not_missed",
+          "pass": true,
+          "unresolved_entry_anchors": 10
+        },
+        {
+          "id": "attention_episode_oracles",
+          "pass": true,
+          "observed": 5
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "numbered_targets": 30,
+            "schedule_controls": 9,
+            "exact_entry_anchors": 20,
+            "unresolved_entry_anchors": 10,
+            "proven_missed_targets": 0,
+            "proven_diverted_targets": 0,
+            "flash_candidate_state": "UNVALIDATED_TWO_OBSERVER_CANDIDATE",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Entry anchor ohm1 failed: an entry delta cannot establish a causal displacement",
+        "One or more exact entry anchors failed",
+        "Observed Stage 3A result differs from the frozen contract"
+      ],
+      "claim_ceiling": [
+        "The transcript contains exact target-entry anchors for 21 of 30 numbered plan entries.",
+        "Request-to-cue deltas vary in both directions and cannot be treated as uniform execution boundaries.",
+        "The frozen episodes establish one resisted diversion, one expected crew-choice allocation, one documentation recovery, and one interval-censored entry.",
+        "A two-observer flash candidate acquired attention during the Forward Look window and was followed by timeline re-synchronization.",
+        "No target is proven missed or diverted, and the flash is not independently validated."
+      ],
+      "next_step_logic": null
+    },
+    "flash_is_validated": {
+      "testbed_id": "artemis2-observation-execution-stage3a",
+      "version": "0.4.0",
+      "run_at_utc": "2026-10-09T20:07:32Z",
+      "mutation": "flash_is_validated",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "plan_inventory": {
+        "numbered_targets": 30,
+        "schedule_controls": 9,
+        "exact_entry_anchors": 21,
+        "unresolved_entry_anchors": [
+          "Discussion #2: Near/Farside",
+          "Discussion #3: Farside Albedo/Color",
+          "Impact Flashes",
+          "Discussion #6: Forward Look",
+          "Eclipsed Moon (1/2)",
+          "Deep Space (1/2)",
+          "Eclipsed Moon (2/2)",
+          "Deep Space (2/2)",
+          "Sunrise"
+        ]
+      },
+      "schedule_summary": {
+        "early_anchor_count": 10,
+        "late_anchor_count": 11,
+        "on_time_anchor_count": 0,
+        "minimum_delta_seconds": -473.534,
+        "maximum_delta_seconds": 302.361,
+        "median_delta_seconds": 47.556,
+        "interpretation_limit": "Each delta compares a request timestamp with an explicit target-entry or recorder cue. It is an audit locator, not a physical-event time, dwell time, compliance score, or causal measure."
+      },
+      "entry_anchors": [
+        {
+          "id": "warmup",
+          "ltp_name": "Discussion #1: Warm up",
+          "planned_request_utc": "2026-04-06T18:45:00.000Z",
+          "entry_cue_utc": "2026-04-06T18:38:25.373Z",
+          "request_to_cue_delta_seconds": -394.627,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000028_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "47df603bca4a1e56b4ca9fbfd0bf9e5bf309d3e4d893c6182c5d71a184dc3bed",
+          "pass": true
+        },
+        {
+          "id": "glushko1",
+          "ltp_name": "Crater Duo: Glushko (1/2)",
+          "planned_request_utc": "2026-04-06T19:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:10:39.785Z",
+          "request_to_cue_delta_seconds": -260.215,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "de37cd36a8e3c237a6284008aa8897adb002dd4d7e74aaa8858c80e7f603d09d",
+          "pass": true
+        },
+        {
+          "id": "ohm1",
+          "ltp_name": "Crater Duo: Ohm",
+          "planned_request_utc": "2026-04-06T19:23:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:24:53.744Z",
+          "request_to_cue_delta_seconds": 113.744,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "1aa7d443811b2f830f920c1102e23610079a6a57493c1e8b42215686f7a3a035",
+          "pass": true
+        },
+        {
+          "id": "aristarchus",
+          "ltp_name": "Aristarchus Plateau",
+          "planned_request_utc": "2026-04-06T19:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:33:16.723Z",
+          "request_to_cue_delta_seconds": 136.723,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000031_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "0b9fef2ec8dfa9e1aef330ef0ee8508d7268f475573cd2dfdbee61e058718862",
+          "pass": true
+        },
+        {
+          "id": "reiner",
+          "ltp_name": "Reiner Gamma",
+          "planned_request_utc": "2026-04-06T19:41:00.000Z",
+          "entry_cue_utc": "2026-04-06T19:41:47.556Z",
+          "request_to_cue_delta_seconds": 47.556,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000032_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Wiseman",
+          "cue_sha256": "f11df9ae5c3d0e4463efc72a0d7c092223509912f4da9ca732bcdc5feb7b792b",
+          "pass": true
+        },
+        {
+          "id": "wholemoon",
+          "ltp_name": "Whole Moon",
+          "planned_request_utc": "2026-04-06T20:05:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:04:01.398Z",
+          "request_to_cue_delta_seconds": -58.602,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000034_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "7ae170796401976c5ead7b8e0278134315c930d2458d195c9172676e12a58591",
+          "pass": true
+        },
+        {
+          "id": "orientale1",
+          "ltp_name": "Orientale Basin (1/2)",
+          "planned_request_utc": "2026-04-06T20:15:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:16:33.120Z",
+          "request_to_cue_delta_seconds": 93.12,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000035_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "526d728fc07c2a1aea893485ad1f95eb8df1b1803ba9ae9ddd5e58da301f1ce1",
+          "pass": true
+        },
+        {
+          "id": "crewchoice1",
+          "ltp_name": "Crew Choice #1",
+          "planned_request_utc": "2026-04-06T20:31:00.000Z",
+          "entry_cue_utc": "2026-04-06T20:34:15.826Z",
+          "request_to_cue_delta_seconds": 195.826,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000036_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "87d75f96b92fa96e2e3489b29e786e0a5dea3a725d42eff271dba48f1941843f",
+          "pass": true
+        },
+        {
+          "id": "glushko2",
+          "ltp_name": "Glushko Crater (2/2)",
+          "planned_request_utc": "2026-04-06T21:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:02:35.278Z",
+          "request_to_cue_delta_seconds": -444.722,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000038_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "5377a0246ebd3607f2c67403ef9507faa7514c9ee0c68fac140498ed7e617503",
+          "pass": true
+        },
+        {
+          "id": "orientale2",
+          "ltp_name": "Orientale Basin (2/2)",
+          "planned_request_utc": "2026-04-06T21:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:16:03.078Z",
+          "request_to_cue_delta_seconds": -116.922,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000039_pcd2_trn-csv_v01.csv",
+          "transcript_row": 4,
+          "speaker": "Hansen",
+          "cue_sha256": "edcccd3245ae88efc5df2f5c9b1981974950c2076ee71c688fcc2692beec9388",
+          "pass": true
+        },
+        {
+          "id": "hertzsprung",
+          "ltp_name": "Hertzsprung Basin",
+          "planned_request_utc": "2026-04-06T21:34:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:35:45.524Z",
+          "request_to_cue_delta_seconds": 105.524,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000040_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "b9e6b26febe7173844c1251adf432a758a92a87f20a1ed6517b9bd5fe6e73979",
+          "pass": true
+        },
+        {
+          "id": "crewchoice2",
+          "ltp_name": "Crew Choice #2",
+          "planned_request_utc": "2026-04-06T21:42:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:43:11.972Z",
+          "request_to_cue_delta_seconds": 71.972,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000041_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "31c7916ac4fde467793d6d1e2efa8a177dd28113a0403024b0e3f95b4493e982",
+          "pass": true
+        },
+        {
+          "id": "discussion4",
+          "ltp_name": "Discussion #4: Terminator",
+          "planned_request_utc": "2026-04-06T21:50:00.000Z",
+          "entry_cue_utc": "2026-04-06T21:52:07.390Z",
+          "request_to_cue_delta_seconds": 127.39,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000042_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Hansen",
+          "cue_sha256": "dc978dad9797e08598958cd15eab0c657bfdd2261a360312ab8d3b70c09ec5ae",
+          "pass": true
+        },
+        {
+          "id": "ohm2",
+          "ltp_name": "Ohm Crater (2/2)",
+          "planned_request_utc": "2026-04-06T22:20:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:15:47.775Z",
+          "request_to_cue_delta_seconds": -252.225,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "2a091cbfa0bba7be2b61272c66b3f0bc64eee475d715a6ed52cfbeadb6099c61",
+          "pass": true
+        },
+        {
+          "id": "limb",
+          "ltp_name": "Discussion #5: Limb",
+          "planned_request_utc": "2026-04-06T22:28:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:26:19.059Z",
+          "request_to_cue_delta_seconds": -100.941,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000044_pcd2_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Glover",
+          "cue_sha256": "25ec69f605c500d6a0d3946187030b5a58edd735b5c116ec46a11f8d92a88233",
+          "pass": true
+        },
+        {
+          "id": "earthset",
+          "ltp_name": "Earthset",
+          "planned_request_utc": "2026-04-06T22:38:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:39:11.426Z",
+          "request_to_cue_delta_seconds": 71.426,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "357c9aaf94fa20d6aeec7ae38ca1955a9b74176e9c2c859105da49838d61d4d7",
+          "pass": true
+        },
+        {
+          "id": "vavilov",
+          "ltp_name": "Vavilov Crater",
+          "planned_request_utc": "2026-04-06T22:46:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:45:13.701Z",
+          "request_to_cue_delta_seconds": -46.299,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "a727e5a0825e53cebf1126aced2fdedb40d499da7007d547dffcba179e966f08",
+          "pass": true
+        },
+        {
+          "id": "crewchoice3",
+          "ltp_name": "Crew Choice #3",
+          "planned_request_utc": "2026-04-06T22:54:00.000Z",
+          "entry_cue_utc": "2026-04-06T22:59:02.361Z",
+          "request_to_cue_delta_seconds": 302.361,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "0a809709a817336ae316c450a909b17d0fac2f5b281bb6502aef9f2791e751e4",
+          "pass": true
+        },
+        {
+          "id": "lofted_dust",
+          "ltp_name": "Lofted Lunar Dust",
+          "planned_request_utc": "2026-04-06T23:10:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:11:14.352Z",
+          "request_to_cue_delta_seconds": 74.352,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "d1ec3752a68c16e8a315abfe0a4cd1d5a35002c1ca90aad97aa26438e0f3c414",
+          "pass": true
+        },
+        {
+          "id": "earthrise",
+          "ltp_name": "Earthrise",
+          "planned_request_utc": "2026-04-06T23:18:00.000Z",
+          "entry_cue_utc": "2026-04-06T23:16:25.893Z",
+          "request_to_cue_delta_seconds": -94.107,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 2,
+          "speaker": "Glover",
+          "cue_sha256": "f6721bef84e47ccf5d4a2fb0800dcc0bb64a717f4eb6b97919730ea3c6b36dd1",
+          "pass": true
+        },
+        {
+          "id": "sunset",
+          "ltp_name": "Sunset",
+          "planned_request_utc": "2026-04-07T00:36:00.000Z",
+          "entry_cue_utc": "2026-04-07T00:28:06.466Z",
+          "request_to_cue_delta_seconds": -473.534,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 3,
+          "speaker": "Hansen",
+          "cue_sha256": "02eb5a4e635ff35ac380e55450e3ee229582940f4506dedb66c2ad9c0ee6afa8",
+          "pass": true
+        }
+      ],
+      "attention_episodes": [
+        {
+          "id": "aristarchus_reiner_recovery",
+          "ltp_name": "Reiner Gamma",
+          "classification": "DOCUMENTATION_RECOVERY",
+          "first_cue_utc": "2026-04-06T19:46:14.978Z",
+          "last_cue_utc": "2026-04-06T19:46:33.103Z",
+          "transcript": "corpus/transcripts/art002a000033_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T19:46:14.978Z",
+              "speaker": "Hansen",
+              "transcript_row": 2,
+              "cue_sha256": "81c4a6af8d447172e9525e54352908daa097627c809859b5183206e608963371"
+            },
+            {
+              "utc": "2026-04-06T19:46:24.571Z",
+              "speaker": "Hansen",
+              "transcript_row": 3,
+              "cue_sha256": "6f133ebf672d1c948a938ac2ca951c0735332bc3f2558df2aa89c9c6921385a9"
+            },
+            {
+              "utc": "2026-04-06T19:46:33.103Z",
+              "speaker": "Hansen",
+              "transcript_row": 6,
+              "cue_sha256": "880298f741bbf9511ce3100fa614190c9634ed739abae1ec2f017127f68dfb64"
+            }
+          ],
+          "bounded_interpretation": "A communications failure did not erase all contemporaneous evidence; the crew explicitly identified recorder and note recovery paths. This blocks a missed-target inference.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "vavilov_refocus",
+          "ltp_name": "Vavilov Crater",
+          "classification": "RESISTED_DIVERSION",
+          "first_cue_utc": "2026-04-06T22:45:23.339Z",
+          "last_cue_utc": "2026-04-06T22:45:23.339Z",
+          "transcript": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:45:23.339Z",
+              "speaker": "Glover",
+              "transcript_row": 5,
+              "cue_sha256": "daa106ebb4939b37aee75f0c258fbd74c9ca5de05c0381ff1ff7b4953d6486fd"
+            }
+          ],
+          "bounded_interpretation": "The transcript explicitly names a salient alternative and a choice to retain the planned target. Salience is not displacement.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "crew_choice_terminator",
+          "ltp_name": "Crew Choice #3",
+          "classification": "EXPECTED_CREW_CHOICE",
+          "first_cue_utc": "2026-04-06T22:59:15.776Z",
+          "last_cue_utc": "2026-04-06T23:02:07.980Z",
+          "transcript": "corpus/transcripts/art002a000047_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T22:59:15.776Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "9bded8b4b2a07e7d6515e096fef14cdb6183e08c16a792c7ad23de32e8fcc005"
+            },
+            {
+              "utc": "2026-04-06T23:02:07.980Z",
+              "speaker": "Glover",
+              "transcript_row": 25,
+              "cue_sha256": "a599462316532674875d99afdcc5789d68908617c91bc0b66d5273dd5419251b"
+            }
+          ],
+          "bounded_interpretation": "Terminator attention occurred inside a free-choice period and is a hard negative for diversion.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        },
+        {
+          "id": "impact_flash_recording_gap",
+          "ltp_name": "Impact Flashes",
+          "classification": "ENTRY_INTERVAL_CENSORED",
+          "first_cue_utc": "2026-04-06T23:11:17.215Z",
+          "last_cue_utc": "2026-04-06T23:11:41.982Z",
+          "transcript": "corpus/transcripts/art002a000048_pcd2_trn-csv_v01.csv",
+          "cues": [
+            {
+              "utc": "2026-04-06T23:11:17.215Z",
+              "speaker": "Glover",
+              "transcript_row": 3,
+              "cue_sha256": "e80f1d5b34fe9b9cec9e7678bae7eb10e77ad6c6c759fcdda560ece2d7e41ecf"
+            },
+            {
+              "utc": "2026-04-06T23:11:41.982Z",
+              "speaker": "Glover",
+              "transcript_row": 6,
+              "cue_sha256": "806665c88af09e8d076cc9a5f750bb43fd48394775df371b6d1c98cfe2e28579"
+            }
+          ],
+          "bounded_interpretation": "The search began before its recorder cue, so entry time is bounded only as earlier than 23:11:17.215Z. The explicit negative observation is evidence of execution, not a missed target.",
+          "counterevidence": null,
+          "independent_oracle": null,
+          "pass": true
+        }
+      ],
+      "flash_candidate_state": "UNESTABLISHED",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "plan_inventory",
+          "pass": true,
+          "numbered_targets": 30,
+          "schedule_controls": 9
+        },
+        {
+          "id": "exact_entry_anchors",
+          "pass": true,
+          "observed": 21
+        },
+        {
+          "id": "silence_is_not_missed",
+          "pass": true,
+          "unresolved_entry_anchors": 9
+        },
+        {
+          "id": "attention_episode_oracles",
+          "pass": false,
+          "observed": 4
+        },
+        {
+          "id": "frozen_result",
+          "pass": false,
+          "observed": {
+            "evidence_state": "REJECTED",
+            "numbered_targets": 30,
+            "schedule_controls": 9,
+            "exact_entry_anchors": 21,
+            "unresolved_entry_anchors": 9,
+            "proven_missed_targets": 0,
+            "proven_diverted_targets": 0,
+            "flash_candidate_state": "UNESTABLISHED",
+            "disposition": null
+          }
+        }
+      ],
+      "errors": [
+        "Attention episode forward_look_flash_candidate failed: classification VALIDATED_PHENOMENON is not admitted; expected ATTENTION_SHIFT_CANDIDATE",
+        "One or more attention episodes failed",
+        "Observed Stage 3A result differs from the frozen contract"
+      ],
+      "claim_ceiling": [
+        "The transcript contains exact target-entry anchors for 21 of 30 numbered plan entries.",
+        "Request-to-cue deltas vary in both directions and cannot be treated as uniform execution boundaries.",
+        "The frozen episodes establish one resisted diversion, one expected crew-choice allocation, one documentation recovery, and one interval-censored entry.",
+        "A two-observer flash candidate acquired attention during the Forward Look window and was followed by timeline re-synchronization.",
+        "No target is proven missed or diverted, and the flash is not independently validated."
+      ],
+      "next_step_logic": null
+    }
+  },
+  "hard_negatives_pass": true,
+  "pass": true,
+  "evidence_state": "VERIFIED_PARTIAL_LEDGER"
+}

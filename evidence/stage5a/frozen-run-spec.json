@@ -1,0 +1,64 @@
+{
+  "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+  "version": "0.5.1",
+  "formed_at_utc": "2026-10-09T20:26:00Z",
+  "amended_at_utc": "2026-10-09T20:29:00Z",
+  "question": "Can one exact 15-second interval be extracted from the official 2.96 GB SAW3 channel-1 product while the client accepts no more than 64 MiB of media-body bytes?",
+  "method": "Testing and Validation",
+  "external_disposition": "bounded test",
+  "observable_outcome": "A locally valid video-only MP4 representing source offsets 4379 through 4394 seconds, plus a complete range-request and byte-budget receipt.",
+  "decisive_invariant": "Every media-body request must begin at the exact admitted PDS URL and resolve only to its header-attested exact delivery URL, every upstream response must be HTTP 206 with a matching Content-Range total, and aggregate accepted media-body bytes must not exceed 67108864.",
+  "artifact_native_falsifier": "The server ignores a Range request, reports a different source length, the client attempts an unrestricted transfer, the aggregate budget is exhausted, FFmpeg cannot produce the clip, or FFprobe rejects its video stream or duration.",
+  "recovery": "Stop at the first transport or artifact failure, preserve the receipt, and do not download the complete product, inspect channel 2, inspect the five stills, install software, or infer media content.",
+  "source": {
+    "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+    "delivery_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+    "delivery_route_evidence": "The admitted PDS URL returned HTTP 302 with this exact Location on a header-only check after attempt 1 stopped with zero accepted media-body bytes.",
+    "label_path": "evidence/stage4a/source/art002m1010962338_saw3_raw_v01.xml",
+    "file_name": "art002m1010962338_saw3_raw_v01.mp4",
+    "expected_bytes": 2960238197,
+    "start_utc": "2026-04-06T23:38:11Z",
+    "stop_utc": "2026-04-07T01:37:57Z",
+    "label_duration_seconds": 7186
+  },
+  "subset": {
+    "start_utc": "2026-04-07T00:51:10Z",
+    "end_utc": "2026-04-07T00:51:25Z",
+    "source_offset_seconds": 4379,
+    "duration_seconds": 15,
+    "first_report_utc": "2026-04-07T00:51:15.947Z"
+  },
+  "budget": {
+    "aggregate_media_body_bytes": 67108864,
+    "initial_probe_bytes": 1048576,
+    "maximum_proxy_response_bytes": 33554432,
+    "maximum_top_level_atom_headers": 16,
+    "timeout_seconds": 30
+  },
+  "admissible_states": [
+    "VERIFIED_BOUNDED_EXTRACTION",
+    "SERVER_IGNORED_RANGE",
+    "SOURCE_IDENTITY_MISMATCH",
+    "UNRESTRICTED_CLIENT_REQUEST",
+    "BUDGET_EXHAUSTED",
+    "EXTRACTION_FAILED_WITHIN_BUDGET",
+    "ARTIFACT_REJECTED",
+    "TRANSPORT_ERROR"
+  ],
+  "success_oracle": {
+    "required_state": "VERIFIED_BOUNDED_EXTRACTION",
+    "video_codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "minimum_duration_seconds": 14.9,
+    "maximum_duration_seconds": 15.1,
+    "audio_streams": 0
+  },
+  "claim_ceiling": "A passing Stage 5A proves only that this exact source interval can be transported and materialized within the frozen client-side byte budget. It does not establish what the pixels show, camera pointing, lunar geolocation, a physical flash, impact causation, or scientific novelty.",
+  "next_step_logic": {
+    "on_success": "Inspect the extracted 15-second clip only through a separately frozen Stage 5B content and pointing oracle; do not widen to channel 2 or the still burst by default.",
+    "on_transport_failure": "Complete Stage 3B and retain the flash as transcript-supported but physically unvalidated unless a cheaper official server-side subset route appears.",
+    "on_valid_transport_but_rejected_artifact": "Repair only the local extraction representation if the receipt proves range support and material budget remains; otherwise use the transport-failure route.",
+    "stop": "Stop before any full-product download, second-channel inspection, still-image inspection, pixel interpretation, geolocation, or impact claim."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "testbed_id": "artemis2-four-unit-analysis-contract-stage10k",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:28:00Z",
+  "question": "Can the Stage 10 evidence be reduced to one executable contract that prevents denominator substitution and preserves every current supersession and claim boundary?",
+  "terminal_objective": "Make the four-unit archive insight safe to reuse in later analysis without converting source scale, retrieval burden, exposure identity, or reconstructed action evidence into interchangeable counts.",
+  "method": "Replay the five decision-bearing Stage 10 verifiers, require their exact frozen cross-stage relations, and reject one-at-a-time mutations of the synthesis boundary.",
+  "authority": "Private local verification and repository updates only. No pixels, publication, outreach, archive mutation, priority claim, or scientific-discovery claim.",
+  "acceptance_owner": "Paul",
+  "frozen_observables": {
+    "source_files": 11591,
+    "source_volume_gb": 814.51,
+    "archive_products": 32133,
+    "archive_decimal_tb": 2.52679007551,
+    "nikon_capture_identities": 10329,
+    "complete_six_pattern_actions": 2166,
+    "exposures_in_complete_actions": 7606,
+    "unadmitted_raw_records": 2723,
+    "activity_fractures": 25,
+    "cross_day_fractures": 4,
+    "documented_pending_iphone": 68,
+    "unexplained_nikon_residuals": 10,
+    "unexplained_cab_cam_2_residuals": 28,
+    "fractured_capture_identities": 69,
+    "fractured_products": 207,
+    "stress_case_actions": 14,
+    "stress_case_filtered_products": 84,
+    "stress_case_complete_actions": 0,
+    "stress_case_companion_exposures_needed": 14,
+    "local_repeated_signature_actions": 13
+  },
+  "hard_negatives": [
+    "collapse_to_one_denominator",
+    "report_coverage_without_ledger",
+    "treat_products_as_observations",
+    "call_six_pattern_actions_exhaustive",
+    "call_inventory_residuals_missing_data",
+    "generalize_local_curation_mechanism",
+    "call_every_fracture_an_error",
+    "omit_snapshot_date",
+    "claim_global_priority",
+    "open_pixels_for_unit_contract"
+  ],
+  "claim_ceiling": "Stage 10K may establish the four exact units and their verified cross-stage consequences in the preserved source and Atlas snapshots. It may require a named ledger, snapshot date, and reconstruction unit before any coverage claim. It cannot treat the action set as exhaustive, classify residuals as missing or defective, call every facet fracture an error, generalize the local Stage 10F mechanism, infer pixel content, claim scientific discovery, or claim global novelty or priority.",
+  "next_step_logic": {
+    "if_contract_passes": "Use it as the admission gate for any later analysis or coverage statement; lead with the unit collision only if Paul chooses to draft.",
+    "if_an_upstream_receipt_changes": "Stop reuse and rerun the smallest affected source, provenance, retrieval, or action stage before updating the synthesis.",
+    "if_an_authoritative_manifest_explains_residuals": "Replace the unresolved residual class without changing unrelated units.",
+    "recheck_trigger": "A revised science report, Atlas snapshot, iPhone release, PDS labels, action pattern, or authoritative source-to-product manifest."
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "testbed_id": "artemis2-observation-execution-stage0",
+  "version": "0.1.0",
+  "formed_at_utc": "2026-10-09T19:20:00Z",
+  "status_at_formation": "FORMED",
+  "question": "Does deterministic alignment of the final Artemis II target plan with timestamped crew transcripts expose a repeatable geometry-event timing discrepancy that is absent from a competent direct reading of NASA's public reports?",
+  "frozen_task": "Recompute seven event-boundary deltas for Earthset, Earthrise, sunset, and sunrise from pinned OTR and transcript files. Reject the result if source identity, cue identity, timestamp semantics, target identity, plan-field identity, or mutation controls fail.",
+  "baseline": "Competent direct reading of NASA's Preliminary Lunar Science Report, Lunar Science Operations Report, and Data User Guide, plus manual spot-checking of the public archive.",
+  "treatment": "A deterministic cross-modal event alignment that binds each plan field to one explicit transcript cue and produces replayable UTC deltas.",
+  "authority": {
+    "testbed_owner": "project owner's current Codex task workspace",
+    "source_truth": "NASA Planetary Data System primary files",
+    "scientific_acceptance": "NASA or qualified lunar mission/science specialists",
+    "prohibited_effects": [
+      "No publication claim",
+      "No contact or outreach",
+      "No bulk image download",
+      "No unrelated private workspace or specialist-repository mutation",
+      "No inference that transcript timing equals SPICE-validated geometry"
+    ]
+  },
+  "environment": {
+    "timezone_contract": "All source timestamps are interpreted as UTC without conversion to local time.",
+    "runtime_contract": "Python 3 standard library only.",
+    "network_contract": "No network is used during a scored run. The corpus is local and hash-pinned."
+  },
+  "corpus": {
+    "file_count": 27,
+    "byte_count": 337208,
+    "transcript_row_count": 2830,
+    "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c",
+    "aggregate_algorithm": "SHA256 over UTF-8 lines sorted by relative path: path<TAB>bytes<TAB>file_sha256",
+    "otr_path": "corpus/artemis2_outgoing_target_request.json",
+    "transcript_glob": "corpus/transcripts/*.csv"
+  },
+  "primary_source_urls": {
+    "otr": "https://pds-geosciences.wustl.edu/artemis2/urn-nasa-pds-artemis2_mission/document/artemis2_outgoing_target_request.json",
+    "transcript_base": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_mission_audio/data_transcripts_pcd/fd06/",
+    "mission_bundle": "https://pds-geosciences.wustl.edu/missions/artemis2/mission.htm"
+  },
+  "report_baseline": [
+    {
+      "name": "Artemis II Lunar Science Operations Report",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/Artemis%20II_Lunar%20Science%20Operations%20Report_2Oct2026.pdf",
+      "sha256": "64339869c8a1c41dde273cf1b507a0827e93a881390e4af4c16a5f2f44b00cf5"
+    },
+    {
+      "name": "Artemis II Lunar Science Data User Guide",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/artemis/artemis-ii-prelimsci-report-/artemis2_data_user_guide.pdf",
+      "sha256": "c4f5ab25363ca3f8fc17bb776e9fc90c19707c8a18c9255648aef34d6a7b0bd2"
+    }
+  ],
+  "events": [
+    {
+      "id": "earthset_first_contact",
+      "label": "Earthset first contact",
+      "target": "Earthset",
+      "plan_field": "start_date_time",
+      "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+      "speaker": "Glover",
+      "cue_contains": "Eclipse's earthset is beginning.",
+      "expected_delta_seconds": -96.628,
+      "tolerance_seconds": 0.01
+    },
+    {
+      "id": "earthset_complete",
+      "label": "Earthset complete",
+      "target": "Earthset",
+      "plan_field": "end_date_time",
+      "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+      "speaker": "Glover",
+      "cue_contains": "The Earth has set.",
+      "expected_delta_seconds": -122.16,
+      "tolerance_seconds": 0.01
+    },
+    {
+      "id": "earthrise_first_contact",
+      "label": "Earthrise first contact",
+      "target": "Earthrise",
+      "plan_field": "start_date_time",
+      "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+      "speaker": "Glover",
+      "cue_contains": "The first corner of Earth.",
+      "expected_delta_seconds": -251.043,
+      "tolerance_seconds": 0.01
+    },
+    {
+      "id": "earthrise_complete",
+      "label": "Earthrise complete",
+      "target": "Earthrise",
+      "plan_field": "end_date_time",
+      "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+      "speaker": "Glover",
+      "cue_contains": "It is completely risen.",
+      "expected_delta_seconds": -126.978,
+      "tolerance_seconds": 0.01
+    },
+    {
+      "id": "sunset_first_contact",
+      "label": "Sunset first contact",
+      "target": "Sunset",
+      "plan_field": "start_date_time",
+      "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "speaker": "Hansen",
+      "cue_contains": "it's starting to eclipse.",
+      "expected_delta_seconds": -144.132,
+      "tolerance_seconds": 0.01
+    },
+    {
+      "id": "sunset_complete",
+      "label": "Sunset complete",
+      "target": "Sunset",
+      "plan_field": "end_date_time",
+      "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "speaker": "Hansen",
+      "cue_contains": "Still there, and it's gone.",
+      "expected_delta_seconds": -146.411,
+      "tolerance_seconds": 0.01
+    },
+    {
+      "id": "sunrise_first_contact",
+      "label": "Sunrise first contact",
+      "target": "Sunrise",
+      "plan_field": "start_date_time",
+      "transcript": "corpus/transcripts/art002a000053_pcd3_trn-csv_v01.csv",
+      "speaker": "Koch",
+      "cue_contains": "There is a sun popping out from the Moon!",
+      "expected_delta_seconds": -75.295,
+      "tolerance_seconds": 0.01
+    }
+  ],
+  "hard_negatives": [
+    {
+      "id": "shift_earthrise_plus_300",
+      "purpose": "A five-minute timestamp shift must invalidate the expected Earthrise delta."
+    },
+    {
+      "id": "cue_not_found",
+      "purpose": "A missing transcript cue must stop the run rather than silently select a nearby row."
+    },
+    {
+      "id": "swap_earthset_plan_field",
+      "purpose": "Substituting request_date_time for a geometry boundary must be rejected."
+    }
+  ],
+  "acceptance": {
+    "mechanics": [
+      "Corpus aggregate hash matches",
+      "Exactly one target and one transcript cue resolve for every event",
+      "All timestamps parse as UTC",
+      "All seven deltas match frozen expectations within tolerance",
+      "All three hard negatives are rejected"
+    ],
+    "bounded_finding": "The archived transcript cues occur earlier than the paired OTR geometry-window fields for all seven frozen boundaries.",
+    "explicitly_unestablished": [
+      "The OTR fields and crew utterances denote identical physical contact definitions",
+      "The crew utterance timestamp is the optical event timestamp",
+      "The discrepancy is caused by trajectory prediction error",
+      "The discrepancy generalizes to Artemis III",
+      "The discrepancy is scientifically or operationally consequential",
+      "The finding is novel outside the bounded official-report review"
+    ]
+  },
+  "budget_and_stop": {
+    "stage0_ceiling": "27 local files; seven event boundaries; three mutations; standard-library execution only",
+    "stop_on": [
+      "Any source hash mismatch",
+      "Any ambiguous target or transcript cue",
+      "Any hard negative accepted",
+      "Any need to reinterpret a cue after seeing the desired result",
+      "Any claim requiring SPICE, imagery, or specialist acceptance"
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-stimulus-recoverability-stage8b",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-09T22:31:36Z",
+  "question": "Can Hansen's actual Glushko/Ohm comparison stimulus be recovered from official Artemis II mission frames, camera state, timing, and view geometry, or does the archive currently support only a bounded camera-native proxy?",
+  "terminal_objective": "Find a more decision-changing explanation for the failed Stage 8A static reflectance proxy without reopening its failed sectors, band, geometry, or thresholds.",
+  "baseline": "Stage 8A's normalized static WAC proxy failed its frozen oracle. Transcript timing and camera metadata may recover what the crew camera recorded, but they do not by themselves recover Hansen's retinal stimulus, spacecraft geometry, window transmission, or visual adaptation.",
+  "treatment": "Bind prospectively selected official crew-camera products to the transcript intervals using product identity, time, target tags, and camera state. Inspect only the three predeclared f/8 browse images: a matched Glushko frame, a matched Ohm frame, and one joint Glushko/Ohm context frame. Classify recoverability across six frozen dimensions.",
+  "prior_stage_boundary": {
+    "stage8a_result_path": "evidence/stage8a/result.json",
+    "required_stage8a_evidence_state": "NO_REFLECTANCE_CONCORDANCE",
+    "forbidden_reopenings": [
+      "retune_stage8a_ray_sectors",
+      "change_stage8a_band",
+      "weaken_stage8a_thresholds",
+      "reinterpret_stage8a_failure_as_support"
+    ]
+  },
+  "transcript_sources": [
+    {
+      "id": "glushko_interval",
+      "path": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+      "sha256": "bc8a5afbeb228a9a2124a022c2ebcb97819c94108e02d4e562473cb61f2fbb3b",
+      "time_window_utc": ["19:11:11", "19:17:13.715"],
+      "required_anchors": [
+        "centered images of entire crater and ray system in a single frame",
+        "camera perfectly perpendicular and centered on Glushko",
+        "perfectly perpendicular from the glass",
+        "the better side of the window",
+        "higher albedo ejecta ray than the surrounding",
+        "Camera shutter clicks"
+      ]
+    },
+    {
+      "id": "ohm_interval",
+      "path": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv",
+      "sha256": "f65b025705fd3ec08cc1434eca5335a1cb6b8f774e5edab1d6815402bd317165",
+      "time_window_utc": ["19:24:53", "19:27:50"],
+      "required_anchors": [
+        "I can't get Ohm centered in the picture and perpendicular to the glass",
+        "I've got Ohm in the frame",
+        "Very similar albedos from this angle",
+        "if Ohm is a seven, Glushko is like a 7.5",
+        "not prominent at this lighting angle right now",
+        "shutter clicks"
+      ]
+    }
+  ],
+  "official_archive": {
+    "atlas_endpoint": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+    "processed_collection": "urn:nasa:pds:artemis2_crew_camera:data_processed",
+    "label_url_template": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/data_processed/fd06/{product_id}.xml",
+    "browse_url_template": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_crew_camera/browse/fd06/{product_id}.png",
+    "spice_release_calendar_url": "https://pds.nasa.gov/datasearch/subscription-service/data-release-calendar-2026.shtml",
+    "spice_state_at_formation": "The Artemis II SPICE row showed an anticipated date of 2026-10-10 and an actual release date of TBD when screened on 2026-10-09. This is a recheck trigger, not a permanent absence claim."
+  },
+  "selected_products": [
+    {
+      "role": "matched_glushko",
+      "product_id": "art002e012219_nkd5015_prc_v01",
+      "file_name": "art002e012219_nkd5015_prc_v01.tif",
+      "observed_time_utc": "19:17:12.47",
+      "target_tags": ["Glushko"],
+      "camera": "NIKON D5",
+      "lens": "AF-S Nikkor 80-400mm f/4.5-5.6G ED VR",
+      "focal_length_mm": 400.0,
+      "f_number": 8.0,
+      "iso": 400,
+      "exposure_seconds": 0.001,
+      "selection_reason": "Closest selected frame to the transcript shutter clicks at 19:17:13.715; frozen from metadata before browse-pixel inspection."
+    },
+    {
+      "role": "matched_ohm",
+      "product_id": "art002e012252_nkd5015_prc_v01",
+      "file_name": "art002e012252_nkd5015_prc_v01.tif",
+      "observed_time_utc": "19:25:15.53",
+      "target_tags": ["Ohm"],
+      "camera": "NIKON D5",
+      "lens": "AF-S Nikkor 80-400mm f/4.5-5.6G ED VR",
+      "focal_length_mm": 400.0,
+      "f_number": 8.0,
+      "iso": 400,
+      "exposure_seconds": 0.001,
+      "selection_reason": "Closest selected exact-target frame to the transcript statement that Ohm was in frame; camera settings match the Glushko frame and were frozen before browse-pixel inspection."
+    },
+    {
+      "role": "joint_context",
+      "product_id": "art002e012264_nkd5015_prc_v01",
+      "file_name": "art002e012264_nkd5015_prc_v01.tif",
+      "observed_time_utc": "19:27:31.04",
+      "target_tags": ["Glushko", "Ohm"],
+      "camera": "NIKON D5",
+      "lens": "AF-S Nikkor 80-400mm f/4.5-5.6G ED VR",
+      "focal_length_mm": 260.0,
+      "f_number": 8.0,
+      "iso": 400,
+      "exposure_seconds": 0.001,
+      "selection_reason": "Officially tagged with both craters during the continuing ray-extent discussion; frozen before browse-pixel inspection."
+    }
+  ],
+  "predeclared_bracket_fallbacks": {
+    "matched_glushko": [
+      "art002e012217_nkd5015_prc_v01",
+      "art002e012218_nkd5015_prc_v01"
+    ],
+    "matched_ohm": [
+      "art002e012250_nkd5015_prc_v01",
+      "art002e012251_nkd5015_prc_v01"
+    ],
+    "joint_context": [
+      "art002e012262_nkd5015_prc_v01",
+      "art002e012263_nkd5015_prc_v01"
+    ]
+  },
+  "fallback_rule": "Do not inspect a fallback exposure unless the corresponding selected f/8 browse object is missing, corrupt, unreadable, or lacks enough dynamic range to determine whether the officially tagged target content is visibly present. Any fallback use must be recorded before its pixels are inspected and does not increase the three-scene limit.",
+  "recoverability_dimensions": {
+    "A_temporal_and_provenance_binding": "Official product identities and timestamps bind frames to both transcript intervals.",
+    "B_named_target_content_visible": "The three predeclared browse images visibly support their official Glushko, Ohm, and joint-content tags at inspection scale.",
+    "C_matched_camera_state": "The selected Glushko and Ohm frames have the same camera, lens, focal length, ISO, aperture, and exposure duration.",
+    "D_same_frame_joint_context": "One selected frame visibly contains both named target regions and is officially tagged with both.",
+    "E_spacecraft_and_view_geometry": "Released authoritative sources provide spacecraft position, attitude, camera pointing or a defensible equivalent sufficient to reproduce the line of sight and lighting geometry for the comparison.",
+    "F_human_optical_mapping": "Released authoritative sources identify whether the scored judgment was naked-eye, viewfinder, or display-mediated and provide enough window, optics, display, and adaptation information to map camera records to Hansen's visual stimulus."
+  },
+  "oracle": {
+    "full_human_stimulus_state": "FULL_HUMAN_STIMULUS_RECONSTRUCTION_AVAILABLE",
+    "camera_proxy_state": "CAMERA_NATIVE_STIMULUS_PROXY_AVAILABLE",
+    "metadata_only_state": "METADATA_ONLY_NO_VISIBLE_PROXY",
+    "no_reconstruction_state": "NO_RECOVERABLE_STIMULUS_PATH",
+    "indeterminate_state": "INDETERMINATE_SOURCE_IDENTITY_OR_INSPECTION",
+    "full_human_requires": ["A", "B", "C", "D", "E", "F"],
+    "camera_proxy_requires": ["A", "B", "C", "D"],
+    "metadata_only_requires": ["A", "C"],
+    "classification_order": ["indeterminate", "full_human", "camera_proxy", "metadata_only", "no_reconstruction"]
+  },
+  "inspection_contract": {
+    "maximum_primary_browse_images": 3,
+    "maximum_scene_count_including_fallbacks": 3,
+    "maximum_label_files": 9,
+    "maximum_calendar_documents": 1,
+    "maximum_total_network_bytes": 67108864,
+    "pixel_access_before_formation": 0,
+    "required_observations_per_image": [
+      "decode_success",
+      "image_dimensions",
+      "named_target_content_visible",
+      "material_clipping_or_obstruction",
+      "window_reflection_or_glare_visible",
+      "inspection_limit"
+    ],
+    "verification_network_bytes": 0
+  },
+  "hard_negatives": [
+    "reopen_or_retune_stage8a",
+    "treat_target_tags_as_proof_of_visible_content",
+    "treat_processed_camera_image_as_retinal_stimulus",
+    "infer_spacecraft_geometry_from_clock_directions",
+    "assume_unreleased_spice_exists",
+    "select_alternate_exposure_after_seeing_outcome_without_trigger",
+    "ignore_window_angle_or_visual_adaptation",
+    "claim_camera_proxy_reconstructs_human_perception",
+    "expand_to_bulk_archive_search_after_frozen_three_scene_gate"
+  ],
+  "claim_ceiling": "A full pass would establish source recoverability, not that the recovered reconstruction is scientifically correct or perceptually identical. A camera-proxy result would establish only that official, time-correlated, camera-state-matched photographic records can support a bounded same-session comparison. It would not reconstruct Hansen's retinal stimulus, establish the camera as the judgment carrier, recover complete spacecraft or window geometry, control visual adaptation, explain the Stage 8A mismatch causally, validate a photometric measurement, establish novelty, or support a public scientific claim.",
+  "stop_rules": [
+    "Stop after classifying the six frozen dimensions from the three scenes and released authoritative metadata.",
+    "Do not use this gate to optimize appearance, measure ray brightness, retune any prior endpoint, or search additional scenes for a more favorable result.",
+    "If current SPICE is unavailable, preserve the missing geometry as a dated recheck trigger rather than inferring it.",
+    "If any selected source identity is ambiguous or any inspected image is not hash-bound, classify the run as indeterminate."
+  ],
+  "next_step_logic": {
+    "if_full_human_stimulus": "Form a separate reconstruction test with the recovered geometry and optical assumptions exposed; do not treat availability as validation.",
+    "if_camera_proxy": "Admit one separately frozen camera-native paired-and-joint-image canary. Keep its claim photographic and same-session; do not call it Hansen's actual stimulus.",
+    "if_metadata_only": "Stop image interpretation. Preserve the product/time mapping as metadata and close the stimulus lane unless a source defect can be repaired without changing selection.",
+    "if_no_reconstruction": "Close the recoverability lane and retain the transcript as qualitative mission evidence only.",
+    "if_indeterminate": "Repair only the named source identity, corrupted object, or missing inspection record; do not select a more favorable scene.",
+    "recheck_trigger": "When official Artemis II SPICE becomes actually available, re-attest dimensions E and F. New trajectory geometry may change E; it cannot by itself satisfy F."
+  }
+}

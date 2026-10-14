@@ -1,0 +1,17 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-reflectance-canary-stage8a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "classification": "VALIDATOR_ERROR",
+      "failure": "A misplaced return in the extended verifier caused verify_formation_with_mutations to return null before any raster scoring began.",
+      "effect": "No result JSON or Markdown artifact was emitted and no candidate classification was made.",
+      "repair": "Restore the return to the formation verifier, rerun all five formation tests, then rerun the same frozen science verification."
+    },
+    {
+      "attempt": 2,
+      "classification": "PASS",
+      "effect": "Formation tests passed and the hash-pinned offline science verification completed without changing the claim, geometry, band, controls, or thresholds."
+    }
+  ]
+}

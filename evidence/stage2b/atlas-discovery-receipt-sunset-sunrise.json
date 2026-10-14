@@ -1,0 +1,18 @@
+{
+  "receipt_id": "artemis2-stage2b-atlas-candidate-discovery-v1",
+  "completed_at_utc": "2026-10-09T21:01:45Z",
+  "endpoint": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+  "status": "STOPPED",
+  "error": "sunset: HTTP Error 504: Gateway Timeout",
+  "events": [
+    {
+      "event_id": "sunset",
+      "query_path": "evidence/stage2b/atlas-query-sunset.json",
+      "query_bytes": 507,
+      "query_sha256": "f8a7edaafffb091fee8c7cf82bc6c99e4dd977c666cddd138b5d8e0df2e5b5b5",
+      "queried_at_utc": "2026-10-09T21:01:15Z",
+      "status": "STOPPED",
+      "error": "HTTP Error 504: Gateway Timeout"
+    }
+  ]
+}

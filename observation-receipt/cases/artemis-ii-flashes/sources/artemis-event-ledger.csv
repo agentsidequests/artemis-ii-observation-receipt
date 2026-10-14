@@ -1,0 +1,9 @@
+event_id,observer,annotation_note,exact_event_utc,mapping_state
+event-1,Reid Wiseman,blue mark; central near 4 o'clock,,not assigned one-to-one
+event-2,Reid Wiseman,blue and red marks; circled; near 8 o'clock,,not assigned one-to-one
+event-2,Jeremy Hansen,blue and red marks; circled; near 8 o'clock,,not assigned one-to-one
+event-3,Jeremy Hansen,red mark; near 3 o'clock,,not assigned one-to-one
+event-4,Reid Wiseman,"blue, red, and green marks; circled; later; near 6 o'clock",,not assigned one-to-one
+event-4,Jeremy Hansen,"blue, red, and green marks; circled; later; near 6 o'clock",,not assigned one-to-one
+event-4,Victor Glover,"blue, red, and green marks; circled; later; near 6 o'clock",,not assigned one-to-one
+event-5,Reid Wiseman,blue mark; towards end; near 12 o'clock,,not assigned one-to-one

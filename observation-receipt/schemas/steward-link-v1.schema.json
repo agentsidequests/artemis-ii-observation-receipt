@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:observation-receipt:steward-link:1",
+  "title": "Source-bound steward statement reference, not local byte identity",
+  "type": "object",
+  "required": ["id", "group_id", "source_artifact_id", "statement_pointer"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "group_id": {"type": "string", "minLength": 1},
+    "source_artifact_id": {"type": "string", "minLength": 1},
+    "statement_pointer": {"type": "string", "pattern": "^/.+$"}
+  },
+  "additionalProperties": false
+}

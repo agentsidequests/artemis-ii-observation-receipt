@@ -1,0 +1,40 @@
+31
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+the LST received and prepared with the PDS, preliminary Orion spacecraft ephemeris, orientation, 
+clock and camera and spacecraft geometry information in the form of archived PDS Spacecraft, Planet, 
+Instrument, C-matrix, Events (SPICE) kernels. The LST anticipates subsequent PDS releases of the 
+SPICE kernel will include refined Orion ancillary information as they are made available by mission 
+Table 4.1: Science Data Summary. Science data received and archived by the LST , including the number, volume, and 
+formats of files.
+Total Mission Science Data File Count Volume (GB) Source Format Additional 
+Archive Format
+11591 814.51
+Crew Camera (Serial Number)
+Nikon D5 (3500015) 7011 118.05 NEF TIFF
+Nikon D5 (3500017) 553 10.23 NEF TIFF
+Nikon Z9 (3920019) 2775 79.71 NEF TIFF
+iPhone 17 Pro 68 2.30 DNG, JPEG TIFF
+Total Crew Camera  10407 210.29
+Orion Camera (Still)
+SAW Cam 2 10 0.02 JPEG TIFF
+SAW Cam 3 189 0.50 JPEG TIFF
+SAW Cam 4 12 0.03 JPEG TIFF
+CAB Cam 2 176 0.39 JPEG TIFF
+OpNav 404 2.00 TIFF TIFF
+Docking Cam 249 0.20 PNG TIFF
+Total Orion Camera (Still) 1040 3.14
+Orion Camera (Video)
+SAW Cam 3 (Video) 22 598.20 MXF MP4
+Total Orion Camera (Video) 22 598.20
+Mission Audio
+PCD Audio 53 0.70 M4A M4A
+Orion/Earth 1, 2 Voice Loops 20 2.10 MP3 MP4
+Nikon Audio 42 0.06 WAV *see Notes
+Total Mission Audio 115 2.86
+Mission (Other)
+Crew Annotations 5 0.02 OneNote, JPEG PDF
+Temperature/Humidity 2 0.00 CSV CSV
+Total Mission (Other) 7 0.02
+*Notes: For the data archive, the brief transcriptions of Nikon audio WAV files were added to the metadata of associ-
+ated Nikon images. Separate transcripts in CSV and SRT format were also prepared for PCD and voice loop audio files.

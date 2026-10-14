@@ -1,0 +1,23 @@
+{
+  "later_window": {
+    "start_utc": "2026-04-07T01:19:13Z",
+    "stop_utc": "2026-04-07T01:21:23Z",
+    "starts_after_base_image_time_seconds": 913
+  },
+  "overlap_window": {
+    "start_utc": "2026-04-07T00:51:10Z",
+    "stop_utc": "2026-04-07T00:51:25Z",
+    "frame_rate_fps": 59.94005994005994,
+    "frames_screened": 900,
+    "apparent_lunar_footprint_pixels": [10, 9],
+    "screened_pulse_candidates": 0
+  },
+  "injection_recovery": {
+    "trials": 1458,
+    "recovered_through_12000_requested_counts": 0,
+    "recovered_at_16000_requested_counts": 9,
+    "trials_at_16000_requested_counts": 162,
+    "fifty_percent_recovery_reached": false,
+    "units": "transcoded clip-native digital counts per frame"
+  }
+}

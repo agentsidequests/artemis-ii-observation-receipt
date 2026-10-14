@@ -1,0 +1,782 @@
+{
+  "baseline": {
+    "testbed_id": "artemis2-observation-execution-stage1",
+    "version": "0.2.0",
+    "run_at_utc": "2026-10-09T19:49:02Z",
+    "mutation": "none",
+    "pass": true,
+    "evidence_state": "VERIFIED_STOP",
+    "stage_gate": "STOPPED",
+    "disposition": "STOP_UNVALIDATED_TIMING_LANE",
+    "checks": [
+      {
+        "id": "source_extracts_identity",
+        "pass": true,
+        "observed_sha256": "c9f30643627f3d7fc5066ad721193c552d9fc101e92a88b73d52c134e499ee92"
+      },
+      {
+        "id": "timeline_render_identity",
+        "pass": true,
+        "observed_sha256": "d19fcceef8aa27d9a49c080e2fe035c686954e9065a58146a22bf6d144bec03a"
+      },
+      {
+        "id": "otr_identity",
+        "pass": true,
+        "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+      },
+      {
+        "id": "boundary_map_complete",
+        "pass": true
+      },
+      {
+        "id": "expected_verdict_summary",
+        "pass": true,
+        "observed": {
+          "AMBIGUOUS": 5,
+          "FAIL": 2
+        }
+      },
+      {
+        "id": "stage_gate",
+        "pass": true,
+        "observed": "STOPPED"
+      }
+    ],
+    "boundary_summary": {
+      "PASS": 0,
+      "FAIL": 2,
+      "AMBIGUOUS": 5
+    },
+    "boundaries": [
+      {
+        "id": "earthset_first_contact",
+        "plan_field": "start_date_time",
+        "plan_semantics": "availability_window_start",
+        "spoken_semantics": "optical_first_contact",
+        "verdict": "AMBIGUOUS",
+        "equivalence_source_locator": null,
+        "reason": "NASA defines availability, but does not map this endpoint to first optical contact."
+      },
+      {
+        "id": "earthset_complete",
+        "plan_field": "end_date_time",
+        "plan_semantics": "availability_window_end",
+        "spoken_semantics": "optical_completion",
+        "verdict": "AMBIGUOUS",
+        "equivalence_source_locator": null,
+        "reason": "NASA defines availability, but does not map this endpoint to complete occultation."
+      },
+      {
+        "id": "earthrise_first_contact",
+        "plan_field": "start_date_time",
+        "plan_semantics": "availability_window_start",
+        "spoken_semantics": "optical_first_contact",
+        "verdict": "FAIL",
+        "equivalence_source_locator": null,
+        "reason": "The 4.147844-second availability interval cannot represent the 128.213-second first-corner-to-completely-risen progression under the proposed endpoint mapping."
+      },
+      {
+        "id": "earthrise_complete",
+        "plan_field": "end_date_time",
+        "plan_semantics": "availability_window_end",
+        "spoken_semantics": "optical_completion",
+        "verdict": "FAIL",
+        "equivalence_source_locator": null,
+        "reason": "The paired endpoint model is contradicted by the Earthrise duration hard negative."
+      },
+      {
+        "id": "sunset_first_contact",
+        "plan_field": "start_date_time",
+        "plan_semantics": "availability_window_start",
+        "spoken_semantics": "optical_first_contact",
+        "verdict": "AMBIGUOUS",
+        "equivalence_source_locator": null,
+        "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+      },
+      {
+        "id": "sunset_complete",
+        "plan_field": "end_date_time",
+        "plan_semantics": "availability_window_end",
+        "spoken_semantics": "optical_completion",
+        "verdict": "AMBIGUOUS",
+        "equivalence_source_locator": null,
+        "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+      },
+      {
+        "id": "sunrise_first_contact",
+        "plan_field": "start_date_time",
+        "plan_semantics": "availability_window_start",
+        "spoken_semantics": "optical_first_contact",
+        "verdict": "AMBIGUOUS",
+        "equivalence_source_locator": null,
+        "reason": "The archive supplies no explicit availability-start-to-first-contact mapping, and the frozen transcript set has no completion cue for a paired duration check."
+      }
+    ],
+    "intervals": [
+      {
+        "id": "earthset_progression",
+        "target": "Earthset",
+        "plan_duration_seconds": 196.650033,
+        "observed_duration_seconds": 171.118,
+        "duration_difference_seconds": 25.532033,
+        "plan_to_observed_ratio": 1.149207173,
+        "duration_hard_negative": false,
+        "verdict": "AMBIGUOUS",
+        "pass": true
+      },
+      {
+        "id": "earthrise_progression",
+        "target": "Earthrise",
+        "plan_duration_seconds": 4.147844,
+        "observed_duration_seconds": 128.213,
+        "duration_difference_seconds": -124.065156,
+        "plan_to_observed_ratio": 0.032351197,
+        "duration_hard_negative": true,
+        "verdict": "FAIL",
+        "pass": true
+      },
+      {
+        "id": "sunset_progression",
+        "target": "Sunset",
+        "plan_duration_seconds": 102.8071,
+        "observed_duration_seconds": 100.528,
+        "duration_difference_seconds": 2.2791,
+        "plan_to_observed_ratio": 1.022671296,
+        "duration_hard_negative": false,
+        "verdict": "AMBIGUOUS",
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "next_step_logic": {
+      "recommended": "Reframe Stage 2 as an independent geometry coverage test: compute physical event intervals from SPICE or image-state transitions, then test whether each OTR availability window contains or overlaps the event. Do not call the difference a boundary delay.",
+      "why": "It preserves the strongest candidate while removing the failed semantic assumption and is cheaper than expanding to the image archive.",
+      "blocked_route": "Do not advance the original plan-boundary-versus-crew-boundary timing claim.",
+      "fallback": "If a hash-pinned independent geometry source is unavailable, pivot to Stage 3 target execution and attention allocation, where request times and transcript order have documented semantics."
+    }
+  },
+  "hard_negatives": {
+    "promote_earthrise_duration_mismatch": {
+      "testbed_id": "artemis2-observation-execution-stage1",
+      "version": "0.2.0",
+      "run_at_utc": "2026-10-09T19:49:02Z",
+      "mutation": "promote_earthrise_duration_mismatch",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "stage_gate": "STOPPED",
+      "disposition": null,
+      "checks": [
+        {
+          "id": "source_extracts_identity",
+          "pass": true,
+          "observed_sha256": "c9f30643627f3d7fc5066ad721193c552d9fc101e92a88b73d52c134e499ee92"
+        },
+        {
+          "id": "timeline_render_identity",
+          "pass": true,
+          "observed_sha256": "d19fcceef8aa27d9a49c080e2fe035c686954e9065a58146a22bf6d144bec03a"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "boundary_map_complete",
+          "pass": true
+        },
+        {
+          "id": "expected_verdict_summary",
+          "pass": true,
+          "observed": {
+            "AMBIGUOUS": 5,
+            "FAIL": 2
+          }
+        },
+        {
+          "id": "stage_gate",
+          "pass": true,
+          "observed": "STOPPED"
+        }
+      ],
+      "boundary_summary": {
+        "PASS": 0,
+        "FAIL": 2,
+        "AMBIGUOUS": 5
+      },
+      "boundaries": [
+        {
+          "id": "earthset_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to first optical contact."
+        },
+        {
+          "id": "earthset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to complete occultation."
+        },
+        {
+          "id": "earthrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The 4.147844-second availability interval cannot represent the 128.213-second first-corner-to-completely-risen progression under the proposed endpoint mapping."
+        },
+        {
+          "id": "earthrise_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The paired endpoint model is contradicted by the Earthrise duration hard negative."
+        },
+        {
+          "id": "sunset_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "The archive supplies no explicit availability-start-to-first-contact mapping, and the frozen transcript set has no completion cue for a paired duration check."
+        }
+      ],
+      "intervals": [
+        {
+          "id": "earthset_progression",
+          "target": "Earthset",
+          "plan_duration_seconds": 196.650033,
+          "observed_duration_seconds": 171.118,
+          "duration_difference_seconds": 25.532033,
+          "plan_to_observed_ratio": 1.149207173,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        },
+        {
+          "id": "earthrise_progression",
+          "target": "Earthrise",
+          "plan_duration_seconds": 4.147844,
+          "observed_duration_seconds": 128.213,
+          "duration_difference_seconds": -124.065156,
+          "plan_to_observed_ratio": 0.032351197,
+          "duration_hard_negative": true,
+          "verdict": "PASS",
+          "pass": false
+        },
+        {
+          "id": "sunset_progression",
+          "target": "Sunset",
+          "plan_duration_seconds": 102.8071,
+          "observed_duration_seconds": 100.528,
+          "duration_difference_seconds": 2.2791,
+          "plan_to_observed_ratio": 1.022671296,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "earthrise_progression accepts the duration hard negative"
+      ],
+      "next_step_logic": null
+    },
+    "present_request_time_as_contact": {
+      "testbed_id": "artemis2-observation-execution-stage1",
+      "version": "0.2.0",
+      "run_at_utc": "2026-10-09T19:49:02Z",
+      "mutation": "present_request_time_as_contact",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "stage_gate": "STOPPED",
+      "disposition": null,
+      "checks": [
+        {
+          "id": "source_extracts_identity",
+          "pass": true,
+          "observed_sha256": "c9f30643627f3d7fc5066ad721193c552d9fc101e92a88b73d52c134e499ee92"
+        },
+        {
+          "id": "timeline_render_identity",
+          "pass": true,
+          "observed_sha256": "d19fcceef8aa27d9a49c080e2fe035c686954e9065a58146a22bf6d144bec03a"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "boundary_map_complete",
+          "pass": true
+        },
+        {
+          "id": "expected_verdict_summary",
+          "pass": false,
+          "observed": {
+            "PASS": 1,
+            "AMBIGUOUS": 4,
+            "FAIL": 2
+          }
+        },
+        {
+          "id": "stage_gate",
+          "pass": true,
+          "observed": "STOPPED"
+        }
+      ],
+      "boundary_summary": {
+        "PASS": 1,
+        "FAIL": 2,
+        "AMBIGUOUS": 4
+      },
+      "boundaries": [
+        {
+          "id": "earthset_first_contact",
+          "plan_field": "request_date_time",
+          "plan_semantics": "optical_first_contact",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "PASS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to first optical contact."
+        },
+        {
+          "id": "earthset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to complete occultation."
+        },
+        {
+          "id": "earthrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The 4.147844-second availability interval cannot represent the 128.213-second first-corner-to-completely-risen progression under the proposed endpoint mapping."
+        },
+        {
+          "id": "earthrise_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The paired endpoint model is contradicted by the Earthrise duration hard negative."
+        },
+        {
+          "id": "sunset_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "The archive supplies no explicit availability-start-to-first-contact mapping, and the frozen transcript set has no completion cue for a paired duration check."
+        }
+      ],
+      "intervals": [
+        {
+          "id": "earthset_progression",
+          "target": "Earthset",
+          "plan_duration_seconds": 196.650033,
+          "observed_duration_seconds": 171.118,
+          "duration_difference_seconds": 25.532033,
+          "plan_to_observed_ratio": 1.149207173,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        },
+        {
+          "id": "earthrise_progression",
+          "target": "Earthrise",
+          "plan_duration_seconds": 4.147844,
+          "observed_duration_seconds": 128.213,
+          "duration_difference_seconds": -124.065156,
+          "plan_to_observed_ratio": 0.032351197,
+          "duration_hard_negative": true,
+          "verdict": "FAIL",
+          "pass": true
+        },
+        {
+          "id": "sunset_progression",
+          "target": "Sunset",
+          "plan_duration_seconds": 102.8071,
+          "observed_duration_seconds": 100.528,
+          "duration_difference_seconds": 2.2791,
+          "plan_to_observed_ratio": 1.022671296,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "earthset_first_contact changes the frozen plan field",
+        "earthset_first_contact misstates request_date_time semantics",
+        "earthset_first_contact passes without an equivalence source",
+        "Boundary verdict summary changed"
+      ],
+      "next_step_logic": null
+    },
+    "treat_beginning_as_completion": {
+      "testbed_id": "artemis2-observation-execution-stage1",
+      "version": "0.2.0",
+      "run_at_utc": "2026-10-09T19:49:02Z",
+      "mutation": "treat_beginning_as_completion",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "stage_gate": "STOPPED",
+      "disposition": null,
+      "checks": [
+        {
+          "id": "source_extracts_identity",
+          "pass": true,
+          "observed_sha256": "c9f30643627f3d7fc5066ad721193c552d9fc101e92a88b73d52c134e499ee92"
+        },
+        {
+          "id": "timeline_render_identity",
+          "pass": true,
+          "observed_sha256": "d19fcceef8aa27d9a49c080e2fe035c686954e9065a58146a22bf6d144bec03a"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "boundary_map_complete",
+          "pass": true
+        },
+        {
+          "id": "expected_verdict_summary",
+          "pass": true,
+          "observed": {
+            "AMBIGUOUS": 5,
+            "FAIL": 2
+          }
+        },
+        {
+          "id": "stage_gate",
+          "pass": true,
+          "observed": "STOPPED"
+        }
+      ],
+      "boundary_summary": {
+        "PASS": 0,
+        "FAIL": 2,
+        "AMBIGUOUS": 5
+      },
+      "boundaries": [
+        {
+          "id": "earthset_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to first optical contact."
+        },
+        {
+          "id": "earthset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to complete occultation."
+        },
+        {
+          "id": "earthrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The 4.147844-second availability interval cannot represent the 128.213-second first-corner-to-completely-risen progression under the proposed endpoint mapping."
+        },
+        {
+          "id": "earthrise_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The paired endpoint model is contradicted by the Earthrise duration hard negative."
+        },
+        {
+          "id": "sunset_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "The archive supplies no explicit availability-start-to-first-contact mapping, and the frozen transcript set has no completion cue for a paired duration check."
+        }
+      ],
+      "intervals": [
+        {
+          "id": "earthset_progression",
+          "target": "Earthset",
+          "plan_duration_seconds": 196.650033,
+          "observed_duration_seconds": 171.118,
+          "duration_difference_seconds": 25.532033,
+          "plan_to_observed_ratio": 1.149207173,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        },
+        {
+          "id": "earthrise_progression",
+          "target": "Earthrise",
+          "plan_duration_seconds": 4.147844,
+          "observed_duration_seconds": 128.213,
+          "duration_difference_seconds": -124.065156,
+          "plan_to_observed_ratio": 0.032351197,
+          "duration_hard_negative": true,
+          "verdict": "FAIL",
+          "pass": true
+        },
+        {
+          "id": "sunset_progression",
+          "target": "Sunset",
+          "plan_duration_seconds": 102.8071,
+          "observed_duration_seconds": 100.528,
+          "duration_difference_seconds": 2.2791,
+          "plan_to_observed_ratio": 1.022671296,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "earthset_first_contact misclassifies the spoken cue boundary"
+      ],
+      "next_step_logic": null
+    },
+    "promote_sunset_from_duration_only": {
+      "testbed_id": "artemis2-observation-execution-stage1",
+      "version": "0.2.0",
+      "run_at_utc": "2026-10-09T19:49:02Z",
+      "mutation": "promote_sunset_from_duration_only",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "stage_gate": "STOPPED",
+      "disposition": null,
+      "checks": [
+        {
+          "id": "source_extracts_identity",
+          "pass": true,
+          "observed_sha256": "c9f30643627f3d7fc5066ad721193c552d9fc101e92a88b73d52c134e499ee92"
+        },
+        {
+          "id": "timeline_render_identity",
+          "pass": true,
+          "observed_sha256": "d19fcceef8aa27d9a49c080e2fe035c686954e9065a58146a22bf6d144bec03a"
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "boundary_map_complete",
+          "pass": true
+        },
+        {
+          "id": "expected_verdict_summary",
+          "pass": false,
+          "observed": {
+            "AMBIGUOUS": 4,
+            "FAIL": 2,
+            "PASS": 1
+          }
+        },
+        {
+          "id": "stage_gate",
+          "pass": true,
+          "observed": "STOPPED"
+        }
+      ],
+      "boundary_summary": {
+        "PASS": 1,
+        "FAIL": 2,
+        "AMBIGUOUS": 4
+      },
+      "boundaries": [
+        {
+          "id": "earthset_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to first optical contact."
+        },
+        {
+          "id": "earthset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "NASA defines availability, but does not map this endpoint to complete occultation."
+        },
+        {
+          "id": "earthrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The 4.147844-second availability interval cannot represent the 128.213-second first-corner-to-completely-risen progression under the proposed endpoint mapping."
+        },
+        {
+          "id": "earthrise_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "FAIL",
+          "equivalence_source_locator": null,
+          "reason": "The paired endpoint model is contradicted by the Earthrise duration hard negative."
+        },
+        {
+          "id": "sunset_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "PASS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunset_complete",
+          "plan_field": "end_date_time",
+          "plan_semantics": "availability_window_end",
+          "spoken_semantics": "optical_completion",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "Similar interval duration is suggestive, but duration agreement does not define either endpoint."
+        },
+        {
+          "id": "sunrise_first_contact",
+          "plan_field": "start_date_time",
+          "plan_semantics": "availability_window_start",
+          "spoken_semantics": "optical_first_contact",
+          "verdict": "AMBIGUOUS",
+          "equivalence_source_locator": null,
+          "reason": "The archive supplies no explicit availability-start-to-first-contact mapping, and the frozen transcript set has no completion cue for a paired duration check."
+        }
+      ],
+      "intervals": [
+        {
+          "id": "earthset_progression",
+          "target": "Earthset",
+          "plan_duration_seconds": 196.650033,
+          "observed_duration_seconds": 171.118,
+          "duration_difference_seconds": 25.532033,
+          "plan_to_observed_ratio": 1.149207173,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        },
+        {
+          "id": "earthrise_progression",
+          "target": "Earthrise",
+          "plan_duration_seconds": 4.147844,
+          "observed_duration_seconds": 128.213,
+          "duration_difference_seconds": -124.065156,
+          "plan_to_observed_ratio": 0.032351197,
+          "duration_hard_negative": true,
+          "verdict": "FAIL",
+          "pass": true
+        },
+        {
+          "id": "sunset_progression",
+          "target": "Sunset",
+          "plan_duration_seconds": 102.8071,
+          "observed_duration_seconds": 100.528,
+          "duration_difference_seconds": 2.2791,
+          "plan_to_observed_ratio": 1.022671296,
+          "duration_hard_negative": false,
+          "verdict": "AMBIGUOUS",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "sunset_first_contact passes mismatched boundary semantics",
+        "sunset_first_contact passes without an equivalence source",
+        "Boundary verdict summary changed"
+      ],
+      "next_step_logic": null
+    }
+  },
+  "hard_negatives_pass": true,
+  "pass": true,
+  "evidence_state": "VERIFIED_STOP"
+}

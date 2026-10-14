@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1Q00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1Q00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:artemis2_orion_camera:data_video</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Artemis 2 Orion Cameras Data Raw Product Collection</title>
+    <information_model_version>1.26.0.0</information_model_version>
+    <product_class>Product_Collection</product_class>
+    <Citation_Information>
+        <publication_year>2026</publication_year>
+        <description>This collection contains video data from Orion cameras.</description>
+    </Citation_Information>
+  </Identification_Area>
+
+  <Context_Area>
+    <comment>Observational Intent</comment>
+    <Time_Coordinates>
+      <start_date_time>2026-04-06T15:40:05Z</start_date_time>
+      <stop_date_time>2026-04-07T03:38:06Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+      <Science_Facets>
+        <wavelength_range>Visible</wavelength_range>
+        <domain>Surface</domain>
+        <discipline_name>Imaging</discipline_name>
+      </Science_Facets>
+    </Primary_Result_Summary>
+
+    <Investigation_Area>
+      <name>Artemis 2 Mission</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.artemis2</lid_reference>
+        <reference_type>collection_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+
+    <Observing_System>
+
+      <Observing_System_Component>
+        <name>Artemis 2 Orion spacecraft</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.artemis2_orion</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+          <comment>This is the PDS4 logical identifier for the Artemis 2 Orion spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+
+      <Observing_System_Component>
+        <name>Artemis 2 Orion Solar Array Wing (SAW) cameras</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:artemis2_orion.saw</lid_reference>
+          <reference_type>is_instrument</reference_type>
+          <comment>This is the PDS4 context product reference for the video from the Solar Array Wing 3 GoPro Hero4 Black camera hard-mounted on the tip of the solar array wing 3 of the Orion spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+
+    </Observing_System>
+
+    <Target_Identification>
+      <name>Moon</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+        <comment>Reference to the Satellite - Moon target</comment>
+      </Internal_Reference>
+    </Target_Identification>
+
+  </Context_Area>
+
+  <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:resource:resource.artemis2_orion_camera_online</lid_reference>
+            <reference_type>has_resource</reference_type>
+        </Internal_Reference>
+        </Reference_List>
+    <Collection>
+    <collection_type>Data</collection_type>
+  </Collection>
+
+  <File_Area_Inventory>
+    <File>
+      <file_name>collection_data_video_inventory.csv</file_name>
+      <local_identifier>inventory_collection.data</local_identifier>
+    </File>
+    <Inventory>
+      <local_identifier>collection_inventory.data</local_identifier>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+      <records>22</records>
+      <record_delimiter>Line-Feed</record_delimiter>
+      <field_delimiter>Comma</field_delimiter>
+      <Record_Delimited>
+        <fields>2</fields>
+        <groups>0</groups>
+        <maximum_record_length unit="byte">259</maximum_record_length>
+        <Field_Delimited>
+          <name>Member Status</name>
+          <field_number>1</field_number>
+          <data_type>ASCII_String</data_type>
+          <maximum_field_length unit="byte">1</maximum_field_length>
+          <description>
+                        This columns specifies the Member Status of the files that 
+                        comprise the collection.  
+                    </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>LIDVID_LID</name>
+          <field_number>2</field_number>
+          <data_type>ASCII_LIDVID_LID</data_type>
+          <maximum_field_length unit="byte">255</maximum_field_length>
+          <description>
+                        This columns specifies the LIDVID of the files that 
+                        comprise the collection.  
+                    </description>
+        </Field_Delimited>
+      </Record_Delimited>
+      <reference_type>inventory_has_member_product</reference_type>
+    </Inventory>
+  </File_Area_Inventory>
+</Product_Collection>

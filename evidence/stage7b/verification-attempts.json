@@ -1,0 +1,14 @@
+{
+  "stage": "7B",
+  "attempts": [
+    {
+      "attempt": 1,
+      "command_scope": "tests.test_stage7b",
+      "result": "REJECTED_BEFORE_CLASSIFICATION",
+      "failure_layer": "candidate evidence locator",
+      "cause": "Two candidate records copied audio-time seconds as though they were physical CSV row numbers.",
+      "effect": "The verifier rejected the Reiner Gamma and Glushko/Ohm anchors. No source values were accessed and no result artifact was emitted.",
+      "repair": "Resolve exact physical rows with literal transcript search, update only the two row arrays, refresh the candidate-evidence hash, and rerun the same targeted suite."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-reflectance-canary-stage8a",
+  "status": "COMPLETED",
+  "spec_sha256": "ce0168e489ebf6ff2fec1ffee4114852b4042d297026a6b484056f1ad8dd0553",
+  "semantic_sha256": "92c2f867cbdce91922d8b88768dddfaff5b2b2a280a8e9c0825ce61db97acc21",
+  "source_correction_receipt_sha256": "2366618235422d5cfecf0b4d0b21978a20bf0009a98224610722feff47a65e97",
+  "source_manifest_path": "evidence/stage8a/source-manifest.json",
+  "accepted_science_label_bytes": 28286,
+  "accepted_science_img_bytes": 21818880,
+  "range_probe_bytes": 2,
+  "accepted_science_network_bytes": 21847168,
+  "accepted_science_network_budget_bytes": 21930000,
+  "rejected_browse_network_bytes": 44315622,
+  "complete_testbed_network_bytes": 66162790,
+  "range_assurance": {
+    "server_head_content_length": 88496640,
+    "server_head_accept_ranges": "bytes",
+    "one_byte_probe_status_each": 206,
+    "one_byte_probe_content_range_each": "bytes 0-0/88496640",
+    "saved_range_lengths_match_contract": true,
+    "note": "PowerShell's OutFile path did not retain response metadata, so range semantics are attested by exact saved lengths, the server's Accept-Ranges header, and a 206 one-byte probe against each exact science product."
+  },
+  "scored_verification_network_bytes": 0,
+  "replay": "All scoring and mutation verification use only the hash-pinned local science labels and IMG row strips."
+}

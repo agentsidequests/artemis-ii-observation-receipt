@@ -1,0 +1,90 @@
+{
+  "assessment_id": "artemis2-stage9b-gray-feature-source-control-v1",
+  "assessed_at_utc": "2026-10-09T23:33:02Z",
+  "inherited_oracle": "All required source/control dimensions must pass before any candidate pixel is opened, because the admitted canary must distinguish rigid terrain, Earth-linked glare or bloom, a cabin/window-only effect, and an external diffuse anomaly.",
+  "event": {
+    "report_time_utc": "2026-04-06T23:22:39.010Z",
+    "reporter": "Koch",
+    "exact_transcript_product": "art002a000015_pcd3_trn-csv_v01.csv",
+    "report_state": "POTENTIAL_SIGHTING_WITH_COMPETING_EXPLANATIONS"
+  },
+  "coverage": {
+    "atlas_total_hits": 41,
+    "atlas_returned_hits": 41,
+    "crew_raw_frame_count": 40,
+    "crew_raw_first_utc": "2026-04-06T23:22:37.530Z",
+    "crew_raw_last_utc": "2026-04-06T23:22:49.330Z",
+    "event_bracket_frame_ids": [
+      "art002e025029_nkd5015_raw_v01",
+      "art002e025030_nkd5015_raw_v01",
+      "art002e025031_nkd5015_raw_v01",
+      "art002e025032_nkd5015_raw_v01",
+      "art002e025033_nkd5015_raw_v01"
+    ],
+    "event_bracket_first_offset_seconds": 0.02,
+    "event_bracket_last_offset_seconds": 0.39,
+    "external_frame_id": "art002e016299_saw3_raw_v01",
+    "external_frame_offset_seconds": 4.99
+  },
+  "dimensions": [
+    {
+      "id": "A_exact_event_and_recorder_identity",
+      "required": true,
+      "status": "PASS",
+      "evidence": "The released PCD3 transcript and labels bind Koch's report to art002a000015 at 23:22:39.010 UTC; the PCD3 assignment includes Koch and Wiseman."
+    },
+    {
+      "id": "B_synchronous_internal_camera_coverage",
+      "required": true,
+      "status": "PASS",
+      "evidence": "The bounded Atlas response returns 40 D5 raw frames from 23:22:37.530 through 23:22:49.330 UTC. Five exposure-bracket frames begin 0.020 to 0.390 seconds after the transcript report time."
+    },
+    {
+      "id": "C_earth_emergence_temporal_progression",
+      "required": true,
+      "status": "PASS",
+      "evidence": "Repeated five-exposure D5 brackets span the report and subsequent Earth emergence, providing a same-camera temporal sequence if a later gate were admitted."
+    },
+    {
+      "id": "D_rigid_terrain_control",
+      "required": true,
+      "status": "PARTIAL",
+      "evidence": "NASA mapped Al-Biruni and Goddard rim topography in art002e009280, but the event burst lacks released exact geometry and the report documents a 14.2-second camera/render discrepancy."
+    },
+    {
+      "id": "E_observer_window_carrier_binding",
+      "required": true,
+      "status": "PARTIAL",
+      "evidence": "NASA tags Koch as using a camera and the event frames use D5 serial 3500015 at 400 mm, but product labels do not identify the operator, exact eye/viewfinder state, or window for each frame."
+    },
+    {
+      "id": "F_cabin_window_optical_control",
+      "required": true,
+      "status": "FAIL",
+      "evidence": "The exact transcript documents active attempts to cover cabin reflections and persistent sunlight reflection. NASA says the full three-pane window stack was not characterized preflight and can distort images. No event-specific optical transfer or reflection control is released."
+    },
+    {
+      "id": "G_external_comparable_carrier",
+      "required": true,
+      "status": "FAIL",
+      "evidence": "The only external raw-image hit in the bounded window is SAW Cam 3 at 23:22:44 UTC, 4.99 seconds after the report. Its GoPro exposure is about 0.000384 seconds at ISO 100 and -2 EV, with a different viewpoint and no demonstrated faint-source sensitivity equivalence to the D5 or human view."
+    },
+    {
+      "id": "H_event_geometry",
+      "required": true,
+      "status": "FAIL",
+      "evidence": "The current PDS mission page marks the Artemis II SPICE bundle delayed. Existing report photogrammetry is useful but does not supply exact released geometry for every event frame."
+    },
+    {
+      "id": "I_calibrated_faint_source_response",
+      "required": true,
+      "status": "FAIL",
+      "evidence": "The released handheld and SAW products do not establish a calibrated response or detection threshold for an extended faint limb source. NASA's report recommends a dedicated low-light limb camera for confident detection or non-detection."
+    }
+  ],
+  "admission_rule": "ADMIT only when every required dimension is PASS.",
+  "admitted": false,
+  "evidence_state": "VERIFIED_SOURCE_CONTROL_STOP",
+  "disposition": "SOURCE_CONTROL_INSUFFICIENT",
+  "lane_state": "CLOSE_GRAY_FEATURE_IMAGE_LANE_AT_CURRENT_ARCHIVE_BOUNDARY"
+}

@@ -1,0 +1,410 @@
+{
+  "receipt_version": "0.2.0",
+  "case_id": "artemis-ii-flashes",
+  "title": "Artemis II lunar flash evidence",
+  "summary": "Five accepted marks form a credible event ledger. The available camera records do not yet provide a calibrated measurement function, so camera nulls and flux claims stop at different evidence boundaries.",
+  "viewer_context": {
+    "key_distinction": "The five-event ledger is credible evidence of reported flashes. The annotation's background-photo time is not a verified ledger-creation time or an upper bound on all five events. A metadata-time comparison or insensitive camera null is not an event exclusion."
+  },
+  "artifacts": [
+    {
+      "id": "artemis-event-ledger",
+      "path": "cases/artemis-ii-flashes/sources/artemis-event-ledger.csv",
+      "bytes": 806,
+      "sha256": "8d06bb155f527fc18fe3e161fac14c31b28024d51457cff31dca4a0ef2c5edaa",
+      "media_type": "text/csv",
+      "producer": "Observation Receipt fixture derived from NASA's public annotation",
+      "archive": "Local fixture",
+      "clock_domain": "event times unresolved; background-photo context is separate",
+      "derivation_state": "derived"
+    },
+    {
+      "id": "shared-report-excerpt",
+      "path": "cases/artemis-ii-flashes/sources/shared-report-excerpt.csv",
+      "bytes": 358,
+      "sha256": "e159dd702161b5162658bdc0ca5607d4c30254fb8c020e58cd08efa937f42635",
+      "media_type": "text/csv",
+      "producer": "Observation Receipt fixture derived from the public PCD transcript",
+      "archive": "Local fixture",
+      "clock_domain": "spacecraft UTC",
+      "derivation_state": "derived"
+    },
+    {
+      "id": "camera-coverage-summary",
+      "path": "cases/artemis-ii-flashes/sources/camera-coverage-summary.json",
+      "bytes": 718,
+      "sha256": "dedf3f1248a3ace8fa99ef04fa76e15627bcd81bd0b507dae27b157e8b6a47ad",
+      "media_type": "application/json",
+      "producer": "Artemis II Observation Testbed Stages 11N through 11Q",
+      "archive": "Local fixture",
+      "clock_domain": "spacecraft UTC",
+      "derivation_state": "derived"
+    },
+    {
+      "id": "nasa-preliminary-report",
+      "url": "https://science.nasa.gov/feature/artemis-ii-preliminary-lunar-science-report/",
+      "media_type": "text/html",
+      "producer": "NASA",
+      "archive": "NASA Science",
+      "derivation_state": "source"
+    },
+    {
+      "id": "nasa-citizen-science-update",
+      "url": "https://science.nasa.gov/get-involved/citizen-science/volunteers-help-nasa-astronauts-record-lunar-flashes/",
+      "media_type": "text/html",
+      "producer": "NASA",
+      "archive": "NASA Science",
+      "derivation_state": "source"
+    }
+  ],
+  "facts": {
+    "annotation_base_image_utc": "2026-04-07T01:04:00Z",
+    "shared_report_utc": "2026-04-07T00:51:15.947Z",
+    "moon_radius_km": 1740.0,
+    "conservative_duration_hours": 1.0
+  },
+  "candidates": [
+    {
+      "id": "event-1",
+      "label": "Annotated event 1",
+      "disposition": "accepted",
+      "mapping_state": "not assigned one-to-one to a transcript anchor",
+      "witness_dependency_model": null,
+      "witness_marks": [
+        {
+          "id": "event-1-reid",
+          "observer": "Reid Wiseman",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-1",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-1"
+        }
+      ]
+    },
+    {
+      "id": "event-2",
+      "label": "Annotated event 2",
+      "disposition": "accepted",
+      "mapping_state": "not assigned one-to-one to a transcript anchor",
+      "witness_dependency_model": null,
+      "witness_marks": [
+        {
+          "id": "event-2-reid",
+          "observer": "Reid Wiseman",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-2",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-2 row 1"
+        },
+        {
+          "id": "event-2-jeremy",
+          "observer": "Jeremy Hansen",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-2",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-2 row 2"
+        }
+      ]
+    },
+    {
+      "id": "event-3",
+      "label": "Annotated event 3",
+      "disposition": "accepted",
+      "mapping_state": "not assigned one-to-one to a transcript anchor",
+      "witness_dependency_model": null,
+      "witness_marks": [
+        {
+          "id": "event-3-jeremy",
+          "observer": "Jeremy Hansen",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-3",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-3"
+        }
+      ]
+    },
+    {
+      "id": "event-4",
+      "label": "Annotated event 4",
+      "disposition": "accepted",
+      "mapping_state": "not assigned one-to-one to a transcript anchor",
+      "witness_dependency_model": null,
+      "witness_marks": [
+        {
+          "id": "event-4-reid",
+          "observer": "Reid Wiseman",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-4",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-4 row 1"
+        },
+        {
+          "id": "event-4-jeremy",
+          "observer": "Jeremy Hansen",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-4",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-4 row 2"
+        },
+        {
+          "id": "event-4-victor",
+          "observer": "Victor Glover",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-4",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-4 row 3"
+        }
+      ]
+    },
+    {
+      "id": "event-5",
+      "label": "Annotated event 5",
+      "disposition": "accepted",
+      "mapping_state": "not assigned one-to-one to a transcript anchor",
+      "witness_dependency_model": null,
+      "witness_marks": [
+        {
+          "id": "event-5-reid",
+          "observer": "Reid Wiseman",
+          "time_state": "unknown",
+          "marked_at_utc": null,
+          "elicitation_state": "unknown",
+          "independence_state": "not_established",
+          "dependency_group": "annotation-event-5",
+          "source_artifact_id": "artemis-event-ledger",
+          "source_locator": "event-5"
+        }
+      ]
+    },
+    {
+      "id": "shared-transcript-report",
+      "label": "Shared transcript report at 00:51",
+      "disposition": "ambiguous",
+      "mapping_state": "contextual report, not mapped one-to-one to a numbered annotation event",
+      "witness_dependency_model": null,
+      "witness_marks": [
+        {
+          "id": "shared-report-reid",
+          "observer": "Reid Wiseman",
+          "time_state": "exact",
+          "marked_at_utc": "2026-04-07T00:51:15.947Z",
+          "elicitation_state": "unprompted",
+          "independence_state": "not_established",
+          "dependency_group": "shared-transcript-report",
+          "source_artifact_id": "shared-report-excerpt",
+          "source_locator": "row 1"
+        },
+        {
+          "id": "shared-report-jeremy",
+          "observer": "Jeremy Hansen",
+          "time_state": "exact",
+          "marked_at_utc": "2026-04-07T00:51:54.985Z",
+          "elicitation_state": "socially_cued",
+          "independence_state": "dependent",
+          "dependency_group": "shared-transcript-report",
+          "source_artifact_id": "shared-report-excerpt",
+          "source_locator": "row 3"
+        }
+      ]
+    }
+  ],
+  "observation_windows": [
+    {
+      "id": "later-saw3-30fps",
+      "label": "Later assessed SAW3 window",
+      "start_utc": "2026-04-07T01:19:13Z",
+      "stop_utc": "2026-04-07T01:21:23Z",
+      "clock_domain": "spacecraft UTC",
+      "clock_uncertainty_seconds": null,
+      "target": "Moon",
+      "field_of_view": "Lunar target present, event-level coverage not established",
+      "capabilities": {
+        "source_pixel_equivalent": {
+          "state": "not_demonstrated",
+          "note": "The assessed public representation is not established as source-pixel equivalent."
+        },
+        "radiometrically_calibrated": {
+          "state": "not_demonstrated",
+          "note": "No public radiometric response for the event task."
+        },
+        "detection_completeness_at_50_percent": {
+          "state": "not_demonstrated",
+          "note": "No task-shaped recovery curve for this interval."
+        },
+        "target_resolved_for_localization": {
+          "state": "not_demonstrated",
+          "note": "Event-level localization capability is undeclared."
+        }
+      }
+    },
+    {
+      "id": "overlap-saw3-59.94fps",
+      "label": "Context clip spanning the shared report",
+      "start_utc": "2026-04-07T00:51:10Z",
+      "stop_utc": "2026-04-07T00:51:25Z",
+      "clock_domain": "spacecraft UTC",
+      "clock_uncertainty_seconds": null,
+      "target": "Moon",
+      "field_of_view": "Threshold-defined lunar footprint of 10 by 9 pixels",
+      "capabilities": {
+        "source_pixel_equivalent": {
+          "state": "not_demonstrated",
+          "note": "The bounded clip is reconstructed and transcoded."
+        },
+        "radiometrically_calibrated": {
+          "state": "not_demonstrated",
+          "note": "Clip-native grayscale values have no physical brightness calibration."
+        },
+        "detection_completeness_at_50_percent": {
+          "state": "not_demonstrated",
+          "note": "The frozen detector recovered at most 5.6 percent and never reached 50 percent."
+        },
+        "target_resolved_for_localization": {
+          "state": "not_demonstrated",
+          "note": "The visible lunar footprint is severely undersampled."
+        }
+      }
+    }
+  ],
+  "measurement_function": {
+    "monitored_area_km2": {
+      "value": null,
+      "unit": "km2"
+    },
+    "live_time_hours": {
+      "value": null,
+      "unit": "hours"
+    },
+    "limiting_magnitude": {
+      "value": null,
+      "unit": "magnitude"
+    },
+    "detection_probability_surface": {
+      "value": null,
+      "unit": "probability by signal, position, and background"
+    },
+    "calibrated_brightness": {
+      "value": null,
+      "unit": "undeclared"
+    },
+    "confirmation_rule": {
+      "value": "multi-witness human ledger with conservative exclusions",
+      "unit": null
+    }
+  },
+  "claims": [
+    {
+      "id": "accepted-ledger",
+      "proposition": "The public annotation contains five accepted events, eight witness marks, and three observers.",
+      "rule": {
+        "kind": "ledger_summary",
+        "disposition": "accepted",
+        "expected_event_count": 5,
+        "expected_witness_marks": 8,
+        "expected_unique_observers": 3
+      },
+      "claim_ceiling": "Credible event ledger, not calibrated sensitivity or independent detections."
+    },
+    {
+      "id": "later-window-tested-ledger-events",
+      "proposition": "The later 30 fps window covered the annotation's 01:04 background-photo epoch.",
+      "rule": {
+        "kind": "window_after_boundary",
+        "window_id": "later-saw3-30fps",
+        "boundary_fact": "annotation_base_image_utc"
+      },
+      "claim_ceiling": "Metadata-time non-overlap only. The photo epoch is not ledger creation or an upper bound for all five accepted events; their event-level video coverage remains unestablished."
+    },
+    {
+      "id": "overlap-null-excludes-report",
+      "proposition": "The absence of a screened pulse in the overlap clip excludes the shared crew report.",
+      "rule": {
+        "kind": "window_capability_gate",
+        "window_id": "overlap-saw3-59.94fps",
+        "event_time_fact": "shared_report_utc",
+        "required_capabilities": [
+          "source_pixel_equivalent",
+          "radiometrically_calibrated",
+          "detection_completeness_at_50_percent",
+          "target_resolved_for_localization"
+        ]
+      },
+      "claim_ceiling": "Contextual temporal overlap, not event exclusion."
+    },
+    {
+      "id": "all-lunar-count-floor",
+      "proposition": "Five accepted events support a conservative whole-Moon one-hour detected-count floor.",
+      "rule": {
+        "kind": "count_floor_sphere",
+        "disposition": "accepted",
+        "radius_fact": "moon_radius_km",
+        "duration_fact": "conservative_duration_hours",
+        "expected_value_km2_hour": 1.314200547396414e-07,
+        "relative_tolerance": 1e-09
+      },
+      "claim_ceiling": "Detected-count floor under explicit assumptions, not calibrated flux."
+    },
+    {
+      "id": "calibrated-impact-flux",
+      "proposition": "The five events establish a calibrated brightness-threshold lunar impact flux.",
+      "rule": {
+        "kind": "required_measurement_fields",
+        "fields": [
+          "monitored_area_km2",
+          "live_time_hours",
+          "limiting_magnitude",
+          "detection_probability_surface",
+          "calibrated_brightness",
+          "confirmation_rule"
+        ]
+      },
+      "claim_ceiling": "Blocked until a recomputable measurement function is public."
+    },
+    {
+      "id": "shared-report-independent-confirmations",
+      "proposition": "The two marks around the 00:51 report are independent confirmations suitable for capture-recapture inference.",
+      "rule": {
+        "kind": "witness_independence_gate",
+        "candidate_id": "shared-transcript-report",
+        "required_independent_marks": 2
+      },
+      "claim_ceiling": "Separate witness marks are preserved, but independence is not assumed without a declared dependence model."
+    }
+  ],
+  "expected_findings": {
+    "accepted-ledger": "SUPPORTED",
+    "later-window-tested-ledger-events": "REFUTED_NONOVERLAP",
+    "overlap-null-excludes-report": "BLOCKED_INSUFFICIENT_CAPABILITY",
+    "all-lunar-count-floor": "SUPPORTED_WITH_ASSUMPTIONS",
+    "calibrated-impact-flux": "BLOCKED_MISSING_MEASUREMENT_FUNCTION",
+    "shared-report-independent-confirmations": "BLOCKED_DEPENDENCE_MODEL_MISSING"
+  },
+  "claim_ceiling": "This case may establish the annotated witness pattern, selected transcript anchors, metadata-time non-overlap with the background-photo epoch, the poor clip-native recovery of one contextual screen, and a conservative detected-count floor. It does not certify ledger creation, bound all five event times, certify coverage or noncoverage of every accepted event, map reports one-to-one to numbered events, establish independent witnesses, exclude a reported flash, estimate calibrated physical flux, prove every candidate's cause, or accept an operational recommendation on NASA's behalf.",
+  "next_steps": [
+    "Publish event-level time intervals or uncertainty bounds before mapping transcript reports to numbered events.",
+    "Publish verified live time, monitored area, radiometric response, limiting sensitivity, and task-shaped injection recovery before estimating flux.",
+    "Declare a witness-dependence model before treating prompted or socially cued marks as independent detections.",
+    "Bind every future camera null to event coverage, target-in-field evidence, and a passed capability gate."
+  ]
+}

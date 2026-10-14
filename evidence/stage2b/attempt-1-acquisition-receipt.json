@@ -1,0 +1,30 @@
+{
+  "receipt_id": "artemis2-stage2b-bounded-acquisition-attempt-1",
+  "started_from_frozen_spec": "spec/stage2b.json",
+  "spec_sha256": "464fd99c7c023aa223d85d36f79c2ed5f87ca0b0f0d47e1c6610f9f1d760d097",
+  "completed_at_utc": "2026-10-09T20:57:42Z",
+  "status": "STOPPED",
+  "error": "earthset:art002e016214_saw3_raw_v01.xml: HTTP Error 403: Forbidden",
+  "aggregate_max_bytes": 100663296,
+  "aggregate_accepted_bytes": 0,
+  "per_event_accepted_bytes": {
+    "earthset": 0,
+    "sunset": 0,
+    "sunrise": 0
+  },
+  "requested_file_count": 72,
+  "accepted_file_count": 0,
+  "items": [
+    {
+      "event_id": "earthset",
+      "event_max_bytes": 33554432,
+      "kind": "raw_label",
+      "archive_path": "data_raw_image/fd06/art002e016214_saw3_raw_v01.xml",
+      "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/data_raw_image/fd06/art002e016214_saw3_raw_v01.xml",
+      "file_name": "art002e016214_saw3_raw_v01.xml",
+      "head_at_utc": "2026-10-09T20:57:42Z",
+      "status": "STOPPED",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

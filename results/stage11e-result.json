@@ -1,0 +1,1343 @@
+{
+  "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_UNIT_CHOICE_REWEIGHTING_CANARY",
+  "context": {
+    "duration_seconds": 758.576,
+    "actions": 286,
+    "exposures": 1430,
+    "products": 4290,
+    "collection_bytes": {
+      "data_processed": 253923394220,
+      "data_raw": 85174123840,
+      "data_source": 31228060032
+    },
+    "total_bytes": 370325578092
+  },
+  "cohort": {
+    "actions": 2166,
+    "exposures": 7606,
+    "products": 22818,
+    "collection_bytes": {
+      "data_source": 150708337459,
+      "data_raw": 370489806656,
+      "data_processed": 1104083221228
+    },
+    "total_bytes": 1625281365343
+  },
+  "measures": {
+    "action_share": 0.13204062788550322,
+    "exposure_share": 0.18800946621088616,
+    "product_share": 0.18800946621088616,
+    "source_byte_share": 0.20720857623749947,
+    "raw_byte_share": 0.22989599797298668,
+    "processed_byte_share": 0.22998573779391152,
+    "total_byte_share": 0.2278532111354432,
+    "product_weight_vs_action_weight": 1.4238758874572708,
+    "byte_weight_vs_action_weight": 1.7256295640537413,
+    "product_minus_action_percentage_points": 5.5968838325382935,
+    "byte_minus_action_percentage_points": 9.581258324994
+  },
+  "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+  "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+  "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+    "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+    "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+    "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+    "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+  },
+  "checks": [
+    {
+      "id": "complete_cohort_and_context_replay",
+      "pass": true
+    },
+    {
+      "id": "context_and_cohort_denominators",
+      "pass": true,
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      }
+    },
+    {
+      "id": "unit_choice_reweighting",
+      "pass": true,
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      }
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "context_is_complete_event": false,
+        "scope": "verified_complete_action_cohort",
+        "actual_sampler": "unspecified",
+        "observed_model_bias": false,
+        "causal_performance_effect": false,
+        "products_are_wasteful_duplicates": false,
+        "scientific_discovery_claimed": false,
+        "novelty_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_context_complete_event": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "call_context_complete_event",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": true,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "generalize_to_entire_archive": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "generalize_to_entire_archive",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "entire_archive",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_actual_pipeline_samples_products_uniformly": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "claim_actual_pipeline_samples_products_uniformly",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "uniform_products",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_actual_pipeline_samples_bytes_proportionally": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "claim_actual_pipeline_samples_bytes_proportionally",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "byte_proportional",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_observed_model_bias": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "claim_observed_model_bias",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": true,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_reweighting_causal_performance_effect": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "claim_reweighting_causal_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": true,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_products_wasteful_duplicates": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "call_products_wasteful_duplicates",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": true,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_boundary_result_scientific_discovery": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "call_boundary_result_scientific_discovery",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": true,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_novelty_or_priority": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "claim_novelty_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_during_reweighting_test": {
+      "testbed_id": "artemis2-unit-choice-reweighting-stage11e",
+      "mutation": "open_pixels_during_reweighting_test",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "context": {
+        "duration_seconds": 758.576,
+        "actions": 286,
+        "exposures": 1430,
+        "products": 4290,
+        "collection_bytes": {
+          "data_processed": 253923394220,
+          "data_raw": 85174123840,
+          "data_source": 31228060032
+        },
+        "total_bytes": 370325578092
+      },
+      "cohort": {
+        "actions": 2166,
+        "exposures": 7606,
+        "products": 22818,
+        "collection_bytes": {
+          "data_source": 150708337459,
+          "data_raw": 370489806656,
+          "data_processed": 1104083221228
+        },
+        "total_bytes": 1625281365343
+      },
+      "measures": {
+        "action_share": 0.13204062788550322,
+        "exposure_share": 0.18800946621088616,
+        "product_share": 0.18800946621088616,
+        "source_byte_share": 0.20720857623749947,
+        "raw_byte_share": 0.22989599797298668,
+        "processed_byte_share": 0.22998573779391152,
+        "total_byte_share": 0.2278532111354432,
+        "product_weight_vs_action_weight": 1.4238758874572708,
+        "byte_weight_vs_action_weight": 1.7256295640537413,
+        "product_minus_action_percentage_points": 5.5968838325382935,
+        "byte_minus_action_percentage_points": 9.581258324994
+      },
+      "disposition": "ADMIT_UNIT_CHOICE_REWEIGHTING_CANARY",
+      "verified": "The conservative Sunset context is 13.204% of verified complete camera actions but 18.801% of products and 22.785% of bytes. Product and byte denominators therefore assign it more weight than an action denominator even before any pixel analysis.",
+      "decision_use": "Treat sampling unit as an explicit model-design choice. A flat product table changes event weight as well as dependency structure; action or event balancing answers a different question.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 11E may establish that the conservative 758.576-second Sunset context accounts for 13.204% of actions, 18.801% of products, and 22.785% of bytes in the verified complete-action cohort. Under explicitly hypothetical uniform weighting, product units weight that context 1.423876 times and total bytes 1.725630 times its action-unit share. It cannot call the context a complete event, extend the shares to the whole archive, assert that an actual pipeline samples products or bytes this way, establish observed model bias or a performance effect, judge representation value, or make a physical-science, novelty, or priority claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Explain that unit choice changes both independence and implicit event weight: the same Sunset context is 13.2% of actions, 18.8% of products, and 22.8% of bytes. Keep every percentage scoped to the verified cohort and context canary.",
+        "if_a_model_task_is_selected": "Declare the sampling unit and event weights before training; compare action-balanced and event-balanced baselines rather than treating every product as an exchangeable example.",
+        "if_the_context_boundary_is_rejected": "Retain the Stage 10 planned-block concentration and recompute this canary on any newly accepted realized segment.",
+        "if_no_sampling_design_is_selected": "Do not convert the descriptive shares into a bias or performance claim.",
+        "recheck_trigger": "A revised complete-action cohort, accepted realized-event ledger, or actual training sampler."
+      },
+      "checks": [
+        {
+          "id": "complete_cohort_and_context_replay",
+          "pass": true
+        },
+        {
+          "id": "context_and_cohort_denominators",
+          "pass": true,
+          "context": {
+            "duration_seconds": 758.576,
+            "actions": 286,
+            "exposures": 1430,
+            "products": 4290,
+            "collection_bytes": {
+              "data_processed": 253923394220,
+              "data_raw": 85174123840,
+              "data_source": 31228060032
+            },
+            "total_bytes": 370325578092
+          },
+          "cohort": {
+            "actions": 2166,
+            "exposures": 7606,
+            "products": 22818,
+            "collection_bytes": {
+              "data_source": 150708337459,
+              "data_raw": 370489806656,
+              "data_processed": 1104083221228
+            },
+            "total_bytes": 1625281365343
+          }
+        },
+        {
+          "id": "unit_choice_reweighting",
+          "pass": true,
+          "measures": {
+            "action_share": 0.13204062788550322,
+            "exposure_share": 0.18800946621088616,
+            "product_share": 0.18800946621088616,
+            "source_byte_share": 0.20720857623749947,
+            "raw_byte_share": 0.22989599797298668,
+            "processed_byte_share": 0.22998573779391152,
+            "total_byte_share": 0.2278532111354432,
+            "product_weight_vs_action_weight": 1.4238758874572708,
+            "byte_weight_vs_action_weight": 1.7256295640537413,
+            "product_minus_action_percentage_points": 5.5968838325382935,
+            "byte_minus_action_percentage_points": 9.581258324994
+          }
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "context_is_complete_event": false,
+            "scope": "verified_complete_action_cohort",
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "products_are_wasteful_duplicates": false,
+            "scientific_discovery_claimed": false,
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited completeness, scope, sampler, model, value, science, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

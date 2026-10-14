@@ -1,0 +1,38 @@
+{
+  "receipt_id": "artemis2-stage10b-schema-and-reuse-v1",
+  "completed_at_utc": "2026-10-10T11:43:21Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "sources": [
+    {
+      "path": "evidence/stage10b/source/PDS4_MSN_SURFACE_1Q00_1310.xsd",
+      "url": "https://pds.nasa.gov/pds4/msn_surface/v1/PDS4_MSN_SURFACE_1Q00_1310.xsd",
+      "bytes": 37070,
+      "sha256": "7b0422645873607f38462a31b604bd521e8a27b2fa041ae6ef236c6722e26656",
+      "headers": {
+        "content-type": "text/xml",
+        "content-length": "37070",
+        "last-modified": "Fri, 04 Sep 2026 18:03:18 GMT"
+      },
+      "role": "official Observational_Intent and activity_id cardinality schema"
+    },
+    {
+      "path": "evidence/stage10a/result.json",
+      "bytes": 157717,
+      "sha256": "c6b56bf2fe39ef6f6eeac9fc75fe93f94800ea088527e889be122c4a419bfa93",
+      "role": "verified complete-cohort bracket result"
+    },
+    {
+      "path": "corpus/artemis2_outgoing_target_request.json",
+      "bytes": 59800,
+      "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+      "role": "mission target plan and request timing"
+    },
+    {
+      "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "bytes": 36880,
+      "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+      "role": "contemporaneous PCD3 transcript"
+    }
+  ]
+}

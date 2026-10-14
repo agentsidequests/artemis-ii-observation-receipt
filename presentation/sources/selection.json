@@ -1,0 +1,2515 @@
+{
+  "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+  "version": "1.0.0",
+  "mutation": "none",
+  "pass": true,
+  "evidence_state": "VERIFIED_SELECTION_WEIGHTING_CASCADE",
+  "checks": {
+    "source_identity": true,
+    "stage10w_replays": true,
+    "frozen_observables": true,
+    "arithmetic_identities": true,
+    "claim_boundaries": true,
+    "population_and_unit_labels": true,
+    "scope_boundary": true,
+    "zero_pixel_access": true
+  },
+  "source_identity": {
+    "path": "results/stage10o-product-relationship-manifest.csv",
+    "bytes": 10072026,
+    "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+    "match": true
+  },
+  "metrics": {
+    "all_cohort": {
+      "actions": 2166,
+      "source_exposures": 7606,
+      "products": 22818,
+      "archive_size_bytes": 1625281365343
+    },
+    "selection_panel": {
+      "tagged_source_exposures": 3413,
+      "blank_source_exposures": 4193,
+      "sunset_tagged_source_exposures": 1553,
+      "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+      "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+      "nonblank_conditioning_amplification": 2.2285379431585115
+    },
+    "strict_tagged_weighting_panel": {
+      "selected_actions": 915,
+      "sunset_tagged_actions": 311,
+      "sunset_share_of_selected_actions": 0.33989071038251367,
+      "tagged_exposures": 3413,
+      "sunset_tagged_exposures": 1553,
+      "sunset_share_of_tagged_exposures": 0.455024904775857,
+      "tagged_products": 10239,
+      "sunset_tagged_products": 4659,
+      "sunset_share_of_tagged_products": 0.455024904775857,
+      "tagged_archive_size_bytes": 781104206358,
+      "sunset_tagged_archive_size_bytes": 409399017151,
+      "sunset_share_of_tagged_bytes": 0.5241285526548067,
+      "action_to_exposure_amplification": 1.338738867748904,
+      "exposure_to_byte_amplification": 1.1518678365813622,
+      "action_to_byte_amplification": 1.5420502433413124,
+      "representations_per_exposure": 3.0
+    },
+    "action_carried_sensitivity": {
+      "selected_action_exposures": 3495,
+      "sunset_action_exposures": 1555,
+      "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+      "selected_action_products": 10485,
+      "sunset_action_products": 4665,
+      "sunset_share_of_selected_action_products": 0.4449213161659514,
+      "selected_action_archive_size_bytes": 796556744230,
+      "sunset_action_archive_size_bytes": 410187365891,
+      "sunset_share_of_selected_action_bytes": 0.5149505906042036
+    },
+    "collection_byte_sensitivity": {
+      "data_source": {
+        "sunset_bytes": 34446621949,
+        "tagged_bytes": 70031223372,
+        "sunset_share": 0.4918751992382373
+      },
+      "data_raw": {
+        "sunset_bytes": 94177910368,
+        "tagged_bytes": 178638817504,
+        "sunset_share": 0.52719734536919
+      },
+      "data_processed": {
+        "sunset_bytes": 280774484834,
+        "tagged_bytes": 532434165482,
+        "sunset_share": 0.5273412245809236
+      }
+    },
+    "activity_structure_attribution": {
+      "activity_id": "24_Sunset",
+      "sunset_tagged_exposures_in_activity": 1294,
+      "sunset_tagged_exposures_all": 1553,
+      "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+      "outside_activity": {
+        "selected_actions": 656,
+        "sunset_tagged_actions": 52,
+        "sunset_share_of_selected_actions": 0.07926829268292683,
+        "tagged_exposures": 2119,
+        "sunset_tagged_exposures": 259,
+        "sunset_share_of_tagged_exposures": 0.12222746578574799,
+        "tagged_archive_size_bytes": 473833252413,
+        "sunset_tagged_archive_size_bytes": 102128063206,
+        "sunset_share_of_tagged_bytes": 0.21553587192522253
+      }
+    },
+    "all_tag_countercheck": {
+      "target_tag_values": 23,
+      "raw_action_tag_memberships": 918,
+      "fractional_action_weight_total": 915.0,
+      "multi_target_actions": 3,
+      "concentration_equivalent_target_tag_values": {
+        "fractional_actions": 5.063610769226117,
+        "exposures": 3.8227788157250044,
+        "products": 3.8227788157250044,
+        "archive_size_bytes": 3.191403784213298
+      },
+      "sunset_rank": {
+        "fractional_actions": 1,
+        "exposures": 1,
+        "products": 1,
+        "archive_size_bytes": 1
+      }
+    },
+    "structure_checks": {
+      "sunset_multitarget_actions": 0,
+      "sunset_partial_presence_actions": 2,
+      "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+      "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+    }
+  },
+  "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+  "prohibited_claims": {
+    "blank_tags_are_negative_examples": false,
+    "tag_share_is_physical_prevalence": false,
+    "bytes_are_scientific_value": false,
+    "actual_pipeline_used_cascade": false,
+    "observed_model_bias": false,
+    "model_performance_effect": false,
+    "products_are_independent_examples": false,
+    "action_carried_tags_are_ground_truth": false,
+    "concentration_is_effective_class_count": false,
+    "every_representation_layer_has_byte_majority": false,
+    "cascade_is_activity_invariant": false,
+    "novelty_or_priority": false
+  },
+  "pixel_payload_bytes_opened": 0,
+  "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+  "verification_receipt": {
+    "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+    "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+    "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+    "independence": "partial",
+    "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+  },
+  "next_step_logic": {
+    "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+    "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+    "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+    "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+    "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+  },
+  "hard_negatives": {
+    "call_blank_tags_negative_examples": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_blank_tags_negative_examples",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": true,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "call_tag_share_physical_prevalence": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_tag_share_physical_prevalence",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": true,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "call_bytes_scientific_value": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_bytes_scientific_value",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": true,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "claim_actual_pipeline_used_cascade": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "claim_actual_pipeline_used_cascade",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": true,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "claim_observed_model_bias": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "claim_observed_model_bias",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": true,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "claim_model_performance_effect": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "claim_model_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": true,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "call_products_independent_examples": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_products_independent_examples",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": true,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "call_action_carried_tags_ground_truth": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_action_carried_tags_ground_truth",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": true,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "call_concentration_effective_class_count": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_concentration_effective_class_count",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": true,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "call_every_representation_layer_byte_majority": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_every_representation_layer_byte_majority",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": true,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "call_cascade_activity_invariant": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "call_cascade_activity_invariant",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": true,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "omit_population_or_unit_labels": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "omit_population_or_unit_labels",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": true,
+        "population_and_unit_labels": false,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "generalize_beyond_frozen_cohort": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "generalize_beyond_frozen_cohort",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": true,
+        "population_and_unit_labels": true,
+        "scope_boundary": false,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "claim_novelty_or_priority": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "claim_novelty_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": false,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": true
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": true
+      },
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    },
+    "open_pixels": {
+      "testbed_id": "artemis2-selection-weighting-cascade-stage11u",
+      "version": "1.0.0",
+      "mutation": "open_pixels",
+      "pass": false,
+      "evidence_state": "REJECTED_SELECTION_WEIGHTING_CASCADE",
+      "checks": {
+        "source_identity": true,
+        "stage10w_replays": true,
+        "frozen_observables": true,
+        "arithmetic_identities": true,
+        "claim_boundaries": true,
+        "population_and_unit_labels": true,
+        "scope_boundary": true,
+        "zero_pixel_access": false
+      },
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "all_cohort": {
+          "actions": 2166,
+          "source_exposures": 7606,
+          "products": 22818,
+          "archive_size_bytes": 1625281365343
+        },
+        "selection_panel": {
+          "tagged_source_exposures": 3413,
+          "blank_source_exposures": 4193,
+          "sunset_tagged_source_exposures": 1553,
+          "sunset_tag_occupancy_all_source_exposures": 0.2041809098080463,
+          "sunset_share_of_tagged_source_exposures": 0.455024904775857,
+          "nonblank_conditioning_amplification": 2.2285379431585115
+        },
+        "strict_tagged_weighting_panel": {
+          "selected_actions": 915,
+          "sunset_tagged_actions": 311,
+          "sunset_share_of_selected_actions": 0.33989071038251367,
+          "tagged_exposures": 3413,
+          "sunset_tagged_exposures": 1553,
+          "sunset_share_of_tagged_exposures": 0.455024904775857,
+          "tagged_products": 10239,
+          "sunset_tagged_products": 4659,
+          "sunset_share_of_tagged_products": 0.455024904775857,
+          "tagged_archive_size_bytes": 781104206358,
+          "sunset_tagged_archive_size_bytes": 409399017151,
+          "sunset_share_of_tagged_bytes": 0.5241285526548067,
+          "action_to_exposure_amplification": 1.338738867748904,
+          "exposure_to_byte_amplification": 1.1518678365813622,
+          "action_to_byte_amplification": 1.5420502433413124,
+          "representations_per_exposure": 3.0
+        },
+        "action_carried_sensitivity": {
+          "selected_action_exposures": 3495,
+          "sunset_action_exposures": 1555,
+          "sunset_share_of_selected_action_exposures": 0.4449213161659514,
+          "selected_action_products": 10485,
+          "sunset_action_products": 4665,
+          "sunset_share_of_selected_action_products": 0.4449213161659514,
+          "selected_action_archive_size_bytes": 796556744230,
+          "sunset_action_archive_size_bytes": 410187365891,
+          "sunset_share_of_selected_action_bytes": 0.5149505906042036
+        },
+        "collection_byte_sensitivity": {
+          "data_source": {
+            "sunset_bytes": 34446621949,
+            "tagged_bytes": 70031223372,
+            "sunset_share": 0.4918751992382373
+          },
+          "data_raw": {
+            "sunset_bytes": 94177910368,
+            "tagged_bytes": 178638817504,
+            "sunset_share": 0.52719734536919
+          },
+          "data_processed": {
+            "sunset_bytes": 280774484834,
+            "tagged_bytes": 532434165482,
+            "sunset_share": 0.5273412245809236
+          }
+        },
+        "activity_structure_attribution": {
+          "activity_id": "24_Sunset",
+          "sunset_tagged_exposures_in_activity": 1294,
+          "sunset_tagged_exposures_all": 1553,
+          "share_of_sunset_tagged_exposures_from_activity": 0.8332260141661301,
+          "outside_activity": {
+            "selected_actions": 656,
+            "sunset_tagged_actions": 52,
+            "sunset_share_of_selected_actions": 0.07926829268292683,
+            "tagged_exposures": 2119,
+            "sunset_tagged_exposures": 259,
+            "sunset_share_of_tagged_exposures": 0.12222746578574799,
+            "tagged_archive_size_bytes": 473833252413,
+            "sunset_tagged_archive_size_bytes": 102128063206,
+            "sunset_share_of_tagged_bytes": 0.21553587192522253
+          }
+        },
+        "all_tag_countercheck": {
+          "target_tag_values": 23,
+          "raw_action_tag_memberships": 918,
+          "fractional_action_weight_total": 915.0,
+          "multi_target_actions": 3,
+          "concentration_equivalent_target_tag_values": {
+            "fractional_actions": 5.063610769226117,
+            "exposures": 3.8227788157250044,
+            "products": 3.8227788157250044,
+            "archive_size_bytes": 3.191403784213298
+          },
+          "sunset_rank": {
+            "fractional_actions": 1,
+            "exposures": 1,
+            "products": 1,
+            "archive_size_bytes": 1
+          }
+        },
+        "structure_checks": {
+          "sunset_multitarget_actions": 0,
+          "sunset_partial_presence_actions": 2,
+          "tagged_bytes_share_of_all_bytes": 0.48059629736366016,
+          "sunset_tagged_bytes_share_of_all_bytes": 0.2518942417484743
+        }
+      },
+      "finding": "In the frozen cohort, conditioning source-exposure rows on nonblank target tags raises Sunset's descriptive tag share from 20.418% to 45.502%. Inside the selected tagged subset, Sunset is 33.989% of actions, 45.502% of exposures and products, and 52.413% of bytes. An action-carried sensitivity remains a 51.495% byte share.",
+      "prohibited_claims": {
+        "blank_tags_are_negative_examples": false,
+        "tag_share_is_physical_prevalence": false,
+        "bytes_are_scientific_value": false,
+        "actual_pipeline_used_cascade": false,
+        "observed_model_bias": false,
+        "model_performance_effect": false,
+        "products_are_independent_examples": false,
+        "action_carried_tags_are_ground_truth": false,
+        "concentration_is_effective_class_count": false,
+        "every_representation_layer_has_byte_majority": false,
+        "cascade_is_activity_invariant": false,
+        "novelty_or_priority": false
+      },
+      "pixel_payload_bytes_opened": 1,
+      "claim_ceiling": "Stage 11U may establish that, in the frozen complete-action cohort, Sunset occupies 1,553 of 7,606 source-exposure tag fields (20.418%), 1,553 of 3,413 nonblank target-tag rows (45.502%), 311 of 915 actions with any nonblank tag (33.989%), and 409,399,017,151 of 781,104,206,358 bytes attached to nonblank-tagged exposures (52.413%). The same byte-majority result remains 51.495% in an action-carried sensitivity that includes blank exposures from selected actions. The byte result is representation-sensitive: Sunset is 49.188% of tagged source-representation bytes, 52.720% of tagged raw-representation bytes, and 52.734% of tagged processed-representation bytes. The result is also activity-conditioned: activity 24_Sunset supplies 1,294 of 1,553 Sunset-tagged exposures, and outside it Sunset is 12.223% of tagged exposures and 21.554% of tagged bytes. Across all 23 nonblank target-tag values, the concentration equivalent contracts from 5.064 tag values under fractional action weighting to 3.823 under exposure or product weighting and 3.191 under byte weighting. These are declared metadata-query and unit-weighting results. The stage cannot treat blanks as negatives, validate tags as ground truth, estimate physical prevalence, equate bytes with scientific value, claim that every representation layer has a Sunset byte majority, claim invariance to activity composition, call a concentration equivalent an effective class count, assert use by an actual pipeline, establish model bias or performance effects, treat products as independent examples, generalize beyond the frozen cohort, inspect pixels, or claim NASA acceptance, novelty, or priority.",
+      "verification_receipt": {
+        "proposal_origin": "Agent-generated analysis over the frozen manifest.",
+        "oracle_origin": "Pinned manifest identity, exact integer counts, arithmetic identities, Stage 10W replay, and mutation rejection.",
+        "shared_assumptions": "The declared predicate uses target_id nonblankness exactly as stored; action membership is reconstructed from the frozen manifest; archive_size_bytes is accounting weight only.",
+        "independence": "partial",
+        "coverage_boundary": "Frozen Stage 10O complete-action manifest only; no pixel content, target truth, sampler behavior, or outcome model."
+      },
+      "next_step_logic": {
+        "if_verified": "Add a two-panel selection-and-weighting cascade to the synthesis: conditioning on nonblank tags changes the tagged-row composition, then exposure and byte weighting further change the same tag's descriptive influence.",
+        "if_action_carried_sensitivity_loses_byte_majority": "Report the strict result only as row-level accounting and withhold the majority-byte robustness statement.",
+        "if_a_real_model_or_retrieval_task_is_selected": "Declare the source population, selection predicate, sampling unit, and action or event weighting before training or evaluation; compare action-balanced and product- or byte-proportional baselines.",
+        "if_target_truth_is_needed": "Obtain a task-native label audit that includes blank rows before making a prevalence or supervised-learning claim.",
+        "recheck_trigger": "A revised manifest, target-label audit, actual sampling implementation, or specialist correction."
+      }
+    }
+  },
+  "hard_negatives_pass": true
+}

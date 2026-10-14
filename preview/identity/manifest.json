@@ -1,0 +1,51 @@
+{
+  "bundle_version": "0.3.0",
+  "case_id": "artemis-ii-one-action-identity-sensitivity",
+  "files": [
+    {
+      "path": "candidates.csv",
+      "bytes": 60,
+      "sha256": "fbe26a3ea0543962a251b2407416ff86bea80c400db159b3374050141d952b41"
+    },
+    {
+      "path": "comparison.csv",
+      "bytes": 6504,
+      "sha256": "1851bdd79d19a242661084c719b0bdca33cc1a1d38e92b7eafea6db77e5b75ff"
+    },
+    {
+      "path": "findings.csv",
+      "bytes": 2813,
+      "sha256": "98e02f9bebc023ce5a4796e767deac2643b9702b1eae67ab0c8eb5aab4bfe886"
+    },
+    {
+      "path": "identity-groups.csv",
+      "bytes": 271,
+      "sha256": "9224db634eb4360190b229b358bb90f52984283da7251c11d773543c94c50c14"
+    },
+    {
+      "path": "index.html",
+      "bytes": 84609,
+      "sha256": "85ac53f7172d04cd8da2d9c0ae816b274a65033972fbd193492fae104a33cb04"
+    },
+    {
+      "path": "observation-windows.csv",
+      "bytes": 56,
+      "sha256": "a8c686bb7848a70ef7cde1ac4cb7267f3bc3cbbfdde10a219832c94614d3a8fb"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 18449,
+      "sha256": "80d2138e5b015cbf19b1898aa190d57913a981c2b6c00ec3d8c1d1ca9b708f5a"
+    },
+    {
+      "path": "receipt.md",
+      "bytes": 10450,
+      "sha256": "a92fee0f313cebe9d026957c5e1ea317174dea6c88c1306eb104c9f8bbef5efe"
+    },
+    {
+      "path": "witness-marks.csv",
+      "bytes": 144,
+      "sha256": "5570973be19ad56df7a052b70f1266effcba8da43896ec7391b78689540bb1da"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "edition": "v10",
+  "new_science": false,
+  "model_trained": false,
+  "published": false,
+  "source_data_sha256": "d41fe206bf1ece970c11e7a96e47e4ba605e97eec7f75a1d553a83e26160d3e1",
+  "base_v9_sha256": "fab010c6da048df873e0257145bbbe42e2cb4ea5e0679e7735e8ee41f9cdb0fb",
+  "technical_notebook_sha256": "0098bfbd28c7e31f2a25165d4ade5825486a306ad6f5a00eba33fc6a74f0f268",
+  "sources": [
+    {
+      "path": "presentation/flagship/doors.html",
+      "bytes": 856,
+      "sha256": "28477601edcfa9bfbcae74271e13e70eba96f6cd8612f3d1d3dad0c83c0ab38c"
+    },
+    {
+      "path": "presentation/flagship/play.html",
+      "bytes": 13413,
+      "sha256": "c8c1f5bf0884de7d8b7ad422c233fa5098f6de400beb069abf4c8f065c826fc6"
+    },
+    {
+      "path": "presentation/flagship/use.html",
+      "bytes": 4300,
+      "sha256": "901f566ac1a6c15447d32964a6d114664008235cd4655bd215abef49d8aca263"
+    },
+    {
+      "path": "presentation/flagship/inspect.html",
+      "bytes": 1172,
+      "sha256": "9a46b6b6a2b19c798f78968d514f9d4150307c95dee4d391f9b5462d2660bb8d"
+    },
+    {
+      "path": "presentation/flagship/style.css",
+      "bytes": 14262,
+      "sha256": "2342c783a6705509f2baeb255ae8f557b7ecb3b0f687e42854f811ecdc31336a"
+    },
+    {
+      "path": "presentation/flagship/app.js",
+      "bytes": 13814,
+      "sha256": "37d0c15f8c1474b58fd3ffee6dac786492aa02a592073c8526b280ab22fd6185"
+    }
+  ],
+  "files": [
+    {
+      "path": "Artemis-II-Interactive-Science-v10-2026-10-14.html",
+      "bytes": 12319132,
+      "sha256": "6caea44d60678ee23e221774b5a288d3e4edc192710b56cec4f1eb0989f675c9"
+    }
+  ]
+}

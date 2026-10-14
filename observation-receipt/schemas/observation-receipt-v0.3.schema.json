@@ -1,0 +1,646 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:observation-receipt:schema:0.3.0",
+  "title": "Observation Receipt case with unresolved identities and conditional comparisons",
+  "type": "object",
+  "required": [
+    "receipt_version",
+    "case_id",
+    "title",
+    "artifacts",
+    "facts",
+    "candidates",
+    "observation_windows",
+    "measurement_function",
+    "claims",
+    "expected_findings",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "receipt_version": {
+      "const": "0.3.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "viewer_context": {
+      "type": "object"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "facts": {
+      "type": "object"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
+    },
+    "observation_windows": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observationWindow"
+      }
+    },
+    "measurement_function": {
+      "type": "object"
+    },
+    "identity_groups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/identityGroup"
+      }
+    },
+    "conditional_comparisons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/comparison"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      }
+    },
+    "expected_findings": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "minLength": 1
+    },
+    "next_steps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "pointer": {
+      "type": "string",
+      "pattern": "^/(?:[^~]|~[01])+$"
+    },
+    "identityGroup": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "state",
+        "basis",
+        "source_artifact_id",
+        "alternatives_pointer"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "const": "unresolved"
+        },
+        "basis": {
+          "enum": [
+            "metadata_candidate",
+            "unverified_link"
+          ]
+        },
+        "source_artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "alternatives_pointer": {
+          "$ref": "#/$defs/pointer"
+        },
+        "source_locator": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "metric": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "unit",
+        "pointer"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "enum": [
+            "count",
+            "bytes",
+            "percent",
+            "index"
+          ]
+        },
+        "pointer": {
+          "$ref": "#/$defs/pointer"
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "places": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8
+        }
+      },
+      "additionalProperties": false
+    },
+    "comparison": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "source_artifact_id",
+        "original_pointer",
+        "conditional_pointer",
+        "original_label",
+        "conditional_label",
+        "treatment",
+        "metrics",
+        "claim_ceiling"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "original_pointer": {
+          "$ref": "#/$defs/pointer"
+        },
+        "conditional_pointer": {
+          "$ref": "#/$defs/pointer"
+        },
+        "original_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conditional_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "treatment": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metrics": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/metric"
+          }
+        },
+        "claim_ceiling": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "condition": {
+      "type": "object",
+      "required": [
+        "metric_id",
+        "op"
+      ],
+      "properties": {
+        "metric_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "op": {
+          "enum": [
+            "eq",
+            "lt",
+            "le",
+            "gt",
+            "ge"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "other_metric_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "value"
+          ],
+          "not": {
+            "required": [
+              "other_metric_id"
+            ]
+          }
+        },
+        {
+          "required": [
+            "other_metric_id"
+          ],
+          "not": {
+            "required": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "id",
+        "proposition",
+        "rule",
+        "claim_ceiling"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "proposition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_ceiling": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rule": {
+          "type": "object",
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "ledger_summary",
+                "window_after_boundary",
+                "window_capability_gate",
+                "count_floor_sphere",
+                "required_measurement_fields",
+                "witness_independence_gate",
+                "identity_resolution_gate",
+                "conditional_comparison_gate"
+              ]
+            },
+            "group_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "comparison_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "conditions": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/condition"
+              }
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "identity_resolution_gate"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "group_id"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "conditional_comparison_gate"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "comparison_id",
+                  "conditions"
+                ]
+              }
+            }
+          ],
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "media_type",
+        "producer",
+        "archive",
+        "derivation_state"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "media_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "producer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "archive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clock_domain": {
+          "type": "string"
+        },
+        "derivation_state": {
+          "enum": [
+            "source",
+            "derived",
+            "transcoded",
+            "synthetic"
+          ]
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "path",
+            "bytes",
+            "sha256"
+          ]
+        },
+        {
+          "required": [
+            "url"
+          ]
+        }
+      ],
+      "additionalProperties": true
+    },
+    "witnessMark": {
+      "type": "object",
+      "required": [
+        "id",
+        "observer",
+        "time_state",
+        "marked_at_utc",
+        "elicitation_state",
+        "independence_state",
+        "source_artifact_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "time_state": {
+          "enum": [
+            "exact",
+            "interval",
+            "unknown"
+          ]
+        },
+        "marked_at_utc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "elicitation_state": {
+          "enum": [
+            "unprompted",
+            "prompted",
+            "socially_cued",
+            "unknown"
+          ]
+        },
+        "independence_state": {
+          "enum": [
+            "independent",
+            "dependent",
+            "not_established"
+          ]
+        },
+        "dependency_group": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_locator": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "disposition",
+        "mapping_state",
+        "witness_dependency_model",
+        "witness_marks"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disposition": {
+          "enum": [
+            "accepted",
+            "ambiguous",
+            "rejected",
+            "retracted"
+          ]
+        },
+        "mapping_state": {
+          "type": "string",
+          "minLength": 1
+        },
+        "witness_dependency_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "witness_marks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/witnessMark"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "capability": {
+      "type": "object",
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "demonstrated",
+            "not_demonstrated",
+            "not_applicable"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "observationWindow": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "start_utc",
+        "stop_utc",
+        "clock_domain",
+        "target",
+        "capabilities"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "stop_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "clock_domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clock_uncertainty_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field_of_view": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/capability"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

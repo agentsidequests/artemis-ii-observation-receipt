@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "date": "2026-10-12",
+  "starting_commit": "50e1d225a38718ca170cdd068488113fe6a75314",
+  "objective": "Build a separate order-invariant complete-sequence candidate that preserves native identities, exposes competing paths and withholds ambiguous admissions without replacing frozen science receipts",
+  "input_pins": [
+    {"path": "paper-review/identity-census/contract.json", "bytes": 3996, "sha256": "37ac81034766d2222fb632eba0e8ab2ca3a16c7f68e078a899716a2d3cc6e5ad"},
+    {"path": "paper-review/identity-census/result.json", "bytes": 97849, "sha256": "4dedc409a22c6e4e0c24b387dec08644500d96231feab8941d27e24d4ee62f69"},
+    {"path": "src/camera_identity_alias_census.py", "bytes": 15656, "sha256": "5d55be4ba51b9a5ba46a1ecd9254531ed6dfaddb75324c30942ebbfc0c94b6b8"}
+  ],
+  "source_rule": "Use the census loader's complete frozen 10,329-record raw snapshot and exact acquisition/algorithm pins. No additional source or image acquisition.",
+  "candidate_rule": "Enumerate all native-ID paths starting at bracket value 0 under the six pinned patterns, consecutive numeric shutter/file counters, serial and optical-setting equality, required bracket mode/order and at most ten seconds. Never select a path by input order or by maximizing counts. Additionally require explicit-offset, nondecreasing recorded times across all slots. Preserve all native records and original side metadata.",
+  "family_rule": "Native paths sharing the same ordered nine-field metadata keys form a lossless candidate family, not a physical merge. All slot alternatives and original target/activity fields remain visible. No representative is chosen.",
+  "abstention_rule": "A family with a multi-ID slot is IDENTITY_ALTERNATIVES_ABSTAIN. Families in a connected component sharing any native ID are COMPETING_PATHS_ABSTAIN. Only a one-ID-per-slot family with no competing path is UNAMBIGUOUS_METADATA_SEQUENCE; this is computational support, not physical or scientific acceptance.",
+  "budget": {"maximum_native_paths": 100000, "maximum_paths_per_start_pattern": 512},
+  "order_checks": {"original": true, "reversed": true, "product_id_sorted": true, "shuffled_seeds": [11, 37, 101, 509], "rotated": true},
+  "oracles": ["Exact original/reverse/shuffled output parity", "All frozen baseline native paths accounted for as supported or explicitly excluded", "Independent exhaustive small-native-path enumeration", "Tied-counter and repeated-middle-record changed cases", "Competing-time-path abstention and no-tie hard negatives", "Identity-alternative and tag-field non-selection", "Counter/settings/span/missing-field/naive-time/complexity-limit mutations"],
+  "limits": {"physical_identity": false, "physical_action_counts": false, "correct_target_labels": false, "new_images": false, "counts_replaced": false, "downstream_population_recomputed": false, "scientific_acceptance": false, "adopted_reconstruction": false},
+  "effects": {"network_requests": 0, "new_image_bytes": 0, "outreach": false, "publication": false, "remote_push": false},
+  "stop": "Fail closed on a source/hash/scope/baseline discrepancy, duplicate native ID, budget overflow, incomplete ambiguity component or unexplained baseline exclusion. Preserve old route and receipts; candidate failure does not authorize a physical merge, count rewrite or external effect."
+}

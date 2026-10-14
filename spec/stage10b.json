@@ -1,0 +1,65 @@
+{
+  "testbed_id": "artemis2-forward-look-representation-audit-stage10b",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T11:43:00Z",
+  "question": "Are the two Flight Day 6 raw crew-camera records tagged Discussion #6 a temporal activity boundary, or isolated product-level states inside continuous camera actions under a scalar activity schema?",
+  "terminal_objective": "Distinguish a boundary transition from a representation ambiguity before treating activity facets as execution or completeness evidence.",
+  "method": "Complete-cohort focus-facet census plus same-camera neighbor, bracket, schema-cardinality, plan, and transcript checks",
+  "prior_observation": "Exploration before formation found that the complete Flight Day 6 raw cohort contains two Discussion #6 records, both in the two Stage 10A fractured brackets. Stage 10B is a frozen replay and mechanism-discrimination audit, not a prospective discovery claim.",
+  "authority": "Read-only public-source acquisition and private local repository updates only. No image pixels, publication, outreach, scientific acceptance, or correction of NASA labels.",
+  "acceptance_owner": "Paul",
+  "focus_activity_id": "25_Discussion #6: Forward Look",
+  "comparison_activity_id": "24_Sunset",
+  "source_contract": {
+    "stage10a_result_path": "evidence/stage10a/result.json",
+    "outgoing_target_request_path": "corpus/artemis2_outgoing_target_request.json",
+    "transcript_path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+    "schema_url": "https://pds.nasa.gov/pds4/msn_surface/v1/PDS4_MSN_SURFACE_1Q00_1310.xsd",
+    "schema_path": "evidence/stage10b/source/PDS4_MSN_SURFACE_1Q00_1310.xsd",
+    "receipt_path": "evidence/stage10b/acquisition-receipt.json",
+    "maximum_schema_bytes": 1000000,
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "expected_focus_record_count": 2,
+    "expected_focus_serial": "3920019",
+    "expected_focus_shutter_counts": [2948, 2954],
+    "expected_focus_target_ids": [null, null],
+    "required_same_serial_neighbor_activity": "24_Sunset",
+    "required_bracket_membership": true,
+    "required_other_bracket_frame_activity": "24_Sunset",
+    "schema_activity_id_max_occurs": "1",
+    "forward_look_request_time": "2026-04-07T00:44:00Z",
+    "forward_look_request_duration_minutes": 10,
+    "transcript_cues": [
+      ["2026-04-07 00:44:59.421", "I'm just going to watch for flashes"],
+      ["2026-04-07 00:48:03.949", "The bracket is just ridiculous"],
+      ["2026-04-07 00:50:39.513", "only slightly brighter at the sunset position"],
+      ["2026-04-07 00:51:15.947", "100 percent just saw a meteorite"],
+      ["2026-04-07 00:53:19.564", "Where are we at on the science timeline"]
+    ]
+  },
+  "outcome_states": {
+    "temporal_boundary": "The focus records form a contiguous same-camera run and neighboring records support a transition between activity blocks.",
+    "isolated_scalar_ambiguity": "Every focus record is an isolated singleton inside a complete bracket whose other four frames and immediate same-camera neighbors share the comparison activity, while the schema admits only one activity_id per product.",
+    "mixed_or_unresolved": "The focus records, neighbors, brackets, or schema do not satisfy either frozen state."
+  },
+  "task_native_falsifier": "At least one focus record is part of a contiguous Discussion #6 run, is not bracket-isolated among four Sunset frames, lacks Sunset on an immediate same-camera neighbor, or the official schema permits multiple activity_id values per Observational_Intent.",
+  "hard_negatives": [
+    "call_isolated_singletons_a_temporal_boundary",
+    "declare_the_forward_look_labels_wrong",
+    "treat_activity_id_as_discussion_execution_evidence",
+    "infer_image_content_from_nearby_transcript",
+    "claim_scalar_cardinality_caused_the_observed_assignments",
+    "claim_the_schema_forbids_real_world_concurrent_activity",
+    "generalize_two_records_to_all_artemis_metadata",
+    "open_pixels_to_choose_the_correct_activity"
+  ],
+  "claim_ceiling": "Stage 10B may establish that the complete Flight Day 6 raw crew-camera Forward Look facet consists of two isolated product records embedded in otherwise Sunset-tagged physical brackets, and that the governing schema permits one activity_id per Observational_Intent. It may conclude that activity metadata alone cannot resolve whether the pattern reflects overlapping intent, curation, or error. It cannot decide which labels are correct, prove Forward Look execution, infer image content, assign causality to the schema, or generalize beyond the qualified cohort.",
+  "next_step_logic": {
+    "if_temporal_boundary": "Treat Stage 10A as a boundary-specific retrieval caveat and stop the representation lead.",
+    "if_isolated_scalar_ambiguity": "Test whether derivative products merely propagate the two assignments and whether an activity-only query can recover complete camera actions; then synthesize the archive-usability implication without asserting label error.",
+    "if_mixed_or_unresolved": "Preserve Stage 10A's sparse fracture only and return to another high-probability lead.",
+    "recheck_trigger": "A documented Artemis activity-label generation procedure, multi-activity extension, or revised label release can distinguish curation policy from error."
+  }
+}

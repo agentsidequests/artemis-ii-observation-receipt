@@ -1,0 +1,5580 @@
+{
+  "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_ACTIVITY_FACET_FRAGMENTATION",
+  "source_records": 8423,
+  "complete_brackets": 221,
+  "activity_fractured_brackets": 2,
+  "activity_fracture_rate": 0.00904977375565611,
+  "target_presence_fractured_brackets": 10,
+  "target_value_fractured_brackets": 0,
+  "pixel_payload_bytes": 0,
+  "activity_fractures": [
+    {
+      "serial": "3920019",
+      "start_time": "2026-04-07T00:50:46.820Z",
+      "end_time": "2026-04-07T00:50:49.110Z",
+      "span_seconds": 2.29,
+      "file_names": [
+        "art002e015902_nkz9019_raw_v01.tif",
+        "art002e015903_nkz9019_raw_v01.tif",
+        "art002e015904_nkz9019_raw_v01.tif",
+        "art002e015905_nkz9019_raw_v01.tif",
+        "art002e015906_nkz9019_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        2948,
+        2949,
+        2950,
+        2951,
+        2952
+      ],
+      "file_numbers": [
+        771,
+        772,
+        773,
+        774,
+        775
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "25_Discussion #6: Forward Look",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset"
+      ],
+      "target_ids": [
+        null,
+        "Sunset",
+        "Sunset",
+        "Sunset",
+        "Sunset"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3920019",
+      "start_time": "2026-04-07T00:51:51.830Z",
+      "end_time": "2026-04-07T00:51:56.100Z",
+      "span_seconds": 4.27,
+      "file_names": [
+        "art002e015907_nkz9019_raw_v01.tif",
+        "art002e015908_nkz9019_raw_v01.tif",
+        "art002e015909_nkz9019_raw_v01.tif",
+        "art002e015910_nkz9019_raw_v01.tif",
+        "art002e015911_nkz9019_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        2953,
+        2954,
+        2955,
+        2956,
+        2957
+      ],
+      "file_numbers": [
+        776,
+        777,
+        778,
+        779,
+        780
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "24_Sunset",
+        "25_Discussion #6: Forward Look",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset"
+      ],
+      "target_ids": [
+        "Sunset",
+        null,
+        "Sunset",
+        "Sunset",
+        "Sunset"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    }
+  ],
+  "target_presence_fractures": [
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T22:35:54.990Z",
+      "end_time": "2026-04-06T22:35:55.330Z",
+      "span_seconds": 0.34,
+      "file_names": [
+        "art002e009285_nkd5015_raw_v01.tif",
+        "art002e020938_nkd5015_raw_v01.tif",
+        "art002e020939_nkd5015_raw_v01.tif",
+        "art002e020940_nkd5015_raw_v01.tif",
+        "art002e020941_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        5468,
+        5469,
+        5470,
+        5471,
+        5472
+      ],
+      "file_numbers": [
+        281,
+        282,
+        283,
+        284,
+        285
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "17_Discussion #5: Limb",
+        "17_Discussion #5: Limb",
+        "17_Discussion #5: Limb",
+        "17_Discussion #5: Limb",
+        "17_Discussion #5: Limb"
+      ],
+      "target_ids": [
+        "Earthset",
+        null,
+        null,
+        null,
+        null
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T22:40:47.110Z",
+      "end_time": "2026-04-06T22:40:47.480Z",
+      "span_seconds": 0.37,
+      "file_names": [
+        "art002e021142_nkd5015_raw_v01.tif",
+        "art002e021143_nkd5015_raw_v01.tif",
+        "art002e021144_nkd5015_raw_v01.tif",
+        "art002e009286_nkd5015_raw_v01.tif",
+        "art002e021145_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        5673,
+        5674,
+        5675,
+        5676,
+        5677
+      ],
+      "file_numbers": [
+        486,
+        487,
+        488,
+        489,
+        490
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset"
+      ],
+      "target_ids": [
+        null,
+        null,
+        null,
+        "Earthset",
+        null
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T22:41:22.130Z",
+      "end_time": "2026-04-06T22:41:22.500Z",
+      "span_seconds": 0.37,
+      "file_names": [
+        "art002e021176_nkd5015_raw_v01.tif",
+        "art002e021177_nkd5015_raw_v01.tif",
+        "art002e021178_nkd5015_raw_v01.tif",
+        "art002e009287_nkd5015_raw_v01.tif",
+        "art002e021179_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        5708,
+        5709,
+        5710,
+        5711,
+        5712
+      ],
+      "file_numbers": [
+        521,
+        522,
+        523,
+        524,
+        525
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset"
+      ],
+      "target_ids": [
+        null,
+        null,
+        null,
+        "Earthset",
+        null
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T22:41:37.410Z",
+      "end_time": "2026-04-06T22:41:37.780Z",
+      "span_seconds": 0.37,
+      "file_names": [
+        "art002e009288_nkd5015_raw_v01.tif",
+        "art002e021200_nkd5015_raw_v01.tif",
+        "art002e021201_nkd5015_raw_v01.tif",
+        "art002e021202_nkd5015_raw_v01.tif",
+        "art002e021203_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        5733,
+        5734,
+        5735,
+        5736,
+        5737
+      ],
+      "file_numbers": [
+        546,
+        547,
+        548,
+        549,
+        550
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset"
+      ],
+      "target_ids": [
+        "Earthset",
+        null,
+        null,
+        null,
+        null
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T22:41:58.120Z",
+      "end_time": "2026-04-06T22:41:58.490Z",
+      "span_seconds": 0.37,
+      "file_names": [
+        "art002e021219_nkd5015_raw_v01.tif",
+        "art002e021220_nkd5015_raw_v01.tif",
+        "art002e021221_nkd5015_raw_v01.tif",
+        "art002e009289_nkd5015_raw_v01.tif",
+        "art002e021222_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        5753,
+        5754,
+        5755,
+        5756,
+        5757
+      ],
+      "file_numbers": [
+        566,
+        567,
+        568,
+        569,
+        570
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset",
+        "18_Earthset"
+      ],
+      "target_ids": [
+        null,
+        null,
+        null,
+        "Earthset",
+        null
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T22:59:29.830Z",
+      "end_time": "2026-04-06T22:59:30.240Z",
+      "span_seconds": 0.41,
+      "file_names": [
+        "art002e012589_nkd5015_raw_v01.tif",
+        "art002e012590_nkd5015_raw_v01.tif",
+        "art002e012591_nkd5015_raw_v01.tif",
+        "art002e012592_nkd5015_raw_v01.tif",
+        "art002e012593_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        5893,
+        5894,
+        5895,
+        5896,
+        5897
+      ],
+      "file_numbers": [
+        706,
+        707,
+        708,
+        709,
+        710
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "20_Crew Choice #3",
+        "20_Crew Choice #3",
+        "20_Crew Choice #3",
+        "20_Crew Choice #3",
+        "20_Crew Choice #3"
+      ],
+      "target_ids": [
+        null,
+        "Vavilov Crater",
+        "Vavilov Crater",
+        "Vavilov Crater",
+        "Vavilov Crater"
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T23:22:30.290Z",
+      "end_time": "2026-04-06T23:22:30.660Z",
+      "span_seconds": 0.37,
+      "file_names": [
+        "art002e009280_nkd5015_raw_v01.tif",
+        "art002e025000_nkd5015_raw_v01.tif",
+        "art002e025001_nkd5015_raw_v01.tif",
+        "art002e025002_nkd5015_raw_v01.tif",
+        "art002e025003_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        6223,
+        6224,
+        6225,
+        6226,
+        6227
+      ],
+      "file_numbers": [
+        1036,
+        1037,
+        1038,
+        1039,
+        1040
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "23_Earthrise",
+        "23_Earthrise",
+        "23_Earthrise",
+        "23_Earthrise",
+        "23_Earthrise"
+      ],
+      "target_ids": [
+        "Earthrise",
+        null,
+        null,
+        null,
+        null
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3500015",
+      "start_time": "2026-04-06T23:23:18.370Z",
+      "end_time": "2026-04-06T23:23:18.750Z",
+      "span_seconds": 0.38,
+      "file_names": [
+        "art002e014069_nkd5015_raw_v01.tif",
+        "art002e014070_nkd5015_raw_v01.tif",
+        "art002e014071_nkd5015_raw_v01.tif",
+        "art002e025131_nkd5015_raw_v01.tif",
+        "art002e025132_nkd5015_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        6358,
+        6359,
+        6360,
+        6361,
+        6362
+      ],
+      "file_numbers": [
+        1171,
+        1172,
+        1173,
+        1174,
+        1175
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "23_Earthrise",
+        "23_Earthrise",
+        "23_Earthrise",
+        "23_Earthrise",
+        "23_Earthrise"
+      ],
+      "target_ids": [
+        null,
+        null,
+        "Earthrise",
+        null,
+        null
+      ],
+      "activity_facet_fracture": false,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3920019",
+      "start_time": "2026-04-07T00:50:46.820Z",
+      "end_time": "2026-04-07T00:50:49.110Z",
+      "span_seconds": 2.29,
+      "file_names": [
+        "art002e015902_nkz9019_raw_v01.tif",
+        "art002e015903_nkz9019_raw_v01.tif",
+        "art002e015904_nkz9019_raw_v01.tif",
+        "art002e015905_nkz9019_raw_v01.tif",
+        "art002e015906_nkz9019_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        2948,
+        2949,
+        2950,
+        2951,
+        2952
+      ],
+      "file_numbers": [
+        771,
+        772,
+        773,
+        774,
+        775
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "25_Discussion #6: Forward Look",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset"
+      ],
+      "target_ids": [
+        null,
+        "Sunset",
+        "Sunset",
+        "Sunset",
+        "Sunset"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    },
+    {
+      "serial": "3920019",
+      "start_time": "2026-04-07T00:51:51.830Z",
+      "end_time": "2026-04-07T00:51:56.100Z",
+      "span_seconds": 4.27,
+      "file_names": [
+        "art002e015907_nkz9019_raw_v01.tif",
+        "art002e015908_nkz9019_raw_v01.tif",
+        "art002e015909_nkz9019_raw_v01.tif",
+        "art002e015910_nkz9019_raw_v01.tif",
+        "art002e015911_nkz9019_raw_v01.tif"
+      ],
+      "shutter_counts": [
+        2953,
+        2954,
+        2955,
+        2956,
+        2957
+      ],
+      "file_numbers": [
+        776,
+        777,
+        778,
+        779,
+        780
+      ],
+      "bracket_values": [
+        "0",
+        "-2",
+        "-1",
+        "+1",
+        "+2"
+      ],
+      "activity_ids": [
+        "24_Sunset",
+        "25_Discussion #6: Forward Look",
+        "24_Sunset",
+        "24_Sunset",
+        "24_Sunset"
+      ],
+      "target_ids": [
+        "Sunset",
+        null,
+        "Sunset",
+        "Sunset",
+        "Sunset"
+      ],
+      "activity_facet_fracture": true,
+      "target_presence_fracture": true,
+      "target_value_fracture": false
+    }
+  ],
+  "target_value_fractures": [],
+  "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+  "next_step_logic": {
+    "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+    "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+    "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+    "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+  },
+  "checks": [
+    {
+      "id": "source_identity",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "complete_unique_denominator",
+      "pass": true,
+      "records": 8423,
+      "unique_ids": 8423,
+      "page_errors": []
+    },
+    {
+      "id": "cohort_contract",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "frozen_query_contract",
+      "pass": true
+    },
+    {
+      "id": "official_field_semantics_and_limit",
+      "pass": true
+    },
+    {
+      "id": "camera_native_complete_bracket_oracle",
+      "pass": true
+    },
+    {
+      "id": "known_case_reproduction",
+      "pass": true
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "pixel_payload_bytes": 0,
+      "mutation_state": {
+        "correct_activity_inferred": false,
+        "image_content_inferred_from_missing_target": false,
+        "oracle": "camera-native complete five-exposure bracket",
+        "scope": "flight_day_6_complete_brackets",
+        "pixel_data_declared_invalid": false,
+        "pds_validation_declared_semantic": false
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "infer_correct_activity_from_bracket_majority": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "infer_correct_activity_from_bracket_majority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 221,
+      "activity_fractured_brackets": 2,
+      "activity_fracture_rate": 0.00904977375565611,
+      "target_presence_fractured_brackets": 10,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_presence_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:35:54.990Z",
+          "end_time": "2026-04-06T22:35:55.330Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009285_nkd5015_raw_v01.tif",
+            "art002e020938_nkd5015_raw_v01.tif",
+            "art002e020939_nkd5015_raw_v01.tif",
+            "art002e020940_nkd5015_raw_v01.tif",
+            "art002e020941_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5468,
+            5469,
+            5470,
+            5471,
+            5472
+          ],
+          "file_numbers": [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:40:47.110Z",
+          "end_time": "2026-04-06T22:40:47.480Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021142_nkd5015_raw_v01.tif",
+            "art002e021143_nkd5015_raw_v01.tif",
+            "art002e021144_nkd5015_raw_v01.tif",
+            "art002e009286_nkd5015_raw_v01.tif",
+            "art002e021145_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5673,
+            5674,
+            5675,
+            5676,
+            5677
+          ],
+          "file_numbers": [
+            486,
+            487,
+            488,
+            489,
+            490
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:22.130Z",
+          "end_time": "2026-04-06T22:41:22.500Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021176_nkd5015_raw_v01.tif",
+            "art002e021177_nkd5015_raw_v01.tif",
+            "art002e021178_nkd5015_raw_v01.tif",
+            "art002e009287_nkd5015_raw_v01.tif",
+            "art002e021179_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5708,
+            5709,
+            5710,
+            5711,
+            5712
+          ],
+          "file_numbers": [
+            521,
+            522,
+            523,
+            524,
+            525
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:37.410Z",
+          "end_time": "2026-04-06T22:41:37.780Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009288_nkd5015_raw_v01.tif",
+            "art002e021200_nkd5015_raw_v01.tif",
+            "art002e021201_nkd5015_raw_v01.tif",
+            "art002e021202_nkd5015_raw_v01.tif",
+            "art002e021203_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5733,
+            5734,
+            5735,
+            5736,
+            5737
+          ],
+          "file_numbers": [
+            546,
+            547,
+            548,
+            549,
+            550
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:58.120Z",
+          "end_time": "2026-04-06T22:41:58.490Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021219_nkd5015_raw_v01.tif",
+            "art002e021220_nkd5015_raw_v01.tif",
+            "art002e021221_nkd5015_raw_v01.tif",
+            "art002e009289_nkd5015_raw_v01.tif",
+            "art002e021222_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5753,
+            5754,
+            5755,
+            5756,
+            5757
+          ],
+          "file_numbers": [
+            566,
+            567,
+            568,
+            569,
+            570
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:59:29.830Z",
+          "end_time": "2026-04-06T22:59:30.240Z",
+          "span_seconds": 0.41,
+          "file_names": [
+            "art002e012589_nkd5015_raw_v01.tif",
+            "art002e012590_nkd5015_raw_v01.tif",
+            "art002e012591_nkd5015_raw_v01.tif",
+            "art002e012592_nkd5015_raw_v01.tif",
+            "art002e012593_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5893,
+            5894,
+            5895,
+            5896,
+            5897
+          ],
+          "file_numbers": [
+            706,
+            707,
+            708,
+            709,
+            710
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3"
+          ],
+          "target_ids": [
+            null,
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater"
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:22:30.290Z",
+          "end_time": "2026-04-06T23:22:30.660Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009280_nkd5015_raw_v01.tif",
+            "art002e025000_nkd5015_raw_v01.tif",
+            "art002e025001_nkd5015_raw_v01.tif",
+            "art002e025002_nkd5015_raw_v01.tif",
+            "art002e025003_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6223,
+            6224,
+            6225,
+            6226,
+            6227
+          ],
+          "file_numbers": [
+            1036,
+            1037,
+            1038,
+            1039,
+            1040
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            "Earthrise",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:23:18.370Z",
+          "end_time": "2026-04-06T23:23:18.750Z",
+          "span_seconds": 0.38,
+          "file_names": [
+            "art002e014069_nkd5015_raw_v01.tif",
+            "art002e014070_nkd5015_raw_v01.tif",
+            "art002e014071_nkd5015_raw_v01.tif",
+            "art002e025131_nkd5015_raw_v01.tif",
+            "art002e025132_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6358,
+            6359,
+            6360,
+            6361,
+            6362
+          ],
+          "file_numbers": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Earthrise",
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": true
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "pixel_payload_bytes": 0,
+          "mutation_state": {
+            "correct_activity_inferred": true,
+            "image_content_inferred_from_missing_target": false,
+            "oracle": "camera-native complete five-exposure bracket",
+            "scope": "flight_day_6_complete_brackets",
+            "pixel_data_declared_invalid": false,
+            "pds_validation_declared_semantic": false
+          }
+        }
+      ],
+      "errors": [
+        "A hard-negative inference, scope expansion, or pixel access was admitted."
+      ]
+    },
+    "treat_target_id_absence_as_wrong_image_content": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "treat_target_id_absence_as_wrong_image_content",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 221,
+      "activity_fractured_brackets": 2,
+      "activity_fracture_rate": 0.00904977375565611,
+      "target_presence_fractured_brackets": 10,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_presence_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:35:54.990Z",
+          "end_time": "2026-04-06T22:35:55.330Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009285_nkd5015_raw_v01.tif",
+            "art002e020938_nkd5015_raw_v01.tif",
+            "art002e020939_nkd5015_raw_v01.tif",
+            "art002e020940_nkd5015_raw_v01.tif",
+            "art002e020941_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5468,
+            5469,
+            5470,
+            5471,
+            5472
+          ],
+          "file_numbers": [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:40:47.110Z",
+          "end_time": "2026-04-06T22:40:47.480Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021142_nkd5015_raw_v01.tif",
+            "art002e021143_nkd5015_raw_v01.tif",
+            "art002e021144_nkd5015_raw_v01.tif",
+            "art002e009286_nkd5015_raw_v01.tif",
+            "art002e021145_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5673,
+            5674,
+            5675,
+            5676,
+            5677
+          ],
+          "file_numbers": [
+            486,
+            487,
+            488,
+            489,
+            490
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:22.130Z",
+          "end_time": "2026-04-06T22:41:22.500Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021176_nkd5015_raw_v01.tif",
+            "art002e021177_nkd5015_raw_v01.tif",
+            "art002e021178_nkd5015_raw_v01.tif",
+            "art002e009287_nkd5015_raw_v01.tif",
+            "art002e021179_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5708,
+            5709,
+            5710,
+            5711,
+            5712
+          ],
+          "file_numbers": [
+            521,
+            522,
+            523,
+            524,
+            525
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:37.410Z",
+          "end_time": "2026-04-06T22:41:37.780Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009288_nkd5015_raw_v01.tif",
+            "art002e021200_nkd5015_raw_v01.tif",
+            "art002e021201_nkd5015_raw_v01.tif",
+            "art002e021202_nkd5015_raw_v01.tif",
+            "art002e021203_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5733,
+            5734,
+            5735,
+            5736,
+            5737
+          ],
+          "file_numbers": [
+            546,
+            547,
+            548,
+            549,
+            550
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:58.120Z",
+          "end_time": "2026-04-06T22:41:58.490Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021219_nkd5015_raw_v01.tif",
+            "art002e021220_nkd5015_raw_v01.tif",
+            "art002e021221_nkd5015_raw_v01.tif",
+            "art002e009289_nkd5015_raw_v01.tif",
+            "art002e021222_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5753,
+            5754,
+            5755,
+            5756,
+            5757
+          ],
+          "file_numbers": [
+            566,
+            567,
+            568,
+            569,
+            570
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:59:29.830Z",
+          "end_time": "2026-04-06T22:59:30.240Z",
+          "span_seconds": 0.41,
+          "file_names": [
+            "art002e012589_nkd5015_raw_v01.tif",
+            "art002e012590_nkd5015_raw_v01.tif",
+            "art002e012591_nkd5015_raw_v01.tif",
+            "art002e012592_nkd5015_raw_v01.tif",
+            "art002e012593_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5893,
+            5894,
+            5895,
+            5896,
+            5897
+          ],
+          "file_numbers": [
+            706,
+            707,
+            708,
+            709,
+            710
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3"
+          ],
+          "target_ids": [
+            null,
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater"
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:22:30.290Z",
+          "end_time": "2026-04-06T23:22:30.660Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009280_nkd5015_raw_v01.tif",
+            "art002e025000_nkd5015_raw_v01.tif",
+            "art002e025001_nkd5015_raw_v01.tif",
+            "art002e025002_nkd5015_raw_v01.tif",
+            "art002e025003_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6223,
+            6224,
+            6225,
+            6226,
+            6227
+          ],
+          "file_numbers": [
+            1036,
+            1037,
+            1038,
+            1039,
+            1040
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            "Earthrise",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:23:18.370Z",
+          "end_time": "2026-04-06T23:23:18.750Z",
+          "span_seconds": 0.38,
+          "file_names": [
+            "art002e014069_nkd5015_raw_v01.tif",
+            "art002e014070_nkd5015_raw_v01.tif",
+            "art002e014071_nkd5015_raw_v01.tif",
+            "art002e025131_nkd5015_raw_v01.tif",
+            "art002e025132_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6358,
+            6359,
+            6360,
+            6361,
+            6362
+          ],
+          "file_numbers": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Earthrise",
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": true
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "pixel_payload_bytes": 0,
+          "mutation_state": {
+            "correct_activity_inferred": false,
+            "image_content_inferred_from_missing_target": true,
+            "oracle": "camera-native complete five-exposure bracket",
+            "scope": "flight_day_6_complete_brackets",
+            "pixel_data_declared_invalid": false,
+            "pds_validation_declared_semantic": false
+          }
+        }
+      ],
+      "errors": [
+        "A hard-negative inference, scope expansion, or pixel access was admitted."
+      ]
+    },
+    "use_otr_windows_as_execution_truth": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "use_otr_windows_as_execution_truth",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 221,
+      "activity_fractured_brackets": 2,
+      "activity_fracture_rate": 0.00904977375565611,
+      "target_presence_fractured_brackets": 10,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_presence_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:35:54.990Z",
+          "end_time": "2026-04-06T22:35:55.330Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009285_nkd5015_raw_v01.tif",
+            "art002e020938_nkd5015_raw_v01.tif",
+            "art002e020939_nkd5015_raw_v01.tif",
+            "art002e020940_nkd5015_raw_v01.tif",
+            "art002e020941_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5468,
+            5469,
+            5470,
+            5471,
+            5472
+          ],
+          "file_numbers": [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:40:47.110Z",
+          "end_time": "2026-04-06T22:40:47.480Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021142_nkd5015_raw_v01.tif",
+            "art002e021143_nkd5015_raw_v01.tif",
+            "art002e021144_nkd5015_raw_v01.tif",
+            "art002e009286_nkd5015_raw_v01.tif",
+            "art002e021145_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5673,
+            5674,
+            5675,
+            5676,
+            5677
+          ],
+          "file_numbers": [
+            486,
+            487,
+            488,
+            489,
+            490
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:22.130Z",
+          "end_time": "2026-04-06T22:41:22.500Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021176_nkd5015_raw_v01.tif",
+            "art002e021177_nkd5015_raw_v01.tif",
+            "art002e021178_nkd5015_raw_v01.tif",
+            "art002e009287_nkd5015_raw_v01.tif",
+            "art002e021179_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5708,
+            5709,
+            5710,
+            5711,
+            5712
+          ],
+          "file_numbers": [
+            521,
+            522,
+            523,
+            524,
+            525
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:37.410Z",
+          "end_time": "2026-04-06T22:41:37.780Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009288_nkd5015_raw_v01.tif",
+            "art002e021200_nkd5015_raw_v01.tif",
+            "art002e021201_nkd5015_raw_v01.tif",
+            "art002e021202_nkd5015_raw_v01.tif",
+            "art002e021203_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5733,
+            5734,
+            5735,
+            5736,
+            5737
+          ],
+          "file_numbers": [
+            546,
+            547,
+            548,
+            549,
+            550
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:58.120Z",
+          "end_time": "2026-04-06T22:41:58.490Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021219_nkd5015_raw_v01.tif",
+            "art002e021220_nkd5015_raw_v01.tif",
+            "art002e021221_nkd5015_raw_v01.tif",
+            "art002e009289_nkd5015_raw_v01.tif",
+            "art002e021222_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5753,
+            5754,
+            5755,
+            5756,
+            5757
+          ],
+          "file_numbers": [
+            566,
+            567,
+            568,
+            569,
+            570
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:59:29.830Z",
+          "end_time": "2026-04-06T22:59:30.240Z",
+          "span_seconds": 0.41,
+          "file_names": [
+            "art002e012589_nkd5015_raw_v01.tif",
+            "art002e012590_nkd5015_raw_v01.tif",
+            "art002e012591_nkd5015_raw_v01.tif",
+            "art002e012592_nkd5015_raw_v01.tif",
+            "art002e012593_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5893,
+            5894,
+            5895,
+            5896,
+            5897
+          ],
+          "file_numbers": [
+            706,
+            707,
+            708,
+            709,
+            710
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3"
+          ],
+          "target_ids": [
+            null,
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater"
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:22:30.290Z",
+          "end_time": "2026-04-06T23:22:30.660Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009280_nkd5015_raw_v01.tif",
+            "art002e025000_nkd5015_raw_v01.tif",
+            "art002e025001_nkd5015_raw_v01.tif",
+            "art002e025002_nkd5015_raw_v01.tif",
+            "art002e025003_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6223,
+            6224,
+            6225,
+            6226,
+            6227
+          ],
+          "file_numbers": [
+            1036,
+            1037,
+            1038,
+            1039,
+            1040
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            "Earthrise",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:23:18.370Z",
+          "end_time": "2026-04-06T23:23:18.750Z",
+          "span_seconds": 0.38,
+          "file_names": [
+            "art002e014069_nkd5015_raw_v01.tif",
+            "art002e014070_nkd5015_raw_v01.tif",
+            "art002e014071_nkd5015_raw_v01.tif",
+            "art002e025131_nkd5015_raw_v01.tif",
+            "art002e025132_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6358,
+            6359,
+            6360,
+            6361,
+            6362
+          ],
+          "file_numbers": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Earthrise",
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": true
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "pixel_payload_bytes": 0,
+          "mutation_state": {
+            "correct_activity_inferred": false,
+            "image_content_inferred_from_missing_target": false,
+            "oracle": "operational timeline report window",
+            "scope": "flight_day_6_complete_brackets",
+            "pixel_data_declared_invalid": false,
+            "pds_validation_declared_semantic": false
+          }
+        }
+      ],
+      "errors": [
+        "A hard-negative inference, scope expansion, or pixel access was admitted."
+      ]
+    },
+    "count_incomplete_or_nonconsecutive_brackets": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "count_incomplete_or_nonconsecutive_brackets",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 0,
+      "activity_fractured_brackets": 0,
+      "activity_fracture_rate": null,
+      "target_presence_fractured_brackets": 0,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [],
+      "target_presence_fractures": [],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": false
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": false
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": true,
+          "pixel_payload_bytes": 0,
+          "mutation_state": {
+            "correct_activity_inferred": false,
+            "image_content_inferred_from_missing_target": false,
+            "oracle": "camera-native complete five-exposure bracket",
+            "scope": "flight_day_6_complete_brackets",
+            "pixel_data_declared_invalid": false,
+            "pds_validation_declared_semantic": false
+          }
+        }
+      ],
+      "errors": [
+        "The camera-native complete-bracket oracle was weakened or changed.",
+        "The predeclared known fractured bracket was not reproduced exactly once."
+      ]
+    },
+    "generalize_fd6_bracket_rate_to_all_archive_products": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "generalize_fd6_bracket_rate_to_all_archive_products",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 221,
+      "activity_fractured_brackets": 2,
+      "activity_fracture_rate": 0.00904977375565611,
+      "target_presence_fractured_brackets": 10,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_presence_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:35:54.990Z",
+          "end_time": "2026-04-06T22:35:55.330Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009285_nkd5015_raw_v01.tif",
+            "art002e020938_nkd5015_raw_v01.tif",
+            "art002e020939_nkd5015_raw_v01.tif",
+            "art002e020940_nkd5015_raw_v01.tif",
+            "art002e020941_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5468,
+            5469,
+            5470,
+            5471,
+            5472
+          ],
+          "file_numbers": [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:40:47.110Z",
+          "end_time": "2026-04-06T22:40:47.480Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021142_nkd5015_raw_v01.tif",
+            "art002e021143_nkd5015_raw_v01.tif",
+            "art002e021144_nkd5015_raw_v01.tif",
+            "art002e009286_nkd5015_raw_v01.tif",
+            "art002e021145_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5673,
+            5674,
+            5675,
+            5676,
+            5677
+          ],
+          "file_numbers": [
+            486,
+            487,
+            488,
+            489,
+            490
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:22.130Z",
+          "end_time": "2026-04-06T22:41:22.500Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021176_nkd5015_raw_v01.tif",
+            "art002e021177_nkd5015_raw_v01.tif",
+            "art002e021178_nkd5015_raw_v01.tif",
+            "art002e009287_nkd5015_raw_v01.tif",
+            "art002e021179_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5708,
+            5709,
+            5710,
+            5711,
+            5712
+          ],
+          "file_numbers": [
+            521,
+            522,
+            523,
+            524,
+            525
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:37.410Z",
+          "end_time": "2026-04-06T22:41:37.780Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009288_nkd5015_raw_v01.tif",
+            "art002e021200_nkd5015_raw_v01.tif",
+            "art002e021201_nkd5015_raw_v01.tif",
+            "art002e021202_nkd5015_raw_v01.tif",
+            "art002e021203_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5733,
+            5734,
+            5735,
+            5736,
+            5737
+          ],
+          "file_numbers": [
+            546,
+            547,
+            548,
+            549,
+            550
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:58.120Z",
+          "end_time": "2026-04-06T22:41:58.490Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021219_nkd5015_raw_v01.tif",
+            "art002e021220_nkd5015_raw_v01.tif",
+            "art002e021221_nkd5015_raw_v01.tif",
+            "art002e009289_nkd5015_raw_v01.tif",
+            "art002e021222_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5753,
+            5754,
+            5755,
+            5756,
+            5757
+          ],
+          "file_numbers": [
+            566,
+            567,
+            568,
+            569,
+            570
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:59:29.830Z",
+          "end_time": "2026-04-06T22:59:30.240Z",
+          "span_seconds": 0.41,
+          "file_names": [
+            "art002e012589_nkd5015_raw_v01.tif",
+            "art002e012590_nkd5015_raw_v01.tif",
+            "art002e012591_nkd5015_raw_v01.tif",
+            "art002e012592_nkd5015_raw_v01.tif",
+            "art002e012593_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5893,
+            5894,
+            5895,
+            5896,
+            5897
+          ],
+          "file_numbers": [
+            706,
+            707,
+            708,
+            709,
+            710
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3"
+          ],
+          "target_ids": [
+            null,
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater"
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:22:30.290Z",
+          "end_time": "2026-04-06T23:22:30.660Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009280_nkd5015_raw_v01.tif",
+            "art002e025000_nkd5015_raw_v01.tif",
+            "art002e025001_nkd5015_raw_v01.tif",
+            "art002e025002_nkd5015_raw_v01.tif",
+            "art002e025003_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6223,
+            6224,
+            6225,
+            6226,
+            6227
+          ],
+          "file_numbers": [
+            1036,
+            1037,
+            1038,
+            1039,
+            1040
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            "Earthrise",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:23:18.370Z",
+          "end_time": "2026-04-06T23:23:18.750Z",
+          "span_seconds": 0.38,
+          "file_names": [
+            "art002e014069_nkd5015_raw_v01.tif",
+            "art002e014070_nkd5015_raw_v01.tif",
+            "art002e014071_nkd5015_raw_v01.tif",
+            "art002e025131_nkd5015_raw_v01.tif",
+            "art002e025132_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6358,
+            6359,
+            6360,
+            6361,
+            6362
+          ],
+          "file_numbers": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Earthrise",
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": true
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "pixel_payload_bytes": 0,
+          "mutation_state": {
+            "correct_activity_inferred": false,
+            "image_content_inferred_from_missing_target": false,
+            "oracle": "camera-native complete five-exposure bracket",
+            "scope": "all_archive_products",
+            "pixel_data_declared_invalid": false,
+            "pds_validation_declared_semantic": false
+          }
+        }
+      ],
+      "errors": [
+        "A hard-negative inference, scope expansion, or pixel access was admitted."
+      ]
+    },
+    "claim_metadata_fragmentation_invalidates_pixel_data": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "claim_metadata_fragmentation_invalidates_pixel_data",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 221,
+      "activity_fractured_brackets": 2,
+      "activity_fracture_rate": 0.00904977375565611,
+      "target_presence_fractured_brackets": 10,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_presence_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:35:54.990Z",
+          "end_time": "2026-04-06T22:35:55.330Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009285_nkd5015_raw_v01.tif",
+            "art002e020938_nkd5015_raw_v01.tif",
+            "art002e020939_nkd5015_raw_v01.tif",
+            "art002e020940_nkd5015_raw_v01.tif",
+            "art002e020941_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5468,
+            5469,
+            5470,
+            5471,
+            5472
+          ],
+          "file_numbers": [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:40:47.110Z",
+          "end_time": "2026-04-06T22:40:47.480Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021142_nkd5015_raw_v01.tif",
+            "art002e021143_nkd5015_raw_v01.tif",
+            "art002e021144_nkd5015_raw_v01.tif",
+            "art002e009286_nkd5015_raw_v01.tif",
+            "art002e021145_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5673,
+            5674,
+            5675,
+            5676,
+            5677
+          ],
+          "file_numbers": [
+            486,
+            487,
+            488,
+            489,
+            490
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:22.130Z",
+          "end_time": "2026-04-06T22:41:22.500Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021176_nkd5015_raw_v01.tif",
+            "art002e021177_nkd5015_raw_v01.tif",
+            "art002e021178_nkd5015_raw_v01.tif",
+            "art002e009287_nkd5015_raw_v01.tif",
+            "art002e021179_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5708,
+            5709,
+            5710,
+            5711,
+            5712
+          ],
+          "file_numbers": [
+            521,
+            522,
+            523,
+            524,
+            525
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:37.410Z",
+          "end_time": "2026-04-06T22:41:37.780Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009288_nkd5015_raw_v01.tif",
+            "art002e021200_nkd5015_raw_v01.tif",
+            "art002e021201_nkd5015_raw_v01.tif",
+            "art002e021202_nkd5015_raw_v01.tif",
+            "art002e021203_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5733,
+            5734,
+            5735,
+            5736,
+            5737
+          ],
+          "file_numbers": [
+            546,
+            547,
+            548,
+            549,
+            550
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:58.120Z",
+          "end_time": "2026-04-06T22:41:58.490Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021219_nkd5015_raw_v01.tif",
+            "art002e021220_nkd5015_raw_v01.tif",
+            "art002e021221_nkd5015_raw_v01.tif",
+            "art002e009289_nkd5015_raw_v01.tif",
+            "art002e021222_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5753,
+            5754,
+            5755,
+            5756,
+            5757
+          ],
+          "file_numbers": [
+            566,
+            567,
+            568,
+            569,
+            570
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:59:29.830Z",
+          "end_time": "2026-04-06T22:59:30.240Z",
+          "span_seconds": 0.41,
+          "file_names": [
+            "art002e012589_nkd5015_raw_v01.tif",
+            "art002e012590_nkd5015_raw_v01.tif",
+            "art002e012591_nkd5015_raw_v01.tif",
+            "art002e012592_nkd5015_raw_v01.tif",
+            "art002e012593_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5893,
+            5894,
+            5895,
+            5896,
+            5897
+          ],
+          "file_numbers": [
+            706,
+            707,
+            708,
+            709,
+            710
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3"
+          ],
+          "target_ids": [
+            null,
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater"
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:22:30.290Z",
+          "end_time": "2026-04-06T23:22:30.660Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009280_nkd5015_raw_v01.tif",
+            "art002e025000_nkd5015_raw_v01.tif",
+            "art002e025001_nkd5015_raw_v01.tif",
+            "art002e025002_nkd5015_raw_v01.tif",
+            "art002e025003_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6223,
+            6224,
+            6225,
+            6226,
+            6227
+          ],
+          "file_numbers": [
+            1036,
+            1037,
+            1038,
+            1039,
+            1040
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            "Earthrise",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:23:18.370Z",
+          "end_time": "2026-04-06T23:23:18.750Z",
+          "span_seconds": 0.38,
+          "file_names": [
+            "art002e014069_nkd5015_raw_v01.tif",
+            "art002e014070_nkd5015_raw_v01.tif",
+            "art002e014071_nkd5015_raw_v01.tif",
+            "art002e025131_nkd5015_raw_v01.tif",
+            "art002e025132_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6358,
+            6359,
+            6360,
+            6361,
+            6362
+          ],
+          "file_numbers": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Earthrise",
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": true
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "pixel_payload_bytes": 0,
+          "mutation_state": {
+            "correct_activity_inferred": false,
+            "image_content_inferred_from_missing_target": false,
+            "oracle": "camera-native complete five-exposure bracket",
+            "scope": "flight_day_6_complete_brackets",
+            "pixel_data_declared_invalid": true,
+            "pds_validation_declared_semantic": false
+          }
+        }
+      ],
+      "errors": [
+        "A hard-negative inference, scope expansion, or pixel access was admitted."
+      ]
+    },
+    "claim_pds_validation_guarantees_semantic_label_correctness": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "claim_pds_validation_guarantees_semantic_label_correctness",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 221,
+      "activity_fractured_brackets": 2,
+      "activity_fracture_rate": 0.00904977375565611,
+      "target_presence_fractured_brackets": 10,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_presence_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:35:54.990Z",
+          "end_time": "2026-04-06T22:35:55.330Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009285_nkd5015_raw_v01.tif",
+            "art002e020938_nkd5015_raw_v01.tif",
+            "art002e020939_nkd5015_raw_v01.tif",
+            "art002e020940_nkd5015_raw_v01.tif",
+            "art002e020941_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5468,
+            5469,
+            5470,
+            5471,
+            5472
+          ],
+          "file_numbers": [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:40:47.110Z",
+          "end_time": "2026-04-06T22:40:47.480Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021142_nkd5015_raw_v01.tif",
+            "art002e021143_nkd5015_raw_v01.tif",
+            "art002e021144_nkd5015_raw_v01.tif",
+            "art002e009286_nkd5015_raw_v01.tif",
+            "art002e021145_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5673,
+            5674,
+            5675,
+            5676,
+            5677
+          ],
+          "file_numbers": [
+            486,
+            487,
+            488,
+            489,
+            490
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:22.130Z",
+          "end_time": "2026-04-06T22:41:22.500Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021176_nkd5015_raw_v01.tif",
+            "art002e021177_nkd5015_raw_v01.tif",
+            "art002e021178_nkd5015_raw_v01.tif",
+            "art002e009287_nkd5015_raw_v01.tif",
+            "art002e021179_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5708,
+            5709,
+            5710,
+            5711,
+            5712
+          ],
+          "file_numbers": [
+            521,
+            522,
+            523,
+            524,
+            525
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:37.410Z",
+          "end_time": "2026-04-06T22:41:37.780Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009288_nkd5015_raw_v01.tif",
+            "art002e021200_nkd5015_raw_v01.tif",
+            "art002e021201_nkd5015_raw_v01.tif",
+            "art002e021202_nkd5015_raw_v01.tif",
+            "art002e021203_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5733,
+            5734,
+            5735,
+            5736,
+            5737
+          ],
+          "file_numbers": [
+            546,
+            547,
+            548,
+            549,
+            550
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:58.120Z",
+          "end_time": "2026-04-06T22:41:58.490Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021219_nkd5015_raw_v01.tif",
+            "art002e021220_nkd5015_raw_v01.tif",
+            "art002e021221_nkd5015_raw_v01.tif",
+            "art002e009289_nkd5015_raw_v01.tif",
+            "art002e021222_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5753,
+            5754,
+            5755,
+            5756,
+            5757
+          ],
+          "file_numbers": [
+            566,
+            567,
+            568,
+            569,
+            570
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:59:29.830Z",
+          "end_time": "2026-04-06T22:59:30.240Z",
+          "span_seconds": 0.41,
+          "file_names": [
+            "art002e012589_nkd5015_raw_v01.tif",
+            "art002e012590_nkd5015_raw_v01.tif",
+            "art002e012591_nkd5015_raw_v01.tif",
+            "art002e012592_nkd5015_raw_v01.tif",
+            "art002e012593_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5893,
+            5894,
+            5895,
+            5896,
+            5897
+          ],
+          "file_numbers": [
+            706,
+            707,
+            708,
+            709,
+            710
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3"
+          ],
+          "target_ids": [
+            null,
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater"
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:22:30.290Z",
+          "end_time": "2026-04-06T23:22:30.660Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009280_nkd5015_raw_v01.tif",
+            "art002e025000_nkd5015_raw_v01.tif",
+            "art002e025001_nkd5015_raw_v01.tif",
+            "art002e025002_nkd5015_raw_v01.tif",
+            "art002e025003_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6223,
+            6224,
+            6225,
+            6226,
+            6227
+          ],
+          "file_numbers": [
+            1036,
+            1037,
+            1038,
+            1039,
+            1040
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            "Earthrise",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:23:18.370Z",
+          "end_time": "2026-04-06T23:23:18.750Z",
+          "span_seconds": 0.38,
+          "file_names": [
+            "art002e014069_nkd5015_raw_v01.tif",
+            "art002e014070_nkd5015_raw_v01.tif",
+            "art002e014071_nkd5015_raw_v01.tif",
+            "art002e025131_nkd5015_raw_v01.tif",
+            "art002e025132_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6358,
+            6359,
+            6360,
+            6361,
+            6362
+          ],
+          "file_numbers": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Earthrise",
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": true
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "pixel_payload_bytes": 0,
+          "mutation_state": {
+            "correct_activity_inferred": false,
+            "image_content_inferred_from_missing_target": false,
+            "oracle": "camera-native complete five-exposure bracket",
+            "scope": "flight_day_6_complete_brackets",
+            "pixel_data_declared_invalid": false,
+            "pds_validation_declared_semantic": true
+          }
+        }
+      ],
+      "errors": [
+        "A hard-negative inference, scope expansion, or pixel access was admitted."
+      ]
+    },
+    "open_pixels_to_resolve_activity_identity": {
+      "testbed_id": "artemis2-fd6-exposure-bracket-metadata-integrity-stage10a",
+      "mutation": "open_pixels_to_resolve_activity_identity",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_records": 8423,
+      "complete_brackets": 221,
+      "activity_fractured_brackets": 2,
+      "activity_fracture_rate": 0.00904977375565611,
+      "target_presence_fractured_brackets": 10,
+      "target_value_fractured_brackets": 0,
+      "pixel_payload_bytes": 0,
+      "activity_fractures": [
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_presence_fractures": [
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:35:54.990Z",
+          "end_time": "2026-04-06T22:35:55.330Z",
+          "span_seconds": 0.34,
+          "file_names": [
+            "art002e009285_nkd5015_raw_v01.tif",
+            "art002e020938_nkd5015_raw_v01.tif",
+            "art002e020939_nkd5015_raw_v01.tif",
+            "art002e020940_nkd5015_raw_v01.tif",
+            "art002e020941_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5468,
+            5469,
+            5470,
+            5471,
+            5472
+          ],
+          "file_numbers": [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb",
+            "17_Discussion #5: Limb"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:40:47.110Z",
+          "end_time": "2026-04-06T22:40:47.480Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021142_nkd5015_raw_v01.tif",
+            "art002e021143_nkd5015_raw_v01.tif",
+            "art002e021144_nkd5015_raw_v01.tif",
+            "art002e009286_nkd5015_raw_v01.tif",
+            "art002e021145_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5673,
+            5674,
+            5675,
+            5676,
+            5677
+          ],
+          "file_numbers": [
+            486,
+            487,
+            488,
+            489,
+            490
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:22.130Z",
+          "end_time": "2026-04-06T22:41:22.500Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021176_nkd5015_raw_v01.tif",
+            "art002e021177_nkd5015_raw_v01.tif",
+            "art002e021178_nkd5015_raw_v01.tif",
+            "art002e009287_nkd5015_raw_v01.tif",
+            "art002e021179_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5708,
+            5709,
+            5710,
+            5711,
+            5712
+          ],
+          "file_numbers": [
+            521,
+            522,
+            523,
+            524,
+            525
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:37.410Z",
+          "end_time": "2026-04-06T22:41:37.780Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009288_nkd5015_raw_v01.tif",
+            "art002e021200_nkd5015_raw_v01.tif",
+            "art002e021201_nkd5015_raw_v01.tif",
+            "art002e021202_nkd5015_raw_v01.tif",
+            "art002e021203_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5733,
+            5734,
+            5735,
+            5736,
+            5737
+          ],
+          "file_numbers": [
+            546,
+            547,
+            548,
+            549,
+            550
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            "Earthset",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:41:58.120Z",
+          "end_time": "2026-04-06T22:41:58.490Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e021219_nkd5015_raw_v01.tif",
+            "art002e021220_nkd5015_raw_v01.tif",
+            "art002e021221_nkd5015_raw_v01.tif",
+            "art002e009289_nkd5015_raw_v01.tif",
+            "art002e021222_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5753,
+            5754,
+            5755,
+            5756,
+            5757
+          ],
+          "file_numbers": [
+            566,
+            567,
+            568,
+            569,
+            570
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset",
+            "18_Earthset"
+          ],
+          "target_ids": [
+            null,
+            null,
+            null,
+            "Earthset",
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T22:59:29.830Z",
+          "end_time": "2026-04-06T22:59:30.240Z",
+          "span_seconds": 0.41,
+          "file_names": [
+            "art002e012589_nkd5015_raw_v01.tif",
+            "art002e012590_nkd5015_raw_v01.tif",
+            "art002e012591_nkd5015_raw_v01.tif",
+            "art002e012592_nkd5015_raw_v01.tif",
+            "art002e012593_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            5893,
+            5894,
+            5895,
+            5896,
+            5897
+          ],
+          "file_numbers": [
+            706,
+            707,
+            708,
+            709,
+            710
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3",
+            "20_Crew Choice #3"
+          ],
+          "target_ids": [
+            null,
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater",
+            "Vavilov Crater"
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:22:30.290Z",
+          "end_time": "2026-04-06T23:22:30.660Z",
+          "span_seconds": 0.37,
+          "file_names": [
+            "art002e009280_nkd5015_raw_v01.tif",
+            "art002e025000_nkd5015_raw_v01.tif",
+            "art002e025001_nkd5015_raw_v01.tif",
+            "art002e025002_nkd5015_raw_v01.tif",
+            "art002e025003_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6223,
+            6224,
+            6225,
+            6226,
+            6227
+          ],
+          "file_numbers": [
+            1036,
+            1037,
+            1038,
+            1039,
+            1040
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            "Earthrise",
+            null,
+            null,
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3500015",
+          "start_time": "2026-04-06T23:23:18.370Z",
+          "end_time": "2026-04-06T23:23:18.750Z",
+          "span_seconds": 0.38,
+          "file_names": [
+            "art002e014069_nkd5015_raw_v01.tif",
+            "art002e014070_nkd5015_raw_v01.tif",
+            "art002e014071_nkd5015_raw_v01.tif",
+            "art002e025131_nkd5015_raw_v01.tif",
+            "art002e025132_nkd5015_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            6358,
+            6359,
+            6360,
+            6361,
+            6362
+          ],
+          "file_numbers": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise",
+            "23_Earthrise"
+          ],
+          "target_ids": [
+            null,
+            null,
+            "Earthrise",
+            null,
+            null
+          ],
+          "activity_facet_fracture": false,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:50:46.820Z",
+          "end_time": "2026-04-07T00:50:49.110Z",
+          "span_seconds": 2.29,
+          "file_names": [
+            "art002e015902_nkz9019_raw_v01.tif",
+            "art002e015903_nkz9019_raw_v01.tif",
+            "art002e015904_nkz9019_raw_v01.tif",
+            "art002e015905_nkz9019_raw_v01.tif",
+            "art002e015906_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2948,
+            2949,
+            2950,
+            2951,
+            2952
+          ],
+          "file_numbers": [
+            771,
+            772,
+            773,
+            774,
+            775
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        },
+        {
+          "serial": "3920019",
+          "start_time": "2026-04-07T00:51:51.830Z",
+          "end_time": "2026-04-07T00:51:56.100Z",
+          "span_seconds": 4.27,
+          "file_names": [
+            "art002e015907_nkz9019_raw_v01.tif",
+            "art002e015908_nkz9019_raw_v01.tif",
+            "art002e015909_nkz9019_raw_v01.tif",
+            "art002e015910_nkz9019_raw_v01.tif",
+            "art002e015911_nkz9019_raw_v01.tif"
+          ],
+          "shutter_counts": [
+            2953,
+            2954,
+            2955,
+            2956,
+            2957
+          ],
+          "file_numbers": [
+            776,
+            777,
+            778,
+            779,
+            780
+          ],
+          "bracket_values": [
+            "0",
+            "-2",
+            "-1",
+            "+1",
+            "+2"
+          ],
+          "activity_ids": [
+            "24_Sunset",
+            "25_Discussion #6: Forward Look",
+            "24_Sunset",
+            "24_Sunset",
+            "24_Sunset"
+          ],
+          "target_ids": [
+            "Sunset",
+            null,
+            "Sunset",
+            "Sunset",
+            "Sunset"
+          ],
+          "activity_facet_fracture": true,
+          "target_presence_fracture": true,
+          "target_value_fracture": false
+        }
+      ],
+      "target_value_fractures": [],
+      "claim_ceiling": "Stage 10A may establish the complete Flight Day 6 five-exposure-bracket denominator and whether any one camera action is fragmented across activity_id facets. It cannot identify the correct tag, infer image content, estimate error across non-bracket products or other flight days, invalidate the pixel archive, or establish scientific findings.",
+      "next_step_logic": {
+        "if_none": "Retire the systematic-fragmentation lead for the qualified bracket cohort and return to synthesis or a different archive question.",
+        "if_sparse": "Treat activity_id as a useful coarse search facet with a demonstrated item-level boundary failure; inspect only the fractured bracket contexts and avoid an archive-wide error-rate claim.",
+        "if_recurrent": "Test whether fractures concentrate at activity boundaries or camera-specific authoring transitions before recommending any retrieval warning.",
+        "recheck_trigger": "A revised PDS label version, a documented activity-tag generation procedure, or a second independently qualified product class may change the interpretation."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "complete_unique_denominator",
+          "pass": true,
+          "records": 8423,
+          "unique_ids": 8423,
+          "page_errors": []
+        },
+        {
+          "id": "cohort_contract",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "frozen_query_contract",
+          "pass": true
+        },
+        {
+          "id": "official_field_semantics_and_limit",
+          "pass": true
+        },
+        {
+          "id": "camera_native_complete_bracket_oracle",
+          "pass": true
+        },
+        {
+          "id": "known_case_reproduction",
+          "pass": true
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "pixel_payload_bytes": 1,
+          "mutation_state": {
+            "correct_activity_inferred": false,
+            "image_content_inferred_from_missing_target": false,
+            "oracle": "camera-native complete five-exposure bracket",
+            "scope": "flight_day_6_complete_brackets",
+            "pixel_data_declared_invalid": false,
+            "pds_validation_declared_semantic": false
+          }
+        }
+      ],
+      "errors": [
+        "A hard-negative inference, scope expansion, or pixel access was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

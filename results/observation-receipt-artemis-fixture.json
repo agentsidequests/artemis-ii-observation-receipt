@@ -1,0 +1,115 @@
+{
+  "receipt_version": "0.1.0",
+  "case_id": "artemis-ii-flashes",
+  "pass": true,
+  "checks": {
+    "artifacts_match": true,
+    "candidate_ids_unique": true,
+    "window_ids_unique": true,
+    "claim_ids_unique": true,
+    "expected_case_findings": true
+  },
+  "artifact_checks": [
+    {
+      "id": "flash-exposure-receipt",
+      "path": "results/stage11n-result.json",
+      "bytes": 26283,
+      "sha256": "930be47399e76dde2b72bbf21422e1ea21598115dff362afe869570eccb25ae5",
+      "match": true
+    },
+    {
+      "id": "overlap-pixel-screen",
+      "path": "results/stage11p-overlap-pixel-screen.json",
+      "bytes": 30546,
+      "sha256": "7ab93b078e45fc5b381faa861373ccf51a2918a833dad0d5bff13fe810191af2",
+      "match": true
+    },
+    {
+      "id": "injection-recovery-receipt",
+      "path": "results/stage11q-injection-recovery.json",
+      "bytes": 10875,
+      "sha256": "f8fc492f620a834aa05768e6a7318402188729a0ee60ba60f70c531cbf4585d0",
+      "match": true
+    }
+  ],
+  "findings": [
+    {
+      "claim_id": "accepted-ledger",
+      "proposition": "The public annotation contains five accepted events, eight witness marks, and three observers.",
+      "rule_kind": "ledger_summary",
+      "claim_ceiling": "Credible event ledger, not calibrated sensitivity.",
+      "status": "SUPPORTED",
+      "observed": {
+        "event_count": 5,
+        "witness_marks": 8,
+        "unique_observers": 3,
+        "observers": [
+          "Jeremy Hansen",
+          "Reid Wiseman",
+          "Victor Glover"
+        ]
+      },
+      "expected": {
+        "event_count": 5,
+        "witness_marks": 8,
+        "unique_observers": 3
+      }
+    },
+    {
+      "claim_id": "later-window-tested-ledger-events",
+      "proposition": "The later 30 fps window covered the annotation's 01:04 background-photo epoch.",
+      "rule_kind": "window_after_boundary",
+      "claim_ceiling": "Metadata-time non-overlap only. The photo epoch is not ledger creation or an upper bound for all five accepted events; their event-level video coverage remains unestablished.",
+      "status": "REFUTED_NONOVERLAP",
+      "window_id": "later-saw3-30fps",
+      "gap_seconds": 913.0
+    },
+    {
+      "claim_id": "overlap-null-excludes-report",
+      "proposition": "The absence of a screened pulse in the overlap clip excludes the shared crew report.",
+      "rule_kind": "window_capability_gate",
+      "claim_ceiling": "Contextual temporal overlap, not event exclusion.",
+      "status": "BLOCKED_INSUFFICIENT_CAPABILITY",
+      "window_id": "overlap-saw3-59.94fps",
+      "overlaps": true,
+      "missing_capabilities": [
+        "source_pixel_equivalent",
+        "radiometrically_calibrated",
+        "detection_completeness_at_50_percent",
+        "target_resolved_for_localization"
+      ]
+    },
+    {
+      "claim_id": "all-lunar-count-floor",
+      "proposition": "Five accepted events support a conservative whole-Moon one-hour detected-count floor.",
+      "rule_kind": "count_floor_sphere",
+      "claim_ceiling": "Detected-count floor under explicit assumptions, not calibrated flux.",
+      "status": "SUPPORTED_WITH_ASSUMPTIONS",
+      "accepted_event_count": 5,
+      "sphere_area_km2": 38045943.67203383,
+      "duration_hours": 1.0,
+      "value_km2_hour": 1.314200547396414e-07,
+      "expected_value_km2_hour": 1.314200547396414e-07,
+      "relative_error": 0.0
+    },
+    {
+      "claim_id": "calibrated-impact-flux",
+      "proposition": "The five events establish a calibrated brightness-threshold lunar impact flux.",
+      "rule_kind": "required_measurement_fields",
+      "claim_ceiling": "Blocked until a recomputable measurement function is public.",
+      "status": "BLOCKED_MISSING_MEASUREMENT_FUNCTION",
+      "missing_fields": [
+        "monitored_area_km2",
+        "live_time_hours",
+        "limiting_magnitude",
+        "detection_probability_surface",
+        "calibrated_brightness"
+      ]
+    }
+  ],
+  "summary": {
+    "supported": 2,
+    "refuted": 1,
+    "blocked": 2
+  }
+}

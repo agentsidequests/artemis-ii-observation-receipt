@@ -1,0 +1,53 @@
+{
+  "testbed_id": "artemis2-five-second-capture-run-concentration-stage10p",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T13:08:00Z",
+  "question": "Does the conditional five-second temporal hierarchy contain a concrete high-concentration capture run that makes the split hazard intelligible without promoting adjacency to scene truth?",
+  "terminal_objective": "Find and freeze the strongest exact microcase behind the aggregate temporal-sensitivity result.",
+  "method": "Verify the Stage 10O manifest identity, rank its five-second conditional clusters by unique reconstructed actions and then product rows, and freeze the largest cluster's product, capture, action, byte, time-span, camera, activity, target, and hypothetical 80/20 crossing values.",
+  "authority": "Private local metadata analysis only. No pixels, model training, publication, outreach, semantic scene claim, label-correctness claim, observed leakage, performance effect, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10o_spec_path": "spec/stage10o.json",
+    "manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "largest_cluster_id": "a2-t5s-19e5298f0614bcaf996c57a7",
+    "products": 1230,
+    "capture_identities": 410,
+    "complete_actions": 82,
+    "archive_size_bytes": 75056509295,
+    "cohort_product_share": 0.05390481199053379,
+    "cohort_byte_share": 0.0461806250262151,
+    "start_utc": "2026-04-07T00:34:34.540Z",
+    "end_utc": "2026-04-07T00:36:58.150Z",
+    "span_seconds": 143.61,
+    "camera_serials": ["3500015"],
+    "activity_ids": ["24_Sunset"],
+    "target_ids": ["Sunset"],
+    "products_per_action": 15.0,
+    "expected_action_split_cross_probability_80_20": 0.9999999886921788,
+    "top_five_actions": 263,
+    "top_five_products": 3441,
+    "top_five_action_share": 0.12142197599261312,
+    "top_five_product_share": 0.1508019984222982
+  },
+  "hard_negatives": [
+    "call_cluster_a_semantic_scene",
+    "call_activity_or_target_labels_correct",
+    "call_cluster_an_independent_sample",
+    "call_expected_crossing_observed_leakage",
+    "generalize_largest_cluster_to_archive",
+    "infer_model_performance_effect",
+    "claim_global_priority",
+    "open_pixels_for_concentration_canary"
+  ],
+  "claim_ceiling": "Stage 10P may establish the exact concentration of the largest conditional five-second same-camera cluster in the verified cohort and its expected crossing under hypothetical independent action assignment. It cannot call that cluster a semantic scene or independent sample, validate activity or target correctness, claim observed leakage or a performance effect, generalize the largest cluster to the archive, infer image content or similarity, or claim global novelty or priority.",
+  "next_step_logic": {
+    "if_the_cluster_verifies": "Use the Sunset microcase to make the hierarchy concrete, always paired with the conditional-threshold and nonsemantic-label caveats.",
+    "if_a_real_model_task_uses_these_products": "Inspect its actual split and task dependence before computing observed overlap or performance effects.",
+    "if_the_manifest_changes": "Re-rank all five-second clusters before reusing the microcase.",
+    "recheck_trigger": "A revised relationship manifest, real model task, image-similarity oracle, or authoritative capture-episode identifier."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "testbed_id": "artemis2-gray-feature-source-control-stage9b",
+  "version": "1.0.0",
+  "formalized_at_utc": "2026-10-09T23:33:02Z",
+  "question": "Can the released archive, before any candidate pixel is opened, provide the exact carriers and independent controls needed to distinguish rigid lunar terrain, Earth-emergence-linked glare or bloom, a cabin/window-only effect, and an external diffuse anomaly for Koch's 23:22:39.010 UTC gray-feature report?",
+  "terminal_objective": "Decide whether an image-state canary can be causally interpretable enough to justify opening event pixels, or close the gray-feature lane at the current archive boundary.",
+  "method": "No-new-pixel source-and-control admission gate",
+  "authority": "Read-only public-source research and private local repository updates only. No candidate-pixel access, publication, outreach, scientific acceptance, or external effect.",
+  "acceptance_owner": "Paul",
+  "contract_lineage": {
+    "owner": "spec/stage9a.json",
+    "owner_sha256": "d9799971960c8a74e68130aa6652fe30a21530c68ce62d5d92b62dfe20ee0176",
+    "inherited_pass_rule": "Admit only an image-state canary capable of distinguishing rigid terrain, Earth-linked glare, cabin/window-only appearance, and an external diffuse anomaly.",
+    "inherited_fail_rule": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the lane as SOURCE_CONTROL_INSUFFICIENT.",
+    "anti_retrofit": "Stage 9B formalizes and verifies the inherited four-way discriminator after metadata discovery; it may not weaken that discriminator because synchronous D5 frames were found."
+  },
+  "evidence": {
+    "source_manifest_path": "evidence/stage9b/source-manifest.json",
+    "source_manifest_sha256": "e7fa804d63e8f011529dfe752adba2a29eb2e2af4c23a78c0a11f7dbe4506cc1",
+    "source_extracts_path": "evidence/stage9b/source-extracts.json",
+    "source_extracts_sha256": "b8850d18ab24e4ccf102b5c1bc80d9c04e4862a4f9fa79f48ac712ceaf65d90a",
+    "control_assessment_path": "evidence/stage9b/control-assessment.json",
+    "control_assessment_sha256": "c2db83d4b71c9e29f05d16017ab3c1f98b2b76bcf0d8eaf3bea8f185e9a76361"
+  },
+  "admission_dimensions": [
+    "A_exact_event_and_recorder_identity",
+    "B_synchronous_internal_camera_coverage",
+    "C_earth_emergence_temporal_progression",
+    "D_rigid_terrain_control",
+    "E_observer_window_carrier_binding",
+    "F_cabin_window_optical_control",
+    "G_external_comparable_carrier",
+    "H_event_geometry",
+    "I_calibrated_faint_source_response"
+  ],
+  "admission_rule": "Every required dimension must be PASS. PARTIAL is not sufficient. A camera absence cannot refute the crew unless viewpoint and sensitivity are comparable.",
+  "access_boundary": {
+    "new_candidate_pixel_bytes": 0,
+    "existing_candidate_pixels_opened_for_stage9b": false,
+    "atlas_metadata_hits_retained": 41,
+    "exact_event_labels_retained": 5,
+    "pixel_payloads_retained": 0
+  },
+  "expected_result": {
+    "evidence_state": "VERIFIED_SOURCE_CONTROL_STOP",
+    "disposition": "SOURCE_CONTROL_INSUFFICIENT",
+    "lane_state": "CLOSE_GRAY_FEATURE_IMAGE_LANE_AT_CURRENT_ARCHIVE_BOUNDARY",
+    "claim_ceiling": "Stage 9B establishes the exact PCD3 event transcript, a synchronized five-frame D5 exposure bracket inside a 40-frame cabin sequence, one near-time external SAW frame, and the missing controls that prevent four-way causal discrimination. It does not inspect event pixels, establish what any frame shows, detect or exclude lunar dust, refute Koch, validate an external anomaly, or make a public scientific finding."
+  },
+  "hard_negatives": [
+    "substitute_overlapping_pcd2_for_exact_pcd3_event_source",
+    "treat_time_alignment_as_operator_and_window_binding",
+    "open_candidate_pixels_after_source_control_failure",
+    "treat_external_camera_absence_as_refutation_without_sensitivity_equivalence",
+    "treat_any_external_feature_as_lunar_dust",
+    "ignore_documented_cabin_reflections",
+    "promote_partial_terrain_control_to_exact_event_geometry",
+    "let_spice_alone_repair_window_and_sensitivity_gaps",
+    "treat_synchronized_d5_burst_as_calibrated_low_light_measurement",
+    "claim_source_control_insufficiency_means_no_lunar_dust"
+  ],
+  "next_step_logic": {
+    "recommended": "Return to a truthful synthesis centered on the measurement-design gap: Artemis II produced a precisely timed human anomaly report and a synchronized cabin image burst, but not the calibrated, geometry-bound independent carrier required to adjudicate it.",
+    "fail_action": "Keep every gray-feature candidate pixel closed and close this image lane at the current archive boundary.",
+    "secondary": "The label-only activity-metadata integrity candidate remains eligible because it does not depend on this lane.",
+    "recheck_trigger": "Reopen only if a source changes the failed dimensions—for example an event-bound operator/window record plus optical characterization and a calibrated comparable external low-light carrier. SPICE alone can improve geometry but cannot satisfy the optical or sensitivity controls."
+  }
+}

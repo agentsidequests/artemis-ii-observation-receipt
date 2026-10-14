@@ -1,0 +1,38 @@
+{
+  "receipt_id": "artemis2-stage10g-fractured-product-acquisition-v1",
+  "completed_at_utc": "2026-10-10T11:59:50Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "sources": [
+    {
+      "path": "results/stage10e-result.json",
+      "bytes": 263013,
+      "sha256": "398319b545958ad277a5a7352e44d28d2c5eeb2d21c558780849cec4c4cc292f",
+      "role": "verified fractured-action and exposure-ID denominator"
+    },
+    {
+      "path": "results/stage10f-result.json",
+      "bytes": 42550,
+      "sha256": "511a25873254e333c4668fd1ce296e3627c8cb21cd6a9dceff0bcbbdefa6ffc4",
+      "role": "supported curation-mechanism result"
+    },
+    {
+      "path": "evidence/stage10g/source/atlas-fractured-action-products-query.json",
+      "bytes": 2904,
+      "sha256": "111ade16c885c98b22fe64410179d2b7222e60b7b063f7276437e7cd84275b52",
+      "role": "frozen Atlas query for every fractured exposure identity",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10g/source/atlas-fractured-action-products-response.json",
+      "bytes": 114807,
+      "sha256": "4833972fe3b84a3fbdb44074639e1ca30b04c5595c57caf34f8b859fe3064159",
+      "role": "Atlas products for every fractured exposure identity",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "114807"
+      }
+    }
+  ]
+}

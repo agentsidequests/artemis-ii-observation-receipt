@@ -1,0 +1,25 @@
+{
+  "stage": "5A",
+  "created_at_utc": "2026-10-09T20:28:05Z",
+  "purpose": "Pin the pre-run contract, zero-media redirect stop, and terminal 64 MiB bounded-transport receipt used by offline verification.",
+  "files": [
+    {
+      "path": "evidence/stage5a/frozen-run-spec.json",
+      "bytes": 4196,
+      "sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8",
+      "role": "Frozen pre-run contract for the terminal attempt"
+    },
+    {
+      "path": "evidence/stage5a/attempt-1-source-redirect-receipt.json",
+      "bytes": 1366,
+      "sha256": "a84e9673f17c7e843beb65ad53d391c08d739c91e7c547c5e0d8e333c7a44798",
+      "role": "Attempt 1 fail-closed receipt; exact official URL redirected before any media body was accepted"
+    },
+    {
+      "path": "evidence/stage5a/acquisition-receipt.json",
+      "bytes": 6502,
+      "sha256": "fd18abd0ff1dabbd2fd4f1447d6d0a00f10453586debe08256a591cea26c31b1",
+      "role": "Terminal attempt receipt with exact range, MP4 atom, FFmpeg, and byte-budget observations"
+    }
+  ]
+}

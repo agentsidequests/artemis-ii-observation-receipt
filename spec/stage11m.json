@@ -1,0 +1,79 @@
+{
+  "testbed_id": "artemis2-implementation-diverse-split-receipt-audit-stage11m",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T21:45:00Z",
+  "question": "Can a second implementation, without importing the Stage 11L generator or validator, reproduce the receipt's source binding, assignments, metrics, and claim boundaries and reject serialized-artifact mutations?",
+  "terminal_objective": "Reduce shared-code confidence risk in the Stage 11L receipt while preserving the distinction between implementation verification and scientific or operational acceptance.",
+  "engineering_contract": {
+    "subject": "The serialized Stage 11L source manifest, complete assignment CSV, and JSON receipt.",
+    "baseline": "Stage 11L rebuilds and verifies its artifacts through one module that shares assignment, partition, and metric helpers.",
+    "treatment": "A standalone consumer-side verifier parses the serialized artifacts, reimplements the threshold and relationship metrics, imports no Stage 11L code, and requires mutation-specific failures.",
+    "frozen_task": "Recompute artifact identity, source and relationship binding, every assignment, every reported policy metric, and every claim-boundary flag from the frozen serialized files.",
+    "oracle": "Pass only when the standalone verifier matches the pinned artifact identities and exact key metrics, and every mutation fails both overall and at its named decision-bearing check.",
+    "independence": {
+      "classification": "partial_implementation_diverse",
+      "shared": "Declared algorithm, source manifest, relationship keys, Python runtime and standard-library primitives, repository, and authoring episode.",
+      "separated": "CSV and JSON parsing, threshold implementation, relationship binding, assignment replay, metric aggregation, and mutation checks import no Stage 11L implementation code."
+    },
+    "rollback": "If the standalone verifier disagrees with Stage 11L or accepts a required mutation, withdraw the executable-receipt confidence claim until the discrepancy is resolved."
+  },
+  "authority": "Private local deterministic metadata verification only. No pixels, model training, publication, outreach, semantic-scene claim, observed-leakage claim, performance-effect claim, or NASA/PDS operational acceptance.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "verifier_source_path": "src/stage11m_independent_receipt_audit.py",
+    "verifier_source_sha256": "3f1b77a24be09752bf8737e9122fda10417a88687bda26e3c858c20368a4ebb2",
+    "relationship_manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "relationship_manifest_bytes": 10072026,
+    "relationship_manifest_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+    "assignment_artifact_path": "results/stage11l-split-assignments.csv",
+    "assignment_artifact_bytes": 4573289,
+    "assignment_artifact_sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1",
+    "receipt_path": "results/stage11l-split-receipt.json",
+    "receipt_bytes": 4216,
+    "receipt_sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a",
+    "pixel_payload_bytes": 0
+  },
+  "algorithm": {
+    "name": "sha256-group-threshold",
+    "version": "1.0.0",
+    "seed": "artemis2-split-receipt-canary-v1",
+    "hash_input": "utf8(seed + NUL + grouping_key)",
+    "decision": "train when the unsigned big-endian integer represented by the first eight digest bytes is below floor(2^64 * 4 / 5); test otherwise",
+    "train_numerator": 4,
+    "train_denominator": 5
+  },
+  "frozen_observables": {
+    "products": 22818,
+    "complete_actions": 2166,
+    "temporal_5s_groups": 816,
+    "key_metrics": {
+      "product_key_crossing_actions": 1937,
+      "action_key_crossing_actions": 0,
+      "action_key_crossing_temporal_5s_groups": 157,
+      "action_key_actions_in_crossing_temporal_5s_groups": 1216,
+      "temporal_5s_key_crossing_actions": 0,
+      "temporal_5s_key_crossing_temporal_5s_groups": 0
+    }
+  },
+  "hard_negatives": {
+    "tamper_source_hash_in_receipt": ["receipt_artifact_identity", "receipt_source_binding"],
+    "tamper_assignment_hash_in_receipt": ["receipt_artifact_identity", "receipt_assignment_binding"],
+    "tamper_algorithm_seed_in_receipt": ["receipt_artifact_identity", "algorithm_contract", "assignment_replay"],
+    "duplicate_assignment_row": ["assignment_artifact_identity", "complete_one_to_one_assignments"],
+    "drop_assignment_row": ["assignment_artifact_identity", "complete_one_to_one_assignments"],
+    "change_relationship_key": ["assignment_artifact_identity", "relationship_binding", "assignment_replay"],
+    "tamper_partition_assignment": ["assignment_artifact_identity", "assignment_replay"],
+    "tamper_reported_metric": ["receipt_artifact_identity", "receipt_metric_replay"],
+    "call_temporal_groups_semantic_scenes": ["receipt_artifact_identity", "claim_and_access_boundaries"],
+    "call_crossing_observed_model_leakage": ["receipt_artifact_identity", "claim_and_access_boundaries"],
+    "open_pixels_for_receipt_audit": ["receipt_artifact_identity", "claim_and_access_boundaries"]
+  },
+  "claim_ceiling": "Stage 11M may establish that a second local implementation, sharing no Stage 11L code, reproduces the frozen serialized receipt and detects the named artifact and claim mutations. Its independence remains partial because it shares the declared algorithm, source manifest, relationship semantics, repository, and authoring episode. It cannot establish independent human replication, scientific task validity, semantic scenes, observed leakage, statistical independence, model-performance effects, operational sufficiency for NASA or PDS, or global novelty.",
+  "next_step_logic": {
+    "if_audit_verifies": "Treat the Stage 11L receipt as implementation-diverse locally replayed evidence while keeping scientific and operational acceptance external.",
+    "if_any_metric_disagrees": "Stop citation of the executable receipt, preserve both results, and resolve the smallest differing source, algorithm, assignment, or aggregation rule.",
+    "if_any_required_mutation_check_passes": "Repair the consumer verifier or narrow the receipt claim before further use.",
+    "if_external_acceptance_is_needed": "Provide the frozen artifacts and verifier to a qualified specialist or independent implementer; do not relabel this local audit as independent replication.",
+    "recheck_trigger": "Any change to the relationship manifest, assignment schema, algorithm, seed, receipt schema, verifier source, or task-native dependence oracle."
+  }
+}

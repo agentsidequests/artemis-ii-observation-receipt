@@ -1,0 +1,65 @@
+{
+  "coding_id": "artemis2-stage8a-glushko-ohm-reflectance",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-09T22:14:19Z",
+  "frozen_before_wac_value_access": true,
+  "wac_value_bytes_accessed_before_freeze": 0,
+  "primary_observation": {
+    "transcript_path": "corpus/transcripts/art002a000030_pcd2_trn-csv_v01.csv",
+    "transcript_sha256": "f65b025705fd3ec08cc1434eca5335a1cb6b8f774e5edab1d6815402bd317165",
+    "rows": [10, 11, 12, 13, 18, 19, 20, 23, 24, 25, 27],
+    "speaker": "Hansen",
+    "decision_text_anchors": [
+      "comparing the brightness of Ohm rays to Glushko rays",
+      "Very similar to me",
+      "very similar albedos from this angle",
+      "if Ohm is a seven, Glushko is like a 7.5",
+      "the ray goes all the way to Aristarchus Plateau"
+    ],
+    "coded_claim": {
+      "primary": "Glushko and Ohm ray brightness is similar",
+      "secondary_direction": "Glushko rays are slightly brighter than Ohm rays"
+    }
+  },
+  "glushko_geometry_support": {
+    "transcript_path": "corpus/transcripts/art002a000029_pcd2_trn-csv_v01.csv",
+    "transcript_sha256": "bc8a5afbeb228a9a2124a022c2ebcb97819c94108e02d4e562473cb61f2fbb3b",
+    "rows": [27, 28, 29],
+    "speaker": "Hansen",
+    "decision_text_anchors": [
+      "three Glushko radiuses",
+      "higher albedo ejecta ray than the surrounding",
+      "very prominent towards Aristarchus"
+    ]
+  },
+  "coordinate_source": {
+    "path": "corpus/artemis2_outgoing_target_request.json",
+    "sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+    "records": {
+      "glushko": {
+        "target_name": "Glushko Crater",
+        "latitude_deg": 8.11,
+        "longitude_east_deg": 282.33,
+        "diameter_km": 43.83
+      },
+      "ohm": {
+        "target_name": "Ohm Crater",
+        "latitude_deg": 18.32,
+        "longitude_east_deg": 246.22,
+        "diameter_km": 67.46
+      },
+      "aristarchus_plateau": {
+        "target_name": "Aristarchus Plateau",
+        "latitude_deg": 26.05,
+        "longitude_east_deg": 309.26
+      }
+    }
+  },
+  "frozen_interpretation": "For each crater, the named ray axis is the initial great-circle bearing from the official crater center toward the official Aristarchus Plateau center. This uses the same named-feature rule for both craters and does not inspect WAC pixels.",
+  "excluded_from_scoring": [
+    "Crew-view clock directions because their image orientation is not recovered",
+    "Later Glushko and Ohm remarks made after the primary comparison",
+    "Any ray polygon traced or selected from WAC brightness pixels",
+    "Any post-outcome change to the annulus, sector width, background, band, or threshold"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "pass": true,
+  "source_sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+  "source_products": 22818,
+  "exposure_fields": 7606,
+  "unit_count": 6,
+  "sensitivity_interval_checks": 96,
+  "units": [
+    {
+      "unit": "exposure_fields",
+      "total_weight": 7606.0,
+      "known_target_weight": 1553.0,
+      "blank_weight": 4193.0,
+      "selected_weight": 3413.0,
+      "minimum_fields_to_lose_strict_majority": 0,
+      "after_majority_weight": 1553.0,
+      "completion_budgets": [
+        {
+          "name": "10pp",
+          "minimum_fields": 3433,
+          "remaining_unknown_weight": 760.0
+        },
+        {
+          "name": "5pp",
+          "minimum_fields": 3813,
+          "remaining_unknown_weight": 380.0
+        },
+        {
+          "name": "1pp",
+          "minimum_fields": 4117,
+          "remaining_unknown_weight": 76.0
+        }
+      ]
+    },
+    {
+      "unit": "products",
+      "total_weight": 22818.0,
+      "known_target_weight": 4659.0,
+      "blank_weight": 12579.0,
+      "selected_weight": 10239.0,
+      "minimum_fields_to_lose_strict_majority": 0,
+      "after_majority_weight": 4659.0,
+      "completion_budgets": [
+        {
+          "name": "10pp",
+          "minimum_fields": 3433,
+          "remaining_unknown_weight": 2280.0
+        },
+        {
+          "name": "5pp",
+          "minimum_fields": 3813,
+          "remaining_unknown_weight": 1140.0
+        },
+        {
+          "name": "1pp",
+          "minimum_fields": 4117,
+          "remaining_unknown_weight": 228.0
+        }
+      ]
+    },
+    {
+      "unit": "data_source_bytes",
+      "total_weight": 150708337459.0,
+      "known_target_weight": 34446621949.0,
+      "blank_weight": 80677114087.0,
+      "selected_weight": 70031223372.0,
+      "minimum_fields_to_lose_strict_majority": 0,
+      "after_majority_weight": 34446621949.0,
+      "completion_budgets": [
+        {
+          "name": "10pp",
+          "minimum_fields": 3282,
+          "remaining_unknown_weight": 15058502532.0
+        },
+        {
+          "name": "5pp",
+          "minimum_fields": 3733,
+          "remaining_unknown_weight": 7531216566.0
+        },
+        {
+          "name": "1pp",
+          "minimum_fields": 4100,
+          "remaining_unknown_weight": 1500528063.0
+        }
+      ]
+    },
+    {
+      "unit": "data_raw_bytes",
+      "total_weight": 370489806656.0,
+      "known_target_weight": 94177910368.0,
+      "blank_weight": 191850989152.0,
+      "selected_weight": 178638817504.0,
+      "minimum_fields_to_lose_strict_majority": 54,
+      "after_majority_weight": 89241631264.0,
+      "completion_budgets": [
+        {
+          "name": "10pp",
+          "minimum_fields": 3304,
+          "remaining_unknown_weight": 37014119520.0
+        },
+        {
+          "name": "5pp",
+          "minimum_fields": 3749,
+          "remaining_unknown_weight": 18486241920.0
+        },
+        {
+          "name": "1pp",
+          "minimum_fields": 4105,
+          "remaining_unknown_weight": 3663939840.0
+        }
+      ]
+    },
+    {
+      "unit": "data_processed_bytes",
+      "total_weight": 1104083221228.0,
+      "known_target_weight": 280774484834.0,
+      "blank_weight": 571649055746.0,
+      "selected_weight": 532434165482.0,
+      "minimum_fields_to_lose_strict_majority": 54,
+      "after_majority_weight": 266049336182.0,
+      "completion_budgets": [
+        {
+          "name": "10pp",
+          "minimum_fields": 3303,
+          "remaining_unknown_weight": 110388310900.0
+        },
+        {
+          "name": "5pp",
+          "minimum_fields": 3748,
+          "remaining_unknown_weight": 55194155450.0
+        },
+        {
+          "name": "1pp",
+          "minimum_fields": 4104,
+          "remaining_unknown_weight": 11038831090.0
+        }
+      ]
+    },
+    {
+      "unit": "all_representation_bytes",
+      "total_weight": 1625281365343.0,
+      "known_target_weight": 409399017151.0,
+      "blank_weight": 844177158985.0,
+      "selected_weight": 781104206358.0,
+      "minimum_fields_to_lose_strict_majority": 48,
+      "after_majority_weight": 390397190239.0,
+      "completion_budgets": [
+        {
+          "name": "10pp",
+          "minimum_fields": 3301,
+          "remaining_unknown_weight": 162514707249.0
+        },
+        {
+          "name": "5pp",
+          "minimum_fields": 3747,
+          "remaining_unknown_weight": 81186874540.0
+        },
+        {
+          "name": "1pp",
+          "minimum_fields": 4104,
+          "remaining_unknown_weight": 16179985613.0
+        }
+      ]
+    }
+  ],
+  "arithmetic": "PowerShell decimal sums, native CSV grouping and sorting; no imported Python functions",
+  "independence": "Partial: shared source and membership/weight assumptions; implementation-diverse recount, not independent scientific validation",
+  "new_pixel_bytes_opened": 0
+}

@@ -1,0 +1,127 @@
+{
+  "version": "editorial-v6",
+  "new_science": false,
+  "values_sha256": "777ff0d62103c4917349afd4845f5f4d03df9ca9f63f55fe909ec4c1d3b3eb69",
+  "source_receipts": [
+    {
+      "path": "results/stage11e-result.json",
+      "sha256": "17014bce9975af8f02e8aa3a1b8af54f033838672d4435268ef81c374abebce9"
+    },
+    {
+      "path": "results/stage11g-result.json",
+      "sha256": "1273a2d21bf5c8ffb7de649a1aff4372bce883f4c5b066babd08c1f97a9553ee"
+    },
+    {
+      "path": "results/stage11l-result.json",
+      "sha256": "7e7594c24b6442d668baa43c4b4648069a26994e9bf1d8f8b6a9a2facda6e027"
+    },
+    {
+      "path": "results/stage10x-result.json",
+      "sha256": "6c72cc055b13cfaae66cbe946410eb39622b39e0624ce943267e86af1e345dbf"
+    },
+    {
+      "path": "results/stage11s-result.json",
+      "sha256": "b9ad6eeb0652131d43474fdad2a56ff3283f459f2021be61b2dfb15c3d7c65f1"
+    },
+    {
+      "path": "results/stage11t-result.json",
+      "sha256": "cad913c1c24ebd6f83da4821e4620a793a33559d9eb83009b6b654c2dde4957f"
+    },
+    {
+      "path": "results/stage11u-selection-weighting-cascade.json",
+      "sha256": "bd651dc716d05fe0bdfb4f7cdebd6b85e3980a86f8a33bbf67ea5797794e54c0"
+    }
+  ],
+  "files": [
+    {
+      "path": "figure-01-desktop.svg",
+      "bytes": 4013,
+      "sha256": "634fbd08cf833cf6121eea83fc987a2e17dc2657da4ab10231048c838cc41ebb"
+    },
+    {
+      "path": "figure-01-phone.svg",
+      "bytes": 4222,
+      "sha256": "148cf7ff574dd36d3e883a4a9288455ddaac547966b3aa6c3011578195d1f065"
+    },
+    {
+      "path": "figure-02-desktop.svg",
+      "bytes": 5843,
+      "sha256": "27a67e0a66b8fa70fbefd7e62721991a88c5a1d0b475d785112446f1e971bbba"
+    },
+    {
+      "path": "figure-02-phone.svg",
+      "bytes": 6101,
+      "sha256": "d56ea026c6c4ae5a8e3c7cda5922061fb230eac786c9f806e913780ce980e3bd"
+    },
+    {
+      "path": "figure-03-desktop.svg",
+      "bytes": 3037,
+      "sha256": "910b8b654735553268f230f6553e02caebcffecbcf373683cf6af86f203ff963"
+    },
+    {
+      "path": "figure-03-phone.svg",
+      "bytes": 3387,
+      "sha256": "a6204cc6f5cc3c0fb2a893163ffbc90f2943fde47628d141c1e9902be341039d"
+    },
+    {
+      "path": "figure-04-desktop.svg",
+      "bytes": 3470,
+      "sha256": "2a7d2549945776fcbbca2cf38e3dfef561f0a41549cb3b488ea9a5f7db11a071"
+    },
+    {
+      "path": "figure-04-phone.svg",
+      "bytes": 4308,
+      "sha256": "d585bf7432fda7850f6506750fbf7d4ee0d734808f8fc9a3d5a797b52d44cf18"
+    },
+    {
+      "path": "figure-05-desktop.svg",
+      "bytes": 6348,
+      "sha256": "3df1b16c76641b598060bf74ec01ae5b18b0215a3a4b1d2a803090d12cfa657b"
+    },
+    {
+      "path": "figure-05-phone.svg",
+      "bytes": 6167,
+      "sha256": "a8974cf26231f1858685a2f844da937968ca583e470e366640b6e5b4bf588c70"
+    },
+    {
+      "path": "figure-06-desktop.svg",
+      "bytes": 3506,
+      "sha256": "06d05339892549bf514164b0e2e09b8030518811dd325b6cea8df14ec9646dca"
+    },
+    {
+      "path": "figure-06-phone.svg",
+      "bytes": 3919,
+      "sha256": "408fac71494a2a2607792deb4438d69487b2b2564f56764ec657ab8bb351fecd"
+    },
+    {
+      "path": "figure-07-desktop.svg",
+      "bytes": 4446,
+      "sha256": "5751c885ecc8539ad6fbb0a17e2293269e79666b603a46b22abd7d9b1f3afe76"
+    },
+    {
+      "path": "figure-07-phone.svg",
+      "bytes": 4820,
+      "sha256": "62f4eb7e0b0ec072270f298742d252de523b1656879aba797801b2933ca4746c"
+    },
+    {
+      "path": "figure-08-desktop.svg",
+      "bytes": 2812,
+      "sha256": "e08524497f16d6a7e5e5e0c190006c27fb798a710a18492995908028369c5ddf"
+    },
+    {
+      "path": "figure-08-phone.svg",
+      "bytes": 3967,
+      "sha256": "59a59531c6a9750df399352f3d8e2a409f6b0d9332c19c17bd24caedecbea3bc"
+    },
+    {
+      "path": "figure-09-desktop.svg",
+      "bytes": 3797,
+      "sha256": "a9008faba5662e3102364c92417170bdb73557446df4247536644375ff8dbe90"
+    },
+    {
+      "path": "figure-09-phone.svg",
+      "bytes": 4485,
+      "sha256": "407e32b6fc33259bc8a57caf28860bb8b6bd2c677718de99b29e6969556aef21"
+    }
+  ]
+}

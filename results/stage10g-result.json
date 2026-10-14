@@ -1,0 +1,919 @@
+{
+  "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_RETRIEVAL_DISTORTION_AMPLIFICATION",
+  "fractured_actions": 21,
+  "exposure_ids": 69,
+  "product_records": 207,
+  "collection_counts": {
+    "data_source": 69,
+    "data_processed": 69,
+    "data_raw": 69
+  },
+  "collection_bytes": {
+    "data_source": 1426401106,
+    "data_processed": 10788036810,
+    "data_raw": 3619515360
+  },
+  "total_bytes": 15833953276,
+  "activity_target_partition_coupled_actions": 20,
+  "discussion_crew_choice_actions": 14,
+  "discussion_exposure_ids": 28,
+  "discussion_product_records": 84,
+  "discussion_complete_actions_recoverable": 0,
+  "discussion_companion_exposure_ids_needed": 14,
+  "discussion_companion_product_records_needed": 42,
+  "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+  "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+  "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+  "next_step_logic": {
+    "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+    "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+    "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+    "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+  },
+  "checks": [
+    {
+      "id": "source_identity",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "id": "verified_action_denominator",
+      "pass": true,
+      "actions": 21,
+      "exposure_ids": 69
+    },
+    {
+      "id": "three_representation_product_multiplication",
+      "pass": true,
+      "product_records": 207,
+      "exposure_ids": 69,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "metadata_invariant_across_representations": true
+    },
+    {
+      "id": "activity_target_partition_coupling",
+      "pass": true,
+      "coupled_actions": 20,
+      "fractured_actions": 21
+    },
+    {
+      "id": "discussion_facet_overcount_and_under_recovery",
+      "pass": true,
+      "actions_touched": 14,
+      "product_records": 84,
+      "exposure_ids": 28,
+      "complete_actions": 0,
+      "companion_exposure_ids_needed": 14,
+      "companion_product_records_needed": 42
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "products_declared_independent_observations": false,
+        "representations_declared_evidence_multiplier": false,
+        "exposures_declared_all_archive_anomalies": false,
+        "target_correctness_inferred": false,
+        "discussion_facet_declared_action_complete": false,
+        "representations_declared_waste": false,
+        "scope": "verified_fractured_raw_brackets"
+      },
+      "pixel_payload_bytes": 0
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "count_207_products_as_independent_observations": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "count_207_products_as_independent_observations",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": true,
+            "representations_declared_evidence_multiplier": false,
+            "exposures_declared_all_archive_anomalies": false,
+            "target_correctness_inferred": false,
+            "discussion_facet_declared_action_complete": false,
+            "representations_declared_waste": false,
+            "scope": "verified_fractured_raw_brackets"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    },
+    "claim_three_representations_triple_scientific_evidence": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "claim_three_representations_triple_scientific_evidence",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": false,
+            "representations_declared_evidence_multiplier": true,
+            "exposures_declared_all_archive_anomalies": false,
+            "target_correctness_inferred": false,
+            "discussion_facet_declared_action_complete": false,
+            "representations_declared_waste": false,
+            "scope": "verified_fractured_raw_brackets"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    },
+    "claim_69_exposures_are_all_archive_anomalies": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "claim_69_exposures_are_all_archive_anomalies",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": false,
+            "representations_declared_evidence_multiplier": false,
+            "exposures_declared_all_archive_anomalies": true,
+            "target_correctness_inferred": false,
+            "discussion_facet_declared_action_complete": false,
+            "representations_declared_waste": false,
+            "scope": "verified_fractured_raw_brackets"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    },
+    "infer_target_correctness_from_partition_coupling": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "infer_target_correctness_from_partition_coupling",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": false,
+            "representations_declared_evidence_multiplier": false,
+            "exposures_declared_all_archive_anomalies": false,
+            "target_correctness_inferred": true,
+            "discussion_facet_declared_action_complete": false,
+            "representations_declared_waste": false,
+            "scope": "verified_fractured_raw_brackets"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    },
+    "declare_discussion_facet_action_complete": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "declare_discussion_facet_action_complete",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": false,
+            "representations_declared_evidence_multiplier": false,
+            "exposures_declared_all_archive_anomalies": false,
+            "target_correctness_inferred": false,
+            "discussion_facet_declared_action_complete": true,
+            "representations_declared_waste": false,
+            "scope": "verified_fractured_raw_brackets"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    },
+    "call_representations_wasteful_duplicates": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "call_representations_wasteful_duplicates",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": false,
+            "representations_declared_evidence_multiplier": false,
+            "exposures_declared_all_archive_anomalies": false,
+            "target_correctness_inferred": false,
+            "discussion_facet_declared_action_complete": false,
+            "representations_declared_waste": true,
+            "scope": "verified_fractured_raw_brackets"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    },
+    "generalize_bracket_result_to_every_product_class": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "generalize_bracket_result_to_every_product_class",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": false,
+            "representations_declared_evidence_multiplier": false,
+            "exposures_declared_all_archive_anomalies": false,
+            "target_correctness_inferred": false,
+            "discussion_facet_declared_action_complete": false,
+            "representations_declared_waste": false,
+            "scope": "every_archive_product_class"
+          },
+          "pixel_payload_bytes": 0
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_to_normalize_archive_units": {
+      "testbed_id": "artemis2-retrieval-distortion-amplification-stage10g",
+      "mutation": "open_pixels_to_normalize_archive_units",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "fractured_actions": 21,
+      "exposure_ids": 69,
+      "product_records": 207,
+      "collection_counts": {
+        "data_source": 69,
+        "data_processed": 69,
+        "data_raw": 69
+      },
+      "collection_bytes": {
+        "data_source": 1426401106,
+        "data_processed": 10788036810,
+        "data_raw": 3619515360
+      },
+      "total_bytes": 15833953276,
+      "activity_target_partition_coupled_actions": 20,
+      "discussion_crew_choice_actions": 14,
+      "discussion_exposure_ids": 28,
+      "discussion_product_records": 84,
+      "discussion_complete_actions_recoverable": 0,
+      "discussion_companion_exposure_ids_needed": 14,
+      "discussion_companion_product_records_needed": 42,
+      "verified": "The 21 fractured camera actions contain 69 exposure identities but 207 downloadable data products and 15.833953276 GB across three representations. Activity and target partitions are exactly coupled in 20 of the 21 actions.",
+      "stress_case": "Inside the fourteen Discussion #4 / Crew Choice fractures, the Discussion facet contributes 84 products representing 28 exposures, yet reconstructs zero complete actions. Fourteen companion exposures\u201442 more products\u2014are required.",
+      "decision_use": "Use three explicit keys: collection identity for bytes and processing, NASA internal ID for exposure identity, and camera-native grouping for physical action. Activity and target remain useful annotations, never the join key or independent-evidence count.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 10G may quantify representation multiplication and action under-recovery for the 21 verified fractured raw crew-camera brackets. It cannot count products as independent observations, call useful representations waste, infer correct activities or targets, estimate anomaly rates for non-bracket products, or claim the three-unit normalization exhausts every archive product class.",
+      "next_step_logic": {
+        "if_representation_parity_fails": "Keep action reconstruction separate from product-footprint accounting and investigate the missing representation IDs.",
+        "if_parity_and_under_recovery_hold": "Promote three-unit normalization to the private analysis method and seek one scientific question where it changes a substantive conclusion rather than only archive hygiene.",
+        "if_target_coupling_is_weak": "Downgrade the partial-curation mechanism and preserve only the retrieval-unit result.",
+        "recheck_trigger": "A revised Atlas inventory, changed collection membership, or a scientific query whose result is invariant to unit normalization."
+      },
+      "checks": [
+        {
+          "id": "source_identity",
+          "pass": true,
+          "failures": []
+        },
+        {
+          "id": "verified_action_denominator",
+          "pass": true,
+          "actions": 21,
+          "exposure_ids": 69
+        },
+        {
+          "id": "three_representation_product_multiplication",
+          "pass": true,
+          "product_records": 207,
+          "exposure_ids": 69,
+          "collection_counts": {
+            "data_source": 69,
+            "data_processed": 69,
+            "data_raw": 69
+          },
+          "collection_bytes": {
+            "data_source": 1426401106,
+            "data_processed": 10788036810,
+            "data_raw": 3619515360
+          },
+          "total_bytes": 15833953276,
+          "metadata_invariant_across_representations": true
+        },
+        {
+          "id": "activity_target_partition_coupling",
+          "pass": true,
+          "coupled_actions": 20,
+          "fractured_actions": 21
+        },
+        {
+          "id": "discussion_facet_overcount_and_under_recovery",
+          "pass": true,
+          "actions_touched": 14,
+          "product_records": 84,
+          "exposure_ids": 28,
+          "complete_actions": 0,
+          "companion_exposure_ids_needed": 14,
+          "companion_product_records_needed": 42
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "products_declared_independent_observations": false,
+            "representations_declared_evidence_multiplier": false,
+            "exposures_declared_all_archive_anomalies": false,
+            "target_correctness_inferred": false,
+            "discussion_facet_declared_action_complete": false,
+            "representations_declared_waste": false,
+            "scope": "verified_fractured_raw_brackets"
+          },
+          "pixel_payload_bytes": 1
+        }
+      ],
+      "errors": [
+        "A prohibited independence, evidence, anomaly, correctness, waste, scope, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

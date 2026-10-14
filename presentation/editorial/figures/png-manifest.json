@@ -1,0 +1,168 @@
+{
+  "version": "editorial-v6",
+  "new_science": false,
+  "files": [
+    {
+      "path": "figure-01-desktop.png",
+      "bytes": 274995,
+      "sha256": "27b4bbbd8b7a5fa8ff8c640e330eb655181a890485df0e89a9cf305c42296d48",
+      "width": 2400,
+      "height": 1874,
+      "svg_source": "figure-01-desktop.svg",
+      "svg_sha256": "634fbd08cf833cf6121eea83fc987a2e17dc2657da4ab10231048c838cc41ebb"
+    },
+    {
+      "path": "figure-01-phone.png",
+      "bytes": 274511,
+      "sha256": "67fd9c595b2c9c717396b2647046f49c1b738c217013f83ec80b8be22bf75f38",
+      "width": 1440,
+      "height": 2494,
+      "svg_source": "figure-01-phone.svg",
+      "svg_sha256": "148cf7ff574dd36d3e883a4a9288455ddaac547966b3aa6c3011578195d1f065"
+    },
+    {
+      "path": "figure-02-desktop.png",
+      "bytes": 347453,
+      "sha256": "1f360a6ab31f265a995d16999c7aa79bf33cd92859521c9de4a9422077b53049",
+      "width": 2400,
+      "height": 2344,
+      "svg_source": "figure-02-desktop.svg",
+      "svg_sha256": "27a67e0a66b8fa70fbefd7e62721991a88c5a1d0b475d785112446f1e971bbba"
+    },
+    {
+      "path": "figure-02-phone.png",
+      "bytes": 362895,
+      "sha256": "a8a1b04c9411689935fb14c4755f75c2234cef75545550a79ff3b759eff34d79",
+      "width": 1440,
+      "height": 3100,
+      "svg_source": "figure-02-phone.svg",
+      "svg_sha256": "d56ea026c6c4ae5a8e3c7cda5922061fb230eac786c9f806e913780ce980e3bd"
+    },
+    {
+      "path": "figure-03-desktop.png",
+      "bytes": 227620,
+      "sha256": "c0d7d3d7df8e519f4c4528bbcd01111d4eb9a09cbc78521f678c471d132c8efd",
+      "width": 2400,
+      "height": 1554,
+      "svg_source": "figure-03-desktop.svg",
+      "svg_sha256": "910b8b654735553268f230f6553e02caebcffecbcf373683cf6af86f203ff963"
+    },
+    {
+      "path": "figure-03-phone.png",
+      "bytes": 237352,
+      "sha256": "3647db09d964d9c5a520d645c8e90087e7ab7f34b72c78ddab85f797ba3aa5b0",
+      "width": 1440,
+      "height": 2042,
+      "svg_source": "figure-03-phone.svg",
+      "svg_sha256": "a6204cc6f5cc3c0fb2a893163ffbc90f2943fde47628d141c1e9902be341039d"
+    },
+    {
+      "path": "figure-04-desktop.png",
+      "bytes": 264736,
+      "sha256": "1987c7a1dd24f6a3539a150afb075b0406230724d3ddfaf9f1aaca5468604f38",
+      "width": 2400,
+      "height": 1940,
+      "svg_source": "figure-04-desktop.svg",
+      "svg_sha256": "2a7d2549945776fcbbca2cf38e3dfef561f0a41549cb3b488ea9a5f7db11a071"
+    },
+    {
+      "path": "figure-04-phone.png",
+      "bytes": 275362,
+      "sha256": "b6df3f0a27d7e00e48eec5978c5ff21057ddc06d1007ca7c9622ba08a4bb27c8",
+      "width": 1440,
+      "height": 2484,
+      "svg_source": "figure-04-phone.svg",
+      "svg_sha256": "d585bf7432fda7850f6506750fbf7d4ee0d734808f8fc9a3d5a797b52d44cf18"
+    },
+    {
+      "path": "figure-05-desktop.png",
+      "bytes": 381037,
+      "sha256": "887e106a602a6437370b6be49db097d08d7c23ba588701cb8648a08e65fbb331",
+      "width": 2400,
+      "height": 2754,
+      "svg_source": "figure-05-desktop.svg",
+      "svg_sha256": "3df1b16c76641b598060bf74ec01ae5b18b0215a3a4b1d2a803090d12cfa657b"
+    },
+    {
+      "path": "figure-05-phone.png",
+      "bytes": 377202,
+      "sha256": "7d27edc7203434fdb3ec7c76323fa1d89446c591a5b224bfe40d9eb2a5bddfac",
+      "width": 1440,
+      "height": 3304,
+      "svg_source": "figure-05-phone.svg",
+      "svg_sha256": "a8974cf26231f1858685a2f844da937968ca583e470e366640b6e5b4bf588c70"
+    },
+    {
+      "path": "figure-06-desktop.png",
+      "bytes": 291905,
+      "sha256": "b9f3d36e0dcc40a1b2940c029c28d27e80fbcdcb075eb6463661972a7cf26362",
+      "width": 2400,
+      "height": 2016,
+      "svg_source": "figure-06-desktop.svg",
+      "svg_sha256": "06d05339892549bf514164b0e2e09b8030518811dd325b6cea8df14ec9646dca"
+    },
+    {
+      "path": "figure-06-phone.png",
+      "bytes": 298240,
+      "sha256": "e381b8a5bec0f10dde42bf1896e6fa345d820ec91e244a92de32ad99f691ffeb",
+      "width": 1440,
+      "height": 2494,
+      "svg_source": "figure-06-phone.svg",
+      "svg_sha256": "408fac71494a2a2607792deb4438d69487b2b2564f56764ec657ab8bb351fecd"
+    },
+    {
+      "path": "figure-07-desktop.png",
+      "bytes": 342635,
+      "sha256": "bd07b6789521fa3a218a90e6092bc288c301ea4bc0cd54d258b2f8b9254796c4",
+      "width": 2400,
+      "height": 2122,
+      "svg_source": "figure-07-desktop.svg",
+      "svg_sha256": "5751c885ecc8539ad6fbb0a17e2293269e79666b603a46b22abd7d9b1f3afe76"
+    },
+    {
+      "path": "figure-07-phone.png",
+      "bytes": 354071,
+      "sha256": "6cd5e68b45d7b1cb80881e01f0918b785cbf4b003e2f6597760c9c5b57804432",
+      "width": 1440,
+      "height": 3316,
+      "svg_source": "figure-07-phone.svg",
+      "svg_sha256": "62f4eb7e0b0ec072270f298742d252de523b1656879aba797801b2933ca4746c"
+    },
+    {
+      "path": "figure-08-desktop.png",
+      "bytes": 306836,
+      "sha256": "deaa501c9261820b2a548548c16c2c22848fa2a6dfb395bde607eaf4dada48fa",
+      "width": 2400,
+      "height": 2060,
+      "svg_source": "figure-08-desktop.svg",
+      "svg_sha256": "e08524497f16d6a7e5e5e0c190006c27fb798a710a18492995908028369c5ddf"
+    },
+    {
+      "path": "figure-08-phone.png",
+      "bytes": 347768,
+      "sha256": "97b8c380ec33eeea9bb16ae650ca6999df554e530ded17af28544f3f9297f163",
+      "width": 1440,
+      "height": 3164,
+      "svg_source": "figure-08-phone.svg",
+      "svg_sha256": "59a59531c6a9750df399352f3d8e2a409f6b0d9332c19c17bd24caedecbea3bc"
+    },
+    {
+      "path": "figure-09-desktop.png",
+      "bytes": 387320,
+      "sha256": "68e253f254b69a6fc848654d90d7e10bb751d92c453aab2027483c695c3f755b",
+      "width": 2400,
+      "height": 3120,
+      "svg_source": "figure-09-desktop.svg",
+      "svg_sha256": "a9008faba5662e3102364c92417170bdb73557446df4247536644375ff8dbe90"
+    },
+    {
+      "path": "figure-09-phone.png",
+      "bytes": 379745,
+      "sha256": "5fc411fb834c5c5fbd2a54e675c753f91bd5861fbae051c3a8785530566790fe",
+      "width": 1440,
+      "height": 3742,
+      "svg_source": "figure-09-phone.svg",
+      "svg_sha256": "407e32b6fc33259bc8a57caf28860bb8b6bd2c677718de99b29e6969556aef21"
+    }
+  ]
+}

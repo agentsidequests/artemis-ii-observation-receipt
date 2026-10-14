@@ -1,0 +1,577 @@
+{
+  "baseline": {
+    "testbed_id": "artemis2-observation-execution-stage0",
+    "version": "0.1.0",
+    "run_at_utc": "2026-10-09T19:49:01Z",
+    "mutation": "none",
+    "pass": true,
+    "evidence_state": "VERIFIED",
+    "checks": [
+      {
+        "id": "corpus_identity",
+        "pass": true,
+        "observed": {
+          "file_count": 27,
+          "byte_count": 337208,
+          "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+        }
+      },
+      {
+        "id": "all_event_oracles",
+        "pass": true
+      },
+      {
+        "id": "all_frozen_boundaries_precede_plan_fields",
+        "pass": true
+      }
+    ],
+    "events": [
+      {
+        "id": "earthset_first_contact",
+        "label": "Earthset first contact",
+        "target": "Earthset",
+        "plan_field": "start_date_time",
+        "planned_utc": "2026-04-06T22:42:19.730Z",
+        "observed_utc": "2026-04-06T22:40:43.102Z",
+        "delta_seconds": -96.628,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+        "transcript_row": 18,
+        "speaker": "Glover",
+        "cue_sha256": "696ca42dc1b7cd0d2e9acbb3f94bde0565a8f43845624832b72cc6fb5c9898b9",
+        "pass": true
+      },
+      {
+        "id": "earthset_complete",
+        "label": "Earthset complete",
+        "target": "Earthset",
+        "plan_field": "end_date_time",
+        "planned_utc": "2026-04-06T22:45:36.380Z",
+        "observed_utc": "2026-04-06T22:43:34.220Z",
+        "delta_seconds": -122.16,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+        "transcript_row": 33,
+        "speaker": "Glover",
+        "cue_sha256": "778e865bf87fe8dbfd02e7291e487c135545e987a82b72c94c8a82017b3bbc93",
+        "pass": true
+      },
+      {
+        "id": "earthrise_first_contact",
+        "label": "Earthrise first contact",
+        "target": "Earthrise",
+        "plan_field": "start_date_time",
+        "planned_utc": "2026-04-06T23:25:30.000Z",
+        "observed_utc": "2026-04-06T23:21:18.957Z",
+        "delta_seconds": -251.043,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+        "transcript_row": 45,
+        "speaker": "Glover",
+        "cue_sha256": "060d6507d3a18beb6752bb6948a987dd0488386fce699d56e2501eb807d197d7",
+        "pass": true
+      },
+      {
+        "id": "earthrise_complete",
+        "label": "Earthrise complete",
+        "target": "Earthrise",
+        "plan_field": "end_date_time",
+        "planned_utc": "2026-04-06T23:25:34.147Z",
+        "observed_utc": "2026-04-06T23:23:27.170Z",
+        "delta_seconds": -126.978,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+        "transcript_row": 89,
+        "speaker": "Glover",
+        "cue_sha256": "c7711310323b61a6f1e6a2f2b26f7dee872d978ee9985b5301d2f712646092da",
+        "pass": true
+      },
+      {
+        "id": "sunset_first_contact",
+        "label": "Sunset first contact",
+        "target": "Sunset",
+        "plan_field": "start_date_time",
+        "planned_utc": "2026-04-07T00:35:08.308Z",
+        "observed_utc": "2026-04-07T00:32:44.177Z",
+        "delta_seconds": -144.132,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+        "transcript_row": 41,
+        "speaker": "Hansen",
+        "cue_sha256": "8915dddfdd0d23ef836a380ba2d765ed3058326f59addc99d15a4e12608d8906",
+        "pass": true
+      },
+      {
+        "id": "sunset_complete",
+        "label": "Sunset complete",
+        "target": "Sunset",
+        "plan_field": "end_date_time",
+        "planned_utc": "2026-04-07T00:36:51.116Z",
+        "observed_utc": "2026-04-07T00:34:24.705Z",
+        "delta_seconds": -146.411,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+        "transcript_row": 66,
+        "speaker": "Hansen",
+        "cue_sha256": "e03733dc20954ede314d4e4792168edc45ea1256140c608854529f7e98a249c5",
+        "pass": true
+      },
+      {
+        "id": "sunrise_first_contact",
+        "label": "Sunrise first contact",
+        "target": "Sunrise",
+        "plan_field": "start_date_time",
+        "planned_utc": "2026-04-07T01:31:02.595Z",
+        "observed_utc": "2026-04-07T01:29:47.301Z",
+        "delta_seconds": -75.295,
+        "direction": "early",
+        "transcript": "corpus/transcripts/art002a000053_pcd3_trn-csv_v01.csv",
+        "transcript_row": 258,
+        "speaker": "Koch",
+        "cue_sha256": "dc107e89faf5500e1d673d2e38f42eadada876d77c73734ffadc743b2452f715",
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "claim_boundary": "The archived transcript cues occur earlier than the paired OTR geometry-window fields for all seven frozen boundaries.",
+    "unestablished": [
+      "The OTR fields and crew utterances denote identical physical contact definitions",
+      "The crew utterance timestamp is the optical event timestamp",
+      "The discrepancy is caused by trajectory prediction error",
+      "The discrepancy generalizes to Artemis III",
+      "The discrepancy is scientifically or operationally consequential",
+      "The finding is novel outside the bounded official-report review"
+    ]
+  },
+  "hard_negatives": {
+    "shift_earthrise_plus_300": {
+      "testbed_id": "artemis2-observation-execution-stage0",
+      "version": "0.1.0",
+      "run_at_utc": "2026-10-09T19:49:01Z",
+      "mutation": "shift_earthrise_plus_300",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "all_event_oracles",
+          "pass": false
+        },
+        {
+          "id": "all_frozen_boundaries_precede_plan_fields",
+          "pass": false
+        }
+      ],
+      "events": [
+        {
+          "id": "earthset_first_contact",
+          "label": "Earthset first contact",
+          "target": "Earthset",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-06T22:42:19.730Z",
+          "observed_utc": "2026-04-06T22:40:43.102Z",
+          "delta_seconds": -96.628,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 18,
+          "speaker": "Glover",
+          "cue_sha256": "696ca42dc1b7cd0d2e9acbb3f94bde0565a8f43845624832b72cc6fb5c9898b9",
+          "pass": true
+        },
+        {
+          "id": "earthset_complete",
+          "label": "Earthset complete",
+          "target": "Earthset",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-06T22:45:36.380Z",
+          "observed_utc": "2026-04-06T22:43:34.220Z",
+          "delta_seconds": -122.16,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 33,
+          "speaker": "Glover",
+          "cue_sha256": "778e865bf87fe8dbfd02e7291e487c135545e987a82b72c94c8a82017b3bbc93",
+          "pass": true
+        },
+        {
+          "id": "earthrise_first_contact",
+          "label": "Earthrise first contact",
+          "target": "Earthrise",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-06T23:25:30.000Z",
+          "observed_utc": "2026-04-06T23:26:18.957Z",
+          "delta_seconds": 48.957,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 45,
+          "speaker": "Glover",
+          "cue_sha256": "060d6507d3a18beb6752bb6948a987dd0488386fce699d56e2501eb807d197d7",
+          "pass": false
+        },
+        {
+          "id": "earthrise_complete",
+          "label": "Earthrise complete",
+          "target": "Earthrise",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-06T23:25:34.147Z",
+          "observed_utc": "2026-04-06T23:23:27.170Z",
+          "delta_seconds": -126.978,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 89,
+          "speaker": "Glover",
+          "cue_sha256": "c7711310323b61a6f1e6a2f2b26f7dee872d978ee9985b5301d2f712646092da",
+          "pass": true
+        },
+        {
+          "id": "sunset_first_contact",
+          "label": "Sunset first contact",
+          "target": "Sunset",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-07T00:35:08.308Z",
+          "observed_utc": "2026-04-07T00:32:44.177Z",
+          "delta_seconds": -144.132,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 41,
+          "speaker": "Hansen",
+          "cue_sha256": "8915dddfdd0d23ef836a380ba2d765ed3058326f59addc99d15a4e12608d8906",
+          "pass": true
+        },
+        {
+          "id": "sunset_complete",
+          "label": "Sunset complete",
+          "target": "Sunset",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-07T00:36:51.116Z",
+          "observed_utc": "2026-04-07T00:34:24.705Z",
+          "delta_seconds": -146.411,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 66,
+          "speaker": "Hansen",
+          "cue_sha256": "e03733dc20954ede314d4e4792168edc45ea1256140c608854529f7e98a249c5",
+          "pass": true
+        },
+        {
+          "id": "sunrise_first_contact",
+          "label": "Sunrise first contact",
+          "target": "Sunrise",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-07T01:31:02.595Z",
+          "observed_utc": "2026-04-07T01:29:47.301Z",
+          "delta_seconds": -75.295,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000053_pcd3_trn-csv_v01.csv",
+          "transcript_row": 258,
+          "speaker": "Koch",
+          "cue_sha256": "dc107e89faf5500e1d673d2e38f42eadada876d77c73734ffadc743b2452f715",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "earthrise_first_contact delta 48.957s differs from expected -251.043s",
+        "One or more event oracles failed"
+      ],
+      "claim_boundary": null,
+      "unestablished": [
+        "The OTR fields and crew utterances denote identical physical contact definitions",
+        "The crew utterance timestamp is the optical event timestamp",
+        "The discrepancy is caused by trajectory prediction error",
+        "The discrepancy generalizes to Artemis III",
+        "The discrepancy is scientifically or operationally consequential",
+        "The finding is novel outside the bounded official-report review"
+      ]
+    },
+    "cue_not_found": {
+      "testbed_id": "artemis2-observation-execution-stage0",
+      "version": "0.1.0",
+      "run_at_utc": "2026-10-09T19:49:01Z",
+      "mutation": "cue_not_found",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "all_event_oracles",
+          "pass": false
+        },
+        {
+          "id": "all_frozen_boundaries_precede_plan_fields",
+          "pass": false
+        }
+      ],
+      "events": [
+        {
+          "id": "earthset_first_contact",
+          "label": "Earthset first contact",
+          "target": "Earthset",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-06T22:42:19.730Z",
+          "observed_utc": "2026-04-06T22:40:43.102Z",
+          "delta_seconds": -96.628,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 18,
+          "speaker": "Glover",
+          "cue_sha256": "696ca42dc1b7cd0d2e9acbb3f94bde0565a8f43845624832b72cc6fb5c9898b9",
+          "pass": true
+        },
+        {
+          "id": "earthset_complete",
+          "label": "Earthset complete",
+          "target": "Earthset",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-06T22:45:36.380Z",
+          "observed_utc": "2026-04-06T22:43:34.220Z",
+          "delta_seconds": -122.16,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 33,
+          "speaker": "Glover",
+          "cue_sha256": "778e865bf87fe8dbfd02e7291e487c135545e987a82b72c94c8a82017b3bbc93",
+          "pass": true
+        },
+        {
+          "id": "earthrise_first_contact",
+          "label": "Earthrise first contact",
+          "target": "Earthrise",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-06T23:25:30.000Z",
+          "observed_utc": "2026-04-06T23:21:18.957Z",
+          "delta_seconds": -251.043,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 45,
+          "speaker": "Glover",
+          "cue_sha256": "060d6507d3a18beb6752bb6948a987dd0488386fce699d56e2501eb807d197d7",
+          "pass": true
+        },
+        {
+          "id": "earthrise_complete",
+          "label": "Earthrise complete",
+          "target": "Earthrise",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-06T23:25:34.147Z",
+          "observed_utc": "2026-04-06T23:23:27.170Z",
+          "delta_seconds": -126.978,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 89,
+          "speaker": "Glover",
+          "cue_sha256": "c7711310323b61a6f1e6a2f2b26f7dee872d978ee9985b5301d2f712646092da",
+          "pass": true
+        },
+        {
+          "id": "sunset_first_contact",
+          "label": "Sunset first contact",
+          "target": "Sunset",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-07T00:35:08.308Z",
+          "observed_utc": "2026-04-07T00:32:44.177Z",
+          "delta_seconds": -144.132,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 41,
+          "speaker": "Hansen",
+          "cue_sha256": "8915dddfdd0d23ef836a380ba2d765ed3058326f59addc99d15a4e12608d8906",
+          "pass": true
+        },
+        {
+          "id": "sunrise_first_contact",
+          "label": "Sunrise first contact",
+          "target": "Sunrise",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-07T01:31:02.595Z",
+          "observed_utc": "2026-04-07T01:29:47.301Z",
+          "delta_seconds": -75.295,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000053_pcd3_trn-csv_v01.csv",
+          "transcript_row": 258,
+          "speaker": "Koch",
+          "cue_sha256": "dc107e89faf5500e1d673d2e38f42eadada876d77c73734ffadc743b2452f715",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "sunset_complete failed: Cue 'THIS CUE MUST NOT EXIST' in corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv resolved 0 times; expected exactly one",
+        "One or more event oracles failed"
+      ],
+      "claim_boundary": null,
+      "unestablished": [
+        "The OTR fields and crew utterances denote identical physical contact definitions",
+        "The crew utterance timestamp is the optical event timestamp",
+        "The discrepancy is caused by trajectory prediction error",
+        "The discrepancy generalizes to Artemis III",
+        "The discrepancy is scientifically or operationally consequential",
+        "The finding is novel outside the bounded official-report review"
+      ]
+    },
+    "swap_earthset_plan_field": {
+      "testbed_id": "artemis2-observation-execution-stage0",
+      "version": "0.1.0",
+      "run_at_utc": "2026-10-09T19:49:01Z",
+      "mutation": "swap_earthset_plan_field",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "checks": [
+        {
+          "id": "corpus_identity",
+          "pass": true,
+          "observed": {
+            "file_count": 27,
+            "byte_count": 337208,
+            "aggregate_sha256": "d6d4dc8b2f261ea4262c593e0c5a94b48e1d34034c82dfcfa2c6ddf81d1ea00c"
+          }
+        },
+        {
+          "id": "all_event_oracles",
+          "pass": false
+        },
+        {
+          "id": "all_frozen_boundaries_precede_plan_fields",
+          "pass": false
+        }
+      ],
+      "events": [
+        {
+          "id": "earthset_first_contact",
+          "label": "Earthset first contact",
+          "target": "Earthset",
+          "plan_field": "request_date_time",
+          "planned_utc": "2026-04-06T22:38:00.000Z",
+          "observed_utc": "2026-04-06T22:40:43.102Z",
+          "delta_seconds": 163.102,
+          "direction": "late",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 18,
+          "speaker": "Glover",
+          "cue_sha256": "696ca42dc1b7cd0d2e9acbb3f94bde0565a8f43845624832b72cc6fb5c9898b9",
+          "pass": false
+        },
+        {
+          "id": "earthset_complete",
+          "label": "Earthset complete",
+          "target": "Earthset",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-06T22:45:36.380Z",
+          "observed_utc": "2026-04-06T22:43:34.220Z",
+          "delta_seconds": -122.16,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000045_pcd2_trn-csv_v01.csv",
+          "transcript_row": 33,
+          "speaker": "Glover",
+          "cue_sha256": "778e865bf87fe8dbfd02e7291e487c135545e987a82b72c94c8a82017b3bbc93",
+          "pass": true
+        },
+        {
+          "id": "earthrise_first_contact",
+          "label": "Earthrise first contact",
+          "target": "Earthrise",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-06T23:25:30.000Z",
+          "observed_utc": "2026-04-06T23:21:18.957Z",
+          "delta_seconds": -251.043,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 45,
+          "speaker": "Glover",
+          "cue_sha256": "060d6507d3a18beb6752bb6948a987dd0488386fce699d56e2501eb807d197d7",
+          "pass": true
+        },
+        {
+          "id": "earthrise_complete",
+          "label": "Earthrise complete",
+          "target": "Earthrise",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-06T23:25:34.147Z",
+          "observed_utc": "2026-04-06T23:23:27.170Z",
+          "delta_seconds": -126.978,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000049_pcd2_trn-csv_v01.csv",
+          "transcript_row": 89,
+          "speaker": "Glover",
+          "cue_sha256": "c7711310323b61a6f1e6a2f2b26f7dee872d978ee9985b5301d2f712646092da",
+          "pass": true
+        },
+        {
+          "id": "sunset_first_contact",
+          "label": "Sunset first contact",
+          "target": "Sunset",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-07T00:35:08.308Z",
+          "observed_utc": "2026-04-07T00:32:44.177Z",
+          "delta_seconds": -144.132,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 41,
+          "speaker": "Hansen",
+          "cue_sha256": "8915dddfdd0d23ef836a380ba2d765ed3058326f59addc99d15a4e12608d8906",
+          "pass": true
+        },
+        {
+          "id": "sunset_complete",
+          "label": "Sunset complete",
+          "target": "Sunset",
+          "plan_field": "end_date_time",
+          "planned_utc": "2026-04-07T00:36:51.116Z",
+          "observed_utc": "2026-04-07T00:34:24.705Z",
+          "delta_seconds": -146.411,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "transcript_row": 66,
+          "speaker": "Hansen",
+          "cue_sha256": "e03733dc20954ede314d4e4792168edc45ea1256140c608854529f7e98a249c5",
+          "pass": true
+        },
+        {
+          "id": "sunrise_first_contact",
+          "label": "Sunrise first contact",
+          "target": "Sunrise",
+          "plan_field": "start_date_time",
+          "planned_utc": "2026-04-07T01:31:02.595Z",
+          "observed_utc": "2026-04-07T01:29:47.301Z",
+          "delta_seconds": -75.295,
+          "direction": "early",
+          "transcript": "corpus/transcripts/art002a000053_pcd3_trn-csv_v01.csv",
+          "transcript_row": 258,
+          "speaker": "Koch",
+          "cue_sha256": "dc107e89faf5500e1d673d2e38f42eadada876d77c73734ffadc743b2452f715",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "earthset_first_contact delta 163.102s differs from expected -96.628s",
+        "One or more event oracles failed"
+      ],
+      "claim_boundary": null,
+      "unestablished": [
+        "The OTR fields and crew utterances denote identical physical contact definitions",
+        "The crew utterance timestamp is the optical event timestamp",
+        "The discrepancy is caused by trajectory prediction error",
+        "The discrepancy generalizes to Artemis III",
+        "The discrepancy is scientifically or operationally consequential",
+        "The finding is novel outside the bounded official-report review"
+      ]
+    }
+  },
+  "hard_negatives_pass": true,
+  "pass": true,
+  "evidence_state": "VERIFIED"
+}

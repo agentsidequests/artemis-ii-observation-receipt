@@ -1,0 +1,149 @@
+{
+  "testbed_id": "artemis2-observation-execution-stage2c-source-explanation-gate",
+  "version": "0.7.0",
+  "formed_at_utc": "2026-10-09T21:25:42Z",
+  "question": "Do the smallest documented planning differences nominate a falsifiable explanation for why Earthrise's availability window follows full clearance while Earthset's window overlaps occultation?",
+  "method": "Testing and Validation — Engineering Testbeds",
+  "baseline": "Stage 2A and Stage 2B establish opposite event-specific coverage relations but no cause. The competent direct route is a field-by-field comparison of the two frozen OTR records against current NASA/PDS planning documentation.",
+  "treatment": "Admit a candidate only when a hash-pinned source gives the differing field or planning context a relevant meaning and the candidate predicts an independently falsifiable timing relation.",
+  "decisive_invariant": "A numerical or categorical difference does not explain window placement. A candidate may advance only when the local records differ, NASA/PDS documents the relevant semantics or planning lineage, and the candidate yields a quantitative or event-native falsifier without relabeling availability endpoints as physical contact.",
+  "artifact_native_falsifier": "The documented actual-versus-post-TLI timing delta must fall inside the independently bracketed Earthrise full-clearance-to-window-start lag while the Earthset window is wider than that delta and remains a verified overlap. Failure of any relation rejects the trajectory-offset candidate; passing only nominates a later SPICE test.",
+  "claim_ceiling": "One source-nominated, quantitatively consistent trajectory-offset/window-tolerance hypothesis. No causal confirmation, uniform trajectory shift, endpoint equivalence, mission-wide planning rule, operational-impact claim, or scientific-discovery claim.",
+  "environment": {
+    "runtime_contract": "Python 3 standard library only for scored verification.",
+    "network_contract": "Source acquisition and qualification may use the network before freeze. Scored verification is local and network-free.",
+    "timezone_contract": "All event times are UTC; no local-time conversion is permitted.",
+    "source_cutoff_utc": "2026-10-09T21:25:42Z"
+  },
+  "source_evidence": {
+    "otr_path": "corpus/artemis2_outgoing_target_request.json",
+    "otr_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+    "source_extracts_path": "evidence/stage2c/source-extracts.json",
+    "source_extracts_sha256": "a68b516494f1f40c3d0f9561261cc2ca35feed308814754e664a94561c95c6dd",
+    "required_source_ids": [
+      "data_user_guide",
+      "operations_report_timeline_manager",
+      "operations_report_ltp_icons",
+      "operations_report_delivery_lineage",
+      "operations_report_leg_and_shift",
+      "operations_report_otr_generation",
+      "operations_report_ltp_generation",
+      "operations_report_ltp_final",
+      "targeting_package_timeline"
+    ],
+    "prior_stage_requirements": {
+      "stage2a_evidence_state": "VERIFIED_NO_OVERLAP",
+      "stage2a_coverage_relation": "AFTER_EVENT_NO_OVERLAP",
+      "stage2b_evidence_state": "VERIFIED_SINGLE_ADMISSIBLE_REPLICATION",
+      "stage2b_earthset_relation": "OVERLAPS_EVENT"
+    }
+  },
+  "field_comparison": {
+    "shared_fields": {
+      "time_sensitive": true,
+      "stm_true": ["stm7", "stm8"],
+      "camera_actions_equal": true,
+      "impact_statement_equal_after_trim": true,
+      "middle_date_time": null,
+      "longitude": "0",
+      "latitude": "0",
+      "diameter": "0"
+    },
+    "differing_fields": {
+      "request_duration_minutes": {
+        "earthset": 8,
+        "earthrise": 12,
+        "documented_semantics": "requested activity duration",
+        "timing_explanation_status": "NOT_NOMINATED_ACTIVITY_SLOT_ONLY"
+      },
+      "sci_sit_rep": {
+        "earthset": false,
+        "earthrise": true,
+        "documented_semantics": "science situation report required",
+        "timing_explanation_status": "NOT_NOMINATED_NO_AVAILABILITY_MAPPING"
+      },
+      "unaided_eye_prompt": {
+        "earthset_distinctive_text": "Describe the appearance of the lunar horizon in front of Earth.",
+        "earthrise_distinctive_text": "What are your impressions of our planet rising beyond the Moon?",
+        "timing_explanation_status": "NOT_NOMINATED_OBSERVATION_PROMPT_ONLY"
+      }
+    },
+    "outcome_and_schedule_values": {
+      "earthset": {
+        "request_utc": "2026-04-06T22:38:00Z",
+        "request_slot_seconds": 480,
+        "availability_start_offset_seconds": 259.730197,
+        "availability_end_offset_seconds": 456.38023,
+        "availability_duration_seconds": 196.650033,
+        "post_window_slot_seconds": 23.61977
+      },
+      "earthrise": {
+        "request_utc": "2026-04-06T23:18:00Z",
+        "request_slot_seconds": 720,
+        "availability_start_offset_seconds": 450.0,
+        "availability_end_offset_seconds": 454.147844,
+        "availability_duration_seconds": 4.147844,
+        "post_window_slot_seconds": 265.852156
+      },
+      "availability_width_ratio_earthset_to_earthrise": 47.410180566
+    }
+  },
+  "planning_lineage": {
+    "basis": "NASA documents a post-TLI trajectory feeding the LEG, target timing and OTR packaging, and the final LTP.",
+    "reported_direction": "actual_earlier_than_post_tli_visualization",
+    "matched_view_actual_utc": "2026-04-06T22:33:56Z",
+    "matched_view_visualization_utc": "2026-04-06T22:36:30Z",
+    "reported_example_delta_seconds": 154.0,
+    "scope_limit": "One matched-view example and NASA's roughly-two-minute description do not establish a constant event-specific correction."
+  },
+  "candidate_evaluations": [
+    {
+      "id": "post_tli_trajectory_offset_x_window_width",
+      "status": "SOURCE_NOMINATED_TESTABLE_HYPOTHESIS",
+      "required_relations": [
+        "reported_example_delta_inside_earthrise_clearance_lag_bracket",
+        "earthset_window_wider_than_reported_example_delta",
+        "earthrise_window_narrower_than_reported_example_delta",
+        "stage2a_no_overlap_and_stage2b_earthset_overlap_remain_verified"
+      ],
+      "interpretation": "A documented earlier-than-post-TLI realized trajectory is quantitatively consistent with the Earthrise miss, while Earthset's much wider availability window is less brittle to an offset of that scale.",
+      "falsifier": "When the actual Artemis II SPICE bundle becomes available, derive the event-specific actual trajectory timing. Reject this hypothesis if the Earthrise shift is outside the 136-to-166-second full-clearance lag bracket or if the OTR timing did not inherit the documented post-TLI planning basis."
+    },
+    {
+      "id": "request_duration",
+      "status": "NOT_NOMINATED_ACTIVITY_SLOT_ONLY",
+      "reason": "The report ties duration to the requested LTP observation; it does not map 8 or 12 minutes to an availability endpoint or physical contact."
+    },
+    {
+      "id": "science_situation_report",
+      "status": "NOT_NOMINATED_NO_AVAILABILITY_MAPPING",
+      "reason": "The report defines a reporting requirement but supplies no timing rule for availability-window placement."
+    },
+    {
+      "id": "shared_science_and_camera_fields",
+      "status": "HARD_NEGATIVE_SAME_VALUES",
+      "reason": "Shared time-sensitive, STM, camera-action, and science-impact fields cannot discriminate the opposite placement relations."
+    }
+  ],
+  "expected_result": {
+    "evidence_state": "VERIFIED_SOURCE_NOMINATED_HYPOTHESIS",
+    "disposition": "HYPOTHESIS_NOMINATED_STOP_SOURCE_ONLY",
+    "earthrise_clearance_lag_minimum_inclusive_seconds": 136.0,
+    "earthrise_clearance_lag_maximum_exclusive_seconds": 166.0,
+    "admitted_candidate_count": 1
+  },
+  "hard_negatives": [
+    "remove_trajectory_source",
+    "move_reported_delta_outside_earthrise_lag",
+    "promote_sitrep_without_timing_mapping",
+    "equate_request_duration_with_availability",
+    "promote_hypothesis_to_confirmed_cause"
+  ],
+  "stop_rule": "Stop the source-only lane after one candidate meets the frozen nomination oracle or after every candidate fails it. Do not obtain more pixels, generalize a constant shift, or convert quantitative consistency into cause.",
+  "next_step_logic": {
+    "recommended": "Stop active timing acquisition with the trajectory-offset/window-tolerance hypothesis recorded. Re-attest the delayed Artemis II SPICE bundle only when NASA publishes an actual release, then run one event-specific geometry falsifier.",
+    "why": "The source-only pass found a decision-changing, quantitatively aligned hypothesis, but current public sources cannot adjudicate event-specific geometry or causality.",
+    "blocked": "Do not widen image acquisition, claim a planning failure, or present the 154-second example as a uniform correction.",
+    "fallback": "If SPICE remains unavailable or rejects the hypothesis, keep the verified event-specific placement contrast and retire the explanatory lane."
+  }
+}

@@ -1,0 +1,7 @@
+claim_id,status,proposition,claim_ceiling
+accepted-ledger,SUPPORTED,"The public annotation contains five accepted events, eight witness marks, and three observers.","Credible event ledger, not calibrated sensitivity or independent detections."
+later-window-tested-ledger-events,REFUTED_NONOVERLAP,The later 30 fps window covered the annotation's 01:04 background-photo epoch.,Metadata-time non-overlap only. The photo epoch is not ledger creation or an upper bound for all five accepted events; their event-level video coverage remains unestablished.
+overlap-null-excludes-report,BLOCKED_INSUFFICIENT_CAPABILITY,The absence of a screened pulse in the overlap clip excludes the shared crew report.,"Contextual temporal overlap, not event exclusion."
+all-lunar-count-floor,SUPPORTED_WITH_ASSUMPTIONS,Five accepted events support a conservative whole-Moon one-hour detected-count floor.,"Detected-count floor under explicit assumptions, not calibrated flux."
+calibrated-impact-flux,BLOCKED_MISSING_MEASUREMENT_FUNCTION,The five events establish a calibrated brightness-threshold lunar impact flux.,Blocked until a recomputable measurement function is public.
+shared-report-independent-confirmations,BLOCKED_DEPENDENCE_MODEL_MISSING,The two marks around the 00:51 report are independent confirmations suitable for capture-recapture inference.,"Separate witness marks are preserved, but independence is not assumed without a declared dependence model."

@@ -1,0 +1,3257 @@
+{
+  "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_TARGET_FIELD_COMPLETION_BOUNDS",
+  "source_identity": {
+    "path": "results/stage10o-product-relationship-manifest.csv",
+    "bytes": 10072026,
+    "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+    "match": true
+  },
+  "metrics": {
+    "source_exposures": 7606,
+    "nonblank_target_fields": 3413,
+    "blank_target_fields": 4193,
+    "observed_target_field_values": 23,
+    "blank_share": 0.5512753089666053,
+    "bounds_by_target_field_value": {
+      "01_Discussion #1: Warm up": {
+        "observed_count": 39,
+        "lower_count": 39,
+        "upper_count": 4232,
+        "observed_share_among_nonblank": 0.011426897157925579,
+        "lower_share_full_cohort": 0.005127530896660531,
+        "upper_share_full_cohort": 0.5564028398632659,
+        "bound_width": 0.5512753089666053
+      },
+      "Aristarchus Plateau": {
+        "observed_count": 26,
+        "lower_count": 26,
+        "upper_count": 4219,
+        "observed_share_among_nonblank": 0.007617931438617052,
+        "lower_share_full_cohort": 0.0034183539311070208,
+        "upper_share_full_cohort": 0.5546936628977124,
+        "bound_width": 0.5512753089666053
+      },
+      "Deep Space": {
+        "observed_count": 25,
+        "lower_count": 25,
+        "upper_count": 4218,
+        "observed_share_among_nonblank": 0.00732493407559332,
+        "lower_share_full_cohort": 0.003286878779910597,
+        "upper_share_full_cohort": 0.5545621877465159,
+        "bound_width": 0.5512753089666053
+      },
+      "Earth": {
+        "observed_count": 692,
+        "lower_count": 692,
+        "upper_count": 4885,
+        "observed_share_among_nonblank": 0.2027541752124231,
+        "lower_share_full_cohort": 0.09098080462792532,
+        "upper_share_full_cohort": 0.6422561135945306,
+        "bound_width": 0.5512753089666053
+      },
+      "Earthrise": {
+        "observed_count": 2,
+        "lower_count": 2,
+        "upper_count": 4195,
+        "observed_share_among_nonblank": 0.0005859947260474656,
+        "lower_share_full_cohort": 0.00026295030239284776,
+        "upper_share_full_cohort": 0.5515382592689981,
+        "bound_width": 0.5512753089666053
+      },
+      "Earthset": {
+        "observed_count": 14,
+        "lower_count": 14,
+        "upper_count": 4207,
+        "observed_share_among_nonblank": 0.004101963082332259,
+        "lower_share_full_cohort": 0.0018406521167499343,
+        "upper_share_full_cohort": 0.5531159610833553,
+        "bound_width": 0.5512753089666053
+      },
+      "Glushko Crater": {
+        "observed_count": 24,
+        "lower_count": 24,
+        "upper_count": 4217,
+        "observed_share_among_nonblank": 0.007031936712569587,
+        "lower_share_full_cohort": 0.003155403628714173,
+        "upper_share_full_cohort": 0.5544307125953195,
+        "bound_width": 0.5512753089666053
+      },
+      "Hertzsprung Basin": {
+        "observed_count": 12,
+        "lower_count": 12,
+        "upper_count": 4205,
+        "observed_share_among_nonblank": 0.0035159683562847933,
+        "lower_share_full_cohort": 0.0015777018143570865,
+        "upper_share_full_cohort": 0.5528530107809624,
+        "bound_width": 0.5512753089666053
+      },
+      "Landau": {
+        "observed_count": 7,
+        "lower_count": 7,
+        "upper_count": 4200,
+        "observed_share_among_nonblank": 0.0020509815411661296,
+        "lower_share_full_cohort": 0.0009203260583749671,
+        "upper_share_full_cohort": 0.5521956350249803,
+        "bound_width": 0.5512753089666053
+      },
+      "Limb": {
+        "observed_count": 6,
+        "lower_count": 6,
+        "upper_count": 4199,
+        "observed_share_among_nonblank": 0.0017579841781423966,
+        "lower_share_full_cohort": 0.0007888509071785432,
+        "upper_share_full_cohort": 0.5520641598737839,
+        "bound_width": 0.5512753089666053
+      },
+      "Moon": {
+        "observed_count": 280,
+        "lower_count": 280,
+        "upper_count": 4473,
+        "observed_share_among_nonblank": 0.08203926164664518,
+        "lower_share_full_cohort": 0.036813042334998686,
+        "upper_share_full_cohort": 0.588088351301604,
+        "bound_width": 0.5512753089666053
+      },
+      "Nemst": {
+        "observed_count": 3,
+        "lower_count": 3,
+        "upper_count": 4196,
+        "observed_share_among_nonblank": 0.0008789920890711983,
+        "lower_share_full_cohort": 0.0003944254535892716,
+        "upper_share_full_cohort": 0.5516697344201946,
+        "bound_width": 0.5512753089666053
+      },
+      "Ohm Crater": {
+        "observed_count": 68,
+        "lower_count": 68,
+        "upper_count": 4261,
+        "observed_share_among_nonblank": 0.019923820685613828,
+        "lower_share_full_cohort": 0.008940310281356823,
+        "upper_share_full_cohort": 0.5602156192479621,
+        "bound_width": 0.5512753089666053
+      },
+      "Orientale Basin": {
+        "observed_count": 74,
+        "lower_count": 74,
+        "upper_count": 4267,
+        "observed_share_among_nonblank": 0.021681804863756225,
+        "lower_share_full_cohort": 0.009729161188535366,
+        "upper_share_full_cohort": 0.5610044701551407,
+        "bound_width": 0.5512753089666053
+      },
+      "Pierrazzo Crater": {
+        "observed_count": 23,
+        "lower_count": 23,
+        "upper_count": 4216,
+        "observed_share_among_nonblank": 0.006738939349545854,
+        "lower_share_full_cohort": 0.0030239284775177492,
+        "upper_share_full_cohort": 0.554299237444123,
+        "bound_width": 0.5512753089666053
+      },
+      "Reiner Gamma": {
+        "observed_count": 24,
+        "lower_count": 24,
+        "upper_count": 4217,
+        "observed_share_among_nonblank": 0.007031936712569587,
+        "lower_share_full_cohort": 0.003155403628714173,
+        "upper_share_full_cohort": 0.5544307125953195,
+        "bound_width": 0.5512753089666053
+      },
+      "Sun": {
+        "observed_count": 81,
+        "lower_count": 81,
+        "upper_count": 4274,
+        "observed_share_among_nonblank": 0.023732786404922355,
+        "lower_share_full_cohort": 0.010649487246910333,
+        "upper_share_full_cohort": 0.5619247962135157,
+        "bound_width": 0.5512753089666053
+      },
+      "Sunrise": {
+        "observed_count": 181,
+        "lower_count": 181,
+        "upper_count": 4374,
+        "observed_share_among_nonblank": 0.05303252270729564,
+        "lower_share_full_cohort": 0.02379700236655272,
+        "upper_share_full_cohort": 0.5750723113331581,
+        "bound_width": 0.5512753089666053
+      },
+      "Sunset": {
+        "observed_count": 1553,
+        "lower_count": 1553,
+        "upper_count": 5746,
+        "observed_share_among_nonblank": 0.455024904775857,
+        "lower_share_full_cohort": 0.2041809098080463,
+        "upper_share_full_cohort": 0.7554562187746516,
+        "bound_width": 0.5512753089666053
+      },
+      "Terminator": {
+        "observed_count": 122,
+        "lower_count": 122,
+        "upper_count": 4315,
+        "observed_share_among_nonblank": 0.0357456782888954,
+        "lower_share_full_cohort": 0.016039968445963712,
+        "upper_share_full_cohort": 0.567315277412569,
+        "bound_width": 0.5512753089666053
+      },
+      "Unknown": {
+        "observed_count": 33,
+        "lower_count": 33,
+        "upper_count": 4226,
+        "observed_share_among_nonblank": 0.009668912979783182,
+        "lower_share_full_cohort": 0.004338679989481988,
+        "upper_share_full_cohort": 0.5556139889560873,
+        "bound_width": 0.5512753089666053
+      },
+      "Vavilov Crater": {
+        "observed_count": 67,
+        "lower_count": 67,
+        "upper_count": 4260,
+        "observed_share_among_nonblank": 0.019630823322590096,
+        "lower_share_full_cohort": 0.008808835130160399,
+        "upper_share_full_cohort": 0.5600841440967657,
+        "bound_width": 0.5512753089666053
+      },
+      "Whole Moon": {
+        "observed_count": 57,
+        "lower_count": 57,
+        "upper_count": 4250,
+        "observed_share_among_nonblank": 0.01670084969235277,
+        "lower_share_full_cohort": 0.007494083618196161,
+        "upper_share_full_cohort": 0.5587693925848015,
+        "bound_width": 0.5512753089666053
+      }
+    },
+    "sunset": {
+      "observed_count": 1553,
+      "lower_count": 1553,
+      "upper_count": 5746,
+      "observed_share_among_nonblank": 0.455024904775857,
+      "lower_share_full_cohort": 0.2041809098080463,
+      "upper_share_full_cohort": 0.7554562187746516,
+      "bound_width": 0.5512753089666053
+    },
+    "sunset_majority": {
+      "strict_majority_count": 3804,
+      "additional_blank_memberships_needed": 2251,
+      "required_fraction_of_blank_fields": 0.5368471261626521
+    },
+    "deterministic_completion_budgets": {
+      "10_percentage_points": {
+        "minimum_blank_fields_resolved": 3433,
+        "maximum_remaining_blank_fields": 760
+      },
+      "5_percentage_points": {
+        "minimum_blank_fields_resolved": 3813,
+        "maximum_remaining_blank_fields": 380
+      },
+      "1_percentage_point": {
+        "minimum_blank_fields_resolved": 4117,
+        "maximum_remaining_blank_fields": 76
+      }
+    },
+    "completion_witness": {
+      "source_rows": 7606,
+      "lower_sunset_count": 1553,
+      "upper_sunset_count": 5746,
+      "known_fields_preserved": true,
+      "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+      "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+    },
+    "extreme_assignments": {
+      "no_blank_fields_assigned_to_sunset": {
+        "sunset_count": 1553,
+        "cohort_count": 7606
+      },
+      "all_blank_fields_assigned_to_sunset": {
+        "sunset_count": 5746,
+        "cohort_count": 7606
+      }
+    }
+  },
+  "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+  "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+  "pixel_payload_bytes_opened": 0,
+  "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+  "next_step_logic": {
+    "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+    "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+    "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+    "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+    "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+  },
+  "checks": {
+    "stage11u_replays": true,
+    "source_identity": true,
+    "frozen_observables": true,
+    "equal_width_identity": true,
+    "sunset_extremes_materialized": true,
+    "claim_and_access_boundaries": true
+  },
+  "errors": [],
+  "hard_negatives": {
+    "call_blank_fields_negative": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "call_blank_fields_negative",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "call_nonblank_tags_validated": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "call_nonblank_tags_validated",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "narrow_sunset_bound_without_assumption": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "narrow_sunset_bound_without_assumption",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "call_lower_bound_prevalence": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "call_lower_bound_prevalence",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "call_upper_bound_prevalence": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "call_upper_bound_prevalence",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "call_marginal_bounds_simultaneous_distribution": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "call_marginal_bounds_simultaneous_distribution",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "call_bounds_physical_prevalence": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "call_bounds_physical_prevalence",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "generalize_beyond_frozen_cohort": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "generalize_beyond_frozen_cohort",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "claim_nasa_acceptance_novelty_or_priority": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "claim_nasa_acceptance_novelty_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 0,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_for_completion_bounds": {
+      "testbed_id": "artemis2-target-field-completion-bounds-stage11v",
+      "mutation": "open_pixels_for_completion_bounds",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "source_identity": {
+        "path": "results/stage10o-product-relationship-manifest.csv",
+        "bytes": 10072026,
+        "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+        "match": true
+      },
+      "metrics": {
+        "source_exposures": 7606,
+        "nonblank_target_fields": 3413,
+        "blank_target_fields": 4193,
+        "observed_target_field_values": 23,
+        "blank_share": 0.5512753089666053,
+        "bounds_by_target_field_value": {
+          "01_Discussion #1: Warm up": {
+            "observed_count": 39,
+            "lower_count": 39,
+            "upper_count": 4232,
+            "observed_share_among_nonblank": 0.011426897157925579,
+            "lower_share_full_cohort": 0.005127530896660531,
+            "upper_share_full_cohort": 0.5564028398632659,
+            "bound_width": 0.5512753089666053
+          },
+          "Aristarchus Plateau": {
+            "observed_count": 26,
+            "lower_count": 26,
+            "upper_count": 4219,
+            "observed_share_among_nonblank": 0.007617931438617052,
+            "lower_share_full_cohort": 0.0034183539311070208,
+            "upper_share_full_cohort": 0.5546936628977124,
+            "bound_width": 0.5512753089666053
+          },
+          "Deep Space": {
+            "observed_count": 25,
+            "lower_count": 25,
+            "upper_count": 4218,
+            "observed_share_among_nonblank": 0.00732493407559332,
+            "lower_share_full_cohort": 0.003286878779910597,
+            "upper_share_full_cohort": 0.5545621877465159,
+            "bound_width": 0.5512753089666053
+          },
+          "Earth": {
+            "observed_count": 692,
+            "lower_count": 692,
+            "upper_count": 4885,
+            "observed_share_among_nonblank": 0.2027541752124231,
+            "lower_share_full_cohort": 0.09098080462792532,
+            "upper_share_full_cohort": 0.6422561135945306,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthrise": {
+            "observed_count": 2,
+            "lower_count": 2,
+            "upper_count": 4195,
+            "observed_share_among_nonblank": 0.0005859947260474656,
+            "lower_share_full_cohort": 0.00026295030239284776,
+            "upper_share_full_cohort": 0.5515382592689981,
+            "bound_width": 0.5512753089666053
+          },
+          "Earthset": {
+            "observed_count": 14,
+            "lower_count": 14,
+            "upper_count": 4207,
+            "observed_share_among_nonblank": 0.004101963082332259,
+            "lower_share_full_cohort": 0.0018406521167499343,
+            "upper_share_full_cohort": 0.5531159610833553,
+            "bound_width": 0.5512753089666053
+          },
+          "Glushko Crater": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Hertzsprung Basin": {
+            "observed_count": 12,
+            "lower_count": 12,
+            "upper_count": 4205,
+            "observed_share_among_nonblank": 0.0035159683562847933,
+            "lower_share_full_cohort": 0.0015777018143570865,
+            "upper_share_full_cohort": 0.5528530107809624,
+            "bound_width": 0.5512753089666053
+          },
+          "Landau": {
+            "observed_count": 7,
+            "lower_count": 7,
+            "upper_count": 4200,
+            "observed_share_among_nonblank": 0.0020509815411661296,
+            "lower_share_full_cohort": 0.0009203260583749671,
+            "upper_share_full_cohort": 0.5521956350249803,
+            "bound_width": 0.5512753089666053
+          },
+          "Limb": {
+            "observed_count": 6,
+            "lower_count": 6,
+            "upper_count": 4199,
+            "observed_share_among_nonblank": 0.0017579841781423966,
+            "lower_share_full_cohort": 0.0007888509071785432,
+            "upper_share_full_cohort": 0.5520641598737839,
+            "bound_width": 0.5512753089666053
+          },
+          "Moon": {
+            "observed_count": 280,
+            "lower_count": 280,
+            "upper_count": 4473,
+            "observed_share_among_nonblank": 0.08203926164664518,
+            "lower_share_full_cohort": 0.036813042334998686,
+            "upper_share_full_cohort": 0.588088351301604,
+            "bound_width": 0.5512753089666053
+          },
+          "Nemst": {
+            "observed_count": 3,
+            "lower_count": 3,
+            "upper_count": 4196,
+            "observed_share_among_nonblank": 0.0008789920890711983,
+            "lower_share_full_cohort": 0.0003944254535892716,
+            "upper_share_full_cohort": 0.5516697344201946,
+            "bound_width": 0.5512753089666053
+          },
+          "Ohm Crater": {
+            "observed_count": 68,
+            "lower_count": 68,
+            "upper_count": 4261,
+            "observed_share_among_nonblank": 0.019923820685613828,
+            "lower_share_full_cohort": 0.008940310281356823,
+            "upper_share_full_cohort": 0.5602156192479621,
+            "bound_width": 0.5512753089666053
+          },
+          "Orientale Basin": {
+            "observed_count": 74,
+            "lower_count": 74,
+            "upper_count": 4267,
+            "observed_share_among_nonblank": 0.021681804863756225,
+            "lower_share_full_cohort": 0.009729161188535366,
+            "upper_share_full_cohort": 0.5610044701551407,
+            "bound_width": 0.5512753089666053
+          },
+          "Pierrazzo Crater": {
+            "observed_count": 23,
+            "lower_count": 23,
+            "upper_count": 4216,
+            "observed_share_among_nonblank": 0.006738939349545854,
+            "lower_share_full_cohort": 0.0030239284775177492,
+            "upper_share_full_cohort": 0.554299237444123,
+            "bound_width": 0.5512753089666053
+          },
+          "Reiner Gamma": {
+            "observed_count": 24,
+            "lower_count": 24,
+            "upper_count": 4217,
+            "observed_share_among_nonblank": 0.007031936712569587,
+            "lower_share_full_cohort": 0.003155403628714173,
+            "upper_share_full_cohort": 0.5544307125953195,
+            "bound_width": 0.5512753089666053
+          },
+          "Sun": {
+            "observed_count": 81,
+            "lower_count": 81,
+            "upper_count": 4274,
+            "observed_share_among_nonblank": 0.023732786404922355,
+            "lower_share_full_cohort": 0.010649487246910333,
+            "upper_share_full_cohort": 0.5619247962135157,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunrise": {
+            "observed_count": 181,
+            "lower_count": 181,
+            "upper_count": 4374,
+            "observed_share_among_nonblank": 0.05303252270729564,
+            "lower_share_full_cohort": 0.02379700236655272,
+            "upper_share_full_cohort": 0.5750723113331581,
+            "bound_width": 0.5512753089666053
+          },
+          "Sunset": {
+            "observed_count": 1553,
+            "lower_count": 1553,
+            "upper_count": 5746,
+            "observed_share_among_nonblank": 0.455024904775857,
+            "lower_share_full_cohort": 0.2041809098080463,
+            "upper_share_full_cohort": 0.7554562187746516,
+            "bound_width": 0.5512753089666053
+          },
+          "Terminator": {
+            "observed_count": 122,
+            "lower_count": 122,
+            "upper_count": 4315,
+            "observed_share_among_nonblank": 0.0357456782888954,
+            "lower_share_full_cohort": 0.016039968445963712,
+            "upper_share_full_cohort": 0.567315277412569,
+            "bound_width": 0.5512753089666053
+          },
+          "Unknown": {
+            "observed_count": 33,
+            "lower_count": 33,
+            "upper_count": 4226,
+            "observed_share_among_nonblank": 0.009668912979783182,
+            "lower_share_full_cohort": 0.004338679989481988,
+            "upper_share_full_cohort": 0.5556139889560873,
+            "bound_width": 0.5512753089666053
+          },
+          "Vavilov Crater": {
+            "observed_count": 67,
+            "lower_count": 67,
+            "upper_count": 4260,
+            "observed_share_among_nonblank": 0.019630823322590096,
+            "lower_share_full_cohort": 0.008808835130160399,
+            "upper_share_full_cohort": 0.5600841440967657,
+            "bound_width": 0.5512753089666053
+          },
+          "Whole Moon": {
+            "observed_count": 57,
+            "lower_count": 57,
+            "upper_count": 4250,
+            "observed_share_among_nonblank": 0.01670084969235277,
+            "lower_share_full_cohort": 0.007494083618196161,
+            "upper_share_full_cohort": 0.5587693925848015,
+            "bound_width": 0.5512753089666053
+          }
+        },
+        "sunset": {
+          "observed_count": 1553,
+          "lower_count": 1553,
+          "upper_count": 5746,
+          "observed_share_among_nonblank": 0.455024904775857,
+          "lower_share_full_cohort": 0.2041809098080463,
+          "upper_share_full_cohort": 0.7554562187746516,
+          "bound_width": 0.5512753089666053
+        },
+        "sunset_majority": {
+          "strict_majority_count": 3804,
+          "additional_blank_memberships_needed": 2251,
+          "required_fraction_of_blank_fields": 0.5368471261626521
+        },
+        "deterministic_completion_budgets": {
+          "10_percentage_points": {
+            "minimum_blank_fields_resolved": 3433,
+            "maximum_remaining_blank_fields": 760
+          },
+          "5_percentage_points": {
+            "minimum_blank_fields_resolved": 3813,
+            "maximum_remaining_blank_fields": 380
+          },
+          "1_percentage_point": {
+            "minimum_blank_fields_resolved": 4117,
+            "maximum_remaining_blank_fields": 76
+          }
+        },
+        "completion_witness": {
+          "source_rows": 7606,
+          "lower_sunset_count": 1553,
+          "upper_sunset_count": 5746,
+          "known_fields_preserved": true,
+          "csv_sha256": "ad21d266cea32f783c81b766a72021d228b345d7119e200db3dbb33f0dd653e3",
+          "interpretation": "Two possible binary field completions, not imputed physical labels or training data."
+        },
+        "extreme_assignments": {
+          "no_blank_fields_assigned_to_sunset": {
+            "sunset_count": 1553,
+            "cohort_count": 7606
+          },
+          "all_blank_fields_assigned_to_sunset": {
+            "sunset_count": 5746,
+            "cohort_count": 7606
+          }
+        }
+      },
+      "finding": "With observed nonblank fields fixed and blanks unconstrained one target-field value at a time, Sunset spans 20.418% to 75.546% of the frozen cohort. The 55.128 percentage-point interval is the blank-field share, not an estimate of physical prevalence.",
+      "decision_use": "Report tagged-subset balance together with full-cohort completion bounds. Narrow the interval only with a declared label audit or another independently justified constraint on blank fields.",
+      "pixel_payload_bytes_opened": 1,
+      "claim_ceiling": "Stage 11V may establish that, if the 3,413 observed nonblank target fields are held fixed and the 4,193 blank fields are unconstrained for one target-field value at a time, Sunset's completed full-cohort field share can range from 1,553 of 7,606 (20.418%) to 5,746 of 7,606 (75.546%). The 55.128 percentage-point width equals the blank-field share, and the same marginal width applies to every observed target-field value. These are sharp bounds for completing the current metadata field under the stated assumptions. Direct arithmetic also supports the strict field-majority tipping point and minimum individual-field resolutions for declared worst-case width guarantees. They are marginal constraints, not a joint multiclass distribution; all intervals hold for a completed single-valued field but their upper endpoints cannot all be attained together. They are not validated labels, physical target prevalence, image-content inference, model behavior, statistical sample-size requirements, confidence intervals, physical-truth guarantees, or evidence of NASA acceptance, novelty, or priority.",
+      "next_step_logic": {
+        "if_narrower_bounds_are_needed": "Declare the job first. Resolving individual blank fields narrows the deterministic worst-case width by one over the frozen cohort size per field. Sample-based estimation needs a declared sampling design, label oracle, dependence treatment and uncertainty model; it is not a deterministic field-completion guarantee. Do not narrow by convenience.",
+        "if_target_modeling_is_selected": "Treat label audit and missingness analysis as prerequisites. Report the completion bounds beside any tagged-subset class balance.",
+        "if_public_explanation_is_selected": "Use Sunset as the concrete example and state that the interval concerns metadata-field completion, not physical prevalence.",
+        "if_no_target_task_is_selected": "Preserve this receipt as a selection guard and do not manufacture labels.",
+        "recheck_trigger": "A revised archive snapshot, validated relabeling sample, or task-specific audit of blank fields."
+      },
+      "checks": {
+        "stage11u_replays": true,
+        "source_identity": true,
+        "frozen_observables": true,
+        "equal_width_identity": true,
+        "sunset_extremes_materialized": true,
+        "claim_and_access_boundaries": false
+      },
+      "errors": [
+        "A prohibited label, bound, distribution, prevalence, scope, acceptance, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

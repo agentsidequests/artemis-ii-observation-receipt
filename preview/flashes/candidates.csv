@@ -1,0 +1,7 @@
+candidate_id,label,disposition,mapping_state,witness_marks
+event-1,Annotated event 1,accepted,not assigned one-to-one to a transcript anchor,1
+event-2,Annotated event 2,accepted,not assigned one-to-one to a transcript anchor,2
+event-3,Annotated event 3,accepted,not assigned one-to-one to a transcript anchor,1
+event-4,Annotated event 4,accepted,not assigned one-to-one to a transcript anchor,3
+event-5,Annotated event 5,accepted,not assigned one-to-one to a transcript anchor,1
+shared-transcript-report,Shared transcript report at 00:51,ambiguous,"contextual report, not mapped one-to-one to a numbered annotation event",2

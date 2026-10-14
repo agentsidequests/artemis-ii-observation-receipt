@@ -1,0 +1,91 @@
+{
+  "testbed_id": "artemis2-specialist-pressure-test-stage6b",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T00:30:00Z",
+  "question": "Does the Stage 6A 10-60x below-object-resolution interpretation remain decision-worthy after specialist lunar-roughness and visual-perception literature distinguishes measurement baseline, map support, visual target, and recognition task?",
+  "terminal_objective": "Prevent an exciting but non-commensurate ratio from controlling the public analysis, then preserve the smallest test that could produce a genuinely new and scientifically interpretable result from the Artemis II archive.",
+  "baseline": "Stage 6A correctly joins two NASA-published numbers but treats a nominal LOLA roughness baseline and a task-specific object-recognition bound as if their ratio measured the crew's perceptual reach.",
+  "treatment": "Pressure-test each inferential link against the exact NASA report language, LOLA roughness methodology, and primary subresolution-texture psychophysics; distinguish arithmetic validity from explanatory validity; then freeze a held-out semantic-to-map concordance test.",
+  "authority": {
+    "source_truth": "NASA/PDS and the cited primary lunar-roughness and visual-perception literature",
+    "testbed_truth": "This frozen Stage 6B contract, runner, tests, and receipts",
+    "scientific_acceptance": "Qualified lunar remote-sensing and vision-science specialists",
+    "publication_acceptance": "Paul",
+    "prohibited_effects": [
+      "No headline or conclusion that uses 10-60x as a measure of human perceptual reach",
+      "No equation of a LOLA measurement baseline with the size of an object the crew saw",
+      "No conversion of one Rimae Sirsalis recognition case into a universal acuity floor",
+      "No transfer of hair-like line-texture psychophysics to lunar terrain as a validated mechanism",
+      "No claim that NASA's Orientale comparison is a Testbed discovery",
+      "No public novelty claim from absence in a bounded search"
+    ]
+  },
+  "source_evidence": {
+    "path": "evidence/stage6b/specialist-source-extracts.json",
+    "sha256": "14eca510844d2047ece67702cea69eba41a192048d9ec99403eeb8c10ae7d602",
+    "required_source_ids": [
+      "nasa_orientale_comparison",
+      "nasa_resolution_case_scope",
+      "rosenburg_lola_roughness_method",
+      "nasa_lola_product_definition",
+      "subresolution_texture_psychophysics_scope",
+      "bounded_semantic_concordance_search"
+    ],
+    "expected_preliminary_report_sha256": "edf4a22f7451b404c7eb85210e357bd5809a34aff79b07ccf8d57a9ca53748fa"
+  },
+  "distinctions": {
+    "roughness_measurement_baseline": "The horizontal separation over which slope or height deviation is computed, ranging from tens of meters to kilometers in the cited LOLA methods.",
+    "roughness_map_support": "The larger regional window over which many measurements are aggregated and displayed, commonly several to tens of kilometers in the cited products.",
+    "visible_pattern_extent": "The spatial extent of a regional boundary, ring, ray, or texture pattern available to the observer; it is not established by the roughness baseline.",
+    "recognized_object_size": "The dimension of a particular feature identified under a particular range, contrast, illumination, viewing-angle, and task condition.",
+    "claim": "These four quantities are not interchangeable and their raw ratio does not by itself measure sub-resolution perception."
+  },
+  "adjudication": {
+    "stage6a_ratio_arithmetic": "CORRECT",
+    "stage6a_ratio_commensurability": "REJECTED_UNLIKE_QUANTITIES",
+    "stage6a_ratio_explanatory_status": "NON_DIAGNOSTIC",
+    "nasa_orientale_component_status": "ALREADY_PUBLISHED_QUALITATIVE_CONCORDANCE",
+    "rimae_resolution_status": "TASK_SPECIFIC_BOUND_NOT_GLOBAL_FLOOR",
+    "psychophysics_transfer_status": "PLAUSIBILITY_ONLY_NO_ARTEMIS_VALIDATION",
+    "public_lead_status": "STOP_10_60X_HEADLINE"
+  },
+  "replacement_candidate": {
+    "id": "held_out_semantic_cross_instrument_concordance",
+    "state": "BOUNDED_TEST_CANDIDATE",
+    "question": "Across Artemis II observations not used in NASA's Orientale example, do blindly coded crew texture descriptors predict independent terrain layers better than competing layers and simple large-scale morphology?",
+    "baseline": "NASA's one-case qualitative Orientale concordance and generic human-context narrative.",
+    "treatment": "Blind-code texture terms by target, time, observer, and optical tool; localize each episode using existing target, image, annotation, and geometry evidence; compare predeclared LOLA roughness scales against Diviner rock abundance, topography, albedo, and large-scale geologic-unit controls; reserve Orientale as prior evidence rather than evaluation data.",
+    "oracle": "A predeclared held-out result must show that texture-language classifications discriminate one or more roughness products beyond competing map layers and large-scale unit identity, with viewing geometry and optical tool recorded as covariates.",
+    "hard_negative": "If performance disappears after controlling for broad terrain class, illumination, view geometry, or map-layer correlation, retain NASA's qualitative one-case result and stop.",
+    "burden_ceiling": "Metadata, transcripts, existing annotations, and bounded map subsets only; no bulk archive download or publication.",
+    "novelty_ceiling": "NOVELTY_UNESTABLISHED until a held-out result survives and current prior art is rechecked."
+  },
+  "expected_result": {
+    "evidence_state": "VERIFIED_SPECIALIST_PRESSURE_CORRECTION",
+    "disposition": "STOP_QUANTIFIED_HEADLINE_CONTINUE_BOUNDED_TEST",
+    "retired_claim": "orientale_aggregate_texture_10_60x_below_object_resolution",
+    "selected_candidate_id": "held_out_semantic_cross_instrument_concordance",
+    "network_bytes_in_scored_verification": 0
+  },
+  "hard_negatives": [
+    "equate_baseline_with_visible_object_size",
+    "promote_rimae_case_to_global_acuity_floor",
+    "transfer_hair_texture_mechanism_to_lunar_terrain",
+    "claim_nasa_orientale_component_as_new",
+    "retain_10_60x_as_public_headline",
+    "use_orientale_as_both_prior_and_held_out_test"
+  ],
+  "claim_ceiling": [
+    "NASA already reports one qualitative correspondence between crew-described Orientale texture and a LOLA roughness map rather than a Diviner rock-abundance map.",
+    "The Stage 6A 10-60x arithmetic is numerically correct but compares a roughness measurement baseline with a task-specific object-recognition bound; it is not a validated measure of perceptual reach.",
+    "LOLA roughness products aggregate short-baseline measurements into regional map patterns, so concordance does not show that the crew directly or indirectly sensed individual hectometer-scale features.",
+    "Primary psychophysics supports subresolution texture discrimination under controlled line-texture conditions but does not validate an Artemis II lunar-terrain mechanism.",
+    "A held-out multi-target semantic-to-map comparison could establish a new bounded relation; no such result exists yet."
+  ],
+  "next_step_logic": {
+    "recommended": "Do not draft the 10-60x article. Run the smallest held-out semantic cross-instrument concordance canary on non-Orientale observations first.",
+    "why": "It replaces a non-diagnostic ratio with a falsifiable result that could distinguish genuine terrain information in crew language from broad geology, illumination, and correlated map layers.",
+    "fallback": "If localization or independent controls are inadequate, publish no new scientific claim; retain NASA's qualitative human-plus-instrument interpretation and use the archive only as a methodological case study.",
+    "stop": "Do not widen to full-archive imagery, train on Orientale and test on Orientale, or revive the sub-resolution headline without a task-native specialist oracle."
+  }
+}

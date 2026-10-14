@@ -1,0 +1,23 @@
+{
+  "receipt_id": "artemis2-stage2b-fd05-cluster-probe-v1",
+  "observed_at_utc": "2026-10-09T21:06:59Z",
+  "purpose": "Resolve only the collection path for the contiguous 031154-031261 SAW3 identity cluster after the frozen fd06 path stopped.",
+  "method": "One-byte HTTP range probes against the exact first and last cluster identities under fd05 and fd06.",
+  "probes": [
+    {
+      "product_number": 31154,
+      "fd05_http_status": 206,
+      "fd05_body_bytes": 1,
+      "fd06_http_status": 403,
+      "fd06_body_bytes": 111
+    },
+    {
+      "product_number": 31261,
+      "fd05_http_status": 206,
+      "fd05_body_bytes": 1,
+      "fd06_http_status": 403,
+      "fd06_body_bytes": 111
+    }
+  ],
+  "bounded_use": "The probe permits only the frozen fd05 path override for this contiguous identity cluster. Every downloaded label must still declare flight day 5; the probe does not admit image payloads or infer acquisition time."
+}

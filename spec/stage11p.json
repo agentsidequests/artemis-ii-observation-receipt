@@ -1,0 +1,49 @@
+{
+  "testbed_id": "artemis2-stage11p-overlap-pixel-screen",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T22:55:00Z",
+  "question": "What can the bounded overlapping SAW3 clip establish about camera context and a brightness pulse near the shared crew report?",
+  "baseline": "Timing overlap alone is treated as if the vehicle camera independently tested the crew event.",
+  "treatment": "Verify the extracted clip, measure the threshold-defined lunar image footprint, and screen a frozen region of interest for brightness excursions across all frames and around the report time.",
+  "oracle": "Pass only when the exact clip identity and video geometry reproduce, all frames decode, the apparent lunar footprint is reported with its pixel threshold, and any pulse result remains a screen rather than an exclusion or photometric measurement.",
+  "authority": "Private local screening of a transcoded bounded clip. No impact confirmation, exclusion, photometry, source-pixel equivalence, annotated-event mapping, or NASA acceptance.",
+  "source": {
+    "path": "evidence/stage11o/derived/art002m1010962338_saw3_005110_005125_stage11o.mp4",
+    "bytes": 666376,
+    "sha256": "a2dc14c6060de9bb8858d4d9d49b207c99d6dacdd5943fb84bb3448f67762eec",
+    "clip_start_utc": "2026-04-07T00:51:10Z",
+    "crew_report_utc": "2026-04-07T00:51:15.947Z",
+    "transcode_note": "The bounded clip was decoded and re-encoded by FFmpeg. Geometry is preserved, but values are not source-pixel photometry."
+  },
+  "video_oracle": {
+    "width": 1280,
+    "height": 720,
+    "frames": 900,
+    "frame_rate_numerator": 60000,
+    "frame_rate_denominator": 1001,
+    "duration_seconds": 15.015
+  },
+  "screen": {
+    "roi": {"x0": 340, "y0": 90, "x1": 410, "y1": 160},
+    "bright_pixel_threshold_gray": 10,
+    "event_window_before_seconds": 2.0,
+    "event_window_after_seconds": 1.0,
+    "robust_z_screen_threshold": 6.0,
+    "relative_increase_screen_threshold": 0.2,
+    "moon_diameter_km": 3474.8
+  },
+  "claim_boundaries": {
+    "screen_is_photometric_measurement": false,
+    "no_screened_pulse_excludes_crew_event": false,
+    "timing_overlap_maps_to_annotated_event": false,
+    "transcoded_pixels_equal_source_pixels": false,
+    "apparent_pixel_width_is_optical_resolution": false
+  },
+  "next_step_logic": {
+    "if_no_screened_pulse": "Classify the clip as contextual overlap with no screened pulse, not as an event exclusion.",
+    "if_screened_pulse": "Inspect source packets and adjacent frames, reject compression and platform artifacts, and reconcile event timing before changing the event receipt.",
+    "if_lunar_footprint_is_tiny": "Use the result to explain why a dedicated narrow-field calibrated sensor is required for localization and photometry.",
+    "if_source_pixels_are_needed": "Design a separate bounded packet-preserving extraction. Do not promote the transcoded screen.",
+    "stop": "Do not widen to channel 2 or a full-source download solely because this screen is inconclusive."
+  }
+}

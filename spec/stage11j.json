@@ -1,0 +1,47 @@
+{
+  "testbed_id": "artemis2-rank-reversal-attribution-stage11j",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T16:10:00Z",
+  "question": "Can the 38 action-to-product plan-window rank reversals be attributed exactly to exposure-protocol composition rather than the constant representation layer?",
+  "terminal_objective": "Partition every strictly comparable active-window pair by equal versus unequal products per action, verify the direction of every reversal, and connect the arithmetic to the independently verified three-representation factorization without inferring scientific importance or model behavior.",
+  "method": "Replay the Stage 11F window census and Stage 11I factorization. For each unordered active-window pair with unequal action and product totals, compare ordering and exact products-per-action ratios. Require every reversal to occur across unequal rates, require the higher-action window to have the lower rate, and require products/action to equal three times exposures/action for every window.",
+  "authority": "Private local relationship and accounting analysis only. No pixels, scientific-importance ranking, actual sampler, observed model behavior, causal effect, formal informative-cluster-size diagnosis, universal correction, deletion recommendation, archive-wide extrapolation, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11f_spec_path": "spec/stage11f.json",
+    "stage11i_spec_path": "spec/stage11i.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "active_plan_windows": 36,
+    "strictly_comparable_action_product_pairs": 621,
+    "equal_product_rate_comparable_pairs": 222,
+    "unequal_product_rate_comparable_pairs": 399,
+    "equal_product_rate_reversals": 0,
+    "unequal_product_rate_reversals": 38,
+    "all_reversals_cross_unequal_product_rates": true,
+    "all_higher_action_windows_have_lower_product_rate": true,
+    "all_window_product_rates_equal_three_times_exposure_rates": true,
+    "constant_representations_per_capture": 3
+  },
+  "disposition": "ADMIT_PROTOCOL_ATTRIBUTION_OF_PRODUCT_RANK_REVERSALS",
+  "hard_negatives": [
+    "claim_scientific_importance_ranking",
+    "claim_actual_sampler_is_uniform_products",
+    "claim_observed_model_bias",
+    "claim_causal_performance_effect",
+    "call_formal_informative_cluster_size",
+    "claim_one_universal_correct_weighting",
+    "recommend_discarding_representations_or_brackets",
+    "generalize_to_unadmitted_archive_records",
+    "claim_novelty_or_priority",
+    "open_pixels_during_attribution"
+  ],
+  "claim_ceiling": "Stage 11J may establish that all 38 action-to-product ordering reversals among the 621 strictly comparable active-window pairs occur across unequal products-per-action rates, that the higher-action window has the lower rate in every reversal, and that each window's product rate is exactly three times its exposure rate under the verified constant representation layer. It may therefore attribute these in-cohort product-rank reversals arithmetically to exposure-protocol composition rather than representation-count variation. It cannot interpret the rankings as scientific importance, assert an actual sampler or observed model bias, infer a causal outcome effect or formal informative cluster size, nominate a universal correction, recommend deleting intentional products, extend beyond the admitted active windows, or make a novelty, priority, or physical-science claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Use one exact reversal, then state the general result: all 38 product-rank reversals require unequal products/action, and constant representation parity leaves exposure-protocol composition as the varying multiplicity.",
+    "if_a_model_task_is_selected": "Declare the outer estimand and preserve the nested product, capture, action, segment, and event keys; do not repair weighting by deleting representations or brackets.",
+    "if_representation_parity_changes": "Withdraw the attribution and recompute, because representation variation could then contribute to relative product weight.",
+    "recheck_trigger": "A revised action oracle, plan ledger, window set, relationship manifest, representation inventory, or actual sampler."
+  }
+}

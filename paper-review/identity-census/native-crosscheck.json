@@ -1,0 +1,26 @@
+{
+  "status": "PASS_IMPLEMENTATION_DIVERSE_SOURCE_RECOUNT",
+  "checks": {
+    "raw_records": 10329,
+    "unique_raw_identifiers": 10329,
+    "strict_candidate_groups": 24,
+    "strict_candidate_records": 48,
+    "core_candidate_groups": 24,
+    "day4_candidate_groups": 21,
+    "day6_candidate_groups": 3,
+    "serial3920019_candidate_groups": 24,
+    "candidate_target_conflicts": 21,
+    "candidate_groups_no_counted_key": 23,
+    "candidate_groups_one_counted_key": 1,
+    "candidate_groups_two_counted_keys": 0,
+    "manifest_products": 22818,
+    "manifest_capture_keys": 7606,
+    "manifest_actions": 2166,
+    "tied_sort_keys": 101,
+    "records_in_ties": 222,
+    "ties_with_different_recorded_times": 77,
+    "ties_with_different_file_numbers": 77,
+    "ties_spanning_flight_days": 0
+  },
+  "limits": "Independently recounts frozen metadata, pair membership and numeric sort-key ties. Does not implement action reconstruction, certify physical identity or independently establish source truth."
+}

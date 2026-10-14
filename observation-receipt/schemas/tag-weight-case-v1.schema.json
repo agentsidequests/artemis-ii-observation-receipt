@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Separate source-bound target-weight case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["case_kind", "case_version", "case_id", "title", "sources", "defaults"],
+  "properties": {
+    "case_kind": {"const": "tag_weight_robustness"},
+    "case_version": {"const": "1.0.0"},
+    "case_id": {"const": "artemis-ii-tag-weight-robustness"},
+    "title": {"type": "string", "minLength": 1},
+    "sources": {
+      "type": "object", "additionalProperties": false,
+      "required": ["contract", "result", "manifest"],
+      "properties": {"contract": {"$ref": "#/$defs/source"}, "result": {"$ref": "#/$defs/source"}, "manifest": {"$ref": "#/$defs/source"}}
+    },
+    "defaults": {
+      "type": "object", "additionalProperties": false, "required": ["unit", "population", "budget"],
+      "properties": {
+        "unit": {"enum": ["exposure_fields", "products", "data_source_bytes", "data_raw_bytes", "data_processed_bytes", "all_representation_bytes"]},
+        "population": {"enum": ["full_cohort", "frozen_nonblank_subset"]},
+        "budget": {"enum": [0, 1, 25, 47, 48, 50, 100, 200], "type": "integer"}
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object", "additionalProperties": false, "required": ["path", "bytes", "sha256"],
+      "properties": {"path": {"type": "string", "minLength": 1}, "bytes": {"type": "integer", "minimum": 1}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+    }
+  }
+}

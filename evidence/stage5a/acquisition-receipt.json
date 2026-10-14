@@ -1,0 +1,172 @@
+{
+  "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+  "version": "0.5.1",
+  "run_started_utc": "2026-10-09T20:27:26Z",
+  "spec_path": "spec/stage5a.json",
+  "spec_sha256": "a29db2afe64f354499944e3a328bf1296677aac44c3bf43d33ab78f192f82df8",
+  "source_url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+  "source_expected_bytes": 2960238197,
+  "budget_limit_bytes": 67108864,
+  "subset": {
+    "start_utc": "2026-04-07T00:51:10Z",
+    "end_utc": "2026-04-07T00:51:25Z",
+    "source_offset_seconds": 4379,
+    "duration_seconds": 15,
+    "first_report_utc": "2026-04-07T00:51:15.947Z"
+  },
+  "runtime": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "python_executable": "[local-runtime-path-redacted]",
+    "ffmpeg": "[local-runtime-path-redacted]",
+    "ffprobe": "[local-runtime-path-redacted]"
+  },
+  "state": "BUDGET_EXHAUSTED",
+  "requests": [
+    {
+      "method": "HEAD",
+      "status": 200,
+      "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+      "content_length": "2960238197",
+      "accept_ranges": "bytes",
+      "etag": "\"0eae3bb25deff48c955bc1e7480a7022\"",
+      "last_modified": "Tue, 06 Oct 2026 14:22:33 GMT",
+      "media_body_bytes": 0,
+      "elapsed_seconds": 0.379
+    },
+    {
+      "method": "GET",
+      "purpose": "initial_container_probe",
+      "requested_range": "bytes=0-1048575",
+      "media_body_bytes": 1048576,
+      "status": 206,
+      "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+      "content_range": "bytes 0-1048575/2960238197",
+      "content_length": "1048576",
+      "elapsed_seconds": 0.485
+    },
+    {
+      "method": "GET",
+      "purpose": "top_level_atom_header",
+      "requested_range": "bytes=2929948257-2929948272",
+      "media_body_bytes": 16,
+      "status": 206,
+      "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+      "content_range": "bytes 2929948257-2929948272/2960238197",
+      "content_length": "16",
+      "elapsed_seconds": 0.355
+    },
+    {
+      "method": "GET",
+      "purpose": "ffmpeg_proxy",
+      "requested_range": "bytes=0-33554431",
+      "media_body_bytes": 33554432,
+      "status": 206,
+      "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+      "content_range": "bytes 0-33554431/2960238197",
+      "content_length": "33554432",
+      "elapsed_seconds": 18.441
+    },
+    {
+      "method": "GET",
+      "purpose": "ffmpeg_proxy",
+      "requested_range": "bytes=2929948257-2960238196",
+      "media_body_bytes": 65536,
+      "status": 206,
+      "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+      "content_range": "bytes 2929948257-2960238196/2960238197",
+      "content_length": "30289940",
+      "classification": "TRANSPORT_ERROR",
+      "error": "[WinError 10053] An established connection was aborted by the software in your host machine",
+      "elapsed_seconds": 0.487
+    },
+    {
+      "method": "GET",
+      "purpose": "ffmpeg_proxy",
+      "requested_range": "bytes=25189619-57629922",
+      "media_body_bytes": 32440304,
+      "status": 206,
+      "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+      "content_range": "bytes 25189619-57629922/2960238197",
+      "content_length": "32440304",
+      "elapsed_seconds": 18.119
+    }
+  ],
+  "head": {
+    "method": "HEAD",
+    "status": 200,
+    "final_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+    "content_length": "2960238197",
+    "accept_ranges": "bytes",
+    "etag": "\"0eae3bb25deff48c955bc1e7480a7022\"",
+    "last_modified": "Tue, 06 Oct 2026 14:22:33 GMT",
+    "media_body_bytes": 0,
+    "elapsed_seconds": 0.379
+  },
+  "top_level_atoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "size": 32,
+      "header_bytes": 8
+    },
+    {
+      "type": "free",
+      "offset": 32,
+      "size": 8,
+      "header_bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 40,
+      "size": 2929948217,
+      "header_bytes": 8
+    },
+    {
+      "type": "moov",
+      "offset": 2929948257,
+      "size": 30289940,
+      "header_bytes": 8
+    }
+  ],
+  "ffmpeg": {
+    "command": [
+      "[local-runtime-path-redacted]",
+      "-nostdin",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-rw_timeout",
+      "15000000",
+      "-ss",
+      "4379",
+      "-i",
+      "http://127.0.0.1:7451/video.mp4",
+      "-t",
+      "15",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "ultrafast",
+      "-crf",
+      "18",
+      "-pix_fmt",
+      "yuv420p",
+      "-movflags",
+      "+faststart",
+      "-y",
+      "work\\stage5a\\stage5a-partial.mp4"
+    ],
+    "exit_code": 3199971767,
+    "elapsed_seconds": 37.665,
+    "stdout": "",
+    "stderr": "[http @ 00000233859a5f40] Error reading HTTP response: Error number -138 occurred\n[http @ 00000233859a5f40] Error reading HTTP response: End of file\n[http @ 00000233859a5f40] Error reading HTTP response: Error number -138 occurred\n[http @ 00000233859a5f40] Error reading HTTP response: Error number -10053 occurred\n[in#0 @ 00000233859a5c80] moov atom not found\n[in#0 @ 0000023385a01ac0] Error opening input: Invalid data found when processing input\nError opening input file http://127.0.0.1:7451/video.mp4.\nError opening input files: Invalid data found when processing input\n",
+    "timed_out": false
+  },
+  "stop_reason": "Aggregate media-byte budget was exhausted",
+  "accepted_media_body_bytes": 67108864,
+  "budget_remaining_bytes": 0,
+  "run_finished_utc": "2026-10-09T20:28:05Z"
+}

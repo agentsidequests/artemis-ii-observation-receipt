@@ -1,0 +1,59 @@
+{
+  "testbed_id": "artemis2-task-representation-fitness-stage10v",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T14:18:00Z",
+  "question": "Does the largest image-representation layer also provide the strongest scientific measurement state, or does task fitness diverge from byte footprint?",
+  "terminal_objective": "Convert the verified source/raw/processed byte ledger and the Data User Guide's processing limits into a task-conditioned representation gate without opening pixels or judging archive quality.",
+  "method": "Replay the Stage 10L complete-action cohort and Stage 10S plan-bounded Sunset block, compute representation byte shares, verify the guide's source/raw/processed semantics and no-calibrated-product boundary, and map five predeclared task intents to the narrowest admissible representation state.",
+  "authority": "Private local metadata and document analysis only. No pixels, calibration, color or photometric measurement, representation-quality ranking, archive-waste claim, scientific-content-loss claim, model-performance claim, publication, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10l_spec_path": "spec/stage10l.json",
+    "stage10s_spec_path": "spec/stage10s.json",
+    "data_user_guide_path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "cohort_total_bytes": 1625281365343,
+    "cohort_source_bytes": 150708337459,
+    "cohort_raw_bytes": 370489806656,
+    "cohort_processed_bytes": 1104083221228,
+    "cohort_source_byte_share": 0.09272753670389523,
+    "cohort_raw_byte_share": 0.22795425737119165,
+    "cohort_processed_byte_share": 0.6793182059249131,
+    "cohort_processed_to_source_byte_ratio": 7.325959796539885,
+    "sunset_total_bytes": 200901668231,
+    "sunset_source_bytes": 17257373901,
+    "sunset_raw_bytes": 46133066720,
+    "sunset_processed_bytes": 137511227610,
+    "sunset_processed_byte_share": 0.6844703123713605,
+    "calibrated_product_tiers": 0
+  },
+  "task_representation_gate": {
+    "preserve_original_native_pixels_and_metadata": "source",
+    "open_standardized_bayer_array_analysis": "raw",
+    "human_viewable_vendor_interpretation": "processed",
+    "instrument_independent_physical_measurement": "none_available",
+    "quantitatively_verified_color": "none_available"
+  },
+  "hard_negatives": [
+    "call_processed_products_calibrated",
+    "call_raw_products_calibrated",
+    "rank_largest_representation_as_best",
+    "call_processed_products_scientifically_invalid",
+    "call_representations_wasteful_duplicates",
+    "infer_specific_pixel_artifact",
+    "claim_quantitative_color_available",
+    "generalize_byte_shares_to_all_archive_products",
+    "claim_scientific_discovery_or_priority",
+    "open_pixels_for_representation_gate"
+  ],
+  "claim_ceiling": "Stage 10V may establish that processed TIFFs occupy 67.932% of bytes in the verified complete-action cohort and 68.447% in the fixed Sunset block while the Data User Guide defines all crew-camera products as uncalibrated and warns that processed colors cannot be completely verified or quantified. It may establish a task-conditioned representation gate: source preserves native pixels and metadata, raw exposes the Bayer array in an open archival format, processed provides a viewable vendor interpretation, and none is a calibrated physical-unit or quantitatively verified-color product. It cannot rank one representation universally, call any tier defective or wasteful, infer a specific pixel artifact, measure color or photometry, infer scientific-content loss, generalize byte shares beyond the frozen cohorts, or claim scientific discovery, novelty, or priority.",
+  "next_step_logic": {
+    "if_visual_review_is_selected": "Use processed or browse products as interpreted viewing carriers while keeping their uncalibrated status explicit.",
+    "if_bayer_level_analysis_is_selected": "Use raw products and preserve source products for provenance; freeze any autoscaling, demosaicing, and calibration assumptions separately.",
+    "if_quantitative_color_or_photometry_is_selected": "Stop: no archived tier supplies instrument-independent calibrated values or fully verified color without an external calibration and validation design.",
+    "if_download_budget_is_selected": "Choose representation after the task, not by treating the largest byte tier as the strongest evidence tier.",
+    "recheck_trigger": "A calibrated crew-camera collection, validated color response, revised processing documentation, or a real task whose representation requirements differ."
+  }
+}

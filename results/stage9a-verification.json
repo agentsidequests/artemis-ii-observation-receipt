@@ -1,0 +1,764 @@
+{
+  "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_OPPORTUNITY_SELECTED",
+  "disposition": "ADMIT_NO_PIXEL_SOURCE_CONTROL_GATE",
+  "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+  "admitted_candidate_ids": [
+    "pre_earthrise_gray_feature_discrimination",
+    "systematic_activity_metadata_integrity"
+  ],
+  "candidate_count": 8,
+  "comparator_ids": [
+    "deliberate_stop",
+    "truthful_operational_synthesis"
+  ],
+  "new_candidate_pixel_bytes": 0,
+  "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding.",
+  "next_step_logic": {
+    "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+    "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+    "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+    "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+  },
+  "checks": [
+    {
+      "id": "frozen_evidence_identity",
+      "pass": true
+    },
+    {
+      "id": "candidate_schema_and_rank_order",
+      "pass": true,
+      "candidate_count": 8
+    },
+    {
+      "id": "direct_baseline_comparators",
+      "pass": true,
+      "comparator_ids": [
+        "deliberate_stop",
+        "truthful_operational_synthesis"
+      ]
+    },
+    {
+      "id": "closed_lanes_remain_closed",
+      "pass": true,
+      "required_exclusions": [
+        "Glushko-Ohm camera-native rescoring",
+        "Glushko-Ohm static reflectance",
+        "bulk archive analysis without an admitted question"
+      ]
+    },
+    {
+      "id": "admission_and_selection",
+      "pass": true,
+      "admitted_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "selected_candidate": "pre_earthrise_gray_feature_discrimination"
+    },
+    {
+      "id": "primary_source_and_project_anchors",
+      "pass": true
+    },
+    {
+      "id": "no_new_candidate_pixel_access",
+      "pass": true,
+      "access_boundary": {
+        "new_candidate_pixel_bytes": 0,
+        "new_candidate_label_bytes": 0,
+        "existing_stage2a_pixels_reused_for_scoring": false,
+        "retained_stage9a_evidence_types": [
+          "primary-source screen",
+          "candidate inventory"
+        ]
+      }
+    },
+    {
+      "id": "external_camera_sensitivity_boundary",
+      "pass": true,
+      "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test."
+    },
+    {
+      "id": "claim_ceiling",
+      "pass": true,
+      "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+    },
+    {
+      "id": "no_new_pixel_next_step",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "promote_potential_gray_feature_to_confirmed_lunar_dust": {
+      "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+      "mutation": "promote_potential_gray_feature_to_confirmed_lunar_dust",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+      "admitted_candidate_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "candidate_count": 8,
+      "comparator_ids": [
+        "deliberate_stop",
+        "truthful_operational_synthesis"
+      ],
+      "new_candidate_pixel_bytes": 0,
+      "claim_ceiling": "The pre-Earthrise gray feature confirms lofted lunar dust.",
+      "next_step_logic": {
+        "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+        "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+        "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+        "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "candidate_schema_and_rank_order",
+          "pass": true,
+          "candidate_count": 8
+        },
+        {
+          "id": "direct_baseline_comparators",
+          "pass": true,
+          "comparator_ids": [
+            "deliberate_stop",
+            "truthful_operational_synthesis"
+          ]
+        },
+        {
+          "id": "closed_lanes_remain_closed",
+          "pass": true,
+          "required_exclusions": [
+            "Glushko-Ohm camera-native rescoring",
+            "Glushko-Ohm static reflectance",
+            "bulk archive analysis without an admitted question"
+          ]
+        },
+        {
+          "id": "admission_and_selection",
+          "pass": true,
+          "admitted_ids": [
+            "pre_earthrise_gray_feature_discrimination",
+            "systematic_activity_metadata_integrity"
+          ],
+          "selected_candidate": "pre_earthrise_gray_feature_discrimination"
+        },
+        {
+          "id": "primary_source_and_project_anchors",
+          "pass": true
+        },
+        {
+          "id": "no_new_candidate_pixel_access",
+          "pass": true,
+          "access_boundary": {
+            "new_candidate_pixel_bytes": 0,
+            "new_candidate_label_bytes": 0,
+            "existing_stage2a_pixels_reused_for_scoring": false,
+            "retained_stage9a_evidence_types": [
+              "primary-source screen",
+              "candidate inventory"
+            ]
+          }
+        },
+        {
+          "id": "external_camera_sensitivity_boundary",
+          "pass": true,
+          "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test."
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "The pre-Earthrise gray feature confirms lofted lunar dust."
+        },
+        {
+          "id": "no_new_pixel_next_step",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "Question selection was promoted into a dust or public-science claim."
+      ]
+    },
+    "treat_search_absence_as_public_priority": {
+      "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+      "mutation": "treat_search_absence_as_public_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+      "admitted_candidate_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "candidate_count": 8,
+      "comparator_ids": [
+        "deliberate_stop",
+        "truthful_operational_synthesis"
+      ],
+      "new_candidate_pixel_bytes": 0,
+      "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+        "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+        "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+        "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "candidate_schema_and_rank_order",
+          "pass": true,
+          "candidate_count": 8
+        },
+        {
+          "id": "direct_baseline_comparators",
+          "pass": true,
+          "comparator_ids": [
+            "deliberate_stop",
+            "truthful_operational_synthesis"
+          ]
+        },
+        {
+          "id": "closed_lanes_remain_closed",
+          "pass": true,
+          "required_exclusions": [
+            "Glushko-Ohm camera-native rescoring",
+            "Glushko-Ohm static reflectance",
+            "bulk archive analysis without an admitted question"
+          ]
+        },
+        {
+          "id": "admission_and_selection",
+          "pass": true,
+          "admitted_ids": [
+            "pre_earthrise_gray_feature_discrimination",
+            "systematic_activity_metadata_integrity"
+          ],
+          "selected_candidate": "pre_earthrise_gray_feature_discrimination"
+        },
+        {
+          "id": "primary_source_and_project_anchors",
+          "pass": false
+        },
+        {
+          "id": "no_new_candidate_pixel_access",
+          "pass": true,
+          "access_boundary": {
+            "new_candidate_pixel_bytes": 0,
+            "new_candidate_label_bytes": 0,
+            "existing_stage2a_pixels_reused_for_scoring": false,
+            "retained_stage9a_evidence_types": [
+              "primary-source screen",
+              "candidate inventory"
+            ]
+          }
+        },
+        {
+          "id": "external_camera_sensitivity_boundary",
+          "pass": true,
+          "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test."
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+        },
+        {
+          "id": "no_new_pixel_next_step",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "A decision-bearing source, time, novelty, or sensitivity boundary is missing."
+      ]
+    },
+    "select_already_published_corona_corroboration": {
+      "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+      "mutation": "select_already_published_corona_corroboration",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "selected_candidate": "solar_corona_pulsation_corroboration",
+      "admitted_candidate_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "candidate_count": 8,
+      "comparator_ids": [
+        "deliberate_stop",
+        "truthful_operational_synthesis"
+      ],
+      "new_candidate_pixel_bytes": 0,
+      "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+        "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+        "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+        "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "candidate_schema_and_rank_order",
+          "pass": true,
+          "candidate_count": 8
+        },
+        {
+          "id": "direct_baseline_comparators",
+          "pass": true,
+          "comparator_ids": [
+            "deliberate_stop",
+            "truthful_operational_synthesis"
+          ]
+        },
+        {
+          "id": "closed_lanes_remain_closed",
+          "pass": true,
+          "required_exclusions": [
+            "Glushko-Ohm camera-native rescoring",
+            "Glushko-Ohm static reflectance",
+            "bulk archive analysis without an admitted question"
+          ]
+        },
+        {
+          "id": "admission_and_selection",
+          "pass": false,
+          "admitted_ids": [
+            "pre_earthrise_gray_feature_discrimination",
+            "systematic_activity_metadata_integrity"
+          ],
+          "selected_candidate": "solar_corona_pulsation_corroboration"
+        },
+        {
+          "id": "primary_source_and_project_anchors",
+          "pass": true
+        },
+        {
+          "id": "no_new_candidate_pixel_access",
+          "pass": true,
+          "access_boundary": {
+            "new_candidate_pixel_bytes": 0,
+            "new_candidate_label_bytes": 0,
+            "existing_stage2a_pixels_reused_for_scoring": false,
+            "retained_stage9a_evidence_types": [
+              "primary-source screen",
+              "candidate inventory"
+            ]
+          }
+        },
+        {
+          "id": "external_camera_sensitivity_boundary",
+          "pass": true,
+          "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test."
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+        },
+        {
+          "id": "no_new_pixel_next_step",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The selected opportunity is not the frozen highest-ranked admitted candidate."
+      ]
+    },
+    "reopen_closed_glushko_ohm_lane": {
+      "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+      "mutation": "reopen_closed_glushko_ohm_lane",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+      "admitted_candidate_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "candidate_count": 8,
+      "comparator_ids": [
+        "deliberate_stop",
+        "truthful_operational_synthesis"
+      ],
+      "new_candidate_pixel_bytes": 0,
+      "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+        "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+        "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+        "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "candidate_schema_and_rank_order",
+          "pass": true,
+          "candidate_count": 8
+        },
+        {
+          "id": "direct_baseline_comparators",
+          "pass": true,
+          "comparator_ids": [
+            "deliberate_stop",
+            "truthful_operational_synthesis"
+          ]
+        },
+        {
+          "id": "closed_lanes_remain_closed",
+          "pass": false,
+          "required_exclusions": [
+            "Glushko-Ohm camera-native rescoring",
+            "Glushko-Ohm static reflectance",
+            "bulk archive analysis without an admitted question"
+          ]
+        },
+        {
+          "id": "admission_and_selection",
+          "pass": true,
+          "admitted_ids": [
+            "pre_earthrise_gray_feature_discrimination",
+            "systematic_activity_metadata_integrity"
+          ],
+          "selected_candidate": "pre_earthrise_gray_feature_discrimination"
+        },
+        {
+          "id": "primary_source_and_project_anchors",
+          "pass": true
+        },
+        {
+          "id": "no_new_candidate_pixel_access",
+          "pass": true,
+          "access_boundary": {
+            "new_candidate_pixel_bytes": 0,
+            "new_candidate_label_bytes": 0,
+            "existing_stage2a_pixels_reused_for_scoring": false,
+            "retained_stage9a_evidence_types": [
+              "primary-source screen",
+              "candidate inventory"
+            ]
+          }
+        },
+        {
+          "id": "external_camera_sensitivity_boundary",
+          "pass": true,
+          "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test."
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+        },
+        {
+          "id": "no_new_pixel_next_step",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "A closed or unbounded lane was reopened during opportunity selection."
+      ]
+    },
+    "open_new_candidate_pixels_before_a_source_control_contract": {
+      "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+      "mutation": "open_new_candidate_pixels_before_a_source_control_contract",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+      "admitted_candidate_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "candidate_count": 8,
+      "comparator_ids": [
+        "deliberate_stop",
+        "truthful_operational_synthesis"
+      ],
+      "new_candidate_pixel_bytes": 1,
+      "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Open and score all candidate pixels before freezing sources or controls.",
+        "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+        "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+        "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "candidate_schema_and_rank_order",
+          "pass": true,
+          "candidate_count": 8
+        },
+        {
+          "id": "direct_baseline_comparators",
+          "pass": true,
+          "comparator_ids": [
+            "deliberate_stop",
+            "truthful_operational_synthesis"
+          ]
+        },
+        {
+          "id": "closed_lanes_remain_closed",
+          "pass": true,
+          "required_exclusions": [
+            "Glushko-Ohm camera-native rescoring",
+            "Glushko-Ohm static reflectance",
+            "bulk archive analysis without an admitted question"
+          ]
+        },
+        {
+          "id": "admission_and_selection",
+          "pass": true,
+          "admitted_ids": [
+            "pre_earthrise_gray_feature_discrimination",
+            "systematic_activity_metadata_integrity"
+          ],
+          "selected_candidate": "pre_earthrise_gray_feature_discrimination"
+        },
+        {
+          "id": "primary_source_and_project_anchors",
+          "pass": true
+        },
+        {
+          "id": "no_new_candidate_pixel_access",
+          "pass": false,
+          "access_boundary": {
+            "new_candidate_pixel_bytes": 1,
+            "new_candidate_label_bytes": 0,
+            "existing_stage2a_pixels_reused_for_scoring": false,
+            "retained_stage9a_evidence_types": [
+              "primary-source screen",
+              "candidate inventory"
+            ]
+          }
+        },
+        {
+          "id": "external_camera_sensitivity_boundary",
+          "pass": true,
+          "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test."
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+        },
+        {
+          "id": "no_new_pixel_next_step",
+          "pass": false
+        }
+      ],
+      "errors": [
+        "Stage 9A accessed candidate pixels or labels before its source/control gate.",
+        "The next step bypasses the frozen source/control gate or fail-closed state."
+      ]
+    },
+    "omit_truthful_synthesis_and_deliberate_stop_comparators": {
+      "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+      "mutation": "omit_truthful_synthesis_and_deliberate_stop_comparators",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+      "admitted_candidate_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "candidate_count": 8,
+      "comparator_ids": [],
+      "new_candidate_pixel_bytes": 0,
+      "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+        "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+        "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+        "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "candidate_schema_and_rank_order",
+          "pass": true,
+          "candidate_count": 8
+        },
+        {
+          "id": "direct_baseline_comparators",
+          "pass": false,
+          "comparator_ids": []
+        },
+        {
+          "id": "closed_lanes_remain_closed",
+          "pass": true,
+          "required_exclusions": [
+            "Glushko-Ohm camera-native rescoring",
+            "Glushko-Ohm static reflectance",
+            "bulk archive analysis without an admitted question"
+          ]
+        },
+        {
+          "id": "admission_and_selection",
+          "pass": true,
+          "admitted_ids": [
+            "pre_earthrise_gray_feature_discrimination",
+            "systematic_activity_metadata_integrity"
+          ],
+          "selected_candidate": "pre_earthrise_gray_feature_discrimination"
+        },
+        {
+          "id": "primary_source_and_project_anchors",
+          "pass": true
+        },
+        {
+          "id": "no_new_candidate_pixel_access",
+          "pass": true,
+          "access_boundary": {
+            "new_candidate_pixel_bytes": 0,
+            "new_candidate_label_bytes": 0,
+            "existing_stage2a_pixels_reused_for_scoring": false,
+            "retained_stage9a_evidence_types": [
+              "primary-source screen",
+              "candidate inventory"
+            ]
+          }
+        },
+        {
+          "id": "external_camera_sensitivity_boundary",
+          "pass": true,
+          "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test."
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+        },
+        {
+          "id": "no_new_pixel_next_step",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "Truthful synthesis and deliberate stop were not both compared."
+      ]
+    },
+    "treat_external_camera_non_detection_as_a_refutation_without_sensitivity_equivalence": {
+      "testbed_id": "artemis2-archive-wide-opportunity-selection-stage9a",
+      "mutation": "treat_external_camera_non_detection_as_a_refutation_without_sensitivity_equivalence",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": "REJECTED",
+      "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+      "admitted_candidate_ids": [
+        "pre_earthrise_gray_feature_discrimination",
+        "systematic_activity_metadata_integrity"
+      ],
+      "candidate_count": 8,
+      "comparator_ids": [
+        "deliberate_stop",
+        "truthful_operational_synthesis"
+      ],
+      "new_candidate_pixel_bytes": 0,
+      "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding.",
+      "next_step_logic": {
+        "recommended": "Form and run Stage 9B as a no-new-pixel source-and-control gate for the 23:22:39 UTC pre-Earthrise gray feature. Inventory exact crew and vehicle products, viewing carriers, terrain/illumination controls, and the minimum sensitivity comparison before opening any new pixels.",
+        "pass": "Admit one frozen image-state canary that distinguishes rigid terrain, Earth-emergence-linked glare, cabin/window-only appearance, and an external diffuse anomaly. A positive canary may reach specialist-review-candidate only; it cannot identify dust by itself.",
+        "fail": "If exact products, cross-carrier coverage, or a discriminating control are missing, close the dust lane as SOURCE_CONTROL_INSUFFICIENT and return to the truthful operational synthesis.",
+        "recheck_trigger": "If the delayed Artemis II SPICE bundle becomes actually available, re-attest geometry before any event-specific physical interpretation."
+      },
+      "checks": [
+        {
+          "id": "frozen_evidence_identity",
+          "pass": true
+        },
+        {
+          "id": "candidate_schema_and_rank_order",
+          "pass": true,
+          "candidate_count": 8
+        },
+        {
+          "id": "direct_baseline_comparators",
+          "pass": true,
+          "comparator_ids": [
+            "deliberate_stop",
+            "truthful_operational_synthesis"
+          ]
+        },
+        {
+          "id": "closed_lanes_remain_closed",
+          "pass": true,
+          "required_exclusions": [
+            "Glushko-Ohm camera-native rescoring",
+            "Glushko-Ohm static reflectance",
+            "bulk archive analysis without an admitted question"
+          ]
+        },
+        {
+          "id": "admission_and_selection",
+          "pass": true,
+          "admitted_ids": [
+            "pre_earthrise_gray_feature_discrimination",
+            "systematic_activity_metadata_integrity"
+          ],
+          "selected_candidate": "pre_earthrise_gray_feature_discrimination"
+        },
+        {
+          "id": "primary_source_and_project_anchors",
+          "pass": true
+        },
+        {
+          "id": "no_new_candidate_pixel_access",
+          "pass": true,
+          "access_boundary": {
+            "new_candidate_pixel_bytes": 0,
+            "new_candidate_label_bytes": 0,
+            "existing_stage2a_pixels_reused_for_scoring": false,
+            "retained_stage9a_evidence_types": [
+              "primary-source screen",
+              "candidate inventory"
+            ]
+          }
+        },
+        {
+          "id": "external_camera_sensitivity_boundary",
+          "pass": false,
+          "strongest_counterevidence": "A blank external-camera frame refutes the crew observation."
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "The pre-Earthrise gray feature is the strongest untested archive candidate. It is not a lunar-dust detection, horizon-glow confirmation, hazard estimate, or public scientific finding."
+        },
+        {
+          "id": "no_new_pixel_next_step",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "External-camera non-detection was promoted without sensitivity equivalence."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

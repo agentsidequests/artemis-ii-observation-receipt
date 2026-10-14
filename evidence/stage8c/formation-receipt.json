@@ -1,0 +1,16 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-camera-native-canary-stage8c",
+  "formed_at_utc": "2026-10-09T22:51:59Z",
+  "status": "FORMED_NO_CAMERA_VALUE_SCORING",
+  "spec_path": "spec/stage8c.json",
+  "spec_sha256": "20a4bb43e677038618042bc63f588e22eb1e1467a6b1c281d3493948a47ba16b",
+  "image_code_values_scored_before_formation": 0,
+  "png_idat_streams_decompressed_before_formation": 0,
+  "prior_visual_inspection": "Stage 8B already established visible target content in the exact three PNGs. Stage 8C formation reused source hashes, PNG headers and palettes, labels, and control-point metadata but did not decompress or numerically score image pixels.",
+  "frozen_primary_view": "joint_same_frame",
+  "frozen_secondary_view": "matched_400mm_pair",
+  "frozen_regions": "Three whole-annulus cells from 1.25 to 4.25 crater radii, derived only from official target coordinates, official diameters, and label control points; use zero-based integer column and row centers with lower-inclusive, upper-exclusive ring boundaries.",
+  "frozen_primary_endpoint": "For each target, exact histogram AUC comparing inner-annulus RGB palette code-value lightness with its outer local annulus; require AUC >= 0.55 for both, excess-similarity >= 0.75, and Glushko excess strictly greater than Ohm excess.",
+  "frozen_robustness": "The primary middle cell and at least two of three cells must pass separately in each admitted view for the strong state.",
+  "stop_rule": "Stop after the joint-frame and matched-pair cells. Do not add images, draw rays from the outcome, change channels, retune thresholds, or turn camera code values into photometry or perception."
+}

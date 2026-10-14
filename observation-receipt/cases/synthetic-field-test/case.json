@@ -1,0 +1,120 @@
+{
+  "receipt_version": "0.2.0",
+  "case_id": "synthetic-harbor-sound",
+  "title": "Synthetic harbor sound report",
+  "summary": "A deliberately fictional fixture tests whether the same receipt engine separates witness reports, late camera coverage, weak acoustic capability, and missing rate denominators outside the lunar domain.",
+  "viewer_context": {
+    "key_distinction": "This is an engineering transfer test, not a real incident. It demonstrates that a late camera and an uncalibrated recorder answer different questions."
+  },
+  "artifacts": [
+    {
+      "id": "synthetic-field-log",
+      "path": "cases/synthetic-field-test/sources/field-log.csv",
+      "bytes": 227,
+      "sha256": "b28e462829660956f52c548638bedcfadb615cbdd74e0dd070fa243ff77173f4",
+      "media_type": "text/csv",
+      "producer": "Observation Receipt",
+      "archive": "Synthetic fixture",
+      "clock_domain": "UTC",
+      "derivation_state": "synthetic"
+    }
+  ],
+  "facts": {
+    "event_utc": "2030-06-01T14:02:10Z",
+    "last_report_utc": "2030-06-01T14:02:32Z"
+  },
+  "candidates": [
+    {
+      "id": "harbor-boom",
+      "label": "Reported harbor sound",
+      "disposition": "accepted",
+      "mapping_state": "synthetic event used only for software transfer testing",
+      "witness_dependency_model": null,
+      "witness_marks": [
+        {"id": "harbor-avery", "observer": "Avery Chen", "time_state": "exact", "marked_at_utc": "2030-06-01T14:02:10Z", "elicitation_state": "unprompted", "independence_state": "not_established", "dependency_group": "harbor-boom", "source_artifact_id": "synthetic-field-log", "source_locator": "row 1"},
+        {"id": "harbor-morgan", "observer": "Morgan Lee", "time_state": "exact", "marked_at_utc": "2030-06-01T14:02:32Z", "elicitation_state": "prompted", "independence_state": "dependent", "dependency_group": "harbor-boom", "source_artifact_id": "synthetic-field-log", "source_locator": "row 2"}
+      ]
+    }
+  ],
+  "observation_windows": [
+    {
+      "id": "traffic-camera",
+      "label": "Traffic camera archive",
+      "start_utc": "2030-06-01T14:05:00Z",
+      "stop_utc": "2030-06-01T14:15:00Z",
+      "clock_domain": "UTC",
+      "clock_uncertainty_seconds": 1.0,
+      "target": "Harbor road",
+      "field_of_view": "Road only, harbor source area outside frame",
+      "capabilities": {
+        "event_in_field": {"state": "not_demonstrated", "note": "The claimed source area is outside the visible road frame."}
+      }
+    },
+    {
+      "id": "phone-recorder",
+      "label": "Overlapping phone recording",
+      "start_utc": "2030-06-01T14:02:00Z",
+      "stop_utc": "2030-06-01T14:03:00Z",
+      "clock_domain": "UTC",
+      "clock_uncertainty_seconds": 2.0,
+      "target": "Ambient sound",
+      "field_of_view": "Not applicable to an acoustic sensor",
+      "capabilities": {
+        "source_audio_available": {"state": "demonstrated", "note": "The synthetic log declares a complete audio minute."},
+        "frequency_response_calibrated": {"state": "not_demonstrated", "note": "No microphone response is supplied."},
+        "detection_completeness": {"state": "not_demonstrated", "note": "No injection-recovery result is supplied."}
+      }
+    }
+  ],
+  "measurement_function": {
+    "monitored_area_km2": {"value": null, "unit": "km2"},
+    "live_time_hours": {"value": null, "unit": "hours"},
+    "detection_probability_surface": {"value": null, "unit": "probability by amplitude, frequency, and background"},
+    "confirmation_rule": {"value": "two human reports", "unit": null}
+  },
+  "claims": [
+    {
+      "id": "synthetic-ledger",
+      "proposition": "The synthetic log contains one event, two witness marks, and two observers.",
+      "rule": {"kind": "ledger_summary", "disposition": "accepted", "expected_event_count": 1, "expected_witness_marks": 2, "expected_unique_observers": 2},
+      "claim_ceiling": "Fixture structure only, not a real incident finding."
+    },
+    {
+      "id": "late-camera-tested-event",
+      "proposition": "The traffic camera archive tested the reported harbor sound.",
+      "rule": {"kind": "window_after_boundary", "window_id": "traffic-camera", "boundary_fact": "last_report_utc"},
+      "claim_ceiling": "Timing non-overlap in a fictional fixture."
+    },
+    {
+      "id": "phone-null-excludes-event",
+      "proposition": "No obvious waveform in the overlapping phone recording excludes the reported sound.",
+      "rule": {"kind": "window_capability_gate", "window_id": "phone-recorder", "event_time_fact": "event_utc", "required_capabilities": ["source_audio_available", "frequency_response_calibrated", "detection_completeness"]},
+      "claim_ceiling": "Overlap is preserved, but the uncalibrated sensor cannot exclude the event."
+    },
+    {
+      "id": "independent-witnesses",
+      "proposition": "The prompted second report is an independent confirmation.",
+      "rule": {"kind": "witness_independence_gate", "candidate_id": "harbor-boom", "required_independent_marks": 2},
+      "claim_ceiling": "The fixture preserves dependency state and blocks unsupported independence."
+    },
+    {
+      "id": "incident-rate",
+      "proposition": "The synthetic event count establishes a calibrated incident rate.",
+      "rule": {"kind": "required_measurement_fields", "fields": ["monitored_area_km2", "live_time_hours", "detection_probability_surface", "confirmation_rule"]},
+      "claim_ceiling": "Blocked until the synthetic measurement function is complete."
+    }
+  ],
+  "expected_findings": {
+    "synthetic-ledger": "SUPPORTED",
+    "late-camera-tested-event": "REFUTED_NONOVERLAP",
+    "phone-null-excludes-event": "BLOCKED_INSUFFICIENT_CAPABILITY",
+    "independent-witnesses": "BLOCKED_DEPENDENCE_MODEL_MISSING",
+    "incident-rate": "BLOCKED_MISSING_MEASUREMENT_FUNCTION"
+  },
+  "claim_ceiling": "This fixture demonstrates software behavior only. It does not describe a real harbor, person, sensor, incident, scientific result, or public-safety conclusion.",
+  "next_steps": [
+    "Replace the synthetic source with a rights-cleared real case before making a domain-value claim.",
+    "Supply calibration and injection-recovery evidence before treating recorder silence as an exclusion.",
+    "Declare how prompted witnesses are modeled before estimating independent confirmation probability."
+  ]
+}

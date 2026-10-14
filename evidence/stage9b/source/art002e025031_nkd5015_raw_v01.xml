@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1Q00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/cart/v1/PDS4_CART_1Q00_1970.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1Q00_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1Q00_1950.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1Q00_19B0.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1Q00_1400.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1Q00_1330.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn_surface/v1/PDS4_MSN_SURFACE_1Q00_1310.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/img_surface/v1/PDS4_IMG_SURFACE_1Q00_1280.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/cots_camera/v1/PDS4_COTS_CAMERA_1Q00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:cart="http://pds.nasa.gov/pds4/cart/v1" 
+    xmlns:cots_camera="http://pds.nasa.gov/pds4/cots_camera/v1" 
+    xmlns:disp="http://pds.nasa.gov/pds4/disp/v1" 
+    xmlns:geom="http://pds.nasa.gov/pds4/geom/v1" 
+    xmlns:img="http://pds.nasa.gov/pds4/img/v1" 
+    xmlns:img_surface="http://pds.nasa.gov/pds4/img_surface/v1" 
+    xmlns:msn="http://pds.nasa.gov/pds4/msn/v1" 
+    xmlns:msn_surface="http://pds.nasa.gov/pds4/msn_surface/v1" 
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:proc="http://pds.nasa.gov/pds4/proc/v1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="   http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1Q00.xsd   http://pds.nasa.gov/pds4/img/v1 https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1Q00_1950.xsd      http://pds.nasa.gov/pds4/proc/v1 https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1Q00_1400.xsd      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1Q00_1330.xsd   http://pds.nasa.gov/pds4/msn_surface/v1 https://pds.nasa.gov/pds4/msn_surface/v1/PDS4_MSN_SURFACE_1Q00_1310.xsd   http://pds.nasa.gov/pds4/img_surface/v1 https://pds.nasa.gov/pds4/img_surface/v1/PDS4_IMG_SURFACE_1Q00_1280.xsd   http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1Q00_19B0.xsd   http://pds.nasa.gov/pds4/disp/v1 https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1Q00_1510.xsd   http://pds.nasa.gov/pds4/cart/v1 https://pds.nasa.gov/pds4/cart/v1/PDS4_CART_1Q00_1970.xsd   http://pds.nasa.gov/pds4/cots_camera/v1 https://pds.nasa.gov/pds4/cots_camera/v1/PDS4_COTS_CAMERA_1Q00_1000.xsd   ">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:artemis2_crew_camera:data_raw:art002e025031_nkd5015_raw.tif</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Artemis 2 Mission NIKON_D5 Observational Product - art002e025031_nkd5015_raw.tif</title>
+    <information_model_version>1.26.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+  </Identification_Area>
+  <Observation_Area>
+    <comment>Observational Intent</comment>
+    <Time_Coordinates>
+      <start_date_time>2026-04-06T23:22:39.22Z</start_date_time>
+      <stop_date_time nilReason="missing" xsi:nil="true"/>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Raw</processing_level>
+      <Science_Facets>
+        <wavelength_range>Visible</wavelength_range>
+        <domain>Surface</domain>
+        <discipline_name>Imaging</discipline_name>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>Artemis 2 Mission</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.artemis2</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+        <comment>This is the PDS4 logical identifier for the Artemis 2 Mission.</comment>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Artemis 2 Orion</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.artemis2_orion</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+          <comment>This is the PDS4 logical identifier for the Artemis 2 Orion spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Nikon D5 Camera</name>
+        <type>Instrument</type>
+        <description>instance_id=nkd5015 serial_number=3500015</description>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:multi-host.nikon_d5</lid_reference>
+          <reference_type>is_instrument</reference_type>
+          <comment>This is the PDS4 logical identifier for the Nikon D5 Camera onboard the Artemis 2 Orion spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Moon</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+        <reference_type>data_to_target</reference_type>
+        <comment>This is the PDS4 logical identifier for the satellite - Moon.</comment>
+      </Internal_Reference>
+    </Target_Identification>
+    <Discipline_Area>
+      <cots_camera:COTS_Camera>
+        <cots_camera:camera_vendor>Nikon</cots_camera:camera_vendor>
+        <cots_camera:camera_name>NIKON D5</cots_camera:camera_name>
+        <cots_camera:Autofocus>
+          <cots_camera:af_aperture>5.8</cots_camera:af_aperture>
+          <cots_camera:af_area_mode>Single Area</cots_camera:af_area_mode>
+          <cots_camera:af_c_priority_selection>Release</cots_camera:af_c_priority_selection>
+          <cots_camera:af_detection_method>Phase Detect</cots_camera:af_detection_method>
+          <cots_camera:af_fine_tune>Off</cots_camera:af_fine_tune>
+          <cots_camera:af_info_2_version>0101</cots_camera:af_info_2_version>
+          <cots_camera:af_point_brightness>Auto</cots_camera:af_point_brightness>
+          <cots_camera:af_points_in_focus>E9</cots_camera:af_points_in_focus>
+          <cots_camera:af_points_used>E9</cots_camera:af_points_used>
+          <cots_camera:af_s_priority_selection>Focus</cots_camera:af_s_priority_selection>
+          <cots_camera:block_shot_af_response>3</cots_camera:block_shot_af_response>
+          <cots_camera:focus_point_schema>153-point</cots_camera:focus_point_schema>
+          <cots_camera:focus_point_wrap>No Wrap</cots_camera:focus_point_wrap>
+          <cots_camera:number_of_focus_points>55</cots_camera:number_of_focus_points>
+          <cots_camera:primary_af_point>E9 (Center)</cots_camera:primary_af_point>
+        </cots_camera:Autofocus>
+        <cots_camera:Camera_Properties>
+          <cots_camera:exit_pupil_position unit="mm">113.8</cots_camera:exit_pupil_position>
+          <cots_camera:flash_info_version>0108</cots_camera:flash_info_version>
+          <cots_camera:raw_image_center_line>2792</cots_camera:raw_image_center_line>
+          <cots_camera:raw_image_center_sample>1864</cots_camera:raw_image_center_sample>
+          <cots_camera:shutter_count>6255</cots_camera:shutter_count>
+        </cots_camera:Camera_Properties>
+        <cots_camera:Camera_Settings>
+          <cots_camera:brightness>Normal</cots_camera:brightness>
+          <cots_camera:clarity>1.0</cots_camera:clarity>
+          <cots_camera:color_balance_version>0225</cots_camera:color_balance_version>
+          <cots_camera:custom_settings_bank>A</cots_camera:custom_settings_bank>
+          <cots_camera:flash_mode>Did Not Fire</cots_camera:flash_mode>
+          <cots_camera:flicker_reduction>Enable</cots_camera:flicker_reduction>
+          <cots_camera:flicker_reduction_indicator>Off</cots_camera:flicker_reduction_indicator>
+          <cots_camera:high_iso_noise_reduction>Normal</cots_camera:high_iso_noise_reduction>
+          <cots_camera:hue>None</cots_camera:hue>
+          <cots_camera:noise_reduction>Off</cots_camera:noise_reduction>
+          <cots_camera:shooting_mode>Continuous, Exposure Bracketing</cots_camera:shooting_mode>
+          <cots_camera:shot_info_version>0238</cots_camera:shot_info_version>
+          <cots_camera:vignette_control>Normal</cots_camera:vignette_control>
+        </cots_camera:Camera_Settings>
+        <cots_camera:Exposure>
+          <cots_camera:auto_bracket_mode_m>Flash/Speed/Aperture</cots_camera:auto_bracket_mode_m>
+          <cots_camera:auto_bracket_order>0,-,+</cots_camera:auto_bracket_order>
+          <cots_camera:center_weighted_area_size unit="mm">12</cots_camera:center_weighted_area_size>
+          <cots_camera:cl_mode_shooting_speed>5</cots_camera:cl_mode_shooting_speed>
+          <cots_camera:easy_exposure_compensation>Off</cots_camera:easy_exposure_compensation>
+          <cots_camera:exposure_bracket_value>-1</cots_camera:exposure_bracket_value>
+          <cots_camera:exposure_comp_step_size>1/3</cots_camera:exposure_comp_step_size>
+          <cots_camera:exposure_control_step_size>1/3</cots_camera:exposure_control_step_size>
+          <cots_camera:exposure_delay_mode>Off</cots_camera:exposure_delay_mode>
+          <cots_camera:exposure_difference>-4.2</cots_camera:exposure_difference>
+          <cots_camera:iso_auto_high_limit>ISO Hi 1.0</cots_camera:iso_auto_high_limit>
+          <cots_camera:iso_auto_shutter_time>Auto</cots_camera:iso_auto_shutter_time>
+          <cots_camera:iso_step_size>1/3</cots_camera:iso_step_size>
+          <cots_camera:max_continuous_release>200</cots_camera:max_continuous_release>
+          <cots_camera:multi_exposure_auto_gain>Off</cots_camera:multi_exposure_auto_gain>
+          <cots_camera:multi_exposure_mode>Off</cots_camera:multi_exposure_mode>
+          <cots_camera:multi_exposure_shots>0</cots_camera:multi_exposure_shots>
+          <cots_camera:multi_exposure_version>0101</cots_camera:multi_exposure_version>
+        </cots_camera:Exposure>
+        <cots_camera:File_Information>
+          <cots_camera:directory_number>102</cots_camera:directory_number>
+          <cots_camera:file_info_version>0100</cots_camera:file_info_version>
+          <cots_camera:file_number>1068</cots_camera:file_number>
+          <cots_camera:memory_card_number>0</cots_camera:memory_card_number>
+        </cots_camera:File_Information>
+        <cots_camera:Lens_Properties>
+          <cots_camera:effective_max_aperture>5.7</cots_camera:effective_max_aperture>
+          <cots_camera:lens_data_version>0204</cots_camera:lens_data_version>
+          <cots_camera:lens_f_stops>5.67</cots_camera:lens_f_stops>
+          <cots_camera:lens_id_number>183</cots_camera:lens_id_number>
+          <cots_camera:max_aperture_at_max_focal>5.7</cots_camera:max_aperture_at_max_focal>
+          <cots_camera:max_aperture_at_min_focal>4.5</cots_camera:max_aperture_at_min_focal>
+          <cots_camera:max_focal_length unit="mm">403.2</cots_camera:max_focal_length>
+          <cots_camera:min_focal_length unit="mm">80.0</cots_camera:min_focal_length>
+          <cots_camera:mcu_version>185</cots_camera:mcu_version>
+        </cots_camera:Lens_Properties>
+      </cots_camera:COTS_Camera>
+      <disp:Display_Settings>
+        <Local_Internal_Reference>
+          <local_identifier_reference>art002e025031_nkd5015_raw.tif</local_identifier_reference>
+          <local_reference_type>display_settings_to_array</local_reference_type>
+        </Local_Internal_Reference>
+        <disp:Display_Direction>
+          <disp:horizontal_display_axis>Sample</disp:horizontal_display_axis>
+          <disp:horizontal_display_direction>Left to Right</disp:horizontal_display_direction>
+          <disp:vertical_display_axis>Line</disp:vertical_display_axis>
+          <disp:vertical_display_direction>Top to Bottom</disp:vertical_display_direction>
+        </disp:Display_Direction>
+      </disp:Display_Settings>
+      <img:Imaging>
+        <Local_Internal_Reference>
+          <local_identifier_reference>art002e025031_nkd5015_raw.tif</local_identifier_reference>
+          <local_reference_type>imaging_parameters_to_image_object</local_reference_type>
+        </Local_Internal_Reference>
+        <img:Color_Processing>
+          <img:Black_Reference_Point>
+            <img:Color_Bayer>
+              <img:red_dn>400</img:red_dn>
+              <img:green1_dn>400</img:green1_dn>
+              <img:green2_dn>400</img:green2_dn>
+              <img:blue_dn>400</img:blue_dn>
+            </img:Color_Bayer>
+          </img:Black_Reference_Point>
+        </img:Color_Processing>
+        <img:Detector>
+          <img:ISO>
+            <img:iso_number>400</img:iso_number>
+            <img:recommended_exposure_index>400</img:recommended_exposure_index>
+            <img:sensitivity_type>Recommended Exposure Index</img:sensitivity_type>
+          </img:ISO>
+          <img:sensing_method>One-chip color area</img:sensing_method>
+        </img:Detector>
+        <img:Exposure>
+          <img:exposure_duration unit="s">6.25E-4</img:exposure_duration>
+          <img:exposure_type>Manual</img:exposure_type>
+          <img:light_value>15.3</img:light_value>
+        </img:Exposure>
+        <img:Focus>
+          <img:focus_mode>AF-S</img:focus_mode>
+          <img:focus_position>4</img:focus_position>
+          <img:focus_distance unit="mm">167.88</img:focus_distance>
+          <img:minimum_focus_distance unit="m">127.71</img:minimum_focus_distance>
+          <img:maximum_focus_distance unit="m">244.91</img:maximum_focus_distance>
+          <img:circle_of_confusion unit="mm">0.030</img:circle_of_confusion>
+          <img:depth_of_field unit="m">117.19</img:depth_of_field>
+          <img:diagonal_fov unit="deg">5.1</img:diagonal_fov>
+          <img:diagonal_fov_length unit="m">15.07</img:diagonal_fov_length>
+          <img:hyperfocal_distance unit="m">532.51</img:hyperfocal_distance>
+        </img:Focus>
+        <img:Illumination>
+          <img:illumination_mode>No Flash</img:illumination_mode>
+        </img:Illumination>
+        <img:Onboard_Compression>
+          <img:onboard_compression_class>Lossless</img:onboard_compression_class>
+          <img:onboard_compression_type>NEF</img:onboard_compression_type>
+          <img:onboard_compression_quality>1.0</img:onboard_compression_quality>
+        </img:Onboard_Compression>
+        <img:Optical_Properties>
+          <img:focal_length unit="mm">400.0</img:focal_length>
+          <img:f_number>10.0</img:f_number>
+          <img:lens_description>80-400mm f/4.5-5.6 G VR</img:lens_description>
+          <img:lens_name>AF-S Nikkor 80-400mm f/4.5-5.6G ED VR</img:lens_name>
+          <img:max_aperture_value>5.7</img:max_aperture_value>
+          <img:aperture_value>10.0</img:aperture_value>
+        </img:Optical_Properties>
+        <img:Sampling>
+          <img:sample_bits>1</img:sample_bits>
+          <img:sample_bit_mask>12</img:sample_bit_mask>
+        </img:Sampling>
+        <img:White_Balance>
+          <img:active_flag>true</img:active_flag>
+          <img:processing_algorithm>Auto0</img:processing_algorithm>
+          <img:red_to_green_balance>2.651855</img:red_to_green_balance>
+          <img:blue_to_green_balance>1.32666</img:blue_to_green_balance>
+        </img:White_Balance>
+        <img:Camera_Settings>
+          <img:contrast>Normal</img:contrast>
+          <img:gain_control>None</img:gain_control>
+          <img:saturation>Normal</img:saturation>
+          <img:scene_capture_type>Standard</img:scene_capture_type>
+          <img:sharpness>Normal</img:sharpness>
+        </img:Camera_Settings>
+      </img:Imaging>
+      <img_surface:Surface_Imaging>
+        <img_surface:Instrument_Information>
+          <img_surface:instrument_serial_number>3500015</img_surface:instrument_serial_number>
+          <img_surface:ops_instrument_key>nikon_d5</img_surface:ops_instrument_key>
+        </img_surface:Instrument_Information>
+      </img_surface:Surface_Imaging>
+      <msn:Mission_Information>
+        <msn:mission_phase_name>Operations</msn:mission_phase_name>
+        <msn:product_type_name>Raw</msn:product_type_name>
+        <msn:flight_day_number>6</msn:flight_day_number>
+        <msn:internal_id>art002e025031</msn:internal_id>
+      </msn:Mission_Information>
+      <msn_surface:Surface_Mission_Information>
+        <msn_surface:Observational_Intent>
+          <msn_surface:activity_id>23_Earthrise</msn_surface:activity_id>
+        </msn_surface:Observational_Intent>
+      </msn_surface:Surface_Mission_Information>
+      <proc:Processing_Information>
+        <Local_Internal_Reference>
+          <local_identifier_reference>art002e025031_nkd5015_raw.tif</local_identifier_reference>
+          <local_reference_type>processing_information_to_data_object</local_reference_type>
+        </Local_Internal_Reference>
+        <proc:Process>
+          <proc:Software>
+            <proc:Software_Program>
+              <proc:name>NIKON D5 Ver.N.10</proc:name>
+              <proc:program_version>Ver.N.10</proc:program_version>
+            </proc:Software_Program>
+          </proc:Software>
+        </proc:Process>
+      </proc:Processing_Information>
+    </Discipline_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>art002e025031_nkd5015_raw_v01.tif</file_name>
+      <creation_date_time>2026-09-24T23:44:30Z</creation_date_time>
+      <file_size unit="byte">41635680</file_size>
+    </File>
+    <Array_2D_Image>
+      <local_identifier>art002e025031_nkd5015_raw.tif</local_identifier>
+      <offset unit="byte">1376</offset>
+      <axes>2</axes>
+      <axis_index_order>Last Index Fastest</axis_index_order>
+      <Element_Array>
+        <data_type>UnsignedLSB2</data_type>
+        <unit>DN</unit>
+      </Element_Array>
+      <Axis_Array>
+        <axis_name>Line</axis_name>
+        <elements>3728</elements>
+        <sequence_number>1</sequence_number>
+      </Axis_Array>
+      <Axis_Array>
+        <axis_name>Sample</axis_name>
+        <elements>5584</elements>
+        <sequence_number>2</sequence_number>
+      </Axis_Array>
+      <Special_Constants>
+        <missing_constant>0.0</missing_constant>
+        <invalid_constant>0.0</invalid_constant>
+      </Special_Constants>
+    </Array_2D_Image>
+  </File_Area_Observational>
+</Product_Observational>

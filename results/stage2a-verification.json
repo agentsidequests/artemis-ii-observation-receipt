@@ -1,0 +1,1449 @@
+{
+  "baseline": {
+    "testbed_id": "artemis2-observation-execution-stage2a-earthrise",
+    "version": "0.3.0",
+    "run_at_utc": "2026-10-09T19:49:03Z",
+    "mutation": "none",
+    "pass": true,
+    "evidence_state": "VERIFIED_NO_OVERLAP",
+    "disposition": "CONTINUE_BOUNDED_PATTERN_CHECK",
+    "coverage_relation": "AFTER_EVENT_NO_OVERLAP",
+    "minimum_separation_seconds": 136.0,
+    "availability_window": {
+      "start_utc": "2026-04-06T23:25:30Z",
+      "end_utc": "2026-04-06T23:25:34.147844Z",
+      "duration_seconds": 4.147844
+    },
+    "event_brackets": {
+      "first_visible_contact": {
+        "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+        "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+      },
+      "full_clearance": {
+        "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+        "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+      },
+      "stability_check_utc": "2026-04-06T23:23:44Z"
+    },
+    "frames": [
+      {
+        "image": "art002e016296_saw3_src_v01.jpg",
+        "raw_label": "art002e016296_saw3_raw_v01.xml",
+        "time_utc": "2026-04-06T23:21:14Z",
+        "state": "NOT_VISIBLE",
+        "component_pixels": 0,
+        "component_width": 0,
+        "component_height": 0
+      },
+      {
+        "image": "art002e016297_saw3_src_v01.jpg",
+        "raw_label": "art002e016297_saw3_raw_v01.xml",
+        "time_utc": "2026-04-06T23:21:44Z",
+        "state": "PARTIAL",
+        "component_pixels": 98,
+        "component_width": 18,
+        "component_height": 18
+      },
+      {
+        "image": "art002e016298_saw3_src_v01.jpg",
+        "raw_label": "art002e016298_saw3_raw_v01.xml",
+        "time_utc": "2026-04-06T23:22:14Z",
+        "state": "PARTIAL",
+        "component_pixels": 477,
+        "component_width": 30,
+        "component_height": 47
+      },
+      {
+        "image": "art002e016299_saw3_src_v01.jpg",
+        "raw_label": "art002e016299_saw3_raw_v01.xml",
+        "time_utc": "2026-04-06T23:22:44Z",
+        "state": "PARTIAL",
+        "component_pixels": 2130,
+        "component_width": 113,
+        "component_height": 136
+      },
+      {
+        "image": "art002e016300_saw3_src_v01.jpg",
+        "raw_label": "art002e016300_saw3_raw_v01.xml",
+        "time_utc": "2026-04-06T23:23:14Z",
+        "state": "FULL_CLEAR",
+        "component_pixels": 4050,
+        "component_width": 111,
+        "component_height": 136
+      },
+      {
+        "image": "art002e016301_saw3_src_v01.jpg",
+        "raw_label": "art002e016301_saw3_raw_v01.xml",
+        "time_utc": "2026-04-06T23:23:44Z",
+        "state": "FULL_CLEAR",
+        "component_pixels": 4187,
+        "component_width": 110,
+        "component_height": 136
+      }
+    ],
+    "checks": [
+      {
+        "id": "classification_identity",
+        "pass": true,
+        "observed_sha256": "a189f9f5a48db532f9b0e71aad41f1abbfcefdd3bb1bd4a87dcf17e27eae3c85"
+      },
+      {
+        "id": "source_manifest_identity",
+        "pass": true,
+        "observed_sha256": "2cbdbf604bc6451a03aed33118e81fcb42f5f434fc632f744f1e364675cb8a2e"
+      },
+      {
+        "id": "contact_sheet_identity",
+        "pass": true,
+        "observed_sha256": "50b9b10faf9bf6d5a5c927caa08247fbe65bab838fadf16ae20b543432e0195d"
+      },
+      {
+        "id": "source_identity:art002e016296_saw3_raw_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016296_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016296_saw3_src_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016297_saw3_raw_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016297_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016297_saw3_src_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016298_saw3_raw_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016298_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016298_saw3_src_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016299_saw3_raw_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016299_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016299_saw3_src_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016300_saw3_raw_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016300_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016300_saw3_src_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016301_saw3_raw_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016301_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "source_identity:art002e016301_saw3_src_v01.xml",
+        "pass": true
+      },
+      {
+        "id": "oracle_kind",
+        "pass": true,
+        "observed": "fixed_camera_image_state_transitions"
+      },
+      {
+        "id": "label_binding:art002e016296_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "timestamp_binding:art002e016296_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "label_binding:art002e016297_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "timestamp_binding:art002e016297_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "label_binding:art002e016298_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "timestamp_binding:art002e016298_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "label_binding:art002e016299_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "timestamp_binding:art002e016299_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "label_binding:art002e016300_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "timestamp_binding:art002e016300_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "label_binding:art002e016301_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "timestamp_binding:art002e016301_saw3_src_v01.jpg",
+        "pass": true
+      },
+      {
+        "id": "visual_state_sequence",
+        "pass": true,
+        "observed": [
+          "NOT_VISIBLE",
+          "PARTIAL",
+          "PARTIAL",
+          "PARTIAL",
+          "FULL_CLEAR",
+          "FULL_CLEAR"
+        ]
+      },
+      {
+        "id": "thirty_second_cadence",
+        "pass": true,
+        "observed_seconds": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ]
+      },
+      {
+        "id": "event_brackets",
+        "pass": true,
+        "observed": {
+          "first_visible_contact": {
+            "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+            "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+          },
+          "full_clearance": {
+            "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+            "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+          },
+          "stability_check_utc": "2026-04-06T23:23:44Z"
+        }
+      },
+      {
+        "id": "otr_identity",
+        "pass": true,
+        "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+      },
+      {
+        "id": "otr_source_values",
+        "pass": true
+      },
+      {
+        "id": "coverage_relation",
+        "pass": true,
+        "observed_relation": "AFTER_EVENT_NO_OVERLAP",
+        "minimum_separation_seconds": 136.0
+      }
+    ],
+    "errors": [],
+    "claim_ceiling": "Window coverage or non-coverage for this one Earthrise sequence. No boundary-delay, causal, operational-impact, or mission-wide claim.",
+    "spice_branch": {
+      "status": "NOT_ADMISSIBLE_AT_RUN_TIME",
+      "reason": "NASA PDS lists the Artemis II SPICE actual release as TBD; no archive bundle was available to pin.",
+      "calendar_url": "https://pds.nasa.gov/datasearch/subscription-service/data-release-calendar-2026.shtml",
+      "anticipated_release": "2026-10-10",
+      "actual_release": "TBD"
+    },
+    "next_step_logic": {
+      "recommended": "Run the same small, fixed-camera image-state coverage test for Earthset, Sunset, and Sunrise before any broad archive analysis.",
+      "why": "Earthrise now establishes a real non-overlap, but one event cannot distinguish an isolated planning choice from a repeated window-placement pattern.",
+      "alternative": "Re-attest Earthrise with the Artemis II SPICE bundle after NASA publishes an actual release.",
+      "fallback": "If the other event families do not reproduce the relation, pivot to Stage 3 target execution and attention allocation rather than widening the timing claim."
+    }
+  },
+  "hard_negatives": {
+    "shift_image_timestamps_plus_300_seconds": {
+      "testbed_id": "artemis2-observation-execution-stage2a-earthrise",
+      "version": "0.3.0",
+      "run_at_utc": "2026-10-09T19:49:03Z",
+      "mutation": "shift_image_timestamps_plus_300_seconds",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "coverage_relation": "BEFORE_EVENT_NO_OVERLAP",
+      "minimum_separation_seconds": 39.852156,
+      "availability_window": {
+        "start_utc": "2026-04-06T23:25:30Z",
+        "end_utc": "2026-04-06T23:25:34.147844Z",
+        "duration_seconds": 4.147844
+      },
+      "event_brackets": {
+        "first_visible_contact": {
+          "lower_exclusive_utc": "2026-04-06T23:26:14Z",
+          "upper_inclusive_utc": "2026-04-06T23:26:44Z"
+        },
+        "full_clearance": {
+          "lower_exclusive_utc": "2026-04-06T23:27:44Z",
+          "upper_inclusive_utc": "2026-04-06T23:28:14Z"
+        },
+        "stability_check_utc": "2026-04-06T23:28:44Z"
+      },
+      "frames": [
+        {
+          "image": "art002e016296_saw3_src_v01.jpg",
+          "raw_label": "art002e016296_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:26:14Z",
+          "state": "NOT_VISIBLE",
+          "component_pixels": 0,
+          "component_width": 0,
+          "component_height": 0
+        },
+        {
+          "image": "art002e016297_saw3_src_v01.jpg",
+          "raw_label": "art002e016297_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:26:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 98,
+          "component_width": 18,
+          "component_height": 18
+        },
+        {
+          "image": "art002e016298_saw3_src_v01.jpg",
+          "raw_label": "art002e016298_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:27:14Z",
+          "state": "PARTIAL",
+          "component_pixels": 477,
+          "component_width": 30,
+          "component_height": 47
+        },
+        {
+          "image": "art002e016299_saw3_src_v01.jpg",
+          "raw_label": "art002e016299_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:27:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 2130,
+          "component_width": 113,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016300_saw3_src_v01.jpg",
+          "raw_label": "art002e016300_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:28:14Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4050,
+          "component_width": 111,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016301_saw3_src_v01.jpg",
+          "raw_label": "art002e016301_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:28:44Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4187,
+          "component_width": 110,
+          "component_height": 136
+        }
+      ],
+      "checks": [
+        {
+          "id": "classification_identity",
+          "pass": true,
+          "observed_sha256": "a189f9f5a48db532f9b0e71aad41f1abbfcefdd3bb1bd4a87dcf17e27eae3c85"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "2cbdbf604bc6451a03aed33118e81fcb42f5f434fc632f744f1e364675cb8a2e"
+        },
+        {
+          "id": "contact_sheet_identity",
+          "pass": true,
+          "observed_sha256": "50b9b10faf9bf6d5a5c927caa08247fbe65bab838fadf16ae20b543432e0195d"
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "oracle_kind",
+          "pass": true,
+          "observed": "fixed_camera_image_state_transitions"
+        },
+        {
+          "id": "label_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": false
+        },
+        {
+          "id": "label_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": false
+        },
+        {
+          "id": "label_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": false
+        },
+        {
+          "id": "label_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": false
+        },
+        {
+          "id": "label_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": false
+        },
+        {
+          "id": "label_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": false
+        },
+        {
+          "id": "visual_state_sequence",
+          "pass": true,
+          "observed": [
+            "NOT_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "FULL_CLEAR",
+            "FULL_CLEAR"
+          ]
+        },
+        {
+          "id": "thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        {
+          "id": "event_brackets",
+          "pass": false,
+          "observed": {
+            "first_visible_contact": {
+              "lower_exclusive_utc": "2026-04-06T23:26:14Z",
+              "upper_inclusive_utc": "2026-04-06T23:26:44Z"
+            },
+            "full_clearance": {
+              "lower_exclusive_utc": "2026-04-06T23:27:44Z",
+              "upper_inclusive_utc": "2026-04-06T23:28:14Z"
+            },
+            "stability_check_utc": "2026-04-06T23:28:44Z"
+          }
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "otr_source_values",
+          "pass": true
+        },
+        {
+          "id": "coverage_relation",
+          "pass": false,
+          "observed_relation": "BEFORE_EVENT_NO_OVERLAP",
+          "minimum_separation_seconds": 39.852156
+        }
+      ],
+      "errors": [
+        "Timestamp binding failed for art002e016296_saw3_src_v01.jpg",
+        "Timestamp binding failed for art002e016297_saw3_src_v01.jpg",
+        "Timestamp binding failed for art002e016298_saw3_src_v01.jpg",
+        "Timestamp binding failed for art002e016299_saw3_src_v01.jpg",
+        "Timestamp binding failed for art002e016300_saw3_src_v01.jpg",
+        "Timestamp binding failed for art002e016301_saw3_src_v01.jpg",
+        "Derived event brackets differ from the frozen contract",
+        "Coverage relation differs from the frozen expectation"
+      ],
+      "claim_ceiling": "Window coverage or non-coverage for this one Earthrise sequence. No boundary-delay, causal, operational-impact, or mission-wide claim.",
+      "spice_branch": {
+        "status": "NOT_ADMISSIBLE_AT_RUN_TIME",
+        "reason": "NASA PDS lists the Artemis II SPICE actual release as TBD; no archive bundle was available to pin.",
+        "calendar_url": "https://pds.nasa.gov/datasearch/subscription-service/data-release-calendar-2026.shtml",
+        "anticipated_release": "2026-10-10",
+        "actual_release": "TBD"
+      },
+      "next_step_logic": null
+    },
+    "label_pre_event_frame_partial": {
+      "testbed_id": "artemis2-observation-execution-stage2a-earthrise",
+      "version": "0.3.0",
+      "run_at_utc": "2026-10-09T19:49:03Z",
+      "mutation": "label_pre_event_frame_partial",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "coverage_relation": "UNESTABLISHED",
+      "minimum_separation_seconds": null,
+      "availability_window": {
+        "start_utc": "2026-04-06T23:25:30Z",
+        "end_utc": "2026-04-06T23:25:34.147844Z",
+        "duration_seconds": 4.147844
+      },
+      "event_brackets": null,
+      "frames": [
+        {
+          "image": "art002e016296_saw3_src_v01.jpg",
+          "raw_label": "art002e016296_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:21:14Z",
+          "state": "PARTIAL",
+          "component_pixels": 0,
+          "component_width": 0,
+          "component_height": 0
+        },
+        {
+          "image": "art002e016297_saw3_src_v01.jpg",
+          "raw_label": "art002e016297_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:21:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 98,
+          "component_width": 18,
+          "component_height": 18
+        },
+        {
+          "image": "art002e016298_saw3_src_v01.jpg",
+          "raw_label": "art002e016298_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:22:14Z",
+          "state": "PARTIAL",
+          "component_pixels": 477,
+          "component_width": 30,
+          "component_height": 47
+        },
+        {
+          "image": "art002e016299_saw3_src_v01.jpg",
+          "raw_label": "art002e016299_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:22:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 2130,
+          "component_width": 113,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016300_saw3_src_v01.jpg",
+          "raw_label": "art002e016300_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:23:14Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4050,
+          "component_width": 111,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016301_saw3_src_v01.jpg",
+          "raw_label": "art002e016301_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:23:44Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4187,
+          "component_width": 110,
+          "component_height": 136
+        }
+      ],
+      "checks": [
+        {
+          "id": "classification_identity",
+          "pass": true,
+          "observed_sha256": "a189f9f5a48db532f9b0e71aad41f1abbfcefdd3bb1bd4a87dcf17e27eae3c85"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "2cbdbf604bc6451a03aed33118e81fcb42f5f434fc632f744f1e364675cb8a2e"
+        },
+        {
+          "id": "contact_sheet_identity",
+          "pass": true,
+          "observed_sha256": "50b9b10faf9bf6d5a5c927caa08247fbe65bab838fadf16ae20b543432e0195d"
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "oracle_kind",
+          "pass": true,
+          "observed": "fixed_camera_image_state_transitions"
+        },
+        {
+          "id": "label_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "visual_state_sequence",
+          "pass": false,
+          "observed": [
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "FULL_CLEAR",
+            "FULL_CLEAR"
+          ]
+        },
+        {
+          "id": "thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        {
+          "id": "event_brackets",
+          "pass": false,
+          "observed": null
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "otr_source_values",
+          "pass": true
+        },
+        {
+          "id": "coverage_relation",
+          "pass": false,
+          "observed_relation": "UNESTABLISHED",
+          "minimum_separation_seconds": null
+        }
+      ],
+      "errors": [
+        "Visual-state sequence does not match the frozen rise progression",
+        "Derived event brackets differ from the frozen contract",
+        "Coverage relation differs from the frozen expectation"
+      ],
+      "claim_ceiling": "Window coverage or non-coverage for this one Earthrise sequence. No boundary-delay, causal, operational-impact, or mission-wide claim.",
+      "spice_branch": {
+        "status": "NOT_ADMISSIBLE_AT_RUN_TIME",
+        "reason": "NASA PDS lists the Artemis II SPICE actual release as TBD; no archive bundle was available to pin.",
+        "calendar_url": "https://pds.nasa.gov/datasearch/subscription-service/data-release-calendar-2026.shtml",
+        "anticipated_release": "2026-10-10",
+        "actual_release": "TBD"
+      },
+      "next_step_logic": null
+    },
+    "present_transcript_as_image_oracle": {
+      "testbed_id": "artemis2-observation-execution-stage2a-earthrise",
+      "version": "0.3.0",
+      "run_at_utc": "2026-10-09T19:49:03Z",
+      "mutation": "present_transcript_as_image_oracle",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "coverage_relation": "AFTER_EVENT_NO_OVERLAP",
+      "minimum_separation_seconds": 136.0,
+      "availability_window": {
+        "start_utc": "2026-04-06T23:25:30Z",
+        "end_utc": "2026-04-06T23:25:34.147844Z",
+        "duration_seconds": 4.147844
+      },
+      "event_brackets": {
+        "first_visible_contact": {
+          "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+          "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+        },
+        "full_clearance": {
+          "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+          "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+        },
+        "stability_check_utc": "2026-04-06T23:23:44Z"
+      },
+      "frames": [
+        {
+          "image": "art002e016296_saw3_src_v01.jpg",
+          "raw_label": "art002e016296_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:21:14Z",
+          "state": "NOT_VISIBLE",
+          "component_pixels": 0,
+          "component_width": 0,
+          "component_height": 0
+        },
+        {
+          "image": "art002e016297_saw3_src_v01.jpg",
+          "raw_label": "art002e016297_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:21:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 98,
+          "component_width": 18,
+          "component_height": 18
+        },
+        {
+          "image": "art002e016298_saw3_src_v01.jpg",
+          "raw_label": "art002e016298_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:22:14Z",
+          "state": "PARTIAL",
+          "component_pixels": 477,
+          "component_width": 30,
+          "component_height": 47
+        },
+        {
+          "image": "art002e016299_saw3_src_v01.jpg",
+          "raw_label": "art002e016299_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:22:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 2130,
+          "component_width": 113,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016300_saw3_src_v01.jpg",
+          "raw_label": "art002e016300_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:23:14Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4050,
+          "component_width": 111,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016301_saw3_src_v01.jpg",
+          "raw_label": "art002e016301_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:23:44Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4187,
+          "component_width": 110,
+          "component_height": 136
+        }
+      ],
+      "checks": [
+        {
+          "id": "classification_identity",
+          "pass": true,
+          "observed_sha256": "a189f9f5a48db532f9b0e71aad41f1abbfcefdd3bb1bd4a87dcf17e27eae3c85"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "2cbdbf604bc6451a03aed33118e81fcb42f5f434fc632f744f1e364675cb8a2e"
+        },
+        {
+          "id": "contact_sheet_identity",
+          "pass": true,
+          "observed_sha256": "50b9b10faf9bf6d5a5c927caa08247fbe65bab838fadf16ae20b543432e0195d"
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "oracle_kind",
+          "pass": false,
+          "observed": "crew_transcript"
+        },
+        {
+          "id": "label_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "visual_state_sequence",
+          "pass": true,
+          "observed": [
+            "NOT_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "FULL_CLEAR",
+            "FULL_CLEAR"
+          ]
+        },
+        {
+          "id": "thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        {
+          "id": "event_brackets",
+          "pass": true,
+          "observed": {
+            "first_visible_contact": {
+              "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+              "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+            },
+            "full_clearance": {
+              "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+              "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+            },
+            "stability_check_utc": "2026-04-06T23:23:44Z"
+          }
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "otr_source_values",
+          "pass": true
+        },
+        {
+          "id": "coverage_relation",
+          "pass": true,
+          "observed_relation": "AFTER_EVENT_NO_OVERLAP",
+          "minimum_separation_seconds": 136.0
+        }
+      ],
+      "errors": [
+        "Oracle is not the admitted fixed-camera image-state source"
+      ],
+      "claim_ceiling": "Window coverage or non-coverage for this one Earthrise sequence. No boundary-delay, causal, operational-impact, or mission-wide claim.",
+      "spice_branch": {
+        "status": "NOT_ADMISSIBLE_AT_RUN_TIME",
+        "reason": "NASA PDS lists the Artemis II SPICE actual release as TBD; no archive bundle was available to pin.",
+        "calendar_url": "https://pds.nasa.gov/datasearch/subscription-service/data-release-calendar-2026.shtml",
+        "anticipated_release": "2026-10-10",
+        "actual_release": "TBD"
+      },
+      "next_step_logic": null
+    },
+    "widen_availability_window_to_event": {
+      "testbed_id": "artemis2-observation-execution-stage2a-earthrise",
+      "version": "0.3.0",
+      "run_at_utc": "2026-10-09T19:49:03Z",
+      "mutation": "widen_availability_window_to_event",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "disposition": null,
+      "coverage_relation": "AFTER_EVENT_NO_OVERLAP",
+      "minimum_separation_seconds": 136.0,
+      "availability_window": {
+        "start_utc": "2026-04-06T23:25:30Z",
+        "end_utc": "2026-04-06T23:25:34.147844Z",
+        "duration_seconds": 4.147844
+      },
+      "event_brackets": {
+        "first_visible_contact": {
+          "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+          "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+        },
+        "full_clearance": {
+          "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+          "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+        },
+        "stability_check_utc": "2026-04-06T23:23:44Z"
+      },
+      "frames": [
+        {
+          "image": "art002e016296_saw3_src_v01.jpg",
+          "raw_label": "art002e016296_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:21:14Z",
+          "state": "NOT_VISIBLE",
+          "component_pixels": 0,
+          "component_width": 0,
+          "component_height": 0
+        },
+        {
+          "image": "art002e016297_saw3_src_v01.jpg",
+          "raw_label": "art002e016297_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:21:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 98,
+          "component_width": 18,
+          "component_height": 18
+        },
+        {
+          "image": "art002e016298_saw3_src_v01.jpg",
+          "raw_label": "art002e016298_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:22:14Z",
+          "state": "PARTIAL",
+          "component_pixels": 477,
+          "component_width": 30,
+          "component_height": 47
+        },
+        {
+          "image": "art002e016299_saw3_src_v01.jpg",
+          "raw_label": "art002e016299_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:22:44Z",
+          "state": "PARTIAL",
+          "component_pixels": 2130,
+          "component_width": 113,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016300_saw3_src_v01.jpg",
+          "raw_label": "art002e016300_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:23:14Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4050,
+          "component_width": 111,
+          "component_height": 136
+        },
+        {
+          "image": "art002e016301_saw3_src_v01.jpg",
+          "raw_label": "art002e016301_saw3_raw_v01.xml",
+          "time_utc": "2026-04-06T23:23:44Z",
+          "state": "FULL_CLEAR",
+          "component_pixels": 4187,
+          "component_width": 110,
+          "component_height": 136
+        }
+      ],
+      "checks": [
+        {
+          "id": "classification_identity",
+          "pass": true,
+          "observed_sha256": "a189f9f5a48db532f9b0e71aad41f1abbfcefdd3bb1bd4a87dcf17e27eae3c85"
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true,
+          "observed_sha256": "2cbdbf604bc6451a03aed33118e81fcb42f5f434fc632f744f1e364675cb8a2e"
+        },
+        {
+          "id": "contact_sheet_identity",
+          "pass": true,
+          "observed_sha256": "50b9b10faf9bf6d5a5c927caa08247fbe65bab838fadf16ae20b543432e0195d"
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016296_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016297_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016298_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016299_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016300_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_raw_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "source_identity:art002e016301_saw3_src_v01.xml",
+          "pass": true
+        },
+        {
+          "id": "oracle_kind",
+          "pass": true,
+          "observed": "fixed_camera_image_state_transitions"
+        },
+        {
+          "id": "label_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016296_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016297_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016298_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016299_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016300_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "label_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "timestamp_binding:art002e016301_saw3_src_v01.jpg",
+          "pass": true
+        },
+        {
+          "id": "visual_state_sequence",
+          "pass": true,
+          "observed": [
+            "NOT_VISIBLE",
+            "PARTIAL",
+            "PARTIAL",
+            "PARTIAL",
+            "FULL_CLEAR",
+            "FULL_CLEAR"
+          ]
+        },
+        {
+          "id": "thirty_second_cadence",
+          "pass": true,
+          "observed_seconds": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ]
+        },
+        {
+          "id": "event_brackets",
+          "pass": true,
+          "observed": {
+            "first_visible_contact": {
+              "lower_exclusive_utc": "2026-04-06T23:21:14Z",
+              "upper_inclusive_utc": "2026-04-06T23:21:44Z"
+            },
+            "full_clearance": {
+              "lower_exclusive_utc": "2026-04-06T23:22:44Z",
+              "upper_inclusive_utc": "2026-04-06T23:23:14Z"
+            },
+            "stability_check_utc": "2026-04-06T23:23:44Z"
+          }
+        },
+        {
+          "id": "otr_identity",
+          "pass": true,
+          "observed_sha256": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754"
+        },
+        {
+          "id": "otr_source_values",
+          "pass": false
+        },
+        {
+          "id": "coverage_relation",
+          "pass": true,
+          "observed_relation": "AFTER_EVENT_NO_OVERLAP",
+          "minimum_separation_seconds": 136.0
+        }
+      ],
+      "errors": [
+        "OTR source values differ from the frozen availability window"
+      ],
+      "claim_ceiling": "Window coverage or non-coverage for this one Earthrise sequence. No boundary-delay, causal, operational-impact, or mission-wide claim.",
+      "spice_branch": {
+        "status": "NOT_ADMISSIBLE_AT_RUN_TIME",
+        "reason": "NASA PDS lists the Artemis II SPICE actual release as TBD; no archive bundle was available to pin.",
+        "calendar_url": "https://pds.nasa.gov/datasearch/subscription-service/data-release-calendar-2026.shtml",
+        "anticipated_release": "2026-10-10",
+        "actual_release": "TBD"
+      },
+      "next_step_logic": null
+    }
+  },
+  "hard_negatives_pass": true,
+  "pass": true,
+  "evidence_state": "VERIFIED_NO_OVERLAP"
+}

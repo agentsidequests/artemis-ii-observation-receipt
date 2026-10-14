@@ -1,0 +1,22 @@
+{
+  "attempt_log_id": "artemis2-stage7a-verification-attempts-v1",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "VALIDATOR_REJECTED_SOURCE_REPRESENTATION",
+      "failure_layer": "physical raster row stride",
+      "detail": "The acquired strip sample count contradicted the initially assumed row stride. No regional metric was produced.",
+      "result_reported": false,
+      "contract_changed": "Representation-only correction: the semantic prediction, targets, radii, baselines, thresholds, claim ceiling, and next-step logic were unchanged."
+    },
+    {
+      "attempt": 2,
+      "status": "VALIDATOR_ERROR",
+      "failure_layer": "hard-negative dispatcher identity",
+      "detail": "The executable used underscores where the frozen mutation id contains hyphens. The baseline was computed in-process but no result artifact was written or reported.",
+      "result_reported": false,
+      "contract_changed": false,
+      "recovery": "Match the exact frozen mutation id and rerun the complete offline verifier."
+    }
+  ]
+}

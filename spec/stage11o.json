@@ -1,0 +1,48 @@
+{
+  "testbed_id": "artemis2-stage11o-overlap-video-canary",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T22:35:00Z",
+  "question": "Can the exact SAW3 interval spanning the shared 00:51:15.947 UTC crew report be materialized within a 64 MiB client-side media budget by using smaller range responses?",
+  "terminal_objective": "Determine whether released overlapping pixels can tighten the flash receipt without downloading the 2.96 GB source or treating timing overlap as event capture.",
+  "baseline": "Stage 5A verified byte-range support but exhausted 64 MiB after allowing 32 MiB proxy responses; no clip was materialized.",
+  "treatment": "Repeat the same exact channel and 15-second interval with one-MiB maximum proxy responses and a 64-KiB container probe.",
+  "authority": "Private bounded source acquisition and local inspection only. No publication, impact confirmation, photometric claim, full-product download, second-channel widening, or outreach.",
+  "source": {
+    "url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+    "delivery_url": "https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+    "expected_bytes": 2960238197,
+    "start_utc": "2026-04-06T23:38:11Z",
+    "stop_utc": "2026-04-07T01:37:57Z"
+  },
+  "subset": {
+    "start_utc": "2026-04-07T00:51:10Z",
+    "end_utc": "2026-04-07T00:51:25Z",
+    "source_offset_seconds": 4379,
+    "duration_seconds": 15,
+    "first_report_utc": "2026-04-07T00:51:15.947Z"
+  },
+  "budget": {
+    "aggregate_media_body_bytes": 67108864,
+    "initial_probe_bytes": 65536,
+    "maximum_proxy_response_bytes": 1048576,
+    "maximum_top_level_atom_headers": 16,
+    "timeout_seconds": 30
+  },
+  "success_oracle": {
+    "required_state": "VERIFIED_BOUNDED_EXTRACTION",
+    "video_codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "minimum_duration_seconds": 14.9,
+    "maximum_duration_seconds": 15.1,
+    "audio_streams": 0
+  },
+  "claim_ceiling": "A passing transport canary establishes only that the exact label-timed interval was materialized. Pixel inspection must separately establish whether the Moon is visible and whether any transient is present. Neither timing overlap nor a visible transient independently establishes impact causation, geolocation, photometry, or a mapping to an annotated event.",
+  "next_step_logic": {
+    "on_success": "Inspect the exact clip for target visibility and transient candidates under a separate content receipt.",
+    "on_budget_stop": "Preserve the result and retain the overlapping stream as unvalidated coverage unless an exact sample-table route becomes cheaper.",
+    "on_target_not_visible": "Record the overlap as non-informative camera coverage and do not inspect channel 2 automatically.",
+    "on_candidate": "Require frame-level timing, persistence, artifact rejection, lunar localization, and independent evidence before changing the flash claim.",
+    "stop": "Do not download the complete source or widen to another source without a decision-changing reason."
+  }
+}

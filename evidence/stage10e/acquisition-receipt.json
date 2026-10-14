@@ -1,0 +1,158 @@
+{
+  "receipt_id": "artemis2-stage10e-all-raw-metadata-v1",
+  "completed_at_utc": "2026-10-10T11:54:32Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "sources": [
+    {
+      "path": "evidence/stage10e/source/atlas-all-raw-crew-camera-query.json",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "bytes": 1283,
+      "sha256": "bf83f6d1feec6cc954922e407da99e0cb35b8d13cb5423cc4546c2cdd7a38dc3",
+      "role": "frozen complete all-flight-day raw crew-camera query"
+    },
+    {
+      "path": "evidence/stage10a/acquisition-receipt.json",
+      "bytes": 6454,
+      "sha256": "bdc0580214ca5aff0c6a3635533dda2d4d4ec48125fa6575609b818f7f3e5ecd",
+      "role": "preserved complete Flight Day 6 acquisition receipt reused as the dominant cohort"
+    }
+  ],
+  "atlas_pages": [
+    {
+      "flight_day": 1,
+      "from": 0,
+      "hits": 273,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd01.json",
+      "request_bytes": 1191,
+      "request_sha256": "e704957c20ce64c57a0e67c5ad8a987b3b86b292a2dba1994dd4d3118880e56f",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd01.json",
+      "response_bytes": 319085,
+      "response_sha256": "53139115a47077d929a9f1dd64f462e392b9238325f31e39118b8d20283ac66a",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "319085"
+      }
+    },
+    {
+      "flight_day": 2,
+      "from": 0,
+      "hits": 616,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd02.json",
+      "request_bytes": 1191,
+      "request_sha256": "23735059d69df63b0590627f1d69a16f2241eb73e477bc292019fd3bd29680ae",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd02.json",
+      "response_bytes": 714320,
+      "response_sha256": "bd436b98c5f57625ba5e0faeb60d65b382359e3e66807f1a64d4256fb20fbad0",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "714320"
+      }
+    },
+    {
+      "flight_day": 3,
+      "from": 0,
+      "hits": 253,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd03.json",
+      "request_bytes": 1191,
+      "request_sha256": "a648fa92c46616d80c613bf96e2d28bded657c988ef5a2c294ea0519ad1152ce",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd03.json",
+      "response_bytes": 277778,
+      "response_sha256": "3429f576264a7f15504284824142dd8f4da8103b27d426cff9d73600b0165537",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "277778"
+      }
+    },
+    {
+      "flight_day": 4,
+      "from": 0,
+      "hits": 276,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd04.json",
+      "request_bytes": 1191,
+      "request_sha256": "87fdeb1a7aabecc6f8a0c6287892a406d0173e1f2fa3de4434d6720983ffe7c4",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd04.json",
+      "response_bytes": 309898,
+      "response_sha256": "ee57ca7efd1a38e126559b98b27919db4e9907fa747a38cbbcae506ee5253868",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "309898"
+      }
+    },
+    {
+      "flight_day": 5,
+      "from": 0,
+      "hits": 311,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd05.json",
+      "request_bytes": 1191,
+      "request_sha256": "5b20354e968dea8964806519d1fd298a67d307a1e2132977964abd2eb090fa27",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd05.json",
+      "response_bytes": 342041,
+      "response_sha256": "9867b36b24e518f36b16c57e3dbc7c3f3f76895a6967d61de9b0ea1569dadec9",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "342041"
+      }
+    },
+    {
+      "flight_day": 7,
+      "from": 0,
+      "hits": 98,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd07.json",
+      "request_bytes": 1191,
+      "request_sha256": "55964d0dcfde552d5105a0ddfb57dd50238812cb4e9a0420172a1061b6b8466a",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd07.json",
+      "response_bytes": 114426,
+      "response_sha256": "4a6c0149ff51c80ee695d73d20cdd96b1f7716ea314c422a2eee7ea21a2aba95",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "114426"
+      }
+    },
+    {
+      "flight_day": 8,
+      "from": 0,
+      "hits": 79,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd08.json",
+      "request_bytes": 1191,
+      "request_sha256": "7e2877ee1a9fc36b0ba062e1b1448592dc37440ebac32ba182a5bfd0b85f8043",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd08.json",
+      "response_bytes": 85213,
+      "response_sha256": "8bf00dbc02242314d54f489c1c8d6a524cecaab449f92e80dcd27ad49818c7b4",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "85213"
+      }
+    },
+    {
+      "flight_day": 9,
+      "from": 0,
+      "hits": 0,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd09.json",
+      "request_bytes": 1191,
+      "request_sha256": "f7eba488d282a2eff54d37316d15c5366a760538414cf3e34efcb0047e495797",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd09.json",
+      "response_bytes": 160,
+      "response_sha256": "5704c3d457e1b5d319e6adb721108c745c8321691e9cb46248a2087079958c0e",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "160"
+      }
+    },
+    {
+      "flight_day": 10,
+      "from": 0,
+      "hits": 0,
+      "request_path": "evidence/stage10e/source/daily-pages/request-fd10.json",
+      "request_bytes": 1192,
+      "request_sha256": "1c00c96ca716d9d7ae3da67febe56d0653671ae36222e0490c37f9b98c4a82a2",
+      "response_path": "evidence/stage10e/source/daily-pages/response-fd10.json",
+      "response_bytes": 160,
+      "response_sha256": "966a0f381173c0750602a3e406b88f8ac7072e42b10ab5e4fcfaaad7a2f83b18",
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "160"
+      }
+    }
+  ]
+}

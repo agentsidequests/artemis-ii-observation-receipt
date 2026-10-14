@@ -1,0 +1,158 @@
+{
+  "receipt_version": "0.2.0",
+  "case_id": "artemis-ii-flashes",
+  "title": "Artemis II lunar flash evidence",
+  "state": "VERIFIED",
+  "pass": true,
+  "checks": {
+    "case_contract_valid": true,
+    "artifacts_match": true,
+    "expected_findings_match": true
+  },
+  "artifact_checks": [
+    {
+      "id": "artemis-event-ledger",
+      "path": "cases/artemis-ii-flashes/sources/artemis-event-ledger.csv",
+      "exists": true,
+      "bytes": 806,
+      "sha256": "8d06bb155f527fc18fe3e161fac14c31b28024d51457cff31dca4a0ef2c5edaa",
+      "expected_bytes": 806,
+      "expected_sha256": "8d06bb155f527fc18fe3e161fac14c31b28024d51457cff31dca4a0ef2c5edaa",
+      "state": "MATCH",
+      "match": true
+    },
+    {
+      "id": "shared-report-excerpt",
+      "path": "cases/artemis-ii-flashes/sources/shared-report-excerpt.csv",
+      "exists": true,
+      "bytes": 358,
+      "sha256": "e159dd702161b5162658bdc0ca5607d4c30254fb8c020e58cd08efa937f42635",
+      "expected_bytes": 358,
+      "expected_sha256": "e159dd702161b5162658bdc0ca5607d4c30254fb8c020e58cd08efa937f42635",
+      "state": "MATCH",
+      "match": true
+    },
+    {
+      "id": "camera-coverage-summary",
+      "path": "cases/artemis-ii-flashes/sources/camera-coverage-summary.json",
+      "exists": true,
+      "bytes": 718,
+      "sha256": "dedf3f1248a3ace8fa99ef04fa76e15627bcd81bd0b507dae27b157e8b6a47ad",
+      "expected_bytes": 718,
+      "expected_sha256": "dedf3f1248a3ace8fa99ef04fa76e15627bcd81bd0b507dae27b157e8b6a47ad",
+      "state": "MATCH",
+      "match": true
+    },
+    {
+      "id": "nasa-preliminary-report",
+      "url": "https://science.nasa.gov/feature/artemis-ii-preliminary-lunar-science-report/",
+      "state": "REFERENCE_ONLY",
+      "match": true
+    },
+    {
+      "id": "nasa-citizen-science-update",
+      "url": "https://science.nasa.gov/get-involved/citizen-science/volunteers-help-nasa-astronauts-record-lunar-flashes/",
+      "state": "REFERENCE_ONLY",
+      "match": true
+    }
+  ],
+  "findings": [
+    {
+      "claim_id": "accepted-ledger",
+      "proposition": "The public annotation contains five accepted events, eight witness marks, and three observers.",
+      "rule_kind": "ledger_summary",
+      "claim_ceiling": "Credible event ledger, not calibrated sensitivity or independent detections.",
+      "status": "SUPPORTED",
+      "observed": {
+        "event_count": 5,
+        "witness_marks": 8,
+        "unique_observers": 3,
+        "observers": [
+          "Jeremy Hansen",
+          "Reid Wiseman",
+          "Victor Glover"
+        ]
+      },
+      "expected": {
+        "event_count": 5,
+        "witness_marks": 8,
+        "unique_observers": 3
+      }
+    },
+    {
+      "claim_id": "later-window-tested-ledger-events",
+      "proposition": "The later 30 fps window covered the annotation's 01:04 background-photo epoch.",
+      "rule_kind": "window_after_boundary",
+      "claim_ceiling": "Metadata-time non-overlap only. The photo epoch is not ledger creation or an upper bound for all five accepted events; their event-level video coverage remains unestablished.",
+      "status": "REFUTED_NONOVERLAP",
+      "window_id": "later-saw3-30fps",
+      "gap_seconds": 913.0
+    },
+    {
+      "claim_id": "overlap-null-excludes-report",
+      "proposition": "The absence of a screened pulse in the overlap clip excludes the shared crew report.",
+      "rule_kind": "window_capability_gate",
+      "claim_ceiling": "Contextual temporal overlap, not event exclusion.",
+      "status": "BLOCKED_INSUFFICIENT_CAPABILITY",
+      "window_id": "overlap-saw3-59.94fps",
+      "overlaps": true,
+      "missing_capabilities": [
+        "source_pixel_equivalent",
+        "radiometrically_calibrated",
+        "detection_completeness_at_50_percent",
+        "target_resolved_for_localization"
+      ]
+    },
+    {
+      "claim_id": "all-lunar-count-floor",
+      "proposition": "Five accepted events support a conservative whole-Moon one-hour detected-count floor.",
+      "rule_kind": "count_floor_sphere",
+      "claim_ceiling": "Detected-count floor under explicit assumptions, not calibrated flux.",
+      "status": "SUPPORTED_WITH_ASSUMPTIONS",
+      "accepted_event_count": 5,
+      "sphere_area_km2": 38045943.67203383,
+      "duration_hours": 1.0,
+      "value_km2_hour": 1.314200547396414e-07,
+      "expected_value_km2_hour": 1.314200547396414e-07,
+      "relative_error": 0.0
+    },
+    {
+      "claim_id": "calibrated-impact-flux",
+      "proposition": "The five events establish a calibrated brightness-threshold lunar impact flux.",
+      "rule_kind": "required_measurement_fields",
+      "claim_ceiling": "Blocked until a recomputable measurement function is public.",
+      "status": "BLOCKED_MISSING_MEASUREMENT_FUNCTION",
+      "missing_fields": [
+        "monitored_area_km2",
+        "live_time_hours",
+        "limiting_magnitude",
+        "detection_probability_surface",
+        "calibrated_brightness"
+      ]
+    },
+    {
+      "claim_id": "shared-report-independent-confirmations",
+      "proposition": "The two marks around the 00:51 report are independent confirmations suitable for capture-recapture inference.",
+      "rule_kind": "witness_independence_gate",
+      "claim_ceiling": "Separate witness marks are preserved, but independence is not assumed without a declared dependence model.",
+      "status": "BLOCKED_DEPENDENCE_MODEL_MISSING",
+      "candidate_id": "shared-transcript-report",
+      "witness_marks": 2,
+      "independent_marks": 0,
+      "dependency_model": null
+    }
+  ],
+  "summary": {
+    "supported": 2,
+    "refuted": 1,
+    "blocked": 3,
+    "other": 0
+  },
+  "claim_ceiling": "This case may establish the annotated witness pattern, selected transcript anchors, metadata-time non-overlap with the background-photo epoch, the poor clip-native recovery of one contextual screen, and a conservative detected-count floor. It does not certify ledger creation, bound all five event times, certify coverage or noncoverage of every accepted event, map reports one-to-one to numbered events, establish independent witnesses, exclude a reported flash, estimate calibrated physical flux, prove every candidate's cause, or accept an operational recommendation on NASA's behalf.",
+  "next_steps": [
+    "Publish event-level time intervals or uncertainty bounds before mapping transcript reports to numbered events.",
+    "Publish verified live time, monitored area, radiometric response, limiting sensitivity, and task-shaped injection recovery before estimating flux.",
+    "Declare a witness-dependence model before treating prompted or socially cued marks as independent detections.",
+    "Bind every future camera null to event coverage, target-in-field evidence, and a passed capability gate."
+  ]
+}

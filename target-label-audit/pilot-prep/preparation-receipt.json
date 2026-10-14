@@ -1,0 +1,104 @@
+{
+  "status": "METADATA_ONLY_PROPOSAL_NOT_EXECUTED_AUDIT",
+  "proposal_count": 48,
+  "distinct_actions": 48,
+  "reviewer_queue_count": 24,
+  "confirmation_reserve_count": 24,
+  "phase_bucket_counts": {
+    "CALIBRATION_PROPOSED": {
+      "blank_recorded_tag": 12,
+      "sunset_recorded_tag": 6,
+      "other_recorded_tag": 6
+    },
+    "CONFIRMATION_RESERVED": {
+      "blank_recorded_tag": 12,
+      "other_recorded_tag": 6,
+      "sunset_recorded_tag": 6
+    }
+  },
+  "phase_camera_counts": {
+    "CALIBRATION_PROPOSED": {
+      "3500015": 15,
+      "3920019": 7,
+      "3500017": 2
+    },
+    "CONFIRMATION_RESERVED": {
+      "3500015": 12,
+      "3920019": 10,
+      "3500017": 2
+    }
+  },
+  "phase_coverage_regimes": {
+    "CALIBRATION_PROPOSED": {
+      "partial": 14,
+      "zero": 3,
+      "complete": 7
+    },
+    "CONFIRMATION_RESERVED": {
+      "zero": 4,
+      "complete": 5,
+      "partial": 15
+    }
+  },
+  "native_representation_bytes": {
+    "CALIBRATION_PROPOSED": {
+      "data_source": 508676788,
+      "data_raw": 1347694592,
+      "data_processed": 4017356336
+    },
+    "CONFIRMATION_RESERVED": {
+      "data_source": 550501154,
+      "data_raw": 1497025280,
+      "data_processed": 4463324720
+    }
+  },
+  "excluded_known_browse_capture_ids": [
+    "art002e012219",
+    "art002e012252",
+    "art002e012264"
+  ],
+  "exclusion_history_scope": "Pinned Stage 8B browse manifest only; not a whole-history independence certificate",
+  "source_hashes": {
+    "results/stage10o-product-relationship-manifest.csv": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729",
+    "evidence/stage8b/source-manifest.json": "a2610b4fd650dc202e3af2b00b15bddbfedaed2bf206a455c1fb8abc6c8af34a",
+    "corpus/artemis2_outgoing_target_request.json": "07dcfd09317764b4fb1436753eea42beafaad85fa0f307e43296553659e75754",
+    "target-label-audit/pilot-prep/policy.json": "55f22a4f2dd698e5a8a5298742608581015d20fd3d2c0ecec32ff4098580ad5d",
+    "target-label-audit/pilot-prep/reviewer-packet-template.md": "4e35e362978860d85518180d1ef29d4a9e5987146fae52e7a803cbbb48fc8071",
+    "src/prepare_target_label_pilot.py": "86de481f68a022311b9aa3772b2bcc547be45a160b888dce05c53a3de6e43f0b",
+    "ARTEMIS-II-TARGET-LABEL-AUDIT-PROTOCOL.md": "62140153e8ad5a56d2b00a648af89dc43ecb9fe5bf6e0ecadbc04849663f07f7"
+  },
+  "artifacts": {
+    "reviewer-packet.md": {
+      "bytes": 8519,
+      "sha256": "578284bcc424669934df3b0eaf13a4b14ec34fddee0eebf10d3a65b0194f1b48"
+    },
+    "reviewer-queue.csv": {
+      "bytes": 1932,
+      "sha256": "cafb64f44ad9c37d774a07897fd55bd9a4669f20f0bf477caf100fbeb04f63c8"
+    },
+    "steward-crosswalk.csv": {
+      "bytes": 72192,
+      "sha256": "8b7ef3331568b779a4b68c807746a87add0eb3c785db726debca2af03e430f70"
+    }
+  },
+  "effects": {
+    "pixel_bytes_acquired": 0,
+    "probability_sample_drawn": false,
+    "content_labels_assigned": false,
+    "reviewers_assigned": false,
+    "external_contact": false,
+    "public_release": false
+  },
+  "unverified": [
+    "concept rubric",
+    "independent content reference",
+    "image/display hashes",
+    "rendering and masking",
+    "secondary targets",
+    "live URL reachability and size",
+    "preview availability and size",
+    "reviewer qualification/acceptance",
+    "probability inference",
+    "human first use"
+  ]
+}

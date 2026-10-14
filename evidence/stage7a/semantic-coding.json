@@ -1,0 +1,66 @@
+{
+  "coding_id": "artemis2-stage7a-vavilov-hertzsprung-semantic-contrast",
+  "version": "1.0.0",
+  "frozen_before_lola_value_access": true,
+  "formed_at_utc": "2026-10-09T22:05:00Z",
+  "coder_access_boundary": "The coder inspected Artemis II transcript text and official feature coordinates before accessing values from the LOLA roughness rasters. Orientale was excluded from evaluation.",
+  "primary_observation": {
+    "transcript_path": "corpus/transcripts/art002a000046_pcd2_trn-csv_v01.csv",
+    "transcript_sha256": "0d1996eae5b2e17aa1de5658b0af4019fda0ecb6e86971e78ba9066acee9ffeb",
+    "speaker": "Glover",
+    "utc_start": "2026-04-06 22:55:09.221",
+    "utc_end": "2026-04-06 22:56:53.001",
+    "target_context": "Vavilov Crater",
+    "coded_contrast": {
+      "vavilov": "rougher",
+      "hertzsprung": "smoother"
+    },
+    "decision_text_anchors": [
+      "rocky, broken jaggedness",
+      "smooth, glossy look of Hertzsprung",
+      "jagged and rough"
+    ],
+    "localization": {
+      "vavilov": "Equal-radius disk centered on the USGS-named Vavilov feature is a coarse proxy for the transcript phrase 'down in there'.",
+      "hertzsprung": "Equal-radius disk centered on the USGS-named Hertzsprung feature is a coarse proxy for the transcript comparison, not a recovered viewing footprint."
+    }
+  },
+  "supporting_observations": [
+    {
+      "transcript_path": "corpus/transcripts/art002a000037_pcd2_trn-csv_v01.csv",
+      "transcript_sha256": "6c2cbe2872b0dc0e41d9bb96035626af621d63dc7cfbf4cfca7b7bfbe6fb32d8",
+      "utc": "2026-04-06 20:43:22.941",
+      "speaker": "Glover",
+      "role": "Earlier same-observer support for smoothness around Hertzsprung; not an independent observer."
+    },
+    {
+      "transcript_path": "corpus/transcripts/art002a000043_pcd2_trn-csv_v01.csv",
+      "transcript_sha256": "b27bfdd11b77f72f70153fd3d676a5e9264e02bc43bb0aeb57351268cee147e5",
+      "utc": "2026-04-06 22:19:24.527",
+      "speaker": "Glover",
+      "role": "Earlier same-observer comparison of packed terrain and more jagged or pumice-like terrain near Vavilov; not an independent observer."
+    }
+  ],
+  "feature_coordinates": {
+    "coordinate_system": "USGS planetary nomenclature, planetographic, positive east, -180 to 180 converted to 0 to 360 east for the raster",
+    "vavilov": {
+      "latitude_deg": -0.87,
+      "longitude_east_deg": 221.23,
+      "diameter_km": 98.22,
+      "source_url": "https://planetarynames.wr.usgs.gov/Feature/6336"
+    },
+    "hertzsprung": {
+      "latitude_deg": 1.37,
+      "longitude_east_deg": 231.34,
+      "diameter_km": 536.37,
+      "source_url": "https://planetarynames.wr.usgs.gov/Feature/2482"
+    }
+  },
+  "independence": "partial",
+  "independence_limit": "Semantic direction was frozen before the instrument values were accessed, but feature identity, morphology, illumination comments, and the proposed region translation were visible to the coder. The same astronaut supplies all semantic observations.",
+  "excluded_from_evaluation": [
+    "Orientale observations",
+    "NASA's published Orientale map comparison",
+    "any post-LOLA semantic recoding"
+  ]
+}

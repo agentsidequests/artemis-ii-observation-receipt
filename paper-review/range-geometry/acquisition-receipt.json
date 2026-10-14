@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-12",
+  "starting_commit": "f0502a8c222c6c90ca5cbe3c3d5b8c5c90486dc7",
+  "request_contract": "paper-review/range-geometry/horizons-requests.json",
+  "request_contract_sha256": "57e76f5b94f3e6a1eb8b423c2c80b081e073a21dfe84d33cc516f8164eac9bd6",
+  "prior_inputs": [
+    {
+      "path": "spec/stage11n.json",
+      "sha256": "492ae25edc28516997faf0b99011c94412d2e34aabc7a4344791320a359b4d1a"
+    },
+    {
+      "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+      "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf"
+    },
+    {
+      "path": "results/stage11n-event-receipt.csv",
+      "sha256": "3b8b47f4cff1dc38b006fc95ddce068170e79559404bae2657fefaface97068a"
+    },
+    {
+      "path": "paper-review/fcorona-source-only-receipt.json",
+      "sha256": "a90395c9877addcb57c012240df52ab229dc6cdcbc91890d4075f82a647af656"
+    }
+  ],
+  "provider": "NASA/JPL Horizons API",
+  "observed_api_version": "1.2",
+  "source_revision": "Artemis II object summary revised 2026-04-20 19:01 UTC",
+  "trajectory_source": "Post-launch Orion II trajectory data from NASA/JSC navigation (concatenated)",
+  "relevant_segment": {
+    "name": "Orion_OEM_20260408_0223.V0.1",
+    "start_tdb": "2026-Apr-06 17:35",
+    "stop_tdb": "2026-Apr-08 04:38"
+  },
+  "files": [
+    {
+      "file": "object.txt",
+      "http": 200,
+      "bytes": 7770,
+      "sha256": "249dba607fcbd669278d89de865d4832df4beb153997646bbdbf5d245a6df5b6",
+      "acquired_at_utc": "2026-10-12T14:51:40.5442524Z"
+    },
+    {
+      "file": "vectors.txt",
+      "http": 200,
+      "bytes": 8101,
+      "sha256": "e2adaf31f3c1ca99e2f3eeae3da63920cd01be698d9e0cd31fd8ec5fe7f75146",
+      "acquired_at_utc": "2026-10-12T14:51:40.7891963Z"
+    },
+    {
+      "file": "reverse-vectors.txt",
+      "http": 200,
+      "bytes": 8058,
+      "sha256": "085419735a88055012cdf8d2af7d18f8a517ac1b16e0c9673b6c8c46d688fd3f",
+      "acquired_at_utc": "2026-10-12T14:51:40.9783846Z"
+    },
+    {
+      "file": "observer.txt",
+      "http": 200,
+      "bytes": 5916,
+      "sha256": "ffc2a192db119bac3586e2993331866cc5cca1c7c2d0e4dbcf1f67cd95ea2cba",
+      "acquired_at_utc": "2026-10-12T14:51:41.2576785Z"
+    }
+  ],
+  "material_source_limits": [
+    "Source trajectory is a published concatenation, not an independent navigation reconstruction or uncertainty estimate",
+    "Observer output EOP file eop.261009.p270105; source output fixes the calculation version",
+    "Sampled report epochs are not exact photon-emission times or five individually mapped impact times",
+    "Unpersisted discovery reads preceded these four preserved acquisitions; this ledger is not the entire network-request count"
+  ],
+  "effects": {
+    "image_payloads_acquired": 0,
+    "installations": 0,
+    "outreach": false,
+    "publication": false,
+    "remote_push": false
+  }
+}

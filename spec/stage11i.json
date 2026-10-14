@@ -1,0 +1,53 @@
+{
+  "testbed_id": "artemis2-implicit-weight-factorization-stage11i",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T16:08:00Z",
+  "question": "Which hierarchy edge creates absolute row multiplication, and which creates relative action reweighting in the verified complete-action cohort?",
+  "terminal_objective": "Factor product count per action into exposures per action and representations per exposure, prove which factor is constant, and isolate absolute multiplication from differential action weighting without interpreting any representation as disposable.",
+  "method": "Replay Stage 11H, inspect every row of the Stage 10O relationship manifest, verify exactly three representation collections per capture identity, reconstruct the 1,612 three-exposure and 554 five-exposure actions, and compare source-only exposure weight with three-representation product weight.",
+  "authority": "Private local relationship and accounting analysis only. No pixels, duplicate-data claim, deletion recommendation, representation-value ordering, actual sampler claim, observed model behavior, universal weighting correction, archive-wide extrapolation, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11h_spec_path": "spec/stage11h.json",
+    "relationship_manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "complete_actions": 2166,
+    "three_exposure_actions": 1612,
+    "five_exposure_actions": 554,
+    "capture_identities": 7606,
+    "archive_products": 22818,
+    "representations_per_capture": 3,
+    "three_exposure_source_rows_per_action": 3,
+    "five_exposure_source_rows_per_action": 5,
+    "three_exposure_products_per_action": 9,
+    "five_exposure_products_per_action": 15,
+    "source_row_weight_ratio_five_vs_three": 1.6666666666666667,
+    "product_weight_ratio_five_vs_three": 1.6666666666666667,
+    "representation_multiplier_changes_relative_protocol_ratio": false,
+    "five_exposure_action_share": 0.25577100646352724,
+    "five_exposure_capture_and_product_share": 0.36418616881409416,
+    "five_exposure_share_amplification": 1.4238758874572706
+  },
+  "disposition": "ADMIT_IMPLICIT_WEIGHT_FACTORIZATION",
+  "hard_negatives": [
+    "claim_representation_multiplier_causes_relative_protocol_weight",
+    "call_archive_representations_duplicates",
+    "recommend_discarding_representations_or_brackets",
+    "rank_representation_scientific_value",
+    "claim_actual_sampler_is_uniform_products",
+    "claim_observed_model_bias",
+    "claim_one_universal_correct_weighting",
+    "generalize_to_unadmitted_archive_records",
+    "claim_novelty_or_priority",
+    "open_pixels_during_factorization"
+  ],
+  "claim_ceiling": "Stage 11I may establish that every one of 7,606 admitted capture identities has three archive representations, uniformly tripling the cohort from 7,606 captures to 22,818 products. It may establish that this constant multiplier preserves the five-versus-three exposure action-weight ratio at 1.666667, while variable bracket length raises five-exposure actions from 25.577% of actions to 36.419% of captures and products. It cannot call the representations duplicates, recommend deletion, rank their scientific value, assert an actual sampler or observed model bias, nominate a universal correction, extend beyond the admitted complete-action cohort, or make a novelty, priority, or physical-science claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Separate two mechanisms: representation multiplicity creates absolute file inflation, while bracket multiplicity creates relative action reweighting. Do not collapse them into a duplicate-data claim.",
+    "if_a_model_task_is_selected": "Preserve representation and bracket structure, choose the outer estimand explicitly, and use capture/action/event keys rather than deleting intentional records.",
+    "if_representation_parity_changes": "Recompute the factorization; a nonconstant representation multiplier could itself create relative reweighting.",
+    "recheck_trigger": "A revised relationship manifest, action oracle, representation inventory, or actual sampler."
+  }
+}

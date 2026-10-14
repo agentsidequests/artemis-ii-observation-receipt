@@ -1,0 +1,437 @@
+{
+  "receipt_version": "0.3.0",
+  "case_id": "artemis-ii-one-action-identity-sensitivity",
+  "title": "One ambiguity. Two accounting views.",
+  "summary": "Withhold one original five-frame action without choosing between metadata alternatives or replacing the original receipts.",
+  "viewer_context": {
+    "key_distinction": "Frozen original and conditional view are different populations. Eight predicates from one treatment are not eight independent replications. Physical identity remains unresolved."
+  },
+  "artifacts": [
+    {
+      "id": "sensitivity",
+      "path": "cases/artemis-ii-identity/sources/downstream-sensitivity.json",
+      "bytes": 152230,
+      "sha256": "88c5451bed59ef2536c790459b3fffc92d566e93069349826f2a85e02adb79bf",
+      "media_type": "application/json",
+      "producer": "Local source-pinned conditional calculation",
+      "archive": "Frozen local analysis",
+      "derivation_state": "derived"
+    },
+    {
+      "id": "identity-excerpt",
+      "path": "cases/artemis-ii-identity/sources/metadata-family-excerpt.json",
+      "bytes": 6153,
+      "sha256": "ec2164fe1361c184f8e24cea4365afb4a71aa8c0a6a7d3238d34a975bf5bb3c9",
+      "media_type": "application/json",
+      "producer": "Local lossless metadata-path excerpt",
+      "archive": "Frozen local analysis",
+      "derivation_state": "derived"
+    }
+  ],
+  "facts": {},
+  "candidates": [],
+  "observation_windows": [],
+  "measurement_function": {},
+  "identity_groups": [
+    {
+      "id": "final-slot",
+      "label": "Final-slot metadata alternatives",
+      "state": "unresolved",
+      "basis": "metadata_candidate",
+      "source_artifact_id": "identity-excerpt",
+      "alternatives_pointer": "/alternatives",
+      "source_locator": "Family metadata-path-367ea6271b9585eb9da7d369150ec96662e99489560acd4d428f9df66d6a291a, final slot; nine exact recorded fields",
+      "note": "No representative selected. The whole original five-frame action is withheld only in the conditional comparison. Other withheld families are outside this comparison."
+    }
+  ],
+  "conditional_comparisons": [
+    {
+      "id": "one-action",
+      "label": "One original five-frame action withheld",
+      "source_artifact_id": "sensitivity",
+      "original_pointer": "/baseline",
+      "conditional_pointer": "/conditional_withheld",
+      "original_label": "Frozen original cohort",
+      "conditional_label": "Conditional: one action withheld",
+      "treatment": "Exclude only action a2-action-1c22cc639e2f4792a76b8ca4: five original capture keys, all 15 representation rows and its two scheduled memberships. Keep surviving fields, splits and group keys fixed. Add no alternative IDs or new families.",
+      "metrics": [
+        {
+          "id": "products",
+          "label": "Product rows",
+          "pointer": "/selection_weighting/all_cohort/products",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "captures",
+          "label": "Native capture keys",
+          "pointer": "/selection/coverage/source_exposures",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "actions",
+          "label": "Original reconstructed actions",
+          "pointer": "/selection_weighting/all_cohort/actions",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "test",
+          "label": "Test products",
+          "pointer": "/relationship/test_products",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "capture_linked",
+          "label": "Capture-linked test products",
+          "pointer": "/relationship/capture_linked_test_products",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "action_linked",
+          "label": "Additional action-only-linked test products",
+          "pointer": "/relationship/action_only_linked_test_products",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "isolated",
+          "label": "Action-isolated test products",
+          "pointer": "/relationship/action_isolated_test_products",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "tagged",
+          "label": "Nonblank source target fields",
+          "pointer": "/selection/coverage/target_tag_present",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "blank",
+          "label": "Blank source target fields",
+          "pointer": "/selection/coverage/target_tag_blank",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "zero_activities",
+          "label": "Zero-coverage activities",
+          "pointer": "/selection/coverage/zero_coverage_activities",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "full_activities",
+          "label": "Full-coverage activities",
+          "pointer": "/selection/coverage/full_coverage_activities",
+          "unit": "count",
+          "scale": 1,
+          "places": 0
+        },
+        {
+          "id": "sunset_action",
+          "label": "Sunset share of selected actions",
+          "pointer": "/selection_weighting/strict_tagged_weighting_panel/sunset_share_of_selected_actions",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "sunset_byte",
+          "label": "Sunset share of combined selected bytes",
+          "pointer": "/selection_weighting/strict_tagged_weighting_panel/sunset_share_of_tagged_bytes",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "source_byte",
+          "label": "Sunset share of selected source bytes",
+          "pointer": "/selection_weighting/collection_byte_sensitivity/data_source/sunset_share",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "raw_byte",
+          "label": "Sunset share of selected raw bytes",
+          "pointer": "/selection_weighting/collection_byte_sensitivity/data_raw/sunset_share",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "processed_byte",
+          "label": "Sunset share of selected processed bytes",
+          "pointer": "/selection_weighting/collection_byte_sensitivity/data_processed/sunset_share",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "activity_share",
+          "label": "Sunset-tagged keys supplied by 24_Sunset",
+          "pointer": "/selection_weighting/activity_structure_attribution/share_of_sunset_tagged_exposures_from_activity",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "outside_byte",
+          "label": "Sunset byte share outside 24_Sunset",
+          "pointer": "/selection_weighting/activity_structure_attribution/outside_activity/sunset_share_of_tagged_bytes",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "window_actions",
+          "label": "Raw action-weighted concentration index",
+          "pointer": "/opportunity_weighting/raw_concentration_equivalent_windows/actions",
+          "unit": "index",
+          "scale": 1,
+          "places": 3
+        },
+        {
+          "id": "window_products",
+          "label": "Raw product-weighted concentration index",
+          "pointer": "/opportunity_weighting/raw_concentration_equivalent_windows/products",
+          "unit": "index",
+          "scale": 1,
+          "places": 3
+        },
+        {
+          "id": "window_bytes",
+          "label": "Raw byte-weighted concentration index",
+          "pointer": "/opportunity_weighting/raw_concentration_equivalent_windows/archive_size_bytes",
+          "unit": "index",
+          "scale": 1,
+          "places": 3
+        },
+        {
+          "id": "completion_lower",
+          "label": "Sunset field-completion lower bound",
+          "pointer": "/field_completion/sunset/lower_share_full_cohort",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        },
+        {
+          "id": "completion_upper",
+          "label": "Sunset field-completion upper bound",
+          "pointer": "/field_completion/sunset/upper_share_full_cohort",
+          "unit": "percent",
+          "scale": 100,
+          "places": 3
+        }
+      ],
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    }
+  ],
+  "claims": [
+    {
+      "id": "physical-identity",
+      "proposition": "These alternatives establish one physically validated identity",
+      "rule": {
+        "kind": "identity_resolution_gate",
+        "group_id": "final-slot"
+      },
+      "claim_ceiling": "Matching metadata is an unresolved candidate, not a byte or physical-identity certificate."
+    },
+    {
+      "id": "zero_action_isolated_test_products",
+      "proposition": "Zero action-isolated test products",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "isolated",
+            "op": "eq",
+            "value": 0
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    },
+    {
+      "id": "tagged_subset_incomplete_and_activity_structured",
+      "proposition": "Incomplete, activity-structured target-field selection",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "blank",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "metric_id": "zero_activities",
+            "op": "gt",
+            "value": 0
+          },
+          {
+            "metric_id": "full_activities",
+            "op": "gt",
+            "value": 0
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    },
+    {
+      "id": "selected_sunset_action_minority_byte_majority",
+      "proposition": "Sunset action minority and combined-byte majority",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "sunset_action",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "metric_id": "sunset_byte",
+            "op": "gt",
+            "value": 50
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    },
+    {
+      "id": "source_tier_sunset_minority_raw_processed_majorities",
+      "proposition": "Source-tier minority and raw/processed majorities",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "source_byte",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "metric_id": "raw_byte",
+            "op": "gt",
+            "value": 50
+          },
+          {
+            "metric_id": "processed_byte",
+            "op": "gt",
+            "value": 50
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    },
+    {
+      "id": "most_sunset_tagged_keys_from_24_sunset_activity",
+      "proposition": "Most Sunset-tagged keys supplied by 24_Sunset",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "activity_share",
+            "op": "gt",
+            "value": 50
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    },
+    {
+      "id": "outside_24_sunset_activity_byte_share_below_half",
+      "proposition": "Outside-activity Sunset byte share below half",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "outside_byte",
+            "op": "lt",
+            "value": 50
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    },
+    {
+      "id": "raw_window_concentration_action_above_product_above_byte",
+      "proposition": "Raw concentration orders action above product above byte",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "window_actions",
+            "op": "gt",
+            "other_metric_id": "window_products"
+          },
+          {
+            "metric_id": "window_products",
+            "op": "gt",
+            "other_metric_id": "window_bytes"
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    },
+    {
+      "id": "sunset_field_completion_interval_spans_half",
+      "proposition": "Field-completion interval spans half",
+      "rule": {
+        "kind": "conditional_comparison_gate",
+        "comparison_id": "one-action",
+        "conditions": [
+          {
+            "metric_id": "completion_lower",
+            "op": "lt",
+            "value": 50
+          },
+          {
+            "metric_id": "completion_upper",
+            "op": "gt",
+            "value": 50
+          }
+        ]
+      },
+      "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance."
+    }
+  ],
+  "expected_findings": {
+    "physical-identity": "BLOCKED_IDENTITY_UNRESOLVED",
+    "zero_action_isolated_test_products": "SUPPORTED_CONDITIONAL_STABILITY",
+    "tagged_subset_incomplete_and_activity_structured": "SUPPORTED_CONDITIONAL_STABILITY",
+    "selected_sunset_action_minority_byte_majority": "SUPPORTED_CONDITIONAL_STABILITY",
+    "source_tier_sunset_minority_raw_processed_majorities": "SUPPORTED_CONDITIONAL_STABILITY",
+    "most_sunset_tagged_keys_from_24_sunset_activity": "SUPPORTED_CONDITIONAL_STABILITY",
+    "outside_24_sunset_activity_byte_share_below_half": "SUPPORTED_CONDITIONAL_STABILITY",
+    "raw_window_concentration_action_above_product_above_byte": "SUPPORTED_CONDITIONAL_STABILITY",
+    "sunset_field_completion_interval_spans_half": "SUPPORTED_CONDITIONAL_STABILITY"
+  },
+  "claim_ceiling": "One conditional original-cohort view, not replaced counts, physical identity, target truth, model-performance harm, independent-event counts, calibrated impact flux or scientific acceptance.",
+  "next_steps": [
+    "Obtain qualified source-lineage and physical-grouping review before resolving identity.",
+    "Keep original numbers and this conditional sensitivity distinct in any private narrative.",
+    "A surviving predicate is not an adopted reconstruction or permission to publish."
+  ]
+}

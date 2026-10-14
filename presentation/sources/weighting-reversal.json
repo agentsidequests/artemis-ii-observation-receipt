@@ -1,0 +1,1420 @@
+{
+  "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+  "mutation": null,
+  "pass": true,
+  "evidence_state": "VERIFIED_UNIT_SENSITIVE_WINDOW_PROMINENCE",
+  "metrics": {
+    "active_plan_windows": 36,
+    "unordered_window_pairs": 630,
+    "action_product_strictly_comparable_pairs": 621,
+    "action_product_reversed_pairs": 38,
+    "action_product_concordant_pairs": 583,
+    "action_product_tied_pairs": 9,
+    "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+    "action_byte_strictly_comparable_pairs": 621,
+    "action_byte_reversed_pairs": 59,
+    "action_byte_concordant_pairs": 562,
+    "action_byte_tied_pairs": 9,
+    "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+    "sunset_action_rank_descending": 1,
+    "sunset_product_rank_descending": 1,
+    "sunset_byte_rank_descending": 1
+  },
+  "product_reversal_examples": [
+    {
+      "more_actions_order": "2",
+      "more_actions_name": "Guided Discussion",
+      "more_actions_actions": 76,
+      "more_actions_products": 684,
+      "more_products_order": "18",
+      "more_products_name": "Earthset",
+      "more_products_actions": 60,
+      "more_products_products": 900
+    },
+    {
+      "more_actions_order": "7",
+      "more_actions_name": "Whole Moon",
+      "more_actions_actions": 150,
+      "more_actions_products": 1350,
+      "more_products_order": "h",
+      "more_products_name": "Crew Team Swap",
+      "more_products_actions": 124,
+      "more_products_products": 1860
+    }
+  ],
+  "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+  "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+  "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+  "pixel_payload_bytes": 0,
+  "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+    "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+    "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+    "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+    "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+  },
+  "checks": [
+    {
+      "id": "protocol_weighting_canary_replays",
+      "pass": true
+    },
+    {
+      "id": "unit_sensitive_pairwise_ordering",
+      "pass": true,
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      }
+    },
+    {
+      "id": "frozen_product_reversal_examples",
+      "pass": true,
+      "examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ]
+    },
+    {
+      "id": "claim_and_access_boundaries",
+      "pass": true,
+      "mutation_state": {
+        "plan_windows_are_partition": false,
+        "prominence_is_scientific_importance": false,
+        "window_ordering_is_unit_invariant": false,
+        "actual_sampler": "unspecified",
+        "observed_model_bias": false,
+        "causal_performance_effect": false,
+        "one_universal_correct_weighting": false,
+        "scope": "verified_active_plan_windows",
+        "novelty_or_priority": false,
+        "pixel_payload_bytes": 0
+      }
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "call_plan_windows_a_partition": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "call_plan_windows_a_partition",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": true,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_prominence_scientific_importance": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "call_prominence_scientific_importance",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": true,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "call_window_ordering_unit_invariant": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "call_window_ordering_unit_invariant",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": true,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_actual_sampler_is_uniform_products": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "claim_actual_sampler_is_uniform_products",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "uniform_products",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_observed_model_bias": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "claim_observed_model_bias",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": true,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_causal_performance_effect": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "claim_causal_performance_effect",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": true,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_one_universal_correct_weighting": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "claim_one_universal_correct_weighting",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": true,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "generalize_to_unadmitted_archive_records": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "generalize_to_unadmitted_archive_records",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "entire_archive",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "claim_novelty_or_priority": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "claim_novelty_or_priority",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 0,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": true,
+            "pixel_payload_bytes": 0
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    },
+    "open_pixels_during_rank_test": {
+      "testbed_id": "artemis2-plan-window-unit-sensitive-prominence-stage11g",
+      "mutation": "open_pixels_during_rank_test",
+      "pass": false,
+      "evidence_state": "REJECTED",
+      "metrics": {
+        "active_plan_windows": 36,
+        "unordered_window_pairs": 630,
+        "action_product_strictly_comparable_pairs": 621,
+        "action_product_reversed_pairs": 38,
+        "action_product_concordant_pairs": 583,
+        "action_product_tied_pairs": 9,
+        "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+        "action_byte_strictly_comparable_pairs": 621,
+        "action_byte_reversed_pairs": 59,
+        "action_byte_concordant_pairs": 562,
+        "action_byte_tied_pairs": 9,
+        "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+        "sunset_action_rank_descending": 1,
+        "sunset_product_rank_descending": 1,
+        "sunset_byte_rank_descending": 1
+      },
+      "product_reversal_examples": [
+        {
+          "more_actions_order": "2",
+          "more_actions_name": "Guided Discussion",
+          "more_actions_actions": 76,
+          "more_actions_products": 684,
+          "more_products_order": "18",
+          "more_products_name": "Earthset",
+          "more_products_actions": 60,
+          "more_products_products": 900
+        },
+        {
+          "more_actions_order": "7",
+          "more_actions_name": "Whole Moon",
+          "more_actions_actions": 150,
+          "more_actions_products": 1350,
+          "more_products_order": "h",
+          "more_products_name": "Crew Team Swap",
+          "more_products_actions": 124,
+          "more_products_products": 1860
+        }
+      ],
+      "disposition": "ADMIT_UNIT_SENSITIVE_PROMINENCE_CANARY",
+      "verified": "Changing the counting unit can reverse which active plan window appears larger: 38 strictly comparable action/product pairs and 59 action/byte pairs reverse order. Sunset remains first by all three totals.",
+      "decision_use": "Any claim that an observation is 'largest' or 'dominant' must name the unit. Product and byte prominence are acquisition-and-representation-weighted views, not neutral substitutes for action prominence.",
+      "pixel_payload_bytes": 1,
+      "claim_ceiling": "Stage 11G may establish that action-to-product ordering reverses for 38 of 621 strictly comparable active-window pairs and action-to-byte ordering reverses for 59 of 621. It may use the frozen Earthset/Guided Discussion and Crew Team Swap/Whole Moon comparisons as exact examples, and it may note that Sunset remains first by total actions, products, and bytes. It cannot treat overlapping plan windows as a partition, interpret prominence as scientific importance or image content, assert an actual sampler or observed model bias, infer a causal performance effect, nominate one universally correct weighting, extend beyond admitted windows, or make a novelty, priority, or physical-science claim.",
+      "next_step_logic": {
+        "if_public_analysis_is_selected": "Use one exact reversal to show that 'largest observation' is not unit-neutral, then state that Sunset is a useful stable example because it remains first under all three totals.",
+        "if_a_model_task_is_selected": "Declare the estimand before sampling: product-, exposure-, action-, realized-segment-, or event-weighted evaluation answers a different question.",
+        "if_scientific_importance_is_inferred": "Stop; these are archive-prominence rankings only.",
+        "if_windows_are_aggregated": "Stop and return to the Stage 10Z many-to-many ledger.",
+        "recheck_trigger": "A revised action oracle, plan ledger, window set, representation inventory, or actual sampler."
+      },
+      "checks": [
+        {
+          "id": "protocol_weighting_canary_replays",
+          "pass": true
+        },
+        {
+          "id": "unit_sensitive_pairwise_ordering",
+          "pass": true,
+          "metrics": {
+            "active_plan_windows": 36,
+            "unordered_window_pairs": 630,
+            "action_product_strictly_comparable_pairs": 621,
+            "action_product_reversed_pairs": 38,
+            "action_product_concordant_pairs": 583,
+            "action_product_tied_pairs": 9,
+            "action_product_reversal_share_of_comparable_pairs": 0.061191626409017714,
+            "action_byte_strictly_comparable_pairs": 621,
+            "action_byte_reversed_pairs": 59,
+            "action_byte_concordant_pairs": 562,
+            "action_byte_tied_pairs": 9,
+            "action_byte_reversal_share_of_comparable_pairs": 0.09500805152979067,
+            "sunset_action_rank_descending": 1,
+            "sunset_product_rank_descending": 1,
+            "sunset_byte_rank_descending": 1
+          }
+        },
+        {
+          "id": "frozen_product_reversal_examples",
+          "pass": true,
+          "examples": [
+            {
+              "more_actions_order": "2",
+              "more_actions_name": "Guided Discussion",
+              "more_actions_actions": 76,
+              "more_actions_products": 684,
+              "more_products_order": "18",
+              "more_products_name": "Earthset",
+              "more_products_actions": 60,
+              "more_products_products": 900
+            },
+            {
+              "more_actions_order": "7",
+              "more_actions_name": "Whole Moon",
+              "more_actions_actions": 150,
+              "more_actions_products": 1350,
+              "more_products_order": "h",
+              "more_products_name": "Crew Team Swap",
+              "more_products_actions": 124,
+              "more_products_products": 1860
+            }
+          ]
+        },
+        {
+          "id": "claim_and_access_boundaries",
+          "pass": false,
+          "mutation_state": {
+            "plan_windows_are_partition": false,
+            "prominence_is_scientific_importance": false,
+            "window_ordering_is_unit_invariant": false,
+            "actual_sampler": "unspecified",
+            "observed_model_bias": false,
+            "causal_performance_effect": false,
+            "one_universal_correct_weighting": false,
+            "scope": "verified_active_plan_windows",
+            "novelty_or_priority": false,
+            "pixel_payload_bytes": 1
+          }
+        }
+      ],
+      "errors": [
+        "A prohibited partition, importance, invariance, sampler, model, effect, weighting, scope, novelty, or pixel claim was admitted."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

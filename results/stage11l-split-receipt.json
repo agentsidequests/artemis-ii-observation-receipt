@@ -1,0 +1,121 @@
+{
+  "algorithm": {
+    "decision": "train when the unsigned big-endian integer represented by the first eight digest bytes is below floor(2^64 * 4 / 5); test otherwise",
+    "hash_input": "utf8(seed + NUL + grouping_key)",
+    "name": "sha256-group-threshold",
+    "seed": "artemis2-split-receipt-canary-v1",
+    "train_denominator": 5,
+    "train_numerator": 4,
+    "version": "1.0.0"
+  },
+  "assignment_artifact": {
+    "bytes": 4573289,
+    "fields": [
+      "product_id",
+      "capture_identity",
+      "action_id",
+      "temporal_cluster_5s",
+      "product_key_partition",
+      "action_key_partition",
+      "temporal_5s_key_partition"
+    ],
+    "path": "results/stage11l-split-assignments.csv",
+    "sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1"
+  },
+  "claim_boundary": {
+    "canary_not_scientific_task_split": true,
+    "five_seconds_not_universal": true,
+    "no_observed_leakage_claim": true,
+    "no_performance_effect_claim": true,
+    "pixel_payload_bytes": 0,
+    "temporal_groups_not_semantic_scenes": true
+  },
+  "frozen_task": "Mechanically test preservation of the declared action and conditional five-second relationship keys under an 80/20 train/test canary.",
+  "oracle": {
+    "action_preservation": "pass when crossing_action_groups equals zero",
+    "assignment_replay": "pass when every partition recomputes from the declared key, seed, and algorithm",
+    "completeness": "pass when every source product appears exactly once",
+    "independence": "partial; implementation and validator share the frozen algorithm, while mutation tests can contradict source, assignment, completeness, policy, and claim assertions",
+    "source_identity": "pass when source bytes match the frozen SHA-256",
+    "temporal_5s_preservation": "pass when crossing_temporal_5s_groups equals zero"
+  },
+  "policies": {
+    "action_key": {
+      "actions_in_crossing_temporal_5s_groups": 1216,
+      "actions_visible_by_partition": {
+        "test": 416,
+        "train": 1750
+      },
+      "crossing_action_groups": 0,
+      "crossing_temporal_5s_groups": 157,
+      "grouping_key": "action_id",
+      "products_by_partition": {
+        "test": 4314,
+        "train": 18504
+      },
+      "products_in_crossing_action_groups": 0,
+      "products_in_crossing_temporal_5s_groups": 13236,
+      "temporal_5s_groups_visible_by_partition": {
+        "test": 271,
+        "train": 702
+      },
+      "test_product_share": 0.18906126742045753
+    },
+    "product_key": {
+      "actions_in_crossing_temporal_5s_groups": 2105,
+      "actions_visible_by_partition": {
+        "test": 1937,
+        "train": 2166
+      },
+      "crossing_action_groups": 1937,
+      "crossing_temporal_5s_groups": 762,
+      "grouping_key": "product_id",
+      "products_by_partition": {
+        "test": 4511,
+        "train": 18307
+      },
+      "products_in_crossing_action_groups": 20601,
+      "products_in_crossing_temporal_5s_groups": 22251,
+      "temporal_5s_groups_visible_by_partition": {
+        "test": 762,
+        "train": 816
+      },
+      "test_product_share": 0.1976948023490227
+    },
+    "temporal_5s_key": {
+      "actions_in_crossing_temporal_5s_groups": 0,
+      "actions_visible_by_partition": {
+        "test": 417,
+        "train": 1749
+      },
+      "crossing_action_groups": 0,
+      "crossing_temporal_5s_groups": 0,
+      "grouping_key": "temporal_cluster_5s",
+      "products_by_partition": {
+        "test": 4431,
+        "train": 18387
+      },
+      "products_in_crossing_action_groups": 0,
+      "products_in_crossing_temporal_5s_groups": 0,
+      "temporal_5s_groups_visible_by_partition": {
+        "test": 163,
+        "train": 653
+      },
+      "test_product_share": 0.19418879831711808
+    }
+  },
+  "receipt_version": "1.0.0",
+  "source": {
+    "bytes": 10072026,
+    "path": "results/stage10o-product-relationship-manifest.csv",
+    "rows": 22818,
+    "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+  },
+  "testbed_id": "artemis2-deterministic-split-receipt-canary-stage11l",
+  "unknown_assignment_rows": 0,
+  "unresolved_relationships": 0,
+  "validator": {
+    "name": "stage11l_split_receipt_canary",
+    "version": "1.0.0"
+  }
+}

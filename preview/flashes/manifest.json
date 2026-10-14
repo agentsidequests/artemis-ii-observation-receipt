@@ -1,0 +1,41 @@
+{
+  "bundle_version": "0.2.0",
+  "case_id": "artemis-ii-flashes",
+  "files": [
+    {
+      "path": "candidates.csv",
+      "bytes": 631,
+      "sha256": "35606f9c99344a3a5a543a9c2c3ba83c5339b4ed1f295fe61b59978641333751"
+    },
+    {
+      "path": "findings.csv",
+      "bytes": 1455,
+      "sha256": "3a58b8e48461ccca0568c08ec1ebce1166dd22889a0e47d856139083b4371436"
+    },
+    {
+      "path": "index.html",
+      "bytes": 50545,
+      "sha256": "7a5a7697ae660c75c4f82cd6a34d4c720ea53fcdc0d6ac800553bb8a3adc99da"
+    },
+    {
+      "path": "observation-windows.csv",
+      "bytes": 288,
+      "sha256": "29085af7b1d7d0204085656e0b3853081b8cd7215bce5cff64a9913def95a9f4"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 6753,
+      "sha256": "2176eea534d27192669f5523894f424078f7c5d1c0656bd8e9e3e985978d5f25"
+    },
+    {
+      "path": "receipt.md",
+      "bytes": 6928,
+      "sha256": "5d737853210d492096f3ef6e3d173490dc3e3b1cad48ac405dd766b5c14b2f2b"
+    },
+    {
+      "path": "witness-marks.csv",
+      "bytes": 1452,
+      "sha256": "8d517b284f6685fbd8e19d2140ab6d2aaf2411920e8c94b20089e25a452e2d1b"
+    }
+  ]
+}

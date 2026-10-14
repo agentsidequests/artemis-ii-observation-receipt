@@ -1,0 +1,3053 @@
+{
+  "status": "VERIFIED_FROZEN_METADATA_CANDIDATE_LINKAGE_CENSUS",
+  "scope": "Frozen raw crew-camera metadata assembled by Stages 10A and 10E, queried flight days 1 through 10, snapshot 10 October 2026; not a current archive or pixel census",
+  "raw_records": 10329,
+  "unique_raw_product_ids": 10329,
+  "strict_key_eligible_records": 10329,
+  "strict_candidate_groups": 24,
+  "strict_candidate_group_sizes": {
+    "2": 24
+  },
+  "strict_candidate_records": 48,
+  "distinct_strict_metadata_keys": 10305,
+  "core_candidate_groups": 24,
+  "semantic_utc_candidate_groups": 24,
+  "candidate_groups_by_day": {
+    "4": 21,
+    "6": 3
+  },
+  "candidate_groups_by_camera": {
+    "3920019": 24
+  },
+  "candidate_groups_by_number_of_counted_capture_keys": {
+    "0": 23,
+    "1": 1
+  },
+  "candidate_groups_with_side_metadata_conflicts": 21,
+  "original_manifest": {
+    "products": 22818,
+    "capture_keys": 7606,
+    "actions": 2166
+  },
+  "witnesses": [
+    {
+      "group_id": "candidate-001",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0152",
+        "shutter_count": "127",
+        "utc": "2026-04-05T04:02:26.100Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009039_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009039",
+          "file_name": "art002e009039_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:26.100Z",
+          "serial": "3920019",
+          "file_number": "0152",
+          "shutter_count": "127",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029909_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029909",
+          "file_name": "art002e029909_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:26.100Z",
+          "serial": "3920019",
+          "file_number": "0152",
+          "shutter_count": "127",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-002",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0153",
+        "shutter_count": "128",
+        "utc": "2026-04-05T04:02:26.180Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009040_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009040",
+          "file_name": "art002e009040_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:26.180Z",
+          "serial": "3920019",
+          "file_number": "0153",
+          "shutter_count": "128",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029910_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029910",
+          "file_name": "art002e029910_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:26.180Z",
+          "serial": "3920019",
+          "file_number": "0153",
+          "shutter_count": "128",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-003",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0154",
+        "shutter_count": "129",
+        "utc": "2026-04-05T04:02:26.230Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009041_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009041",
+          "file_name": "art002e009041_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:26.230Z",
+          "serial": "3920019",
+          "file_number": "0154",
+          "shutter_count": "129",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029911_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029911",
+          "file_name": "art002e029911_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:26.230Z",
+          "serial": "3920019",
+          "file_number": "0154",
+          "shutter_count": "129",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-004",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0155",
+        "shutter_count": "130",
+        "utc": "2026-04-05T04:02:28.250Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009042_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009042",
+          "file_name": "art002e009042_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:28.250Z",
+          "serial": "3920019",
+          "file_number": "0155",
+          "shutter_count": "130",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029912_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029912",
+          "file_name": "art002e029912_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:28.250Z",
+          "serial": "3920019",
+          "file_number": "0155",
+          "shutter_count": "130",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-005",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0156",
+        "shutter_count": "131",
+        "utc": "2026-04-05T04:02:28.310Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009043_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009043",
+          "file_name": "art002e009043_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:28.310Z",
+          "serial": "3920019",
+          "file_number": "0156",
+          "shutter_count": "131",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029913_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029913",
+          "file_name": "art002e029913_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:28.310Z",
+          "serial": "3920019",
+          "file_number": "0156",
+          "shutter_count": "131",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-006",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0157",
+        "shutter_count": "132",
+        "utc": "2026-04-05T04:02:28.360Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009044_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009044",
+          "file_name": "art002e009044_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:28.360Z",
+          "serial": "3920019",
+          "file_number": "0157",
+          "shutter_count": "132",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029914_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029914",
+          "file_name": "art002e029914_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:28.360Z",
+          "serial": "3920019",
+          "file_number": "0157",
+          "shutter_count": "132",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-007",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0158",
+        "shutter_count": "133",
+        "utc": "2026-04-05T04:02:32.640Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009045_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009045",
+          "file_name": "art002e009045_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:32.640Z",
+          "serial": "3920019",
+          "file_number": "0158",
+          "shutter_count": "133",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029915_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029915",
+          "file_name": "art002e029915_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:32.640Z",
+          "serial": "3920019",
+          "file_number": "0158",
+          "shutter_count": "133",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-008",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0159",
+        "shutter_count": "134",
+        "utc": "2026-04-05T04:02:32.700Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009046_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009046",
+          "file_name": "art002e009046_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:32.700Z",
+          "serial": "3920019",
+          "file_number": "0159",
+          "shutter_count": "134",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029916_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029916",
+          "file_name": "art002e029916_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:32.700Z",
+          "serial": "3920019",
+          "file_number": "0159",
+          "shutter_count": "134",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-009",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0160",
+        "shutter_count": "135",
+        "utc": "2026-04-05T04:02:32.750Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009047_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009047",
+          "file_name": "art002e009047_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:32.750Z",
+          "serial": "3920019",
+          "file_number": "0160",
+          "shutter_count": "135",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029917_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029917",
+          "file_name": "art002e029917_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:32.750Z",
+          "serial": "3920019",
+          "file_number": "0160",
+          "shutter_count": "135",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-010",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0161",
+        "shutter_count": "136",
+        "utc": "2026-04-05T04:02:37.180Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009048_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009048",
+          "file_name": "art002e009048_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:37.180Z",
+          "serial": "3920019",
+          "file_number": "0161",
+          "shutter_count": "136",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029918_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029918",
+          "file_name": "art002e029918_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:37.180Z",
+          "serial": "3920019",
+          "file_number": "0161",
+          "shutter_count": "136",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-011",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0162",
+        "shutter_count": "137",
+        "utc": "2026-04-05T04:02:37.240Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009049_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009049",
+          "file_name": "art002e009049_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:37.240Z",
+          "serial": "3920019",
+          "file_number": "0162",
+          "shutter_count": "137",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029919_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029919",
+          "file_name": "art002e029919_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:37.240Z",
+          "serial": "3920019",
+          "file_number": "0162",
+          "shutter_count": "137",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-012",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0163",
+        "shutter_count": "138",
+        "utc": "2026-04-05T04:02:37.290Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009050_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009050",
+          "file_name": "art002e009050_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:37.290Z",
+          "serial": "3920019",
+          "file_number": "0163",
+          "shutter_count": "138",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029920_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029920",
+          "file_name": "art002e029920_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:37.290Z",
+          "serial": "3920019",
+          "file_number": "0163",
+          "shutter_count": "138",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-013",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0164",
+        "shutter_count": "139",
+        "utc": "2026-04-05T04:02:42.850Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009051_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009051",
+          "file_name": "art002e009051_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:42.850Z",
+          "serial": "3920019",
+          "file_number": "0164",
+          "shutter_count": "139",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029921_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029921",
+          "file_name": "art002e029921_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:42.850Z",
+          "serial": "3920019",
+          "file_number": "0164",
+          "shutter_count": "139",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-014",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0165",
+        "shutter_count": "140",
+        "utc": "2026-04-05T04:02:42.930Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009052_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009052",
+          "file_name": "art002e009052_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:42.930Z",
+          "serial": "3920019",
+          "file_number": "0165",
+          "shutter_count": "140",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029922_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029922",
+          "file_name": "art002e029922_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:42.930Z",
+          "serial": "3920019",
+          "file_number": "0165",
+          "shutter_count": "140",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-015",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0166",
+        "shutter_count": "141",
+        "utc": "2026-04-05T04:02:42.980Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009053_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009053",
+          "file_name": "art002e009053_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:42.980Z",
+          "serial": "3920019",
+          "file_number": "0166",
+          "shutter_count": "141",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029923_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029923",
+          "file_name": "art002e029923_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:42.980Z",
+          "serial": "3920019",
+          "file_number": "0166",
+          "shutter_count": "141",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-016",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0167",
+        "shutter_count": "142",
+        "utc": "2026-04-05T04:02:46.910Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009054_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009054",
+          "file_name": "art002e009054_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:46.910Z",
+          "serial": "3920019",
+          "file_number": "0167",
+          "shutter_count": "142",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029924_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029924",
+          "file_name": "art002e029924_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:46.910Z",
+          "serial": "3920019",
+          "file_number": "0167",
+          "shutter_count": "142",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-017",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0168",
+        "shutter_count": "143",
+        "utc": "2026-04-05T04:02:46.980Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009055_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009055",
+          "file_name": "art002e009055_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:46.980Z",
+          "serial": "3920019",
+          "file_number": "0168",
+          "shutter_count": "143",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029925_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029925",
+          "file_name": "art002e029925_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:46.980Z",
+          "serial": "3920019",
+          "file_number": "0168",
+          "shutter_count": "143",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-018",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0169",
+        "shutter_count": "144",
+        "utc": "2026-04-05T04:02:47.030Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009056_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009056",
+          "file_name": "art002e009056_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:47.030Z",
+          "serial": "3920019",
+          "file_number": "0169",
+          "shutter_count": "144",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029926_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029926",
+          "file_name": "art002e029926_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:47.030Z",
+          "serial": "3920019",
+          "file_number": "0169",
+          "shutter_count": "144",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-019",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0170",
+        "shutter_count": "145",
+        "utc": "2026-04-05T04:02:50.900Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "0"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009057_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009057",
+          "file_name": "art002e009057_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:50.900Z",
+          "serial": "3920019",
+          "file_number": "0170",
+          "shutter_count": "145",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029927_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029927",
+          "file_name": "art002e029927_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:50.900Z",
+          "serial": "3920019",
+          "file_number": "0170",
+          "shutter_count": "145",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "0",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-020",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0171",
+        "shutter_count": "146",
+        "utc": "2026-04-05T04:02:50.970Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009058_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009058",
+          "file_name": "art002e009058_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:50.970Z",
+          "serial": "3920019",
+          "file_number": "0171",
+          "shutter_count": "146",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029928_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029928",
+          "file_name": "art002e029928_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:50.970Z",
+          "serial": "3920019",
+          "file_number": "0171",
+          "shutter_count": "146",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-021",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0172",
+        "shutter_count": "147",
+        "utc": "2026-04-05T04:02:51.020Z",
+        "iso": "400",
+        "focal_length": "400.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [
+        "target_id"
+      ],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e009059_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009059",
+          "file_name": "art002e009059_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:51.020Z",
+          "serial": "3920019",
+          "file_number": "0172",
+          "shutter_count": "147",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd04/art002e029929_nkz9019_raw_v01.tif",
+          "capture_key": "art002e029929",
+          "file_name": "art002e029929_nkz9019_raw_v01.tif",
+          "utc": "2026-04-05T04:02:51.020Z",
+          "serial": "3920019",
+          "file_number": "0172",
+          "shutter_count": "147",
+          "iso": "400",
+          "focal_length": "400.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "4",
+          "activity_id": "Opportunistic Imaging",
+          "target_id": null,
+          "side_metadata": {
+            "flight_day": [
+              "4"
+            ],
+            "activity_id": [
+              "Opportunistic Imaging"
+            ],
+            "target_id": null
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-022",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0357",
+        "shutter_count": "2534",
+        "utc": "2026-04-07T00:35:13.170Z",
+        "iso": "6400",
+        "focal_length": "35.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "-3"
+      },
+      "side_metadata_conflicts": [],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e012280_nkz9019_raw_v01.tif",
+          "capture_key": "art002e012280",
+          "file_name": "art002e012280_nkz9019_raw_v01.tif",
+          "utc": "2026-04-07T00:35:13.170Z",
+          "serial": "3920019",
+          "file_number": "0357",
+          "shutter_count": "2534",
+          "iso": "6400",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-3",
+          "flight_day": "6",
+          "activity_id": "h_Observation Break",
+          "target_id": "Sunset",
+          "side_metadata": {
+            "flight_day": [
+              "6"
+            ],
+            "activity_id": [
+              "h_Observation Break"
+            ],
+            "target_id": [
+              "Sunset"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015488_nkz9019_raw_v01.tif",
+          "capture_key": "art002e015488",
+          "file_name": "art002e015488_nkz9019_raw_v01.tif",
+          "utc": "2026-04-07T00:35:13.170Z",
+          "serial": "3920019",
+          "file_number": "0357",
+          "shutter_count": "2534",
+          "iso": "6400",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "-3",
+          "flight_day": "6",
+          "activity_id": "h_Observation Break",
+          "target_id": "Sunset",
+          "side_metadata": {
+            "flight_day": [
+              "6"
+            ],
+            "activity_id": [
+              "h_Observation Break"
+            ],
+            "target_id": [
+              "Sunset"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-023",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0834",
+        "shutter_count": "3011",
+        "utc": "2026-04-07T01:04:57.460Z",
+        "iso": "1600",
+        "focal_length": "35.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+1"
+      },
+      "side_metadata_conflicts": [],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e009300_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009300",
+          "file_name": "art002e009300_nkz9019_raw_v01.tif",
+          "utc": "2026-04-07T01:04:57.460Z",
+          "serial": "3920019",
+          "file_number": "0834",
+          "shutter_count": "3011",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+1",
+          "flight_day": "6",
+          "activity_id": "i_Window Team Position Swap",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "6"
+            ],
+            "activity_id": [
+              "i_Window Team Position Swap"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015965_nkz9019_raw_v01.tif",
+          "capture_key": "art002e015965",
+          "file_name": "art002e015965_nkz9019_raw_v01.tif",
+          "utc": "2026-04-07T01:04:57.460Z",
+          "serial": "3920019",
+          "file_number": "0834",
+          "shutter_count": "3011",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+1",
+          "flight_day": "6",
+          "activity_id": "i_Window Team Position Swap",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "6"
+            ],
+            "activity_id": [
+              "i_Window Team Position Swap"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        }
+      ]
+    },
+    {
+      "group_id": "candidate-024",
+      "key": {
+        "serial": "3920019",
+        "file_number": "0860",
+        "shutter_count": "3037",
+        "utc": "2026-04-07T01:06:19.780Z",
+        "iso": "1600",
+        "focal_length": "35.0",
+        "shooting_mode": "Continuous, Exposure Bracketing",
+        "auto_bracket_order": "0,-,+",
+        "bracket_value": "+2"
+      },
+      "side_metadata_conflicts": [],
+      "records": [
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e009301_nkz9019_raw_v01.tif",
+          "capture_key": "art002e009301",
+          "file_name": "art002e009301_nkz9019_raw_v01.tif",
+          "utc": "2026-04-07T01:06:19.780Z",
+          "serial": "3920019",
+          "file_number": "0860",
+          "shutter_count": "3037",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "6",
+          "activity_id": "28_Eclipsed Moon (2/2)",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "6"
+            ],
+            "activity_id": [
+              "28_Eclipsed Moon (2/2)"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 0,
+          "manifest_action_ids": []
+        },
+        {
+          "product_id": "atlas:pds4:artemis2:artemis2:/artemis2_crew_camera/data_raw/fd06/art002e015991_nkz9019_raw_v01.tif",
+          "capture_key": "art002e015991",
+          "file_name": "art002e015991_nkz9019_raw_v01.tif",
+          "utc": "2026-04-07T01:06:19.780Z",
+          "serial": "3920019",
+          "file_number": "0860",
+          "shutter_count": "3037",
+          "iso": "1600",
+          "focal_length": "35.0",
+          "shooting_mode": "Continuous, Exposure Bracketing",
+          "auto_bracket_order": "0,-,+",
+          "bracket_value": "+2",
+          "flight_day": "6",
+          "activity_id": "28_Eclipsed Moon (2/2)",
+          "target_id": "Moon",
+          "side_metadata": {
+            "flight_day": [
+              "6"
+            ],
+            "activity_id": [
+              "28_Eclipsed Moon (2/2)"
+            ],
+            "target_id": [
+              "Moon"
+            ]
+          },
+          "manifest_product_rows": 3,
+          "manifest_action_ids": [
+            "a2-action-1c22cc639e2f4792a76b8ca4"
+          ]
+        }
+      ]
+    }
+  ],
+  "incumbent_sort_ties": {
+    "tied_sort_keys": 101,
+    "records_in_ties": 222,
+    "ties_with_different_recorded_times": 77,
+    "ties_with_different_file_numbers": 77,
+    "ties_spanning_flight_days": 0,
+    "ties_by_camera": {
+      "3500015": 46,
+      "3500017": 31,
+      "3920019": 24
+    },
+    "scope": "The incumbent numeric shutter sort key, not a physical identity key or error rate"
+  },
+  "conditional_algorithm_diagnostic": {
+    "baseline": {
+      "actions": 2166,
+      "admitted_raw_keys": 7606,
+      "patterns": {
+        "0,-1,+1": 290,
+        "0,-2,+2": 1261,
+        "0,-2,-1,+1,+2": 226,
+        "0,-2/3,+2/3": 61,
+        "0,-4/3,-2/3,+2/3,+4/3": 2,
+        "0,-6,-3,+3,+6": 326
+      },
+      "activity_fractures": 25,
+      "target_presence_fractures": 48,
+      "target_value_fractures": 3
+    },
+    "baseline_target_fields": {
+      "admitted_raw_keys": 7606,
+      "nonblank_target_keys": 3413,
+      "target_values": {
+        "01_Discussion #1: Warm up": 39,
+        "Aristarchus Plateau": 26,
+        "Deep Space": 25,
+        "Earth": 692,
+        "Earthrise": 2,
+        "Earthset": 14,
+        "Glushko Crater": 24,
+        "Hertzsprung Basin": 12,
+        "Landau": 7,
+        "Limb": 6,
+        "Moon": 280,
+        "Nemst": 3,
+        "Ohm Crater": 68,
+        "Orientale Basin": 74,
+        "Pierrazzo Crater": 23,
+        "Reiner Gamma": 24,
+        "Sun": 81,
+        "Sunrise": 181,
+        "Sunset": 1553,
+        "Terminator": 122,
+        "Unknown": 33,
+        "Vavilov Crater": 67,
+        "Whole Moon": 57
+      }
+    },
+    "conditional_representative_choices": {
+      "minimum_product_id": {
+        "summary": {
+          "actions": 2174,
+          "admitted_raw_keys": 7632,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2,+2": 1268,
+            "0,-2,-1,+1,+2": 226,
+            "0,-2/3,+2/3": 61,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-6,-3,+3,+6": 327
+          },
+          "activity_fractures": 25,
+          "target_presence_fractures": 48,
+          "target_value_fractures": 3
+        },
+        "admitted_target_fields": {
+          "admitted_raw_keys": 7632,
+          "nonblank_target_keys": 3439,
+          "target_values": {
+            "01_Discussion #1: Warm up": 39,
+            "Aristarchus Plateau": 26,
+            "Deep Space": 25,
+            "Earth": 692,
+            "Earthrise": 2,
+            "Earthset": 14,
+            "Glushko Crater": 24,
+            "Hertzsprung Basin": 12,
+            "Landau": 7,
+            "Limb": 6,
+            "Moon": 301,
+            "Nemst": 3,
+            "Ohm Crater": 68,
+            "Orientale Basin": 74,
+            "Pierrazzo Crater": 23,
+            "Reiner Gamma": 24,
+            "Sun": 81,
+            "Sunrise": 181,
+            "Sunset": 1558,
+            "Terminator": 122,
+            "Unknown": 33,
+            "Vavilov Crater": 67,
+            "Whole Moon": 57
+          }
+        },
+        "input_records_removed_conditionally": 24,
+        "newly_admitted_raw_keys": 27,
+        "previous_raw_keys_not_retained": 1,
+        "added_camera_sequence_witnesses": [
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:26.100Z",
+            "end_time": "2026-04-05T04:02:26.230Z",
+            "span_seconds": 0.13,
+            "file_names": [
+              "art002e009039_nkz9019_raw_v01.tif",
+              "art002e009040_nkz9019_raw_v01.tif",
+              "art002e009041_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              127,
+              128,
+              129
+            ],
+            "file_numbers": [
+              152,
+              153,
+              154
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              "Moon",
+              "Moon",
+              "Moon"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:28.250Z",
+            "end_time": "2026-04-05T04:02:28.360Z",
+            "span_seconds": 0.11,
+            "file_names": [
+              "art002e009042_nkz9019_raw_v01.tif",
+              "art002e009043_nkz9019_raw_v01.tif",
+              "art002e009044_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              130,
+              131,
+              132
+            ],
+            "file_numbers": [
+              155,
+              156,
+              157
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              "Moon",
+              "Moon",
+              "Moon"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:32.640Z",
+            "end_time": "2026-04-05T04:02:32.750Z",
+            "span_seconds": 0.11,
+            "file_names": [
+              "art002e009045_nkz9019_raw_v01.tif",
+              "art002e009046_nkz9019_raw_v01.tif",
+              "art002e009047_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              133,
+              134,
+              135
+            ],
+            "file_numbers": [
+              158,
+              159,
+              160
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              "Moon",
+              "Moon",
+              "Moon"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:37.180Z",
+            "end_time": "2026-04-05T04:02:37.290Z",
+            "span_seconds": 0.11,
+            "file_names": [
+              "art002e009048_nkz9019_raw_v01.tif",
+              "art002e009049_nkz9019_raw_v01.tif",
+              "art002e009050_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              136,
+              137,
+              138
+            ],
+            "file_numbers": [
+              161,
+              162,
+              163
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              "Moon",
+              "Moon",
+              "Moon"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:42.850Z",
+            "end_time": "2026-04-05T04:02:42.980Z",
+            "span_seconds": 0.13,
+            "file_names": [
+              "art002e009051_nkz9019_raw_v01.tif",
+              "art002e009052_nkz9019_raw_v01.tif",
+              "art002e009053_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              139,
+              140,
+              141
+            ],
+            "file_numbers": [
+              164,
+              165,
+              166
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              "Moon",
+              "Moon",
+              "Moon"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:46.910Z",
+            "end_time": "2026-04-05T04:02:47.030Z",
+            "span_seconds": 0.12,
+            "file_names": [
+              "art002e009054_nkz9019_raw_v01.tif",
+              "art002e009055_nkz9019_raw_v01.tif",
+              "art002e009056_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              142,
+              143,
+              144
+            ],
+            "file_numbers": [
+              167,
+              168,
+              169
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              "Moon",
+              "Moon",
+              "Moon"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:50.900Z",
+            "end_time": "2026-04-05T04:02:51.020Z",
+            "span_seconds": 0.12,
+            "file_names": [
+              "art002e009057_nkz9019_raw_v01.tif",
+              "art002e009058_nkz9019_raw_v01.tif",
+              "art002e009059_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              145,
+              146,
+              147
+            ],
+            "file_numbers": [
+              170,
+              171,
+              172
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              "Moon",
+              "Moon",
+              "Moon"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-07T00:35:12.970Z",
+            "end_time": "2026-04-07T00:35:13.370Z",
+            "span_seconds": 0.4,
+            "file_names": [
+              "art002e015486_nkz9019_raw_v01.tif",
+              "art002e015487_nkz9019_raw_v01.tif",
+              "art002e012280_nkz9019_raw_v01.tif",
+              "art002e015489_nkz9019_raw_v01.tif",
+              "art002e015490_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              2532,
+              2533,
+              2534,
+              2535,
+              2536
+            ],
+            "file_numbers": [
+              355,
+              356,
+              357,
+              358,
+              359
+            ],
+            "bracket_values": [
+              "0",
+              "-6",
+              "-3",
+              "+3",
+              "+6"
+            ],
+            "activity_ids": [
+              "h_Observation Break",
+              "h_Observation Break",
+              "h_Observation Break",
+              "h_Observation Break",
+              "h_Observation Break"
+            ],
+            "target_ids": [
+              "Sunset",
+              "Sunset",
+              "Sunset",
+              "Sunset",
+              "Sunset"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          }
+        ]
+      },
+      "maximum_product_id": {
+        "summary": {
+          "actions": 2174,
+          "admitted_raw_keys": 7632,
+          "patterns": {
+            "0,-1,+1": 290,
+            "0,-2,+2": 1268,
+            "0,-2,-1,+1,+2": 226,
+            "0,-2/3,+2/3": 61,
+            "0,-4/3,-2/3,+2/3,+4/3": 2,
+            "0,-6,-3,+3,+6": 327
+          },
+          "activity_fractures": 25,
+          "target_presence_fractures": 48,
+          "target_value_fractures": 3
+        },
+        "admitted_target_fields": {
+          "admitted_raw_keys": 7632,
+          "nonblank_target_keys": 3418,
+          "target_values": {
+            "01_Discussion #1: Warm up": 39,
+            "Aristarchus Plateau": 26,
+            "Deep Space": 25,
+            "Earth": 692,
+            "Earthrise": 2,
+            "Earthset": 14,
+            "Glushko Crater": 24,
+            "Hertzsprung Basin": 12,
+            "Landau": 7,
+            "Limb": 6,
+            "Moon": 280,
+            "Nemst": 3,
+            "Ohm Crater": 68,
+            "Orientale Basin": 74,
+            "Pierrazzo Crater": 23,
+            "Reiner Gamma": 24,
+            "Sun": 81,
+            "Sunrise": 181,
+            "Sunset": 1558,
+            "Terminator": 122,
+            "Unknown": 33,
+            "Vavilov Crater": 67,
+            "Whole Moon": 57
+          }
+        },
+        "input_records_removed_conditionally": 24,
+        "newly_admitted_raw_keys": 26,
+        "previous_raw_keys_not_retained": 0,
+        "added_camera_sequence_witnesses": [
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:26.100Z",
+            "end_time": "2026-04-05T04:02:26.230Z",
+            "span_seconds": 0.13,
+            "file_names": [
+              "art002e029909_nkz9019_raw_v01.tif",
+              "art002e029910_nkz9019_raw_v01.tif",
+              "art002e029911_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              127,
+              128,
+              129
+            ],
+            "file_numbers": [
+              152,
+              153,
+              154
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              null,
+              null,
+              null
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:28.250Z",
+            "end_time": "2026-04-05T04:02:28.360Z",
+            "span_seconds": 0.11,
+            "file_names": [
+              "art002e029912_nkz9019_raw_v01.tif",
+              "art002e029913_nkz9019_raw_v01.tif",
+              "art002e029914_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              130,
+              131,
+              132
+            ],
+            "file_numbers": [
+              155,
+              156,
+              157
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              null,
+              null,
+              null
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:32.640Z",
+            "end_time": "2026-04-05T04:02:32.750Z",
+            "span_seconds": 0.11,
+            "file_names": [
+              "art002e029915_nkz9019_raw_v01.tif",
+              "art002e029916_nkz9019_raw_v01.tif",
+              "art002e029917_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              133,
+              134,
+              135
+            ],
+            "file_numbers": [
+              158,
+              159,
+              160
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              null,
+              null,
+              null
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:37.180Z",
+            "end_time": "2026-04-05T04:02:37.290Z",
+            "span_seconds": 0.11,
+            "file_names": [
+              "art002e029918_nkz9019_raw_v01.tif",
+              "art002e029919_nkz9019_raw_v01.tif",
+              "art002e029920_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              136,
+              137,
+              138
+            ],
+            "file_numbers": [
+              161,
+              162,
+              163
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              null,
+              null,
+              null
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:42.850Z",
+            "end_time": "2026-04-05T04:02:42.980Z",
+            "span_seconds": 0.13,
+            "file_names": [
+              "art002e029921_nkz9019_raw_v01.tif",
+              "art002e029922_nkz9019_raw_v01.tif",
+              "art002e029923_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              139,
+              140,
+              141
+            ],
+            "file_numbers": [
+              164,
+              165,
+              166
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              null,
+              null,
+              null
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:46.910Z",
+            "end_time": "2026-04-05T04:02:47.030Z",
+            "span_seconds": 0.12,
+            "file_names": [
+              "art002e029924_nkz9019_raw_v01.tif",
+              "art002e029925_nkz9019_raw_v01.tif",
+              "art002e029926_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              142,
+              143,
+              144
+            ],
+            "file_numbers": [
+              167,
+              168,
+              169
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              null,
+              null,
+              null
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-05T04:02:50.900Z",
+            "end_time": "2026-04-05T04:02:51.020Z",
+            "span_seconds": 0.12,
+            "file_names": [
+              "art002e029927_nkz9019_raw_v01.tif",
+              "art002e029928_nkz9019_raw_v01.tif",
+              "art002e029929_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              145,
+              146,
+              147
+            ],
+            "file_numbers": [
+              170,
+              171,
+              172
+            ],
+            "bracket_values": [
+              "0",
+              "-2",
+              "+2"
+            ],
+            "activity_ids": [
+              "Opportunistic Imaging",
+              "Opportunistic Imaging",
+              "Opportunistic Imaging"
+            ],
+            "target_ids": [
+              null,
+              null,
+              null
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          },
+          {
+            "serial": "3920019",
+            "start_time": "2026-04-07T00:35:12.970Z",
+            "end_time": "2026-04-07T00:35:13.370Z",
+            "span_seconds": 0.4,
+            "file_names": [
+              "art002e015486_nkz9019_raw_v01.tif",
+              "art002e015487_nkz9019_raw_v01.tif",
+              "art002e015488_nkz9019_raw_v01.tif",
+              "art002e015489_nkz9019_raw_v01.tif",
+              "art002e015490_nkz9019_raw_v01.tif"
+            ],
+            "shutter_counts": [
+              2532,
+              2533,
+              2534,
+              2535,
+              2536
+            ],
+            "file_numbers": [
+              355,
+              356,
+              357,
+              358,
+              359
+            ],
+            "bracket_values": [
+              "0",
+              "-6",
+              "-3",
+              "+3",
+              "+6"
+            ],
+            "activity_ids": [
+              "h_Observation Break",
+              "h_Observation Break",
+              "h_Observation Break",
+              "h_Observation Break",
+              "h_Observation Break"
+            ],
+            "target_ids": [
+              "Sunset",
+              "Sunset",
+              "Sunset",
+              "Sunset",
+              "Sunset"
+            ],
+            "activity_facet_fracture": false,
+            "target_presence_fracture": false,
+            "target_value_fracture": false
+          }
+        ]
+      }
+    },
+    "reversed_input_order": {
+      "summary": {
+        "actions": 2134,
+        "admitted_raw_keys": 7502,
+        "patterns": {
+          "0,-1,+1": 273,
+          "0,-2,+2": 1252,
+          "0,-2,-1,+1,+2": 226,
+          "0,-2/3,+2/3": 59,
+          "0,-4/3,-2/3,+2/3,+4/3": 1,
+          "0,-6,-3,+3,+6": 323
+        },
+        "activity_fractures": 25,
+        "target_presence_fractures": 48,
+        "target_value_fractures": 3
+      },
+      "admitted_target_fields": {
+        "admitted_raw_keys": 7502,
+        "nonblank_target_keys": 3344,
+        "target_values": {
+          "01_Discussion #1: Warm up": 39,
+          "Aristarchus Plateau": 26,
+          "Deep Space": 25,
+          "Earth": 651,
+          "Earthrise": 2,
+          "Earthset": 14,
+          "Glushko Crater": 24,
+          "Hertzsprung Basin": 12,
+          "Landau": 7,
+          "Limb": 6,
+          "Moon": 275,
+          "Nemst": 3,
+          "Ohm Crater": 68,
+          "Orientale Basin": 68,
+          "Pierrazzo Crater": 23,
+          "Reiner Gamma": 24,
+          "Sun": 78,
+          "Sunrise": 181,
+          "Sunset": 1548,
+          "Terminator": 119,
+          "Unknown": 27,
+          "Vavilov Crater": 67,
+          "Whole Moon": 57
+        }
+      },
+      "admitted_identifier_symmetric_difference": 106
+    },
+    "interpretation": "Unmodified algorithm replay under conditional record treatment and input-order perturbation; not corrected physical actions, actual leakage, source identity or a change to the counted cohort"
+  },
+  "claim_limits": {
+    "source_byte_identity": false,
+    "physical_exposure_identity": false,
+    "counts_revised": false,
+    "tag_correctness": false,
+    "pixel_similarity": false,
+    "actual_pipeline_leakage": false,
+    "calibrated_flux": false,
+    "live_archive_coverage": false,
+    "scientific_acceptance": false
+  },
+  "effects": {
+    "network_requests": 0,
+    "image_payload_bytes": 0,
+    "outreach": false,
+    "publication": false,
+    "remote_push": false
+  },
+  "provenance": {
+    "contract": {
+      "version": "1.0",
+      "date": "2026-10-12",
+      "starting_commit": "0866eb4d89c1bc68ec4cef7dc8d0bc6e275d7562",
+      "objective": "Census distinct raw-product IDs with matching retained camera metadata and test their intersection with the existing counted cohort without certifying physical identity or changing a denominator",
+      "scope": "Frozen raw crew-camera metadata assembled by Stages 10A and 10E, queried flight days 1 through 10, snapshot 10 October 2026; not a current archive or pixel census",
+      "inputs": [
+        {
+          "path": "evidence/stage10a/acquisition-receipt.json",
+          "bytes": 6454,
+          "sha256": "bdc0580214ca5aff0c6a3635533dda2d4d4ec48125fa6575609b818f7f3e5ecd"
+        },
+        {
+          "path": "evidence/stage10e/acquisition-receipt.json",
+          "bytes": 6153,
+          "sha256": "dc8d7280c3e88d188d1642c5206f473475e94c0f72d30d46c4579c168659790b"
+        },
+        {
+          "path": "results/stage10o-product-relationship-manifest.csv",
+          "bytes": 10072026,
+          "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+        },
+        {
+          "path": "spec/stage10c.json",
+          "bytes": 5328,
+          "sha256": "d9786cb629da07ae956dfdd6fb136216bac731fd38f767253227d61553d8d2b4"
+        },
+        {
+          "path": "spec/stage10j.json",
+          "bytes": 4722,
+          "sha256": "ba4bce1fb07e4860d071a781900b463ff7ad81873cafc255d31d1e6497612a2f"
+        },
+        {
+          "path": "src/stage10c_camera_action_integrity.py",
+          "bytes": 17008,
+          "sha256": "5be9a83b64462cd240b6d5086c2a747df97fa2ae14adfe70569044c60b4ed866"
+        },
+        {
+          "path": "src/stage10a_metadata_integrity.py",
+          "bytes": 20627,
+          "sha256": "3cd547fc6ae194d7f9c133bc6cfaba010c7a74b4cdbece6cc00eec52eb3744f5"
+        },
+        {
+          "path": "src/artemis_testbed.py",
+          "bytes": 13060,
+          "sha256": "8bb303413e5e594ef5270ade7939739afe909dcdafbd5ff7b08fbdb7497f944e"
+        }
+      ],
+      "expected_raw_records": 10329,
+      "expected_day_counts": {
+        "1": 273,
+        "2": 616,
+        "3": 253,
+        "4": 276,
+        "5": 311,
+        "6": 8423,
+        "7": 98,
+        "8": 79,
+        "9": 0,
+        "10": 0
+      },
+      "expected_manifest": {
+        "products": 22818,
+        "capture_keys": 7606,
+        "actions": 2166
+      },
+      "strict_fields": [
+        "serial",
+        "file_number",
+        "shutter_count",
+        "utc",
+        "iso",
+        "focal_length",
+        "shooting_mode",
+        "auto_bracket_order",
+        "bracket_value"
+      ],
+      "core_fields": [
+        "serial",
+        "file_number",
+        "shutter_count",
+        "utc"
+      ],
+      "key_rule": "All named fields must be single nonblank strings; preserve lexical values and leading zeros. Missing/multiple/non-string values are unkeyable, not matching nulls. UTC-semantic comparison is a separate diagnostic requiring an explicit offset.",
+      "native_id_rule": "One distinct product ID and capture stem per raw record; multiple representations are not pooled into this census",
+      "conditional_diagnostic": "Wrap the existing unmodified six-pattern action finder: original input order, reversed input order, and hypothetical one-representative-per-exact-nine-field-group lists choosing minimum or maximum product ID. All other records, patterns, counter/settings/span rules and source order remain unchanged. This is identifier-selection and reconstruction sensitivity, not physical deduplication or a corrected census.",
+      "follow_on_diagnostic": "After the predeclared reversal exposes a count difference, profile only the existing sort key (serial plus parsed shutter_count, with its existing zero sentinel). These ties are ordering ambiguity, not aliases. Count nonblank tags in each diagnostic's admitted identifier set to separate selection from reconstruction; do not choose a correct target value.",
+      "limits": {
+        "source_byte_identity": false,
+        "physical_exposure_identity": false,
+        "counts_revised": false,
+        "tag_correctness": false,
+        "pixel_similarity": false,
+        "actual_pipeline_leakage": false,
+        "calibrated_flux": false,
+        "live_archive_coverage": false,
+        "scientific_acceptance": false
+      },
+      "effects": {
+        "network_requests": 0,
+        "image_payload_bytes": 0,
+        "outreach": false,
+        "publication": false,
+        "remote_push": false
+      },
+      "stop": "Reject a source/hash, completeness, scope, duplicate-ID or baseline-replay mismatch. Do not retry denied archive reads or infer a valid physical merge from a candidate match. Preserve original science receipts."
+    },
+    "request_and_response_sources": [
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd01.json",
+        "bytes": 1191,
+        "sha256": "e704957c20ce64c57a0e67c5ad8a987b3b86b292a2dba1994dd4d3118880e56f"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd01.json",
+        "bytes": 319085,
+        "sha256": "53139115a47077d929a9f1dd64f462e392b9238325f31e39118b8d20283ac66a"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd02.json",
+        "bytes": 1191,
+        "sha256": "23735059d69df63b0590627f1d69a16f2241eb73e477bc292019fd3bd29680ae"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd02.json",
+        "bytes": 714320,
+        "sha256": "bd436b98c5f57625ba5e0faeb60d65b382359e3e66807f1a64d4256fb20fbad0"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd03.json",
+        "bytes": 1191,
+        "sha256": "a648fa92c46616d80c613bf96e2d28bded657c988ef5a2c294ea0519ad1152ce"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd03.json",
+        "bytes": 277778,
+        "sha256": "3429f576264a7f15504284824142dd8f4da8103b27d426cff9d73600b0165537"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd04.json",
+        "bytes": 1191,
+        "sha256": "87fdeb1a7aabecc6f8a0c6287892a406d0173e1f2fa3de4434d6720983ffe7c4"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd04.json",
+        "bytes": 309898,
+        "sha256": "ee57ca7efd1a38e126559b98b27919db4e9907fa747a38cbbcae506ee5253868"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd05.json",
+        "bytes": 1191,
+        "sha256": "5b20354e968dea8964806519d1fd298a67d307a1e2132977964abd2eb090fa27"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd05.json",
+        "bytes": 342041,
+        "sha256": "9867b36b24e518f36b16c57e3dbc7c3f3f76895a6967d61de9b0ea1569dadec9"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd07.json",
+        "bytes": 1191,
+        "sha256": "55964d0dcfde552d5105a0ddfb57dd50238812cb4e9a0420172a1061b6b8466a"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd07.json",
+        "bytes": 114426,
+        "sha256": "4a6c0149ff51c80ee695d73d20cdd96b1f7716ea314c422a2eee7ea21a2aba95"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd08.json",
+        "bytes": 1191,
+        "sha256": "7e2877ee1a9fc36b0ba062e1b1448592dc37440ebac32ba182a5bfd0b85f8043"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd08.json",
+        "bytes": 85213,
+        "sha256": "8bf00dbc02242314d54f489c1c8d6a524cecaab449f92e80dcd27ad49818c7b4"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd09.json",
+        "bytes": 1191,
+        "sha256": "f7eba488d282a2eff54d37316d15c5366a760538414cf3e34efcb0047e495797"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd09.json",
+        "bytes": 160,
+        "sha256": "5704c3d457e1b5d319e6adb721108c745c8321691e9cb46248a2087079958c0e"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/request-fd10.json",
+        "bytes": 1192,
+        "sha256": "1c00c96ca716d9d7ae3da67febe56d0653671ae36222e0490c37f9b98c4a82a2"
+      },
+      {
+        "path": "evidence/stage10e/source/daily-pages/response-fd10.json",
+        "bytes": 160,
+        "sha256": "966a0f381173c0750602a3e406b88f8ac7072e42b10ab5e4fcfaaad7a2f83b18"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-00.json",
+        "bytes": 1138,
+        "sha256": "97c51e1108d6580dab07868d5050909608f260efc70458c85102c61c13479592"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-00.json",
+        "bytes": 1024665,
+        "sha256": "509422f24546824a0ba4747e9a7829c664d00dd47a0ce29dc1e3d63b4eb0ed45"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-01.json",
+        "bytes": 1141,
+        "sha256": "294df5a7b75ca72485a039153d9d8aeb802638d749c6dd6f55bd176447bdc62f"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-01.json",
+        "bytes": 1079207,
+        "sha256": "3a5681ef249a6cd4ed9370ee1021e457400a5b5c67bcb545f7780f09b5751bb2"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-02.json",
+        "bytes": 1141,
+        "sha256": "ef62e0d7cf260291cd4c902597eb8cac082e139641e9ef25ce68390d451139e4"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-02.json",
+        "bytes": 1051158,
+        "sha256": "3b2b2cf8b046d87c6d59e8979ff4ba3990fe9ad418c4308e81224c0a843fea8f"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-03.json",
+        "bytes": 1141,
+        "sha256": "0793dad416d637c8bef5acf1af7026a5f9a61e887d37293d54645a3ca3a9996d"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-03.json",
+        "bytes": 1047432,
+        "sha256": "73a24487b6ca93bbd425baef93bdc2c0943d2ffde88afd33fa5dba1a44a02e16"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-04.json",
+        "bytes": 1141,
+        "sha256": "8a5e8756b32c67eb0abc85712bc0d25d685f7a5d3cd5ced753bd5ce8a6b9fe18"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-04.json",
+        "bytes": 1068456,
+        "sha256": "200ed9f2ef3e0a007d04e89aec672ae628a684a34d91b83b9ef0863fe284bf51"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-05.json",
+        "bytes": 1141,
+        "sha256": "d8c63f6853f641efb8664e3fe4b37c5e1d97b48db849c54fc89310b956ac6243"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-05.json",
+        "bytes": 1051230,
+        "sha256": "91ce31dd5855a8f6476b2f01d4b3c44659d04582884a3608c081ed57898e5005"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-06.json",
+        "bytes": 1141,
+        "sha256": "fa68c84bd2af00a0673a661f0aaadfa375a4efa1275af4b4f4e7ec3ab5f46abf"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-06.json",
+        "bytes": 1094853,
+        "sha256": "d38df66595cb0eaa8138b358337728ec4e5392876358c5ee6e1f3d50188a1493"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-07.json",
+        "bytes": 1141,
+        "sha256": "a883cbdf0d2687691e8cfc635db66a3da6fe2b898b240acf3016f46d8de28e75"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-07.json",
+        "bytes": 1107767,
+        "sha256": "1333b50fa4dad6c52851763ac4cdb61d7acb725670aa07ea8498975140804908"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/request-08.json",
+        "bytes": 1141,
+        "sha256": "2279a3995574673baf9561c61201e6f15a6e7e41ddab8546c64d934cb054ee05"
+      },
+      {
+        "path": "evidence/stage10a/source/atlas-pages/response-08.json",
+        "bytes": 468240,
+        "sha256": "63958e18a56f9d80a8b80b3161ba68299db064f5a9783c71476279098088be30"
+      }
+    ],
+    "offline_replay_command": "python -B -m src.camera_identity_alias_census"
+  }
+}

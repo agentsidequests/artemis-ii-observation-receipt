@@ -1,0 +1,76 @@
+{
+  "testbed_id": "artemis2-paired-window-task-admission-stage11b",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T15:04:00Z",
+  "question": "Does the plan contain a positive, bounded same-target cross-window task candidate that survives the broader replication constraints?",
+  "terminal_objective": "Identify geolocated lunar targets with exactly two disjoint active plan windows, quantify their current camera-action support, and select a task candidate without asserting image-content equivalence.",
+  "method": "Replay Stage 11A, join active plan-window memberships to the source plan and product relationship manifest, select exact plan target names with two active windows, positive diameter, and nonzero coordinates, then require disjoint windows and one shared camera serial. Rank explicit repeat-observation intent above generic same-name recurrence.",
+  "authority": "Private local plan and metadata admission only. No new pixels, image-content presence, scene equivalence, photometry, calibration, independent-event claim, target-label correctness, model partition, model performance, publication, scientific-discovery claim, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11a_spec_path": "spec/stage11a.json",
+    "membership_ledger_path": "results/stage10z-action-plan-membership.csv",
+    "relationship_manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "plan_path": "corpus/artemis2_outgoing_target_request.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "paired_geolocated_targets": 3,
+    "paired_windows": 6,
+    "complete_actions": 262,
+    "exposures": 786,
+    "products": 2358,
+    "archive_size_bytes": 145162317082,
+    "shared_camera_serials": ["3500015"],
+    "exact_same_name_tagged_exposures": 18,
+    "exact_same_name_tag_share": 0.022900763358778626,
+    "all_pairs_disjoint": true,
+    "all_pairs_same_camera": true,
+    "explicit_repeat_observation_targets": 1
+  },
+  "frozen_pairs": {
+    "Glushko Crater": {
+      "orders": ["3", "11"], "window_gap_seconds": 6420.0,
+      "actions": [8, 34], "exposures": [24, 102], "products": [72, 306],
+      "archive_size_bytes": [4401221410, 18880768944], "exact_same_name_tags": [3, 0],
+      "camera_serials": ["3500015"], "repeat_intent": "explicit_photometric_viewing_condition_repeat"
+    },
+    "Ohm Crater": {
+      "orders": ["4", "16"], "window_gap_seconds": 10140.0,
+      "actions": [16, 8], "exposures": [48, 24], "products": [144, 72],
+      "archive_size_bytes": [8811452675, 4421663469], "exact_same_name_tags": [15, 0],
+      "camera_serials": ["3500015"], "repeat_intent": "same_name_revisit_no_explicit_photometric_repeat"
+    },
+    "Orientale Basin": {
+      "orders": ["8", "12"], "window_gap_seconds": 2820.0,
+      "actions": [62, 134], "exposures": [186, 402], "products": [558, 1206],
+      "archive_size_bytes": [34442235881, 74204974703], "exact_same_name_tags": [0, 0],
+      "camera_serials": ["3500015"], "repeat_intent": "same_name_two_part_plan"
+    }
+  },
+  "selected_candidate": {
+    "target": "Glushko Crater",
+    "admission_state": "ADMIT_PIXEL_BLIND_REGISTRATION_AND_PROTOCOL_GATE",
+    "reason": "The plan explicitly defines first and second photometric observations of Glushko and says repeat observations inform how viewing conditions affect perceived brightness, color, and texture. The two active windows are disjoint, 107 minutes apart, and use the same camera serial, but exact target tags cover only three first-window exposures and none in the second window."
+  },
+  "hard_negatives": [
+    "call_plan_membership_image_content",
+    "call_same_name_scene_equivalence",
+    "call_same_camera_calibrated_photometry",
+    "call_windows_independent_events",
+    "call_sparse_tags_negative_evidence",
+    "assign_model_partition_before_registration",
+    "claim_model_performance_effect",
+    "call_candidate_scientific_result",
+    "claim_novelty_or_priority",
+    "open_pixels_during_admission"
+  ],
+  "claim_ceiling": "Stage 11B may establish that Glushko Crater, Ohm Crater, and Orientale Basin each have two disjoint active, same-camera plan windows containing a combined 262 complete actions, 786 exposures, 2,358 products, and 145.162317082 GB. It may select Glushko for a pixel-blind registration and protocol gate because the plan explicitly designed its two windows as photometric repeat observations under changing viewing conditions. It cannot establish that every image contains the named target, that paired windows show equivalent scenes, that the camera is calibrated, that windows are independent events, that sparse or blank tags are negative evidence, that any split is valid before registration, or any model-performance, scientific-discovery, novelty, or priority claim.",
+  "next_step_logic": {
+    "if_positive_cross_window_task_is_pursued": "For Glushko, audit source labels and target registration in both windows, freeze a representation and comparable-view oracle, and define whether the task predicts viewing-condition change, retrieves the same target, or measures an ordinal image property before opening pixels.",
+    "if_registration_or_comparability_fails": "Stop the paired-window model route without relabeling plan membership as visual truth; preserve the plan's repeat intent as an operational fact only.",
+    "if_a_task_survives_registration": "Keep whole windows separated, retain camera-state and geometry controls, and call the result within-mission cross-window evaluation rather than new-event or calibrated photometry.",
+    "if_no_pixel_task_is_selected": "Preserve Glushko as the strongest positive candidate and do not acquire payloads merely because they are available.",
+    "recheck_trigger": "A task-specific registration audit, geometry release, calibration chain, or public paired-window analysis."
+  }
+}

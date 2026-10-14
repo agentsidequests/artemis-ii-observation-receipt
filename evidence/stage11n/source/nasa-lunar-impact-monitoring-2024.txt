@@ -1,0 +1,222 @@
+===== PDF PAGE 1 =====
+
+vsma.nasa.gov
+National Aeronautics and Space Administration
+Meteoroid Environment Office
+NASA’s Lunar Impact Monitoring Program
+Bill Cooke
+william.j.cooke@nasa.gov
+
+===== PDF PAGE 2 =====
+
+vsma.nasa.gov
+Jack Schmitt/Apollo 17 observation of lunar impact
+"NASA Apollo 17 transcript" discussion is given below (before descent to lunar surface):
+---------------------
+03 15 38 09 (mission elapsed time)
+ (10 Dec 1972, 21:16:09 UT – possible Geminid)
+LMP Hey, I just saw a flash on the lunar surface!
+CC Oh, yes?
+LMP It was just out there north of Grimaldi [mare]. Just north of Grimaldi. You might see if 
+you got anything on your seismometers, although a small impact probably would give a fair 
+amount of visible light.
+CC Okay. We'll check.
+LMP It was a bright little flash right out there near that crater. See the [sharp rimed] crater 
+right at the [north] edge of [the] Grimaldi [mare]? Then there is another one [i.e., sharp 
+rimed crater] [directly] north of it [about 50km]- fairly sharp one north of it. [That] is where 
+there was just a thin streak [pin prick] [flash?] of light.
+CC How about putting an X on the map where you saw it?
+LMP I keep looking for -- yes, we will. I was planning on looking for those kind of things....
+ Geminids 12/13/1972
+x
+Jack Schmitt - NASA
+
+===== PDF PAGE 3 =====
+
+vsma.nasa.gov
+▪ Amateurs reported seeing impact 
+flashes during the Leonid meteor 
+storms of 1998-2002.
+▪ The NASA lunar impact 
+monitoring program began routine 
+operations in 2006 to collect data 
+needed for lunar impact ejecta 
+environment definition for the old 
+Constellation Program
+▪ Initial 5 years were anytime the 
+weather was good enough to 
+permit lunar observations
+– Observations in recent years have 
+been during showers only
+Historical overview
+Our 1st flashes were 
+detected with this 
+amateur telescope!
+Orion Atlas 10 EQ 
+– 10” Newtonian
+
+===== PDF PAGE 4 =====
+
+vsma.nasa.gov
+▪ A 2014 paper published in Icarus 
+reported the flux based on the first 
+5 years of observations and 126 
+calibrated flashes (267 hours of 
+observation time) : Suggs et al., 
+Icarus 238 (2014) 23-36 
+http://dx.doi.org/10.1016/j.icarus.2014.04.03
+2
+▪ The flux we determined confirmed 
+the Brown et al. size distribution 
+which is incorporated into the 
+Lunar Meteoroid Ejecta 
+Engineering Model (LMEEM) used 
+for HLS
+William Cooke – NASA MEO
+
+===== PDF PAGE 5 =====
+
+vsma.nasa.gov
+Observational setup
+Telescopes
+• 20” RCOS (0.5m) on 
+Paramount ME 
+• 14” Celestron (0.35m) on  
+Paramount MX
+Detectors
+• Watec 902H2 Ultimate
+• Sony HADView EX CCD
+• Gamma=0.45, manual gain, 
+autoshutter off
+• 640x480 pixels
+Automated Lunar and Meteor Observatory (Minor Planet Center H58)
+
+===== PDF PAGE 6 =====
+
+vsma.nasa.gov
+Celestron 14 Finger Lakes focuser
+Pyxis rotator
+Optec 0.3x 
+  focal reducer
+Watec 902H2
+Ultimate
+
+===== PDF PAGE 7 =====
+
+vsma.nasa.gov
+Operator position
+
+
+===== PDF PAGE 8 =====
+
+vsma.nasa.gov
+
+
+===== PDF PAGE 9 =====
+
+vsma.nasa.gov
+▪ Approximately 20 arcmin horizontal
+▪ Approximately 1m effective focal 
+length with ½ inch CCD
+▪ Good compromise between collecting 
+area and glare
+▪ Telescope mount with lunar rate (in RA 
+and Dec) is helpful although manual 
+corrections are needed
+▪ Aristarchus and Proclus are easy to 
+see and use as tracking targets
+  
+Camera Field of View and Tracking
+
+===== PDF PAGE 10 =====
+
+vsma.nasa.gov
+LunarScan
+Impact 15 Dec 2006
+
+===== PDF PAGE 11 =====
+
+vsma.nasa.gov
+▪ Field of view encompasses approximately 
+4 million square kilometers of lunar surface
+▪ Resolution of ~4 km 
+▪ Complete to magnitude +9 – corresponds 
+to a mass of about 30 g at sporadic speed 
+of 20 km s-1 (ping pong ball size)
+▪ LunarScan software (Pete Gural) used to 
+detect impact flashes – require 
+simultaneous detections in both telescopes
+▪ ArcGIS software used to selenolocate 
+impact flashes – refraction correction also 
+applied
+
+===== PDF PAGE 12 =====
+
+vsma.nasa.gov
+Page 12
+12/15/2006
+09:17:39.336 
+33 ms
+mR = 7.4
+0.09 kg
+Geminid (35 km/s)
+04/22/2007
+03:12:24.372
+133 ms
+mR = 6.7
+0.08 kg
+Lyrid (49 km/s)
+11/03/2008
+00:11:06.144
+100 ms
+mR = 7.7
+0.1 kg
+S. Taurid (27 km/s)
+11/17/2006
+10:56:34.820
+66 ms
+mR = 7.0
+0.03 kg
+Leonid (71 km/s)
+Observed by D.E. Moser & W.R. Swift; detected by R.J. Suggs
+Observed by V. Coffey, D.E. Moser & W.R. Swift; detected by R.J. SuggsObserved by R.M. Suggs; detected by R.J. Suggs
+Observed by W.R. Swift; detected by R.J. Suggs
+12
+
+===== PDF PAGE 13 =====
+
+vsma.nasa.gov
+March 17, 2013 impact
+
+
+===== PDF PAGE 14 =====
+
+vsma.nasa.gov
+Impact crater found by LRO
+Crater location
+▪  20.7135° N, 24.3302° W
+Crater info
+▪  Rim-to-rim diameter = 18 m
+▪  Inner diameter = 15 m
+▪  Depth ≈ 5 m
+Features
+▪  Fresh, bright ejecta 
+▪  Circular crater
+▪  Asymmetrical ray pattern
+Impactor mass estimated to be ~16 kg
+NASA LRO image provided by Robinson (2013)
+
+===== PDF PAGE 15 =====
+
+vsma.nasa.gov
+Current status
+▪ 443 impacts detected as of this date
+▪ A new version of LunarScan developed 
+in 2020 to detect flashes in real time
+▪ Pandemic forced suspension of 
+observations; observatory currently 
+being refitted and brought back online
+▪ Conducting ”practice” observations 
+with new personnel during last quarter 
+of this year
+

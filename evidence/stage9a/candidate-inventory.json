@@ -1,0 +1,217 @@
+{
+  "inventory_id": "artemis2-stage9a-candidate-inventory-v1",
+  "formed_at_utc": "2026-10-09T23:12:48Z",
+  "ordinal_scale": ["LOW", "MEDIUM", "HIGH", "VERY_HIGH"],
+  "comparators": [
+    {
+      "id": "truthful_operational_synthesis",
+      "availability": "AVAILABLE_NOW",
+      "value": "A defensible analysis of resilient layered planning, crew adaptation, recovery, and archive limits.",
+      "burden": "LOW",
+      "limit": "Adds synthesis and fine-grained quantification, not a new scientific result."
+    },
+    {
+      "id": "deliberate_stop",
+      "availability": "AVAILABLE_NOW",
+      "value": "Avoids manufacturing a discovery from an underpowered or already-published relation.",
+      "burden": "LOW",
+      "limit": "Leaves a potentially valuable unresolved event untested."
+    }
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "id": "pre_earthrise_gray_feature_discrimination",
+      "question": "Can the archive distinguish the gray feature reported at 23:22:39 UTC immediately before/during Earthrise among rigid terrain, Earth-emergence-linked glare or bloom, a cabin/window-only effect, and an external diffuse anomaly?",
+      "source_state": "NASA classifies it as a potential sighting, records disagreement among the crew, and says no lofted dust or exospheric glow was definitively detected.",
+      "project_state": "The exact event already has external SAW Cam 3 frames at 23:22:14, 23:22:44, and 23:23:14 UTC; the middle frame is five seconds after the utterance and was previously acquired for Earthrise timing, not dust scoring.",
+      "impact_vector": {
+        "consequence": "VERY_HIGH",
+        "novelty_headroom": "HIGH",
+        "discriminator_quality": "HIGH",
+        "current_testability": "HIGH",
+        "complete_burden": "LOW"
+      },
+      "gates": {
+        "question_not_already_answered": true,
+        "current_archive_supports_minimum_test": true,
+        "independent_discriminator_available": true,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": true,
+        "bounded_complete_burden": true
+      },
+      "strongest_counterevidence": "LADEE and LRO searches strongly limit a persistent human-visible high-altitude dust exosphere; an external camera has different viewpoint and sensitivity from the crew, so either presence or absence remains non-identifying without a frozen representation test.",
+      "disposition": "ADMIT_NO_PIXEL_SOURCE_CONTROL_GATE"
+    },
+    {
+      "rank": 2,
+      "id": "systematic_activity_metadata_integrity",
+      "question": "How often do archived activity tags disagree with time- and content-supported observation context?",
+      "source_state": "The archive is designed for contextual search, while the Testbed already found one five-frame burst split between Forward Look and Sunset tags.",
+      "project_state": "One bounded inconsistency is verified; a complete label-only audit is technically possible without media payloads.",
+      "impact_vector": {
+        "consequence": "MEDIUM",
+        "novelty_headroom": "HIGH",
+        "discriminator_quality": "HIGH",
+        "current_testability": "VERY_HIGH",
+        "complete_burden": "MEDIUM"
+      },
+      "gates": {
+        "question_not_already_answered": true,
+        "current_archive_supports_minimum_test": true,
+        "independent_discriminator_available": true,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": true,
+        "bounded_complete_burden": true
+      },
+      "strongest_counterevidence": "A systematic metadata-quality result may improve data use but is less scientifically or publicly consequential than resolving the dust candidate.",
+      "disposition": "HOLD_AS_SECONDARY"
+    },
+    {
+      "rank": 3,
+      "id": "camera_clock_and_multimodal_alignment",
+      "question": "Are the opposite-sign Earthrise and Earthset camera/render offsets isolated or evidence of recoverable camera-clock error?",
+      "source_state": "NASA reports +14.2-second and -24.5-second image/render discrepancies and says camera clocks, ephemeris, and other contributors await future analysis.",
+      "project_state": "Transcript, camera, and fixed-camera times exist, but the event-specific SPICE geometry needed to separate clock from ephemeris is delayed.",
+      "impact_vector": {
+        "consequence": "HIGH",
+        "novelty_headroom": "HIGH",
+        "discriminator_quality": "LOW",
+        "current_testability": "MEDIUM",
+        "complete_burden": "MEDIUM"
+      },
+      "gates": {
+        "question_not_already_answered": true,
+        "current_archive_supports_minimum_test": false,
+        "independent_discriminator_available": false,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": true,
+        "bounded_complete_burden": true
+      },
+      "strongest_counterevidence": "Without released event geometry, another correlation can multiply uncertain clocks rather than identify the source of the offset.",
+      "disposition": "HOLD_FOR_SPICE_OR_STRONGER_CLOCK_ORACLE"
+    },
+    {
+      "rank": 4,
+      "id": "solar_corona_pulsation_corroboration",
+      "question": "Do archive images corroborate the crew's pulsating-streamer description?",
+      "source_state": "NASA already publishes a crew image, annotation, and a SOHO LASCO C2 image one minute later and states the sunset/sunrise structure was consistent with SOHO.",
+      "project_state": "No Testbed analysis has been run, but simple corroboration would reproduce the direct baseline.",
+      "impact_vector": {
+        "consequence": "HIGH",
+        "novelty_headroom": "LOW",
+        "discriminator_quality": "HIGH",
+        "current_testability": "HIGH",
+        "complete_burden": "MEDIUM"
+      },
+      "gates": {
+        "question_not_already_answered": false,
+        "current_archive_supports_minimum_test": true,
+        "independent_discriminator_available": true,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": false,
+        "bounded_complete_burden": true
+      },
+      "strongest_counterevidence": "A genuinely new temporal-dynamics question would need a prospectively defined time-series endpoint; the current simple candidate is already published.",
+      "disposition": "STOP_DIRECT_BASELINE"
+    },
+    {
+      "rank": 5,
+      "id": "moonlit_full_disk_earth_cross_sensor",
+      "question": "Can the moonlit full-disk Earth image yield a new quantitative Earth-system relation beyond its already identified features?",
+      "source_state": "NASA already identifies city lights, two auroral zones, lightning, weather, a Saharan dust plume, atmospheric layers, zodiacal light, and Venus, and calls the view scientifically underexplored.",
+      "project_state": "The image is compelling, but quantitative comparison is constrained by one uncalibrated high-ISO exposure and mixed natural and artificial illumination.",
+      "impact_vector": {
+        "consequence": "HIGH",
+        "novelty_headroom": "MEDIUM",
+        "discriminator_quality": "MEDIUM",
+        "current_testability": "MEDIUM",
+        "complete_burden": "HIGH"
+      },
+      "gates": {
+        "question_not_already_answered": false,
+        "current_archive_supports_minimum_test": true,
+        "independent_discriminator_available": true,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": false,
+        "bounded_complete_burden": false
+      },
+      "strongest_counterevidence": "VIIRS and other Earth sensors can validate named features, but cannot make the handheld exposure calibrated or turn feature confirmation into a new result.",
+      "disposition": "STOP_FEATURE_INVENTORY_ALREADY_PUBLISHED"
+    },
+    {
+      "rank": 6,
+      "id": "reiner_gamma_perception",
+      "question": "Does a normalized-reflectance control support the crew's uniform-albedo and dark-center description of Reiner Gamma?",
+      "source_state": "NASA already publishes the crew description beside a shadow-free LROC WAC comparison and identifies the target as a planned future exploration site.",
+      "project_state": "This separate candidate survived Stage 7B but remains lower priority; static reflectance would not reproduce the human stimulus.",
+      "impact_vector": {
+        "consequence": "MEDIUM",
+        "novelty_headroom": "LOW",
+        "discriminator_quality": "MEDIUM",
+        "current_testability": "HIGH",
+        "complete_burden": "LOW"
+      },
+      "gates": {
+        "question_not_already_answered": false,
+        "current_archive_supports_minimum_test": true,
+        "independent_discriminator_available": true,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": false,
+        "bounded_complete_burden": true
+      },
+      "strongest_counterevidence": "The ordinary explanation is the known swirl albedo pattern; another static map comparison has the same representation ceiling that limited Stage 8A.",
+      "disposition": "NO_ADMISSION_BEATS_DUST_OR_SYNTHESIS"
+    },
+    {
+      "rank": 7,
+      "id": "limb_terminator_detection",
+      "question": "Which topographic features produced the crew's reported limb and terminator silhouettes, and what does that imply for polar observation design?",
+      "source_state": "NASA already presents limb/terminator observations and their relevance to future cameras and polar missions.",
+      "project_state": "The transcript contains interesting cues, but current exact viewing geometry and human eye/window mapping are incomplete.",
+      "impact_vector": {
+        "consequence": "HIGH",
+        "novelty_headroom": "MEDIUM",
+        "discriminator_quality": "LOW",
+        "current_testability": "LOW",
+        "complete_burden": "HIGH"
+      },
+      "gates": {
+        "question_not_already_answered": true,
+        "current_archive_supports_minimum_test": false,
+        "independent_discriminator_available": false,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": true,
+        "bounded_complete_burden": false
+      },
+      "strongest_counterevidence": "Without exact line-of-sight geometry, apparent silhouette correspondence can be manufactured from broad terrain matches.",
+      "disposition": "HOLD_FOR_SPICE"
+    },
+    {
+      "rank": 8,
+      "id": "expanded_operational_adaptability",
+      "question": "Does a larger execution graph prove an operational advantage from human adaptation?",
+      "source_state": "NASA already documents planned flexibility, real-time collaboration, passive-audio needs, and crew-driven discovery.",
+      "project_state": "The Testbed adds a fine-grained 30-entry ledger, recovery episodes, and bounded metadata defects, but no causal or comparative operational effect.",
+      "impact_vector": {
+        "consequence": "MEDIUM",
+        "novelty_headroom": "LOW",
+        "discriminator_quality": "LOW",
+        "current_testability": "HIGH",
+        "complete_burden": "MEDIUM"
+      },
+      "gates": {
+        "question_not_already_answered": false,
+        "current_archive_supports_minimum_test": true,
+        "independent_discriminator_available": false,
+        "does_not_reopen_closed_lane": true,
+        "pass_or_fail_changes_decision": false,
+        "bounded_complete_burden": true
+      },
+      "strongest_counterevidence": "One mission day and no matched counterfactual cannot establish causal advantage over another planning model.",
+      "disposition": "RETURN_AS_TRUTHFUL_SYNTHESIS_ONLY"
+    }
+  ],
+  "selected_candidate": "pre_earthrise_gray_feature_discrimination",
+  "selected_disposition": "ADMIT_NO_PIXEL_SOURCE_CONTROL_GATE"
+}

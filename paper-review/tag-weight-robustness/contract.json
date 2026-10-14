@@ -1,0 +1,48 @@
+{
+  "id": "artemis2-tag-weight-robustness",
+  "version": "1.0.0",
+  "status": "EXPLORATORY_FOLLOW_ON_NOT_PREREGISTERED",
+  "baseline_commit": "9b51dd652454761787a56e4a0d1be1f75aee34db",
+  "question": "How do weighted missing-field bounds and bounded recorded-field reassignment alter the frozen Sunset accounting claims?",
+  "baseline": "Stages 11U and 11V: the selected nonblank population has a 52.413% combined-byte Sunset share, and full-cohort exposure-field completion has a 20.418%-75.546% range when nonblank fields are fixed.",
+  "treatment": "Retain the same source-exposure keys, representation inventory, target fields and byte weights. Calculate sharp weighted completion and at-most-r recorded-field membership-reassignment bounds, construct the minimum-cardinality tagged-byte majority witness, and compute equal-field-cost worst-case completion budgets.",
+  "source": {
+    "path": "results/stage10o-product-relationship-manifest.csv",
+    "bytes": 10072026,
+    "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+  },
+  "target": "Sunset",
+  "units": ["exposure_fields", "products", "data_source_bytes", "data_raw_bytes", "data_processed_bytes", "all_representation_bytes"],
+  "recorded_field_reassignment_budgets": [0, 1, 25, 47, 48, 50, 100, 200],
+  "completion_width_targets": [
+    {"name": "10pp", "numerator": 1, "denominator": 10},
+    {"name": "5pp", "numerator": 1, "denominator": 20},
+    {"name": "1pp", "numerator": 1, "denominator": 100}
+  ],
+  "frozen_partition": {"products": 22818, "exposure_fields": 7606, "recorded_fields": 3413, "blank_fields": 4193, "recorded_sunset_fields": 1553},
+  "assumptions": {
+    "blank_membership": "unconstrained binary membership for one target value",
+    "recorded_membership": "fixed at r=0; at most r binary target memberships may be reassigned in each separate sensitivity extremum",
+    "selection": "original nonblank query frozen; a reassigned recorded field stays nonblank",
+    "weights": "positive fixed integer archive-accounting weights, not scientific value or exposure time",
+    "resolution_cost": "one unit per individual field; real viewing, adjudication, retrieval and support costs unknown",
+    "grouping": "original frozen filename/order-conditioned capture keys; physical identity unvalidated"
+  },
+  "oracle": "Source integrity and three-representation parity; exact baseline recovery; constructive completion/reassignment witnesses; integer strict-majority predecessor crossing; integer width-budget predecessor crossing; exhaustive small-model enumeration; implementation-diverse native recount; unchanged prior receipts.",
+  "forbidden_claims": {
+    "observed_tag_errors": false,
+    "validated_content_labels": false,
+    "physical_prevalence": false,
+    "statistical_confidence_interval": false,
+    "audit_sample_size": false,
+    "actual_audit_or_pixel_access": false,
+    "cost_optimal_under_heterogeneous_cost": false,
+    "physical_identity_or_independence": false,
+    "nasa_acceptance_or_global_novelty": false,
+    "replacement_of_existing_scientific_receipts": false
+  },
+  "claim_ceiling": "Exact deterministic metadata-accounting sensitivity under the declared membership, fixed selection/weight and equal-field-cost assumptions. Reassignment budgets are hypothetical, not measured error rates. Completion bounds are marginal metadata-membership intervals, not a joint multiclass completion or physical truth. No actual audit, new pixels, physical capture merge, NASA pipeline finding, scientific discovery or acceptance.",
+  "stop": "Reject source drift, incomplete/duplicate representation rows, inconsistent capture fields, invalid weights/budgets, failed predecessor or witness replay. Do not acquire pixels, infer real label errors, or recommend a statistical audit size from these budgets.",
+  "recheck_trigger": "A changed source snapshot, accepted native identity, qualified content-label oracle, measured tag-error evidence, explicit task estimand or real heterogeneous review costs.",
+  "authority": "Private local analysis and local Git custody only. No outreach, repository remote, push, public release or new acquisition."
+}

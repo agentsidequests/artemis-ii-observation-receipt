@@ -1,0 +1,331 @@
+{
+  "testbed_id": "artemis2-glushko-ohm-camera-native-canary-stage8c",
+  "source_mutation": null,
+  "pass": true,
+  "evidence_state": "NO_CAMERA_NATIVE_ORDINAL_CONCORDANCE",
+  "disposition": "CLOSE_CAMERA_NATIVE_GLUSHKO_OHM_LANE",
+  "views": {
+    "joint_same_frame": {
+      "pass": false,
+      "primary_cell_pass": false,
+      "passing_cells": 0,
+      "total_cells": 3,
+      "glushko_geometry": {
+        "control_points": 20,
+        "crater_radius_deg": 0.7227103764413486,
+        "predicted_center": [
+          4028.3975326961518,
+          2935.3469335857894
+        ],
+        "crop": [
+          3794,
+          2686,
+          4263,
+          3185
+        ]
+      },
+      "ohm_geometry": {
+        "control_points": 97,
+        "crater_radius_deg": 1.1123441020929357,
+        "predicted_center": [
+          1051.6938279138901,
+          2774.3693140030277
+        ],
+        "crop": [
+          662,
+          2387,
+          1442,
+          3162
+        ]
+      },
+      "cells": {
+        "inner_1p25_2p75_outer_2p75_3p75": {
+          "pass": false,
+          "signal_pass": false,
+          "similarity_pass": false,
+          "direction_pass": true,
+          "similarity_ratio": null,
+          "glushko": {
+            "inner_pixels": 59386,
+            "outer_pixels": 64338,
+            "auc": 0.5159006930944069,
+            "local_ray_excess": 0.015900693094406892,
+            "inner_median_code_value": 131,
+            "outer_median_code_value": 127,
+            "inner_p75_code_value": 135,
+            "outer_p75_code_value": 135
+          },
+          "ohm": {
+            "inner_pixels": 155887,
+            "outer_pixels": 168857,
+            "auc": 0.46920874047775163,
+            "local_ray_excess": -0.03079125952224837,
+            "inner_median_code_value": 99,
+            "outer_median_code_value": 103,
+            "inner_p75_code_value": 110,
+            "outer_p75_code_value": 111
+          },
+          "descriptive_same_frame_inner_p75": {
+            "glushko": 135,
+            "ohm": 110,
+            "similarity_ratio": 0.8148148148148148,
+            "glushko_greater_than_ohm": true,
+            "controls_disposition": false
+          }
+        },
+        "inner_1p50_3p00_outer_3p00_4p00": {
+          "pass": false,
+          "signal_pass": false,
+          "similarity_pass": false,
+          "direction_pass": true,
+          "similarity_ratio": null,
+          "glushko": {
+            "inner_pixels": 66820,
+            "outer_pixels": 69296,
+            "auc": 0.5379767319625725,
+            "local_ray_excess": 0.03797673196257245,
+            "inner_median_code_value": 131,
+            "outer_median_code_value": 127,
+            "inner_p75_code_value": 135,
+            "outer_p75_code_value": 135
+          },
+          "ohm": {
+            "inner_pixels": 175346,
+            "outer_pixels": 181873,
+            "auc": 0.49791524133603815,
+            "local_ray_excess": -0.00208475866396185,
+            "inner_median_code_value": 99,
+            "outer_median_code_value": 99,
+            "inner_p75_code_value": 110,
+            "outer_p75_code_value": 111
+          },
+          "descriptive_same_frame_inner_p75": {
+            "glushko": 135,
+            "ohm": 110,
+            "similarity_ratio": 0.8148148148148148,
+            "glushko_greater_than_ohm": true,
+            "controls_disposition": false
+          }
+        },
+        "inner_1p75_3p25_outer_3p25_4p25": {
+          "pass": false,
+          "signal_pass": false,
+          "similarity_pass": false,
+          "direction_pass": true,
+          "similarity_ratio": 0.4484672453367413,
+          "glushko": {
+            "inner_pixels": 74235,
+            "outer_pixels": 74258,
+            "auc": 0.5565991366310759,
+            "local_ray_excess": 0.05659913663107585,
+            "inner_median_code_value": 131,
+            "outer_median_code_value": 127,
+            "inner_p75_code_value": 135,
+            "outer_p75_code_value": 135
+          },
+          "ohm": {
+            "inner_pixels": 194837,
+            "outer_pixels": 194863,
+            "auc": 0.5253828588933764,
+            "local_ray_excess": 0.025382858893376437,
+            "inner_median_code_value": 103,
+            "outer_median_code_value": 99,
+            "inner_p75_code_value": 110,
+            "outer_p75_code_value": 111
+          },
+          "descriptive_same_frame_inner_p75": {
+            "glushko": 135,
+            "ohm": 110,
+            "similarity_ratio": 0.8148148148148148,
+            "glushko_greater_than_ohm": true,
+            "controls_disposition": false
+          }
+        }
+      }
+    },
+    "matched_400mm_pair": {
+      "pass": false,
+      "primary_cell_pass": false,
+      "passing_cells": 0,
+      "total_cells": 3,
+      "glushko_geometry": {
+        "control_points": 71,
+        "crater_radius_deg": 0.7227103764413486,
+        "predicted_center": [
+          2609.1196792618475,
+          1289.681426236021
+        ],
+        "crop": [
+          2277,
+          930,
+          2941,
+          1649
+        ]
+      },
+      "ohm_geometry": {
+        "control_points": 218,
+        "crater_radius_deg": 1.1123441020929357,
+        "predicted_center": [
+          2649.3713085140275,
+          2083.6076159881204
+        ],
+        "crop": [
+          2064,
+          1528,
+          3235,
+          2639
+        ]
+      },
+      "cells": {
+        "inner_1p25_2p75_outer_2p75_3p75": {
+          "pass": false,
+          "signal_pass": false,
+          "similarity_pass": false,
+          "direction_pass": true,
+          "similarity_ratio": null,
+          "glushko": {
+            "inner_pixels": 122655,
+            "outer_pixels": 132899,
+            "auc": 0.5058726534963908,
+            "local_ray_excess": 0.005872653496390767,
+            "inner_median_code_value": 127,
+            "outer_median_code_value": 127,
+            "inner_p75_code_value": 135,
+            "outer_p75_code_value": 135
+          },
+          "ohm": {
+            "inner_pixels": 337474,
+            "outer_pixels": 365601,
+            "auc": 0.4696821804474455,
+            "local_ray_excess": -0.030317819552554526,
+            "inner_median_code_value": 96,
+            "outer_median_code_value": 99,
+            "inner_p75_code_value": 104,
+            "outer_p75_code_value": 107
+          }
+        },
+        "inner_1p50_3p00_outer_3p00_4p00": {
+          "pass": false,
+          "signal_pass": false,
+          "similarity_pass": false,
+          "direction_pass": true,
+          "similarity_ratio": 0.002093580418567687,
+          "glushko": {
+            "inner_pixels": 137986,
+            "outer_pixels": 143092,
+            "auc": 0.5293974480112942,
+            "local_ray_excess": 0.02939744801129418,
+            "inner_median_code_value": 127,
+            "outer_median_code_value": 127,
+            "inner_p75_code_value": 135,
+            "outer_p75_code_value": 135
+          },
+          "ohm": {
+            "inner_pixels": 379638,
+            "outer_pixels": 393753,
+            "auc": 0.5000615459215123,
+            "local_ray_excess": 6.154592151230709e-05,
+            "inner_median_code_value": 99,
+            "outer_median_code_value": 96,
+            "inner_p75_code_value": 107,
+            "outer_p75_code_value": 107
+          }
+        },
+        "inner_1p75_3p25_outer_3p25_4p25": {
+          "pass": false,
+          "signal_pass": false,
+          "similarity_pass": false,
+          "direction_pass": true,
+          "similarity_ratio": 0.5595713910275831,
+          "glushko": {
+            "inner_pixels": 153328,
+            "outer_pixels": 153335,
+            "auc": 0.5516752054450547,
+            "local_ray_excess": 0.05167520544505466,
+            "inner_median_code_value": 127,
+            "outer_median_code_value": 127,
+            "inner_p75_code_value": 135,
+            "outer_p75_code_value": 131
+          },
+          "ohm": {
+            "inner_pixels": 421860,
+            "outer_pixels": 421841,
+            "auc": 0.5289159665925254,
+            "local_ray_excess": 0.028915966592525377,
+            "inner_median_code_value": 99,
+            "outer_median_code_value": 96,
+            "inner_p75_code_value": 107,
+            "outer_p75_code_value": 107
+          }
+        }
+      }
+    }
+  },
+  "verification_network_bytes": 0,
+  "claim_ceiling": "A strong pass would establish bounded ordinal concordance in the exact official processed browse images: both coordinate-derived ray fields are locally brighter by the frozen rank metric, their effects are similar, and Glushko is slightly stronger in both the joint frame and matched pair. It would not establish physical albedo, calibrated photometry, Hansen's retinal or perceived stimulus, the camera as the carrier of his judgment, a causal explanation of the Stage 8A mismatch, independent replication, novelty, or a public scientific finding.",
+  "next_step_logic": {
+    "if_strong": "Retain the result as a private camera-native concordance and pressure-test whether known processing, lighting, window, or geometry confounds can explain it before any specialist-facing analysis. Do not upgrade it to perception or physical albedo.",
+    "if_joint_only": "Retain a same-frame photographic signal but do not call it robust across views. Prefer a future geometry/processing falsifier over more image selection.",
+    "if_pair_only": "Treat the matched-pair signal as insufficient because the stronger same-frame control failed. Close the lane without selecting alternate frames.",
+    "if_discordant": "Close the camera-native Glushko/Ohm concordance lane and retain Hansen's statement as qualitative mission evidence only.",
+    "if_indeterminate": "Repair only the named source, coordinate, or decoder defect and rerun the frozen contract. Do not change products, regions, endpoint, or thresholds.",
+    "cross_lanes": "Reiner Gamma remains a separate lower-priority candidate. Official SPICE can re-attest geometry but cannot turn camera code values into Hansen's perception."
+  },
+  "checks": [
+    {
+      "id": "committed_formation_gate",
+      "pass": true
+    },
+    {
+      "id": "hash_pinned_offline_sources",
+      "pass": true
+    },
+    {
+      "id": "crc_validated_three_image_decode",
+      "pass": true,
+      "images": {
+        "joint_image": {
+          "width": 5568,
+          "height": 3712,
+          "palette_entries": 222,
+          "chunk_count": 335,
+          "decoded_pixel_count": 20668416,
+          "crc_validated": true
+        },
+        "matched_glushko_image": {
+          "width": 5568,
+          "height": 3712,
+          "palette_entries": 197,
+          "chunk_count": 304,
+          "decoded_pixel_count": 20668416,
+          "crc_validated": true
+        },
+        "matched_ohm_image": {
+          "width": 5568,
+          "height": 3712,
+          "palette_entries": 215,
+          "chunk_count": 351,
+          "decoded_pixel_count": 20668416,
+          "crc_validated": true
+        }
+      }
+    },
+    {
+      "id": "complete_frozen_regions_and_oracle",
+      "pass": true,
+      "views": {
+        "joint_same_frame": {
+          "pass": false,
+          "primary_cell_pass": false,
+          "passing_cells": 0
+        },
+        "matched_400mm_pair": {
+          "pass": false,
+          "primary_cell_pass": false,
+          "passing_cells": 0
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,3 @@
+window_id,label,start_utc,stop_utc,clock_domain,target
+later-saw3-30fps,Later assessed SAW3 window,2026-04-07T01:19:13Z,2026-04-07T01:21:23Z,spacecraft UTC,Moon
+overlap-saw3-59.94fps,Context clip spanning the shared report,2026-04-07T00:51:10Z,2026-04-07T00:51:25Z,spacecraft UTC,Moon

@@ -1,0 +1,55 @@
+{
+  "testbed_id": "artemis2-source-to-archive-provenance-crosswalk-stage10i",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:15:00Z",
+  "question": "Can the official source-file inventory be mapped one-to-one onto the current public archive product inventory?",
+  "terminal_objective": "Determine the smallest truthful unit model for archive coverage, retrieval cost, and evidentiary sampling while preserving unexplained inventory residuals.",
+  "method": "Crosswalk official source counts by instrument against complete current Atlas Nikon and Orion inventories plus documented pending-release and audio-transformation rules.",
+  "authority": "Read-only public-source evidence and private local repository updates only. No pixels, publication, outreach, completeness accusation, or loss claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10h_result_path": "results/stage10h-result.json",
+    "stage10e_result_path": "results/stage10e-result.json",
+    "report_table_path": "evidence/stage10h/source/preliminary-science-report-page-31.txt",
+    "user_guide_path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+    "orion_inventory_path": "evidence/stage2b/collection_data_raw_image_inventory.csv",
+    "stage10a_receipt_path": "evidence/stage10a/acquisition-receipt.json",
+    "stage10e_receipt_path": "evidence/stage10e/acquisition-receipt.json",
+    "atlas_response_path": "evidence/stage10d/source/atlas-mission-footprint-response.json",
+    "receipt_path": "evidence/stage10i/acquisition-receipt.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "source_crew_total": 10407,
+    "source_nikon_counts": {"3500015": 7011, "3500017": 553, "3920019": 2775},
+    "source_iphone_count": 68,
+    "atlas_nikon_counts": {"3500015": 7007, "3500017": 552, "3920019": 2770},
+    "nikon_residuals": {"3500015": 4, "3500017": 1, "3920019": 5},
+    "source_orion_still_counts": {"saw2": 10, "saw3": 189, "saw4": 12, "cab2": 176, "onav": 404, "dcam": 249},
+    "atlas_orion_still_counts": {"saw2": 10, "saw3": 189, "saw4": 12, "cab2": 148, "onav": 404, "dcam": 249},
+    "source_audio_files": 115,
+    "atlas_audio_product_counts": {"data_audio_pcd": 53, "data_transcripts_pcd": 53, "data_audio_loops": 3, "data_transcripts_loops": 3}
+  },
+  "interpretation": {
+    "verified": "The source-to-current-archive mapping is non-bijective. The official crew source ledger has 10,407 files, while current Atlas has 10,329 Nikon identities represented three ways. Sixty-eight iPhone files are explicitly pending; ten Nikon-count differences remain unexplained. Orion's 28-still-image difference is entirely Cab Cam 2 in the current inventory. Audio source files are split, regrouped, transcribed, or embedded into image metadata rather than preserved as a one-product-per-source count.",
+    "bounded_inference": "The public release is a dated provenance graph with type-specific transformations and release coverage, not a single denominator. The remaining ten Nikon and twenty-eight Cab Cam 2 differences are inventory residuals, not evidence of lost or defective data.",
+    "decision_use": "Any archive coverage fraction must name its ledger and snapshot date. Use source files for acquisition scale, downloadable products and bytes for retrieval burden, stable capture identities for exposures, and reconstructed multi-frame actions for observation evidence."
+  },
+  "hard_negatives": [
+    "equate_source_files_with_current_products",
+    "declare_pending_iphone_files_lost",
+    "declare_nikon_residuals_lost",
+    "declare_cab2_residuals_lost",
+    "equate_112_audio_products_with_115_source_files",
+    "triple_every_mission_source_file",
+    "declare_current_atlas_snapshot_complete",
+    "open_pixels_to_explain_inventory_residuals"
+  ],
+  "claim_ceiling": "Stage 10I may establish exact crosswalk counts in the preserved source table and current Atlas snapshot, the documented pending iPhone release, and documented audio/product transformations. It may establish that the mapping is non-bijective. It cannot call any residual lost, defective, withheld, or erroneous; prove current release completeness; assume every source file yields three products; treat transcripts as independent source observations; or generalize the snapshot indefinitely.",
+  "next_step_logic": {
+    "if_one_to_one_mapping_holds": "Retire the provenance-graph model and use the simplest stable file denominator.",
+    "if_documented_and_residual_differences_coexist": "Use the four-unit ledger and publish residuals only as unresolved snapshot differences.",
+    "if_authoritative_release_manifest_explains_residuals": "Replace the residual class with the documented transformation or release state.",
+    "recheck_trigger": "The announced iPhone update, a revised PDS collection inventory, or an authoritative per-file source-to-product manifest."
+  }
+}

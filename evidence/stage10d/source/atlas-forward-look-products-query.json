@@ -1,0 +1,22 @@
+{
+  "_source": [
+    "bundle_id",
+    "collection_id",
+    "archive.size",
+    "gather.pds_archive.file_name",
+    "pds4_label.msn:Mission_Information/msn:internal_id",
+    "pds4_label.msn_surface:Observational_Intent/msn_surface:activity_id",
+    "pds4_label.msn_surface:Observational_Intent/msn_surface:target_id"
+  ],
+  "size": 20,
+  "track_total_hits": true,
+  "query": {
+    "bool": {
+      "must": [
+        {"match": {"gather.common.mission": "artemis2"}},
+        {"match": {"bundle_id": "artemis2_crew_camera"}},
+        {"match": {"pds4_label.msn_surface:Observational_Intent/msn_surface:activity_id": "25_Discussion #6: Forward Look"}}
+      ]
+    }
+  }
+}

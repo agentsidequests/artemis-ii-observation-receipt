@@ -1,0 +1,66 @@
+{
+  "testbed_id": "artemis2-ai-split-related-group-crossing-stage10m",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T12:34:00Z",
+  "question": "Under an explicitly hypothetical independent random train/test split, how often would related Artemis II representations or bracket siblings cross partitions if grouping occurs at the wrong unit?",
+  "terminal_objective": "Turn the four-unit archive result into a decision-relevant AI evaluation guard without claiming that any existing analysis is contaminated.",
+  "method": "Use the exact Stage 10L three-product-per-exposure parity and Stage 10J three- versus five-exposure action census. For independent Bernoulli assignment with train probability p, compute group-crossing probability as 1 - p^n - (1-p)^n at the product and exposure levels; compare with action-level grouping, which crosses zero actions by construction.",
+  "authority": "Private local deterministic modeling only. No pixels, model training, publication, outreach, claim about an actual split, performance effect, archive defect, scientific result, or priority.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage10j_result_path": "results/stage10j-result.json",
+    "stage10l_result_path": "results/stage10l-result.json",
+    "pixel_payload_bytes": 0
+  },
+  "frozen_observables": {
+    "three_exposure_actions": 1612,
+    "five_exposure_actions": 554,
+    "complete_actions": 2166,
+    "capture_identities": 7606,
+    "products_per_identity": 3,
+    "scenarios": {
+      "0.7": {
+        "identity_group_cross_probability": 0.63,
+        "expected_cross_identity_groups": 4791.78,
+        "expected_cross_action_groups_product_split": 2098.288099494197,
+        "product_split_action_cross_rate": 0.9687387347618638,
+        "expected_cross_action_groups_exposure_split": 1475.103,
+        "exposure_split_action_cross_rate": 0.6810263157894737
+      },
+      "0.8": {
+        "identity_group_cross_probability": 0.47999999999999987,
+        "expected_cross_identity_groups": 3650.879999999999,
+        "expected_cross_action_groups_product_split": 1930.1480549646335,
+        "product_split_action_cross_rate": 0.8911117520612343,
+        "expected_cross_action_groups_exposure_split": 1146.0479999999998,
+        "exposure_split_action_cross_rate": 0.5291080332409971
+      },
+      "0.9": {
+        "identity_group_cross_probability": 0.2699999999999999,
+        "expected_cross_identity_groups": 2053.6199999999994,
+        "expected_cross_action_groups_product_split": 1427.4144829395636,
+        "product_split_action_cross_rate": 0.6590094565741291,
+        "expected_cross_action_groups_exposure_split": 662.1029999999998,
+        "exposure_split_action_cross_rate": 0.305680055401662
+      }
+    }
+  },
+  "hard_negatives": [
+    "call_expected_crossing_observed_leakage",
+    "claim_an_existing_pipeline_is_contaminated",
+    "treat_three_representations_as_byte_identical",
+    "call_bracket_siblings_identical_images",
+    "generalize_beyond_complete_action_cohort",
+    "claim_action_grouping_solves_every_evaluation_leak",
+    "claim_statistical_significance",
+    "claim_global_priority",
+    "open_pixels_for_split_model"
+  ],
+  "claim_ceiling": "Stage 10M may establish expected related-group crossing under the frozen independent Bernoulli split model for the verified complete-action cohort. It may show why product-, exposure-, and action-level splits are different evaluation designs. It cannot claim observed leakage, contamination of any actual pipeline, byte-identical representations, identical bracket siblings, universal sufficiency of action grouping, statistical significance, performance impact, archive defect, image content, or global novelty or priority.",
+  "next_step_logic": {
+    "if_group_crossing_is_material_across_scenarios": "Keep action identity as the minimum split key for image-model evaluation on the verified cohort; add target, time, or scene grouping when the task creates broader dependence.",
+    "if_a_real_pipeline_is_proposed": "Freeze its actual task, transformations, split algorithm, and leakage oracle before applying this hazard model.",
+    "if_the_action_oracle_expands": "Recompute the action-size distribution and every scenario before reuse.",
+    "recheck_trigger": "A real AI evaluation design, revised representation mapping, expanded action oracle, or evidence that task dependence operates at a broader or narrower unit."
+  }
+}

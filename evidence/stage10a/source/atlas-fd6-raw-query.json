@@ -1,0 +1,34 @@
+{
+  "_source": [
+    "bundle_id",
+    "collection_id",
+    "gather.time.start_time",
+    "gather.pds_archive.file_name",
+    "pds4_label.msn:Mission_Information/msn:flight_day_number",
+    "pds4_label.msn_surface:Observational_Intent/msn_surface:activity_id",
+    "pds4_label.msn_surface:Observational_Intent/msn_surface:target_id",
+    "pds4_label.img_surface:Instrument_Information/img_surface:instrument_serial_number",
+    "pds4_label.cots_camera:Camera_Properties/cots_camera:shutter_count",
+    "pds4_label.cots_camera:File_Information/cots_camera:file_number",
+    "pds4_label.cots_camera:Camera_Settings/cots_camera:shooting_mode",
+    "pds4_label.cots_camera:Exposure/cots_camera:auto_bracket_order",
+    "pds4_label.cots_camera:Exposure/cots_camera:exposure_bracket_value",
+    "pds4_label.img:Optical_Properties/img:focal_length",
+    "pds4_label.img:ISO/img:iso_number"
+  ],
+  "size": 1000,
+  "track_total_hits": true,
+  "query": {
+    "bool": {
+      "must": [
+        {"match": {"gather.common.mission": "artemis2"}},
+        {"match": {"bundle_id": "artemis2_crew_camera"}},
+        {"match": {"collection_id": "data_raw"}},
+        {"match": {"pds4_label.msn:Mission_Information/msn:flight_day_number": "6"}}
+      ]
+    }
+  },
+  "sort": [
+    {"gather.time.start_time": {"order": "asc"}}
+  ]
+}

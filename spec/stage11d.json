@@ -1,0 +1,87 @@
+{
+  "testbed_id": "artemis2-sunset-planned-block-context-stage11d",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T15:11:00Z",
+  "question": "How stable is the 2,535-product planned Sunset denominator when the same observation context is conservatively bracketed by independent transcript anchors?",
+  "terminal_objective": "Stress-test the planned Sunset block against an exact physical-disappearance anchor and a later explicit continuation anchor without converting transcript or target labels into image-content truth.",
+  "method": "Replay Stage 11C, verify the source transcript bytes and two exact anchors, then count all complete actions by action-start time in three adjacent half-open intervals: Sun-gone to plan start, the frozen plan window, and plan end to the later spoken continuation. Preserve the combined interval as a conservative connected-context canary, not a complete realized event.",
+  "authority": "Private local metadata and transcript analysis only. No pixels, image-content identity, complete-event boundary, independent-event claim, split assignment, model performance, physical-science result, novelty, or priority claim.",
+  "acceptance_owner": "Paul",
+  "source_contract": {
+    "stage11c_spec_path": "spec/stage11c.json",
+    "relationship_manifest_path": "results/stage10o-product-relationship-manifest.csv",
+    "transcript_path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+    "transcript_bytes": 36880,
+    "transcript_sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf",
+    "pixel_payload_bytes": 0
+  },
+  "anchors": {
+    "context_start": {
+      "utc": "2026-04-07T00:34:24.705Z",
+      "text": "Still there, and it's gone."
+    },
+    "context_continuation": {
+      "utc": "2026-04-07T00:47:03.281Z",
+      "text": "Still a significant glow coming out where the Sun set."
+    }
+  },
+  "scheduled_window": {
+    "start_utc": "2026-04-07T00:36:00Z",
+    "end_utc": "2026-04-07T00:44:00Z",
+    "target_name": "Sunset"
+  },
+  "frozen_segments": {
+    "sun_gone_to_plan_start": {
+      "actions": 99, "exposures": 495, "products": 1485, "archive_size_bytes": 140276652230,
+      "camera_serials": {"3500015": 52, "3920019": 47},
+      "activity_ids": {"24_Sunset": 52, "h_Observation Break": 47},
+      "target_ids": {"Sunset": 99}
+    },
+    "scheduled_window": {
+      "actions": 169, "exposures": 845, "products": 2535, "archive_size_bytes": 200901668231,
+      "camera_serials": {"3500015": 125, "3920019": 44},
+      "activity_ids": {"24_Sunset": 168, "<mixed>": 1},
+      "target_ids": {"Sunset": 169}
+    },
+    "plan_end_to_spoken_continuation": {
+      "actions": 18, "exposures": 90, "products": 270, "archive_size_bytes": 29147257631,
+      "camera_serials": {"3500015": 6, "3920019": 12},
+      "activity_ids": {"24_Sunset": 18},
+      "target_ids": {"Sunset": 18}
+    },
+    "conservative_connected_context": {
+      "actions": 286, "exposures": 1430, "products": 4290, "archive_size_bytes": 370325578092,
+      "camera_serials": {"3500015": 183, "3920019": 103},
+      "activity_ids": {"24_Sunset": 238, "<mixed>": 1, "h_Observation Break": 47},
+      "target_ids": {"Sunset": 286}
+    }
+  },
+  "frozen_measures": {
+    "scheduled_action_share_of_connected_context": 0.5909090909090909,
+    "outside_scheduled_action_share_of_connected_context": 0.4090909090909091,
+    "connected_context_to_scheduled_product_ratio": 1.6923076923076923,
+    "scheduled_byte_share_of_connected_context": 0.5425001137271971,
+    "connected_context_to_scheduled_byte_ratio": 1.843317585925636
+  },
+  "disposition": "KEEP_ONE_PLANNED_EVENT_REPLACE_EXACT_REALIZED_COHORT_WITH_CONTEXT_RANGE",
+  "hard_negatives": [
+    "call_connected_context_complete_event",
+    "call_all_context_actions_sunset_pixels",
+    "call_plan_window_invalid",
+    "call_outside_actions_new_sunset_events",
+    "call_target_tag_image_truth",
+    "assign_model_partition_from_context",
+    "claim_observed_model_leakage",
+    "call_boundary_result_scientific_discovery",
+    "claim_novelty_or_priority",
+    "open_pixels_during_context_test"
+  ],
+  "claim_ceiling": "Stage 11D may establish that the fixed eight-minute Sunset plan window contains 169 complete actions and 2,535 products, while a conservative transcript-bracketed interval from the spoken disappearance of the Sun to a later explicit continuation contains 286 actions and 4,290 products. The plan window therefore selects 59.091% of actions and 54.250% of bytes in that connected-context canary; adding the adjacent context raises the product count 1.692308-fold without creating another scheduled Sunset event. It cannot call the connected interval complete, call any image Sunset content, infer that outside-window actions are new events, invalidate the plan, assign a model split, establish observed leakage, or make a physical-science, novelty, or priority claim.",
+  "next_step_logic": {
+    "if_public_analysis_is_selected": "Lead with both scales: 2,535 products inside one independent planned block, at least 4,290 products in a conservative connected observation context, and still one scheduled Sunset event. Describe the larger interval as a lower-bound context canary, not the event's exact product count.",
+    "if_a_sunset_model_task_is_selected": "Register realized segments and image content across the plan edges; do not use target tags or the eight-minute window alone as the final cohort.",
+    "if_registration_is_not_affordable": "Keep the event-level inference at one planned event and avoid any exact realized-event file or action denominator.",
+    "if_adjacent_context_is_challenged": "Retain the exact plan-block result and the two source-backed continuation facts separately; the one-event generalization limit does not depend on admitting the larger context.",
+    "recheck_trigger": "A curated realized-observation ledger, image-content registration, or revised mission activity annotation."
+  }
+}

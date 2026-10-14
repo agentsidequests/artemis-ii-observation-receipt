@@ -1,0 +1,318 @@
+{
+  "status": "SOURCE_RANGE_DISCREPANCY_AT_FOUR_RECORDED_REPORT_EPOCHS",
+  "rows": [
+    {
+      "utc": "2026-04-06T23:00:00.000Z",
+      "role": "context near closest approach, not a flash time",
+      "geometric_center_range_km": 8282.107749677036,
+      "geometric_center_range_miles": 5146.263166654882,
+      "spherical_altitude_km": 6544.707749677036,
+      "all_spherical_surface_points_range_envelope_km": [
+        6544.707749677036,
+        10019.507749677035
+      ],
+      "apparent_center_range_km": 8282.7917204,
+      "native_angular_diameter_degrees": 24.2166
+    },
+    {
+      "utc": "2026-04-07T00:41:00.680Z",
+      "role": "first clear transcript report anchor",
+      "geometric_center_range_km": 10731.39733454516,
+      "geometric_center_range_miles": 6668.181156138873,
+      "spherical_altitude_km": 8993.99733454516,
+      "all_spherical_surface_points_range_envelope_km": [
+        8993.99733454516,
+        12468.79733454516
+      ],
+      "apparent_center_range_km": 10731.514991,
+      "native_angular_diameter_degrees": 18.634044444444445
+    },
+    {
+      "utc": "2026-04-07T00:51:15.947Z",
+      "role": "shared transcript report anchor",
+      "geometric_center_range_km": 11178.36920511494,
+      "geometric_center_range_miles": 6945.916600251368,
+      "spherical_altitude_km": 9440.96920511494,
+      "all_spherical_surface_points_range_envelope_km": [
+        9440.96920511494,
+        12915.769205114939
+      ],
+      "apparent_center_range_km": 11178.425516,
+      "native_angular_diameter_degrees": 17.882822222222224
+    },
+    {
+      "utc": "2026-04-07T00:52:52.411Z",
+      "role": "ambiguous transcript report anchor, not accepted as an additional event",
+      "geometric_center_range_km": 11250.39674840009,
+      "geometric_center_range_miles": 6990.672440696389,
+      "spherical_altitude_km": 9512.99674840009,
+      "all_spherical_surface_points_range_envelope_km": [
+        9512.99674840009,
+        12987.79674840009
+      ],
+      "apparent_center_range_km": 11250.443432,
+      "native_angular_diameter_degrees": 17.767416666666666
+    },
+    {
+      "utc": "2026-04-07T00:59:18.291Z",
+      "role": "later clear transcript report anchor",
+      "geometric_center_range_km": 11543.34920480484,
+      "geometric_center_range_miles": 7172.704657801463,
+      "spherical_altitude_km": 9805.94920480484,
+      "all_spherical_surface_points_range_envelope_km": [
+        9805.94920480484,
+        13280.749204804839
+      ],
+      "apparent_center_range_km": 11543.357362,
+      "native_angular_diameter_degrees": 17.313058333333334
+    },
+    {
+      "utc": "2026-04-07T01:03:04.906Z",
+      "role": "last clear transcript report anchor",
+      "geometric_center_range_km": 11718.78236675704,
+      "geometric_center_range_miles": 7281.713770801667,
+      "spherical_altitude_km": 9981.38236675704,
+      "all_spherical_surface_points_range_envelope_km": [
+        9981.38236675704,
+        13456.182366757039
+      ],
+      "apparent_center_range_km": 11718.767895,
+      "native_angular_diameter_degrees": 17.05196666666667
+    },
+    {
+      "utc": "2026-04-07T01:04:00.000Z",
+      "role": "annotation scene/ledger context, not all five event times",
+      "geometric_center_range_km": 11761.79164483811,
+      "geometric_center_range_miles": 7308.438497200169,
+      "spherical_altitude_km": 10024.39164483811,
+      "all_spherical_surface_points_range_envelope_km": [
+        10024.39164483811,
+        13499.191644838109
+      ],
+      "apparent_center_range_km": 11761.771672,
+      "native_angular_diameter_degrees": 16.989158333333332
+    },
+    {
+      "utc": "2026-04-07T01:06:19.780Z",
+      "role": "published photograph metadata epoch, not a flash time",
+      "geometric_center_range_km": 11871.51844191149,
+      "geometric_center_range_miles": 7376.619567918039,
+      "spherical_altitude_km": 10134.11844191149,
+      "all_spherical_surface_points_range_envelope_km": [
+        10134.11844191149,
+        13608.91844191149
+      ],
+      "apparent_center_range_km": 11871.484512,
+      "native_angular_diameter_degrees": 16.831005555555556
+    }
+  ],
+  "clear_report_anchor_count": 4,
+  "clear_anchor_center_range_km": [
+    10731.39733454516,
+    11718.78236675704
+  ],
+  "nasa_feature_reported_miles": 46000,
+  "nasa_feature_conditional_center_range_km": 74029.82400000001,
+  "largest_all_surface_range_at_clear_anchors_km": 13456.182366757039,
+  "prior_26_96_and_3_58_disposition": "historical conditional arithmetic only; retire as an established Artemis flash-observation advantage; do not substitute a new physical visibility or flux claim",
+  "limits": {
+    "all_five_events_mapped": false,
+    "continuous_interval_bound": false,
+    "exact_flash_locations": false,
+    "photon_emission_times_verified": false,
+    "navigation_uncertainties_quantified": false,
+    "independent_navigation_solution": false,
+    "new_received_flux_advantage_established": false,
+    "event_photometry": false,
+    "calibrated_flux": false,
+    "source_typo_mechanism_proved": false,
+    "nasa_acceptance": false
+  },
+  "provenance": {
+    "acquisition": {
+      "date": "2026-10-12",
+      "starting_commit": "f0502a8c222c6c90ca5cbe3c3d5b8c5c90486dc7",
+      "request_contract": "paper-review/range-geometry/horizons-requests.json",
+      "request_contract_sha256": "57e76f5b94f3e6a1eb8b423c2c80b081e073a21dfe84d33cc516f8164eac9bd6",
+      "prior_inputs": [
+        {
+          "path": "spec/stage11n.json",
+          "sha256": "492ae25edc28516997faf0b99011c94412d2e34aabc7a4344791320a359b4d1a"
+        },
+        {
+          "path": "corpus/transcripts/art002a000052_pcd3_trn-csv_v01.csv",
+          "sha256": "6d555f49ea7f6ea717c7d15a2cf41ef16e58cce5d55f73e781334d145d6acfdf"
+        },
+        {
+          "path": "results/stage11n-event-receipt.csv",
+          "sha256": "3b8b47f4cff1dc38b006fc95ddce068170e79559404bae2657fefaface97068a"
+        },
+        {
+          "path": "paper-review/fcorona-source-only-receipt.json",
+          "sha256": "a90395c9877addcb57c012240df52ab229dc6cdcbc91890d4075f82a647af656"
+        }
+      ],
+      "provider": "NASA/JPL Horizons API",
+      "observed_api_version": "1.2",
+      "source_revision": "Artemis II object summary revised 2026-04-20 19:01 UTC",
+      "trajectory_source": "Post-launch Orion II trajectory data from NASA/JSC navigation (concatenated)",
+      "relevant_segment": {
+        "name": "Orion_OEM_20260408_0223.V0.1",
+        "start_tdb": "2026-Apr-06 17:35",
+        "stop_tdb": "2026-Apr-08 04:38"
+      },
+      "files": [
+        {
+          "file": "object.txt",
+          "http": 200,
+          "bytes": 7770,
+          "sha256": "249dba607fcbd669278d89de865d4832df4beb153997646bbdbf5d245a6df5b6",
+          "acquired_at_utc": "2026-10-12T14:51:40.5442524Z"
+        },
+        {
+          "file": "vectors.txt",
+          "http": 200,
+          "bytes": 8101,
+          "sha256": "e2adaf31f3c1ca99e2f3eeae3da63920cd01be698d9e0cd31fd8ec5fe7f75146",
+          "acquired_at_utc": "2026-10-12T14:51:40.7891963Z"
+        },
+        {
+          "file": "reverse-vectors.txt",
+          "http": 200,
+          "bytes": 8058,
+          "sha256": "085419735a88055012cdf8d2af7d18f8a517ac1b16e0c9673b6c8c46d688fd3f",
+          "acquired_at_utc": "2026-10-12T14:51:40.9783846Z"
+        },
+        {
+          "file": "observer.txt",
+          "http": 200,
+          "bytes": 5916,
+          "sha256": "ffc2a192db119bac3586e2993331866cc5cca1c7c2d0e4dbcf1f67cd95ea2cba",
+          "acquired_at_utc": "2026-10-12T14:51:41.2576785Z"
+        }
+      ],
+      "material_source_limits": [
+        "Source trajectory is a published concatenation, not an independent navigation reconstruction or uncertainty estimate",
+        "Observer output EOP file eop.261009.p270105; source output fixes the calculation version",
+        "Sampled report epochs are not exact photon-emission times or five individually mapped impact times",
+        "Unpersisted discovery reads preceded these four preserved acquisitions; this ledger is not the entire network-request count"
+      ],
+      "effects": {
+        "image_payloads_acquired": 0,
+        "installations": 0,
+        "outreach": false,
+        "publication": false,
+        "remote_push": false
+      }
+    },
+    "request_contract": {
+      "endpoint": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "max_response_bytes_each": 65536,
+      "timeout_seconds_each": 25,
+      "automatic_retries": 0,
+      "times": [
+        {
+          "utc": "2026-04-06T23:00:00.000Z",
+          "role": "context near closest approach, not a flash time"
+        },
+        {
+          "utc": "2026-04-07T00:41:00.680Z",
+          "role": "first clear transcript report anchor"
+        },
+        {
+          "utc": "2026-04-07T00:51:15.947Z",
+          "role": "shared transcript report anchor"
+        },
+        {
+          "utc": "2026-04-07T00:52:52.411Z",
+          "role": "ambiguous transcript report anchor, not accepted as an additional event"
+        },
+        {
+          "utc": "2026-04-07T00:59:18.291Z",
+          "role": "later clear transcript report anchor"
+        },
+        {
+          "utc": "2026-04-07T01:03:04.906Z",
+          "role": "last clear transcript report anchor"
+        },
+        {
+          "utc": "2026-04-07T01:04:00.000Z",
+          "role": "annotation scene/ledger context, not all five event times"
+        },
+        {
+          "utc": "2026-04-07T01:06:19.780Z",
+          "role": "published photograph metadata epoch, not a flash time"
+        }
+      ],
+      "requests": [
+        {
+          "file": "object.txt",
+          "parameters": {
+            "format": "text",
+            "COMMAND": "'Artemis II'",
+            "MAKE_EPHEM": "'NO'"
+          }
+        },
+        {
+          "file": "vectors.txt",
+          "parameters": {
+            "format": "text",
+            "COMMAND": "'-1024'",
+            "OBJ_DATA": "'NO'",
+            "MAKE_EPHEM": "'YES'",
+            "EPHEM_TYPE": "'VECTORS'",
+            "CENTER": "'500@301'",
+            "TIME_TYPE": "'UT'",
+            "TLIST_TYPE": "'CAL'",
+            "OUT_UNITS": "'KM-S'",
+            "REF_SYSTEM": "'ICRF'",
+            "REF_PLANE": "'FRAME'",
+            "VEC_CORR": "'NONE'",
+            "VEC_TABLE": "'3'",
+            "CSV_FORMAT": "'YES'"
+          }
+        },
+        {
+          "file": "reverse-vectors.txt",
+          "parameters": {
+            "format": "text",
+            "COMMAND": "'301'",
+            "OBJ_DATA": "'NO'",
+            "MAKE_EPHEM": "'YES'",
+            "EPHEM_TYPE": "'VECTORS'",
+            "CENTER": "'500@-1024'",
+            "TIME_TYPE": "'UT'",
+            "TLIST_TYPE": "'CAL'",
+            "OUT_UNITS": "'KM-S'",
+            "REF_SYSTEM": "'ICRF'",
+            "REF_PLANE": "'FRAME'",
+            "VEC_CORR": "'NONE'",
+            "VEC_TABLE": "'3'",
+            "CSV_FORMAT": "'YES'"
+          }
+        },
+        {
+          "file": "observer.txt",
+          "parameters": {
+            "format": "text",
+            "COMMAND": "'301'",
+            "OBJ_DATA": "'NO'",
+            "MAKE_EPHEM": "'YES'",
+            "EPHEM_TYPE": "'OBSERVER'",
+            "CENTER": "'500@-1024'",
+            "TIME_TYPE": "'UT'",
+            "TLIST_TYPE": "'CAL'",
+            "QUANTITIES": "'13,20'",
+            "RANGE_UNITS": "'KM'",
+            "CSV_FORMAT": "'YES'",
+            "TIME_DIGITS": "'FRACSEC'"
+          }
+        }
+      ],
+      "limits": "Discrete report epochs only; no one-to-one annotated-event mapping, photon-emission time, event coordinates, precise clock accuracy, continuous interval bound, flash photometry, calibrated flux or NASA acceptance. Reverse and observer queries share the same underlying trajectory and are configuration checks, not independent navigation solutions."
+    },
+    "source_folder": "paper-review/range-geometry/source",
+    "offline_replay_command": "python -B -m src.fcorona_range_reconciliation",
+    "scope": "Local replay checks source bytes and configured geometry; not independent scientific acceptance"
+  }
+}

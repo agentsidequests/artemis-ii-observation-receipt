@@ -1,0 +1,66 @@
+{
+  "testbed_id": "artemis2-stage11q-transcoded-injection-recovery",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-10T22:41:00Z",
+  "question": "How sensitive was the frozen Stage 11P region-sum screen to synthetic point-like pulses in the transcoded overlap clip?",
+  "baseline": "A zero-candidate screen is described without measuring what digital signal that screen could recover.",
+  "treatment": "Inject a frozen normalized Gaussian pulse into predeclared locations, times, durations, and per-frame integrated digital-count levels, then rerun the exact Stage 11P screen for every trial.",
+  "oracle": "Pass only when both source identities match, all 1,458 predeclared trials execute, the baseline remains candidate-free, the recovery curve is nondecreasing, and the output preserves the digital-domain and non-exclusion claim boundaries.",
+  "authority": "Private deterministic injection and recovery on a transcoded contextual clip. No physical brightness, impact energy, impactor size, flight-sensor performance, source-pixel equivalence, event exclusion, or NASA acceptance.",
+  "sources": [
+    {
+      "path": "evidence/stage11o/derived/art002m1010962338_saw3_005110_005125_stage11o.mp4",
+      "bytes": 666376,
+      "sha256": "a2dc14c6060de9bb8858d4d9d49b207c99d6dacdd5943fb84bb3448f67762eec"
+    },
+    {
+      "path": "results/stage11p-overlap-pixel-screen.json",
+      "bytes": 30546,
+      "sha256": "7ab93b078e45fc5b381faa861373ccf51a2918a833dad0d5bff13fe810191af2"
+    }
+  ],
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "frames": 900,
+    "roi_xyxy": [340, 90, 410, 160]
+  },
+  "screen": {
+    "robust_z_threshold": 6.0,
+    "relative_increase_threshold": 0.2,
+    "robust_scale_constant": 0.67448975
+  },
+  "injection": {
+    "model": "normalized_two_dimensional_gaussian_added_in_grayscale_digital_counts_then_rounded_and_clipped_to_uint8",
+    "sigma_pixels": 0.85,
+    "kernel_radius_pixels": 4,
+    "locations_xy": [
+      [371, 122],
+      [374, 122],
+      [376, 122],
+      [371, 124],
+      [374, 124],
+      [376, 124],
+      [371, 126],
+      [374, 126],
+      [376, 126]
+    ],
+    "start_frames": [250, 280, 310, 340, 370, 400],
+    "durations_frames": [1, 2, 3],
+    "requested_integrated_dn_per_frame": [250, 500, 1000, 2000, 4000, 6000, 8000, 12000, 16000]
+  },
+  "claim_boundaries": {
+    "injected_dn_is_physical_brightness": false,
+    "recovery_curve_describes_source_pixels": false,
+    "recovery_curve_describes_flight_sensor_performance": false,
+    "zero_candidates_excludes_crew_event": false,
+    "synthetic_gaussian_is_a_validated_flash_model": false,
+    "injected_duration_estimates_real_flash_duration": false
+  },
+  "next_step_logic": {
+    "if_recovery_requires_large_digital_signal": "Use the result to quantify the weakness of the frozen contextual screen in clip-native units, not to constrain physical flash brightness.",
+    "if_recovery_is_high_at_small_signal": "Retain the same physical and source-pixel boundaries; digital recovery alone does not calibrate the clip.",
+    "if_curve_is_not_monotonic": "Fail the canary and inspect clipping, threshold recomputation, and trial aggregation before interpretation.",
+    "stop": "Do not tune the synthetic pulse, screen threshold, locations, or timing after viewing the curve. A physical detectability claim requires source pixels and calibration."
+  }
+}

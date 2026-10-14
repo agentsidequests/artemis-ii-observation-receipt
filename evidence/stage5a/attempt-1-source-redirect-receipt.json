@@ -1,0 +1,29 @@
+{
+  "testbed_id": "artemis2-stage5a-bounded-transport-canary",
+  "version": "0.5.0",
+  "run_started_utc": "2026-10-09T20:27:01Z",
+  "spec_path": "spec/stage5a.json",
+  "spec_sha256": "a1400a2e25dc60976dd723fadd24f333ec1227130ec0f7bcce49adc5f7995a24",
+  "source_url": "https://pds-imaging.jpl.nasa.gov/archive/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+  "source_expected_bytes": 2960238197,
+  "budget_limit_bytes": 67108864,
+  "subset": {
+    "start_utc": "2026-04-07T00:51:10Z",
+    "end_utc": "2026-04-07T00:51:25Z",
+    "source_offset_seconds": 4379,
+    "duration_seconds": 15,
+    "first_report_utc": "2026-04-07T00:51:15.947Z"
+  },
+  "runtime": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "python_executable": "[local-runtime-path-redacted]",
+    "ffmpeg": "[local-runtime-path-redacted]",
+    "ffprobe": "[local-runtime-path-redacted]"
+  },
+  "state": "SOURCE_IDENTITY_MISMATCH",
+  "requests": [],
+  "stop_reason": "Unexpected final URL: https://d1ejlg980osaur.cloudfront.net/archive/artemis/artemis2/artemis2_orion_camera/data_video/fd06/channel1/art002m1010962338_saw3_raw_v01.mp4",
+  "accepted_media_body_bytes": 0,
+  "budget_remaining_bytes": 67108864,
+  "run_finished_utc": "2026-10-09T20:27:02Z"
+}

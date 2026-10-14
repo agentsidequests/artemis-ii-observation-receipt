@@ -1,0 +1,49 @@
+{
+  "evidence_id": "artemis2-stage1-source-extracts",
+  "version": "0.1.0",
+  "extraction_method": "Text was extracted from the hash-pinned NASA PDFs with pypdf 6.10.0; the LTP timeline page was also rendered and inspected at full resolution.",
+  "sources": [
+    {
+      "id": "data_user_guide_otr_definition",
+      "document": "Artemis II Lunar Science Data User Guide",
+      "pdf_page": 46,
+      "printed_page": 45,
+      "locator": "Section 5.6.2, Outgoing Target Request (OTR)",
+      "extract": "information about a target's observation availability window",
+      "interpretation": "The guide defines the OTR start/end context as availability, not as named optical-contact boundaries."
+    },
+    {
+      "id": "ltp_timeline_definition",
+      "document": "Artemis II Lunar Targeting Package",
+      "pdf_page": 10,
+      "locator": "Timeline separator page",
+      "extract": "A graphical schedule detailing target visibility windows and observation request times.",
+      "interpretation": "Visibility windows and request times are distinct timeline concepts."
+    },
+    {
+      "id": "ltp_timeline_legend",
+      "document": "Artemis II Lunar Targeting Package",
+      "pdf_page": 11,
+      "locator": "Timeline legend and event rows",
+      "extract": "Visible; Request",
+      "interpretation": "The rendered timeline separately encodes a target's visible interval and its requested observation time.",
+      "local_render": "evidence/stage1/ltp-timeline-page-11.png"
+    },
+    {
+      "id": "operations_report_otr_fields",
+      "document": "Artemis II Lunar Science Operations Report",
+      "pdf_page": 38,
+      "printed_page": 38,
+      "locator": "Section 6.3.3, Lunar Targeting Plan",
+      "extract": "start and end times, duration, prompts",
+      "interpretation": "The report lists OTR timing fields but does not define either endpoint as first or last optical contact."
+    },
+    {
+      "id": "otr_earthrise_record",
+      "document": "Artemis II Outgoing Target Request",
+      "locator": "ltp_name = Earthrise",
+      "extract": "start_date_time 23:25:30.000000; end_date_time 23:25:34.147844",
+      "interpretation": "The archived Earthrise availability interval is 4.147844 seconds long."
+    }
+  ]
+}

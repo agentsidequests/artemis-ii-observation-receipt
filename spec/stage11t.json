@@ -1,0 +1,68 @@
+{
+  "testbed_id": "artemis2-stage11t-scheduled-opportunity-concentration",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-11T18:21:10Z",
+  "question": "How concentrated are the 36 active scheduled observation windows under action, product, and byte weighting, and what minimum descriptive replication debt remains by exact plan name?",
+  "baseline": "Report 36 active windows and their individual action, product, and byte totals without a common concentration scale or exact-name replication frontier.",
+  "treatment": "Compute concentration-equivalent window counts, exact-name replication debt, membership-fractionalized sensitivity, and an overlapping same-name collapse sensitivity from exact frozen relationship ledgers.",
+  "oracle": "Pass only when source identities, frozen metrics, fractional conservation, the action-to-product-to-byte concentration ordering, claim boundaries, and zero-pixel access all verify.",
+  "authority": "Private deterministic metadata audit. It may quantify concentration and descriptive schedule debt, but it may not turn plan windows into independent events or exact names into scientific equivalence.",
+  "acceptance_owner": "Paul",
+  "sources": [
+    {
+      "path": "results/stage10o-product-relationship-manifest.csv",
+      "bytes": 10072026,
+      "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+    },
+    {
+      "path": "results/stage10z-action-plan-membership.csv",
+      "bytes": 398284,
+      "sha256": "819e1da2f132488b99d403cdc9b9335fe5e55228fec4fd6277629ddbaf21ab38"
+    }
+  ],
+  "frozen_observables": {
+    "active_windows": 36,
+    "exact_plan_names": 19,
+    "unique_active_actions": 1540,
+    "raw_concentration_equivalent_windows": {
+      "actions": 18.99998519330145,
+      "products": 16.823894158222735,
+      "archive_size_bytes": 14.70313411080405
+    },
+    "fractional_concentration_equivalent_windows": {
+      "actions": 18.03973671132567,
+      "products": 15.815014376869817,
+      "archive_size_bytes": 13.595033296553533
+    },
+    "collapsed_same_name_clusters": 32,
+    "collapsed_fractional_concentration_equivalent_windows": {
+      "actions": 17.3316963372212,
+      "products": 15.317957915097795,
+      "archive_size_bytes": 13.181026998196797
+    },
+    "replication_debt": {
+      "exact_windows_k2": 12,
+      "exact_windows_k3": 27,
+      "collapsed_clusters_k2": 13,
+      "collapsed_clusters_k3": 29
+    },
+    "same_name_overlap_collapses": 4
+  },
+  "hard_negatives": [
+    "drop_largest_window",
+    "break_fractional_conservation",
+    "call_concentration_effective_sample_size",
+    "call_windows_independent_events",
+    "call_exact_names_semantically_equivalent",
+    "call_debt_required_reflight",
+    "call_archive_quality_failure",
+    "open_pixels"
+  ],
+  "claim_ceiling": "Stage 11T may quantify the concentration of the 36 active plan-window memberships under action, product, and byte weighting and may compute the minimum number of additional exact-name scheduled windows needed to reach a chosen count per name. It cannot call the concentration equivalent an effective sample size, treat a scheduled window as an independent realized event, treat exact-name equality as scientific comparability, prescribe mission reflight, establish archive quality or scientific value, infer model performance, claim NASA acceptance, or claim global novelty.",
+  "next_step_logic": {
+    "if_verified": "Use the concentration range and replication-debt frontier to show that archive volume and scheduled opportunity are different dimensions, with raw and sensitivity results shown together.",
+    "if_fractional_or_collapse_sensitivity_reverses_the_result": "Report the bounded range and withhold a directional unit-weighting claim.",
+    "if_scientific_replication_is_needed": "Add a specialist-approved semantic event oracle and comparability criteria before treating any exact-name count as replication.",
+    "recheck_trigger": "A revised plan ledger, action oracle, product manifest, semantic event map, or specialist correction."
+  }
+}

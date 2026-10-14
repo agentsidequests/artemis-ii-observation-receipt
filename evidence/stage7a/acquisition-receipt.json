@@ -1,0 +1,148 @@
+{
+  "receipt_id": "artemis2-stage7a-lola-bounded-acquisition-v1",
+  "status": "COMPLETED",
+  "started_at_utc": "2026-10-09T22:00:44Z",
+  "completed_at_utc": "2026-10-09T22:00:45Z",
+  "spec_path": "spec/stage7a.json",
+  "spec_sha256": "92759b2b328fb8510441a4d9d82e0535d3587bb7ead01e027a6257abaedb0b81",
+  "semantic_path": "evidence/stage7a/semantic-coding.json",
+  "semantic_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+  "semantic_frozen_before_lola_value_access": true,
+  "line_range_zero_based_inclusive": [
+    1402,
+    1469
+  ],
+  "latitude_centers_deg": [
+    2.34375,
+    -1.84375
+  ],
+  "img_bytes": 2350080,
+  "label_bytes": 12307,
+  "network_bytes": 2362387,
+  "network_budget_bytes": 2520000,
+  "items": [
+    {
+      "product_id": "mas_57m_16",
+      "baseline_m": 57,
+      "label": {
+        "url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_57M_16.LBL",
+        "resolved_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_57M_16.LBL",
+        "status": 200,
+        "headers": {
+          "content-type": "application/octet-stream",
+          "content-length": "4097",
+          "last-modified": "Wed, 18 May 2011 21:06:19 GMT",
+          "etag": "\"4dd434cb-1001\""
+        },
+        "bytes": 4097,
+        "sha256": "d01ea2361e7bd72080287dd9648f9d4958ba5016afd55b0df05eaed83cb32274",
+        "local_path": "evidence/stage7a/source/mas_57m_16.LBL"
+      },
+      "strip": {
+        "url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_57M_16.IMG",
+        "resolved_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_57M_16.IMG",
+        "status": 206,
+        "headers": {
+          "content-type": "application/octet-stream",
+          "content-length": "783360",
+          "last-modified": "Mon, 16 May 2011 16:54:53 GMT",
+          "etag": "\"4dd156dd-1fa4000\"",
+          "content-range": "bytes 16151040-16934399/33177600"
+        },
+        "byte_range": [
+          16151040,
+          16934399
+        ],
+        "line_range_zero_based_inclusive": [
+          1402,
+          1469
+        ],
+        "bytes": 783360,
+        "sha256": "69031cb00d049fa05a1fe682156e93804036dc4f193a694871ef5b4dac004cc3",
+        "local_path": "evidence/stage7a/source/mas_57m_16-lines-1402-1469.bin"
+      }
+    },
+    {
+      "product_id": "mas_225m_16",
+      "baseline_m": 225,
+      "label": {
+        "url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_225M_16.LBL",
+        "resolved_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_225M_16.LBL",
+        "status": 200,
+        "headers": {
+          "content-type": "application/octet-stream",
+          "content-length": "4105",
+          "last-modified": "Wed, 18 May 2011 21:00:17 GMT",
+          "etag": "\"4dd43361-1009\""
+        },
+        "bytes": 4105,
+        "sha256": "2d764215d140bd97ae004f0c06f31cc23e1ea23d6f197a709d2d645cc25276c8",
+        "local_path": "evidence/stage7a/source/mas_225m_16.LBL"
+      },
+      "strip": {
+        "url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_225M_16.IMG",
+        "resolved_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_225M_16.IMG",
+        "status": 206,
+        "headers": {
+          "content-type": "application/octet-stream",
+          "content-length": "783360",
+          "last-modified": "Mon, 16 May 2011 16:54:51 GMT",
+          "etag": "\"4dd156db-1fa4000\"",
+          "content-range": "bytes 16151040-16934399/33177600"
+        },
+        "byte_range": [
+          16151040,
+          16934399
+        ],
+        "line_range_zero_based_inclusive": [
+          1402,
+          1469
+        ],
+        "bytes": 783360,
+        "sha256": "e91318b522527b81b5def7e5807d7109c54183d859ea388f050f49aded12503e",
+        "local_path": "evidence/stage7a/source/mas_225m_16-lines-1402-1469.bin"
+      }
+    },
+    {
+      "product_id": "mas_560m_16",
+      "baseline_m": 560,
+      "label": {
+        "url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_560M_16.LBL",
+        "resolved_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_560M_16.LBL",
+        "status": 200,
+        "headers": {
+          "content-type": "application/octet-stream",
+          "content-length": "4105",
+          "last-modified": "Wed, 18 May 2011 21:05:36 GMT",
+          "etag": "\"4dd434a0-1009\""
+        },
+        "bytes": 4105,
+        "sha256": "e5540f16d3ebf1be8654b9b903d6883539b2a7dc960aca7943938c5e89e55bb6",
+        "local_path": "evidence/stage7a/source/mas_560m_16.LBL"
+      },
+      "strip": {
+        "url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_560M_16.IMG",
+        "resolved_url": "https://imbrium.mit.edu/EXTRAS/FRACTAL/IMG/MAS_560M_16.IMG",
+        "status": 206,
+        "headers": {
+          "content-type": "application/octet-stream",
+          "content-length": "783360",
+          "last-modified": "Mon, 16 May 2011 16:54:52 GMT",
+          "etag": "\"4dd156dc-1fa4000\"",
+          "content-range": "bytes 16151040-16934399/33177600"
+        },
+        "byte_range": [
+          16151040,
+          16934399
+        ],
+        "line_range_zero_based_inclusive": [
+          1402,
+          1469
+        ],
+        "bytes": 783360,
+        "sha256": "87f46e09479d162f0c8fa5f71203d551bb9b83dfb9904d3f64b25f8580d9792e",
+        "local_path": "evidence/stage7a/source/mas_560m_16-lines-1402-1469.bin"
+      }
+    }
+  ]
+}

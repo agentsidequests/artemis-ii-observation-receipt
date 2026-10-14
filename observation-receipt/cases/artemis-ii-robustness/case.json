@@ -1,0 +1,28 @@
+{
+  "case_kind": "tag_weight_robustness",
+  "case_version": "1.0.0",
+  "case_id": "artemis-ii-tag-weight-robustness",
+  "title": "A majority is not a margin of safety.",
+  "sources": {
+    "contract": {
+      "path": "cases/artemis-ii-robustness/sources/contract.json",
+      "bytes": 4172,
+      "sha256": "8930e45b9e01be7c7887ae3fbb905be81dd3d0dbcb46cde9d9a7c66a8ac850bf"
+    },
+    "result": {
+      "path": "cases/artemis-ii-robustness/sources/result.json",
+      "bytes": 2352771,
+      "sha256": "afa22634e5bd5883d6bf5b22b76a708df3f7c976011786e94c045ef695a64c76"
+    },
+    "manifest": {
+      "path": "cases/artemis-ii-robustness/sources/manifest.csv",
+      "bytes": 10072026,
+      "sha256": "8edd58437cc609229edb5abb41c4e00048bb420354f1ac17a269da92c17e4729"
+    }
+  },
+  "defaults": {
+    "unit": "all_representation_bytes",
+    "population": "frozen_nonblank_subset",
+    "budget": 0
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "receipt_id": "artemis2-stage10i-provenance-crosswalk-v1",
+  "completed_at_utc": "2026-10-10T12:15:00Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "sources": [
+    {
+      "path": "results/stage10h-result.json",
+      "bytes": 43340,
+      "sha256": "45e709af9825d916794f8b441a1c1005c050e279db633006723d3d05f3ff78ff",
+      "role": "verified source-volume and archive-footprint reconciliation"
+    },
+    {
+      "path": "results/stage10e-result.json",
+      "bytes": 263013,
+      "sha256": "398319b545958ad277a5a7352e44d28d2c5eeb2d21c558780849cec4c4cc292f",
+      "role": "verified complete current Atlas raw Nikon inventory"
+    },
+    {
+      "path": "evidence/stage10h/source/preliminary-science-report-page-31.txt",
+      "bytes": 1822,
+      "sha256": "6462084da3fbf57a979725e5a3fa81539debf7ff6abe2bf98c273c612e248bbc",
+      "role": "official source-file inventory by instrument and type"
+    },
+    {
+      "path": "evidence/stage10d/source/artemis2_data_user_guide.txt",
+      "bytes": 174179,
+      "sha256": "3533de2c32617b9d1a2ff29022771dab5d29ac6bbaa15dd3554f23a992a8d31e",
+      "role": "official pending-release and product-transformation rules"
+    },
+    {
+      "path": "evidence/stage2b/collection_data_raw_image_inventory.csv",
+      "bytes": 85008,
+      "sha256": "159bbd98aea41c6cde8227fba6ce8cd26a6cb023ce2dcf894f07416e57c7d00c",
+      "role": "complete current Orion raw-image collection inventory"
+    },
+    {
+      "path": "evidence/stage10a/acquisition-receipt.json",
+      "bytes": 6454,
+      "sha256": "bdc0580214ca5aff0c6a3635533dda2d4d4ec48125fa6575609b818f7f3e5ecd",
+      "role": "Flight Day 6 raw Nikon page identities"
+    },
+    {
+      "path": "evidence/stage10e/acquisition-receipt.json",
+      "bytes": 6153,
+      "sha256": "dc8d7280c3e88d188d1642c5206f473475e94c0f72d30d46c4579c168659790b",
+      "role": "all-other-flight-day raw Nikon page identities"
+    },
+    {
+      "path": "evidence/stage10d/source/atlas-mission-footprint-response.json",
+      "bytes": 1422,
+      "sha256": "fd93dd2acd44dccd8e72a098a3f1fb888ba5686bf313315552d53fc555bf0b5a",
+      "role": "current archive collection counts"
+    }
+  ]
+}

@@ -1,0 +1,1262 @@
+{
+  "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+  "mutation": null,
+  "pass": true,
+  "signal_pass": true,
+  "evidence_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+  "disposition": "CONTINUE_CONTROLLED_MULTI_TARGET",
+  "semantic_prediction": "Vavilov rougher than Hertzsprung",
+  "acquisition_network_bytes": 2362387,
+  "network_bytes_in_verification": 0,
+  "primary_signal_pass": true,
+  "robustness_pass": true,
+  "robustness_comparisons_passing": 9,
+  "robustness_comparisons_total": 9,
+  "metrics": {
+    "57": {
+      "10": {
+        "vavilov_pixel_count": 87,
+        "hertzsprung_pixel_count": 86,
+        "vavilov_median_slope_deg": 5.130000000000003,
+        "hertzsprung_median_slope_deg": 2.9902499999999996,
+        "median_difference_deg": 2.139750000000003,
+        "median_ratio": 1.7155756207674955,
+        "probability_superiority_descriptive_only": 0.9629109863672815
+      },
+      "20": {
+        "vavilov_pixel_count": 350,
+        "hertzsprung_pixel_count": 350,
+        "vavilov_median_slope_deg": 5.512499999999999,
+        "hertzsprung_median_slope_deg": 3.072749999999999,
+        "median_difference_deg": 2.43975,
+        "median_ratio": 1.793995606541372,
+        "probability_superiority_descriptive_only": 0.8251102040816326
+      },
+      "30": {
+        "vavilov_pixel_count": 786,
+        "hertzsprung_pixel_count": 784,
+        "vavilov_median_slope_deg": 6.129749999999998,
+        "hertzsprung_median_slope_deg": 3.1282499999999978,
+        "median_difference_deg": 3.0015,
+        "median_ratio": 1.9594821385758818,
+        "probability_superiority_descriptive_only": 0.818240607311627
+      }
+    },
+    "225": {
+      "10": {
+        "vavilov_pixel_count": 87,
+        "hertzsprung_pixel_count": 86,
+        "vavilov_median_slope_deg": 4.228499999999997,
+        "hertzsprung_median_slope_deg": 1.955999999999996,
+        "median_difference_deg": 2.272500000000001,
+        "median_ratio": 2.161809815950923,
+        "probability_superiority_descriptive_only": 0.9869018978882652
+      },
+      "20": {
+        "vavilov_pixel_count": 350,
+        "hertzsprung_pixel_count": 350,
+        "vavilov_median_slope_deg": 5.010749999999998,
+        "hertzsprung_median_slope_deg": 2.088750000000001,
+        "median_difference_deg": 2.921999999999997,
+        "median_ratio": 2.3989228007181307,
+        "probability_superiority_descriptive_only": 0.8443224489795919
+      },
+      "30": {
+        "vavilov_pixel_count": 786,
+        "hertzsprung_pixel_count": 784,
+        "vavilov_median_slope_deg": 5.466750000000001,
+        "hertzsprung_median_slope_deg": 2.2424999999999997,
+        "median_difference_deg": 3.2242500000000014,
+        "median_ratio": 2.437792642140469,
+        "probability_superiority_descriptive_only": 0.8213985498779665
+      }
+    },
+    "560": {
+      "10": {
+        "vavilov_pixel_count": 87,
+        "hertzsprung_pixel_count": 86,
+        "vavilov_median_slope_deg": 3.7064999999999984,
+        "hertzsprung_median_slope_deg": 1.0604999999999976,
+        "median_difference_deg": 2.646000000000001,
+        "median_ratio": 3.4950495049505017,
+        "probability_superiority_descriptive_only": 0.9822908313285218
+      },
+      "20": {
+        "vavilov_pixel_count": 350,
+        "hertzsprung_pixel_count": 350,
+        "vavilov_median_slope_deg": 4.217999999999996,
+        "hertzsprung_median_slope_deg": 1.380749999999999,
+        "median_difference_deg": 2.8372499999999974,
+        "median_ratio": 3.054861488321564,
+        "probability_superiority_descriptive_only": 0.8258489795918368
+      },
+      "30": {
+        "vavilov_pixel_count": 786,
+        "hertzsprung_pixel_count": 784,
+        "vavilov_median_slope_deg": 4.737000000000002,
+        "hertzsprung_median_slope_deg": 1.5944999999999965,
+        "median_difference_deg": 3.1425000000000054,
+        "median_ratio": 2.9708372530573923,
+        "probability_superiority_descriptive_only": 0.7970973217531288
+      }
+    }
+  },
+  "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result.",
+  "next_step_logic": {
+    "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+    "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+    "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+  },
+  "checks": [
+    {
+      "id": "semantic_freeze_and_identity",
+      "pass": true,
+      "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+      "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+    },
+    {
+      "id": "transcript_anchors",
+      "pass": true
+    },
+    {
+      "id": "held_out_non_orientale_contrast",
+      "pass": true,
+      "features": [
+        "hertzsprung",
+        "vavilov"
+      ],
+      "contrast": {
+        "vavilov": "rougher",
+        "hertzsprung": "smoother"
+      }
+    },
+    {
+      "id": "three_scale_product_contract",
+      "pass": true,
+      "products": [
+        [
+          "mas_225m_16",
+          225
+        ],
+        [
+          "mas_560m_16",
+          560
+        ],
+        [
+          "mas_57m_16",
+          57
+        ]
+      ]
+    },
+    {
+      "id": "equal_physical_regions",
+      "pass": true,
+      "regions": {
+        "primary_radius_km": 20,
+        "robustness_radii_km": [
+          10,
+          20,
+          30
+        ],
+        "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+      }
+    },
+    {
+      "id": "frozen_oracle",
+      "pass": true,
+      "oracle": {
+        "primary": {
+          "radius_km": 20,
+          "required_baselines_m": [
+            57,
+            225,
+            560
+          ],
+          "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+          "minimum_probability_superiority_each": 0.65
+        },
+        "robustness": {
+          "comparisons": 9,
+          "minimum_comparisons_with_ratio_at_least_1_1": 8
+        },
+        "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+        "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+        "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+      }
+    },
+    {
+      "id": "claim_ceiling",
+      "pass": true,
+      "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result."
+    },
+    {
+      "id": "bounded_acquisition_receipt",
+      "pass": true,
+      "network_bytes": 2362387,
+      "network_budget_bytes": 2520000
+    },
+    {
+      "id": "source_manifest_identity",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "hard_negatives": {
+    "use_orientale_as_evaluation_data": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "use_orientale_as_evaluation_data",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": false,
+          "features": [
+            "hertzsprung",
+            "orientale",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The held-out Vavilov-versus-Hertzsprung semantic contrast changed or includes Orientale."
+      ]
+    },
+    "change_semantic_direction_after_lola_access": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "change_semantic_direction_after_lola_access",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": false,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "smoother",
+            "hertzsprung": "rougher"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The held-out Vavilov-versus-Hertzsprung semantic contrast changed or includes Orientale."
+      ]
+    },
+    "compare_unequal_physical_radii": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "compare_unequal_physical_radii",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": true,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": false,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use a 20 km Vavilov disk and a 30 km Hertzsprung disk."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The two targets no longer use identical frozen physical radii."
+      ]
+    },
+    "accept_only_one_lola_baseline": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "accept_only_one_lola_baseline",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": true,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": false,
+          "products": [
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The canary must retain all three frozen LOLA baselines."
+      ]
+    },
+    "accept_a_ratio_below_the_frozen_threshold": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "accept_a_ratio_below_the_frozen_threshold",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": true,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": false,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 0.9,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": true,
+          "claim_ceiling": "A pass establishes only coarse directional concordance for one same-observer, two-target contrast under fixed map sampling. It does not establish causation, perception below resolution, observer generality, independence from geology or morphology, statistical significance, novelty, or a publishable scientific result."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The predeclared signal thresholds changed."
+      ]
+    },
+    "treat_interpolated_pixels_as_independent_samples": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "treat_interpolated_pixels_as_independent_samples",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "Raster pixels are independent scientific samples.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": true,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "Raster pixels are independent scientific samples."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The canary's scientific claim ceiling was weakened."
+      ]
+    },
+    "claim_control_for_geology_illumination_albedo_or_morphology": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "claim_control_for_geology_illumination_albedo_or_morphology",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "The canary controls geology, illumination, albedo, and morphology.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": true,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "The canary controls geology, illumination, albedo, and morphology."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The canary's scientific claim ceiling was weakened."
+      ]
+    },
+    "claim_novel_science_from_a_two-target_same-observer_canary": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "claim_novel_science_from_a_two-target_same-observer_canary",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "This is a novel publishable scientific result.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": true,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "This is a novel publishable scientific result."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The canary's scientific claim ceiling was weakened."
+      ]
+    },
+    "claim_sub_resolution_perception": {
+      "testbed_id": "artemis2-held-out-semantic-lola-canary-stage7a",
+      "mutation": "claim_sub_resolution_perception",
+      "pass": false,
+      "signal_pass": false,
+      "evidence_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION",
+      "disposition": "STOP_REPAIR_NAMED_BOUNDARY_ONLY",
+      "semantic_prediction": "Vavilov rougher than Hertzsprung",
+      "acquisition_network_bytes": 2362387,
+      "network_bytes_in_verification": 0,
+      "primary_signal_pass": false,
+      "robustness_pass": false,
+      "robustness_comparisons_passing": 0,
+      "robustness_comparisons_total": 9,
+      "metrics": {},
+      "claim_ceiling": "This proves sub-resolution human perception.",
+      "next_step_logic": {
+        "if_pass": "Admit one larger prospectively coded multi-target test with competing map layers, morphology and geologic-unit controls, illumination and viewing metadata, and at least one additional observer if available.",
+        "if_fail": "Stop the semantic roughness lane and retain NASA's qualitative Orientale interpretation only.",
+        "if_indeterminate": "Stop acquisition and repair only the named source or localization boundary if existing metadata can do so without bulk imagery."
+      },
+      "checks": [
+        {
+          "id": "semantic_freeze_and_identity",
+          "pass": true,
+          "actual_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14",
+          "expected_sha256": "afb5ca2aaa06102a96899384429417a35f3ceb50bab9e5af9228e1aa1e157a14"
+        },
+        {
+          "id": "transcript_anchors",
+          "pass": true
+        },
+        {
+          "id": "held_out_non_orientale_contrast",
+          "pass": true,
+          "features": [
+            "hertzsprung",
+            "vavilov"
+          ],
+          "contrast": {
+            "vavilov": "rougher",
+            "hertzsprung": "smoother"
+          }
+        },
+        {
+          "id": "three_scale_product_contract",
+          "pass": true,
+          "products": [
+            [
+              "mas_225m_16",
+              225
+            ],
+            [
+              "mas_560m_16",
+              560
+            ],
+            [
+              "mas_57m_16",
+              57
+            ]
+          ]
+        },
+        {
+          "id": "equal_physical_regions",
+          "pass": true,
+          "regions": {
+            "primary_radius_km": 20,
+            "robustness_radii_km": [
+              10,
+              20,
+              30
+            ],
+            "rule": "Use every valid raster pixel whose center lies within the great-circle radius of the official feature center. Use identical physical radii for both targets."
+          }
+        },
+        {
+          "id": "frozen_oracle",
+          "pass": true,
+          "oracle": {
+            "primary": {
+              "radius_km": 20,
+              "required_baselines_m": [
+                57,
+                225,
+                560
+              ],
+              "minimum_vavilov_to_hertzsprung_median_ratio_each": 1.2,
+              "minimum_probability_superiority_each": 0.65
+            },
+            "robustness": {
+              "comparisons": 9,
+              "minimum_comparisons_with_ratio_at_least_1_1": 8
+            },
+            "pass_state": "COARSE_SEMANTIC_LOLA_CONCORDANCE",
+            "fail_state": "NO_STRONG_DIRECTIONAL_CONCORDANCE",
+            "indeterminate_state": "INDETERMINATE_SOURCE_OR_LOCALIZATION"
+          }
+        },
+        {
+          "id": "claim_ceiling",
+          "pass": false,
+          "claim_ceiling": "This proves sub-resolution human perception."
+        },
+        {
+          "id": "bounded_acquisition_receipt",
+          "pass": true,
+          "network_bytes": 2362387,
+          "network_budget_bytes": 2520000
+        },
+        {
+          "id": "source_manifest_identity",
+          "pass": true
+        }
+      ],
+      "errors": [
+        "The canary's scientific claim ceiling was weakened."
+      ]
+    }
+  },
+  "hard_negatives_pass": true
+}

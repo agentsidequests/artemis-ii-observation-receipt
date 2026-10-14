@@ -1,0 +1,69 @@
+{
+  "testbed_id": "artemis2-stage11r-hierarchical-test-isolation",
+  "version": "1.0.0",
+  "formed_at_utc": "2026-10-11T16:19:33Z",
+  "question": "In the frozen Stage 11L product-key canary, how many test products are isolated from training at the capture and complete-action relationship layers?",
+  "baseline": "Report only the number of action groups crossed by the product-key split.",
+  "treatment": "Partition every test product into one of three mutually exclusive bins: exact-capture-linked to training, action-only-linked to training, or action-isolated from training.",
+  "oracle": "Pass only when exact source identities match, every assignment row is unique and classified once, the three bins sum to the complete test partition, recomputed action crossings agree with the bound Stage 11L receipt, and all frozen observables match.",
+  "authority": "Private deterministic structural audit of one frozen split canary. No pixels, model, outcome, statistical-independence claim, leakage claim, performance claim, scientific-task validity claim, NASA acceptance, or global novelty.",
+  "acceptance_owner": "Paul",
+  "sources": [
+    {
+      "path": "results/stage11l-split-assignments.csv",
+      "bytes": 4573289,
+      "sha256": "2a372b95bc2897ee2d27400f7467d9d8ceb7c7410ed6fee7dab7aad0b1ed20d1"
+    },
+    {
+      "path": "results/stage11l-split-receipt.json",
+      "bytes": 4216,
+      "sha256": "9fb6f1d180e66cffb83b19924b3c25650b7c144712eff97053bfdf0043a97b2a"
+    }
+  ],
+  "frozen_observables": {
+    "rows": 22818,
+    "train_products": 18307,
+    "test_products": 4511,
+    "capture_linked_test_products": 4307,
+    "action_only_linked_test_products": 204,
+    "action_isolated_test_products": 0,
+    "capture_linked_test_share": 0.9547772112613612,
+    "action_only_linked_test_share": 0.045222788738638886,
+    "action_isolated_test_share": 0.0,
+    "test_visible_capture_groups": 3679,
+    "capture_linked_test_capture_groups": 3611,
+    "capture_isolated_test_capture_groups": 68,
+    "test_visible_action_groups": 1937,
+    "action_isolated_test_action_groups": 0,
+    "crossing_action_groups": 1937,
+    "products_in_crossing_action_groups": 20601,
+    "share_all_products_in_crossing_actions": 0.9028398632658428
+  },
+  "claim_boundaries": {
+    "shared_capture_proves_pixel_leakage": false,
+    "shared_action_proves_statistical_dependence": false,
+    "zero_action_isolated_products_invalidates_every_task": false,
+    "the_canary_is_an_observed_pipeline": false,
+    "the_canary_estimates_model_performance_inflation": false,
+    "the_action_key_is_a_complete_event_oracle": false,
+    "the_result_is_independent_replication": false
+  },
+  "hard_negatives": [
+    "drop_test_assignment",
+    "duplicate_product_id",
+    "mutate_capture_relation",
+    "mutate_action_relation",
+    "mismatch_receipt_crossing_count",
+    "call_structural_overlap_observed_leakage",
+    "call_action_isolation_statistical_independence",
+    "call_canary_a_scientific_split"
+  ],
+  "claim_ceiling": "Stage 11R may establish that, in the frozen Stage 11L product-key canary, all 4,511 test products share either their exact capture identity or their reconstructed complete action with at least one training product, including 4,307 exact-capture-linked and 204 action-only-linked test products. It cannot establish pixel similarity, statistical dependence, observed leakage, model shortcut use, performance inflation, scientific-task invalidity, a complete event oracle, independent replication, NASA acceptance, or global novelty.",
+  "next_step_logic": {
+    "if_no_test_product_is_action_isolated": "Use the result as a structural isolation failure for this canary and require a task-native protected group before interpreting an evaluation score.",
+    "if_some_test_products_are_action_isolated": "Report the complete three-bin distribution and do not generalize isolation beyond the declared action relation.",
+    "if_capture_and_action_counts_do_not_sum_to_test": "Fail the stage and inspect missing, duplicate, or malformed assignments before interpretation.",
+    "if_a_real_task_is_proposed": "Freeze its estimand, labels, transformations, and required dependence relation, then issue a new receipt instead of reusing this canary.",
+    "recheck_trigger": "A revised relationship manifest, changed split assignment, authoritative episode key, actual model task, or specialist correction."
+  }
+}

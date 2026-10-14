@@ -1,0 +1,23 @@
+{
+  "endpoint": "https://ssd.jpl.nasa.gov/api/horizons.api",
+  "max_response_bytes_each": 65536,
+  "timeout_seconds_each": 25,
+  "automatic_retries": 0,
+  "times": [
+    {"utc": "2026-04-06T23:00:00.000Z", "role": "context near closest approach, not a flash time"},
+    {"utc": "2026-04-07T00:41:00.680Z", "role": "first clear transcript report anchor"},
+    {"utc": "2026-04-07T00:51:15.947Z", "role": "shared transcript report anchor"},
+    {"utc": "2026-04-07T00:52:52.411Z", "role": "ambiguous transcript report anchor, not accepted as an additional event"},
+    {"utc": "2026-04-07T00:59:18.291Z", "role": "later clear transcript report anchor"},
+    {"utc": "2026-04-07T01:03:04.906Z", "role": "last clear transcript report anchor"},
+    {"utc": "2026-04-07T01:04:00.000Z", "role": "annotation scene/ledger context, not all five event times"},
+    {"utc": "2026-04-07T01:06:19.780Z", "role": "published photograph metadata epoch, not a flash time"}
+  ],
+  "requests": [
+    {"file": "object.txt", "parameters": {"format": "text", "COMMAND": "'Artemis II'", "MAKE_EPHEM": "'NO'"}},
+    {"file": "vectors.txt", "parameters": {"format": "text", "COMMAND": "'-1024'", "OBJ_DATA": "'NO'", "MAKE_EPHEM": "'YES'", "EPHEM_TYPE": "'VECTORS'", "CENTER": "'500@301'", "TIME_TYPE": "'UT'", "TLIST_TYPE": "'CAL'", "OUT_UNITS": "'KM-S'", "REF_SYSTEM": "'ICRF'", "REF_PLANE": "'FRAME'", "VEC_CORR": "'NONE'", "VEC_TABLE": "'3'", "CSV_FORMAT": "'YES'"}},
+    {"file": "reverse-vectors.txt", "parameters": {"format": "text", "COMMAND": "'301'", "OBJ_DATA": "'NO'", "MAKE_EPHEM": "'YES'", "EPHEM_TYPE": "'VECTORS'", "CENTER": "'500@-1024'", "TIME_TYPE": "'UT'", "TLIST_TYPE": "'CAL'", "OUT_UNITS": "'KM-S'", "REF_SYSTEM": "'ICRF'", "REF_PLANE": "'FRAME'", "VEC_CORR": "'NONE'", "VEC_TABLE": "'3'", "CSV_FORMAT": "'YES'"}},
+    {"file": "observer.txt", "parameters": {"format": "text", "COMMAND": "'301'", "OBJ_DATA": "'NO'", "MAKE_EPHEM": "'YES'", "EPHEM_TYPE": "'OBSERVER'", "CENTER": "'500@-1024'", "TIME_TYPE": "'UT'", "TLIST_TYPE": "'CAL'", "QUANTITIES": "'13,20'", "RANGE_UNITS": "'KM'", "CSV_FORMAT": "'YES'", "TIME_DIGITS": "'FRACSEC'"}}
+  ],
+  "limits": "Discrete report epochs only; no one-to-one annotated-event mapping, photon-emission time, event coordinates, precise clock accuracy, continuous interval bound, flash photometry, calibrated flux or NASA acceptance. Reverse and observer queries share the same underlying trajectory and are configuration checks, not independent navigation solutions."
+}

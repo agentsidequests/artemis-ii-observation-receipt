@@ -1,0 +1,1418 @@
+{
+  "receipt_id": "artemis2-stage10l-complete-action-products-v1",
+  "completed_at_utc": "2026-10-10T12:27:37Z",
+  "status": "COMPLETED",
+  "pixel_payload_bytes": 0,
+  "route_recovery": {
+    "initial_failure": "HTTP_403_LARGE_REQUEST",
+    "failure_class": "SURFACE_PREREQUISITE_MISSING",
+    "fallback": "same_endpoint_bounded_batches"
+  },
+  "cohort": {
+    "complete_actions": 2166,
+    "capture_identities": 7606,
+    "products": 22818,
+    "batches": 77
+  },
+  "sources": [
+    {
+      "path": "results/stage10j-result.json",
+      "bytes": 90532,
+      "sha256": "d05b0a1367d7605d90cfacc015cefa7bdbdefa5c4173b829e9d6de806612f133",
+      "role": "verified Stage 10J action denominator"
+    },
+    {
+      "path": "evidence/stage10l/source/atlas-complete-action-products-query.json",
+      "bytes": 236772,
+      "sha256": "f26d71ec20861f30f951a4a3a9122d5b50714e7177c7ea694cdd3509856bfa82",
+      "role": "rejected all-cohort query; HTTP 403 before response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-01-query.json",
+      "bytes": 3664,
+      "sha256": "ddf4ec3e7b648f860234260c0510997a61484f1f9eb94b47781049d75174158a",
+      "role": "Atlas batch 1 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-01-response.json",
+      "bytes": 92610,
+      "sha256": "abc854535c0e394c2dc77c0eadb76475da0b2b346be299250fabf142b3d04c19",
+      "role": "Atlas batch 1 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92610"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-02-query.json",
+      "bytes": 3664,
+      "sha256": "5fd928d64ecd851673cfe008586ca1fa07a4da8f8a91ba0cb058d42b12497e88",
+      "role": "Atlas batch 2 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-02-response.json",
+      "bytes": 92552,
+      "sha256": "c687a44124adb9c773d7ed6789197dfb0fbbb5557ba94bce4d32d59ff4a0c56d",
+      "role": "Atlas batch 2 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92552"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-03-query.json",
+      "bytes": 3664,
+      "sha256": "921e07292340a85921cd17ab04bbbaa8479fd925e127c0c4d702a5d137b07515",
+      "role": "Atlas batch 3 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-03-response.json",
+      "bytes": 92668,
+      "sha256": "eb2c194b2c71e741847217866b53d94766875335cf7eb7e5d5014b4a3f59b751",
+      "role": "Atlas batch 3 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92668"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-04-query.json",
+      "bytes": 3664,
+      "sha256": "d73fcbc70de6ad89777c2d98910d45f3b15ad7f6e255e953e640a1ede8067f09",
+      "role": "Atlas batch 4 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-04-response.json",
+      "bytes": 92732,
+      "sha256": "c25a78a514969b1d38ac0b8f280f2323c3c28b14e3fca46bb0135be9bc36e993",
+      "role": "Atlas batch 4 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92732"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-05-query.json",
+      "bytes": 3664,
+      "sha256": "33a64bab62c47161a430e2986f287cebdf299a81f4c6a7f6f1e44134dabf38b3",
+      "role": "Atlas batch 5 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-05-response.json",
+      "bytes": 92618,
+      "sha256": "73ece8fce2434033cd8414d9fc87db561c00eb5e2fa83f2156eb5f4b30d205c3",
+      "role": "Atlas batch 5 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92618"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-06-query.json",
+      "bytes": 3664,
+      "sha256": "a47c3c29ac536568c70fa3f7da3b96c183feda08cd18181bad44359ea95bd439",
+      "role": "Atlas batch 6 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-06-response.json",
+      "bytes": 92544,
+      "sha256": "fdada82d83adf78d97a93096d9bfbb8bc2186fbd8f9dc410c8b5b85598a78718",
+      "role": "Atlas batch 6 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92544"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-07-query.json",
+      "bytes": 3664,
+      "sha256": "b11d46191ad06cbbeb711d3eee7b790179fd359abdd447c6ae521a0d5a040c07",
+      "role": "Atlas batch 7 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-07-response.json",
+      "bytes": 92728,
+      "sha256": "47f64ee7e2fcd03800c0aa46db388d0c15cc9b855c84512ecab0c65a7bb8bc36",
+      "role": "Atlas batch 7 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92728"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-08-query.json",
+      "bytes": 3664,
+      "sha256": "c0e0984cad00c28e58add55a45c96995b382d849f1d24fa48695837d079e0a19",
+      "role": "Atlas batch 8 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-08-response.json",
+      "bytes": 92559,
+      "sha256": "5754a9698f927a70b0f3c266888d0de90f729e421793c158fec085779b5fee03",
+      "role": "Atlas batch 8 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92559"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-09-query.json",
+      "bytes": 3664,
+      "sha256": "6c893fdff535761e3ffac858c84ee4156d2278dd5486e176d1ec6247734c2270",
+      "role": "Atlas batch 9 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-09-response.json",
+      "bytes": 92667,
+      "sha256": "7b2516e2bec9de06a3607ec090b3ee4249a3f93b715ac5be028d221736ec035a",
+      "role": "Atlas batch 9 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-10-query.json",
+      "bytes": 3664,
+      "sha256": "472e1658fa52377be328964c2b45ed934b8a343c8111653d112e94de3d032520",
+      "role": "Atlas batch 10 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-10-response.json",
+      "bytes": 92730,
+      "sha256": "3a8bf81f49dbb878ea5007ada990758ba82717e2849e501939d473cb4bf5d6ae",
+      "role": "Atlas batch 10 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92730"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-11-query.json",
+      "bytes": 3664,
+      "sha256": "c6b0a7434071147721e05ab5362559b574383d6f40a4abd7191b680246f51a94",
+      "role": "Atlas batch 11 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-11-response.json",
+      "bytes": 92623,
+      "sha256": "3338a5ed2ab3d89b41848260e030f75b45dac6e21998b2c6ee864fecdabccf1a",
+      "role": "Atlas batch 11 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92623"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-12-query.json",
+      "bytes": 3664,
+      "sha256": "08edbea786468aea5af37b8b1294b3c823b147dde99424b4051daf1d681c470c",
+      "role": "Atlas batch 12 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-12-response.json",
+      "bytes": 92531,
+      "sha256": "08740e7e06a27e2166aea6c0692552b83420527029acd4662e3eac36d9195b03",
+      "role": "Atlas batch 12 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92531"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-13-query.json",
+      "bytes": 3664,
+      "sha256": "6b97186b48d4a049a290bed9733d841662758b976f56d573548edb5979f14adb",
+      "role": "Atlas batch 13 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-13-response.json",
+      "bytes": 92667,
+      "sha256": "e96b470de469a06fe73ca769929f27ff29b90dff552a9f2e076965a8fa7f2325",
+      "role": "Atlas batch 13 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-14-query.json",
+      "bytes": 3664,
+      "sha256": "1975e347f29a7ac8d13166f329705ca2791c2e8b6e6149e24d1afffdf4c71e84",
+      "role": "Atlas batch 14 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-14-response.json",
+      "bytes": 92728,
+      "sha256": "ca41c72404f320570e05a9bef375f0c19ed3003bdc3947d162b3eea85d9c77c5",
+      "role": "Atlas batch 14 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92728"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-15-query.json",
+      "bytes": 3664,
+      "sha256": "f57334b2c1fb9329a8870693b3a6831187b6ff75827974a74adef69bdcc24186",
+      "role": "Atlas batch 15 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-15-response.json",
+      "bytes": 92547,
+      "sha256": "bbcee0dd192e3af4bc4439887168eeebf901041980161825249f65f8d6acdf60",
+      "role": "Atlas batch 15 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92547"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-16-query.json",
+      "bytes": 3664,
+      "sha256": "9a5599c5a8fa4d620ce55a8d1dca945e27423254527f42a4f9626d3e512473a9",
+      "role": "Atlas batch 16 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-16-response.json",
+      "bytes": 92547,
+      "sha256": "3376d1ed9560407b08497f55aeb26df2037f5c4397cb222d146e620c2a9fcec0",
+      "role": "Atlas batch 16 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92547"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-17-query.json",
+      "bytes": 3664,
+      "sha256": "5f0d913cf258471791ac4810d77f010a57a866f7530ee3e598f2429884dd69fa",
+      "role": "Atlas batch 17 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-17-response.json",
+      "bytes": 92726,
+      "sha256": "90c4ef9c43047dad1e4fd857c5eac55c546d26a537fa460b3d681ec0b1115014",
+      "role": "Atlas batch 17 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92726"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-18-query.json",
+      "bytes": 3664,
+      "sha256": "7efc35797ec29115fe046eb1d43b008594929fe402b5baa90ea2a8404db6017d",
+      "role": "Atlas batch 18 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-18-response.json",
+      "bytes": 92593,
+      "sha256": "a3e5accaecdeff7d00ab212546e30b9242ab696714729f6900d7c829bdffa2a0",
+      "role": "Atlas batch 18 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92593"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-19-query.json",
+      "bytes": 3664,
+      "sha256": "665ce57c08d7d2ee1352a08bd765670ce62197caa9cec97ac277102622df2694",
+      "role": "Atlas batch 19 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-19-response.json",
+      "bytes": 92667,
+      "sha256": "479bac3ab73582c4438512d09652cc740376217aa11358af8944ce1970330661",
+      "role": "Atlas batch 19 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-20-query.json",
+      "bytes": 3664,
+      "sha256": "152e59b3883a58b4a53276e1194b884ccaad4ff6d1031051a18f9510a857436a",
+      "role": "Atlas batch 20 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-20-response.json",
+      "bytes": 92726,
+      "sha256": "862a9ed7a99c08a0e7d55344a4fd81791b4b78a6b68e4c69a7ad222917ba5025",
+      "role": "Atlas batch 20 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92726"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-21-query.json",
+      "bytes": 3664,
+      "sha256": "92fcf7b92d4b3de46389af27055daa438b8080ddb387cc4803b1180d06ddfbb8",
+      "role": "Atlas batch 21 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-21-response.json",
+      "bytes": 92737,
+      "sha256": "d651a0c572f96195e0030cad493080c390041d78ec7bceaa33511a91ab842a5d",
+      "role": "Atlas batch 21 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92737"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-22-query.json",
+      "bytes": 3664,
+      "sha256": "7f9b299f60d2e1d7f3b9534f571d1700c9725b045ff9cd60a8a50859c6b0868f",
+      "role": "Atlas batch 22 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-22-response.json",
+      "bytes": 92557,
+      "sha256": "9724dfa52d6027966335d0bde577e88a2fb6888b2c97bd685a0a47d7cb9b8651",
+      "role": "Atlas batch 22 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92557"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-23-query.json",
+      "bytes": 3664,
+      "sha256": "abb52342c2e07b6ad40bb7e3c9a6895151a5854632c6d73e4974fb8178681a76",
+      "role": "Atlas batch 23 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-23-response.json",
+      "bytes": 92547,
+      "sha256": "ef84278567d01be0441c50b090373c55e95a2ada5f515e7c9fad5c5d9271455d",
+      "role": "Atlas batch 23 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92547"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-24-query.json",
+      "bytes": 3664,
+      "sha256": "ea05fda5987faf489003c187900efe96abc2cc02f861f683c029ff93722d479a",
+      "role": "Atlas batch 24 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-24-response.json",
+      "bytes": 92733,
+      "sha256": "c366db0ab9ebdcd6909d3379dc638b36939e58e8d9c58443d2daf439c5786bd2",
+      "role": "Atlas batch 24 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92733"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-25-query.json",
+      "bytes": 3664,
+      "sha256": "bc51c7113673f03db9095fc94bdbcb5a42045e1c25f217d162ecd5c455113a5b",
+      "role": "Atlas batch 25 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-25-response.json",
+      "bytes": 92617,
+      "sha256": "020ce2c0c2c6a4589e1c725493ae4b9655b6bf9268cd9b914666aaea5829bf2a",
+      "role": "Atlas batch 25 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92617"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-26-query.json",
+      "bytes": 3664,
+      "sha256": "fa1706585bee97e0452ea2f94ae5b78ff83579df990d5e26dd45bf259ea74e84",
+      "role": "Atlas batch 26 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-26-response.json",
+      "bytes": 92667,
+      "sha256": "6e755d2481909fb71a582e137c9bdc522edd24503ab7defe6a05888720e8bb62",
+      "role": "Atlas batch 26 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-27-query.json",
+      "bytes": 3664,
+      "sha256": "9b8386508e08c9a3b52f85768a518cdf28a079e3bef09f73bddd9bf7d601317e",
+      "role": "Atlas batch 27 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-27-response.json",
+      "bytes": 92722,
+      "sha256": "dcf6a8651403bc3d77dc51af5e15e958a925403607812630498f96cb4b6f08fe",
+      "role": "Atlas batch 27 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92722"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-28-query.json",
+      "bytes": 3664,
+      "sha256": "dde73898aa6ffedfc624e62bab1099d2dbd4fee400d059b7c9627f37632c8df4",
+      "role": "Atlas batch 28 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-28-response.json",
+      "bytes": 92541,
+      "sha256": "77f7cf596cb70cb62b7c7d5af207c171b0c55ed4a4e56ba1cfa2dd08df83a79f",
+      "role": "Atlas batch 28 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92541"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-29-query.json",
+      "bytes": 3664,
+      "sha256": "bad8089586f6ac3a6d2e3bc8cdeb978cec3a06452a4762191dc3d1757ff63a8f",
+      "role": "Atlas batch 29 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-29-response.json",
+      "bytes": 92537,
+      "sha256": "efd48454c3517559fb4cb3c028637de32d5edccd8565d308cac16ebfb5aa6c4c",
+      "role": "Atlas batch 29 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92537"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-30-query.json",
+      "bytes": 3664,
+      "sha256": "c5e267eaa964bf2bc0f56b22985930bb107be67850b1c12390545965d4f7994b",
+      "role": "Atlas batch 30 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-30-response.json",
+      "bytes": 92724,
+      "sha256": "c4a4c78e502ac57ef18c5af5d22d685055c897c508cd9cf8894c1ab3c162ce53",
+      "role": "Atlas batch 30 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92724"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-31-query.json",
+      "bytes": 3664,
+      "sha256": "a6a3043826df2b81ce447979be5543471118baef052bce5e6c1af3ffe9239e54",
+      "role": "Atlas batch 31 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-31-response.json",
+      "bytes": 92602,
+      "sha256": "71d1cdae6883662d60347f39584434da762f2f9873f1b44feb980bada744fdea",
+      "role": "Atlas batch 31 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92602"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-32-query.json",
+      "bytes": 3664,
+      "sha256": "83e33b45b30652ff2d3a2285fdab850a10c3f7932e15227d57d0716147f382fc",
+      "role": "Atlas batch 32 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-32-response.json",
+      "bytes": 92546,
+      "sha256": "6d185efbf75eaa1a335a3b76b191276568b42026400fca7aded3c27b58d04d31",
+      "role": "Atlas batch 32 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92546"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-33-query.json",
+      "bytes": 3664,
+      "sha256": "9fb25545dd24d8fbb8be410e1d09edf45add8b4244e705b167ba2ec4f65cc5fb",
+      "role": "Atlas batch 33 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-33-response.json",
+      "bytes": 92667,
+      "sha256": "3ae4dcfb82b03d2e5464231e5788744cc851e680658025d8f20224e1cf54501e",
+      "role": "Atlas batch 33 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-34-query.json",
+      "bytes": 3664,
+      "sha256": "6fb57db8e647a42a77f58ebea6697088b61fec87fcbe3a8005900f9e28d6ad2d",
+      "role": "Atlas batch 34 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-34-response.json",
+      "bytes": 92732,
+      "sha256": "1955b107ecd21ba82ae6182ff0b1b150c4b898a8055eba724ffa27823aceed2f",
+      "role": "Atlas batch 34 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92732"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-35-query.json",
+      "bytes": 3664,
+      "sha256": "c39f18defbab2988163b1dfcf3dd759a69a937d933325e8da72ca37f98f4d6ca",
+      "role": "Atlas batch 35 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-35-response.json",
+      "bytes": 92609,
+      "sha256": "c68157dbd3c399d793a676d06471486213949c1347a2fccff1c5e5b4ae16cecc",
+      "role": "Atlas batch 35 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92609"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-36-query.json",
+      "bytes": 3664,
+      "sha256": "1a94d9143c47e0a2c4edfe9543051da1623d2478d7ba94507dba977cdd59635e",
+      "role": "Atlas batch 36 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-36-response.json",
+      "bytes": 92571,
+      "sha256": "9d20a864b67561c1e9ec76d0270e226ae489534041fa696fe21686816729bc26",
+      "role": "Atlas batch 36 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92571"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-37-query.json",
+      "bytes": 3664,
+      "sha256": "62fa0a871fdbcccfb59b769e23897bbd83b63617da60e62a918f532fa88dca03",
+      "role": "Atlas batch 37 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-37-response.json",
+      "bytes": 92719,
+      "sha256": "ffc920eb07d2d95607651ab8f0fb9b9bad46eaaa0e11726fad6bff50a912f90e",
+      "role": "Atlas batch 37 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92719"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-38-query.json",
+      "bytes": 3664,
+      "sha256": "c9f0078bf3d91e29075dc9e0d5946c5637a2534d848433be3a129761be562d99",
+      "role": "Atlas batch 38 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-38-response.json",
+      "bytes": 92557,
+      "sha256": "ee4d1c64f96a19581052de8f4c3af8417c1b800c5f2baf7e5f9da79f86d2f99e",
+      "role": "Atlas batch 38 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92557"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-39-query.json",
+      "bytes": 3664,
+      "sha256": "050e619f1269ee69219560e5a67ce4a503996a8556449935c97ef973a9d17eb6",
+      "role": "Atlas batch 39 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-39-response.json",
+      "bytes": 92667,
+      "sha256": "03f3ed127cdf2f57100c6c29fba5dc58dbbe98d0dbc98d07788be0d5224e04f0",
+      "role": "Atlas batch 39 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-40-query.json",
+      "bytes": 3664,
+      "sha256": "5fdc16a80747fdbca8b4dd23f62e86508c6c7cfd8868f022933d90452acb55a9",
+      "role": "Atlas batch 40 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-40-response.json",
+      "bytes": 92541,
+      "sha256": "0713bf7cea2469e675bc0379c850a167277d7bfb08ede9d28e995e4eb762e868",
+      "role": "Atlas batch 40 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92541"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-41-query.json",
+      "bytes": 3664,
+      "sha256": "6e99feba84490c2345487b8fef48e9e796166de845d9286126ef578ee7318ad7",
+      "role": "Atlas batch 41 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-41-response.json",
+      "bytes": 92717,
+      "sha256": "d7a360be361775994b5e63a6ea8dd2d5da8d901bb85f48bdddcb120a7ffa2506",
+      "role": "Atlas batch 41 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92717"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-42-query.json",
+      "bytes": 3664,
+      "sha256": "b6a159bf958be55ea99bc3767381d419c0a7b9f667c0888b5b86f5bf43b0af5f",
+      "role": "Atlas batch 42 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-42-response.json",
+      "bytes": 92595,
+      "sha256": "48d941359c50107660192f8f58a5b8aee438c89ad9f9d51b7e38a557cb6f2f51",
+      "role": "Atlas batch 42 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92595"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-43-query.json",
+      "bytes": 3664,
+      "sha256": "6e0ec9aa4a509477a19af773ef9a390d66d56c7e6ee769cd6b0ca93b9d1651db",
+      "role": "Atlas batch 43 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-43-response.json",
+      "bytes": 92667,
+      "sha256": "a54a79df6d2ab2f067f349c1901bd1687522b7ecd367b38c0f6ba117a66b5be4",
+      "role": "Atlas batch 43 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-44-query.json",
+      "bytes": 3664,
+      "sha256": "50d8a6762a4e9ce9ebcb4d06396607c28fe2f7658eccf5e23ee71fd2a9a6be02",
+      "role": "Atlas batch 44 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-44-response.json",
+      "bytes": 92719,
+      "sha256": "0b3aefd82a3d6c364f39b16d2981e3e1bd176f8be7125b30ee02880813c91459",
+      "role": "Atlas batch 44 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92719"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-45-query.json",
+      "bytes": 3664,
+      "sha256": "c247a5b0c8aaae2ee1c8e43ba8667ad960632ea1b205e16d60c40b125094f6c8",
+      "role": "Atlas batch 45 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-45-response.json",
+      "bytes": 92520,
+      "sha256": "0f20f4f6f55fce4f3beb45b5bcf0605dbe138098983fede81fbc9dfbfa5f0212",
+      "role": "Atlas batch 45 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92520"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-46-query.json",
+      "bytes": 3664,
+      "sha256": "2f4e7d91159127c88cc4e8ed2411f0ad5e7393d39ee8e63eda6bd958873d76a8",
+      "role": "Atlas batch 46 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-46-response.json",
+      "bytes": 92569,
+      "sha256": "859b36ba1a8d3a462a584b15ad42a1f99d435c62e66d58e744f8f51b4ba78d83",
+      "role": "Atlas batch 46 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92569"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-47-query.json",
+      "bytes": 3664,
+      "sha256": "e2abc3bf08fd26408b98e139222f46fed6c39c20205c2e6873c10961c05a99b8",
+      "role": "Atlas batch 47 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-47-response.json",
+      "bytes": 92724,
+      "sha256": "bf69b01f5d7084bf1086395cd287dc0af81536c103bc7453f3538bfd98a420e4",
+      "role": "Atlas batch 47 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92724"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-48-query.json",
+      "bytes": 3664,
+      "sha256": "86072bd2424ecf4b7a01216125a4a7093f91a7068e0490b816aeac07e2da571f",
+      "role": "Atlas batch 48 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-48-response.json",
+      "bytes": 92619,
+      "sha256": "acae33003376d0f1b39938eb3768acb6930694812fc8cea8c71415d9a8360d4a",
+      "role": "Atlas batch 48 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92619"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-49-query.json",
+      "bytes": 3664,
+      "sha256": "00423c88db40b02ce8c68e8f01572a962773346d6b5da49e6f0f2e90319cca9a",
+      "role": "Atlas batch 49 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-49-response.json",
+      "bytes": 92667,
+      "sha256": "1600114a9f51a6221ba93574d6b3e4dddddb096f980ed931fe5c904f9afe4ca4",
+      "role": "Atlas batch 49 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-50-query.json",
+      "bytes": 3664,
+      "sha256": "a9582649145c293873f4aea8dc3c18c9ccaecf08b8a63760cd48f72944515c34",
+      "role": "Atlas batch 50 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-50-response.json",
+      "bytes": 92728,
+      "sha256": "fd1cb49797cd3e1fad8026f6a2178d579cae31288c614d0c271519c7e3aa3080",
+      "role": "Atlas batch 50 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92728"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-51-query.json",
+      "bytes": 3664,
+      "sha256": "4b5de62fb8daff7cffb9f53fc4631eb53939cd204c04e8e52e5d963f2e5094c9",
+      "role": "Atlas batch 51 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-51-response.json",
+      "bytes": 92569,
+      "sha256": "dc565dc6671771fdf1bfcfaa69cae5d0c474ccf7a21726e8b6c8cea86ad55902",
+      "role": "Atlas batch 51 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92569"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-52-query.json",
+      "bytes": 3664,
+      "sha256": "c1ae2a4e02f33604ba40b008aa9d63e78fac985be962132c18fb6e2c56cb35cd",
+      "role": "Atlas batch 52 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-52-response.json",
+      "bytes": 92551,
+      "sha256": "d069f6d33e34cb16e9c4eef50ce969f6a8a7db6c58e59b41730a3e83a61f66c5",
+      "role": "Atlas batch 52 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92551"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-53-query.json",
+      "bytes": 3664,
+      "sha256": "b7c063c69d85c4e8a0b21e753f9a802b06e0852b1d66a04543c0b0ec3d317644",
+      "role": "Atlas batch 53 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-53-response.json",
+      "bytes": 92736,
+      "sha256": "6cca8abff3d92b5c7a193d847a19422aaf5f38803481a864932af1949b59fe66",
+      "role": "Atlas batch 53 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92736"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-54-query.json",
+      "bytes": 3664,
+      "sha256": "a212d6004bcade13887e966326b6915a0e0e6872a661e842e1f91657ee2021df",
+      "role": "Atlas batch 54 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-54-response.json",
+      "bytes": 92592,
+      "sha256": "96694257793ce05eb2b215814a851fbbaae800ef8bf44bedbf422d79419a0f80",
+      "role": "Atlas batch 54 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92592"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-55-query.json",
+      "bytes": 3664,
+      "sha256": "b65ed32dfa1487f548c6fa2886f54658a154a9ea91308f0fe821b9d3d308c44f",
+      "role": "Atlas batch 55 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-55-response.json",
+      "bytes": 92716,
+      "sha256": "55c95abca6c8271b6be3bb483ededffb90e5297592000b0a675f2a8188f68f59",
+      "role": "Atlas batch 55 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92716"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-56-query.json",
+      "bytes": 3664,
+      "sha256": "2383b1d58bf44e994544c730ac6cc63d58c02aa58f78ac85a123105aecf63584",
+      "role": "Atlas batch 56 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-56-response.json",
+      "bytes": 92569,
+      "sha256": "35da275d17f6eaa4b95d1eaa1050eed8da7fa8d454a4e961834160c8ab5a6def",
+      "role": "Atlas batch 56 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92569"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-57-query.json",
+      "bytes": 3664,
+      "sha256": "6f8c72596493a2ea8e934db31f5a68ef3324096a64fcd7543fbb20fd3fd2a399",
+      "role": "Atlas batch 57 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-57-response.json",
+      "bytes": 92667,
+      "sha256": "3efad4d6f08d5c18be0cf2cec6933ee7c4c4d3de34dba71f6489744aac387af7",
+      "role": "Atlas batch 57 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-58-query.json",
+      "bytes": 3664,
+      "sha256": "9a7a9524e4f96eb6352cb7743aa6e0a79f209b781c6c8e0aa92d7ed927fc56ac",
+      "role": "Atlas batch 58 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-58-response.json",
+      "bytes": 92722,
+      "sha256": "2d01a171e5861fd2552338fcd6df142090cc528090e3874475e75fcdb15a5b55",
+      "role": "Atlas batch 58 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92722"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-59-query.json",
+      "bytes": 3664,
+      "sha256": "eeb3058402ad5a0a3266377f8e4bcd29b2b0910a4a083c85ad928417d839639a",
+      "role": "Atlas batch 59 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-59-response.json",
+      "bytes": 92590,
+      "sha256": "e00f9593335861df5374652bb35828d51abaef86ecf2dc4c2856d8a48fbfb34c",
+      "role": "Atlas batch 59 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92590"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-60-query.json",
+      "bytes": 3664,
+      "sha256": "b15c88bb13706488c527e62a908128efc0769eb40b3c45c8f60b6946135c3e41",
+      "role": "Atlas batch 60 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-60-response.json",
+      "bytes": 92551,
+      "sha256": "9cd4da8dfd55062d3e2df9c1e885829910874e0fe9e2450d307202da28a60a6d",
+      "role": "Atlas batch 60 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92551"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-61-query.json",
+      "bytes": 3664,
+      "sha256": "876d72a6e598eb15efb626052275876aee256e07de2cf9b1a32f8a912e1343bc",
+      "role": "Atlas batch 61 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-61-response.json",
+      "bytes": 92727,
+      "sha256": "de79b4917cc118138a12e516b7d472c7468db5e296f51a1cd420fdc372dd899c",
+      "role": "Atlas batch 61 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92727"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-62-query.json",
+      "bytes": 3664,
+      "sha256": "7789e9af3a0c626349bcc6aad9bbf28c582a3f15159bd2bb860a194c98ed7017",
+      "role": "Atlas batch 62 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-62-response.json",
+      "bytes": 92533,
+      "sha256": "c6614236fca732538d9d7394fb193454b2682de3a2019762276c2281988446dc",
+      "role": "Atlas batch 62 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92533"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-63-query.json",
+      "bytes": 3664,
+      "sha256": "81fdb157ac59ba98a9b6850fdb64dbace19c8454f977b837901567674dfa22a8",
+      "role": "Atlas batch 63 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-63-response.json",
+      "bytes": 92667,
+      "sha256": "342a4341f76a4f6e08233924485c7dddb69917b51f134db85f65bd56bd4183ff",
+      "role": "Atlas batch 63 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-64-query.json",
+      "bytes": 3664,
+      "sha256": "c859665c4d68c1f5f92b123a96d77b32fe7040e7e938bbb686272115fde6aa8a",
+      "role": "Atlas batch 64 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-64-response.json",
+      "bytes": 92724,
+      "sha256": "78a0c1c0ea0ebab9c59e4c1e67d97838df5943b21f445ab9311ff92697d0b4bb",
+      "role": "Atlas batch 64 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92724"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-65-query.json",
+      "bytes": 3664,
+      "sha256": "436fd93084eb895c75e2465fe62b45f459331c6ae5d6dfa4cb2258639f04334a",
+      "role": "Atlas batch 65 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-65-response.json",
+      "bytes": 92628,
+      "sha256": "39b21a59402f6acc1ae31d40faff6d6054480b418474f5baadb14e54175ed138",
+      "role": "Atlas batch 65 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92628"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-66-query.json",
+      "bytes": 3664,
+      "sha256": "e182d1a20ce2a17265069bdd6a1e53cf7147f301fc9e73a7752244bd95a9279a",
+      "role": "Atlas batch 66 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-66-response.json",
+      "bytes": 92567,
+      "sha256": "32d09b5cbac0acdbfa0243e900d1cd4e0f91718f32a4b62351de22e9ec71e736",
+      "role": "Atlas batch 66 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92567"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-67-query.json",
+      "bytes": 3664,
+      "sha256": "50932deab4a0bb3b3c6bcd50740e36823be45c714e140d26c88f705b0c70216a",
+      "role": "Atlas batch 67 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-67-response.json",
+      "bytes": 92732,
+      "sha256": "1331c889a5ad8dfbcc1d412f9660b1ee99df068524f44db94dd7a9a06bcb370b",
+      "role": "Atlas batch 67 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92732"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-68-query.json",
+      "bytes": 3664,
+      "sha256": "c786542b7e95b3cf78362c3436f6fa217d1101a2568b0e7edeba014262b1e67e",
+      "role": "Atlas batch 68 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-68-response.json",
+      "bytes": 92551,
+      "sha256": "000f8327c0ca57ffd70944652fffd4c6f8642e966f77c2d91e20e5b9f58441c0",
+      "role": "Atlas batch 68 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92551"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-69-query.json",
+      "bytes": 3664,
+      "sha256": "d1c85b0505857a65d89f76419e3d61d046df3f056eb32d0b8db651d28f5b48f7",
+      "role": "Atlas batch 69 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-69-response.json",
+      "bytes": 92667,
+      "sha256": "15cf1b558f4264a27faa5870f75b8648f96fe65ab23fdbf647f15013b418c790",
+      "role": "Atlas batch 69 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-70-query.json",
+      "bytes": 3664,
+      "sha256": "1b632afbbf0f1aced48bd73b866ccabfddda2becdb61f829d808ebd528e28efb",
+      "role": "Atlas batch 70 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-70-response.json",
+      "bytes": 92736,
+      "sha256": "1b79c48664cd3034a5effa3f3fe4a89df283e79bd7a5094d664787113d34d47c",
+      "role": "Atlas batch 70 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92736"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-71-query.json",
+      "bytes": 3664,
+      "sha256": "f4a5a6755751f28c72e8ce2050f63dbe76a764af9cbc1cca5a7fc7518a6049fa",
+      "role": "Atlas batch 71 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-71-response.json",
+      "bytes": 92617,
+      "sha256": "dfc30f0e67d6037d90fe52761d3aa2a637149c2f1d361cbff3c383003a5dac4b",
+      "role": "Atlas batch 71 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92617"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-72-query.json",
+      "bytes": 3664,
+      "sha256": "c8ef862e438dc8b65c68300dbe0c36009d46da53234d13ae083abad7d3e317cb",
+      "role": "Atlas batch 72 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-72-response.json",
+      "bytes": 92531,
+      "sha256": "a8fcb66b05cc4243a1239e316949b519a16ce4e3d457e73ed82c0e76f9e0a220",
+      "role": "Atlas batch 72 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92531"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-73-query.json",
+      "bytes": 3664,
+      "sha256": "ad4c8443491252327cc4a2b9b84ba6f7f803fa783df73e77e58d3a33399c6bad",
+      "role": "Atlas batch 73 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-73-response.json",
+      "bytes": 92721,
+      "sha256": "17d10b0ff51ed02ee23ae6f0fc682e1f985d4441e5b9234409961137055fbfbe",
+      "role": "Atlas batch 73 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92721"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-74-query.json",
+      "bytes": 3664,
+      "sha256": "c79e8f0584948c67e7a1f357fa442d6c331c8a7416931a746219ab289d1c86e1",
+      "role": "Atlas batch 74 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-74-response.json",
+      "bytes": 92561,
+      "sha256": "20c47fcaee324e8b5030ccb75d3d33c109fa3474abe7da292017b97c2fe719f8",
+      "role": "Atlas batch 74 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92561"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-75-query.json",
+      "bytes": 3664,
+      "sha256": "f6f6ba55ed52c4dd59283cac32d7cda5f522458574bf485a20e17bb4623c2104",
+      "role": "Atlas batch 75 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-75-response.json",
+      "bytes": 92667,
+      "sha256": "66836b31d547acb1b3bac6774015dc1b2b559b77b1f08a9d9eafbaa1c38da366",
+      "role": "Atlas batch 75 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92667"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-76-query.json",
+      "bytes": 3664,
+      "sha256": "1d78c4c7ada5bf6ecf8084d9e95ce6ebaf12ac60ae90275526ac6b80b13993c4",
+      "role": "Atlas batch 76 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-76-response.json",
+      "bytes": 92725,
+      "sha256": "af51d3e133205a3cc23ee0382041ae69993d28f2927c17317e067aa8b159cf7d",
+      "role": "Atlas batch 76 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "92725"
+      }
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-77-query.json",
+      "bytes": 749,
+      "sha256": "b3ccd86a95fd6f9a4d162a59d99409d1e6b0a54ff61b2ad6fb932a245a3cf431",
+      "role": "Atlas batch 77 query",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search"
+    },
+    {
+      "path": "evidence/stage10l/source/batches/batch-77-response.json",
+      "bytes": 5710,
+      "sha256": "9c77048a15580030162cc418ad86bb77c1d4437400b4d03c121f690a6052a956",
+      "role": "Atlas batch 77 response",
+      "url": "https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "5710"
+      }
+    }
+  ]
+}

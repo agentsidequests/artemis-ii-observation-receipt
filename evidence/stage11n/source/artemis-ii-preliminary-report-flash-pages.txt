@@ -1,0 +1,365 @@
+===== SOURCE PDF PAGE 33 =====
+
+33
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+Blue outlines around figures indicate images taken by the Artemis II crew or the Orion vehicle cameras. 
+On occasion, the crew used clock-direction vernacular to describe positions of features. Orion pointing 
+was nose-to-lunar-north (i.e., the docking-hatch window faced the approximate same direction as 
+the lunar north pole). Crew orientation within the window, however, varied over time and between 
+crew members, ranging from aligned with Orion (i.e., viewing the Moon as north-up) to anti-aligned 
+(viewing the Moon as south-up). Therefore, it is important to interpret crew descriptions using the 
+contemporaneous crew images.
+5.1 Impact Flash Observations
+The present-day cis-lunar environment is dynamic, with impacts from micrometeoroids, which are 
+naturally occurring fragments of comets, asteroids, and planetary impact debris that travel through 
+space. When these meteoroids strike the lunar surface, the kinetic energy of the impact creates seismic 
+waves (Moser et al., 2015; Madiedo et al., 2019).
+These impact events can be visible as a bright flash on the lunar surface and hence are observable from 
+Earth and in cislunar space (Ortiz et al., 2000). In at least three instances, Apollo astronauts recorded 
+observing impact flashes from orbit: one impact flash during Apollo 16 and two flashes during Apollo 
+17. According to NASA’s Meteoroid Environment Office (MEO), at the time of this writing 443 impact 
+flashes have been observed by Earth-based telescopes through a variety of observing campaigns, and 
+NASA’s Lunar Reconnaissance Orbiter (LRO) spacecraft has documented multiple new impact craters 
+that have formed since its launch in 2009 (Moser et al., 2015; Sheward et al., 2022, 2025; Rizos et 
+al., 2026).
+Given previous observations of impact flashes during Apollo (NASA, 1972a, 1972b), plus ground-
+based observations and LRO datasets (e.g., Suggs et al., 2014; Moser et al., 2015; Sheward et al., 2022, 
+2025; Rizos et al., 2026), the LST strategically planned observation time for impact flash surveys, both 
+by crew (Appendix 1) and by the Orion vehicle exterior cameras. More specifically, the crew had dedi-
+cated time scheduled to observe impact flashes as a specific LTP target and during the eclipse period 
+of the flyby. The eclipse period enabled observations at a time when the Sun was eclipsed behind the 
+Moon. This provided dark viewing conditions with the Moon not directly illuminated by sunlight 
+(only partially lit by earthshine) and removed any direct sunlight within the crew’s field of view (FOV), 
+which aided with dark adaption for the crew’s eyes to adjust and be able to see fainter phenomena. 
+Furthermore, the crew were trained to report any impact flashes observed at any point during the mis-
+sion, even outside of scheduled surveys.
+Additionally, a coordinated Earth-based observation campaign was also undertaken, including the 
+MEO at NASA’s Marshall Space Flight Center through the Lunar Impact Flash Monitoring Program 
+and complemented by an SMD citizen science campaign to increase public engagement and observing 
+opportunities (Section 6.2). Earth-based observations were optimized to collect data near the times of 
+the Artemis II crew observations, though this was not always possible given that ground-based observa-
+tions require views of shadowed (non-illuminated) lunar terrain, which were not always present from 
+the vantage point of Earth during the crew’s lunar flyby.
+5.1.1 Characterizing Impact Events
+Observations of impact flashes (or a lack thereof) during dedicated observation periods help 
+characterize the modern impact environment and the scale of what may be observable from cis-lunar 
+space. Of particular interest are constraining the meteoroid size and frequency distributions, as well as 
+the timing, location, and brightness of individual flashes. The frequency distribution of impact flashes 
+across the lunar surface can help constrain the impactor flux as a function of geographic location on 
+the Moon (Ortiz et al., 2006). The frequency of flash observations, correlated with the presence (or 
+absence) of known meteor showers during the observing periods, can provide insight into the sources 
+and rates of the flashes (Madiedo et al., 2015; Ortiz et al., 2002). The timing and location of flashes 
+
+===== SOURCE PDF PAGE 34 =====
+
+34
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+also enable follow-up studies to possibly image and characterize resulting craters and to investigate 
+impact-crater processes. In addition, analysis of the observational data can reveal whether and how future 
+measurements might constrain the seismic source and timing of impacts, especially once ground-based 
+geophysical instrumentation is on the lunar surface. The brightness (or intensity) of the flash itself can 
+be correlated with the size of the impactor and resultant energy of the impact event (Bellot Rubio et 
+al., 1998). For Artemis II, the strongest impact-flash-related dataset is the number of observed impact 
+flashes (i.e., their frequency distribution).
+The Artemis II impact-flash observation campaign was designed to inform techniques for future 
+observations and guide subsequent science investigations. For example, the statistics of impact-flash 
+detections made by the crew, correlated with corresponding observing time, provide data on the detec-
+tion frequency and probability for varying observing durations on future missions. These results can 
+support the planning of observing surveys on crewed missions, as well as the selection of optimal detector 
+systems for future flight missions. Additionally, the observing assets on Artemis II may constrain the 
+expected frequency and magnitude of future impact flashes, thereby informing detection limits for 
+future observations and highlighting the potential value of additional observing techniques, such as a 
+dedicated automated flash-detection camera with increased sensitivity and/or resolution (Section 9.7). 
+Overall, impact flash observations will contribute to future Artemis mission planning by improving 
+understanding of the cis-lunar space environment and present-day meteoroid activity.
+5.1.2 Impact Flash Observations
+Five distinct impact flashes were reported by the crew during the period of the solar eclipse as seen 
+from the vantage point of the Orion spacecraft. The crew possibly observed several additional impact 
+flashes but did not formally report them. Crew members reported flashes in the crew PCD audio files, 
+through O/E audio communication live during the flyby, and via an annotated image that was prepared 
+by the crew and downlinked to the LST after the flyby on which the crew marked their approxima -
+tion of where the five confirmed flashes were located on the lunar surface ( Figure 5.1). Several of the 
+flashes were observed simultaneously by multiple crew members, cross validating the observations as 
+true impact-flash detections.
+All definitive flashes observed by the crew were seen during the lunar eclipse period of the lunar 
+flyby, and no flashes were associated with any color. All the impact flashes were observed on the non-
+illuminated portion of the Moon, and no flashes were reported in earthshine during the eclipse. No 
+flashes were observed when any portion of the Moon was illuminated by the Sun; therefore, these 
+flashes are likely the faintest ever observed by human eyes, suggesting small impactors on the order of 
+several cm in diameter. Artemis II flew during a low meteoroid flux time of year outside of any major 
+annual meteoroid streams, and thus these observations place a lower bound on the impact flux at the 
+lunar surface.
+The first impact flash was reported by R. Wiseman:
+I just saw a flash! 100% I just saw flash! 100% it was on the like if you go right to the center 
+point, it was at the 7 or 8 o’clock. (R. Wiseman, camera, PCD crew audio, art002a000052, 
+00:41:01 UTC)
+
+===== SOURCE PDF PAGE 35 =====
+
+35
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+Shortly after, R. Wiseman and J. Hansen reported observing the same impact flash:
+R. Wiseman, camera, and J. Hansen, unaided eye, PCD crew audio, art002a000052, 
+00:51:15 UTC)
+During the post-flyby crew conference between the crew and the Science Officer on Flight Day 07, the 
+crew described that these observations were reported as impact flashes because they were distinct from 
+other transient phenomena, such as cosmic ray 
+hits to the eye or spacecraft glint. During the con-
+ference, the crew also reported that more flashes 
+may have been observed than were recorded. The 
+crew intentionally did not include any ambigu -
+ous flashes in their annotation ( Figure 5.1), thus 
+lending more credence to the validity of the 
+reported detections.
+The MEO at Marshall assessed a SAW Cam 3 
+video that recorded for ~2 minutes during the 
+lunar eclipse at its highest frame-rate setting (30 
+frames/second). No impact flashes were detected 
+in this dataset, though the video covered a limited 
+time period. Additional details on this SAW Cam 
+3 video are available in the Artemis II Lunar Science 
+Data User Guide.
+The LST also collaborated with the LRO team 
+and determined that potential follow-up observa-
+tions of new craters formed from the crew-observed 
+impact-flash events are probably infeasible since the impact crater size is likely too small to be resolvable 
+by the LRO Camera (LROC). Additionally, information related to impact flash locations from visual 
+crew observations is insufficient for LRO targeting purposes.
+5.2 Color Provinces and Albedo Variations
+Crew data related to color provinces and albedo variations help address what humans can uniquely 
+perceive at the Moon and provide information on lunar geologic features. Because none of the handheld 
+or vehicle camera images were calibrated for this mission, analysis of color and photometric charac -
+teristics are necessarily qualitative. The crew’s verbal descriptions of color serve as the primary science 
+data for this theme. The accompanying crew images acquired during their verbal descriptions provide 
+critical geologic context, including relative color and albedo properties ( Figure 5.2), morphological 
+art002e016252
+7 Apr 2026 01:04:00.000
+N
+S
+W E
+Figure 5.1: Impact Flash Annotation.  Annotation 
+art002e016252 made in-flight by the Artemis II crew 
+showing general locations of reported impact flashes 
+observed by R. Wiseman (blue), J. Hansen (red), and V . 
+Glover (green). Purple was used for annotation and not 
+representative of a specific crew member.
+R. Wiseman
+J. Hansen
+R. Wiseman
+J. Hansen
+R. Wiseman
+J. Hansen
+J. Hansen
+R. Wiseman
+J. Hansen
+R. Wiseman
+J. Hansen
+Oh, I just saw another meteorite. 100%. Just saw a meteorite.
+Did you see it in the, was it lower?
+Yeah. Yup.
+Like a third from the bottom, up from the bottom?
+Yeah.
+Yup.
+But it’s a pinpoint of light.
+Yup.
+It’s not like a meteor, you didn't see anything else, it’s just like a bloop.
+Yeah.
+So, Reid and I both saw the same thing there. We saw an impact flash. 
+It wasn’t very big. For me it was a pinprick. It was about a third of the 
+way up from the bottom of the Moon for us.
+
+===== SOURCE PDF PAGE 112 =====
+
+112
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+field deployments, simulations, and one-on-one tutorials. Throughout this process, the crew provided 
+specific feedback about their training experience, informing the recommendations below for science 
+and science operations training in future Artemis crews.
+Among this feedback, the crew feedback emphasized the value of establishing a strong scientific foun-
+dation early in the training flow, alongside hands-on field experience that grounded classroom concepts 
+in real geological processes. Field training in particular was identified as critical to learning how to 
+observe and interpret geological features firsthand, in ways classroom instruction alone cannot replicate.
+The crew also pointed to the importance of training that could flex to meet evolving mission needs, 
+while still building skills in a structured, repeatable way. This included hands-on practice designed to 
+progressively build both scientific “stamina” and final required skills, scenario-based exercises requiring 
+collaborative problem-solving, and opportunities for real-time scientific feedback during simulations 
+and one-on-one mentoring.
+Finally, the crew underscored the value of self-directed learning tools that reinforced material between 
+formal training sessions. Frequent, low-effort exposure to lunar science content with rapid turnaround 
+feedback helped the crew retain critical knowledge over the course of a multi-year training flow. This 
+self-directed and curiosity-driven training even extended into the mission itself. In addition to the LGR 
+provided by the LST , the crew brought self-selected reference materials to the mission to continue read-
+ing and learning on their way to the Moon.
+Taken together, this feedback provides the following recommendations to support future Artemis 
+crew training: 
+Recommendation: Future Artemis crew training should maintain an early, introductory learning 
+experience that provides foundational and contextual information about the Moon and the Artemis cam-
+paigns and should continue to prioritize field training as a critical tool for learning geological processes.
+Recommendation: Future Artemis crew training should develop flexible training modules that address 
+just-in-time training needs for the crew and for science; build training opportunities into simulations, 
+with scientists providing real-time feedback: assign geology mentors to individual crew members to 
+extend this real-time mentoring and feedback availability beyond simulation events; and build and train 
+to standardized procedures that can be practiced consistently across training environments.
+Recommendation: Future Artemis crew training should create a robust, regularly updated portfo -
+lio of digital training products and short homework assignments that the crew and FCTs can access 
+independently, providing frequent exposure to lunar science material with assessment and feedback 
+delivered within one day to support knowledge retention.
+9.4 In-Mission LST to Crew Communications
+Real time, bidirectional communication between the LST and the crew proved to be a valuable asset 
+throughout the mission, enabling the LST to respond to crew questions as they arose, request clarifi -
+cation during time-critical science events, and directly support science interpretation while data were 
+being collected.
+Several times during the lunar flyby, the crew requested scientific information from the LST . For 
+example, the crew asked for assistance with identifying surface features they were observing on the 
+Moon in real time or determining relative ages of observed targets. Because the LST staffed in the SER 
+had direct communication with the Science Officer, and because the Science Officer had direct com-
+munication with the crew, these requests received immediate, in-mission responses.
+During the solar eclipse period, the crew reported seeing several impact flashes. With direct voice 
+communication, the LST was able to immediately solicit information on the timing and locations of 
+the flashes, allowing the team to determine with greater confidence the number of flashes observed, 
+which flashes were observed by multiple crew members, and where on the lunar surface the flashes were 
+located. This additional data collection that was enabled through real-time communication between the 
+LST and crew at the Moon proved critical for subsequent scientific analysis of these impact flash data.
+
+===== SOURCE PDF PAGE 114 =====
+
+114
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+an STM. This will enable efficient mission science planning when the exact mission profile may not be 
+known until a short time before launch or until after launch.
+Recommendation: Future Artemis missions should include extensive pre-mission preparation in the 
+form of mission simulations focused on planning and doing science in the context of a wide range of 
+plausible mission scenarios. This will best exercise the expertise, confidence, and flexibility needed in a 
+well-prepared science team and also result in STM-responsive products that provide the science team 
+with early progress on actual mission planning and execution.
+9.6 Calibration of Cameras
+Camera calibration will be essential for future missions to independently contextualize crew observa-
+tions and enable quantitative analyses. Within the Artemis II mission architecture, the LST was not 
+afforded the opportunity to select instrumentation or specify calibration needs in support of science. 
+As discussed in Section 3.2.2, the cameras used during Artemis II were COTS systems with only partial 
+pre-flight characterization, and no geometric, radiometric, or spectral calibration were completed on 
+any of the included imaging systems.
+T o enable quantitative use of images in future missions, it will be important to specify the minimum 
+required calibration level needed to support science objectives. Camera characterization and calibra -
+tion are needed to understand internal parameters (e.g., sensor response) and external factors (e.g., 
+window effects; Section 7.2), as both influence image quality and the interpretation of color, bright -
+ness, and shape. Additionally, the performance of manifested camera systems, including handheld, 
+vehicle-mounted, and EVA tools, should be characterized in the unique lighting, thermal, and viewing 
+environments in which they will be utilized.
+Recommendation: Future Artemis missions should define minimum camera calibration require -
+ments and characterize camera performance inside and outside the spacecraft to enable quantitative 
+and independently verified crew observations.
+9.7 Instrumentation for Enhanced Science Return
+Artemis II highlighted several areas where dedicated science instrumentation would substantially 
+improve the quality, interpretability, and diversity of lunar observations. Many of the lunar science 
+objectives, particularly those associated with the characterization of impact flashes, color and albedo, 
+photometry, dust detection, and deep-sky imaging, would have benefited from instruments specifically 
+designed to address the unique observational challenges of cislunar space. Several illustrative examples 
+of instruments for enhanced science return are outlined below. Missions to the surface of the Moon 
+may have different instrument needs based on science objectives and the nature of in situ versus remote 
+measurements (e.g., surface missions would benefit from strategically selected handheld field instru -
+ments for crew members).
+Although the crew observed and described several impact flashes during the solar eclipse, a dedi -
+cated impact-flash sensor that is capable of high-frame-rate, high-dynamic-range imaging would allow 
+systematic monitoring of impact events, enable quantitative flash brightness measurements, improve 
+temporal precision and location identification, and enable direct comparison with human observations.
+Calibrated and more capable imaging and/or spectrometer systems would improve collection of color 
+and albedo data. The Artemis II crew frequently described subtle color variations across the lunar surface, 
+but camera limitations prevented quantitative characterization. A calibrated multispectral camera and/
+or dedicated spectrometer system(s) would provide independent measurements of spectral variations 
+and allow direct comparison between crew perception and instrument-derived reflectance and spectral 
+properties, strengthening scientific interpretation of surface composition and photometric behavior.
+Relatedly, a physical onboard color wheel would provide the crew with a stable, standardized reference 
+for color hue and value, improving consistency and reproducibility in real-time descriptions of lunar 
+
+===== SOURCE PDF PAGE 115 =====
+
+115
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+color and albedo. A color wheel proved to be a highly effective tool for supporting visual observations 
+during the Apollo-Soyuz mission (El-Baz, 1977, 2011).
+For investigations of the lunar dust environment, future missions would benefit from a dedicated 
+low-light camera optimized for limb and horizon observations. Such a system would provide quantifiable 
+measurements of extended faint sources and enable confident detection or non-detection of lofted dust.
+Deep-sky imaging revealed optical constraints of general-purpose lenses. Coma and corner distortions 
+were evident in wide-field images, which is expected for fast lenses not optimized for astronomical use. 
+For future missions, particularly those spending longer durations in lunar orbit, a dedicated prime lens 
+for deep-sky imaging would provide higher-quality stellar data and support investigations of zodiacal 
+light and other faint phenomena.
+As instrumentation needs will vary by science objectives and priorities, future development should 
+be responsive to each mission profile, as well as community priorities, while maintaining compatibility 
+with human-driven observation workflows.
+Recommendation: Future Artemis missions should manifest dedicated science instruments that 
+meaningfully support the science objectives of the mission, to include IVA instrumentation to support 
+orbital observations similar to the Artemis II flyby observations, as well as EVA-specific instrumentation 
+for use by astronauts on the lunar surface.
+9.8 Window Design for Science Observations
+For Artemis II, lunar images collected through Orion’s windows were a cornerstone of the lunar 
+science dataset. These images enabled cross-regional comparisons, supported interpretation and con -
+textualization of the crew’s verbal observations, and anchored the LST’s ability to map observations to 
+specific lunar features. These images were also affected by the vehicle window design, including window 
+size, pane design, and optical quality, and thus window design is a critical component in enabling high-
+fidelity science observations.
+The Artemis II window-quality DFTO results underscore the need to continue to characterize vehicle 
+window designs. Windowpanes should be characterized individually and as an installed stack. This 
+should be included for any updates to Orion’s windows that may be implemented for future Artemis 
+flight missions and also the windows for the Human Landing System vehicles that will deliver subse -
+quent Artemis crews to the lunar surface. Lower quality windows and/or incomplete characterization of 
+windows for imaging will have a detrimental effect on the science return from human observations and 
+images, particularly regarding phenomena that Artemis II demonstrated humans are adept at observing 
+and describing, such as impact flashes, nuanced color patterns, and regional comparisons.
+Recommendation: Future Artemis missions should rigorously characterize and prioritize window 
+optical performance of windowpanes and the assembled window stack (for Orion and Human Landing 
+System vehicles) to maximize the quality of science return from crew observations and images.
+9.9 Crew-Audio Recording Capabilities and Time Synchronization of Multi-Modal 
+Datasets
+This report highlights the importance of crew observations to the mission’s science return. This 
+highest-priority dataset was enabled on Artemis II via manual audio recordings captured by the crew 
+on their PCDs. However, using PCDs for this critical scientific purpose introduced risks and challenges 
+in several ways. First, the tablets were at significant risk of data loss due to radiation strikes. Without 
+downlink capability, these critical data could have been permanently lost, as no backup solution existed. 
+Second, each observation required the crew to manually start and stop the audio recordings on their 
+PCDs. This added operational burden and increased the likelihood of missed activations or incomplete 
+recordings, potentially compromising the dataset. Third, managing the PELTOR headsets, which were 
+attached to the PCDs by lengthy cables floating in microgravity, proved cumbersome. By contrast, 
+Apollo missions benefited from in-cabin recording devices that did not require any action from the 
+
+===== SOURCE PDF PAGE 116 =====
+
+116
+|  Artemis II Preliminary Lunar Science Operations Report
+ARTEMIS II Preliminary Lunar Science Report
+crew. These passive audio recordings have been used for decades as an indispensable historical record of 
+the mission, as well as a valuable scientific record (e.g., recordings of the Apollo 11 crew making lunar 
+observations in LOS before landing).
+Further related to the value of audio recordings, the LST often relied on the sounds of camera shutter 
+clicks as a useful audio cue for aligning multi-modal crew data (i.e., images, audio files, and annotations) 
+with science intent during Artemis II (Section 8.1). This in-cabin cue worked well for IVA operations, 
+where handheld images and voice-loop recordings were collected within the same acoustic environ -
+ment and could be cross-referenced by listening for shutter sounds in the audio. For future surface 
+missions, however, this approach will not always be viable. The sound of a Nikon D5 camera shutter or 
+the simulated shutter sound of the Nikon Z9 will not reliably propagate to microphones embedded in 
+EVA suits. Additionally, crew members on a surface EVA will not use PCDs for real-time annotations 
+as IVA crews do, and will instead rely more heavily on verbal communication. As a result, correlating 
+multi-modal science observations, including images, verbal descriptions, and other data streams during 
+EVAs, will be even more dependent on precise and consistent timestamps across all devices.
+Recommendation: Subsequent Artemis missions should incorporate a passive audio-recording capa-
+bility to support the collection of crew observations. A continuous, timestamped onboard audio record 
+would also provide an independent means of establishing the timing of activities not captured by other 
+onboard systems, substantially improving post-mission reconstruction and interpretation of the sequence 
+of mission events. This capability would be particularly beneficial during highly dynamic science mis-
+sion phases, such as the Artemis II lunar flyby. Passive audio recording would reduce crew workload 
+by eliminating the need to manage additional hardware during high-priority and time-critical periods. 
+Additionally, passive audio would capture valuable scientific context by recording crew perception dur-
+ing mission phases where opportunistic or serendipitous science data is collected. This recommendation 
+aligns with crew feedback in the crew perspectives section (Section 2.0).
+Recommendation: Subsequent Artemis missions should maintain coordinated and correct timestamp 
+synchronization across all science-relevant systems, including cameras, crew suits, PCDs, voice loops, 
+any additional manifested science payloads, and the spacecraft, to ensure accurate alignment of multi-
+modal datasets during orbital and surface mission phases.
